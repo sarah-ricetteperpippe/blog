@@ -1,0 +1,35 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+export interface Props {
+  title: string;
+  description?: string;
+  pubDate?: string;
+  heroImage?: string;
+  category?: string;
+}
+
+const { title, description, pubDate, heroImage, category } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="single-post-header">
+    {category && <p style="color: var(--color-primary-green); font-weight: 600; margin-bottom: 0.5rem;">{category}</p>}
+    <h1>{title}</h1>
+    {pubDate && (
+      <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-top: 0.5rem;">
+        {new Date(pubDate).toLocaleDateString('it-IT', { year: 'numeric', month: 'long', day: 'numeric' })}
+      </p>
+    )}
+  </div>
+
+  {heroImage && (
+    <div style="max-width: 860px; margin: 2rem auto; padding: 0 2rem;">
+      <img src={heroImage} alt={title} style="width:100%; border-radius: 8px;" />
+    </div>
+  )}
+
+  <div class="single-post-content">
+    <slot />
+  </div>
+</BaseLayout>

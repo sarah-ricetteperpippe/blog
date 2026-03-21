@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+);
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Blog">
+  <div class="blog-header">
+    <h1>Il Blog</h1>
+    <p style="color: var(--color-text-muted);">Tutte le ricette, i trucchi e le avventure in cucina.</p>
+  </div>
+
+  <div class="blog-grid">
+    {posts.map(post => (
+      <a href={`${base}blog/${post.slug}/`} class="blog-card">
+        {post.data.heroImage && (
+          <img class="blog-card-image" src={post.data.heroImage} alt={post.data.title} />
+        )}
+        <div class="blog-card-meta">
+          <span class="blog-card-author">Sarah</span>
+          <span class="blog-card-date">
+            {new Date(post.data.pubDate).toLocaleDateString('it-IT', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </span>
+        </div>
+        <div class="blog-card-body">
+          <h2>{post.data.title}</h2>
+          <p>{post.data.description}</p>
+        </div>
+      </a>
+    ))}
+  </div>
+</BaseLayout>
