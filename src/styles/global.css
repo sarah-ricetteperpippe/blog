@@ -110,6 +110,21 @@ p {
 .header-nav a:hover { color: var(--color-primary-green); }
 
 /* ============================
+   Language Switcher
+   ============================ */
+.lang-switcher { display: flex; gap: 0.4rem; align-items: center; }
+
+.lang-flag {
+  font-size: 1.4rem;
+  line-height: 1;
+  opacity: 0.45;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+.lang-flag:hover { opacity: 0.8; transform: scale(1.15); }
+.lang-flag--active { opacity: 1; transform: scale(1.1); }
+
+/* ============================
    Hero
    ============================ */
 .hero-section {
@@ -238,55 +253,585 @@ p {
 .recipes-cta { text-align: center; margin-top: var(--spacing-lg); }
 
 /* ============================
-   Blog Page
+   Blog Hero + Search
    ============================ */
-.blog-header { padding: var(--spacing-md) 2rem; }
-.blog-header h1 { color: var(--color-primary-orange); font-size: 3rem; }
+.blog-hero {
+  background: var(--color-primary-green-bg);
+  text-align: center;
+  padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+}
+.blog-hero-title {
+  font-size: 3.5rem;
+  color: var(--color-primary-orange);
+  margin-bottom: 0.5rem;
+}
+.blog-hero-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  margin-bottom: var(--spacing-md);
+}
 
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  padding: 0 2rem var(--spacing-lg);
+.search-wrapper {
+  position: relative;
+  max-width: 540px;
+  margin: 0 auto;
+}
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  pointer-events: none;
+}
+.search-input {
+  width: 100%;
+  padding: 0.85rem 1.25rem 0.85rem 2.75rem;
+  border: 2px solid var(--color-primary-green);
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  background: var(--color-white);
+  color: var(--color-text-dark);
+  outline: none;
+  transition: var(--transition);
+}
+.search-input:focus { border-color: var(--color-primary-orange); box-shadow: 0 0 0 3px rgba(231,110,81,0.15); }
+.search-input::placeholder { color: var(--color-text-muted); }
+
+/* ============================
+   Filtri categoria
+   ============================ */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: var(--spacing-md) var(--spacing-md) 0.5rem;
   max-width: 1200px;
+  margin: 0 auto;
+}
+.filter-pill {
+  padding: 0.45rem 1.1rem;
+  border-radius: 50px;
+  border: 2px solid var(--color-primary-green);
+  background: transparent;
+  color: var(--color-primary-green);
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.filter-pill:hover { background: var(--color-primary-green-bg); }
+.filter-pill--active {
+  background: var(--color-primary-green);
+  color: var(--color-white);
+}
+
+/* ============================
+   Blog Masonry Grid + Cards
+   ============================ */
+.blog-grid {
+  columns: 2;
+  column-gap: 1.5rem;
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-lg);
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .blog-card {
-  background: var(--color-bg-light);
-  border-radius: var(--radius-md);
+  break-inside: avoid;
+  display: block;
+  background: var(--color-white);
+  border-radius: 0;
+  overflow: hidden;
+  border: 1px solid #AED298;
+  transition: var(--transition);
+  margin-bottom: 1.5rem;
+}
+.blog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(89,125,56,0.15);
+}
+
+.blog-card-image-wrap { position: relative; overflow: hidden; }
+/* Le immagini reali usano la loro proporzione naturale — masonry effect! */
+.blog-card-image { width: 100%; display: block; object-fit: cover; }
+.blog-card-image-placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: var(--color-primary-green-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.blog-card-category {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background: var(--color-primary-orange);
+  color: var(--color-white);
+  font-family: var(--font-small);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 0;
+}
+
+.blog-card-body { padding: 1rem 1.1rem 1.1rem; }
+.blog-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-primary-orange);
+  margin-bottom: 0.4rem;
+  line-height: 1.2;
+}
+.blog-card-excerpt { font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.45; margin-bottom: 0.75rem; }
+.blog-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+.blog-card-by { font-weight: 600; color: var(--color-text-dark); }
+
+.blog-card-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+
+/* ============================
+   Tag chip (usato anche in Post)
+   ============================ */
+.tag-chip {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 50px;
+  background: var(--color-primary-green-bg);
+  color: var(--color-primary-green);
+  font-family: var(--font-small);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.no-results-msg {
+  text-align: center;
+  padding: var(--spacing-lg);
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+}
+
+/* ============================
+   Pagina Ricetta (Post)
+   ============================ */
+.post-header {
+  background: linear-gradient(160deg, var(--color-primary-green-bg) 0%, #eaf3da 100%);
+  padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+  text-align: center;
+  border-bottom: 3px solid var(--color-green-olive);
+}
+.post-header-inner { max-width: 760px; margin: 0 auto; }
+
+.post-category-badge {
+  display: inline-block;
+  background: var(--color-primary-orange);
+  color: var(--color-white);
+  font-family: var(--font-small);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.3rem 0.9rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+.post-title {
+  font-size: 3.2rem;
+  color: var(--color-primary-orange);
+  margin-bottom: 0.75rem;
+}
+.post-description {
+  font-size: 1.15rem;
+  color: var(--color-text-dark);
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  line-height: 1.45;
+}
+.post-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  font-family: var(--font-small);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+.post-author { font-weight: 600; color: var(--color-primary-green); }
+
+.post-hero-image {
+  max-width: 900px;
+  margin: var(--spacing-md) auto 0;
+  padding: 0 var(--spacing-md);
+}
+.post-hero-image img { width: 100%; border-radius: var(--radius-md); box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+
+/* ============================
+   Contenuto Markdown ricetta
+   ============================ */
+.post-content {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: var(--spacing-lg) var(--spacing-md);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+/* Paragrafo intro */
+.post-content > p:first-child {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--color-text-dark);
+  border-left: 4px solid var(--color-primary-orange);
+  padding-left: 1.25rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.post-content p { font-size: 1.1rem; line-height: 1.5; margin-bottom: 1.25rem; color: var(--color-text-dark); }
+
+/* Titoli sezione (Informazioni rapide, Ingredienti, Procedimento) */
+.post-content h2 {
+  font-size: 1.85rem;
+  color: var(--color-primary-green);
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--color-green-olive);
+}
+.post-content h3 { font-size: 1.3rem; color: var(--color-primary-orange); margin: 1.5rem 0 0.5rem; }
+
+/* Lista ingredienti (ul) */
+.post-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  line-height: 1;
+}
+.post-content ul li {
+  padding: 0.5rem 0.75rem 0.5rem 2.25rem;
+  position: relative;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.post-content ul li::before {
+  content: '✦';
+  position: absolute;
+  left: 0.75rem;
+  color: var(--color-primary-green);
+  font-size: 0.7rem;
+  top: 0.65rem;
+}
+
+/* Lista procedimento (ol) */
+.post-content ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  counter-reset: steps;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.post-content ol li {
+  counter-increment: steps;
+  padding: 0.75rem 1rem 0.75rem 3.5rem;
+  position: relative;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+/* Checkbox step */
+.step-check {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 2px solid var(--color-primary-orange);
+  vertical-align: middle;
+  margin-left: 0.6rem;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+.step-check.checked {
+  background: var(--color-primary-orange);
+  border-color: var(--color-primary-green);
+  background: var(--color-primary-green);
+}
+.step-check.checked::after {
+  content: '';
+  position: absolute;
+  left: 0.18rem;
+  top: 0.02rem;
+  width: 0.45rem;
+  height: 0.7rem;
+  border: 2.5px solid #fff;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+}
+.post-content ol li::before {
+  content: counter(steps);
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.75rem;
+  height: 1.75rem;
+  background: var(--color-primary-orange);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-small);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* Blockquote (consigli, note) */
+.post-content blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  background: #fffbf0;
+  border-left: 4px solid var(--color-primary-orange);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  color: var(--color-text-dark);
+}
+.post-content blockquote p { font-size: 1.1rem; line-height: 1.5; margin: 0; }
+
+/* Strong / em */
+.post-content strong { color: var(--color-primary-green); font-weight: 700; }
+.post-content em { color: var(--color-primary-orange); }
+
+/* Immagini nel contenuto */
+.post-content img { border-radius: var(--radius-md); margin: var(--spacing-md) 0; width: 100%; }
+
+/* ============================
+   Tags + Back link
+   ============================ */
+.post-tags-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md) var(--spacing-md);
+}
+
+.post-back {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md) var(--spacing-xl);
+}
+.post-back-link {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-primary-green);
+  border-bottom: 2px solid var(--color-primary-green);
+  padding-bottom: 2px;
+  transition: var(--transition);
+}
+.post-back-link:hover { color: var(--color-primary-orange); border-color: var(--color-primary-orange); }
+
+/* ============================
+   Post Meta (avatar + info)
+   ============================ */
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.post-meta-avatar {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: var(--color-primary-green);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.post-meta-info { display: flex; flex-direction: column; align-items: flex-start; }
+.post-author { font-family: var(--font-body); font-size: 0.9rem; font-weight: 700; color: var(--color-text-dark); }
+.post-meta-sub { font-family: var(--font-small); font-size: 0.78rem; color: var(--color-text-muted); display: flex; gap: 0.3rem; }
+.post-meta-dot { color: var(--color-text-muted); }
+
+/* ============================
+   Blog Card Meta (avatar + info)
+   ============================ */
+.blog-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1.1rem 0.5rem;
+}
+.blog-card-avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--color-primary-green);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.blog-card-meta-info { display: flex; flex-direction: column; flex: 1; }
+.blog-card-author { font-family: var(--font-small); font-size: 0.82rem; font-weight: 700; color: var(--color-text-dark); }
+.blog-card-meta-sub { display: flex; gap: 0.3rem; align-items: center; font-family: var(--font-small); font-size: 0.75rem; color: var(--color-text-muted); }
+.blog-card-dot { color: var(--color-text-muted); }
+.blog-card-readtime { color: var(--color-text-muted); }
+
+/* ============================
+   Blog Card Footer (stats + like)
+   ============================ */
+.blog-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1.1rem 0.75rem;
+  border-top: 1px solid #e8e4e0;
+  margin-top: 0.5rem;
+}
+.blog-card-stats { display: flex; gap: 1rem; font-family: var(--font-small); font-size: 0.75rem; color: var(--color-text-muted); }
+.like-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  transition: transform 0.15s ease;
+  line-height: 1;
+}
+.like-btn:hover { transform: scale(1.2); }
+.like-heart { font-size: 1.1rem; color: var(--color-text-muted); transition: color 0.2s; }
+.like-btn.liked .like-heart { color: #e74c6a; }
+
+/* ============================
+   Post Actions (like + share)
+   ============================ */
+.post-divider {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  border-top: 1px solid #e8e4e0;
+}
+.post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 1.25rem var(--spacing-md);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.post-like-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: none;
+  border: 1.5px solid #e8e4e0;
+  border-radius: 50px;
+  padding: 0.45rem 1.1rem;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  transition: var(--transition);
+}
+.post-like-btn:hover { border-color: #e74c6a; color: #e74c6a; }
+.post-like-btn.liked { border-color: #e74c6a; color: #e74c6a; background: #fff0f3; }
+.post-like-heart { font-size: 1.1rem; }
+.post-like-label { font-weight: 600; }
+
+.post-share { display: flex; align-items: center; gap: 0.5rem; }
+.post-share-label { font-family: var(--font-small); font-size: 0.82rem; color: var(--color-text-muted); margin-right: 0.25rem; }
+.share-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  border: 1.5px solid #e8e4e0;
+  background: none;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+.share-btn:hover { border-color: var(--color-primary-green); color: var(--color-primary-green); }
+.share-btn--whatsapp:hover { border-color: #25D366; color: #25D366; }
+.share-btn--twitter:hover { border-color: #000; color: #000; }
+.share-btn.copied { border-color: var(--color-primary-green); color: var(--color-primary-green); font-size: 0.7rem; }
+
+/* ============================
+   Post Correlati
+   ============================ */
+.post-related {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-md);
+  border-top: 1px solid #e8e4e0;
+}
+.post-related-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-primary-green);
+  margin-bottom: 1rem;
+}
+.post-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.post-related-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid #AED298;
   overflow: hidden;
   transition: var(--transition);
 }
-.blog-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
-.blog-card-image { width: 100%; aspect-ratio: 16/10; object-fit: cover; }
-
-.blog-card-meta { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem 0; }
-.blog-card-author { font-size: 0.85rem; font-weight: 600; color: var(--color-text-dark); }
-.blog-card-date { font-size: 0.8rem; color: var(--color-text-muted); }
-
-.blog-card-body { padding: 0.5rem 1rem 1rem; }
-.blog-card-body h2 { font-size: 1.5rem; color: var(--color-primary-orange); margin-bottom: 0.5rem; }
-.blog-card-body p { font-size: 0.9rem; color: var(--color-text-muted); }
-
-/* ============================
-   Single Post
-   ============================ */
-.single-post-header {
-  text-align: center;
-  padding: var(--spacing-lg) var(--spacing-md);
+.post-related-card:hover { transform: translateY(-3px); box-shadow: 0 4px 14px rgba(89,125,56,0.12); }
+.post-related-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+.post-related-placeholder {
+  width: 100%; aspect-ratio: 4/3;
   background: var(--color-primary-green-bg);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem;
 }
-.single-post-header h1 { font-size: 3.5rem; margin-bottom: var(--spacing-sm); }
-
-.single-post-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: var(--spacing-lg) var(--spacing-md);
+.post-related-name {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  color: var(--color-primary-orange);
+  padding: 0.4rem 0.6rem 0.6rem;
+  line-height: 1.2;
 }
-.single-post-content p { font-size: 1.125rem; line-height: 1.6; margin-bottom: 1.5rem; }
-.single-post-content img { border-radius: var(--radius-md); margin: var(--spacing-md) 0; }
-.single-post-content h2 { margin: 2rem 0 1rem; }
 
 /* ============================
    Footer
@@ -306,13 +851,18 @@ p {
    ============================ */
 @media (max-width: 900px) {
   .recipes-grid { grid-template-columns: repeat(2, 1fr); }
-  .blog-grid { grid-template-columns: 1fr; }
   h1 { font-size: 2.8rem; }
   .hero-title { font-size: 3rem; }
+  .blog-hero-title { font-size: 2.6rem; }
+  .post-title { font-size: 2.4rem; }
 }
 
 @media (max-width: 600px) {
+  .blog-grid { columns: 1; }   /* una colonna su mobile */
   .recipes-grid { grid-template-columns: 1fr; }
   .site-footer { flex-direction: column; gap: 1rem; text-align: center; }
   .header-nav { display: none; }
+  .filter-bar { padding: 1rem; }
+  .post-content ol li::before { top: 1rem; transform: none; }
 }
+

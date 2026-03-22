@@ -1,0 +1,215 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'it' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'fr' } },
+  ];
+}
+
+const { lang } = Astro.params;
+const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+
+const allPosts = await getCollection('blog');
+const posts = allPosts
+  .filter(p => p.id.startsWith(`${lang}/`))
+  .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
+
+const slug = (post: any) => post.id.replace(`${lang}/`, '').replace(/\.md$/, '');
+
+// Calcola tempo di lettura dal body grezzo
+function readingTime(body: string): number {
+  const words = body.trim().split(/\s+/).length;
+  return Math.max(1, Math.ceil(words / 200));
+}
+
+const categories = [...new Set(
+  posts.map(p => p.data.category).filter(Boolean)
+)].sort() as string[];
+
+const ui = {
+  it: {
+    title: 'Il Blog',
+    subtitle: 'Tutte le ricette, i trucchi e le avventure in cucina.',
+    searchPlaceholder: 'Cerca ricette, ingredienti, categorie...',
+    filterAll: 'Tutte',
+    noResults: "Nessuna ricetta trovata. Prova con un'altra parola chiave!",
+    by: 'di',
+    readTime: (n: number) => `Tempo di lettura: ${n} min`,
+  },
+  en: {
+    title: 'The Blog',
+    subtitle: 'All the recipes, tips, and kitchen adventures.',
+    searchPlaceholder: 'Search recipes, ingredients, categories...',
+    filterAll: 'All',
+    noResults: 'No recipes found. Try a different keyword!',
+    by: 'by',
+    readTime: (n: number) => `${n} min read`,
+  },
+  fr: {
+    title: 'Le Blog',
+    subtitle: 'Toutes les recettes, astuces et aventures en cuisine.',
+    searchPlaceholder: 'Chercher recettes, ingrédients, catégories...',
+    filterAll: 'Toutes',
+    noResults: 'Aucune recette trouvée. Essayez un autre mot-clé !',
+    by: 'par',
+    readTime: (n: number) => `${n} min de lecture`,
+  },
+} as const;
+
+const t = ui[lang as keyof typeof ui] ?? ui.it;
+
+const dateLocale = { it: 'it-IT', en: 'en-GB', fr: 'fr-FR' } as const;
+const locale = dateLocale[lang as keyof typeof dateLocale];
+
+function shortDate(date: Date) {
+  return date.toLocaleDateString(locale, { day: 'numeric', month: 'short' });
+}
+---
+
+<BaseLayout title={t.title} lang={lang}>
+
+  <div class="blog-hero">
+    <h1 class="blog-hero-title">{t.title}</h1>
+    <p class="blog-hero-subtitle">{t.subtitle}</p>
+    <div class="search-wrapper">
+      <span class="search-icon">🔍</span>
+      <input
+        type="search"
+        id="recipe-search"
+        class="search-input"
+        placeholder={t.searchPlaceholder}
+        autocomplete="off"
+      />
+    </div>
+  </div>
+
+  {categories.length > 0 && (
+    <div class="filter-bar">
+      <button class="filter-pill filter-pill--active" data-category="all">
+        {t.filterAll}
+      </button>
+      {categories.map(cat => (
+        <button class="filter-pill" data-category={cat}>{cat}</button>
+      ))}
+    </div>
+  )}
+
+  <div class="blog-grid" id="recipes-grid">
+    {posts.map(post => {
+      const mins = readingTime(post.body);
+      const postSlug = slug(post);
+      return (
+        <article
+          class="blog-card"
+          data-category={post.data.category ?? ''}
+          data-search={`${post.data.title} ${post.data.description ?? ''} ${(post.data.tags ?? []).join(' ')} ${post.data.category ?? ''}`}
+          data-slug={postSlug}
+        >
+          <a href={`${base}${lang}/blog/${postSlug}/`} class="blog-card-link">
+            <div class="blog-card-image-wrap">
+              {post.data.heroImage
+                ? <img class="blog-card-image" src={post.data.heroImage} alt={post.data.title} loading="lazy" />
+                : <div class="blog-card-image-placeholder">🍳</div>
+              }
+              {post.data.category && (
+                <span class="blog-card-category">{post.data.category}</span>
+              )}
+            </div>
+
+            <div class="blog-card-body">
+              <!-- Meta: avatar + nome + data + tempo lettura -->
+              <div class="blog-card-meta">
+                <div class="blog-card-avatar" aria-hidden="true">S</div>
+                <div class="blog-card-meta-info">
+                  <span class="blog-card-author">Sarah Lasaracina</span>
+                  <span class="blog-card-meta-sub">
+                    <span class="blog-card-date">{shortDate(new Date(post.data.pubDate))}</span>
+                    <span class="blog-card-dot">·</span>
+                    <span class="blog-card-readtime">{t.readTime(mins)}</span>
+                  </span>
+                </div>
+              </div>
+
+              <h2 class="blog-card-title">{post.data.title}</h2>
+              <p class="blog-card-excerpt">{post.data.description}</p>
+            </div>
+          </a>
+
+          <!-- Separatore + footer stats (fuori dal link) -->
+          <div class="blog-card-footer">
+            <div class="blog-card-stats">
+              <span class="blog-card-stat">0 visualizzazioni</span>
+              <span class="blog-card-stat">0 commenti</span>
+            </div>
+            <button class="like-btn" data-post-id={postSlug} aria-label="Mi piace">
+              <span class="like-heart">♡</span>
+            </button>
+          </div>
+        </article>
+      );
+    })}
+  </div>
+
+  <p id="no-results" class="no-results-msg" style="display:none">
+    {t.noResults}
+  </p>
+
+</BaseLayout>
+
+<script>
+  // --- Filtro + ricerca ---
+  const pills = document.querySelectorAll<HTMLButtonElement>('.filter-pill');
+  const cards = document.querySelectorAll<HTMLElement>('.blog-card');
+  const searchInput = document.getElementById('recipe-search') as HTMLInputElement;
+  const noResults = document.getElementById('no-results') as HTMLElement;
+
+  let activeCategory = 'all';
+  let searchQuery = '';
+
+  function filterCards() {
+    let visible = 0;
+    cards.forEach(card => {
+      const cat = card.dataset.category ?? '';
+      const text = (card.dataset.search ?? '').toLowerCase();
+      const matchCat = activeCategory === 'all' || cat === activeCategory;
+      const matchSearch = searchQuery === '' || text.includes(searchQuery);
+      const show = matchCat && matchSearch;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    noResults.style.display = visible === 0 ? 'block' : 'none';
+  }
+
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      pills.forEach(p => p.classList.remove('filter-pill--active'));
+      pill.classList.add('filter-pill--active');
+      activeCategory = pill.dataset.category ?? 'all';
+      filterCards();
+    });
+  });
+
+  searchInput.addEventListener('input', e => {
+    searchQuery = (e.target as HTMLInputElement).value.toLowerCase().trim();
+    filterCards();
+  });
+
+  // --- Like button con localStorage ---
+  document.querySelectorAll<HTMLButtonElement>('.like-btn').forEach(btn => {
+    const id = btn.dataset.postId ?? '';
+    const heart = btn.querySelector('.like-heart') as HTMLElement;
+    if (localStorage.getItem(`liked-${id}`) === 'true') {
+      btn.classList.add('liked');
+      heart.textContent = '♥';
+    }
+    btn.addEventListener('click', () => {
+      const isLiked = btn.classList.toggle('liked');
+      heart.textContent = isLiked ? '♥' : '♡';
+      localStorage.setItem(`liked-${id}`, String(isLiked));
+    });
+  });
+</script>

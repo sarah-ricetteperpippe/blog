@@ -1,34 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getCollection } from 'astro:content';
-
-const base = import.meta.env.BASE_URL;
-
-// Filtra i post con category "Ricette" o simili
-const allPosts = (await getCollection('blog')).sort(
-  (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
-);
+// Redirect alla pagina blog italiana
+const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+return Astro.redirect(`${base}it/blog/`);
 ---
-
-<BaseLayout title="Ricette">
-  <div class="blog-header">
-    <h1>Le Ricette</h1>
-    <p style="color: var(--color-text-muted);">Tutte le ricette — semplici, golose, a prova di pippa.</p>
-  </div>
-
-  <div class="recipes-section" style="padding-top: 0;">
-    <div class="recipes-grid">
-      {allPosts.map(post => (
-        <a href={`${base}blog/${post.slug}/`} class="recipe-card">
-          {post.data.heroImage && (
-            <img src={post.data.heroImage} alt={post.data.title} />
-          )}
-          <div class="recipe-card-content">
-            <h3 class="recipe-card-title">{post.data.title}</h3>
-            <p class="recipe-card-excerpt">{post.data.description}</p>
-          </div>
-        </a>
-      ))}
-    </div>
-  </div>
-</BaseLayout>

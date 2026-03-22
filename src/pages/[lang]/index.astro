@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'it' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'fr' } },
+  ];
+}
+
+const { lang } = Astro.params;
+const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+
+const allPosts = await getCollection('blog');
+const posts = allPosts
+  .filter(p => p.id.startsWith(`${lang}/`))
+  .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf())
+  .slice(0, 4);
+
+const slug = (post: any) => post.id.replace(`${lang}/`, '').replace(/\.md$/, '');
+
+const ui = {
+  it: {
+    heroTitle: 'Le migliori ricette\nper le peggiori pippe in cucina!',
+    heroDesc: 'Benvenuti su Ricette per pippe, il luogo perfetto per scoprire nuove ricette a prova di incapace, testate e approvate da Sarah.',
+    cta: 'Scopri di più',
+    subscribe: 'Iscriviti',
+    latest: 'Ultimi articoli',
+    allPosts: 'Tutti gli articoli →',
+    marquee: ['Se può farlo una pippa come me', 'puoi farlo anche tu!'],
+  },
+  en: {
+    heroTitle: 'The best recipes\nfor the worst cooks in the kitchen!',
+    heroDesc: 'Welcome to Ricette per pippe, the perfect place to discover new foolproof recipes, tested and approved by Sarah.',
+    cta: 'Discover more',
+    subscribe: 'Subscribe',
+    latest: 'Latest posts',
+    allPosts: 'All posts →',
+    marquee: ['If a total klutz like me can do it', 'so can you!'],
+  },
+  fr: {
+    heroTitle: 'Les meilleures recettes\npour les pires cuisiniers !',
+    heroDesc: 'Bienvenue sur Ricette per pippe, le lieu idéal pour découvrir des recettes simples et infaillibles, testées et approuvées par Sarah.',
+    cta: 'Découvrir',
+    subscribe: "S'abonner",
+    latest: 'Derniers articles',
+    allPosts: 'Tous les articles →',
+    marquee: ['Si une quiche comme moi peut le faire', 'vous pouvez le faire aussi !'],
+  },
+} as const;
+
+const t = ui[lang as keyof typeof ui] ?? ui.it;
+const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
+---
+
+<BaseLayout title="Home" lang={lang}>
+
+  <section class="hero-section">
+    <h1 class="hero-title">{t.heroTitle.split('\n').map((line, i) => <>{line}{i === 0 && <br/>}</>)}</h1>
+    <p class="hero-description">{t.heroDesc}</p>
+    <div class="hero-buttons">
+      <a href={`${base}${lang}/blog/`} class="btn-primary">{t.cta}</a>
+      <a href={`${base}${lang}/blog/`} class="btn-secondary">{t.subscribe}</a>
+    </div>
+  </section>
+
+  <section class="marquee-section">
+    <div class="marquee-inner">
+      {marqueeItems.map(item => <span>{item}</span>)}
+    </div>
+  </section>
+
+  <section class="recipes-section">
+    <h2 class="section-title">{t.latest}</h2>
+    <div class="recipes-grid">
+      {posts.map(post => (
+        <a href={`${base}${lang}/blog/${slug(post)}/`} class="recipe-card">
+          {post.data.heroImage && (
+            <img src={post.data.heroImage} alt={post.data.title} />
+          )}
+          <div class="recipe-card-content">
+            <h3 class="recipe-card-title">{post.data.title}</h3>
+            <p class="recipe-card-excerpt">{post.data.description}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+    <div class="recipes-cta">
+      <a href={`${base}${lang}/blog/`} class="btn-primary">{t.allPosts}</a>
+    </div>
+  </section>
+
+</BaseLayout>
