@@ -110,6 +110,21 @@ p {
 .header-nav a:hover { color: var(--color-primary-green); }
 
 /* ============================
+   Header Search (Pagefind)
+   ============================ */
+.header-search {
+  flex: 0 1 220px;
+}
+.header-search .pagefind-ui {
+  --pagefind-ui-scale: 0.8;
+  --pagefind-ui-primary: var(--color-primary-green);
+  --pagefind-ui-text: var(--color-text-dark);
+  --pagefind-ui-background: var(--color-white);
+  --pagefind-ui-border: var(--color-primary-green);
+  --pagefind-ui-border-radius: 50px;
+}
+
+/* ============================
    Language Switcher
    ============================ */
 .lang-switcher { display: flex; gap: 0.4rem; align-items: center; }
@@ -483,7 +498,7 @@ p {
    Contenuto Markdown ricetta
    ============================ */
 .post-content {
-  max-width: 780px;
+  max-width: 900px;
   margin: 0 auto;
   padding: var(--spacing-lg) var(--spacing-md);
   font-size: 0.88rem;

@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Search from 'astro-pagefind/components/Search';
 
 export interface Props {
   title: string;
@@ -61,6 +62,9 @@ function switchLangUrl(targetLang: string) {
       <a href={`${base}${lang}/`}>{t.home}</a>
       <a href={`${base}${lang}/blog/`}>{t.blog}</a>
     </nav>
+    <div class="header-search">
+      <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
+    </div>
     <div class="lang-switcher">
       {flags.map(({ code, flag, label }) => (
         <a
