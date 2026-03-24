@@ -12,9 +12,9 @@ const { title, description = "Le migliori ricette per le peggiori pippe in cucin
 const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 
 const navLabels = {
-  it: { home: 'Home', blog: 'Blog', recipes: 'Ricette' },
-  en: { home: 'Home', blog: 'Blog', recipes: 'Recipes' },
-  fr: { home: 'Accueil', blog: 'Blog', recipes: 'Recettes' },
+  it: { home: 'Home', blog: 'Blog', recipes: 'Ricette', close: 'Chiudi', search: 'Cerca' },
+  en: { home: 'Home', blog: 'Blog', recipes: 'Recipes', close: 'Close', search: 'Search' },
+  fr: { home: 'Accueil', blog: 'Blog', recipes: 'Recettes', close: 'Fermer', search: 'Chercher' },
 } as const;
 
 const t = navLabels[lang as keyof typeof navLabels] ?? navLabels.it;
@@ -25,9 +25,6 @@ const flags = [
   { code: 'fr', flag: '🇫🇷', label: 'Français' },
 ];
 
-// Costruisce l'URL equivalente nella lingua scelta
-// (funziona perché tutte le pagine seguono /<lang>/... )
-const currentPath = Astro.url.pathname.replace(base, '');
 function switchLangUrl(targetLang: string) {
   const withoutBase = Astro.url.pathname.replace(base.replace(/\/$/, ''), '');
   const parts = withoutBase.split('/').filter(Boolean);
@@ -62,9 +59,11 @@ function switchLangUrl(targetLang: string) {
       <a href={`${base}${lang}/`}>{t.home}</a>
       <a href={`${base}${lang}/blog/`}>{t.blog}</a>
     </nav>
-    <div class="header-search">
-      <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
-    </div>
+    <button class="search-trigger" id="search-trigger" aria-label={t.search}>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </button>
     <div class="lang-switcher">
       {flags.map(({ code, flag, label }) => (
         <a
@@ -79,6 +78,17 @@ function switchLangUrl(targetLang: string) {
     </div>
   </header>
 
+  <!-- Search Modal -->
+  <div class="search-modal" id="search-modal" aria-hidden="true">
+    <div class="search-modal-backdrop" id="search-modal-backdrop"></div>
+    <div class="search-modal-panel">
+      <div class="search-modal-topbar">
+        <button class="search-modal-close" id="search-modal-close">{t.close}</button>
+      </div>
+      <Search id="search" className="pagefind-ui pagefind-modal-ui" uiOptions={{ showImages: true }} />
+    </div>
+  </div>
+
   <main>
     <slot />
   </main>
@@ -87,6 +97,36 @@ function switchLangUrl(targetLang: string) {
     <span class="footer-tagline">Ricette per Pippe — cucina senza paura</span>
     <span class="footer-copyright">© {new Date().getFullYear()} Sarah Lasaracina</span>
   </footer>
+
+  <script>
+    const trigger = document.getElementById('search-trigger');
+    const modal = document.getElementById('search-modal');
+    const backdrop = document.getElementById('search-modal-backdrop');
+    const closeBtn = document.getElementById('search-modal-close');
+
+    function openModal() {
+      modal?.classList.add('is-open');
+      modal?.removeAttribute('aria-hidden');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => {
+        const input = modal?.querySelector('input[type="text"]') as HTMLInputElement;
+        input?.focus();
+      }, 80);
+    }
+
+    function closeModal() {
+      modal?.classList.remove('is-open');
+      modal?.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    trigger?.addEventListener('click', openModal);
+    backdrop?.addEventListener('click', closeModal);
+    closeBtn?.addEventListener('click', closeModal);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
 
 </body>
 </html>

@@ -110,18 +110,212 @@ p {
 .header-nav a:hover { color: var(--color-primary-green); }
 
 /* ============================
-   Header Search (Pagefind)
+   Search trigger (header icon)
    ============================ */
-.header-search {
-  flex: 0 1 220px;
+.search-trigger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-dark);
+  display: flex;
+  align-items: center;
+  padding: 0.4rem;
+  border-radius: 50%;
+  transition: var(--transition);
 }
-.header-search .pagefind-ui {
-  --pagefind-ui-scale: 0.8;
+.search-trigger:hover {
+  color: var(--color-primary-green);
+  background: var(--color-primary-green-bg);
+}
+
+/* ============================
+   Search Modal Overlay
+   ============================ */
+.search-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+}
+.search-modal.is-open { display: block; }
+
+.search-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(29, 14, 3, 0.45);
+  backdrop-filter: blur(3px);
+}
+
+.search-modal-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(92vw, 880px);
+  max-height: 82vh;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow-y: auto;
+  padding: 1.5rem 2rem 2rem;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+.search-modal-topbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.search-modal-close {
+  background: none;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: var(--transition);
+}
+.search-modal-close:hover { color: var(--color-text-dark); }
+
+/* ============================
+   Pagefind UI inside modal
+   ============================ */
+.pagefind-modal-ui {
+  --pagefind-ui-scale: 1;
   --pagefind-ui-primary: var(--color-primary-green);
   --pagefind-ui-text: var(--color-text-dark);
   --pagefind-ui-background: var(--color-white);
   --pagefind-ui-border: var(--color-primary-green);
   --pagefind-ui-border-radius: 50px;
+  --pagefind-ui-font: 'Fraunces', 'Georgia', serif;
+}
+
+/* Input grande */
+.pagefind-modal-ui .pagefind-ui__search-input {
+  font-family: var(--font-body) !important;
+  font-size: 1.1rem !important;
+  color: var(--color-text-dark) !important;
+  background: var(--color-bg-light) !important;
+  border: 2px solid var(--color-primary-green) !important;
+  border-radius: 50px !important;
+  padding: 0.85rem 1.25rem 0.85rem 3rem !important;
+}
+.pagefind-modal-ui .pagefind-ui__search-input:focus {
+  border-color: var(--color-primary-orange) !important;
+  box-shadow: 0 0 0 4px rgba(231, 110, 81, 0.12) !important;
+  outline: none !important;
+}
+
+/* Messaggio conteggio */
+.pagefind-modal-ui .pagefind-ui__message {
+  font-family: var(--font-small) !important;
+  font-size: 0.72rem !important;
+  color: var(--color-text-muted) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 1.25rem 0 0.5rem !important;
+  margin: 0 !important;
+}
+
+/* Griglia risultati */
+.pagefind-modal-ui .pagefind-ui__results {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1rem !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Card risultato */
+.pagefind-modal-ui .pagefind-ui__result {
+  border: 1px solid #e8e4e0 !important;
+  border-radius: var(--radius-md) !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  transition: var(--transition) !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.pagefind-modal-ui .pagefind-ui__result:hover {
+  box-shadow: 0 4px 16px rgba(89, 125, 56, 0.15) !important;
+  transform: translateY(-2px);
+}
+
+/* Immagine risultato */
+.pagefind-modal-ui .pagefind-ui__result-image-container {
+  width: 100% !important;
+  aspect-ratio: 4/3 !important;
+  overflow: hidden !important;
+  background: var(--color-primary-green-bg) !important;
+  flex-shrink: 0 !important;
+}
+.pagefind-modal-ui .pagefind-ui__result-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Contenuto testo */
+.pagefind-modal-ui .pagefind-ui__result-inner {
+  padding: 0.75rem !important;
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.3rem !important;
+}
+
+/* Titolo */
+.pagefind-modal-ui .pagefind-ui__result-link {
+  font-family: var(--font-heading) !important;
+  font-size: 1rem !important;
+  color: var(--color-primary-orange) !important;
+  font-weight: normal !important;
+  line-height: 1.2 !important;
+  display: block !important;
+  padding-right: 0.75rem !important;
+}
+.pagefind-modal-ui .pagefind-ui__result-link:hover { color: var(--color-primary-green) !important; }
+
+/* Excerpt */
+.pagefind-modal-ui .pagefind-ui__result-excerpt {
+  font-family: var(--font-small) !important;
+  font-size: 0.8rem !important;
+  color: var(--color-text-muted) !important;
+  line-height: 1.4 !important;
+  margin: 0 !important;
+  padding-right: 0.75rem !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+/* Keyword evidenziata */
+.pagefind-modal-ui mark {
+  background: rgba(231, 110, 81, 0.18) !important;
+  color: var(--color-primary-orange) !important;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+/* Reset margine p globale nel modal */
+.search-modal-panel p { margin-bottom: 0; }
+
+/* Griglia 2 col su tablet, 1 su mobile */
+@media (max-width: 700px) {
+  .pagefind-modal-ui .pagefind-ui__results {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 480px) {
+  .pagefind-modal-ui .pagefind-ui__results {
+    grid-template-columns: 1fr !important;
+  }
+  .search-modal-panel { padding: 1rem; }
 }
 
 /* ============================

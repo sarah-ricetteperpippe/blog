@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../blog/node_modules"
+		},
+		{
+			"path": "../../../blog/public"
+		},
+		{
+			"path": "../../../blog/src"
+		}
+	],
+	"settings": {}
+}
