@@ -23,13 +23,11 @@ const locale = dateLocale[lang as keyof typeof dateLocale] ?? 'it-IT';
 const backLabel = { it: '← Tutte le ricette', en: '← All recipes', fr: '← Toutes les recettes' } as const;
 const back = backLabel[lang as keyof typeof backLabel] ?? backLabel.it;
 
-// Tempo di lettura
 const wordCount = body.trim().split(/\s+/).length;
 const readMins = Math.max(1, Math.ceil(wordCount / 200));
 const readLabel = { it: `${readMins} min di lettura`, en: `${readMins} min read`, fr: `${readMins} min de lecture` } as const;
 const readTime = readLabel[lang as keyof typeof readLabel];
 
-// Testi condivisione
 const shareLabel = { it: 'Condividi', en: 'Share', fr: 'Partager' } as const;
 const shareText = shareLabel[lang as keyof typeof shareLabel];
 const copyLabel = { it: 'Link copiato!', en: 'Link copied!', fr: 'Lien copié !' } as const;
@@ -39,8 +37,18 @@ const relatedTitle = relatedLabel[lang as keyof typeof relatedLabel];
 const likeLabel = { it: 'Mi piace', en: 'Like', fr: "J'aime" } as const;
 const likeText = likeLabel[lang as keyof typeof likeLabel];
 
-// Post correlati: stessa categoria, altra ricetta
 const allPosts = await getCollection('blog');
+
+const allCategories = [...new Set(
+  allPosts
+    .filter(p => p.id.startsWith(`${lang}/`))
+    .map(p => p.data.category)
+    .filter(Boolean)
+)].sort() as string[];
+
+const catAllLabel = { it: 'Tutte', en: 'All', fr: 'Tout' } as const;
+const catAll = catAllLabel[lang as keyof typeof catAllLabel] ?? 'Tutte';
+
 const related = allPosts
   .filter(p =>
     p.id.startsWith(`${lang}/`) &&
@@ -50,105 +58,132 @@ const related = allPosts
   .slice(0, 3);
 const relSlug = (post: any) => post.id.replace(`${lang}/`, '').replace(/\.md$/, '');
 
-// URL pagina corrente per share
 const pageUrl = `${import.meta.env.SITE}${base}${lang}/blog/${slug}/`;
 const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(title + ' ' + pageUrl)}`;
 const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(pageUrl)}`;
+
+const formattedDate = pubDate
+  ? new Date(pubDate).toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' })
+  : '';
 ---
 
 <BaseLayout title={title} description={description} lang={lang}>
 
-  <!-- Header ricetta -->
-  <div class="post-header">
-    <div class="post-header-inner">
-      {category && <span class="post-category-badge">{category}</span>}
-      <h1 class="post-title">{title}</h1>
-      {description && <p class="post-description">{description}</p>}
-      <div class="post-meta">
+  <div class="post-page">
+
+    <!-- Barra categorie con bordo verde -->
+    <nav class="post-category-nav" aria-label="Categorie">
+      <ul>
+        <li><a href={`${base}${lang}/blog/`}>{catAll}</a></li>
+        {allCategories.map(cat => (
+          <li>
+            <a
+              href={`${base}${lang}/blog/?categoria=${encodeURIComponent(cat)}`}
+              class={cat === category ? 'active' : ''}
+            >{cat}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="post-card">
+
+      <!-- Meta info (come Wix: sopra il titolo) -->
+      <div class="post-card-meta">
         <div class="post-meta-avatar" aria-hidden="true">S</div>
         <div class="post-meta-info">
           <span class="post-author">Sarah Lasaracina</span>
           <span class="post-meta-sub">
-            {pubDate && (
-              <span>{new Date(pubDate).toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' })}</span>
-            )}
-            <span class="post-meta-dot">·</span>
+            {formattedDate && <span>{formattedDate}</span>}
+            {formattedDate && <span class="post-meta-dot">·</span>}
             <span>{readTime}</span>
           </span>
         </div>
       </div>
-    </div>
-  </div>
 
-  {heroImage && (
-    <div class="post-hero-image">
-      <img src={heroImage} alt={title} />
-    </div>
-  )}
+      <!-- Titolo -->
+      <h1 class="post-title">{title}</h1>
 
-  <!-- Contenuto markdown -->
-  <article class="post-content">
-    <slot />
-  </article>
+      <!-- Separatore -->
+      <hr class="post-section-hr" />
 
-  <!-- Tags -->
-  {tags && tags.length > 0 && (
-    <div class="post-tags-section">
-      {tags.map(tag => <span class="tag-chip">{tag}</span>)}
-    </div>
-  )}
+      <!-- Immagine hero -->
+      {heroImage && (
+        <figure class="post-hero-figure">
+          <img src={heroImage} alt={title} />
+        </figure>
+      )}
 
-  <!-- Separatore -->
-  <div class="post-divider"></div>
+      <!-- Contenuto markdown -->
+      <article class="post-content">
+        <slot />
+      </article>
 
-  <!-- Like + Share -->
-  <div class="post-actions">
-    <button class="post-like-btn" data-post-id={slug} aria-label={likeText}>
-      <span class="post-like-heart">♡</span>
-      <span class="post-like-label">{likeText}</span>
-    </button>
+      <!-- Tags -->
+      {tags && tags.length > 0 && (
+        <div class="post-tags-section">
+          {tags.map(tag => <span class="tag-chip">{tag}</span>)}
+        </div>
+      )}
 
-    <div class="post-share">
-      <span class="post-share-label">{shareText}:</span>
-      <a href={whatsappUrl} target="_blank" rel="noopener" class="share-btn share-btn--whatsapp" aria-label="WhatsApp">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
-      <a href={twitterUrl} target="_blank" rel="noopener" class="share-btn share-btn--twitter" aria-label="X / Twitter">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-      </a>
-      <button class="share-btn share-btn--copy" id="copy-link-btn" aria-label="Copia link" data-url={pageUrl} data-copied={copiedText}>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-      </button>
-    </div>
-  </div>
+      <!-- Separatore azioni -->
+      <hr class="post-actions-hr" />
 
-  <!-- Post correlati -->
-  {related.length > 0 && (
-    <div class="post-related">
-      <h3 class="post-related-title">{relatedTitle}</h3>
-      <div class="post-related-grid">
-        {related.map(post => (
-          <a href={`${base}${lang}/blog/${relSlug(post)}/`} class="post-related-card">
-            {post.data.heroImage
-              ? <img src={post.data.heroImage} alt={post.data.title} />
-              : <div class="post-related-placeholder">🍳</div>
-            }
-            <span class="post-related-name">{post.data.title}</span>
+      <!-- Like + Share (stile Wix: icone sinistra, cuore destra) -->
+      <div class="post-actions">
+        <div class="post-share">
+          <a href={whatsappUrl} target="_blank" rel="noopener" class="share-btn share-btn--whatsapp" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           </a>
-        ))}
+          <a href={twitterUrl} target="_blank" rel="noopener" class="share-btn share-btn--twitter" aria-label="X / Twitter">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <button class="share-btn share-btn--copy" id="copy-link-btn" aria-label="Copia link" data-url={pageUrl} data-copied={copiedText}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          </button>
+        </div>
+        <button class="post-like-btn" data-post-id={slug} aria-label={likeText}>
+          <span class="post-like-heart">♡</span>
+        </button>
       </div>
-    </div>
-  )}
 
-  <!-- Torna al blog -->
-  <div class="post-back">
-    <a href={`${base}${lang}/blog/`} class="post-back-link">{back}</a>
-  </div>
+      <!-- Stats -->
+      <div class="post-stats">
+        <span>0 visualizzazioni</span>
+        <span class="post-meta-dot">·</span>
+        <span>0 commenti</span>
+      </div>
+
+    </div><!-- /post-card -->
+
+    <!-- Post correlati -->
+    {related.length > 0 && (
+      <div class="post-related">
+        <h3 class="post-related-title">{relatedTitle}</h3>
+        <div class="post-related-grid">
+          {related.map(post => (
+            <a href={`${base}${lang}/blog/${relSlug(post)}/`} class="post-related-card">
+              {post.data.heroImage
+                ? <img src={post.data.heroImage} alt={post.data.title} />
+                : <div class="post-related-placeholder">🍳</div>
+              }
+              <span class="post-related-name">{post.data.title}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Torna al blog -->
+    <div class="post-back">
+      <a href={`${base}${lang}/blog/`} class="post-back-link">{back}</a>
+    </div>
+
+  </div><!-- /post-page -->
 
 </BaseLayout>
 
 <script>
-  // Like button
   const likeBtn = document.querySelector<HTMLButtonElement>('.post-like-btn');
   if (likeBtn) {
     const id = likeBtn.dataset.postId ?? '';
@@ -164,7 +199,6 @@ const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(t
     });
   }
 
-  // Step checkboxes
   const postId = document.querySelector<HTMLButtonElement>('.post-like-btn')?.dataset.postId ?? location.pathname;
   document.querySelectorAll<HTMLElement>('.post-content ol li').forEach((li, i) => {
     const box = document.createElement('span');
@@ -188,7 +222,6 @@ const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(t
     li.appendChild(box);
   });
 
-  // Copia link
   const copyBtn = document.getElementById('copy-link-btn') as HTMLButtonElement;
   if (copyBtn) {
     copyBtn.addEventListener('click', async () => {
