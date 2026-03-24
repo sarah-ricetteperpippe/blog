@@ -79,6 +79,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
 }
 
 .site-branding { display: flex; align-items: center; gap: 1rem; }
