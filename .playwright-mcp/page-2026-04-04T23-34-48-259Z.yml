@@ -1,0 +1,185 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e177]:
+                - generic:
+                  - generic:
+                    - generic [ref=e186]:
+                      - generic:
+                        - generic:
+                          - heading "Le migliori ricette per le peggiori pippe in cucina!" [level=1] [ref=e190]:
+                            - generic [ref=e193]:
+                              - text: Le migliori ricette
+                              - text: per le peggiori pippe in cucina!
+                          - generic:
+                            - paragraph [ref=e194]:
+                              - text: Benvenuti su
+                              - generic [ref=e195]:
+                                - generic [ref=e196]: Ricette per pippe
+                                - text: ","
+                            - paragraph [ref=e197]: il luogo perfetto per scoprire nuove ricette a prova di incapace, testate e approvate da Sarah.
+                            - paragraph [ref=e198]:
+                              - generic [ref=e199]:
+                                - text: Per pippe in cucina che ambiscono alla mera sopravvivenza,
+                                - text: e per tutte quelle che ogni tanto sperano anche di fare (umilmente) figura!
+                          - link "Scopri di più" [ref=e201] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog
+                            - generic [ref=e202]: Scopri di più
+                          - link "Iscriviti" [ref=e204] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog
+                            - generic [ref=e205]: Iscriviti
+                    - paragraph [ref=e208]:
+                      - generic [ref=e209]:
+                        - generic [ref=e210]:
+                          - generic [ref=e213]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e217]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e221]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e225]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e229]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e233]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e237]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e241]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e245]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e249]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e253]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e257]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e261]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e265]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e269]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e273]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e277]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e281]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e285]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e289]: Se può farlo una pippa come me, puoi farlo anche tu!
+                        - generic [ref=e292]:
+                          - generic [ref=e294]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e298]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e302]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e306]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e310]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e314]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e318]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e322]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e326]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e330]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e334]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e338]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e342]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e346]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e350]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e354]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e358]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e362]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e366]: Se può farlo una pippa come me, puoi farlo anche tu!
+                          - generic [ref=e370]: Se può farlo una pippa come me, puoi farlo anche tu!
+                      - button "Riproduci testo scorrevole":
+                        - img
+                    - img "Taco Dinner Table" [ref=e383]
+              - generic [ref=e384]:
+                - generic:
+                  - generic:
+                    - heading "Ricette alla rinfusa" [level=2] [ref=e397]
+                    - region "Elenco post. Seleziona un post da leggere." [ref=e409]:
+                      - generic [ref=e411]:
+                        - generic [ref=e412]:
+                          - generic [ref=e415] [cursor=pointer]:
+                            - img "Bistecche di funghi" [ref=e416]
+                            - img "Bistecche di funghi" [ref=e417]
+                          - generic [ref=e423]:
+                            - link "Bistecche di funghi strepitose" [ref=e424] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/post/bistecche-di-funghi-strepitose
+                              - heading "Bistecche di funghi strepitose" [level=2] [ref=e427]
+                            - generic [ref=e431] [cursor=pointer]: Questa l'ho improvvisata ed è oggettivamente una bomba... per sapore, per aspetto, per facilità. Mondiale!
+                        - generic [ref=e441]:
+                          - generic [ref=e444] [cursor=pointer]:
+                            - img "piatto di cotolette di funghi" [ref=e445]
+                            - img "piatto di cotolette di funghi" [ref=e446]
+                          - generic [ref=e452]:
+                            - link "Cotolette di funghi cardoncelli" [ref=e453] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/post/cotolette-di-funghi-cardoncelli
+                              - heading "Cotolette di funghi cardoncelli" [level=2] [ref=e456]
+                            - generic [ref=e460] [cursor=pointer]: Sembrano cotolette classiche, sono buone sfiziose e croccano da favola, sono stupita di me stessa!
+                        - generic [ref=e470]:
+                          - generic [ref=e473] [cursor=pointer]:
+                            - img "creme caramel" [ref=e474]
+                            - img "creme caramel" [ref=e475]
+                          - generic [ref=e481]:
+                            - link "Torta Crème Caramel super safe" [ref=e482] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-crème-caramel-super-safe
+                              - heading "Torta Crème Caramel super safe" [level=2] [ref=e485]
+                            - generic [ref=e489] [cursor=pointer]: Un incubo di 7 ore di errori, aggiusti e bestemmie. Ma habemus torta crème caramel per pippe rapida e indolore!
+                    - link "VAI ALLE RICETTE" [ref=e500] [cursor=pointer]:
+                      - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                      - generic [ref=e502]: VAI ALLE RICETTE
+              - generic [ref=e503]:
+                - generic:
+                  - generic:
+                    - img "Outdoor Dinner Gathering" [ref=e521]
+                    - generic [ref=e527]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi ricettine!" [level=3] [ref=e531]
+                          - paragraph [ref=e532]: Vuoi che condivida con te quando accade un (più unico che raro) miracolo nella mia cucina?
+                          - form "New Subscribe-me form" [ref=e539]:
+                            - group [ref=e540]:
+                              - generic [ref=e541]:
+                                - generic [ref=e542]:
+                                  - generic [ref=e544]:
+                                    - generic [ref=e546]:
+                                      - text: Email
+                                      - generic [ref=e547]: "*"
+                                    - textbox "Email" [ref=e552]:
+                                      - /placeholder: e.g., email@example.com
+                                  - button "Condividi la gioia!" [ref=e557] [cursor=pointer]:
+                                    - generic [ref=e558]: Condividi la gioia!
+                                - region
+    - contentinfo [ref=e563]:
+      - generic [ref=e569]:
+        - generic:
+          - generic:
+            - paragraph [ref=e570]:
+              - link "Ricette per pippe" [ref=e575] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e580] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e581]
+              - paragraph [ref=e582]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e583]
+  - region "bottom of page"
