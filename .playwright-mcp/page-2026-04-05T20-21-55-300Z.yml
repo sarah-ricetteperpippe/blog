@@ -1,0 +1,377 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - link "Antispreco" [ref=e207]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                    - listitem [ref=e208]:
+                      - link "Pesti, salse e creme" [ref=e209]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                    - listitem [ref=e210]:
+                      - link "Piatti del mondo" [ref=e211]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                    - listitem [ref=e212]:
+                      - link "Contorni" [ref=e213]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                    - listitem [ref=e214]:
+                      - link "Insalate" [ref=e215]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                    - listitem [ref=e216]:
+                      - link "Frittate" [ref=e217]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                    - listitem [ref=e218]:
+                      - link "Risotti" [ref=e219]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                    - listitem [ref=e220]:
+                      - link "Secondi piatti" [ref=e221]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                    - listitem [ref=e222]:
+                      - link "Torte salate" [ref=e223]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e225]:
+                  - article [ref=e229]:
+                    - generic [ref=e230]:
+                      - generic [ref=e232]:
+                        - generic [ref=e233]:
+                          - heading "Chocolate Chip Cookies" [level=1] [ref=e235]
+                          - list [ref=e237]:
+                            - listitem [ref=e238]:
+                              - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e241]'
+                              - generic [ref=e242] [cursor=pointer]: Sarah Lasaracina
+                            - listitem [ref=e243]: ·28 nov 2025
+                            - listitem [ref=e244]: "·Tempo di lettura: 2 min"
+                        - paragraph [ref=e245]: "Aggiornamento: 23 feb"
+                      - generic [ref=e252]:
+                        - paragraph [ref=e254]:
+                          - generic [ref=e255]: Come quelli dei film!
+                        - separator [ref=e259]:
+                          - img [ref=e261]
+                        - generic [ref=e269]:
+                          - figure [ref=e273]:
+                            - generic [ref=e274]:
+                              - img "Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!" [ref=e277] [cursor=pointer]
+                              - button "Expand image":
+                                - img
+                            - emphasis [ref=e281]:
+                              - generic [ref=e282]: Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!
+                          - list [ref=e284]:
+                            - listitem [level=1] [ref=e285]:
+                              - paragraph [ref=e286]:
+                                - generic [ref=e287]:
+                                  - strong [ref=e288]: "Porzioni:"
+                                  - text: 30 cookies da 5/6 cm
+                            - listitem [level=1] [ref=e289]:
+                              - paragraph [ref=e290]:
+                                - strong [ref=e292]: "Tempo di preparazione:"
+                            - listitem [level=1] [ref=e293]:
+                              - paragraph [ref=e294]:
+                                - generic [ref=e295]: 15 min + 30/60 min in frigo
+                            - listitem [level=1] [ref=e296]:
+                              - paragraph [ref=e297]:
+                                - generic [ref=e298]:
+                                  - strong [ref=e299]: "Tempo di cottura:"
+                                  - text: 10–12 min
+                            - listitem [level=1] [ref=e300]:
+                              - paragraph [ref=e301]:
+                                - generic [ref=e302]:
+                                  - strong [ref=e303]: "Strumenti:"
+                                  - text: ciotola, pentolino, frusta a mano, spatola, coltello, teglia da forno, carta forno
+                            - listitem [level=1] [ref=e304]:
+                              - paragraph [ref=e305]:
+                                - strong [ref=e307]: "Avvertenze:"
+                              - list [ref=e308]:
+                                - listitem [level=2] [ref=e309]:
+                                  - paragraph [ref=e310]:
+                                    - generic [ref=e311]: non lavorare troppo l’impasto per non far sviluppare troppo glutine
+                                - listitem [level=2] [ref=e312]:
+                                  - paragraph [ref=e313]:
+                                    - generic [ref=e314]: non compattare troppo le palline
+                                - listitem [level=2] [ref=e315]:
+                                  - paragraph [ref=e316]:
+                                    - generic [ref=e317]: togliere i cookies quando il centro è ancora pallido
+                                - listitem [level=2] [ref=e318]:
+                                  - paragraph [ref=e319]:
+                                    - generic [ref=e320]: puoi aggiungere granella di nocciole (4/5 cucchiai) dentro l'impasto e/o sopra la pallina prima di infornare
+                        - heading [level=2] [ref=e322]
+                        - separator [ref=e327]:
+                          - img [ref=e329]
+                        - heading "Ingredienti" [level=2] [ref=e332]:
+                          - strong [ref=e334]:
+                            - generic [ref=e335]: Ingredienti
+                        - list [ref=e337]:
+                          - listitem [level=1] [ref=e338]:
+                            - paragraph [ref=e339]:
+                              - generic [ref=e340]: 115 g margarina
+                          - listitem [level=1] [ref=e341]:
+                            - paragraph [ref=e342]:
+                              - generic [ref=e343]: 70 g zucchero bianco
+                          - listitem [level=1] [ref=e344]:
+                            - paragraph [ref=e345]:
+                              - generic [ref=e346]: 70 g zucchero di canna (Moscovado/Demerara)
+                          - listitem [level=1] [ref=e347]:
+                            - paragraph [ref=e348]:
+                              - generic [ref=e349]: 1 uovo
+                          - listitem [level=1] [ref=e350]:
+                            - paragraph [ref=e351]:
+                              - generic [ref=e352]: 170 g farina 00
+                          - listitem [level=1] [ref=e353]:
+                            - paragraph [ref=e354]:
+                              - generic [ref=e355]:
+                                - text: ½ cucchiaino bicarbonato
+                                - emphasis [ref=e356]: (oppure 1 cucchiaino scarso di lievito per dolci)
+                          - listitem [level=1] [ref=e357]:
+                            - paragraph [ref=e358]:
+                              - generic [ref=e359]: 1 pizzico abbondante di sale
+                          - listitem [level=1] [ref=e360]:
+                            - paragraph [ref=e361]:
+                              - generic [ref=e362]: 120 g cioccolato fondente tagliato a coltello
+                        - heading "Procedimento" [level=2] [ref=e367]:
+                          - strong [ref=e369]:
+                            - generic [ref=e370]: Procedimento
+                        - list [ref=e372]:
+                          - listitem [level=1] [ref=e373]:
+                            - paragraph [ref=e374]:
+                              - strong [ref=e376]: Sciogli la margarina
+                            - paragraph [ref=e377]:
+                              - generic [ref=e378]:
+                                - text: Metti
+                                - strong [ref=e379]: 115 g di margarina
+                                - text: in un pentolino e scalda finché diventa leggermente color nocciola.S pegni la fiamma.
+                          - listitem [level=1] [ref=e380]:
+                            - paragraph [ref=e381]:
+                              - strong [ref=e383]: Aggiungi gli zuccheri a fiamma spenta
+                            - paragraph [ref=e384]:
+                              - generic [ref=e385]:
+                                - text: Unisci
+                                - strong [ref=e386]: 70 g di zucchero bianco
+                                - text: e
+                                - strong [ref=e387]: 70 g di zucchero di canna
+                                - text: . Mescola e metti in frigo
+                                - strong [ref=e388]: 15 minuti
+                                - text: per far rapprendere.
+                          - listitem [level=1] [ref=e389]:
+                            - paragraph [ref=e390]:
+                              - strong [ref=e392]: Prepara il cioccolato
+                            - paragraph [ref=e393]:
+                              - generic [ref=e394]:
+                                - text: Taglia
+                                - strong [ref=e395]: 120 g di cioccolato fondente
+                                - text: a pezzi irregolari e tieni da parte.
+                          - listitem [level=1] [ref=e396]:
+                            - paragraph [ref=e397]:
+                              - strong [ref=e399]: Unisci l’uovo
+                            - paragraph [ref=e400]:
+                              - generic [ref=e401]:
+                                - text: Riprendi la ciotola dal frigo e aggiungi
+                                - strong [ref=e402]: 1 uovo
+                                - text: . Sbatti con
+                                - strong [ref=e403]: frusta a mano
+                                - text: per 2–3 minuti fino a una crema liscia e uniforme.
+                          - listitem [level=1] [ref=e404]:
+                            - paragraph [ref=e405]:
+                              - strong [ref=e407]: Incorpora le polveri
+                            - paragraph [ref=e408]:
+                              - generic [ref=e409]:
+                                - text: Aggiungi
+                                - strong [ref=e410]: 170 g farina 00
+                                - text: ","
+                                - strong [ref=e411]: ½ cucchiaino di bicarbonato
+                                - text: (o 1 cucchiaino scarso di lievito) e
+                                - strong [ref=e412]: 1 pizzico abbondante di sale
+                                - text: . Mescola con una
+                                - strong [ref=e413]: spatola
+                                - text: ", senza lavorare troppo."
+                          - listitem [level=1] [ref=e414]:
+                            - paragraph [ref=e415]:
+                              - strong [ref=e417]: Aggiungi il cioccolato
+                            - paragraph [ref=e418]:
+                              - generic [ref=e419]:
+                                - text: Unisci i
+                                - strong [ref=e420]: 120 g di cioccolato
+                                - text: tagliato e incorpora delicatamente.
+                          - listitem [level=1] [ref=e421]:
+                            - paragraph [ref=e422]:
+                              - strong [ref=e424]: Forma le palline
+                            - paragraph [ref=e425]:
+                              - generic [ref=e426]:
+                                - text: Forma palline morbide (non compattate) da circa
+                                - strong [ref=e427]: 3 cm
+                                - text: di diametro, poi schiacciale
+                                - strong [ref=e428]: leggermente
+                                - text: con due dita (20–30%). Cotte assumeranno un diametro di 5/6 cm.
+                          - listitem [level=1] [ref=e429]:
+                            - paragraph [ref=e430]:
+                              - strong [ref=e432]: Raffredda le palline
+                            - paragraph [ref=e433]:
+                              - generic [ref=e434]: Metti le palline in frigo per 30/60 minuti, infornarle fredde evita che i bordi si cuociano prima del centro del cookie.
+                          - listitem [level=1] [ref=e435]:
+                            - paragraph [ref=e436]:
+                              - strong [ref=e438]: Cuoci i cookies
+                            - paragraph [ref=e439]:
+                              - generic [ref=e440]:
+                                - text: Disponi le palline su teglia con carta forno. Cuoci in
+                                - strong [ref=e441]: forno statico a 170°C per 10–12 min
+                                - text: ". I cookies sono pronti quando:"
+                            - list [ref=e442]:
+                              - listitem [level=2] [ref=e443]:
+                                - paragraph [ref=e444]:
+                                  - generic [ref=e445]: i bordi sono appena dorati
+                              - listitem [level=2] [ref=e446]:
+                                - paragraph [ref=e447]:
+                                  - generic [ref=e448]: il centro è ancora pallido e morbido
+                          - listitem [level=1] [ref=e449]:
+                            - paragraph [ref=e450]:
+                              - strong [ref=e452]: Raffreddamento
+                            - paragraph [ref=e453]:
+                              - generic [ref=e454]:
+                                - text: Lascia i cookies
+                                - strong [ref=e455]: 5 minuti sulla teglia
+                                - text: ", poi trasferiscili su"
+                                - strong [ref=e456]: griglia
+                                - text: per completare il raffreddamento.
+                      - generic [ref=e459]:
+                        - navigation "Tag" [ref=e461]:
+                          - list [ref=e462]:
+                            - listitem [ref=e463]:
+                              - link "4 stagioni" [ref=e464] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/4-stagioni
+                            - listitem [ref=e465]:
+                              - link "Dolci" [ref=e466] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/dolci
+                            - listitem [ref=e467]:
+                              - link "Cioccolato" [ref=e468] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/cioccolato
+                            - listitem [ref=e469]:
+                              - link "Piatti dal mondo" [ref=e470] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/piatti-dal-mondo
+                            - listitem [ref=e471]:
+                              - link "Merenda/colazione" [ref=e472] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/merenda-colazione
+                        - list "Post categories" [ref=e474]:
+                          - listitem [ref=e475]:
+                            - link "Dolci" [ref=e476] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                          - listitem [ref=e477]:
+                            - text: ·
+                            - link "Piatti del mondo" [ref=e478] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                        - generic [ref=e481]:
+                          - button "Condividi tramite link" [ref=e484] [cursor=pointer]:
+                            - img [ref=e485]
+                          - button "Stampa post" [ref=e489] [cursor=pointer]:
+                            - img [ref=e490]
+                  - generic [ref=e500]:
+                    - generic [ref=e501]:
+                      - heading "Post recenti" [level=2] [ref=e502]
+                      - link "Mostra tutti" [ref=e503] [cursor=pointer]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - generic [ref=e505]:
+                      - article [ref=e506]:
+                        - generic [ref=e507]:
+                          - link "creme caramel" [ref=e508] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-crème-caramel-super-safe
+                          - link "Torta Crème Caramel super safe" [ref=e513] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-crème-caramel-super-safe
+                      - article [ref=e520]:
+                        - generic [ref=e521]:
+                          - link "fonduta" [ref=e522] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/fonduta-all-italiana-fantasiosa
+                          - link "Fonduta all'italiana fantasiosa" [ref=e527] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/fonduta-all-italiana-fantasiosa
+                      - article [ref=e534]:
+                        - generic [ref=e535]:
+                          - link "Torta fit alle carote per colazione" [ref=e536] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-fit-alle-carote-per-colazione
+                          - link "Torta fit alle carote per colazione" [ref=e541] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-fit-alle-carote-per-colazione
+              - generic [ref=e548]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e566]
+                    - generic [ref=e577]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e578]:
+                            - generic [ref=e585]: Ricevi aggiornamenti!
+                          - paragraph [ref=e586]:
+                            - generic [ref=e594]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e595]:
+                            - generic [ref=e596]: Email *
+                            - textbox "Email *" [ref=e598]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e600] [cursor=pointer]:
+                            - generic [ref=e601]: Tienimi aggiornat*!
+    - contentinfo [ref=e606]:
+      - generic [ref=e612]:
+        - generic:
+          - generic:
+            - paragraph [ref=e613]:
+              - link "Ricette per pippe" [ref=e618] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e623] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e624]
+              - paragraph [ref=e625]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e626]
+  - region "bottom of page"

@@ -1,0 +1,188 @@
+- generic [ref=e3]:
+  - region "top of page" [active]
+  - button "Passa al contenuto principale"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - generic [ref=e207]:
+                        - button "Altro" [ref=e208]:
+                          - text: Altro
+                          - img [ref=e209]
+                        - list [ref=e212]:
+                          - listitem [ref=e213]:
+                            - link "Antispreco" [ref=e214]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                          - listitem [ref=e215]:
+                            - link "Pesti, salse e creme" [ref=e216]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                          - listitem [ref=e217]:
+                            - link "Piatti del mondo" [ref=e218]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                          - listitem [ref=e219]:
+                            - link "Contorni" [ref=e220]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                          - listitem [ref=e221]:
+                            - link "Insalate" [ref=e222]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                          - listitem [ref=e223]:
+                            - link "Frittate" [ref=e224]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                          - listitem [ref=e225]:
+                            - link "Risotti" [ref=e226]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                          - listitem [ref=e227]:
+                            - link "Secondi piatti" [ref=e228]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                          - listitem [ref=e229]:
+                            - link "Torte salate" [ref=e230]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e232]:
+                  - generic [ref=e248]:
+                    - heading "Pesti, salse e creme" [level=1] [ref=e251]
+                    - paragraph [ref=e253]: ...fanno figura e colorano la tavola!
+                  - region "Feed del blog" [ref=e260]:
+                    - generic [ref=e262]:
+                      - generic [ref=e263]:
+                        - img "bowl di pesto" [ref=e267] [cursor=pointer]
+                        - generic [ref=e270]:
+                          - generic [ref=e271]:
+                            - generic [ref=e272]:
+                              - link "Pesto di rucola" [ref=e273] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/post/pesto-di-rucola
+                                - heading "Pesto di rucola" [level=2] [ref=e276]
+                              - generic [ref=e280] [cursor=pointer]: Più picca la rucola, meglio è!
+                            - generic [ref=e281]:
+                              - generic [ref=e282]:
+                                - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e288]'
+                                - generic [ref=e289]:
+                                  - generic "Sarah Lasaracina" [ref=e291]
+                                  - generic [ref=e292]:
+                                    - generic [ref=e293]: 12 nov 2025
+                                    - generic [ref=e296]: "Tempo di lettura: 1 min"
+                              - button "Altre azioni" [ref=e299] [cursor=pointer]:
+                                - img [ref=e301]
+                          - generic [ref=e306]:
+                            - generic [ref=e308]:
+                              - generic [ref=e309]: 1 visualizzazione
+                              - generic [ref=e310]: 0 commenti
+                            - button "Like post" [ref=e313]:
+                              - generic [ref=e314]: Post non contrassegnato con Mi piace
+                              - img [ref=e321] [cursor=pointer]
+                      - generic [ref=e323]:
+                        - img "Aperitivo top!" [ref=e327] [cursor=pointer]
+                        - generic [ref=e330]:
+                          - generic [ref=e331]:
+                            - generic [ref=e332]:
+                              - link "Hummus delicato" [ref=e333] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/post/hummus-delicato
+                                - heading "Hummus delicato" [level=2] [ref=e336]
+                              - generic [ref=e340] [cursor=pointer]: Un po' d'oriente in tavola!
+                            - generic [ref=e341]:
+                              - generic [ref=e342]:
+                                - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e348]'
+                                - generic [ref=e349]:
+                                  - generic "Sarah Lasaracina" [ref=e351]
+                                  - generic [ref=e352]:
+                                    - generic [ref=e353]: 11 nov 2025
+                                    - generic [ref=e356]: "Tempo di lettura: 1 min"
+                              - button "Altre azioni" [ref=e359] [cursor=pointer]:
+                                - img [ref=e361]
+                          - generic [ref=e366]:
+                            - generic [ref=e368]:
+                              - generic [ref=e369]: 1 visualizzazione
+                              - generic [ref=e370]: 0 commenti
+                            - button "Like post" [ref=e373]:
+                              - generic [ref=e374]: 1 Un Mi piace. Post non contrassegnato con Mi piace
+                              - generic [ref=e375]:
+                                - generic [ref=e376]: "1"
+                                - img [ref=e382] [cursor=pointer]
+              - generic [ref=e385]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e403]
+                    - generic [ref=e414]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e415]:
+                            - generic [ref=e422]: Ricevi aggiornamenti!
+                          - paragraph [ref=e423]:
+                            - generic [ref=e431]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e432]:
+                            - generic [ref=e433]: Email *
+                            - textbox "Email *" [ref=e435]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e437] [cursor=pointer]:
+                            - generic [ref=e438]: Tienimi aggiornat*!
+    - contentinfo [ref=e443]:
+      - generic [ref=e449]:
+        - generic:
+          - generic:
+            - paragraph [ref=e450]:
+              - link "Ricette per pippe" [ref=e455] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e460] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e461]
+              - paragraph [ref=e462]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e463]
+  - region "bottom of page"

@@ -1,0 +1,507 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - link "Antispreco" [ref=e207]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                    - listitem [ref=e208]:
+                      - link "Pesti, salse e creme" [ref=e209]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                    - listitem [ref=e210]:
+                      - link "Piatti del mondo" [ref=e211]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                    - listitem [ref=e212]:
+                      - link "Contorni" [ref=e213]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                    - listitem [ref=e214]:
+                      - link "Insalate" [ref=e215]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                    - listitem [ref=e216]:
+                      - link "Frittate" [ref=e217]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                    - listitem [ref=e218]:
+                      - link "Risotti" [ref=e219]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                    - listitem [ref=e220]:
+                      - link "Secondi piatti" [ref=e221]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                    - listitem [ref=e222]:
+                      - link "Torte salate" [ref=e223]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e225]:
+                  - article [ref=e229]:
+                    - generic [ref=e230]:
+                      - generic [ref=e232]:
+                        - generic [ref=e233]:
+                          - heading "Torta Crème Caramel super safe" [level=1] [ref=e235]
+                          - list [ref=e237]:
+                            - listitem [ref=e238]:
+                              - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e241]'
+                              - generic [ref=e242] [cursor=pointer]: Sarah Lasaracina
+                            - listitem [ref=e243]: ·17 feb
+                            - listitem [ref=e244]: "·Tempo di lettura: 3 min"
+                        - paragraph [ref=e245]: "Aggiornamento: 23 feb"
+                      - generic [ref=e252]:
+                        - paragraph [ref=e254]:
+                          - generic [ref=e255]: Sembra un dolce da pasticceria francese con 18 possibilità di fallimento. E lo è. L'ho temuto per anni e infatti ci sono volute 7 ore di errori, aggiusti e bestemmie. Ecco la versione per pippe come noi, con forno domestico e pazienza limitata.
+                        - paragraph [ref=e260]:
+                          - generic [ref=e261]: "Perché chi scrive certe ricette online dimentica che non tutti abbiamo 3 stelle Michelin, cucine professionali, tre mani in più: qui debunko tutto e ti do la mia versione a prova di pippa e in 1h30 è fatta! Ps. Buon compleanno, mamma!"
+                        - separator [ref=e265]:
+                          - img [ref=e267]
+                        - figure [ref=e275]:
+                          - generic [ref=e276]:
+                            - img "Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!" [ref=e279] [cursor=pointer]
+                            - button "Expand image":
+                              - img
+                          - emphasis [ref=e283]:
+                            - generic [ref=e284]: Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!
+                        - separator [ref=e291]:
+                          - img [ref=e293]
+                        - heading [level=2] [ref=e296]
+                        - generic [ref=e304]:
+                          - generic [ref=e305]:
+                            - heading "Informazioni rapide" [level=2] [ref=e306]:
+                              - generic [ref=e308]: Informazioni rapide
+                            - list [ref=e309]:
+                              - listitem [level=1] [ref=e310]:
+                                - paragraph [ref=e311]:
+                                  - generic [ref=e312]:
+                                    - strong [ref=e313]: Porzioni
+                                    - text: ": per me fino a 16 pezzi medio piccoli."
+                              - listitem [level=1] [ref=e314]:
+                                - paragraph [ref=e315]:
+                                  - generic [ref=e316]:
+                                    - strong [ref=e317]: Tempo totale
+                                    - text: ": circa 1 h 30 min + raffreddamento"
+                                - list [ref=e318]:
+                                  - listitem [level=2] [ref=e319]:
+                                    - paragraph [ref=e320]:
+                                      - generic [ref=e321]:
+                                        - strong [ref=e322]: Preparazione
+                                        - text: ": 30 min"
+                                  - listitem [level=2] [ref=e323]:
+                                    - paragraph [ref=e324]:
+                                      - generic [ref=e325]:
+                                        - strong [ref=e326]: Cottura
+                                        - text: ": 60–75 min"
+                                  - listitem [level=2] [ref=e327]:
+                                    - paragraph [ref=e328]:
+                                      - generic [ref=e329]:
+                                        - strong [ref=e330]: Attesa
+                                        - text: ": minimo 4 ore in frigo"
+                              - listitem [level=1] [ref=e331]:
+                                - paragraph [ref=e332]:
+                                  - generic [ref=e333]:
+                                    - strong [ref=e334]: Strumenti
+                                    - text: ":"
+                                - list [ref=e335]:
+                                  - listitem [level=2] [ref=e336]:
+                                    - paragraph [ref=e337]:
+                                      - generic [ref=e338]:
+                                        - text: stampo di qualsiasi materiale tra
+                                        - strong [ref=e339]: 24 e 28 cm
+                                        - text: ( con uno stampo da 24 esce alta circa 5 cm che è più elegante, con una da 28 cm è alta circa 3 cm. Scegli tu! Io addirittura avevo solo un ovale)
+                                  - listitem [level=2] [ref=e340]:
+                                    - paragraph [ref=e341]:
+                                      - generic [ref=e342]: teglia grande per bagno maria
+                                  - listitem [level=2] [ref=e343]:
+                                    - paragraph [ref=e344]:
+                                      - generic [ref=e345]: pentolino
+                                  - listitem [level=2] [ref=e346]:
+                                    - paragraph [ref=e347]:
+                                      - generic [ref=e348]: termometro (facoltativo ma consigliato, l'ho trovato a 3 Euro al bazar cinese)
+                                  - listitem [level=2] [ref=e349]:
+                                    - paragraph [ref=e350]:
+                                      - generic [ref=e351]: 2 ciotole
+                                  - listitem [level=2] [ref=e352]:
+                                    - paragraph [ref=e353]:
+                                      - generic [ref=e354]: fruste elettriche
+                                  - listitem [level=2] [ref=e355]:
+                                    - paragraph [ref=e356]:
+                                      - generic [ref=e357]: frusta a mano
+                                  - listitem [level=2] [ref=e358]:
+                                    - paragraph [ref=e359]:
+                                      - generic [ref=e360]: coltello
+                          - generic [ref=e361]:
+                            - heading "Ingredienti" [level=2] [ref=e362]:
+                              - generic [ref=e364]: Ingredienti
+                            - list [ref=e365]:
+                              - listitem [level=1] [ref=e366]:
+                                - paragraph [ref=e367]:
+                                  - generic [ref=e368]:
+                                    - strong [ref=e369]: 7 uova
+                                    - text: (4 per la crema, 3 per il pan di Spagna - io uova etiche
+                                    - link "UovoPerfetto" [ref=e370] [cursor=pointer]:
+                                      - /url: https://uovoperfetto.it/
+                                      - generic [ref=e371]: UovoPerfetto
+                                    - text: )
+                              - listitem [level=1] [ref=e372]:
+                                - paragraph [ref=e373]:
+                                  - generic [ref=e374]:
+                                    - strong [ref=e375]: 175 g zucchero
+                                    - text: (100 g per la crema, 75 g per il pan di Spagna)
+                              - listitem [level=1] [ref=e376]:
+                                - paragraph [ref=e377]:
+                                  - generic [ref=e378]:
+                                    - strong [ref=e379]: 75 g farina
+                                    - text: 00 (per il pan di Spagna)
+                              - listitem [level=1] [ref=e380]:
+                                - paragraph [ref=e381]:
+                                  - generic [ref=e382]:
+                                    - strong [ref=e383]: 500 ml latte
+                                    - text: (per la crema)
+                              - listitem [level=1] [ref=e384]:
+                                - paragraph [ref=e385]:
+                                  - generic [ref=e386]:
+                                    - strong [ref=e387]: 150 g zucchero
+                                    - text: +
+                                    - strong [ref=e388]: 150 g acqua
+                                    - text: (per il caramello)
+                              - listitem [level=1] [ref=e389]:
+                                - paragraph [ref=e390]:
+                                  - generic [ref=e391]:
+                                    - strong [ref=e392]: 1 cucchiaino miele
+                                    - text: (per il pan di Spagna)
+                              - listitem [level=1] [ref=e393]:
+                                - paragraph [ref=e394]:
+                                  - generic [ref=e395]:
+                                    - strong [ref=e396]: 1 pizzico di sale
+                                    - text: (per il pan di Spagna)
+                              - listitem [level=1] [ref=e397]:
+                                - paragraph [ref=e398]:
+                                  - strong [ref=e400]: 1 bustina vanillina
+                              - listitem [level=1] [ref=e401]:
+                                - paragraph [ref=e402]:
+                                  - generic [ref=e403]:
+                                    - strong [ref=e404]: 1 fialetta aroma
+                                    - text: mandorla o rum
+                        - separator [ref=e408]:
+                          - img [ref=e410]
+                        - heading "Procedura" [level=2] [ref=e413]:
+                          - generic [ref=e415]: Procedura
+                        - heading "Prepara la crema" [level=3] [ref=e417]:
+                          - generic [ref=e419]: Prepara la crema
+                        - list [ref=e421]:
+                          - listitem [level=1] [ref=e422]:
+                            - paragraph [ref=e423]:
+                              - generic [ref=e424]: "In una ciotola unisci:"
+                            - list [ref=e425]:
+                              - listitem [level=2] [ref=e426]:
+                                - paragraph [ref=e427]:
+                                  - strong [ref=e429]: 4 uova
+                              - listitem [level=2] [ref=e430]:
+                                - paragraph [ref=e431]:
+                                  - generic [ref=e432]:
+                                    - strong [ref=e433]: 100 g
+                                    - text: zucchero
+                          - listitem [level=1] [ref=e434]:
+                            - paragraph [ref=e435]:
+                              - generic [ref=e436]: Sbatti con frusta a mano finché amalgamato (non montare).
+                          - listitem [level=1] [ref=e437]:
+                            - paragraph [ref=e438]:
+                              - generic [ref=e439]: "Aggiungi:"
+                            - list [ref=e440]:
+                              - listitem [level=2] [ref=e441]:
+                                - paragraph [ref=e442]:
+                                  - generic [ref=e443]:
+                                    - strong [ref=e444]: 500 ml
+                                    - text: latte
+                              - listitem [level=2] [ref=e445]:
+                                - paragraph [ref=e446]:
+                                  - strong [ref=e448]: 1 bustina vanillina
+                              - listitem [level=2] [ref=e449]:
+                                - paragraph [ref=e450]:
+                                  - strong [ref=e452]: 1 fialetta aroma
+                          - listitem [level=1] [ref=e453]:
+                            - paragraph [ref=e454]:
+                              - generic [ref=e455]: Mescola fino a composto fluido e omogeneo, poi metti da parte.
+                        - heading "Prepara il pan di Spagna" [level=3] [ref=e457]:
+                          - generic [ref=e459]: Prepara il pan di Spagna
+                        - list [ref=e461]:
+                          - listitem [level=1] [ref=e462]:
+                            - paragraph [ref=e463]:
+                              - generic [ref=e464]: "In un’altra ciotola unisci:"
+                            - list [ref=e465]:
+                              - listitem [level=2] [ref=e466]:
+                                - paragraph [ref=e467]:
+                                  - strong [ref=e469]: 3 uova
+                              - listitem [level=2] [ref=e470]:
+                                - paragraph [ref=e471]:
+                                  - strong [ref=e473]: 75 g zucchero
+                          - listitem [level=1] [ref=e474]:
+                            - paragraph [ref=e475]:
+                              - generic [ref=e476]:
+                                - text: Monta
+                                - strong [ref=e477]: leggermente
+                                - text: "con fruste elettriche : deve essere arioso ma non eccessivamente."
+                          - listitem [level=1] [ref=e478]:
+                            - paragraph [ref=e479]:
+                              - generic [ref=e480]: "Aggiungi:"
+                            - list [ref=e481]:
+                              - listitem [level=2] [ref=e482]:
+                                - paragraph [ref=e483]:
+                                  - strong [ref=e485]: 75 g farina
+                              - listitem [level=2] [ref=e486]:
+                                - paragraph [ref=e487]:
+                                  - strong [ref=e489]: 1 cucchiaino miele
+                              - listitem [level=2] [ref=e490]:
+                                - paragraph [ref=e491]:
+                                  - strong [ref=e493]: 1 pizzico sale
+                          - listitem [level=1] [ref=e494]:
+                            - paragraph [ref=e495]:
+                              - generic [ref=e496]: Mescola fino a impasto liscio e metti da parte.
+                        - heading "Prepara il caramello" [level=3] [ref=e498]:
+                          - generic [ref=e500]: Prepara il caramello
+                        - paragraph [ref=e502]:
+                          - generic [ref=e503]: "Prima di iniziare, impara a riconoscere il caramello:"
+                        - list [ref=e505]:
+                          - listitem [level=1] [ref=e506]:
+                            - paragraph [ref=e507]:
+                              - generic [ref=e508]: 160–180°C + color ambrato è caramello biondo,
+                          - listitem [level=1] [ref=e509]:
+                            - paragraph [ref=e510]:
+                              - generic [ref=e511]: 180°C + color marrone è caramello bruno,
+                          - listitem [level=1] [ref=e512]:
+                            - paragraph [ref=e513]:
+                              - generic [ref=e514]: +180°C + marrone scuro = bruciato.
+                        - list [ref=e519]:
+                          - listitem [level=1] [ref=e520]:
+                            - paragraph [ref=e521]:
+                              - generic [ref=e522]: "In un pentolino metti:"
+                            - list [ref=e523]:
+                              - listitem [level=2] [ref=e524]:
+                                - paragraph [ref=e525]:
+                                  - strong [ref=e527]: 150 g zucchero
+                              - listitem [level=2] [ref=e528]:
+                                - paragraph [ref=e529]:
+                                  - generic [ref=e530]:
+                                    - text: "1"
+                                    - strong [ref=e531]: 50 g acqua
+                          - listitem [level=1] [ref=e532]:
+                            - paragraph [ref=e533]:
+                              - generic [ref=e534]:
+                                - text: Accendi a fiamma medio-bassa.
+                                - strong [ref=e535]: NON mescolare MAI. Resisti!
+                          - listitem [level=1] [ref=e536]:
+                            - paragraph [ref=e537]:
+                              - generic [ref=e538]: Lascia bollire finché raggiunge 160°C e assume un color ambrato chiaro, quindi aspetta 1-2 min, tempo in cui da sciroppo diventerà caramello. Sembrerà liquido a causa del bollore, ma non preoccuparti.
+                          - listitem [level=1] [ref=e539]:
+                            - paragraph [ref=e540]:
+                              - generic [ref=e541]: Appena pronto, spegni e versa il caramello nello stampo e ruotalo per coprire il fondo. Procedi alla prossima sezione senza perdere tempo.
+                        - heading "Assembla" [level=3] [ref=e546]:
+                          - generic [ref=e548]: Assembla
+                        - list [ref=e550]:
+                          - listitem [level=1] [ref=e551]:
+                            - paragraph [ref=e552]:
+                              - generic [ref=e553]:
+                                - text: Versa sul caramello tutta la
+                                - strong [ref=e554]: crema del punto 1
+                                - text: .
+                          - listitem [level=1] [ref=e555]:
+                            - paragraph [ref=e556]:
+                              - generic [ref=e557]:
+                                - text: Versa sulla crema tutto il composto del
+                                - strong [ref=e558]: pan di Spagna del punto 2
+                                - text: .
+                            - paragraph [ref=e559]:
+                              - generic [ref=e560]:
+                                - text: Se non è uniforme, livella delicatamente
+                                - strong [ref=e561]: solo con la punta di un coltello a pelo d'acqua
+                                - text: ", senza mescolare. Magie della fisica: in cottura i due composti si separano da soli."
+                        - heading "Cottura a bagno maria" [level=3] [ref=e566]:
+                          - generic [ref=e568]: Cottura a bagno maria
+                        - list [ref=e570]:
+                          - listitem [level=1] [ref=e571]:
+                            - paragraph [ref=e572]:
+                              - generic [ref=e573]: Scalda dell'acqua (bollita, o al microonde, dosa ad occhio in base alla teglia da bagno maria). L'acqua servirà per evitare shock termico alla teglia.
+                          - listitem [level=1] [ref=e574]:
+                            - paragraph [ref=e575]:
+                              - generic [ref=e576]: Metti lo stampo dentro una teglia più grande.
+                          - listitem [level=1] [ref=e577]:
+                            - paragraph [ref=e578]:
+                              - generic [ref=e579]: Versa acqua calda nella teglia esterna fino a metà altezza dello stampo.
+                          - listitem [level=1] [ref=e580]:
+                            - paragraph [ref=e581]:
+                              - generic [ref=e582]: "Inforna a 170°C statico per 60–75 min. Controlla intorno ai 50 min: La torta è pronta quando al centro è tremolante stile budino, ma non liquida. Se sopra scurisce troppo: appoggia un foglio di alluminio senza sigillare."
+                        - heading "Raffreddamento" [level=3] [ref=e587]:
+                          - generic [ref=e589]: Raffreddamento
+                        - list [ref=e591]:
+                          - listitem [level=1] [ref=e592]:
+                            - paragraph [ref=e593]:
+                              - generic [ref=e594]: Togli dal bagno maria.
+                          - listitem [level=1] [ref=e595]:
+                            - paragraph [ref=e596]:
+                              - generic [ref=e597]: Lascia raffreddare completamente a temperatura ambiente.
+                          - listitem [level=1] [ref=e598]:
+                            - paragraph [ref=e599]:
+                              - generic [ref=e600]: Metti in frigo minimo 4 ore (meglio tutta la notte).
+                        - generic [ref=e607]:
+                          - generic [ref=e608]:
+                            - heading "Sformatura" [level=3] [ref=e609]:
+                              - generic [ref=e611]: Sformatura
+                            - list [ref=e612]:
+                              - listitem [level=1] [ref=e613]:
+                                - paragraph [ref=e614]:
+                                  - generic [ref=e615]: Tira fuori dal frigo 30 minuti prima (cosa che io non ho fatto, e ho sbagliato!).
+                              - listitem [level=1] [ref=e616]:
+                                - paragraph [ref=e617]:
+                                  - generic [ref=e618]: Immergi il fondo dello stampo in acqua bollente per 2 minuti.
+                              - listitem [level=1] [ref=e619]:
+                                - paragraph [ref=e620]:
+                                  - generic [ref=e621]: Passa un coltellino lungo i bordi.
+                              - listitem [level=1] [ref=e622]:
+                                - paragraph [ref=e623]:
+                                  - generic [ref=e624]: Capovolgi su piatto.
+                              - listitem [level=1] [ref=e625]:
+                                - paragraph [ref=e626]:
+                                  - generic [ref=e627]: "Se non si stacca: ripeti immersione più a lungo oppure a mali estremi"
+                                - paragraph [ref=e628]:
+                                  - generic [ref=e629]: phon sul fondo (testato, funziona).
+                          - figure [ref=e635]:
+                            - generic [ref=e636]:
+                              - button "Expand image":
+                                - img
+                        - heading "Nota" [level=2] [ref=e640]:
+                          - generic [ref=e642]: Nota
+                        - paragraph [ref=e644]:
+                          - generic [ref=e645]: Decorala con qualche topping (o io spesso uso fiori freschi), fa più festa!
+                        - separator [ref=e649]:
+                          - img [ref=e651]
+                        - figure [ref=e656]:
+                          - generic [ref=e657]:
+                            - button "Expand image":
+                              - img
+                        - heading [level=2] [ref=e664]
+                      - generic [ref=e668]:
+                        - navigation "Tag" [ref=e670]:
+                          - list [ref=e671]:
+                            - listitem [ref=e672]:
+                              - link "Dolci" [ref=e673] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/dolci
+                            - listitem [ref=e674]:
+                              - link "Compleanno" [ref=e675] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/compleanno
+                        - list "Post categories" [ref=e677]:
+                          - listitem [ref=e678]:
+                            - link "Dolci" [ref=e679] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                        - generic [ref=e682]:
+                          - button "Condividi tramite link" [ref=e685] [cursor=pointer]:
+                            - img [ref=e686]
+                          - button "Stampa post" [ref=e690] [cursor=pointer]:
+                            - img [ref=e691]
+                  - generic [ref=e701]:
+                    - generic [ref=e702]:
+                      - heading "Post recenti" [level=2] [ref=e703]
+                      - link "Mostra tutti" [ref=e704] [cursor=pointer]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - generic [ref=e706]:
+                      - article [ref=e707]:
+                        - generic [ref=e708]:
+                          - link "Torta fit alle carote per colazione" [ref=e709] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-fit-alle-carote-per-colazione
+                          - link "Torta fit alle carote per colazione" [ref=e714] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-fit-alle-carote-per-colazione
+                      - article [ref=e721]:
+                        - generic [ref=e722]:
+                          - link "torta al cioccolato in piatto" [ref=e723] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/crostata-morbida-al-cacao-con-ganache-al-cioccolato
+                          - link "Crostata morbida al cacao con ganache al cioccolato" [ref=e728] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/crostata-morbida-al-cacao-con-ganache-al-cioccolato
+                      - article [ref=e735]:
+                        - generic [ref=e736]:
+                          - link "Torta salame di cioccolato" [ref=e737] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-salame-di-cioccolato
+                          - link "Torta salame di cioccolato" [ref=e742] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-salame-di-cioccolato
+              - generic [ref=e749]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e767]
+                    - generic [ref=e778]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e779]:
+                            - generic [ref=e786]: Ricevi aggiornamenti!
+                          - paragraph [ref=e787]:
+                            - generic [ref=e795]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e796]:
+                            - generic [ref=e797]: Email *
+                            - textbox "Email *" [ref=e799]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e801] [cursor=pointer]:
+                            - generic [ref=e802]: Tienimi aggiornat*!
+    - contentinfo [ref=e807]:
+      - generic [ref=e813]:
+        - generic:
+          - generic:
+            - paragraph [ref=e814]:
+              - link "Ricette per pippe" [ref=e819] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e824] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e825]
+              - paragraph [ref=e826]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e827]
+  - region "bottom of page"

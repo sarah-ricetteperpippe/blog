@@ -2,9 +2,12 @@
 title: "Pizzette di melanzane al forno"
 description: "E magnamosele due verdure ogni tanto!"
 pubDate: "2025-01-22"
+heroImage: "/images/ricette/pizzette-melanzane.png"
 category: "Piatti unici"
 tags: ["Piatti unici", "Forno", "Melanzane", "4 stagioni"]
 ---
+
+<!-- c9ca99_50c5336c11e94aee8f58091a2b8aa160~mv2.png -->
 
 E magnamosele due verdure ogni tanto!
 
@@ -42,3 +45,5 @@ E magnamosele due verdure ogni tanto!
 ## Note
 
 Si conservano in frigo per 1–2 giorni e si possono scaldare facilmente in forno o padella. In mezzo a due fette di pane, fingono umilmente di essere una parmigiana.
+
+![Pizzette di melanzane al forno](/images/ricette/pizzette-melanzane2.png)

@@ -1,0 +1,184 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - button "Passa al contenuto principale"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e584]:
+                      - generic [ref=e585]:
+                        - button "Altro" [active] [ref=e586]:
+                          - text: Altro
+                          - img [ref=e587]
+                        - list [ref=e612]:
+                          - listitem [ref=e613]:
+                            - link "Antispreco" [ref=e614]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                          - listitem [ref=e615]:
+                            - link "Pesti, salse e creme" [ref=e616]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                          - listitem [ref=e617]:
+                            - link "Piatti del mondo" [ref=e618]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                          - listitem [ref=e619]:
+                            - link "Contorni" [ref=e620]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                          - listitem [ref=e621]:
+                            - link "Insalate" [ref=e622]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                          - listitem [ref=e623]:
+                            - link "Frittate" [ref=e624]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                          - listitem [ref=e625]:
+                            - link "Risotti" [ref=e626]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                          - listitem [ref=e627]:
+                            - link "Secondi piatti" [ref=e628]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                          - listitem [ref=e629]:
+                            - link "Torte salate" [ref=e630]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e224]:
+                  - heading "All Posts" [level=1] [ref=e239]
+                  - region "Feed del blog" [ref=e246]:
+                    - generic [ref=e248]:
+                      - generic [ref=e249]:
+                        - img "Bistecche di funghi" [ref=e254] [cursor=pointer]
+                        - generic [ref=e258]:
+                          - generic [ref=e259]:
+                            - generic [ref=e260]:
+                              - link "Bistecche di funghi strepitose" [ref=e261] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/post/bistecche-di-funghi-strepitose
+                                - heading "Bistecche di funghi strepitose" [level=2] [ref=e264]
+                              - generic [ref=e268] [cursor=pointer]: Questa l'ho improvvisata ed è oggettivamente una bomba... per sapore, per aspetto, per facilità. Mondiale!
+                            - generic [ref=e269]:
+                              - generic [ref=e270]:
+                                - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e589]'
+                                - generic [ref=e276]:
+                                  - generic "Sarah Lasaracina" [ref=e278]
+                                  - generic [ref=e279]:
+                                    - generic [ref=e280]: 27 feb
+                                    - generic [ref=e283]: "Tempo di lettura: 2 min"
+                              - button "Altre azioni" [ref=e286] [cursor=pointer]:
+                                - img [ref=e288]
+                          - generic [ref=e293]:
+                            - generic [ref=e295]:
+                              - generic [ref=e296]: 5 visualizzazioni
+                              - generic [ref=e297]: 0 commenti
+                            - button "Like post" [ref=e590]:
+                              - generic [ref=e591]: Post non contrassegnato con Mi piace
+                              - img [ref=e598] [cursor=pointer]
+                      - generic [ref=e300]:
+                        - img "piatto di cotolette di funghi" [ref=e305] [cursor=pointer]
+                        - generic [ref=e309]:
+                          - generic [ref=e310]:
+                            - generic [ref=e311]:
+                              - link "Cotolette di funghi cardoncelli" [ref=e312] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/post/cotolette-di-funghi-cardoncelli
+                                - heading "Cotolette di funghi cardoncelli" [level=2] [ref=e315]
+                              - generic [ref=e319] [cursor=pointer]: Sembrano cotolette classiche, sono buone sfiziose e croccano da favola, sono stupita di me stessa!
+                            - generic [ref=e320]:
+                              - generic [ref=e321]:
+                                - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e600]'
+                                - generic [ref=e327]:
+                                  - generic "Sarah Lasaracina" [ref=e329]
+                                  - generic [ref=e330]:
+                                    - generic [ref=e331]: 24 feb
+                                    - generic [ref=e334]: "Tempo di lettura: 2 min"
+                              - button "Altre azioni" [ref=e337] [cursor=pointer]:
+                                - img [ref=e339]
+                          - generic [ref=e344]:
+                            - generic [ref=e346]:
+                              - generic [ref=e347]: 9 visualizzazioni
+                              - generic [ref=e348]: 0 commenti
+                            - button "Like post" [ref=e601]:
+                              - generic [ref=e602]: Post non contrassegnato con Mi piace
+                              - img [ref=e609] [cursor=pointer]
+              - generic [ref=e505]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e523]
+                    - generic [ref=e534]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e535]:
+                            - generic [ref=e542]: Ricevi aggiornamenti!
+                          - paragraph [ref=e543]:
+                            - generic [ref=e551]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e552]:
+                            - generic [ref=e553]: Email *
+                            - textbox "Email *" [ref=e555]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e557] [cursor=pointer]:
+                            - generic [ref=e558]: Tienimi aggiornat*!
+    - contentinfo [ref=e563]:
+      - generic [ref=e569]:
+        - generic:
+          - generic:
+            - paragraph [ref=e570]:
+              - link "Ricette per pippe" [ref=e575] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e580] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e581]
+              - paragraph [ref=e582]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e583]
+  - region "bottom of page"

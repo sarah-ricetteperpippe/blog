@@ -1,0 +1,157 @@
+- generic [ref=e3]:
+  - region "top of page" [active]
+  - button "Passa al contenuto principale"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - generic [ref=e207]:
+                        - button "Altro" [ref=e208]:
+                          - text: Altro
+                          - img [ref=e209]
+                        - list [ref=e212]:
+                          - listitem [ref=e213]:
+                            - link "Antispreco" [ref=e214]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                          - listitem [ref=e215]:
+                            - link "Pesti, salse e creme" [ref=e216]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                          - listitem [ref=e217]:
+                            - link "Piatti del mondo" [ref=e218]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                          - listitem [ref=e219]:
+                            - link "Contorni" [ref=e220]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                          - listitem [ref=e221]:
+                            - link "Insalate" [ref=e222]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                          - listitem [ref=e223]:
+                            - link "Frittate" [ref=e224]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                          - listitem [ref=e225]:
+                            - link "Risotti" [ref=e226]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                          - listitem [ref=e227]:
+                            - link "Secondi piatti" [ref=e228]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                          - listitem [ref=e229]:
+                            - link "Torte salate" [ref=e230]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e232]:
+                  - heading "Insalate" [level=1] [ref=e251]
+                  - region "Feed del blog" [ref=e258]:
+                    - generic [ref=e261]:
+                      - img "piatto di insalata di feta" [ref=e265] [cursor=pointer]
+                      - generic [ref=e268]:
+                        - generic [ref=e269]:
+                          - generic [ref=e270]:
+                            - link "Insalata di zucchine, feta e cipolla rossa" [ref=e271] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/post/insalata-di-zucchine-feta-e-cipolla-rossa
+                              - heading "Insalata di zucchine, feta e cipolla rossa" [level=2] [ref=e274]
+                            - generic [ref=e278] [cursor=pointer]: Idea svuota frigo bella, buona e veloce, must have for feta lovers!
+                          - generic [ref=e279]:
+                            - generic [ref=e280]:
+                              - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e286]'
+                              - generic [ref=e287]:
+                                - generic "Sarah Lasaracina" [ref=e289]
+                                - generic [ref=e290]:
+                                  - generic [ref=e291]: 18 dic 2025
+                                  - generic [ref=e294]: "Tempo di lettura: 1 min"
+                            - button "Altre azioni" [ref=e297] [cursor=pointer]:
+                              - img [ref=e299]
+                        - generic [ref=e304]:
+                          - generic [ref=e306]:
+                            - generic [ref=e307]: 2 visualizzazioni
+                            - generic [ref=e308]: 0 commenti
+                          - button "Like post" [ref=e311]:
+                            - generic [ref=e312]: Post non contrassegnato con Mi piace
+                            - img [ref=e319] [cursor=pointer]
+              - generic [ref=e322]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e340]
+                    - generic [ref=e351]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e352]:
+                            - generic [ref=e359]: Ricevi aggiornamenti!
+                          - paragraph [ref=e360]:
+                            - generic [ref=e368]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e369]:
+                            - generic [ref=e370]: Email *
+                            - textbox "Email *" [ref=e372]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e374] [cursor=pointer]:
+                            - generic [ref=e375]: Tienimi aggiornat*!
+    - contentinfo [ref=e380]:
+      - generic [ref=e386]:
+        - generic:
+          - generic:
+            - paragraph [ref=e387]:
+              - link "Ricette per pippe" [ref=e392] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e397] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e398]
+              - paragraph [ref=e399]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e400]
+  - region "bottom of page"

@@ -166,6 +166,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"it/alberelli-natalizi-di-brie-o-camembert.md": {
+	id: "it/alberelli-natalizi-di-brie-o-camembert.md";
+  slug: "it/alberelli-natalizi-di-brie-o-camembert";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "it/bistecche-di-funghi-strepitose.md": {
 	id: "it/bistecche-di-funghi-strepitose.md";
   slug: "it/bistecche-di-funghi-strepitose";
@@ -180,6 +187,20 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"it/cheesecake-alle-fragole.md": {
+	id: "it/cheesecake-alle-fragole.md";
+  slug: "it/cheesecake-alle-fragole";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/chocolate-chip-cookies.md": {
+	id: "it/chocolate-chip-cookies.md";
+  slug: "it/chocolate-chip-cookies";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "it/cotolette-di-funghi-cardoncelli.md": {
 	id: "it/cotolette-di-funghi-cardoncelli.md";
   slug: "it/cotolette-di-funghi-cardoncelli";
@@ -187,9 +208,23 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"it/crema-base-per-cheesecake.md": {
+	id: "it/crema-base-per-cheesecake.md";
+  slug: "it/crema-base-per-cheesecake";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "it/crostata-morbida-al-cacao-con-ganache.md": {
 	id: "it/crostata-morbida-al-cacao-con-ganache.md";
   slug: "it/crostata-morbida-al-cacao-con-ganache";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/curry-di-tofu-con-riso-basmati.md": {
+	id: "it/curry-di-tofu-con-riso-basmati.md";
+  slug: "it/curry-di-tofu-con-riso-basmati";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -208,9 +243,58 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"it/frittata-alla-menta.md": {
+	id: "it/frittata-alla-menta.md";
+  slug: "it/frittata-alla-menta";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/funghi-trifolati.md": {
+	id: "it/funghi-trifolati.md";
+  slug: "it/funghi-trifolati";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/hummus-delicato.md": {
+	id: "it/hummus-delicato.md";
+  slug: "it/hummus-delicato";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/insalata-di-zucchine-feta-e-cipolla-rossa.md": {
+	id: "it/insalata-di-zucchine-feta-e-cipolla-rossa.md";
+  slug: "it/insalata-di-zucchine-feta-e-cipolla-rossa";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "it/pasta-con-feta-al-forno-e-pomodorini.md": {
 	id: "it/pasta-con-feta-al-forno-e-pomodorini.md";
   slug: "it/pasta-con-feta-al-forno-e-pomodorini";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/pasta-e-lenticchie.md": {
+	id: "it/pasta-e-lenticchie.md";
+  slug: "it/pasta-e-lenticchie";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/pasta-svelta-alla-feta.md": {
+	id: "it/pasta-svelta-alla-feta.md";
+  slug: "it/pasta-svelta-alla-feta";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/pesto-di-rucola.md": {
+	id: "it/pesto-di-rucola.md";
+  slug: "it/pesto-di-rucola";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -229,6 +313,48 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"it/ragu-bianco-di-tempeh.md": {
+	id: "it/ragu-bianco-di-tempeh.md";
+  slug: "it/ragu-bianco-di-tempeh";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/red-velvet-cake.md": {
+	id: "it/red-velvet-cake.md";
+  slug: "it/red-velvet-cake";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/riso-per-sushi.md": {
+	id: "it/riso-per-sushi.md";
+  slug: "it/riso-per-sushi";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/risoni-cremosi-alla-zucca.md": {
+	id: "it/risoni-cremosi-alla-zucca.md";
+  slug: "it/risoni-cremosi-alla-zucca";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/risotto-al-brie-e-noci.md": {
+	id: "it/risotto-al-brie-e-noci.md";
+  slug: "it/risotto-al-brie-e-noci";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/spaghetti-alla-san-giuannidd.md": {
+	id: "it/spaghetti-alla-san-giuannidd.md";
+  slug: "it/spaghetti-alla-san-giuannidd";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "it/tamago-sando-aka-egg-sandwich-giappo.md": {
 	id: "it/tamago-sando-aka-egg-sandwich-giappo.md";
   slug: "it/tamago-sando-aka-egg-sandwich-giappo";
@@ -243,6 +369,20 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"it/torta-di-albumi-e-cacao.md": {
+	id: "it/torta-di-albumi-e-cacao.md";
+  slug: "it/torta-di-albumi-e-cacao";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/torta-di-zucca-morbidissima.md": {
+	id: "it/torta-di-zucca-morbidissima.md";
+  slug: "it/torta-di-zucca-morbidissima";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "it/torta-fit-alle-carote-per-colazione.md": {
 	id: "it/torta-fit-alle-carote-per-colazione.md";
   slug: "it/torta-fit-alle-carote-per-colazione";
@@ -250,9 +390,44 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"it/torta-fredda-al-cioccolato.md": {
+	id: "it/torta-fredda-al-cioccolato.md";
+  slug: "it/torta-fredda-al-cioccolato";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/torta-salame-di-cioccolato.md": {
+	id: "it/torta-salame-di-cioccolato.md";
+  slug: "it/torta-salame-di-cioccolato";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "it/torta-salata-zucchine-e-patate.md": {
 	id: "it/torta-salata-zucchine-e-patate.md";
   slug: "it/torta-salata-zucchine-e-patate";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/torta-soffice-al-latte-di-cocco.md": {
+	id: "it/torta-soffice-al-latte-di-cocco.md";
+  slug: "it/torta-soffice-al-latte-di-cocco";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/tortilla-spagnola.md": {
+	id: "it/tortilla-spagnola.md";
+  slug: "it/tortilla-spagnola";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"it/vellutata-di-funghi.md": {
+	id: "it/vellutata-di-funghi.md";
+  slug: "it/vellutata-di-funghi";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

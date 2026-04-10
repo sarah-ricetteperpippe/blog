@@ -1,0 +1,296 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - link "Antispreco" [ref=e207]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                    - listitem [ref=e208]:
+                      - link "Pesti, salse e creme" [ref=e209]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                    - listitem [ref=e210]:
+                      - link "Piatti del mondo" [ref=e211]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                    - listitem [ref=e212]:
+                      - link "Contorni" [ref=e213]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                    - listitem [ref=e214]:
+                      - link "Insalate" [ref=e215]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                    - listitem [ref=e216]:
+                      - link "Frittate" [ref=e217]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                    - listitem [ref=e218]:
+                      - link "Risotti" [ref=e219]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                    - listitem [ref=e220]:
+                      - link "Secondi piatti" [ref=e221]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                    - listitem [ref=e222]:
+                      - link "Torte salate" [ref=e223]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - article [ref=e229]:
+                  - generic [ref=e230]:
+                    - generic [ref=e233]:
+                      - heading "Funghi trifolati" [level=1] [ref=e235]
+                      - list [ref=e237]:
+                        - listitem [ref=e238]:
+                          - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e241]'
+                          - generic [ref=e242] [cursor=pointer]: Sarah Lasaracina
+                        - listitem [ref=e243]: ·11 nov 2025
+                        - listitem [ref=e244]: "·Tempo di lettura: 1 min"
+                    - generic [ref=e251]:
+                      - paragraph [ref=e253]:
+                        - generic [ref=e254]: Contorno veloce e sfizioso!
+                      - separator [ref=e258]:
+                        - img [ref=e260]
+                      - paragraph [ref=e263]:
+                        - generic [ref=e264]:
+                          - strong [ref=e265]: "Porzioni:"
+                          - text: 2 persone
+                      - paragraph [ref=e267]:
+                        - generic [ref=e268]:
+                          - strong [ref=e269]: "Tempo di preparazione:"
+                          - text: 15 minuti
+                      - paragraph [ref=e271]:
+                        - generic [ref=e272]:
+                          - strong [ref=e273]: "Tempo di cottura:"
+                          - text: 10 minuti
+                      - paragraph [ref=e275]:
+                        - generic [ref=e276]:
+                          - strong [ref=e277]: "Strumenti:"
+                          - text: padella media, ciotola, tagliere, coltello, cucchiaio di legno, panno da cucina
+                      - paragraph [ref=e279]:
+                        - generic [ref=e280]:
+                          - strong [ref=e281]: "Avvertenze:"
+                          - text: pulisci i funghi con un panno umido,
+                          - strong [ref=e282]: non sotto l’acqua
+                          - text: ", per evitare che si inzuppino e perdano sapore"
+                      - separator [ref=e286]:
+                        - img [ref=e288]
+                      - generic [ref=e293]:
+                        - figure [ref=e297]:
+                          - generic [ref=e298]:
+                            - button "Expand image":
+                              - img
+                        - generic [ref=e301]:
+                          - heading "Ingredienti" [level=4] [ref=e302]:
+                            - generic [ref=e303]: Ingredienti
+                          - list [ref=e304]:
+                            - listitem [level=1] [ref=e305]:
+                              - paragraph [ref=e306]:
+                                - generic [ref=e307]:
+                                  - text: 400 g di
+                                  - strong [ref=e308]: funghi freschi
+                            - listitem [level=1] [ref=e309]:
+                              - paragraph [ref=e310]:
+                                - generic [ref=e311]:
+                                  - text: "1"
+                                  - strong [ref=e312]: spicchio d’aglio
+                            - listitem [level=1] [ref=e313]:
+                              - paragraph [ref=e314]:
+                                - generic [ref=e315]:
+                                  - text: "2"
+                                  - strong [ref=e316]: cucchiai di vino bianco secco
+                            - listitem [level=1] [ref=e317]:
+                              - paragraph [ref=e318]:
+                                - generic [ref=e319]:
+                                  - strong [ref=e320]: Prezzemolo tritato
+                                  - text: q.b.
+                            - listitem [level=1] [ref=e321]:
+                              - paragraph [ref=e322]:
+                                - generic [ref=e323]:
+                                  - strong [ref=e324]: Olio extravergine d’oliva
+                                  - text: q.b.
+                            - listitem [level=1] [ref=e325]:
+                              - paragraph [ref=e326]:
+                                - generic [ref=e327]:
+                                  - strong [ref=e328]: Sale fino
+                                  - text: q.b.
+                            - listitem [level=1] [ref=e329]:
+                              - paragraph [ref=e330]:
+                                - generic [ref=e331]:
+                                  - strong [ref=e332]: Pepe nero
+                                  - text: q.b.
+                      - separator [ref=e336]:
+                        - img [ref=e338]
+                      - heading "Procedura" [level=4] [ref=e341]:
+                        - generic [ref=e342]: Procedura
+                      - list [ref=e344]:
+                        - listitem [level=1] [ref=e345]:
+                          - paragraph [ref=e346]:
+                            - generic [ref=e347]:
+                              - strong [ref=e348]: Pulisci i funghi.
+                              - text: Elimina i residui di terra strofinando delicatamente la superficie con un panno umido.Stacca i gambi, rimuovi se vuoi la pellicina del cappello e le lamelle. Taglia i funghi a fettine sottili e mettili in una ciotola.
+                        - listitem [level=1] [ref=e349]:
+                          - paragraph [ref=e350]:
+                            - generic [ref=e351]:
+                              - strong [ref=e352]: Prepara il soffritto.
+                              - text: Scalda in padella un filo d’olio d’oliva con
+                              - strong [ref=e353]: uno spicchio d’aglio intero
+                              - text: .
+                        - listitem [level=1] [ref=e354]:
+                          - paragraph [ref=e355]:
+                            - generic [ref=e356]:
+                              - strong [ref=e357]: Cuoci i funghi.
+                              - text: Aggiungi i funghi tagliati e una manciata di prezzemolo tritato.Cuoci a
+                              - strong [ref=e358]: fuoco medio per circa 5–6 minuti
+                              - text: ", mescolando di tanto in tanto finché iniziano ad ammorbidirsi."
+                        - listitem [level=1] [ref=e359]:
+                          - paragraph [ref=e360]:
+                            - generic [ref=e361]:
+                              - strong [ref=e362]: Sfuma con il vino.
+                              - text: Versa
+                              - strong [ref=e363]: 2 cucchiai di vino bianco secco
+                              - text: ", alza la fiamma e lascia evaporare l’alcol per 1–2 minuti."
+                        - listitem [level=1] [ref=e364]:
+                          - paragraph [ref=e365]:
+                            - generic [ref=e366]:
+                              - strong [ref=e367]: Insaporisci.
+                              - text: Aggiungi
+                              - strong [ref=e368]: sale, pepe e un po’ di prezzemolo fresco
+                              - text: ", poi cuoci ancora 2–3 minuti per farli insaporire bene."
+                        - listitem [level=1] [ref=e369]:
+                          - paragraph [ref=e370]:
+                            - generic [ref=e371]:
+                              - strong [ref=e372]: Servi.
+                              - text: Togli l’aglio e servi i funghi trifolati caldi come
+                              - strong [ref=e373]: contorno
+                              - text: o
+                              - strong [ref=e374]: condimento per la pasta
+                              - text: .
+                      - separator [ref=e378]:
+                        - img [ref=e380]
+                      - heading "Suggerimenti e varianti" [level=4] [ref=e383]:
+                        - generic [ref=e384]: Suggerimenti e varianti
+                      - list [ref=e386]:
+                        - listitem [level=1] [ref=e387]:
+                          - paragraph [ref=e388]:
+                            - generic [ref=e389]:
+                              - text: Puoi usare
+                              - strong [ref=e390]: funghi misti
+                              - text: per un sapore più complesso.
+                        - listitem [level=1] [ref=e391]:
+                          - paragraph [ref=e392]:
+                            - generic [ref=e393]:
+                              - text: Per una versione cremosa, aggiungi un cucchiaio di
+                              - strong [ref=e394]: panna da cucina
+                              - text: o una noce di
+                              - strong [ref=e395]: burro
+                              - text: a fine cottura.
+                        - listitem [level=1] [ref=e396]:
+                          - paragraph [ref=e397]:
+                            - generic [ref=e398]:
+                              - text: Ottimi anche su
+                              - strong [ref=e399]: crostone di pane tostato
+                              - text: o come base per una
+                              - strong [ref=e400]: frittata ai funghi
+                              - text: .
+                    - generic [ref=e403]:
+                      - navigation "Tag" [ref=e405]:
+                        - list [ref=e406]:
+                          - listitem [ref=e407]:
+                            - link "Autunno/inverno" [ref=e408] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/autunno-inverno
+                          - listitem [ref=e409]:
+                            - link "Funghi" [ref=e410] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/funghi
+                      - list "Post categories" [ref=e412]:
+                        - listitem [ref=e413]:
+                          - link "Contorni" [ref=e414] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                      - generic [ref=e417]:
+                        - button "Condividi tramite link" [ref=e420] [cursor=pointer]:
+                          - img [ref=e421]
+                        - button "Stampa post" [ref=e425] [cursor=pointer]:
+                          - img [ref=e426]
+              - generic [ref=e434]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e452]
+                    - generic [ref=e463]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e464]:
+                            - generic [ref=e471]: Ricevi aggiornamenti!
+                          - paragraph [ref=e472]:
+                            - generic [ref=e480]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e481]:
+                            - generic [ref=e482]: Email *
+                            - textbox "Email *" [ref=e484]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e486] [cursor=pointer]:
+                            - generic [ref=e487]: Tienimi aggiornat*!
+    - contentinfo [ref=e492]:
+      - generic [ref=e498]:
+        - generic:
+          - generic:
+            - paragraph [ref=e499]:
+              - link "Ricette per pippe" [ref=e504] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e509] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e510]
+              - paragraph [ref=e511]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e512]
+  - region "bottom of page"

@@ -1,0 +1,367 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - link "Antispreco" [ref=e207]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                    - listitem [ref=e208]:
+                      - link "Pesti, salse e creme" [ref=e209]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                    - listitem [ref=e210]:
+                      - link "Piatti del mondo" [ref=e211]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                    - listitem [ref=e212]:
+                      - link "Contorni" [ref=e213]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                    - listitem [ref=e214]:
+                      - link "Insalate" [ref=e215]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                    - listitem [ref=e216]:
+                      - link "Frittate" [ref=e217]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                    - listitem [ref=e218]:
+                      - link "Risotti" [ref=e219]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                    - listitem [ref=e220]:
+                      - link "Secondi piatti" [ref=e221]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                    - listitem [ref=e222]:
+                      - link "Torte salate" [ref=e223]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e225]:
+                  - article [ref=e229]:
+                    - generic [ref=e230]:
+                      - generic [ref=e232]:
+                        - generic [ref=e233]:
+                          - heading "Torta di zucca morbidissima" [level=1] [ref=e235]
+                          - list [ref=e237]:
+                            - listitem [ref=e238]:
+                              - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e241]'
+                              - generic [ref=e242] [cursor=pointer]: Sarah Lasaracina
+                            - listitem [ref=e243]: ·19 nov 2025
+                            - listitem [ref=e244]: "·Tempo di lettura: 2 min"
+                        - paragraph [ref=e245]: "Aggiornamento: 23 feb"
+                      - generic [ref=e252]:
+                        - paragraph [ref=e254]:
+                          - generic [ref=e255]: L'unica buona ragione per amare l'autunno è la zucca (che non finisce maaai)!
+                        - separator [ref=e259]:
+                          - img [ref=e261]
+                        - generic [ref=e266]:
+                          - generic [ref=e267]:
+                            - paragraph [ref=e268]:
+                              - generic [ref=e269]:
+                                - strong [ref=e270]: "Porzioni:"
+                                - text: 6 persone
+                            - paragraph [ref=e271]:
+                              - generic [ref=e272]:
+                                - strong [ref=e273]: "Tempo di preparazione:"
+                                - text: 15 minuti
+                            - paragraph [ref=e274]:
+                              - generic [ref=e275]:
+                                - strong [ref=e276]: "Tempo di cottura:"
+                                - text: 45 minuti
+                            - paragraph [ref=e277]:
+                              - generic [ref=e278]:
+                                - strong [ref=e279]: "Strumenti:"
+                                - text: tortiera 20–22 cm, fruste elettriche, ciotole, spatola, carta forno, forno statico, friggitrice ad aria
+                            - paragraph [ref=e280]:
+                              - generic [ref=e281]:
+                                - strong [ref=e282]: "Avvertenze:"
+                                - text: la zucca deve essere
+                                - strong [ref=e283]: ben asciutta
+                                - text: (se resta umida, la torta diventa bassa e poco cotta al centro)
+                          - figure [ref=e289]:
+                            - generic [ref=e290]:
+                              - img "Foto generata con l'AI." [ref=e293] [cursor=pointer]
+                              - button "Expand image":
+                                - img
+                            - emphasis [ref=e297]:
+                              - generic [ref=e298]: Foto generata con l'AI.
+                        - separator [ref=e302]:
+                          - img [ref=e304]
+                        - paragraph [ref=e307]:
+                          - generic [ref=e308]:
+                            - strong [ref=e309]: "Porzioni:"
+                            - text: 6 persone
+                        - paragraph [ref=e311]:
+                          - generic [ref=e312]:
+                            - strong [ref=e313]: "Tempo di preparazione:"
+                            - text: 15 minuti
+                        - paragraph [ref=e315]:
+                          - generic [ref=e316]:
+                            - strong [ref=e317]: "Tempo di cottura:"
+                            - text: 45 minuti
+                        - paragraph [ref=e319]:
+                          - generic [ref=e320]:
+                            - strong [ref=e321]: "Strumenti:"
+                            - text: tortiera 20–22 cm, fruste elettriche, ciotole, spatola, carta forno, forno statico, friggitrice ad aria
+                        - paragraph [ref=e323]:
+                          - generic [ref=e324]:
+                            - strong [ref=e325]: "Avvertenze:"
+                            - text: la zucca deve essere
+                            - strong [ref=e326]: ben asciutta
+                            - text: (se resta umida, la torta diventa bassa e poco cotta al centro)
+                        - heading "Ingredienti" [level=2] [ref=e328]:
+                          - generic [ref=e329]: Ingredienti
+                        - list [ref=e331]:
+                          - listitem [level=1] [ref=e332]:
+                            - paragraph [ref=e333]:
+                              - generic [ref=e334]:
+                                - strong [ref=e335]: 300 g di zucca
+                                - text: già pulita
+                          - listitem [level=1] [ref=e336]:
+                            - paragraph [ref=e337]:
+                              - strong [ref=e339]: 3 uova
+                          - listitem [level=1] [ref=e340]:
+                            - paragraph [ref=e341]:
+                              - strong [ref=e343]: 150 g di zucchero semolato
+                          - listitem [level=1] [ref=e344]:
+                            - paragraph [ref=e345]:
+                              - strong [ref=e347]: 50 ml di olio di semi
+                          - listitem [level=1] [ref=e348]:
+                            - paragraph [ref=e349]:
+                              - generic [ref=e350]:
+                                - strong [ref=e351]: 50 ml di latte
+                                - text: (oppure
+                                - strong [ref=e352]: 50 ml di latte di cocco nel cartone
+                                - text: oppure
+                                - strong [ref=e353]: 50 ml di latte di soia
+                                - text: )
+                          - listitem [level=1] [ref=e354]:
+                            - paragraph [ref=e355]:
+                              - strong [ref=e357]: 270 g di farina 00
+                          - listitem [level=1] [ref=e358]:
+                            - paragraph [ref=e359]:
+                              - strong [ref=e361]: 1 bustina di lievito per dolci
+                          - listitem [level=1] [ref=e362]:
+                            - paragraph [ref=e363]:
+                              - generic [ref=e364]:
+                                - strong [ref=e365]: Zucchero a velo
+                                - text: q.b. per finire
+                          - listitem [level=1] [ref=e366]:
+                            - paragraph [ref=e367]:
+                              - generic [ref=e368]:
+                                - text: (opzionale) 2 o3 cucchiai di
+                                - strong [ref=e369]: gocce di cioccolato infarinate
+                        - heading "Procedura" [level=2] [ref=e371]:
+                          - generic [ref=e372]: Procedura
+                        - list [ref=e374]:
+                          - listitem [level=1] [ref=e375]:
+                            - paragraph [ref=e376]:
+                              - strong [ref=e378]: Cuoci la zucca (300 g).
+                            - list [ref=e379]:
+                              - listitem [level=2] [ref=e380]:
+                                - paragraph [ref=e381]:
+                                  - generic [ref=e382]: Taglia la zucca a cubetti.
+                              - listitem [level=2] [ref=e383]:
+                                - paragraph [ref=e384]:
+                                  - generic [ref=e385]:
+                                    - strong [ref=e386]: "Forno:"
+                                    - text: cuoci a
+                                    - strong [ref=e387]: 200°C per 20 min
+                                    - text: finché è asciutta.
+                                    - strong [ref=e388]: "(Friggitrice ad aria: 180°C per 12–15 min, mescolando a metà; se resta umida, altri 3–5 min.)"
+                              - listitem [level=2] [ref=e389]:
+                                - paragraph [ref=e390]:
+                                  - generic [ref=e391]: Frullala fino a ottenere una crema liscia.
+                          - listitem [level=1] [ref=e392]:
+                            - paragraph [ref=e393]:
+                              - strong [ref=e395]: Monta uova e zucchero.
+                            - paragraph [ref=e396]:
+                              - generic [ref=e397]:
+                                - link "In" [ref=e398] [cursor=pointer]:
+                                  - /url: http://zucchero.In
+                                - text: una ciotola monta
+                                - strong [ref=e399]: 3 uova
+                                - text: con
+                                - strong [ref=e400]: 150 g di zucchero
+                                - text: finché diventano chiare e spumose.
+                          - listitem [level=1] [ref=e401]:
+                            - paragraph [ref=e402]:
+                              - strong [ref=e404]: Aggiungi i liquidi.
+                            - paragraph [ref=e405]:
+                              - generic [ref=e406]:
+                                - text: Versa
+                                - strong [ref=e407]: 50 ml di olio di semi
+                                - text: e
+                                - strong [ref=e408]: 50 ml di latte
+                                - text: (o latte di cocco/soia).Continua a mescolare con le fruste per amalgamare.
+                          - listitem [level=1] [ref=e409]:
+                            - paragraph [ref=e410]:
+                              - strong [ref=e412]: Incorpora la zucca.
+                            - paragraph [ref=e413]:
+                              - generic [ref=e414]:
+                                - text: Aggiungi tutta la
+                                - strong [ref=e415]: purea di zucca (300 g frullata)
+                                - text: e mescola finché il composto è uniforme.
+                          - listitem [level=1] [ref=e416]:
+                            - paragraph [ref=e417]:
+                              - strong [ref=e419]: Unisci gli ingredienti secchi.
+                            - paragraph [ref=e420]:
+                              - generic [ref=e421]:
+                                - text: Aggiungi gradualmente
+                                - strong [ref=e422]: 270 g di farina 00 setacciata
+                                - text: ", mescolando con una spatola. Aggiungi poi"
+                                - strong [ref=e423]: 1 bustina di lievito per dolci
+                                - text: (eventualmente le gocce di cioccolato) e mescola il minimo indispensabile.
+                          - listitem [level=1] [ref=e424]:
+                            - paragraph [ref=e425]:
+                              - strong [ref=e427]: Cuoci la torta.
+                            - paragraph [ref=e428]:
+                              - generic [ref=e429]:
+                                - text: Versa l’impasto nello
+                                - strong [ref=e430]: stampo da 20–22 cm
+                                - text: imburrato e infarinato. Cuoci in
+                                - strong [ref=e431]: forno statico a 170°C per circa 45 minuti
+                                - text: . Controlla con lo stecchino.
+                          - listitem [level=1] [ref=e432]:
+                            - paragraph [ref=e433]:
+                              - strong [ref=e435]: Fai raffreddare e servi.
+                            - paragraph [ref=e436]:
+                              - generic [ref=e437]:
+                                - text: Lascia raffreddare completamente e spolverizza con
+                                - strong [ref=e438]: zucchero a velo
+                                - text: .
+                      - generic [ref=e444]:
+                        - navigation "Tag" [ref=e446]:
+                          - list [ref=e447]:
+                            - listitem [ref=e448]:
+                              - link "Autunno/inverno" [ref=e449] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/autunno-inverno
+                            - listitem [ref=e450]:
+                              - link "Dolci" [ref=e451] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/dolci
+                            - listitem [ref=e452]:
+                              - link "Torte" [ref=e453] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/torte
+                            - listitem [ref=e454]:
+                              - link "Compleanno" [ref=e455] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/compleanno
+                        - list "Post categories" [ref=e457]:
+                          - listitem [ref=e458]:
+                            - link "Dolci" [ref=e459] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                          - listitem [ref=e460]:
+                            - text: ·
+                            - link "Antispreco" [ref=e461] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                        - generic [ref=e464]:
+                          - button "Condividi tramite link" [ref=e467] [cursor=pointer]:
+                            - img [ref=e468]
+                          - button "Stampa post" [ref=e472] [cursor=pointer]:
+                            - img [ref=e473]
+                  - generic [ref=e483]:
+                    - generic [ref=e484]:
+                      - heading "Post recenti" [level=2] [ref=e485]
+                      - link "Mostra tutti" [ref=e486] [cursor=pointer]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - generic [ref=e488]:
+                      - article [ref=e489]:
+                        - generic [ref=e490]:
+                          - link "creme caramel" [ref=e491] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-crème-caramel-super-safe
+                          - link "Torta Crème Caramel super safe" [ref=e496] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-crème-caramel-super-safe
+                      - article [ref=e503]:
+                        - generic [ref=e504]:
+                          - link "pezzo di torta salata patate e zucchine" [ref=e505] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-salata-zucchine-e-patate
+                          - link "Torta salata zucchine e patate" [ref=e510] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-salata-zucchine-e-patate
+                      - article [ref=e517]:
+                        - generic [ref=e518]:
+                          - link "Torta fit alle carote per colazione" [ref=e519] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-fit-alle-carote-per-colazione
+                          - link "Torta fit alle carote per colazione" [ref=e524] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-fit-alle-carote-per-colazione
+              - generic [ref=e531]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e549]
+                    - generic [ref=e560]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e561]:
+                            - generic [ref=e568]: Ricevi aggiornamenti!
+                          - paragraph [ref=e569]:
+                            - generic [ref=e577]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e578]:
+                            - generic [ref=e579]: Email *
+                            - textbox "Email *" [ref=e581]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e583] [cursor=pointer]:
+                            - generic [ref=e584]: Tienimi aggiornat*!
+    - contentinfo [ref=e589]:
+      - generic [ref=e595]:
+        - generic:
+          - generic:
+            - paragraph [ref=e596]:
+              - link "Ricette per pippe" [ref=e601] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e606] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e607]
+              - paragraph [ref=e608]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e609]
+  - region "bottom of page"

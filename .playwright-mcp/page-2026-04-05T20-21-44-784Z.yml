@@ -1,0 +1,483 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - link "Antispreco" [ref=e207]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                    - listitem [ref=e208]:
+                      - link "Pesti, salse e creme" [ref=e209]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                    - listitem [ref=e210]:
+                      - link "Piatti del mondo" [ref=e211]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                    - listitem [ref=e212]:
+                      - link "Contorni" [ref=e213]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                    - listitem [ref=e214]:
+                      - link "Insalate" [ref=e215]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                    - listitem [ref=e216]:
+                      - link "Frittate" [ref=e217]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                    - listitem [ref=e218]:
+                      - link "Risotti" [ref=e219]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                    - listitem [ref=e220]:
+                      - link "Secondi piatti" [ref=e221]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                    - listitem [ref=e222]:
+                      - link "Torte salate" [ref=e223]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e225]:
+                  - article [ref=e229]:
+                    - generic [ref=e230]:
+                      - generic [ref=e232]:
+                        - generic [ref=e233]:
+                          - heading "Red Velvet Cake" [level=1] [ref=e235]
+                          - list [ref=e237]:
+                            - listitem [ref=e238]:
+                              - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e241]'
+                              - generic [ref=e242] [cursor=pointer]: Sarah Lasaracina
+                            - listitem [ref=e243]: ·9 dic 2025
+                            - listitem [ref=e244]: "·Tempo di lettura: 3 min"
+                        - paragraph [ref=e245]: "Aggiornamento: 23 feb"
+                      - generic [ref=e252]:
+                        - paragraph [ref=e254]:
+                          - generic [ref=e255]: Buona e vegana! L’ho adattata per farne 28 porzioni (non senza difficoltà) e ha conquistato tutti. La rifarò, migliorando soprattutto il rosso, che qui non ha funzionato (per fortuna senza influire sul sapore).
+                        - separator [ref=e259]:
+                          - img [ref=e261]
+                        - generic [ref=e266]:
+                          - figure [ref=e272]:
+                            - generic [ref=e273]:
+                              - img "Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!" [ref=e276] [cursor=pointer]
+                              - button "Expand image":
+                                - img
+                            - emphasis [ref=e280]:
+                              - generic [ref=e281]: Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!
+                          - generic [ref=e282]:
+                            - heading "Informazioni rapide" [level=3] [ref=e283]:
+                              - generic [ref=e284]: Informazioni rapide
+                            - paragraph [ref=e285]:
+                              - generic [ref=e286]:
+                                - strong [ref=e287]: "Porzioni:"
+                                - text: "10"
+                            - paragraph [ref=e288]:
+                              - generic [ref=e289]:
+                                - strong [ref=e290]: "Tempo di preparazione:"
+                                - text: 4,5 ore (20 min base, 10 min farcia, molto tempo di raffreddamento e di decorazione)
+                            - paragraph [ref=e291]:
+                              - generic [ref=e292]:
+                                - strong [ref=e293]: "Tempo di cottura:"
+                                - text: 45 minuti
+                            - paragraph [ref=e294]:
+                              - generic [ref=e295]:
+                                - strong [ref=e296]: "Strumenti:"
+                                - text: 2 ciotole, fruste elettriche, tortiera a cerniera 24 cm, spatola per distribuire la farcia, righello e stecchini.
+                            - paragraph [ref=e297]:
+                              - generic [ref=e298]:
+                                - strong [ref=e299]: "Avvertenze:"
+                                - text: Io l'ho decorata a tema natalizio, ma fai tu!
+                        - separator [ref=e303]:
+                          - img [ref=e305]
+                        - generic [ref=e310]:
+                          - generic [ref=e311]:
+                            - heading "Ingredienti" [level=3] [ref=e312]:
+                              - generic [ref=e313]: Ingredienti
+                            - heading "Base" [level=4] [ref=e314]:
+                              - generic [ref=e315]: Base
+                            - list [ref=e316]:
+                              - listitem [level=1] [ref=e317]:
+                                - paragraph [ref=e318]:
+                                  - generic [ref=e319]: 250 g farina 0
+                              - listitem [level=1] [ref=e320]:
+                                - paragraph [ref=e321]:
+                                  - generic [ref=e322]: 2 cucchiai cacao amaro
+                              - listitem [level=1] [ref=e323]:
+                                - paragraph [ref=e324]:
+                                  - generic [ref=e325]: 200 g zucchero di canna
+                              - listitem [level=1] [ref=e326]:
+                                - paragraph [ref=e327]:
+                                  - generic [ref=e328]: 1 cucchiaino estratto di vaniglia
+                              - listitem [level=1] [ref=e329]:
+                                - paragraph [ref=e330]:
+                                  - generic [ref=e331]: 250 g yogurt di soia naturale
+                              - listitem [level=1] [ref=e332]:
+                                - paragraph [ref=e333]:
+                                  - generic [ref=e334]: 120 ml latte di soia
+                              - listitem [level=1] [ref=e335]:
+                                - paragraph [ref=e336]:
+                                  - generic [ref=e337]: 120 ml olio di semi di girasole
+                              - listitem [level=1] [ref=e338]:
+                                - paragraph [ref=e339]:
+                                  - generic [ref=e340]: 3 cucchiaini colorante rosso in gel
+                              - listitem [level=1] [ref=e341]:
+                                - paragraph [ref=e342]:
+                                  - generic [ref=e343]: 1 cucchiaino succo di limone
+                              - listitem [level=1] [ref=e344]:
+                                - paragraph [ref=e345]:
+                                  - strong [ref=e347]: 1 cucchiaino bicarbonato di sodio
+                              - listitem [level=1] [ref=e348]:
+                                - paragraph [ref=e349]:
+                                  - strong [ref=e351]: 1 cucchiaino aceto di mele
+                            - heading "Farcia" [level=4] [ref=e352]:
+                              - generic [ref=e353]: Farcia
+                            - list [ref=e354]:
+                              - listitem [level=1] [ref=e355]:
+                                - paragraph [ref=e356]:
+                                  - generic [ref=e357]: 250 g formaggio cremoso vegan
+                              - listitem [level=1] [ref=e358]:
+                                - paragraph [ref=e359]:
+                                  - generic [ref=e360]: 200 ml panna di soia (o panna veg)
+                              - listitem [level=1] [ref=e361]:
+                                - paragraph [ref=e362]:
+                                  - generic [ref=e363]: 120 g zucchero a velo
+                              - listitem [level=1] [ref=e364]:
+                                - paragraph [ref=e365]:
+                                  - generic [ref=e366]: 1 cucchiaino estratto di vaniglia
+                            - heading "Per guarnire" [level=4] [ref=e367]:
+                              - generic [ref=e368]: Per guarnire
+                            - list [ref=e369]:
+                              - listitem [level=1] [ref=e370]:
+                                - paragraph [ref=e371]:
+                                  - generic [ref=e372]: Fragole
+                              - listitem [level=1] [ref=e373]:
+                                - paragraph [ref=e374]:
+                                  - generic [ref=e375]: Panna di soia (o panna veg) montata
+                              - listitem [level=1] [ref=e376]:
+                                - paragraph [ref=e377]:
+                                  - generic [ref=e378]: ...o qualsiasi decorazione ci piaccia!
+                          - figure [ref=e382]:
+                            - generic [ref=e383]:
+                              - button "Expand image":
+                                - img
+                        - heading "Procedura" [level=3] [ref=e387]:
+                          - generic [ref=e388]: Procedura
+                        - heading "1. Prepara l’impasto della torta" [level=4] [ref=e390]:
+                          - generic [ref=e391]: 1. Prepara l’impasto della torta
+                        - list [ref=e393]:
+                          - listitem [level=1] [ref=e394]:
+                            - paragraph [ref=e395]:
+                              - generic [ref=e396]:
+                                - text: In una
+                                - strong [ref=e397]: ciotola grande
+                                - text: ", mescola tutti gli ingredienti secchi"
+                                - strong [ref=e398]: eccetto il bicarbonato
+                                - text: ":"
+                            - list [ref=e399]:
+                              - listitem [level=2] [ref=e400]:
+                                - paragraph [ref=e401]:
+                                  - generic [ref=e402]:
+                                    - strong [ref=e403]: 250 g farina 0
+                                    - text: ","
+                              - listitem [level=2] [ref=e404]:
+                                - paragraph [ref=e405]:
+                                  - generic [ref=e406]:
+                                    - strong [ref=e407]: 2 cucchiai cacao amaro
+                                    - text: ","
+                              - listitem [level=2] [ref=e408]:
+                                - paragraph [ref=e409]:
+                                  - generic [ref=e410]:
+                                    - strong [ref=e411]: 200 g zucchero di canna
+                                    - text: ","
+                              - listitem [level=2] [ref=e412]:
+                                - paragraph [ref=e413]:
+                                  - generic [ref=e414]:
+                                    - strong [ref=e415]: 1 cucchiaino di estratto di vaniglia
+                                    - text: .
+                          - listitem [level=1] [ref=e416]:
+                            - paragraph [ref=e417]:
+                              - generic [ref=e418]: "In un’altra ciotola mescola i liquidi:"
+                            - list [ref=e419]:
+                              - listitem [level=2] [ref=e420]:
+                                - paragraph [ref=e421]:
+                                  - generic [ref=e422]:
+                                    - strong [ref=e423]: 250 g yogurt di soia
+                                    - text: ","
+                              - listitem [level=2] [ref=e424]:
+                                - paragraph [ref=e425]:
+                                  - generic [ref=e426]:
+                                    - strong [ref=e427]: 120 ml latte di soia
+                                    - text: ","
+                              - listitem [level=2] [ref=e428]:
+                                - paragraph [ref=e429]:
+                                  - generic [ref=e430]:
+                                    - strong [ref=e431]: 120 ml olio di semi
+                                    - text: ","
+                              - listitem [level=2] [ref=e432]:
+                                - paragraph [ref=e433]:
+                                  - generic [ref=e434]:
+                                    - strong [ref=e435]: 3 cucchiaini colorante rosso
+                                    - text: ","
+                              - listitem [level=2] [ref=e436]:
+                                - paragraph [ref=e437]:
+                                  - generic [ref=e438]:
+                                    - strong [ref=e439]: 1 cucchiaino di succo di limone
+                                    - text: .
+                          - listitem [level=1] [ref=e440]:
+                            - paragraph [ref=e441]:
+                              - generic [ref=e442]:
+                                - text: Versa i liquidi nella ciotola dei secchi
+                                - strong [ref=e443]: poco alla volta
+                                - text: ", frullando fino a ottenere un composto omogeneo."
+                          - listitem [level=1] [ref=e444]:
+                            - paragraph [ref=e445]:
+                              - generic [ref=e446]:
+                                - text: In una ciotolina unisci
+                                - strong [ref=e447]: 1 cucchiaino di bicarbonato
+                                - text: con
+                                - strong [ref=e448]: 1 cucchiaino di aceto di mele
+                                - text: ": si formerà una schiuma."
+                          - listitem [level=1] [ref=e449]:
+                            - paragraph [ref=e450]:
+                              - generic [ref=e451]: Versa subito la miscela nel composto e mescola brevemente (non troppo).
+                        - heading "2. Cottura della torta" [level=4] [ref=e453]:
+                          - strong [ref=e455]: 2. Cottura della torta
+                        - list [ref=e457]:
+                          - listitem [level=1] [ref=e458]:
+                            - paragraph [ref=e459]:
+                              - generic [ref=e460]:
+                                - text: Versa l’impasto in una tortiera a cerniera da
+                                - strong [ref=e461]: 24 cm
+                                - text: ", unta e infarinata."
+                          - listitem [level=1] [ref=e462]:
+                            - paragraph [ref=e463]:
+                              - generic [ref=e464]:
+                                - text: Cuoci a
+                                - strong [ref=e465]: 180°C
+                                - text: per
+                                - strong [ref=e466]: 40–45 minuti
+                                - text: con l'orlo della teglia a mezza altezza del forno.
+                          - listitem [level=1] [ref=e467]:
+                            - paragraph [ref=e468]:
+                              - generic [ref=e469]: "Fai la prova stecchino: deve uscire asciutto."
+                          - listitem [level=1] [ref=e470]:
+                            - paragraph [ref=e471]:
+                              - generic [ref=e472]: "Sforna e fai raffreddare completamente (minimo 2h). Nota: se la torta non esce dallo stampo, il burro potrebbe essersi solidificato. Bagna un canovaccio con acqua bollente e poggiaci su la teglia: il burro si scioglie e la torta si stacca!"
+                        - heading "3. Prepara la farcia" [level=4] [ref=e474]:
+                          - strong [ref=e476]: 3. Prepara la farcia
+                        - list [ref=e478]:
+                          - listitem [level=1] [ref=e479]:
+                            - paragraph [ref=e480]:
+                              - generic [ref=e481]: "In una ciotola lavora:"
+                            - list [ref=e482]:
+                              - listitem [level=2] [ref=e483]:
+                                - paragraph [ref=e484]:
+                                  - generic [ref=e485]:
+                                    - strong [ref=e486]: 250 g formaggio cremoso vegan
+                                    - text: ","
+                              - listitem [level=2] [ref=e487]:
+                                - paragraph [ref=e488]:
+                                  - generic [ref=e489]:
+                                    - strong [ref=e490]: 120 g zucchero a velo
+                                    - text: (aggiungine metà e assaggia... io ho usato il 35% circa di zucchero in meno!)
+                              - listitem [level=2] [ref=e491]:
+                                - paragraph [ref=e492]:
+                                  - generic [ref=e493]:
+                                    - strong [ref=e494]: 1 cucchiaino di estratto di vaniglia
+                                    - text: .
+                          - listitem [level=1] [ref=e495]:
+                            - paragraph [ref=e496]:
+                              - generic [ref=e497]:
+                                - text: A parte, monta con le fruste
+                                - strong [ref=e498]: 200 ml panna
+                                - text: .
+                          - listitem [level=1] [ref=e499]:
+                            - paragraph [ref=e500]:
+                              - generic [ref=e501]:
+                                - text: Unisci la panna alla crema mescolando
+                                - strong [ref=e502]: dal basso verso l’alto
+                                - text: .
+                        - heading "4. Assembla la Red Velvet" [level=4] [ref=e504]:
+                          - strong [ref=e506]: 4. Assembla la Red Velvet
+                        - list [ref=e508]:
+                          - listitem [level=1] [ref=e509]:
+                            - paragraph [ref=e510]:
+                              - generic [ref=e511]: Rimuovi la torta dallo stampo.
+                          - listitem [level=1] [ref=e512]:
+                            - paragraph [ref=e513]:
+                              - generic [ref=e514]: "Elimina la crosticina più scura: tieni gli scarti da parte (potresti usarli come briciole per decorare)."
+                          - listitem [level=1] [ref=e515]:
+                            - paragraph [ref=e516]:
+                              - generic [ref=e517]:
+                                - text: Taglia la torta in
+                                - strong [ref=e518]: 3 dischi
+                                - text: ": accosta il righello alla torta e inserisci degli stecchini a definire il punto di taglio dei dischi. Ripeti in 3 o 4 punti della torta e usa la posizione degli stecchini come guida per il taglio dei dischi."
+                          - listitem [level=1] [ref=e519]:
+                            - paragraph [ref=e520]:
+                              - generic [ref=e521]:
+                                - text: Disponi il primo disco sul piatto da portata e spalma circa
+                                - strong [ref=e522]: 1/5 della farcia
+                                - text: (o creando uno strato di 1 cm abbondante di crema).
+                          - listitem [level=1] [ref=e523]:
+                            - paragraph [ref=e524]:
+                              - generic [ref=e525]: Copri con il secondo disco, farcisci allo stesso modo, aggiungi il terzo.
+                            - paragraph [ref=e526]:
+                              - generic [ref=e527]:
+                                - text: Con una spatola ricopri
+                                - strong [ref=e528]: bordi e superficie
+                                - text: "con la crema rimasta:"
+                            - list [ref=e529]:
+                              - listitem [level=2] [ref=e530]:
+                                - paragraph [ref=e531]:
+                                  - generic [ref=e532]: (Opzionale) per creare un topping di base per la crema di rivestimento, metti un po' di crema sulla torta, livella e refrigera per 5 min.
+                              - listitem [level=2] [ref=e533]:
+                                - paragraph [ref=e534]:
+                                  - generic [ref=e535]: Versa tutta la crema sulla torta e inizia a livellare. La parte che eccederà e cadrà sui lati sarà la base per il livellamento dei lati.
+                          - listitem [level=1] [ref=e536]:
+                            - paragraph [ref=e537]:
+                              - generic [ref=e538]:
+                                - text: Decora i bordi con le
+                                - strong [ref=e539]: briciole rosse
+                                - text: ricavate dagli scarti, la superficie con panna montata e fragole o con la decorazione a tua scelta.
+                        - heading "5. Riposo" [level=4] [ref=e541]:
+                          - strong [ref=e543]: 5. Riposo
+                        - paragraph [ref=e545]:
+                          - generic [ref=e546]:
+                            - text: Lascia riposare la torta in frigo
+                            - strong [ref=e547]: 1 ora
+                            - text: prima di servire.
+                        - separator [ref=e551]:
+                          - img [ref=e553]
+                        - figure [ref=e558]:
+                          - generic [ref=e559]:
+                            - button "Expand image":
+                              - img
+                      - generic [ref=e567]:
+                        - navigation "Tag" [ref=e569]:
+                          - list [ref=e570]:
+                            - listitem [ref=e571]:
+                              - link "4 stagioni" [ref=e572] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/4-stagioni
+                            - listitem [ref=e573]:
+                              - link "Dolci" [ref=e574] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/dolci
+                            - listitem [ref=e575]:
+                              - link "Torte" [ref=e576] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/torte
+                            - listitem [ref=e577]:
+                              - link "Compleanno" [ref=e578] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/compleanno
+                        - list "Post categories" [ref=e580]:
+                          - listitem [ref=e581]:
+                            - link "Dolci" [ref=e582] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                        - generic [ref=e585]:
+                          - button "Condividi tramite link" [ref=e588] [cursor=pointer]:
+                            - img [ref=e589]
+                          - button "Stampa post" [ref=e593] [cursor=pointer]:
+                            - img [ref=e594]
+                  - generic [ref=e604]:
+                    - generic [ref=e605]:
+                      - heading "Post recenti" [level=2] [ref=e606]
+                      - link "Mostra tutti" [ref=e607] [cursor=pointer]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - generic [ref=e609]:
+                      - article [ref=e610]:
+                        - generic [ref=e611]:
+                          - link "creme caramel" [ref=e612] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-crème-caramel-super-safe
+                          - link "Torta Crème Caramel super safe" [ref=e617] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-crème-caramel-super-safe
+                      - article [ref=e624]:
+                        - generic [ref=e625]:
+                          - link "Torta fit alle carote per colazione" [ref=e626] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-fit-alle-carote-per-colazione
+                          - link "Torta fit alle carote per colazione" [ref=e631] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-fit-alle-carote-per-colazione
+                      - article [ref=e638]:
+                        - generic [ref=e639]:
+                          - link "torta al cioccolato in piatto" [ref=e640] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/crostata-morbida-al-cacao-con-ganache-al-cioccolato
+                          - link "Crostata morbida al cacao con ganache al cioccolato" [ref=e645] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/crostata-morbida-al-cacao-con-ganache-al-cioccolato
+              - generic [ref=e652]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e670]
+                    - generic [ref=e681]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e682]:
+                            - generic [ref=e689]: Ricevi aggiornamenti!
+                          - paragraph [ref=e690]:
+                            - generic [ref=e698]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e699]:
+                            - generic [ref=e700]: Email *
+                            - textbox "Email *" [ref=e702]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e704] [cursor=pointer]:
+                            - generic [ref=e705]: Tienimi aggiornat*!
+    - contentinfo [ref=e710]:
+      - generic [ref=e716]:
+        - generic:
+          - generic:
+            - paragraph [ref=e717]:
+              - link "Ricette per pippe" [ref=e722] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e727] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e728]
+              - paragraph [ref=e729]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e730]
+  - region "bottom of page"

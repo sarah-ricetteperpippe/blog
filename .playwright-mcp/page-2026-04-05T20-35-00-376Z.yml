@@ -1,0 +1,348 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - link "Antispreco" [ref=e207]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                    - listitem [ref=e208]:
+                      - link "Pesti, salse e creme" [ref=e209]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                    - listitem [ref=e210]:
+                      - link "Piatti del mondo" [ref=e211]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                    - listitem [ref=e212]:
+                      - link "Contorni" [ref=e213]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                    - listitem [ref=e214]:
+                      - link "Insalate" [ref=e215]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                    - listitem [ref=e216]:
+                      - link "Frittate" [ref=e217]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                    - listitem [ref=e218]:
+                      - link "Risotti" [ref=e219]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                    - listitem [ref=e220]:
+                      - link "Secondi piatti" [ref=e221]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                    - listitem [ref=e222]:
+                      - link "Torte salate" [ref=e223]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e225]:
+                  - article [ref=e229]:
+                    - generic [ref=e230]:
+                      - generic [ref=e233]:
+                        - heading "Cotolette di funghi cardoncelli" [level=1] [ref=e235]
+                        - list [ref=e237]:
+                          - listitem [ref=e238]:
+                            - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e241]'
+                            - generic [ref=e242] [cursor=pointer]: Sarah Lasaracina
+                          - listitem [ref=e243]: ·24 feb
+                          - listitem [ref=e244]: "·Tempo di lettura: 2 min"
+                      - generic [ref=e251]:
+                        - paragraph [ref=e253]:
+                          - generic [ref=e254]: Sembrano cotolette classiche, sono buone sfiziose e croccano da favola, sono stupita di me stessa!
+                        - separator [ref=e258]:
+                          - img [ref=e260]
+                        - figure [ref=e265]:
+                          - generic [ref=e266]:
+                            - img "La foto del piatto è originale, il post-editing è fatto con l'AI!" [ref=e269] [cursor=pointer]
+                            - button "Expand image":
+                              - img
+                          - emphasis [ref=e273]:
+                            - generic [ref=e274]: La foto del piatto è originale, il post-editing è fatto con l'AI!
+                        - heading "Informazioni rapide" [level=2] [ref=e279]:
+                          - generic [ref=e281]: Informazioni rapide
+                        - list [ref=e283]:
+                          - listitem [level=1] [ref=e284]:
+                            - paragraph [ref=e285]:
+                              - generic [ref=e286]:
+                                - strong [ref=e287]: Porzioni
+                                - text: ": 2 abbondanti"
+                          - listitem [level=1] [ref=e288]:
+                            - paragraph [ref=e289]:
+                              - generic [ref=e290]:
+                                - strong [ref=e291]: Tempo totale
+                                - text: ": 40 minuti"
+                            - list [ref=e292]:
+                              - listitem [level=2] [ref=e293]:
+                                - paragraph [ref=e294]:
+                                  - generic [ref=e295]:
+                                    - strong [ref=e296]: Preparazione
+                                    - text: ": 20 minuti"
+                              - listitem [level=2] [ref=e297]:
+                                - paragraph [ref=e298]:
+                                  - generic [ref=e299]:
+                                    - strong [ref=e300]: Cottura
+                                    - text: ": 20 minuti"
+                          - listitem [level=1] [ref=e301]:
+                            - paragraph [ref=e302]:
+                              - generic [ref=e303]:
+                                - strong [ref=e304]: Strumenti
+                                - text: ": 4 piatti fondi, cucchiai, schiumarola, pentola alta per frittura, carta forno, carta assorbente, batticarne"
+                          - listitem [level=1] [ref=e305]:
+                            - paragraph [ref=e306]:
+                              - generic [ref=e307]:
+                                - strong [ref=e308]: Avvertenze
+                                - text: ": Con le cotolette si spreca panatura, è normale. Non lesinare nei piatti o i composti non aderiranno bene alle fette, ma per evitare sprechi potresti cominciare con mezze dosi delle polvere e rimboccare al bisongo."
+                        - separator [ref=e312]:
+                          - img [ref=e314]
+                        - heading "Ingredienti" [level=2] [ref=e317]:
+                          - generic [ref=e319]: Ingredienti
+                        - list [ref=e321]:
+                          - listitem [level=1] [ref=e322]:
+                            - paragraph [ref=e323]:
+                              - generic [ref=e324]:
+                                - strong [ref=e325]: 400 g funghi cardoncelli freschi
+                                - text: (più i cappellini sono larghi e spessi, meglio è)
+                          - listitem [level=1] [ref=e326]:
+                            - paragraph [ref=e327]:
+                              - generic [ref=e328]:
+                                - strong [ref=e329]:
+                                  - generic [ref=e330]: 1 uovo
+                                - generic [ref=e331]: (io uova etiche di
+                                - link "UoVoPerfetto" [ref=e332] [cursor=pointer]:
+                                  - /url: https://uovoperfetto.it/
+                                  - generic [ref=e334]: UoVoPerfetto
+                                - generic [ref=e335]: )
+                          - listitem [level=1] [ref=e336]:
+                            - paragraph [ref=e337]:
+                              - generic [ref=e338]:
+                                - strong [ref=e339]:
+                                  - generic [ref=e340]: 3 cucchiai di latte
+                                - generic [ref=e341]: (io di soia senza zuccheri aggiunti)
+                          - listitem [level=1] [ref=e342]:
+                            - paragraph [ref=e343]:
+                              - strong [ref=e345]: 8 cucchiai farina
+                          - listitem [level=1] [ref=e346]:
+                            - paragraph [ref=e347]:
+                              - strong [ref=e349]: 6 cucchiai pangrattato
+                          - listitem [level=1] [ref=e350]:
+                            - paragraph [ref=e351]:
+                              - strong [ref=e353]: 4 cucchiai formaggio grattugiato
+                          - listitem [level=1] [ref=e354]:
+                            - paragraph [ref=e355]:
+                              - generic [ref=e356]:
+                                - strong [ref=e357]: Sale
+                                - text: q.b.
+                          - listitem [level=1] [ref=e358]:
+                            - paragraph [ref=e359]:
+                              - generic [ref=e360]:
+                                - strong [ref=e361]: Pepe
+                                - text: q.b.
+                          - listitem [level=1] [ref=e362]:
+                            - paragraph [ref=e363]:
+                              - generic [ref=e364]:
+                                - strong [ref=e365]: Spezie
+                                - text: a piacere (consigliato prezzemolo tritato fine)
+                          - listitem [level=1] [ref=e366]:
+                            - paragraph [ref=e367]:
+                              - generic [ref=e368]:
+                                - strong [ref=e369]: Olio per frittura
+                                - text: (abbondante)
+                        - separator [ref=e373]:
+                          - img [ref=e375]
+                        - heading "Procedimento" [level=2] [ref=e378]:
+                          - generic [ref=e380]: Procedimento
+                        - heading "Preparazione funghi e impanatura" [level=3] [ref=e385]:
+                          - generic [ref=e387]: Preparazione funghi e impanatura
+                        - list [ref=e389]:
+                          - listitem [level=1] [ref=e390]:
+                            - paragraph [ref=e391]:
+                              - generic [ref=e392]: Preriscalda il forno a 180°.
+                          - listitem [level=1] [ref=e393]:
+                            - paragraph [ref=e394]:
+                              - generic [ref=e395]:
+                                - text: Pulisci i
+                                - strong [ref=e396]: 400 g di cardoncelli
+                                - text: accarezzandoli con un panno o carta assorbente. Non lavarli sotto acqua.
+                          - listitem [level=1] [ref=e397]:
+                            - paragraph [ref=e398]:
+                              - generic [ref=e399]:
+                                - text: Disponi i funghi su carta forno e
+                                - strong [ref=e400]: cuoci a 180° per 10–12 minuti
+                                - text: ", girandoli a metà cottura. Dai un'occhiata, i tempi potrebbero variare in base allo spesso re del fungo."
+                          - listitem [level=1] [ref=e401]:
+                            - paragraph [ref=e402]:
+                              - generic [ref=e403]:
+                                - text: In un piatto sbatti
+                                - strong [ref=e404]: 1 uovo con 3 cucchiai di latte, sale e pepe
+                                - text: .
+                          - listitem [level=1] [ref=e405]:
+                            - paragraph [ref=e406]:
+                              - generic [ref=e407]:
+                                - text: In un secondo piatto metti
+                                - strong [ref=e408]: 8 cucchiai di farina
+                                - text: .
+                          - listitem [level=1] [ref=e409]:
+                            - paragraph [ref=e410]:
+                              - generic [ref=e411]:
+                                - text: In un terzo piatto unisci
+                                - strong [ref=e412]: 6 cucchiai di pangrattato, 4 cucchiai di formaggio grattugiato e le spezie scelte
+                                - text: .
+                          - listitem [level=1] [ref=e413]:
+                            - paragraph [ref=e414]:
+                              - generic [ref=e415]: Sforna i funghi, tamponali bene con carta assorbente e lasciali intiepidire.
+                          - listitem [level=1] [ref=e416]:
+                            - paragraph [ref=e417]:
+                              - generic [ref=e418]: Se necessario, appiattisci delicatamente le fette con colpetti leggeri di batticarne.
+                        - heading "Impanatura" [level=3] [ref=e420]:
+                          - generic [ref=e422]: Impanatura
+                        - list [ref=e424]:
+                          - listitem [level=1] [ref=e425]:
+                            - paragraph [ref=e426]:
+                              - generic [ref=e427]: Passa una fetta nella farina premendo delicatamente ma con decisione.
+                          - listitem [level=1] [ref=e428]:
+                            - paragraph [ref=e429]:
+                              - generic [ref=e430]: Gira la fetta prendendola dai bordi, premi anche l’altro lato sulla farina e, se necessario, aggiungi farina dove manca.
+                          - listitem [level=1] [ref=e431]:
+                            - paragraph [ref=e432]:
+                              - generic [ref=e433]: "Passa la fetta nell’uovo con un movimento dolce: un lato, poi l’altro. Non lasciarla immersa a lungo. Assicurati che la fetta sia tutta unta."
+                          - listitem [level=1] [ref=e434]:
+                            - paragraph [ref=e435]:
+                              - generic [ref=e436]: Trasferisci la fetta nel composto di pangrattato. Premi bene da un lato, gira sempre dai bordi e premi di nuovo. Aggiungi pangrattato dove serve e scuoti con estrema delicatezza l'eccesso.
+                          - listitem [level=1] [ref=e437]:
+                            - paragraph [ref=e438]:
+                              - generic [ref=e439]: Ripeti per tutte le fette.
+                        - heading "Frittura" [level=3] [ref=e443]:
+                          - generic [ref=e445]: Frittura
+                        - list [ref=e447]:
+                          - listitem [level=1] [ref=e448]:
+                            - paragraph [ref=e449]:
+                              - generic [ref=e450]: Versa olio abbondante in una pentola alta e scaldalo.
+                          - listitem [level=1] [ref=e451]:
+                            - paragraph [ref=e452]:
+                              - generic [ref=e453]: Prepara un piatto con della carta assorbente.
+                          - listitem [level=1] [ref=e454]:
+                            - paragraph [ref=e455]:
+                              - generic [ref=e456]: "Verifica la temperatura inserendo un piccolo grumo di pangrattato: se fa bollicine immediate, l’olio è pronto."
+                          - listitem [level=1] [ref=e457]:
+                            - paragraph [ref=e458]:
+                              - generic [ref=e459]: Friggi poche fette per volta. Quando sono ben dorate, rimuovile con la schiumarola.
+                          - listitem [level=1] [ref=e460]:
+                            - paragraph [ref=e461]:
+                              - generic [ref=e462]: Adagiale su carta assorbente e lascia intiepidire qualche minuto.
+                        - heading "Note" [level=2] [ref=e464]:
+                          - generic [ref=e466]: Note
+                        - paragraph [ref=e468]:
+                          - generic [ref=e469]: "Servi con patate al forno o insalata fresca. Vanno mangiate calde: appena tiepide sono al massimo della croccantezza."
+                      - generic [ref=e472]:
+                        - navigation "Tag" [ref=e474]:
+                          - list [ref=e475]:
+                            - listitem [ref=e476]:
+                              - link "4 stagioni" [ref=e477] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/4-stagioni
+                            - listitem [ref=e478]:
+                              - link "Funghi" [ref=e479] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/funghi
+                        - list "Post categories" [ref=e481]:
+                          - listitem [ref=e482]:
+                            - link "Secondi piatti" [ref=e483] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                        - generic [ref=e486]:
+                          - button "Condividi tramite link" [ref=e489] [cursor=pointer]:
+                            - img [ref=e490]
+                          - button "Stampa post" [ref=e494] [cursor=pointer]:
+                            - img [ref=e495]
+                  - generic [ref=e505]:
+                    - generic [ref=e506]:
+                      - heading "Post recenti" [level=2] [ref=e507]
+                      - link "Mostra tutti" [ref=e508] [cursor=pointer]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - article [ref=e511]:
+                      - generic [ref=e512]:
+                        - link "Bistecche di funghi" [ref=e513] [cursor=pointer]:
+                          - /url: https://ricetteperpippe.wixsite.com/blog/post/bistecche-di-funghi-strepitose
+                        - link "Bistecche di funghi strepitose" [ref=e518] [cursor=pointer]:
+                          - /url: https://ricetteperpippe.wixsite.com/blog/post/bistecche-di-funghi-strepitose
+              - generic [ref=e525]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e543]
+                    - generic [ref=e554]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e555]:
+                            - generic [ref=e562]: Ricevi aggiornamenti!
+                          - paragraph [ref=e563]:
+                            - generic [ref=e571]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e572]:
+                            - generic [ref=e573]: Email *
+                            - textbox "Email *" [ref=e575]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e577] [cursor=pointer]:
+                            - generic [ref=e578]: Tienimi aggiornat*!
+    - contentinfo [ref=e583]:
+      - generic [ref=e589]:
+        - generic:
+          - generic:
+            - paragraph [ref=e590]:
+              - link "Ricette per pippe" [ref=e595] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e600] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e601]
+              - paragraph [ref=e602]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e603]
+  - region "bottom of page"

@@ -1,0 +1,187 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - link "Antispreco" [ref=e207]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                    - listitem [ref=e208]:
+                      - link "Pesti, salse e creme" [ref=e209]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                    - listitem [ref=e210]:
+                      - link "Piatti del mondo" [ref=e211]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                    - listitem [ref=e212]:
+                      - link "Contorni" [ref=e213]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                    - listitem [ref=e214]:
+                      - link "Insalate" [ref=e215]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                    - listitem [ref=e216]:
+                      - link "Frittate" [ref=e217]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                    - listitem [ref=e218]:
+                      - link "Risotti" [ref=e219]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                    - listitem [ref=e220]:
+                      - link "Secondi piatti" [ref=e221]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                    - listitem [ref=e222]:
+                      - link "Torte salate" [ref=e223]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e225]:
+                  - generic [ref=e241]:
+                    - heading "Preparazioni base" [level=1] [ref=e244]
+                    - paragraph [ref=e246]: Basi riutilizzabili in diverse preparazioni.
+                  - region "Feed del blog" [ref=e253]:
+                    - generic [ref=e255]:
+                      - generic [ref=e256]:
+                        - generic [ref=e259] [cursor=pointer]:
+                          - img "brodo che cuoce" [ref=e260]
+                          - img "brodo che cuoce" [ref=e261]
+                        - generic [ref=e265]:
+                          - generic [ref=e266]:
+                            - link "Brodo vegetale base (da verdure fresche)" [ref=e267] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/post/brodo-vegetale-base-da-verdure-fresche
+                              - heading "Brodo vegetale base (da verdure fresche)" [level=2] [ref=e270]
+                            - generic [ref=e274] [cursor=pointer]: Se sei pippa certamente ti servono riferimenti anche per questo...
+                          - generic [ref=e275]:
+                            - generic [ref=e276]:
+                              - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e282]'
+                              - generic [ref=e283]:
+                                - generic "Sarah Lasaracina" [ref=e285]
+                                - generic [ref=e286]:
+                                  - generic [ref=e287]: 26 gen
+                                  - generic [ref=e290]: "Tempo di lettura: 2 min"
+                            - button "Altre azioni" [ref=e293] [cursor=pointer]:
+                              - img [ref=e295]
+                      - generic [ref=e307]:
+                        - generic [ref=e310] [cursor=pointer]:
+                          - img "Un bowl di sushi" [ref=e311]
+                          - img "Un bowl di sushi" [ref=e312]
+                        - generic [ref=e316]:
+                          - generic [ref=e317]:
+                            - link "Riso per sushi" [ref=e318] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/post/riso-per-sushi
+                              - heading "Riso per sushi" [level=2] [ref=e321]
+                            - generic [ref=e325] [cursor=pointer]: Se ci stai pensando, è che non hai una lira...
+                          - generic [ref=e326]:
+                            - generic [ref=e327]:
+                              - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e333]'
+                              - generic [ref=e334]:
+                                - generic "Sarah Lasaracina" [ref=e336]
+                                - generic [ref=e337]:
+                                  - generic [ref=e338]: 11 nov 2025
+                                  - generic [ref=e341]: "Tempo di lettura: 2 min"
+                            - button "Altre azioni" [ref=e344] [cursor=pointer]:
+                              - img [ref=e346]
+                      - generic [ref=e358]:
+                        - generic [ref=e361] [cursor=pointer]:
+                          - img "Crema base per cheesecake senza cottura" [ref=e362]
+                          - img "Crema base per cheesecake senza cottura" [ref=e363]
+                        - generic [ref=e367]:
+                          - generic [ref=e368]:
+                            - link "Crema base per cheesecake senza cottura" [ref=e369] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/post/crema-base-per-cheesecake-senza-cottura
+                              - heading "Crema base per cheesecake senza cottura" [level=2] [ref=e372]
+                            - generic [ref=e376] [cursor=pointer]: Queste le proporzioni vincenti per una cheesecake 0 acidula!
+                          - generic [ref=e377]:
+                            - generic [ref=e378]:
+                              - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e384]'
+                              - generic [ref=e385]:
+                                - generic "Sarah Lasaracina" [ref=e387]
+                                - generic [ref=e388]:
+                                  - generic [ref=e389]: 11 nov 2025
+                                  - generic [ref=e392]: "Tempo di lettura: 1 min"
+                            - button "Altre azioni" [ref=e395] [cursor=pointer]:
+                              - img [ref=e397]
+              - generic [ref=e410]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e428]
+                    - generic [ref=e439]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e440]:
+                            - generic [ref=e447]: Ricevi aggiornamenti!
+                          - paragraph [ref=e448]:
+                            - generic [ref=e456]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e457]:
+                            - generic [ref=e458]: Email *
+                            - textbox "Email *" [ref=e460]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e462] [cursor=pointer]:
+                            - generic [ref=e463]: Tienimi aggiornat*!
+    - contentinfo [ref=e468]:
+      - generic [ref=e474]:
+        - generic:
+          - generic:
+            - paragraph [ref=e475]:
+              - link "Ricette per pippe" [ref=e480] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e485] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e486]
+              - paragraph [ref=e487]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e488]
+  - region "bottom of page"

@@ -2,9 +2,12 @@
 title: "Cotolette di funghi cardoncelli"
 description: "Sembrano cotolette classiche, sono buone sfiziose e croccano da favola, sono stupita di me stessa!"
 pubDate: "2025-02-24"
+heroImage: "/images/ricette/cotolette-funghi.PNG"
 category: "Secondi piatti"
 tags: ["Funghi", "Secondi piatti", "4 stagioni"]
 ---
+
+<!-- c9ca99_38a0fa2ef73349e1a119cd7794fe1265~mv2.png -->
 
 Sembrano cotolette classiche, sono buone sfiziose e croccano da favola, sono stupita di me stessa!
 

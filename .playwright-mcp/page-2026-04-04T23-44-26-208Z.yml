@@ -1,0 +1,356 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - link "Antispreco" [ref=e207]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                    - listitem [ref=e208]:
+                      - link "Pesti, salse e creme" [ref=e209]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                    - listitem [ref=e210]:
+                      - link "Piatti del mondo" [ref=e211]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                    - listitem [ref=e212]:
+                      - link "Contorni" [ref=e213]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                    - listitem [ref=e214]:
+                      - link "Insalate" [ref=e215]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                    - listitem [ref=e216]:
+                      - link "Frittate" [ref=e217]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                    - listitem [ref=e218]:
+                      - link "Risotti" [ref=e219]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                    - listitem [ref=e220]:
+                      - link "Secondi piatti" [ref=e221]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                    - listitem [ref=e222]:
+                      - link "Torte salate" [ref=e223]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e225]:
+                  - article [ref=e229]:
+                    - generic [ref=e230]:
+                      - generic [ref=e232]:
+                        - generic [ref=e233]:
+                          - heading "Risotto al brie e noci" [level=1] [ref=e235]
+                          - list [ref=e237]:
+                            - listitem [ref=e238]:
+                              - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e241]'
+                              - generic [ref=e242] [cursor=pointer]: Sarah Lasaracina
+                            - listitem [ref=e243]: ·12 gen
+                            - listitem [ref=e244]: "·Tempo di lettura: 2 min"
+                        - paragraph [ref=e245]: "Aggiornamento: 23 feb"
+                      - generic [ref=e252]:
+                        - paragraph [ref=e254]:
+                          - generic [ref=e255]: Questo è spaziale, spa-zia-leeeee!!!
+                        - separator [ref=e259]:
+                          - img [ref=e261]
+                        - generic [ref=e266]:
+                          - generic [ref=e267]:
+                            - heading "Informazioni rapide" [level=2] [ref=e268]:
+                              - generic [ref=e270]: Informazioni rapide
+                            - list [ref=e271]:
+                              - listitem [level=1] [ref=e272]:
+                                - paragraph [ref=e273]:
+                                  - generic [ref=e274]:
+                                    - strong [ref=e275]: "Porzioni:"
+                                    - text: 2 persone
+                              - listitem [level=1] [ref=e276]:
+                                - paragraph [ref=e277]:
+                                  - generic [ref=e278]:
+                                    - strong [ref=e279]: "Tempo di preparazione:"
+                                    - text: 10 minuti
+                              - listitem [level=1] [ref=e280]:
+                                - paragraph [ref=e281]:
+                                  - generic [ref=e282]:
+                                    - strong [ref=e283]: "Tempo di cottura:"
+                                    - text: 18–20 minuti
+                              - listitem [level=1] [ref=e284]:
+                                - paragraph [ref=e285]:
+                                  - generic [ref=e286]:
+                                    - strong [ref=e287]: "Strumenti:"
+                                    - text: casseruola, pentolino per il brodo, coltello, tagliere, mestolo
+                          - generic [ref=e288]:
+                            - heading "Ingredienti" [level=2] [ref=e289]:
+                              - generic [ref=e291]: Ingredienti
+                            - list [ref=e292]:
+                              - listitem [level=1] [ref=e293]:
+                                - paragraph [ref=e294]:
+                                  - generic [ref=e295]:
+                                    - text: 160 g
+                                    - strong [ref=e296]: riso
+                                    - text: (Carnaroli o Arborio)
+                              - listitem [level=1] [ref=e297]:
+                                - paragraph [ref=e298]:
+                                  - generic [ref=e299]:
+                                    - text: "1"
+                                    - strong [ref=e300]: scalogno
+                              - listitem [level=1] [ref=e301]:
+                                - paragraph [ref=e302]:
+                                  - generic [ref=e303]:
+                                    - text: 1l
+                                    - link "brodo vegetale caldo" [ref=e304] [cursor=pointer]:
+                                      - /url: https://ricetteperpippe.wixsite.com/blog/post/brodo-vegetale-base-da-verdure-fresche
+                                      - strong [ref=e305]:
+                                        - generic [ref=e306]: brodo vegetale caldo
+                              - listitem [level=1] [ref=e307]:
+                                - paragraph [ref=e308]:
+                                  - generic [ref=e309]:
+                                    - text: 4 cucchiai
+                                    - strong [ref=e310]: olio extravergine d’oliva
+                              - listitem [level=1] [ref=e311]:
+                                - paragraph [ref=e312]:
+                                  - generic [ref=e313]:
+                                    - text: 75 g
+                                    - strong [ref=e314]: brie
+                                    - text: (o mezza forma piccola), senza crosta, a pezzetti
+                              - listitem [level=1] [ref=e315]:
+                                - paragraph [ref=e316]:
+                                  - generic [ref=e317]:
+                                    - text: "6"
+                                    - strong [ref=e318]: noci intere
+                                    - text: (circa 3 a testa), sgusciate e tritate grossolanamente
+                              - listitem [level=1] [ref=e319]:
+                                - paragraph [ref=e320]:
+                                  - generic [ref=e321]:
+                                    - text: 20 g
+                                    - strong [ref=e322]: margarina
+                              - listitem [level=1] [ref=e323]:
+                                - paragraph [ref=e324]:
+                                  - generic [ref=e325]:
+                                    - strong [ref=e326]: Pepe nero
+                                    - text: (facoltativo)
+                        - separator [ref=e333]:
+                          - img [ref=e335]
+                        - figure [ref=e340]:
+                          - generic [ref=e341]:
+                            - img "Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!" [ref=e344] [cursor=pointer]
+                            - button "Expand image":
+                              - img
+                          - emphasis [ref=e348]:
+                            - generic [ref=e349]: Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!
+                        - heading [level=2] [ref=e351]
+                        - separator [ref=e356]:
+                          - img [ref=e358]
+                        - heading "Procedura" [level=2] [ref=e361]:
+                          - generic [ref=e363]: Procedura
+                        - list [ref=e365]:
+                          - listitem [level=1] [ref=e366]:
+                            - paragraph [ref=e367]:
+                              - generic [ref=e368]:
+                                - strong [ref=e369]: Prepara gli ingredienti.
+                                - text: Trita finemente
+                                - strong [ref=e370]: 1 scalogno
+                                - text: . Sguscia
+                                - strong [ref=e371]: 6 noci
+                                - text: e tritale grossolanamente. Tieni da parte.
+                          - listitem [level=1] [ref=e372]:
+                            - paragraph [ref=e373]:
+                              - generic [ref=e374]:
+                                - strong [ref=e375]: Base del risotto.
+                                - text: In casseruola scalda
+                                - strong [ref=e376]: 4 cucchiai di olio
+                                - text: e fai appassire lo scalogno a fuoco dolce, senza farlo colorire.
+                          - listitem [level=1] [ref=e377]:
+                            - paragraph [ref=e378]:
+                              - generic [ref=e379]:
+                                - strong [ref=e380]: Tostatura del riso.
+                                - text: Aggiungi
+                                - strong [ref=e381]: 160 g di riso
+                                - text: e tostalo
+                                - strong [ref=e382]: 1–2 minuti
+                                - text: ", mescolando a fuoco medio alto, finché i chicchi diventano lucidi. Lo scalogno non deve arrivare a imbrunirsi."
+                          - listitem [level=1] [ref=e383]:
+                            - paragraph [ref=e384]:
+                              - generic [ref=e385]:
+                                - strong [ref=e386]: Risottatura.
+                                - text: Inizia ad aggiungere il
+                                - link "brodo caldo" [ref=e387] [cursor=pointer]:
+                                  - /url: https://ricetteperpippe.wixsite.com/blog/post/brodo-vegetale-base-da-verdure-fresche
+                                  - strong [ref=e388]:
+                                    - generic [ref=e389]: brodo caldo
+                                - text: un mestolo alla volta. Prosegui la cottura mescolando e aggiungendo brodo solo quando il precedente è assorbito. In questa fase
+                                - strong [ref=e390]: non far mai asciugare completamente il riso
+                                - text: ": deve restare leggermente umido, perché il brie in seguito lo renderà più denso."
+                          - listitem [level=1] [ref=e391]:
+                            - paragraph [ref=e392]:
+                              - generic [ref=e393]:
+                                - strong [ref=e394]: Aggiunta del brie.
+                                - text: Quando mancano
+                                - strong [ref=e395]: 2–3 minuti
+                                - text: alla fine della cottura, aggiungi
+                                - strong [ref=e396]: 60 g di brie
+                                - text: a pezzetti e mescola finché inizia a sciogliersi e ad avvolgere il riso.
+                          - listitem [level=1] [ref=e397]:
+                            - paragraph [ref=e398]:
+                              - generic [ref=e399]:
+                                - strong [ref=e400]: Mantecatura.
+                                - text: Spegni il fuoco, aggiungi
+                                - strong [ref=e401]: 20 g di margarina
+                                - text: e manteca fino a ottenere una consistenza cremosa.
+                          - listitem [level=1] [ref=e402]:
+                            - paragraph [ref=e403]:
+                              - generic [ref=e404]:
+                                - strong [ref=e405]: Noci.
+                                - text: Unisci le
+                                - strong [ref=e406]: noci tritate
+                                - text: ", mescola e lascia riposare"
+                                - strong [ref=e407]: 1 minuto
+                                - text: a casseruola coperta.
+                          - listitem [level=1] [ref=e408]:
+                            - paragraph [ref=e409]:
+                              - generic [ref=e410]:
+                                - strong [ref=e411]: Pepe (facoltativo).
+                                - text: Se serve, aggiungi una leggera macinata di pepe
+                                - strong [ref=e412]: a fuoco spento
+                                - text: o direttamente nel piatto.
+                        - separator [ref=e416]:
+                          - img [ref=e418]
+                        - figure [ref=e423]:
+                          - generic [ref=e424]:
+                            - button "Expand image":
+                              - img
+                      - generic [ref=e432]:
+                        - navigation "Tag" [ref=e434]:
+                          - list [ref=e435]:
+                            - listitem [ref=e436]:
+                              - link "Autunno/inverno" [ref=e437] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/autunno-inverno
+                            - listitem [ref=e438]:
+                              - link "Brie" [ref=e439] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/brie
+                            - listitem [ref=e440]:
+                              - link "Noci" [ref=e441] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/noci
+                            - listitem [ref=e442]:
+                              - link "Risotto" [ref=e443] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/risotto
+                        - list "Post categories" [ref=e445]:
+                          - listitem [ref=e446]:
+                            - link "Primi piatti" [ref=e447] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                          - listitem [ref=e448]:
+                            - text: ·
+                            - link "Risotti" [ref=e449] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                        - generic [ref=e452]:
+                          - button "Condividi tramite link" [ref=e455] [cursor=pointer]:
+                            - img [ref=e456]
+                          - button "Stampa post" [ref=e460] [cursor=pointer]:
+                            - img [ref=e461]
+                  - generic [ref=e471]:
+                    - generic [ref=e472]:
+                      - heading "Post recenti" [level=2] [ref=e473]
+                      - link "Mostra tutti" [ref=e474] [cursor=pointer]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - generic [ref=e476]:
+                      - article [ref=e477]:
+                        - generic [ref=e478]:
+                          - link "piatto di risotto alla parmigiana" [ref=e479] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/finto-risotto-alla-parmigiana
+                          - link "(Finto) Risotto alla parmigiana" [ref=e484] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/finto-risotto-alla-parmigiana
+                      - article [ref=e491]:
+                        - generic [ref=e492]:
+                          - link "Pasta con feta al forno e pomodorini" [ref=e493] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/pasta-con-feta-al-forno-e-pomodorini
+                          - link "Pasta con feta al forno e pomodorini" [ref=e498] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/pasta-con-feta-al-forno-e-pomodorini
+                      - article [ref=e505]:
+                        - generic [ref=e506]:
+                          - link "Pasta e lenticchie (in zuppa o non)" [ref=e507] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/pasta-e-lenticchie-in-zuppa-o-non
+                          - link "Pasta e lenticchie (in zuppa o non)" [ref=e512] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/pasta-e-lenticchie-in-zuppa-o-non
+              - generic [ref=e519]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e537]
+                    - generic [ref=e548]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e549]:
+                            - generic [ref=e556]: Ricevi aggiornamenti!
+                          - paragraph [ref=e557]:
+                            - generic [ref=e565]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e566]:
+                            - generic [ref=e567]: Email *
+                            - textbox "Email *" [ref=e569]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e571] [cursor=pointer]:
+                            - generic [ref=e572]: Tienimi aggiornat*!
+    - contentinfo [ref=e577]:
+      - generic [ref=e583]:
+        - generic:
+          - generic:
+            - paragraph [ref=e584]:
+              - link "Ricette per pippe" [ref=e589] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e594] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e595]
+              - paragraph [ref=e596]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e597]
+  - region "bottom of page"

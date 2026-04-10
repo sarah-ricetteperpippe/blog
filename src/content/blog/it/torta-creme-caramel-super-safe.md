@@ -2,9 +2,14 @@
 title: "Torta Crème Caramel super safe"
 description: "Un incubo di 7 ore di errori, aggiusti e bestemmie. Ma habemus torta crème caramel per pippe rapida e indolore!"
 pubDate: "2025-02-17"
+heroImage: "/images/ricette/tota-creme-caramel-principale.png"
 category: "Dolci"
 tags: ["Dolci", "Compleanno", "Torte"]
 ---
+
+<!-- c9ca99_d5dd644aff864681ba6108423da13fe5~mv2.png -->
+<!-- c9ca99_cfa5606214714e93ad15be2f92a88567~mv2.png -->
+<!-- c9ca99_2a2c7e707e7144a2b86fdf8bae2d7647~mv2.jpg -->
 
 Sembra un dolce da pasticceria francese con 18 possibilità di fallimento. E lo è. L'ho temuto per anni e infatti ci sono volute 7 ore di errori, aggiusti e bestemmie. Ecco la versione per pippe come noi, con forno domestico e pazienza limitata.
 
@@ -59,3 +64,11 @@ Togli dal bagno maria, lascia raffreddare a temperatura ambiente, poi in frigo m
 ## Nota
 
 Decora con qualche topping o fiori freschi, fa più festa!
+
+![Torta Crème Caramel](/images/ricette/torta-creme-caramel.png)
+
+![Torta Crème Caramel — fetta](/images/ricette/torta-creme-caramel3.jpg)
+
+![Torta Crème Caramel — versione asciugacapelli](/images/ricette/torta-creme-caramel-asciugacapelli.png)
+
+![Torta Crème Caramel — altra angolazione](/images/ricette/torata_creme_caramel.png)

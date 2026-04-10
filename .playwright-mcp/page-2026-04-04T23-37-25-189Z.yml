@@ -1,0 +1,157 @@
+- generic [ref=e3]:
+  - region "top of page" [active]
+  - button "Passa al contenuto principale"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - button "Altro" [ref=e208]:
+                        - text: Altro
+                        - img [ref=e209]
+                - generic [ref=e212]:
+                  - generic [ref=e228]:
+                    - heading "Piatti unici" [level=1] [ref=e231]
+                    - paragraph [ref=e233]: Impariamo dal mondo come si fa a mettere tutto in un piatto e buonanotte!
+                  - region "Feed del blog" [ref=e240]:
+                    - generic [ref=e242]:
+                      - generic [ref=e243]:
+                        - img "fonduta" [ref=e247] [cursor=pointer]
+                        - generic [ref=e250]:
+                          - generic [ref=e251]:
+                            - generic [ref=e252]:
+                              - link "Fonduta all'italiana fantasiosa" [ref=e253] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/post/fonduta-all-italiana-fantasiosa
+                                - heading "Fonduta all'italiana fantasiosa" [level=2] [ref=e256]
+                              - generic [ref=e260] [cursor=pointer]: Cercare sui siti svizzeri (già, cari francesi!) è un delirio perché non abbiamo gli stessi formaggi, quindi 'ho inventata io con l'AI. Anna, Giando e Giul approvano!
+                            - generic [ref=e261]:
+                              - generic [ref=e262]:
+                                - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e268]'
+                                - generic [ref=e269]:
+                                  - generic "Sarah Lasaracina" [ref=e271]
+                                  - generic [ref=e272]:
+                                    - generic [ref=e273]: 14 feb
+                                    - generic [ref=e276]: "Tempo di lettura: 2 min"
+                              - button "Altre azioni" [ref=e279] [cursor=pointer]:
+                                - img [ref=e281]
+                          - generic [ref=e286]:
+                            - generic [ref=e288]:
+                              - generic [ref=e289]: 3 visualizzazioni
+                              - generic [ref=e290]: 0 commenti
+                            - button "Like post" [ref=e293]:
+                              - generic [ref=e294]: Post non contrassegnato con Mi piace
+                              - img [ref=e301] [cursor=pointer]
+                      - generic [ref=e303]:
+                        - img "pezzo di torta salata patate e zucchine" [ref=e307] [cursor=pointer]
+                        - generic [ref=e310]:
+                          - generic [ref=e311]:
+                            - generic [ref=e312]:
+                              - link "Torta salata zucchine e patate" [ref=e313] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-salata-zucchine-e-patate
+                                - heading "Torta salata zucchine e patate" [level=2] [ref=e316]
+                              - generic [ref=e320] [cursor=pointer]: Non le davo una lira e invece si è rivelata uno svuotafrigo strabuonissimo!
+                            - generic [ref=e321]:
+                              - generic [ref=e322]:
+                                - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e328]'
+                                - generic [ref=e329]:
+                                  - generic "Sarah Lasaracina" [ref=e331]
+                                  - generic [ref=e332]:
+                                    - generic [ref=e333]: 13 feb
+                                    - generic [ref=e336]: "Tempo di lettura: 2 min"
+                              - button "Altre azioni" [ref=e339] [cursor=pointer]:
+                                - img [ref=e341]
+                          - generic [ref=e346]:
+                            - generic [ref=e348]:
+                              - generic [ref=e349]: 6 visualizzazioni
+                              - generic [ref=e350]: 0 commenti
+                            - button "Like post" [ref=e353]:
+                              - generic [ref=e354]: Post non contrassegnato con Mi piace
+                              - img [ref=e361] [cursor=pointer]
+              - generic [ref=e364]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e382]
+                    - generic [ref=e393]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e394]:
+                            - generic [ref=e401]: Ricevi aggiornamenti!
+                          - paragraph [ref=e402]:
+                            - generic [ref=e410]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e411]:
+                            - generic [ref=e412]: Email *
+                            - textbox "Email *" [ref=e414]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e416] [cursor=pointer]:
+                            - generic [ref=e417]: Tienimi aggiornat*!
+    - contentinfo [ref=e422]:
+      - generic [ref=e428]:
+        - generic:
+          - generic:
+            - paragraph [ref=e429]:
+              - link "Ricette per pippe" [ref=e434] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e439] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e440]
+              - paragraph [ref=e441]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e442]
+  - region "bottom of page"

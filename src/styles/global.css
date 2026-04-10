@@ -538,6 +538,8 @@ p {
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition);
+  text-decoration: none;
+  display: inline-block;
 }
 .filter-pill:hover { background: var(--color-primary-green-bg); }
 .filter-pill--active {

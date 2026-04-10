@@ -2,9 +2,12 @@
 title: "Tamago Sando (aka egg sandwich giappo)"
 description: "Questo è il Tamago Sando, ovvero l'egg sandwich giapponese. Super fluffy e gustoso!"
 pubDate: "2025-02-11"
+heroImage: "/images/ricette/tamago.png"
 category: "Piatti unici"
 tags: ["Uova", "Sandwich", "Piatti del mondo", "Antispreco"]
 ---
+
+<!-- c9ca99_5c9be5c9420e4e6bb0f48beb258a68d6~mv2.png -->
 
 Questo è il Tamago Sando, ovvero l'egg sandwich giapponese (nella sua forma più europea, con ingredienti comuni). Super fluffy e gustoso!
 

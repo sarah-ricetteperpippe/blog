@@ -1,0 +1,294 @@
+- generic [ref=e3]:
+  - region "top of page" [active]
+  - button "Passa al contenuto principale"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - link "Antispreco" [ref=e207]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                    - listitem [ref=e208]:
+                      - link "Pesti, salse e creme" [ref=e209]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                    - listitem [ref=e210]:
+                      - link "Piatti del mondo" [ref=e211]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                    - listitem [ref=e212]:
+                      - link "Contorni" [ref=e213]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                    - listitem [ref=e214]:
+                      - link "Insalate" [ref=e215]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                    - listitem [ref=e216]:
+                      - link "Frittate" [ref=e217]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                    - listitem [ref=e218]:
+                      - link "Risotti" [ref=e219]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                    - listitem [ref=e220]:
+                      - link "Secondi piatti" [ref=e221]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                    - listitem [ref=e222]:
+                      - link "Torte salate" [ref=e223]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e225]:
+                  - article [ref=e229]:
+                    - generic [ref=e230]:
+                      - generic [ref=e233]:
+                        - heading "Riso per sushi" [level=1] [ref=e235]
+                        - list [ref=e237]:
+                          - listitem [ref=e238]:
+                            - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e241]'
+                            - generic [ref=e242] [cursor=pointer]: Sarah Lasaracina
+                          - listitem [ref=e243]: ·11 nov 2025
+                          - listitem [ref=e244]: "·Tempo di lettura: 2 min"
+                      - generic [ref=e251]:
+                        - separator [ref=e255]:
+                          - img [ref=e257]
+                        - paragraph [ref=e260]:
+                          - generic [ref=e261]:
+                            - strong [ref=e262]: "Porzioni:"
+                            - text: 3 persone
+                            - strong [ref=e263]: "Tempo di preparazione:"
+                            - text: 40 minuti (incluso l’ammollo)
+                            - strong [ref=e264]: "Tempo di cottura:"
+                            - text: 30 minuti
+                            - strong [ref=e265]: "Strumenti:"
+                            - text: pentola con coperchio, ciotola per il lavaggio, spatola o cucchiaio di legno (shamoji), ventaglio o ventolina,
+                            - emphasis [ref=e266]: sushi oke
+                            - text: (ciotola di legno tradizionale, facoltativa). Non usare metallo.
+                            - strong [ref=e267]: "Avvertenze:"
+                            - text: il riso giapponese deve essere
+                            - strong [ref=e268]: lavato accuratamente
+                            - text: e
+                            - strong [ref=e269]: lasciato in ammollo per almeno 30 minuti
+                            - text: prima della cottura.
+                        - separator [ref=e273]:
+                          - img [ref=e275]
+                        - heading "Ingredienti" [level=4] [ref=e278]:
+                          - generic [ref=e279]: Ingredienti
+                        - list [ref=e281]:
+                          - listitem [level=1] [ref=e282]:
+                            - paragraph [ref=e283]:
+                              - generic [ref=e284]:
+                                - text: 300 g di
+                                - strong [ref=e285]: riso giapponese a chicco corto (Japonica)
+                          - listitem [level=1] [ref=e286]:
+                            - paragraph [ref=e287]:
+                              - generic [ref=e288]:
+                                - text: 390 ml di
+                                - strong [ref=e289]: acqua
+                          - listitem [level=1] [ref=e290]:
+                            - paragraph [ref=e291]:
+                              - generic [ref=e292]:
+                                - text: 80 ml di
+                                - strong [ref=e293]: aceto per sushi
+                                - text: (
+                                - emphasis [ref=e294]: miscela di aceto di riso, zucchero e sale
+                                - text: )
+                        - separator [ref=e298]:
+                          - img [ref=e300]
+                        - figure [ref=e305]:
+                          - generic [ref=e306]:
+                            - button "Expand image":
+                              - img
+                        - heading [level=4] [ref=e310]
+                        - separator [ref=e315]:
+                          - img [ref=e317]
+                        - heading "Procedura" [level=4] [ref=e320]:
+                          - generic [ref=e321]: Procedura
+                        - list [ref=e323]:
+                          - listitem [level=1] [ref=e324]:
+                            - paragraph [ref=e325]:
+                              - generic [ref=e326]:
+                                - strong [ref=e327]: Risciacqua il riso.
+                                - text: Metti 300 g di riso in una ciotola o nella pentola che userai per la cottura. Aggiungi abbondante acqua, poi mescola delicatamente con la mano per rimuovere l’amido. Quando l’acqua diventa torbida, scolala tenendo il riso con la mano. Ripeti questo passaggio 3–5 volte, fino a quando l’acqua risulta quasi limpida. Lascia poi il riso in ammollo per
+                                - strong [ref=e328]: almeno 30 minuti
+                                - text: ", quindi scolalo."
+                          - listitem [level=1] [ref=e329]:
+                            - paragraph [ref=e330]:
+                              - generic [ref=e331]:
+                                - strong [ref=e332]: Cuoci il riso.
+                                - text: Versa il riso scolato nella pentola con
+                                - strong [ref=e333]: 390 ml di acqua pulita
+                                - text: . Copri con un coperchio e porta lentamente a ebollizione. Quando inizia a bollire, abbassa la fiamma al minimo e lascia sobbollire per
+                                - strong [ref=e334]: 15–20 minuti
+                                - text: ". Per un risultato perfetto, non sollevare mai il coperchio durante la cottura: il vapore è essenziale per ottenere un riso morbido e compatto."
+                          - listitem [level=1] [ref=e335]:
+                            - paragraph [ref=e336]:
+                              - generic [ref=e337]:
+                                - strong [ref=e338]: Lascia riposare.
+                                - text: A cottura ultimata, togli la pentola dal fuoco ma
+                                - strong [ref=e339]: non aprire il coperchio
+                                - text: .Lascia riposare e
+                                - strong [ref=e340]: cuocere a vapore
+                                - text: il riso per altri
+                                - strong [ref=e341]: 10–15 minuti
+                                - text: .
+                          - listitem [level=1] [ref=e342]:
+                            - paragraph [ref=e343]:
+                              - generic [ref=e344]:
+                                - strong [ref=e345]: Prepara base per sushi.
+                                - text: Trasferisci il riso ancora caldo in una ciotola ampia (ideale una in legno,
+                                - emphasis [ref=e346]: sushi oke
+                                - text: ).
+                            - paragraph [ref=e347]:
+                              - generic [ref=e348]:
+                                - text: Versa
+                                - strong [ref=e349]: 80 ml di aceto per sushi
+                                - text: ", pari a circa il 12% del peso del riso cotto."
+                            - paragraph [ref=e350]:
+                              - generic [ref=e351]: Mescola delicatamente “piegando” il riso dal basso verso l’alto, in modo da non rompere i chicchi.
+                            - paragraph [ref=e352]:
+                              - generic [ref=e353]:
+                                - text: Mentre lo mescoli,
+                                - strong [ref=e354]: ventila
+                                - text: "con un ventaglio o una ventolina: questo aiuta a far evaporare l’umidità e a rendere il riso lucido e fragrante."
+                          - listitem [level=1] [ref=e355]:
+                            - paragraph [ref=e356]:
+                              - generic [ref=e357]:
+                                - strong [ref=e358]: Prepara il sushi.
+                                - text: Quando il riso è tiepido e ha assorbito bene il condimento, è pronto per preparare
+                                - strong [ref=e359]: nigiri, maki, uramaki o chirashi sushi
+                                - text: .
+                        - separator [ref=e363]:
+                          - img [ref=e365]
+                        - heading "Extra" [level=4] [ref=e368]:
+                          - generic [ref=e369]: Extra
+                        - paragraph [ref=e371]:
+                          - generic [ref=e372]:
+                            - text: Se usi aceto di riso non già pronto, prepara la miscela mescolando
+                            - strong [ref=e373]: 3 parti di aceto di riso, 2 parti di zucchero e 1 parte di sale
+                            - text: ", riscaldando leggermente per far sciogliere lo zucchero."
+                      - generic [ref=e379]:
+                        - navigation "Tag" [ref=e381]:
+                          - list [ref=e382]:
+                            - listitem [ref=e383]:
+                              - link "Piatti dal mondo" [ref=e384] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/piatti-dal-mondo
+                        - list "Post categories" [ref=e386]:
+                          - listitem [ref=e387]:
+                            - link "Piatti del mondo" [ref=e388] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                          - listitem [ref=e389]:
+                            - text: ·
+                            - link "Preparazioni base" [ref=e390] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                        - generic [ref=e393]:
+                          - button "Condividi tramite link" [ref=e396] [cursor=pointer]:
+                            - img [ref=e397]
+                          - button "Stampa post" [ref=e401] [cursor=pointer]:
+                            - img [ref=e402]
+                  - generic [ref=e412]:
+                    - generic [ref=e413]:
+                      - heading "Post recenti" [level=2] [ref=e414]
+                      - link "Mostra tutti" [ref=e415] [cursor=pointer]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - generic [ref=e417]:
+                      - article [ref=e418]:
+                        - generic [ref=e419]:
+                          - link "fonduta" [ref=e420] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/fonduta-all-italiana-fantasiosa
+                          - link "Fonduta all'italiana fantasiosa" [ref=e425] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/fonduta-all-italiana-fantasiosa
+                      - article [ref=e432]:
+                        - generic [ref=e433]:
+                          - link "tagliere con sandwich" [ref=e434] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/tamago-sando-aka-egg-sandwich-giappo
+                          - link "Tamago Sando (aka egg sandwich giappo)" [ref=e439] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/tamago-sando-aka-egg-sandwich-giappo
+                      - article [ref=e446]:
+                        - generic [ref=e447]:
+                          - link "brodo che cuoce" [ref=e448] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/brodo-vegetale-base-da-verdure-fresche
+                          - link "Brodo vegetale base (da verdure fresche)" [ref=e453] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/brodo-vegetale-base-da-verdure-fresche
+              - generic [ref=e460]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e478]
+                    - generic [ref=e489]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e490]:
+                            - generic [ref=e497]: Ricevi aggiornamenti!
+                          - paragraph [ref=e498]:
+                            - generic [ref=e506]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e507]:
+                            - generic [ref=e508]: Email *
+                            - textbox "Email *" [ref=e510]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e512] [cursor=pointer]:
+                            - generic [ref=e513]: Tienimi aggiornat*!
+    - contentinfo [ref=e518]:
+      - generic [ref=e524]:
+        - generic:
+          - generic:
+            - paragraph [ref=e525]:
+              - link "Ricette per pippe" [ref=e530] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e535] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e536]
+              - paragraph [ref=e537]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e538]
+  - region "bottom of page"

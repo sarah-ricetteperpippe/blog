@@ -2,10 +2,13 @@
 title: "Pasta con feta al forno e pomodorini"
 description: "Non hai tempo ma vuoi un primo yummy? Butta questa in forno e via!"
 pubDate: "2025-01-17"
+heroImage: "/images/ricette/pasta-feta.png"
 category: "Primi piatti"
 tags: ["Feta", "Pomodorini", "Primi piatti", "4 stagioni"]
 translationKey: "pasta-con-feta-al-forno-e-pomodorini"
 ---
+
+<!-- c9ca99_15910f6c269e4d1ab10e4bf7adbcebcd~mv2.jpg -->
 
 Amanti della feta, quando non avete tempo ma volete un primo yummy yummy, con questa schiaffate in forno e via!
 
@@ -34,3 +37,5 @@ Amanti della feta, quando non avete tempo ma volete un primo yummy yummy, con qu
 5. **Cuoci la pasta:** nel frattempo cuoci la pasta in acqua salata e scolala al dente, tenendo da parte un po' di acqua di cottura.
 6. **Condimento:** sforna la pirofila e schiaccia feta e pomodorini con una forchetta fino a ottenere un sughetto cremoso.
 7. **Mantecatura:** unisci la pasta al condimento e manteca aggiungendo 1–2 cucchiai di acqua di cottura se serve. Mescola bene e servi subito.
+
+![Pasta con feta al forno e pomodorini](/images/ricette/pasta-feta-verticale.png)

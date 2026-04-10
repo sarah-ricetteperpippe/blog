@@ -1,0 +1,305 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - link "Antispreco" [ref=e207]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                    - listitem [ref=e208]:
+                      - link "Pesti, salse e creme" [ref=e209]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                    - listitem [ref=e210]:
+                      - link "Piatti del mondo" [ref=e211]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                    - listitem [ref=e212]:
+                      - link "Contorni" [ref=e213]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                    - listitem [ref=e214]:
+                      - link "Insalate" [ref=e215]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                    - listitem [ref=e216]:
+                      - link "Frittate" [ref=e217]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                    - listitem [ref=e218]:
+                      - link "Risotti" [ref=e219]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                    - listitem [ref=e220]:
+                      - link "Secondi piatti" [ref=e221]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                    - listitem [ref=e222]:
+                      - link "Torte salate" [ref=e223]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e225]:
+                  - article [ref=e229]:
+                    - generic [ref=e230]:
+                      - generic [ref=e233]:
+                        - heading "Bistecche di funghi strepitose" [level=1] [ref=e235]
+                        - list [ref=e237]:
+                          - listitem [ref=e238]:
+                            - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e241]'
+                            - generic [ref=e242] [cursor=pointer]: Sarah Lasaracina
+                          - listitem [ref=e243]: ·27 feb
+                          - listitem [ref=e244]: "·Tempo di lettura: 2 min"
+                      - generic [ref=e251]:
+                        - paragraph [ref=e253]:
+                          - generic [ref=e254]:
+                            - text: Questa l'ho improvvisata ed è oggettivamente una bomba... per sapore, per aspetto, per facilità. Mondiale! Ho avuto la fortuna di trovare cardoncelli spessi (circa 3 cm) e a testa molto larga (circa 20cm), e li ho trattati come una bistecca. Puoi farla anche con i
+                            - strong [ref=e255]: pleurotus a testa larga
+                            - text: ", ma"
+                            - strong [ref=e256]
+                            - text: sono più sottili, quindi cambiano i tempi e qualche accortezza che trovi indicata tra parentesi nei passaggi.
+                        - separator [ref=e260]:
+                          - img [ref=e262]
+                        - figure [ref=e267]:
+                          - generic [ref=e268]:
+                            - img "Le foto dei piatti sono originali, il post-editing è fatto con l'AI!" [ref=e271] [cursor=pointer]
+                            - button "Expand image":
+                              - img
+                          - emphasis [ref=e275]:
+                            - generic [ref=e276]: Le foto dei piatti sono originali, il post-editing è fatto con l'AI!
+                        - heading [level=2] [ref=e278]
+                        - separator [ref=e283]:
+                          - img [ref=e285]
+                        - generic [ref=e290]:
+                          - generic [ref=e291]:
+                            - heading "Informazioni rapide" [level=2] [ref=e292]:
+                              - generic [ref=e294]: Informazioni rapide
+                            - list [ref=e295]:
+                              - listitem [level=1] [ref=e296]:
+                                - paragraph [ref=e297]:
+                                  - generic [ref=e298]:
+                                    - strong [ref=e299]: "Porzioni:"
+                                    - text: "2"
+                              - listitem [level=1] [ref=e300]:
+                                - paragraph [ref=e301]:
+                                  - generic [ref=e302]:
+                                    - strong [ref=e303]: "Tempo di preparazione:"
+                                    - text: 10 minuti
+                              - listitem [level=1] [ref=e304]:
+                                - paragraph [ref=e305]:
+                                  - generic [ref=e306]:
+                                    - strong [ref=e307]: "Tempo di cottura:"
+                                    - text: 20 minuti
+                              - listitem [level=1] [ref=e308]:
+                                - paragraph [ref=e309]:
+                                  - generic [ref=e310]:
+                                    - strong [ref=e311]: "Strumenti:"
+                                    - text: teglia, carta forno, padella pesante 24–26 cm, spatola, pinza, (opzionale) pennellino da cucina, teglia, carta forno
+                          - generic [ref=e312]:
+                            - heading "Ingredienti" [level=2] [ref=e313]:
+                              - strong [ref=e315]:
+                                - generic [ref=e316]: Ingredienti
+                            - list [ref=e317]:
+                              - listitem [level=1] [ref=e318]:
+                                - paragraph [ref=e319]:
+                                  - generic [ref=e320]:
+                                    - text: 400g di cardoncelli a cappelli larghi e spessi 2–3 cm.
+                                    - emphasis [ref=e321]: (oppure 500 di pleurotus grandi uguale)
+                              - listitem [level=1] [ref=e322]:
+                                - paragraph [ref=e323]:
+                                  - generic [ref=e324]: 2 cucchiai olio extravergine di oliva (1 per il forno, 1 per la padella)
+                              - listitem [level=1] [ref=e325]:
+                                - paragraph [ref=e326]:
+                                  - generic [ref=e327]: (opzionale) ½ cucchiaio salsa di soia
+                              - listitem [level=1] [ref=e328]:
+                                - paragraph [ref=e329]:
+                                  - generic [ref=e330]: 1 noce di burro (io burro veg)
+                              - listitem [level=1] [ref=e331]:
+                                - paragraph [ref=e332]:
+                                  - generic [ref=e333]: 1 spicchio d’aglio schiacciato
+                              - listitem [level=1] [ref=e334]:
+                                - paragraph [ref=e335]:
+                                  - generic [ref=e336]: 1 rametto di rosmarino (o timo)
+                              - listitem [level=1] [ref=e337]:
+                                - paragraph [ref=e338]:
+                                  - generic [ref=e339]: Sale fino q.b.
+                              - listitem [level=1] [ref=e340]:
+                                - paragraph [ref=e341]:
+                                  - generic [ref=e342]: Pepe nero q.b.
+                        - separator [ref=e346]:
+                          - img [ref=e348]
+                        - heading "Procedimento" [level=2] [ref=e351]:
+                          - generic [ref=e353]: Procedimento
+                        - list [ref=e355]:
+                          - listitem [level=1] [ref=e356]:
+                            - paragraph [ref=e357]:
+                              - generic [ref=e358]:
+                                - strong [ref=e359]: Pulisci i funghi delicatamente con carta asciutta.
+                                - text: Non lavarli MAI sotto acqua. Se il gambo è lungo, taglialo a filo cappello. Se i funghi sono molto spessi, puoi pressarli leggermente tra due fogli di carta forno prima del forno per appiattirli, oppure schiacciandoli con delicatezza con un batticarne (o un bicchiere!).
+                          - listitem [level=1] [ref=e360]:
+                            - paragraph [ref=e361]:
+                              - generic [ref=e362]:
+                                - strong [ref=e363]: Incidi leggermente la superficie dei cardoncelli a griglia.
+                                - text: Tagli superficiali, non profondi.
+                                - emphasis [ref=e364]: "(Con i pleurotus non incidere: sono più sottili e si rompono.)"
+                          - listitem [level=1] [ref=e365]:
+                            - paragraph [ref=e366]:
+                              - generic [ref=e367]:
+                                - strong [ref=e368]: Sala leggermente entrambi i lati.
+                                - text: Lasciali riposare 10 minuti su carta forno. Tampona l’umidità che esce.
+                                - emphasis [ref=e369]: (Con i pleurotus bastano 5–8 minuti.)
+                          - listitem [level=1] [ref=e370]:
+                            - paragraph [ref=e371]:
+                              - strong [ref=e373]: Spennella con 1 cucchiaio di olio.
+                          - listitem [level=1] [ref=e374]:
+                            - paragraph [ref=e375]:
+                              - generic [ref=e376]:
+                                - strong [ref=e377]: Inforna in una teglia con carta forno a 180°C ventilato per 10–15 minuti.
+                                - text: Devono ammorbidirsi senza colorire troppo. Se sono molto spessi puoi arrivare a 15 minuti.
+                                - emphasis [ref=e378]: "(Con i pleurotus: 170°C per 8–10 minuti. Se sottili, 6–7 minuti.)"
+                          - listitem [level=1] [ref=e379]:
+                            - paragraph [ref=e380]:
+                              - generic [ref=e381]:
+                                - strong [ref=e382]: Scalda una padella pesante a fuoco medio-alto.
+                                - text: Deve essere calda prima di aggiungere i funghi.
+                          - listitem [level=1] [ref=e383]:
+                            - paragraph [ref=e384]:
+                              - generic [ref=e385]:
+                                - strong [ref=e386]: Metti 1 cucchiaio di olio in padella a fuoco medio-alto e quando caldo aggiungi i funghi.
+                                - text: Appoggiali e non muoverli per 3–4 minuti. Monitora il fuoco, se troppo forte abbassalo. Se vuoi effetto più compatto, premili leggermente con la spatola.
+                                - emphasis [ref=e387]: (Con i pleurotus rosola 2–3 minuti per lato e non pressare forte.)
+                          - listitem [level=1] [ref=e388]:
+                            - paragraph [ref=e389]:
+                              - generic [ref=e390]:
+                                - strong [ref=e391]: Gira e rosola l’altro lato per lo stesso tempo.
+                                - text: Devono fare crosta scura.
+                          - listitem [level=1] [ref=e392]:
+                            - paragraph [ref=e393]:
+                              - generic [ref=e394]:
+                                - strong [ref=e395]: (Opzionale) Abbassa leggermente il fuoco e versa la salsa di soia nella parte libera della padella.
+                                - text: Lasciala ridurre 20–30 secondi a contatto con il metallo. Fai scivolare i funghi sopra la soia addensata per laccarli.
+                          - listitem [level=1] [ref=e396]:
+                            - paragraph [ref=e397]:
+                              - generic [ref=e398]:
+                                - strong [ref=e399]: Aggiungi burro, aglio e rosmarino negli ultimi 1–2 minuti.
+                                - text: Inclina la padella e irrora i funghi con il grasso caldo.
+                          - listitem [level=1] [ref=e400]:
+                            - paragraph [ref=e401]:
+                              - generic [ref=e402]:
+                                - strong [ref=e403]: Spegni e lascia riposare 2 minuti prima di servire.
+                                - text: Pepa solo alla fine.
+                        - separator [ref=e407]:
+                          - img [ref=e409]
+                        - figure [ref=e414]:
+                          - generic [ref=e415]:
+                            - button "Expand image":
+                              - img
+                      - generic [ref=e423]:
+                        - navigation "Tag" [ref=e425]:
+                          - list [ref=e426]:
+                            - listitem [ref=e427]:
+                              - link "4 stagioni" [ref=e428] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/4-stagioni
+                            - listitem [ref=e429]:
+                              - link "Funghi" [ref=e430] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/funghi
+                        - list "Post categories" [ref=e432]:
+                          - listitem [ref=e433]:
+                            - link "Secondi piatti" [ref=e434] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                        - generic [ref=e437]:
+                          - button "Condividi tramite link" [ref=e440] [cursor=pointer]:
+                            - img [ref=e441]
+                          - button "Stampa post" [ref=e445] [cursor=pointer]:
+                            - img [ref=e446]
+                  - generic [ref=e456]:
+                    - generic [ref=e457]:
+                      - heading "Post recenti" [level=2] [ref=e458]
+                      - link "Mostra tutti" [ref=e459] [cursor=pointer]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - article [ref=e462]:
+                      - generic [ref=e463]:
+                        - link "piatto di cotolette di funghi" [ref=e464] [cursor=pointer]:
+                          - /url: https://ricetteperpippe.wixsite.com/blog/post/cotolette-di-funghi-cardoncelli
+                        - link "Cotolette di funghi cardoncelli" [ref=e469] [cursor=pointer]:
+                          - /url: https://ricetteperpippe.wixsite.com/blog/post/cotolette-di-funghi-cardoncelli
+              - generic [ref=e476]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e494]
+                    - generic [ref=e505]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e506]:
+                            - generic [ref=e513]: Ricevi aggiornamenti!
+                          - paragraph [ref=e514]:
+                            - generic [ref=e522]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e523]:
+                            - generic [ref=e524]: Email *
+                            - textbox "Email *" [ref=e526]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e528] [cursor=pointer]:
+                            - generic [ref=e529]: Tienimi aggiornat*!
+    - contentinfo [ref=e534]:
+      - generic [ref=e540]:
+        - generic:
+          - generic:
+            - paragraph [ref=e541]:
+              - link "Ricette per pippe" [ref=e546] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e551] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e552]
+              - paragraph [ref=e553]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e554]
+  - region "bottom of page"

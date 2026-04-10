@@ -2,9 +2,12 @@
 title: "Torta salata zucchine e patate"
 description: "Non le davo una lira e invece si è rivelata uno svuotafrigo strabuonissimo!"
 pubDate: "2025-02-13"
+heroImage: "/images/ricette/torta-salata-zucchine-patate.png"
 category: "Piatti unici"
 tags: ["Piatti unici", "Aperitivo", "Patate", "Zucchine", "Forno", "Antispreco"]
 ---
+
+<!-- c9ca99_475f1da46dd84d1b8235885630bb86d4~mv2.png -->
 
 Non le davo una lira e invece si è rivelata uno svuotafrigo strabuonissimo!
 
@@ -40,3 +43,5 @@ Non le davo una lira e invece si è rivelata uno svuotafrigo strabuonissimo!
 8. Completa con 40g di formaggio grattugiato e una spolverata di pepe nero.
 9. Cuoci in forno statico preriscaldato a 180°C per 35 minuti (o ventilato a 170°C).
 10. Sforna e lascia riposare 5 minuti prima di tagliare.
+
+![Torta salata zucchine e patate](/images/ricette/torta-zucchine.png)

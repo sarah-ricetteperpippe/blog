@@ -2,9 +2,13 @@
 title: "Torta fit alle carote per colazione"
 description: "Una torta semplice, umida e profumata, buona da mangiare più volte a colazione."
 pubDate: "2025-02-12"
+heroImage: "/images/ricette/torta-fit-carote.jpeg"
 category: "Dolci"
 tags: ["Torte", "Colazione", "Dolci"]
 ---
+
+<!-- c9ca99_70ee35943fa647d0981b52c931d6e29a~mv2.png -->
+<!-- c9ca99_89d5cefbd9bd450893b5edf138b3def8~mv2.jpg -->
 
 Una torta semplice, con ingredienti abbastanza magri, umida e profumata, buona da mangiare più volte a colazione.
 
@@ -41,3 +45,5 @@ Una torta semplice, con ingredienti abbastanza magri, umida e profumata, buona d
 5. Rivesti una tortiera da 20–22 cm con carta forno. Versa l'impasto e livella.
 6. Cuoci in forno statico preriscaldato a 180°C per circa 30 minuti. Fai la prova stecchino: deve uscire asciutto.
 7. Lascia raffreddare 10-15 minuti nello stampo, sforma e spolvera con zucchero a velo solo quando è completamente fredda.
+
+![Torta fit alle carote](/images/ricette/torta-fit-carote2.png)

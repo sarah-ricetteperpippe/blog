@@ -1,0 +1,324 @@
+- generic [ref=e3]:
+  - region "top of page" [active]
+  - button "Passa al contenuto principale"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - generic [ref=e207]:
+                        - button "Altro" [ref=e208]:
+                          - text: Altro
+                          - img [ref=e209]
+                        - list [ref=e212]:
+                          - listitem [ref=e213]:
+                            - link "Antispreco" [ref=e214]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                          - listitem [ref=e215]:
+                            - link "Pesti, salse e creme" [ref=e216]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                          - listitem [ref=e217]:
+                            - link "Piatti del mondo" [ref=e218]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                          - listitem [ref=e219]:
+                            - link "Contorni" [ref=e220]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                          - listitem [ref=e221]:
+                            - link "Insalate" [ref=e222]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                          - listitem [ref=e223]:
+                            - link "Frittate" [ref=e224]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                          - listitem [ref=e225]:
+                            - link "Risotti" [ref=e226]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                          - listitem [ref=e227]:
+                            - link "Secondi piatti" [ref=e228]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                          - listitem [ref=e229]:
+                            - link "Torte salate" [ref=e230]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e232]:
+                  - article [ref=e236]:
+                    - generic [ref=e237]:
+                      - generic [ref=e239]:
+                        - generic [ref=e240]:
+                          - heading "Frittata alla menta" [level=1] [ref=e242]
+                          - list [ref=e244]:
+                            - listitem [ref=e245]:
+                              - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e248]'
+                              - generic [ref=e249] [cursor=pointer]: Sarah Lasaracina
+                            - listitem [ref=e250]: ·14 gen
+                            - listitem [ref=e251]: "·Tempo di lettura: 2 min"
+                        - paragraph [ref=e252]: "Aggiornamento: 23 feb"
+                      - generic [ref=e259]:
+                        - paragraph [ref=e261]:
+                          - generic [ref=e262]: La mia frittata preferita
+                        - separator [ref=e266]:
+                          - img [ref=e268]
+                        - figure [ref=e273]:
+                          - generic [ref=e274]:
+                            - img "Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!" [ref=e277] [cursor=pointer]
+                            - button "Espandi immagine":
+                              - img
+                          - emphasis [ref=e281]:
+                            - generic [ref=e282]: Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!
+                        - separator [ref=e286]:
+                          - img [ref=e288]
+                        - generic [ref=e293]:
+                          - generic [ref=e294]:
+                            - heading "Informazioni rapide" [level=2] [ref=e295]:
+                              - generic [ref=e297]: Informazioni rapide
+                            - list [ref=e298]:
+                              - listitem [level=1] [ref=e299]:
+                                - paragraph [ref=e300]:
+                                  - generic [ref=e301]:
+                                    - strong [ref=e302]: "Porzioni:"
+                                    - text: 4 persone
+                              - listitem [level=1] [ref=e303]:
+                                - paragraph [ref=e304]:
+                                  - generic [ref=e305]:
+                                    - strong [ref=e306]: "Tempo di preparazione:"
+                                    - text: 20 minuti
+                              - listitem [level=1] [ref=e307]:
+                                - paragraph [ref=e308]:
+                                  - generic [ref=e309]:
+                                    - strong [ref=e310]: "Tempo di cottura:"
+                                    - text: 15–20 minuti
+                              - listitem [level=1] [ref=e311]:
+                                - paragraph [ref=e312]:
+                                  - generic [ref=e313]:
+                                    - strong [ref=e314]: "Strumenti:"
+                                    - text: padella
+                                    - strong [ref=e315]: max 24 cm
+                                    - text: con coperchio (con 20 cm viene più alta), ciotola capiente, coltello, tagliere, spatola, piatto largo
+                          - generic [ref=e316]:
+                            - heading "Ingredienti" [level=2] [ref=e317]:
+                              - generic [ref=e319]: Ingredienti
+                            - list [ref=e320]:
+                              - listitem [level=1] [ref=e321]:
+                                - paragraph [ref=e322]:
+                                  - strong [ref=e324]: 6 uova
+                              - listitem [level=1] [ref=e325]:
+                                - paragraph [ref=e326]:
+                                  - strong [ref=e328]: 1 cipolla bianca
+                              - listitem [level=1] [ref=e329]:
+                                - paragraph [ref=e330]:
+                                  - strong [ref=e332]: 20 g di menta fresca
+                              - listitem [level=1] [ref=e333]:
+                                - paragraph [ref=e334]:
+                                  - strong [ref=e336]: 4 cucchiai di olio extravergine di oliva
+                              - listitem [level=1] [ref=e337]:
+                                - paragraph [ref=e338]:
+                                  - strong [ref=e340]: sale q.b.
+                              - listitem [level=1] [ref=e341]:
+                                - paragraph [ref=e342]:
+                                  - strong [ref=e344]: pepe q.b.
+                        - separator [ref=e348]:
+                          - img [ref=e350]
+                        - heading "Procedura" [level=2] [ref=e353]:
+                          - generic [ref=e355]: Procedura
+                        - list [ref=e357]:
+                          - listitem [level=1] [ref=e358]:
+                            - paragraph [ref=e359]:
+                              - generic [ref=e360]:
+                                - text: Taglia finemente la cipolla. Mettila in padella con
+                                - strong [ref=e361]: 4 cucchiai di olio
+                                - text: e falle appassire a
+                                - strong [ref=e362]: fuoco basso
+                                - text: ", mescolando, finché è morbida e traslucida. Non deve colorire."
+                          - listitem [level=1] [ref=e363]:
+                            - paragraph [ref=e364]:
+                              - generic [ref=e365]:
+                                - text: Trita finemente
+                                - strong [ref=e366]: 20 g di menta fresca
+                                - text: e tienila da parte.
+                          - listitem [level=1] [ref=e367]:
+                            - paragraph [ref=e368]:
+                              - generic [ref=e369]: Togli la padella dal fuoco e lascia raffreddare leggermente la cipolla.
+                          - listitem [level=1] [ref=e370]:
+                            - paragraph [ref=e371]:
+                              - generic [ref=e372]:
+                                - text: In una ciotola sbatti le
+                                - strong [ref=e373]: 6 uova
+                                - text: con
+                                - strong [ref=e374]: sale e pepe
+                                - text: (circa
+                                - strong [ref=e375]: due bei pizzicotti
+                                - text: ).
+                          - listitem [level=1] [ref=e376]:
+                            - paragraph [ref=e377]:
+                              - generic [ref=e378]: Con un cucchiaio estrai la cipolla dalla padella, scolandola alla meglio dall’olio, e aggiungila alle uova insieme alla menta. Mescola bene.
+                          - listitem [level=1] [ref=e379]:
+                            - paragraph [ref=e380]:
+                              - generic [ref=e381]: Rimetti la padella sul fuoco. Se serve, ungila leggermente con l’olio rimasto aiutandoti con una spatolina. Scalda qualche secondo a fuoco medio basso.
+                          - listitem [level=1] [ref=e382]:
+                            - paragraph [ref=e383]:
+                              - generic [ref=e384]:
+                                - text: Versa il composto, copri con il coperchio e cuoci a
+                                - strong [ref=e385]: fuoco basso
+                                - text: finché la base inizia a rassodarsi. Poi porta a
+                                - strong [ref=e386]: medio-basso
+                                - text: e controlla sotto con una spatola che non scurisca troppo. Cuoci finché anche la superficie comincia a rassodarsi.
+                          - listitem [level=1] [ref=e387]:
+                            - paragraph [ref=e388]:
+                              - generic [ref=e389]: Quando la parte superiore è abbastanza solida, appoggia un piatto largo sulla padella e gira la frittata.
+                          - listitem [level=1] [ref=e390]:
+                            - paragraph [ref=e391]:
+                              - generic [ref=e392]:
+                                - text: Rimetti la frittata in padella e cuoci a
+                                - strong [ref=e393]: fuoco medio-basso
+                                - text: ", coperta, controllando il fondo con la spatola."
+                          - listitem [level=1] [ref=e394]:
+                            - paragraph [ref=e395]:
+                              - generic [ref=e396]: Spegni quando è ben dorata ma ancora morbida. Buona calda, tiepida o fredda.
+                      - generic [ref=e402]:
+                        - navigation "Tag" [ref=e404]:
+                          - list [ref=e405]:
+                            - listitem [ref=e406]:
+                              - link "4 stagioni" [ref=e407] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/4-stagioni
+                            - listitem [ref=e408]:
+                              - link "Aperitivo" [ref=e409] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/aperitivo
+                            - listitem [ref=e410]:
+                              - link "Frittate" [ref=e411] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/frittate
+                            - listitem [ref=e412]:
+                              - link "Uova" [ref=e413] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/uova
+                            - listitem [ref=e414]:
+                              - link "Menta" [ref=e415] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/menta
+                            - listitem [ref=e416]:
+                              - link "Cipolla" [ref=e417] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/cipolla
+                        - list "Post categories" [ref=e419]:
+                          - listitem [ref=e420]:
+                            - link "Piatti unici" [ref=e421] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                          - listitem [ref=e422]:
+                            - text: ·
+                            - link "Antispreco" [ref=e423] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                          - listitem [ref=e424]:
+                            - text: ·
+                            - link "Frittate" [ref=e425] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                        - generic [ref=e428]:
+                          - button "Condividi tramite link" [ref=e431] [cursor=pointer]:
+                            - img [ref=e432]
+                          - button "Stampa post" [ref=e436] [cursor=pointer]:
+                            - img [ref=e437]
+                  - generic [ref=e447]:
+                    - generic [ref=e448]:
+                      - heading "Post recenti" [level=2] [ref=e449]
+                      - link "Mostra tutti" [ref=e450] [cursor=pointer]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - generic [ref=e452]:
+                      - article [ref=e453]:
+                        - generic [ref=e454]:
+                          - link "fonduta" [ref=e455] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/fonduta-all-italiana-fantasiosa
+                          - link "Fonduta all'italiana fantasiosa" [ref=e460] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/fonduta-all-italiana-fantasiosa
+                      - article [ref=e467]:
+                        - generic [ref=e468]:
+                          - link "pezzo di torta salata patate e zucchine" [ref=e469] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-salata-zucchine-e-patate
+                          - link "Torta salata zucchine e patate" [ref=e474] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-salata-zucchine-e-patate
+                      - article [ref=e481]:
+                        - generic [ref=e482]:
+                          - link "tagliere con sandwich" [ref=e483] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/tamago-sando-aka-egg-sandwich-giappo
+                          - link "Tamago Sando (aka egg sandwich giappo)" [ref=e488] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/tamago-sando-aka-egg-sandwich-giappo
+              - generic [ref=e495]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e513]
+                    - generic [ref=e524]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e525]:
+                            - generic [ref=e532]: Ricevi aggiornamenti!
+                          - paragraph [ref=e533]:
+                            - generic [ref=e541]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e542]:
+                            - generic [ref=e543]: Email *
+                            - textbox "Email *" [ref=e545]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e547] [cursor=pointer]:
+                            - generic [ref=e548]: Tienimi aggiornat*!
+    - contentinfo [ref=e553]:
+      - generic [ref=e559]:
+        - generic:
+          - generic:
+            - paragraph [ref=e560]:
+              - link "Ricette per pippe" [ref=e565] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e570] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e571]
+              - paragraph [ref=e572]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e573]
+  - region "bottom of page"

@@ -1,0 +1,449 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - link "Antispreco" [ref=e207]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                    - listitem [ref=e208]:
+                      - link "Pesti, salse e creme" [ref=e209]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                    - listitem [ref=e210]:
+                      - link "Piatti del mondo" [ref=e211]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                    - listitem [ref=e212]:
+                      - link "Contorni" [ref=e213]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                    - listitem [ref=e214]:
+                      - link "Insalate" [ref=e215]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                    - listitem [ref=e216]:
+                      - link "Frittate" [ref=e217]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                    - listitem [ref=e218]:
+                      - link "Risotti" [ref=e219]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                    - listitem [ref=e220]:
+                      - link "Secondi piatti" [ref=e221]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                    - listitem [ref=e222]:
+                      - link "Torte salate" [ref=e223]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e225]:
+                  - article [ref=e229]:
+                    - generic [ref=e230]:
+                      - generic [ref=e232]:
+                        - generic [ref=e233]:
+                          - heading "Fonduta all'italiana fantasiosa" [level=1] [ref=e235]
+                          - list [ref=e237]:
+                            - listitem [ref=e238]:
+                              - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e241]'
+                              - generic [ref=e242] [cursor=pointer]: Sarah Lasaracina
+                            - listitem [ref=e243]: ·14 feb
+                            - listitem [ref=e244]: "·Tempo di lettura: 2 min"
+                        - paragraph [ref=e245]: "Aggiornamento: 23 feb"
+                      - generic [ref=e252]:
+                        - paragraph [ref=e254]:
+                          - generic [ref=e255]: Menu per una bellissima serata comfy con Anna, Giando e Giuliano! Online c'è da impazzire, cercare sui siti svizzeri (perché la fonduta, cari francesi, è svizzera!) è un delirio perché non abbiamo gli stessi formaggi. Quindi l'ho inventata con l'AI e devo dire che per una pippa come me mi sembra un ottimo risultato. Puoi farla con o senza macchina da fonduta... io l'ho trovata a basso prezzo su Vinted, ma ti dico anche come farla con la pentola sul fuoco. Daje!
+                        - separator [ref=e259]:
+                          - img [ref=e261]
+                        - heading "Informazioni rapide" [level=2] [ref=e264]:
+                          - generic [ref=e266]: Informazioni rapide
+                        - list [ref=e268]:
+                          - listitem [level=1] [ref=e269]:
+                            - paragraph [ref=e270]:
+                              - generic [ref=e271]:
+                                - strong [ref=e272]: "Porzioni:"
+                                - text: "4"
+                          - listitem [level=1] [ref=e273]:
+                            - paragraph [ref=e274]:
+                              - generic [ref=e275]:
+                                - strong [ref=e276]: "Tempo totale:"
+                                - text: 35 minuti
+                            - list [ref=e277]:
+                              - listitem [level=2] [ref=e278]:
+                                - paragraph [ref=e279]:
+                                  - generic [ref=e280]:
+                                    - strong [ref=e281]: "Preparazione:"
+                                    - text: 20 minuti
+                              - listitem [level=2] [ref=e282]:
+                                - paragraph [ref=e283]:
+                                  - generic [ref=e284]:
+                                    - strong [ref=e285]: "Cottura:"
+                                    - text: 15 minuti
+                          - listitem [level=1] [ref=e286]:
+                            - paragraph [ref=e287]:
+                              - generic [ref=e288]:
+                                - strong [ref=e289]: "Strumenti:"
+                                - text: macchina da fonduta
+                                - strong [ref=e290]: oppure
+                                - text: pentola a fondo spesso + fornello, (opzionale)
+                                - link "spargifiamma" [ref=e291] [cursor=pointer]:
+                                  - /url: https://www.google.com/search?q=spargifiamma&oq=spargifiamma&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIJCAgQABgKGIAEMgcICRAAGIAE0gEINDI5N2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8
+                                  - generic [ref=e292]: spargifiamma
+                                - text: cucchiaio di legno, teglia forno, robot
+                        - separator [ref=e296]:
+                          - img [ref=e298]
+                        - generic [ref=e303]:
+                          - generic [ref=e304]:
+                            - heading "Ingredienti" [level=2] [ref=e305]:
+                              - generic [ref=e307]: Ingredienti
+                            - heading "Per la fonduta" [level=3] [ref=e308]:
+                              - generic [ref=e310]: Per la fonduta
+                            - list [ref=e311]:
+                              - listitem [level=1] [ref=e312]:
+                                - paragraph [ref=e313]:
+                                  - generic [ref=e314]: 300 g fontina
+                              - listitem [level=1] [ref=e315]:
+                                - paragraph [ref=e316]:
+                                  - generic [ref=e317]: 200 g provolone dolce
+                              - listitem [level=1] [ref=e318]:
+                                - paragraph [ref=e319]:
+                                  - generic [ref=e320]: 100 g formaggio grattugiato
+                              - listitem [level=1] [ref=e321]:
+                                - paragraph [ref=e322]:
+                                  - generic [ref=e323]: 250 ml vino bianco secco (o 250 ml brodo vegetale caldo)
+                              - listitem [level=1] [ref=e324]:
+                                - paragraph [ref=e325]:
+                                  - generic [ref=e326]: 2 cucchiaini rasi amido di mais
+                              - listitem [level=1] [ref=e327]:
+                                - paragraph [ref=e328]:
+                                  - generic [ref=e329]: 1 spicchio d’aglio
+                              - listitem [level=1] [ref=e330]:
+                                - paragraph [ref=e331]:
+                                  - generic [ref=e332]: Pepe nero q.b.
+                            - heading "Per servire" [level=3] [ref=e333]:
+                              - generic [ref=e335]: Per servire
+                            - list [ref=e336]:
+                              - listitem [level=1] [ref=e337]:
+                                - paragraph [ref=e338]:
+                                  - generic [ref=e339]:
+                                    - strong [ref=e340]: Crostini (
+                                    - text: 1 filone di pane rustico o baguette da 500g)
+                              - listitem [level=1] [ref=e341]:
+                                - paragraph [ref=e342]:
+                                  - generic [ref=e343]:
+                                    - strong [ref=e344]: Insalata fresca
+                                    - text: (io mista)
+                                    - strong [ref=e345]
+                                    - text: a sciaquare tutto il grasso, quanta ne volete
+                          - figure [ref=e351]:
+                            - generic [ref=e352]:
+                              - img "Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!" [ref=e355] [cursor=pointer]
+                              - button "Expand image":
+                                - img
+                            - emphasis [ref=e359]:
+                              - generic [ref=e360]: Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!
+                        - separator [ref=e367]:
+                          - img [ref=e369]
+                        - heading "Procedimento" [level=2] [ref=e372]:
+                          - generic [ref=e374]: Procedimento
+                        - heading "Crostini" [level=3] [ref=e379]:
+                          - generic [ref=e381]: Crostini
+                        - list [ref=e383]:
+                          - listitem [level=1] [ref=e384]:
+                            - paragraph [ref=e385]:
+                              - generic [ref=e386]: Taglia il pane a cubetti piccoli, da boccone.
+                          - listitem [level=1] [ref=e387]:
+                            - paragraph [ref=e388]:
+                              - generic [ref=e389]: Distribuiscili su una teglia.
+                          - listitem [level=1] [ref=e390]:
+                            - paragraph [ref=e391]:
+                              - generic [ref=e392]:
+                                - text: Inforna a
+                                - strong [ref=e393]: 150°C statico per 10–12 minuti
+                                - text: ", girandoli a metà cottura."
+                        - paragraph [ref=e395]:
+                          - generic [ref=e396]: Devono essere dorati e croccanti fuori, ancora leggermente morbidi dentro.
+                        - heading "Insalata" [level=3] [ref=e401]:
+                          - generic [ref=e403]: Insalata
+                        - paragraph [ref=e405]:
+                          - generic [ref=e406]: Pulisci, taglia e condisci come vuoi!
+                        - heading "Preparazione formaggi" [level=3] [ref=e408]:
+                          - generic [ref=e410]: Preparazione formaggi
+                        - list [ref=e412]:
+                          - listitem [level=1] [ref=e413]:
+                            - paragraph [ref=e414]:
+                              - generic [ref=e415]:
+                                - text: Taglia i
+                                - strong [ref=e416]: 300 g fontina
+                                - text: e
+                                - strong [ref=e417]: 200 g provolone
+                                - text: e mettili in un frullatore. Frulla fino a che i pezzettini non diventano grossolani, ma fini.
+                          - listitem [level=1] [ref=e418]:
+                            - paragraph [ref=e419]:
+                              - generic [ref=e420]:
+                                - text: Unisci i formaggi appena tritati un una ciotola con i
+                                - strong [ref=e421]: 100g di formaggio grattugiato
+                                - text: e mescola con
+                                - strong [ref=e422]: 2 cucchiaini rasi di amido di mais
+                                - text: . L’amido deve rivestire tutto il formaggio.
+                        - heading "Preparazione pentola" [level=3] [ref=e427]:
+                          - generic [ref=e429]: Preparazione pentola
+                        - paragraph [ref=e431]:
+                          - generic [ref=e432]: Strofina l’interno con lo spicchio d’aglio.
+                        - heading "Preparazione fonduta" [level=3] [ref=e437]:
+                          - generic [ref=e439]: Preparazione fonduta
+                        - list [ref=e441]:
+                          - listitem [level=1] [ref=e442]:
+                            - paragraph [ref=e443]:
+                              - generic [ref=e444]:
+                                - text: Versa
+                                - strong [ref=e445]: 250 ml di vino
+                                - text: (oppure brodo caldo).
+                            - list [ref=e446]:
+                              - listitem [level=2] [ref=e447]:
+                                - paragraph [ref=e448]:
+                                  - generic [ref=e449]:
+                                    - strong [ref=e450]: Se usi la macchina da fonduta
+                                    - text: ": porta a"
+                                    - strong [ref=e451]: livello medio
+                                    - text: "(es. su scala 1–5: 3) finché il liquido è caldo e vicino al fremito. Non deve bollire"
+                                    - generic [ref=e452]: forte.
+                              - listitem [level=2] [ref=e453]:
+                                - paragraph [ref=e454]:
+                                  - generic [ref=e455]:
+                                    - strong [ref=e456]: Se usi una pentola normale su fornello
+                                    - text: ":"
+                                - list [ref=e457]:
+                                  - listitem [level=3] [ref=e458]:
+                                    - paragraph [ref=e459]:
+                                      - generic [ref=e460]:
+                                        - text: metti la pentola su
+                                        - strong [ref=e461]: fuoco medio-basso
+                                        - text: .
+                                  - listitem [level=3] [ref=e462]:
+                                    - paragraph [ref=e463]:
+                                      - generic [ref=e464]: scalda il liquido finché è caldo ma non in ebollizione.
+                                  - listitem [level=3] [ref=e465]:
+                                    - paragraph [ref=e466]:
+                                      - generic [ref=e467]:
+                                        - text: se possibile usa uno
+                                        - link "spargifiamma" [ref=e468] [cursor=pointer]:
+                                          - /url: https://www.google.com/search?q=spargifiamma&oq=spargifiamma&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIJCAgQABgKGIAEMgcICRAAGIAE0gEINDI5N2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8
+                                          - generic [ref=e469]: spargifiamma
+                                        - text: (che non avevo idea di cosa fosse neanche io, ma così dice l'internet).
+                          - listitem [level=1] [ref=e470]:
+                            - paragraph [ref=e471]:
+                              - generic [ref=e472]: "Abbassa la potenza:"
+                            - list [ref=e473]:
+                              - listitem [level=2] [ref=e474]:
+                                - paragraph [ref=e475]:
+                                  - generic [ref=e476]:
+                                    - strong [ref=e477]: "Macchina da fonduta:"
+                                    - text: porta a
+                                    - strong [ref=e478]: livello medio basso
+                                    - text: "(es. su scala 1–5: 2)"
+                              - listitem [level=2] [ref=e479]:
+                                - paragraph [ref=e480]:
+                                  - generic [ref=e481]:
+                                    - strong [ref=e482]: "Pentola su fornello:"
+                                    - strong [ref=e483]: fiamma bassa
+                          - listitem [level=1] [ref=e484]:
+                            - paragraph [ref=e485]:
+                              - generic [ref=e486]: Aggiungi il formaggio poco alla volta mescolando continuamente a “8”. Non smettere di mescolare.
+                        - paragraph [ref=e488]:
+                          - strong [ref=e490]: "Segnali di errore:"
+                        - list [ref=e492]:
+                          - listitem [level=3] [ref=e493]:
+                            - paragraph [ref=e494]:
+                              - generic [ref=e495]: Bolle grandi → troppo caldo
+                          - listitem [level=3] [ref=e496]:
+                            - paragraph [ref=e497]:
+                              - generic [ref=e498]: Separazione del grasso → temperatura eccessiva
+                          - listitem [level=3] [ref=e499]:
+                            - paragraph [ref=e500]:
+                              - generic [ref=e501]: Filamenti gommosi → fuoco troppo alto
+                        - paragraph [ref=e503]:
+                          - generic [ref=e504]:
+                            - strong [ref=e505]: La fonduta è pronta quando è
+                            - text: ":"
+                        - list [ref=e507]:
+                          - listitem [level=2] [ref=e508]:
+                            - paragraph [ref=e509]:
+                              - generic [ref=e510]: liscia
+                          - listitem [level=2] [ref=e511]:
+                            - paragraph [ref=e512]:
+                              - generic [ref=e513]: omogenea
+                          - listitem [level=2] [ref=e514]:
+                            - paragraph [ref=e515]:
+                              - generic [ref=e516]: cremosa e avvolgente
+                        - list [ref=e521]:
+                          - listitem [level=1] [ref=e522]:
+                            - paragraph [ref=e523]:
+                              - generic [ref=e524]: Aggiungi una macinata di pepe alla fine.
+                          - listitem [level=1] [ref=e525]:
+                            - paragraph [ref=e526]:
+                              - generic [ref=e527]: "Servi in tavola:"
+                            - list [ref=e528]:
+                              - listitem [level=2] [ref=e529]:
+                                - paragraph [ref=e530]:
+                                  - generic [ref=e531]: fonduta calda
+                              - listitem [level=2] [ref=e532]:
+                                - paragraph [ref=e533]:
+                                  - generic [ref=e534]: crostini dorati
+                              - listitem [level=2] [ref=e535]:
+                                - paragraph [ref=e536]:
+                                  - generic [ref=e537]: insalata fresca
+                            - paragraph [ref=e538]:
+                              - generic [ref=e539]: Si alterna un boccone ricco a uno fresco. Così non stanca e resta elegante.
+                        - heading "Mantenimento a tavola" [level=3] [ref=e544]:
+                          - generic [ref=e546]: Mantenimento a tavola
+                        - list [ref=e548]:
+                          - listitem [level=1] [ref=e549]:
+                            - paragraph [ref=e550]:
+                              - generic [ref=e551]:
+                                - strong [ref=e552]: "Macchina da fonduta:"
+                                - text: "es. su scala 1–5:"
+                                - strong [ref=e553]: "2"
+                          - listitem [level=1] [ref=e554]:
+                            - paragraph [ref=e555]:
+                              - generic [ref=e556]:
+                                - strong [ref=e557]: "Pentola su fornello:"
+                                - strong [ref=e558]: minimo
+                                - text: possibile
+                        - paragraph [ref=e560]:
+                          - generic [ref=e561]:
+                            - strong [ref=e562]: Non deve mai
+                            - text: sobbollire.
+                            - strong [ref=e563]: Se si addensa
+                            - text: ": aggiungi 1–2 cucchiai di liquido caldo e mescola piano."
+                            - strong [ref=e564]: Mai liquido freddo
+                            - text: .
+                        - heading [level=1] [ref=e566]
+                      - generic [ref=e570]:
+                        - navigation "Tag" [ref=e572]:
+                          - list [ref=e573]:
+                            - listitem [ref=e574]:
+                              - link "Autunno/inverno" [ref=e575] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/autunno-inverno
+                            - listitem [ref=e576]:
+                              - link "Formaggio" [ref=e577] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/formaggio
+                        - list "Post categories" [ref=e579]:
+                          - listitem [ref=e580]:
+                            - link "Piatti unici" [ref=e581] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                          - listitem [ref=e582]:
+                            - text: ·
+                            - link "Piatti del mondo" [ref=e583] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                        - generic [ref=e586]:
+                          - button "Condividi tramite link" [ref=e589] [cursor=pointer]:
+                            - img [ref=e590]
+                          - button "Stampa post" [ref=e594] [cursor=pointer]:
+                            - img [ref=e595]
+                  - generic [ref=e605]:
+                    - generic [ref=e606]:
+                      - heading "Post recenti" [level=2] [ref=e607]
+                      - link "Mostra tutti" [ref=e608] [cursor=pointer]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - generic [ref=e610]:
+                      - article [ref=e611]:
+                        - generic [ref=e612]:
+                          - link "pezzo di torta salata patate e zucchine" [ref=e613] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-salata-zucchine-e-patate
+                          - link "Torta salata zucchine e patate" [ref=e618] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-salata-zucchine-e-patate
+                      - article [ref=e625]:
+                        - generic [ref=e626]:
+                          - link "tagliere con sandwich" [ref=e627] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/tamago-sando-aka-egg-sandwich-giappo
+                          - link "Tamago Sando (aka egg sandwich giappo)" [ref=e632] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/tamago-sando-aka-egg-sandwich-giappo
+                      - article [ref=e639]:
+                        - generic [ref=e640]:
+                          - link "Pizzette di melanzane al forno" [ref=e641] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/pizzette-di-melanzane-al-forno
+                          - link "Pizzette di melanzane al forno" [ref=e646] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/pizzette-di-melanzane-al-forno
+              - generic [ref=e653]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e671]
+                    - generic [ref=e682]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e683]:
+                            - generic [ref=e690]: Ricevi aggiornamenti!
+                          - paragraph [ref=e691]:
+                            - generic [ref=e699]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e700]:
+                            - generic [ref=e701]: Email *
+                            - textbox "Email *" [ref=e703]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e705] [cursor=pointer]:
+                            - generic [ref=e706]: Tienimi aggiornat*!
+    - contentinfo [ref=e711]:
+      - generic [ref=e717]:
+        - generic:
+          - generic:
+            - paragraph [ref=e718]:
+              - link "Ricette per pippe" [ref=e723] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e728] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e729]
+              - paragraph [ref=e730]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e731]
+  - region "bottom of page"

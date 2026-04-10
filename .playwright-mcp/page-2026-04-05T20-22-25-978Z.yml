@@ -1,0 +1,337 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - link "Antispreco" [ref=e207]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                    - listitem [ref=e208]:
+                      - link "Pesti, salse e creme" [ref=e209]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                    - listitem [ref=e210]:
+                      - link "Piatti del mondo" [ref=e211]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                    - listitem [ref=e212]:
+                      - link "Contorni" [ref=e213]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                    - listitem [ref=e214]:
+                      - link "Insalate" [ref=e215]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                    - listitem [ref=e216]:
+                      - link "Frittate" [ref=e217]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                    - listitem [ref=e218]:
+                      - link "Risotti" [ref=e219]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                    - listitem [ref=e220]:
+                      - link "Secondi piatti" [ref=e221]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                    - listitem [ref=e222]:
+                      - link "Torte salate" [ref=e223]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e225]:
+                  - article [ref=e229]:
+                    - generic [ref=e230]:
+                      - generic [ref=e232]:
+                        - generic [ref=e233]:
+                          - heading "Torta soffice al latte di cocco" [level=1] [ref=e235]
+                          - list [ref=e237]:
+                            - listitem [ref=e238]:
+                              - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e241]'
+                              - generic [ref=e242] [cursor=pointer]: Sarah Lasaracina
+                            - listitem [ref=e243]: ·18 nov 2025
+                            - listitem [ref=e244]: "·Tempo di lettura: 2 min"
+                        - paragraph [ref=e245]: "Aggiornamento: 23 feb"
+                      - generic [ref=e252]:
+                        - paragraph [ref=e254]:
+                          - generic [ref=e255]: Per consumare il latte di cocco che non finisce mai!
+                        - separator [ref=e259]:
+                          - img [ref=e261]
+                        - paragraph [ref=e264]:
+                          - generic [ref=e265]:
+                            - strong [ref=e266]: "Porzioni:"
+                            - text: 8 persone
+                        - paragraph [ref=e268]:
+                          - generic [ref=e269]:
+                            - strong [ref=e270]: "Tempo di preparazione:"
+                            - text: 10 minuti
+                        - paragraph [ref=e272]:
+                          - generic [ref=e273]:
+                            - strong [ref=e274]: "Tempo di cottura:"
+                            - text: 35–40 minuti
+                        - paragraph [ref=e276]:
+                          - generic [ref=e277]:
+                            - strong [ref=e278]: "Strumenti:"
+                            - text: stampo 20–22 cm, ciotole, fruste elettriche, spatola, setaccio, forno statico
+                        - paragraph [ref=e280]:
+                          - generic [ref=e281]:
+                            - strong [ref=e282]: "Avvertenze:"
+                            - text: puoi aggiungere
+                            - strong [ref=e283]: gocce di cioccolato
+                            - text: per un tocco in più! Congelale e infarinale per usarle, per evitare che affondino.
+                        - separator [ref=e287]:
+                          - img [ref=e289]
+                        - generic [ref=e297]:
+                          - generic [ref=e298]:
+                            - heading "Ingredienti" [level=4] [ref=e299]:
+                              - generic [ref=e300]: Ingredienti
+                            - list [ref=e301]:
+                              - listitem [level=1] [ref=e302]:
+                                - paragraph [ref=e303]:
+                                  - generic [ref=e304]:
+                                    - text: 150 g di
+                                    - strong [ref=e305]: farina 00
+                              - listitem [level=1] [ref=e306]:
+                                - paragraph [ref=e307]:
+                                  - generic [ref=e308]:
+                                    - text: 60 g di
+                                    - strong [ref=e309]: fecola di patate
+                              - listitem [level=1] [ref=e310]:
+                                - paragraph [ref=e311]:
+                                  - generic [ref=e312]:
+                                    - text: 180 ml di
+                                    - strong [ref=e313]: latte di cocco
+                              - listitem [level=1] [ref=e314]:
+                                - paragraph [ref=e315]:
+                                  - generic [ref=e316]:
+                                    - text: "2"
+                                    - strong [ref=e317]: uova
+                              - listitem [level=1] [ref=e318]:
+                                - paragraph [ref=e319]:
+                                  - generic [ref=e320]:
+                                    - text: 150 g di
+                                    - strong [ref=e321]: zucchero
+                              - listitem [level=1] [ref=e322]:
+                                - paragraph [ref=e323]:
+                                  - generic [ref=e324]:
+                                    - text: 80 g di
+                                    - strong [ref=e325]: olio di semi
+                              - listitem [level=1] [ref=e326]:
+                                - paragraph [ref=e327]:
+                                  - generic [ref=e328]:
+                                    - text: 1 bustina di
+                                    - strong [ref=e329]: lievito per dolci
+                                    - text: (16 g)
+                              - listitem [level=1] [ref=e330]:
+                                - paragraph [ref=e331]:
+                                  - generic [ref=e332]:
+                                    - text: "1"
+                                    - strong [ref=e333]: pizzico di sale
+                              - listitem [level=1] [ref=e334]:
+                                - paragraph [ref=e335]:
+                                  - generic [ref=e336]:
+                                    - text: (Opzionale) 120 g di
+                                    - strong [ref=e337]: gocce di cioccolato
+                              - listitem [level=1] [ref=e338]:
+                                - paragraph [ref=e339]:
+                                  - generic [ref=e340]:
+                                    - text: (Opzionale)
+                                    - strong [ref=e341]: Vaniglia
+                                    - text: o
+                                    - strong [ref=e342]: scorza di limone
+                          - figure [ref=e346]:
+                            - generic [ref=e347]:
+                              - img "Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!" [ref=e350] [cursor=pointer]
+                              - button "Expand image":
+                                - img
+                            - emphasis [ref=e354]:
+                              - generic [ref=e355]: Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!
+                        - heading [level=4] [ref=e357]
+                        - heading "Procedura" [level=4] [ref=e360]:
+                          - generic [ref=e361]: Procedura
+                        - list [ref=e363]:
+                          - listitem [level=1] [ref=e364]:
+                            - paragraph [ref=e365]:
+                              - generic [ref=e366]:
+                                - strong [ref=e367]: Mescola le polveri.
+                                - text: In una ciotola unisci farina, fecola, lievito e sale.
+                          - listitem [level=1] [ref=e368]:
+                            - paragraph [ref=e369]:
+                              - generic [ref=e370]:
+                                - strong [ref=e371]: Monta uova e zucchero.
+                                - text: Lavora con le fruste per 3–4 minuti, fino a ottenere una crema chiara e spumosa.
+                          - listitem [level=1] [ref=e372]:
+                            - paragraph [ref=e373]:
+                              - generic [ref=e374]:
+                                - strong [ref=e375]: Aggiungi l’olio.
+                                - text: Versa 80 g di olio di semi a filo continuando a montare.
+                          - listitem [level=1] [ref=e376]:
+                            - paragraph [ref=e377]:
+                              - generic [ref=e378]:
+                                - strong [ref=e379]: Unisci il latte di cocco.
+                                - text: Aggiungi 180 ml di latte di cocco e mescola fino a ottenere un composto omogeneo.
+                          - listitem [level=1] [ref=e380]:
+                            - paragraph [ref=e381]:
+                              - generic [ref=e382]:
+                                - strong [ref=e383]: Incorpora le polveri.
+                                - text: Aggiungi il mix di farina in 2–3 volte, mescolando con una spatola senza lavorare troppo l’impasto.
+                          - listitem [level=1] [ref=e384]:
+                            - paragraph [ref=e385]:
+                              - strong [ref=e387]: (Opzionale) Prepara e aggiungi le gocce.
+                            - list [ref=e388]:
+                              - listitem [level=2] [ref=e389]:
+                                - paragraph [ref=e390]:
+                                  - generic [ref=e391]: Metti le gocce in freezer per 5–10 minuti.
+                              - listitem [level=2] [ref=e392]:
+                                - paragraph [ref=e393]:
+                                  - generic [ref=e394]:
+                                    - text: Mescolale con
+                                    - strong [ref=e395]: 1 cucchiaino di farina
+                                    - text: .
+                              - listitem [level=2] [ref=e396]:
+                                - paragraph [ref=e397]:
+                                  - generic [ref=e398]: Incorporale all’impasto con una spatola.
+                              - listitem [level=2] [ref=e399]:
+                                - paragraph [ref=e400]:
+                                  - generic [ref=e401]: Spargi una manciata di gocce sulla superficie prima di infornare.
+                          - listitem [level=1] [ref=e402]:
+                            - paragraph [ref=e403]:
+                              - generic [ref=e404]:
+                                - strong [ref=e405]: Cuoci.
+                                - text: Versa l’impasto in uno
+                                - strong [ref=e406]: stampo da 20–22 cm
+                                - text: .Cuoci in forno statico a
+                                - strong [ref=e407]: 180°C per 35–40 minuti
+                                - text: .Prova stecchino dopo 30 minuti.
+                          - listitem [level=1] [ref=e408]:
+                            - paragraph [ref=e409]:
+                              - generic [ref=e410]:
+                                - strong [ref=e411]: Riposo.
+                                - text: Lascia raffreddare 10–15 minuti nello stampo prima di sformare.
+                        - heading [level=4] [ref=e413]
+                      - generic [ref=e417]:
+                        - navigation "Tag" [ref=e419]:
+                          - list [ref=e420]:
+                            - listitem [ref=e421]:
+                              - link "Cioccolato" [ref=e422] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/cioccolato
+                            - listitem [ref=e423]:
+                              - link "Latte di cocco" [ref=e424] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/latte-di-cocco
+                        - list "Post categories" [ref=e426]:
+                          - listitem [ref=e427]:
+                            - link "Dolci" [ref=e428] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                          - listitem [ref=e429]:
+                            - text: ·
+                            - link "Antispreco" [ref=e430] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                        - generic [ref=e433]:
+                          - button "Condividi tramite link" [ref=e436] [cursor=pointer]:
+                            - img [ref=e437]
+                          - button "Stampa post" [ref=e441] [cursor=pointer]:
+                            - img [ref=e442]
+                  - generic [ref=e452]:
+                    - generic [ref=e453]:
+                      - heading "Post recenti" [level=2] [ref=e454]
+                      - link "Mostra tutti" [ref=e455] [cursor=pointer]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - generic [ref=e457]:
+                      - article [ref=e458]:
+                        - generic [ref=e459]:
+                          - link "creme caramel" [ref=e460] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-crème-caramel-super-safe
+                          - link "Torta Crème Caramel super safe" [ref=e465] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-crème-caramel-super-safe
+                      - article [ref=e472]:
+                        - generic [ref=e473]:
+                          - link "pezzo di torta salata patate e zucchine" [ref=e474] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-salata-zucchine-e-patate
+                          - link "Torta salata zucchine e patate" [ref=e479] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-salata-zucchine-e-patate
+                      - article [ref=e486]:
+                        - generic [ref=e487]:
+                          - link "Torta fit alle carote per colazione" [ref=e488] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-fit-alle-carote-per-colazione
+                          - link "Torta fit alle carote per colazione" [ref=e493] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-fit-alle-carote-per-colazione
+              - generic [ref=e500]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e518]
+                    - generic [ref=e529]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e530]:
+                            - generic [ref=e537]: Ricevi aggiornamenti!
+                          - paragraph [ref=e538]:
+                            - generic [ref=e546]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e547]:
+                            - generic [ref=e548]: Email *
+                            - textbox "Email *" [ref=e550]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e552] [cursor=pointer]:
+                            - generic [ref=e553]: Tienimi aggiornat*!
+    - contentinfo [ref=e558]:
+      - generic [ref=e564]:
+        - generic:
+          - generic:
+            - paragraph [ref=e565]:
+              - link "Ricette per pippe" [ref=e570] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e575] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e576]
+              - paragraph [ref=e577]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e578]
+  - region "bottom of page"

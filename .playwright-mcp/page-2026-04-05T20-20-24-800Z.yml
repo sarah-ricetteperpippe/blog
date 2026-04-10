@@ -1,0 +1,364 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e206]:
+                      - link "Antispreco" [ref=e207]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                    - listitem [ref=e208]:
+                      - link "Pesti, salse e creme" [ref=e209]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                    - listitem [ref=e210]:
+                      - link "Piatti del mondo" [ref=e211]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                    - listitem [ref=e212]:
+                      - link "Contorni" [ref=e213]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                    - listitem [ref=e214]:
+                      - link "Insalate" [ref=e215]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                    - listitem [ref=e216]:
+                      - link "Frittate" [ref=e217]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                    - listitem [ref=e218]:
+                      - link "Risotti" [ref=e219]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                    - listitem [ref=e220]:
+                      - link "Secondi piatti" [ref=e221]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                    - listitem [ref=e222]:
+                      - link "Torte salate" [ref=e223]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - generic [ref=e225]:
+                  - article [ref=e229]:
+                    - generic [ref=e230]:
+                      - generic [ref=e232]:
+                        - generic [ref=e233]:
+                          - heading "Torta salame di cioccolato" [level=1] [ref=e235]
+                          - list [ref=e237]:
+                            - listitem [ref=e238]:
+                              - 'img "Immagine del redattore: Sarah Lasaracina" [ref=e241]'
+                              - generic [ref=e242] [cursor=pointer]: Sarah Lasaracina
+                            - listitem [ref=e243]: ·9 gen
+                            - listitem [ref=e244]: "·Tempo di lettura: 1 min"
+                        - paragraph [ref=e245]: "Aggiornamento: 23 feb"
+                      - generic [ref=e252]:
+                        - paragraph [ref=e254]:
+                          - generic [ref=e255]: E tanti auguri a zia Antonella!
+                        - separator [ref=e259]:
+                          - img [ref=e261]
+                        - figure [ref=e269]:
+                          - generic [ref=e270]:
+                            - img "Torta salame al cioccolato" [ref=e273] [cursor=pointer]
+                            - button "Expand image":
+                              - img
+                          - emphasis [ref=e277]:
+                            - generic [ref=e278]: Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!
+                        - separator [ref=e285]:
+                          - img [ref=e287]
+                        - heading "Informazioni rapide" [level=2] [ref=e290]:
+                          - generic [ref=e292]: Informazioni rapide
+                        - list [ref=e294]:
+                          - listitem [level=1] [ref=e295]:
+                            - paragraph [ref=e296]:
+                              - generic [ref=e297]:
+                                - strong [ref=e298]: "Porzioni:"
+                                - text: tortiera da 20 o 22 cm
+                          - listitem [level=1] [ref=e299]:
+                            - paragraph [ref=e300]:
+                              - generic [ref=e301]:
+                                - strong [ref=e302]: "Tempo di preparazione:"
+                                - text: 30 minuti
+                          - listitem [level=1] [ref=e303]:
+                            - paragraph [ref=e304]:
+                              - generic [ref=e305]:
+                                - strong [ref=e306]: "Tempo di riposo:"
+                                - text: almeno 2 ore in frigorifero
+                          - listitem [level=1] [ref=e307]:
+                            - paragraph [ref=e308]:
+                              - generic [ref=e309]:
+                                - strong [ref=e310]: "Strumenti:"
+                                - text: ciotola grande, ciotola media, cucchiaio, tortiera apribile da 20 cm, carta forno o pellicola, pentolino
+                        - heading "Ingredienti" [level=2] [ref=e315]:
+                          - generic [ref=e317]: Ingredienti
+                        - heading "Base “salame”" [level=3] [ref=e319]:
+                          - generic [ref=e320]: Base “salame”
+                        - list [ref=e322]:
+                          - listitem [level=1] [ref=e323]:
+                            - paragraph [ref=e324]:
+                              - generic [ref=e325]:
+                                - text: 250 g
+                                - strong [ref=e326]: biscotti secchi
+                          - listitem [level=1] [ref=e327]:
+                            - paragraph [ref=e328]:
+                              - generic [ref=e329]:
+                                - text: 200 g
+                                - strong [ref=e330]: cioccolato fondente
+                                - text: (50%)
+                          - listitem [level=1] [ref=e331]:
+                            - paragraph [ref=e332]:
+                              - strong [ref=e334]: 150 g margarina
+                          - listitem [level=1] [ref=e335]:
+                            - paragraph [ref=e336]:
+                              - generic [ref=e337]:
+                                - text: 100 g
+                                - strong [ref=e338]: zucchero
+                          - listitem [level=1] [ref=e339]:
+                            - paragraph [ref=e340]:
+                              - generic [ref=e341]:
+                                - text: 30 g
+                                - strong [ref=e342]: cacao amaro in polvere
+                        - heading "Ganache" [level=3] [ref=e344]:
+                          - generic [ref=e346]: Ganache
+                        - list [ref=e348]:
+                          - listitem [level=1] [ref=e349]:
+                            - paragraph [ref=e350]:
+                              - generic [ref=e351]:
+                                - text: 150 g
+                                - strong [ref=e352]: cioccolato fondente
+                                - text: (50%)
+                          - listitem [level=1] [ref=e353]:
+                            - paragraph [ref=e354]:
+                              - generic [ref=e355]:
+                                - text: 100 g
+                                - strong [ref=e356]: panna fresca liquida
+                          - listitem [level=1] [ref=e358]:
+                            - paragraph [ref=e359]:
+                              - generic [ref=e360]:
+                                - generic [ref=e361]: (opzionale)
+                                - strong [ref=e363]: nocciole tostate
+                                - text: q.b., tritate grossolanamente per decorare
+                        - separator [ref=e367]:
+                          - img [ref=e369]
+                        - heading [level=2] [ref=e372]
+                        - figure [ref=e377]:
+                          - generic [ref=e378]:
+                            - button "Expand image":
+                              - img
+                        - heading [level=2] [ref=e382]
+                        - separator [ref=e387]:
+                          - img [ref=e389]
+                        - heading "Procedura" [level=2] [ref=e392]:
+                          - generic [ref=e394]: Procedura
+                        - heading "Prepara la base" [level=3] [ref=e396]:
+                          - generic [ref=e397]: Prepara la base
+                        - list [ref=e399]:
+                          - listitem [level=1] [ref=e400]:
+                            - paragraph [ref=e401]:
+                              - generic [ref=e402]:
+                                - text: Rompi
+                                - strong [ref=e403]: 250 g di biscotti secchi
+                                - text: con le mani, lasciandoli a pezzi irregolari.
+                          - listitem [level=1] [ref=e404]:
+                            - paragraph [ref=e405]:
+                              - generic [ref=e406]:
+                                - text: Mettili in una ciotola capiente e aggiungi
+                                - strong [ref=e407]: 100 g di zucchero
+                                - text: e
+                                - strong [ref=e408]: 30 g di cacao amaro
+                                - text: . Mescola.
+                          - listitem [level=1] [ref=e409]:
+                            - paragraph [ref=e410]:
+                              - generic [ref=e411]:
+                                - text: Sciogli
+                                - strong [ref=e412]: 150 g di margarina
+                                - text: e
+                                - strong [ref=e413]: 200 g di cioccolato fondente
+                                - text: separatamente (microonde o bagnomaria).
+                          - listitem [level=1] [ref=e414]:
+                            - paragraph [ref=e415]:
+                              - generic [ref=e416]:
+                                - text: Versa margarina e cioccolato sciolti nella ciotola con i biscotti e
+                                - strong [ref=e417]: mescola
+                                - text: fino a ottenere un composto omogeneo.
+                          - listitem [level=1] [ref=e418]:
+                            - paragraph [ref=e419]:
+                              - generic [ref=e420]:
+                                - text: Rivesti una
+                                - strong [ref=e421]: tortiera da 20 cm
+                                - text: con carta forno o pellicola e trasferisci il composto.Compatta bene con il dorso di un cucchiaio.
+                          - listitem [level=1] [ref=e422]:
+                            - paragraph [ref=e423]:
+                              - generic [ref=e424]: Metti in frigorifero mentre prepari la ganache.
+                        - heading "Prepara la ganache" [level=3] [ref=e429]:
+                          - generic [ref=e430]: Prepara la ganache
+                        - list [ref=e432]:
+                          - listitem [level=1] [ref=e433]:
+                            - paragraph [ref=e434]:
+                              - generic [ref=e435]:
+                                - text: In un pentolino porta
+                                - strong [ref=e436]: 100 g di panna
+                                - text: quasi a bollore.
+                          - listitem [level=1] [ref=e437]:
+                            - paragraph [ref=e438]:
+                              - generic [ref=e439]:
+                                - text: Spegni il fuoco e aggiungi
+                                - strong [ref=e440]: 150 g di cioccolato fondente
+                                - text: a pezzi.
+                          - listitem [level=1] [ref=e441]:
+                            - paragraph [ref=e442]:
+                              - generic [ref=e443]: Mescola finché la ganache è liscia e uniforme.
+                        - heading "Assembla" [level=3] [ref=e448]:
+                          - generic [ref=e449]: Assembla
+                        - list [ref=e451]:
+                          - listitem [level=1] [ref=e452]:
+                            - paragraph [ref=e453]:
+                              - generic [ref=e454]: Riprendi la torta dal frigorifero.
+                          - listitem [level=1] [ref=e455]:
+                            - paragraph [ref=e456]:
+                              - generic [ref=e457]:
+                                - text: Versa la ganache sopra e
+                                - strong [ref=e458]: livella bene
+                                - text: .
+                          - listitem [level=1] [ref=e459]:
+                            - paragraph [ref=e460]:
+                              - generic [ref=e461]:
+                                - emphasis [ref=e462]: (Opzionale)
+                                - text: Decora il bordo con
+                                - strong [ref=e463]: nocciole tostate tritate
+                                - text: .
+                          - listitem [level=1] [ref=e464]:
+                            - paragraph [ref=e465]:
+                              - generic [ref=e466]:
+                                - text: Rimetti in frigorifero per
+                                - strong [ref=e467]: almeno 2 ore
+                                - text: prima di servire.
+                        - figure [ref=e471]:
+                          - generic [ref=e472]:
+                            - button "Expand image":
+                              - img
+                      - generic [ref=e480]:
+                        - navigation "Tag" [ref=e482]:
+                          - list [ref=e483]:
+                            - listitem [ref=e484]:
+                              - link "4 stagioni" [ref=e485] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/4-stagioni
+                            - listitem [ref=e486]:
+                              - link "Torte" [ref=e487] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/torte
+                            - listitem [ref=e488]:
+                              - link "Cioccolato" [ref=e489] [cursor=pointer]:
+                                - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/cioccolato
+                        - list "Post categories" [ref=e491]:
+                          - listitem [ref=e492]:
+                            - link "Dolci" [ref=e493] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                        - generic [ref=e496]:
+                          - button "Condividi tramite link" [ref=e499] [cursor=pointer]:
+                            - img [ref=e500]
+                          - button "Stampa post" [ref=e504] [cursor=pointer]:
+                            - img [ref=e505]
+                  - generic [ref=e515]:
+                    - generic [ref=e516]:
+                      - heading "Post recenti" [level=2] [ref=e517]
+                      - link "Mostra tutti" [ref=e518] [cursor=pointer]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - generic [ref=e520]:
+                      - article [ref=e521]:
+                        - generic [ref=e522]:
+                          - link "creme caramel" [ref=e523] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-crème-caramel-super-safe
+                          - link "Torta Crème Caramel super safe" [ref=e528] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-crème-caramel-super-safe
+                      - article [ref=e535]:
+                        - generic [ref=e536]:
+                          - link "Torta fit alle carote per colazione" [ref=e537] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-fit-alle-carote-per-colazione
+                          - link "Torta fit alle carote per colazione" [ref=e542] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/torta-fit-alle-carote-per-colazione
+                      - article [ref=e549]:
+                        - generic [ref=e550]:
+                          - link "torta al cioccolato in piatto" [ref=e551] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/crostata-morbida-al-cacao-con-ganache-al-cioccolato
+                          - link "Crostata morbida al cacao con ganache al cioccolato" [ref=e556] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/post/crostata-morbida-al-cacao-con-ganache-al-cioccolato
+              - generic [ref=e563]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e581]
+                    - generic [ref=e592]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e593]:
+                            - generic [ref=e600]: Ricevi aggiornamenti!
+                          - paragraph [ref=e601]:
+                            - generic [ref=e609]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e610]:
+                            - generic [ref=e611]: Email *
+                            - textbox "Email *" [ref=e613]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e615] [cursor=pointer]:
+                            - generic [ref=e616]: Tienimi aggiornat*!
+    - contentinfo [ref=e621]:
+      - generic [ref=e627]:
+        - generic:
+          - generic:
+            - paragraph [ref=e628]:
+              - link "Ricette per pippe" [ref=e633] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e638] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e639]
+              - paragraph [ref=e640]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e641]
+  - region "bottom of page"

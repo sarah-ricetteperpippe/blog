@@ -2,9 +2,12 @@
 title: "Crostata morbida al cacao con ganache al cioccolato"
 description: "È molto semplice, ma fa la sua figura per morbidezza ed eleganza!"
 pubDate: "2025-02-01"
+heroImage: "/images/ricette/crostata-morbida-cacao-principale.PNG"
 category: "Dolci"
 tags: ["Dolci", "Cioccolato", "Torte", "Natale", "Compleanno"]
 ---
+
+<!-- c9ca99_a54202f9219a4b4dacb3bb14af058e41~mv2.png -->
 
 È molto semplice, ma fa la sua figura per morbidezza ed eleganza!
 
@@ -54,3 +57,7 @@ Porta a ebollizione un pentolino d'acqua. Versa i frutti di bosco ancora congela
 ## Note
 
 Tira la torta fuori dal frigo 25–30 minuti prima di servirla. Si conserva coperta in frigo per 3–4 giorni. La base può essere preparata anche il giorno prima.
+
+![Crostata morbida al cacao](/images/ricette/crostata-morbida-cacao.png)
+
+![Crostata morbida al cacao — dettaglio ganache](/images/ricette/crostata-morbida-cacao2.PNG)

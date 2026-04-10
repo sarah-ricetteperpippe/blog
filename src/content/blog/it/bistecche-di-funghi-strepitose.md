@@ -2,9 +2,13 @@
 title: "Bistecche di funghi strepitose"
 description: "Questa l'ho improvvisata ed è oggettivamente una bomba... per sapore, per aspetto, per facilità. Mondiale!"
 pubDate: "2025-02-27"
+heroImage: "/images/ricette/bistecca-cardoncelli.png"
 category: "Secondi piatti"
 tags: ["Funghi", "Secondi piatti", "4 stagioni"]
 ---
+
+<!-- c9ca99_254c1d63cc214b5e8532c898c6c5770f~mv2.jpg -->
+<!-- c9ca99_8d6f40c13e2c492bb9466d6dc28f8f4d~mv2.jpg -->
 
 Questa l'ho improvvisata ed è oggettivamente una bomba... per sapore, per aspetto, per facilità. Mondiale! Ho avuto la fortuna di trovare cardoncelli spessi (circa 3 cm) e a testa molto larga (circa 20cm), e li ho trattati come una bistecca. Puoi farla anche con i pleurotus a testa larga, ma sono più sottili, quindi cambiano i tempi e qualche accortezza che trovi indicata tra parentesi nei passaggi.
 
@@ -49,3 +53,7 @@ Questa l'ho improvvisata ed è oggettivamente una bomba... per sapore, per aspet
 10. Aggiungi burro, aglio e rosmarino negli ultimi 1–2 minuti. Inclina la padella e irrora i funghi con il grasso caldo.
 
 11. Spegni e lascia riposare 2 minuti prima di servire. Pepa solo alla fine.
+
+![Bistecche di funghi cardoncelli](/images/ricette/bistecca_cardoncelli1.png)
+
+![Bistecche di funghi cardoncelli — vista ravvicinata](/images/ricette/bistecca_cardoncelli_2.png)

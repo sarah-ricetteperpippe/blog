@@ -1,0 +1,6 @@
+[    1864ms] [ERROR] suspense rendered fallback for - comp-mhtivit8 - (ExpandableMenu) @ https://static.parastorage.com/services/wix-thunderbolt/dist/group_3.ba3d1b53.chunk.min.js:0
+[    1916ms] [WARNING] react-i18next:: It seems you are still using the old wait option, you may migrate to the new useSuspense behaviour. @ https://static.parastorage.com/services/communities-blog-ooi/1.3148.0/PostViewerWidgetNoCss.bundle.min.js:0
+[    5735ms] [ERROR] suspense rendered fallback for - comp-mhtivit8 - (ExpandableMenu) @ https://static.parastorage.com/services/wix-thunderbolt/dist/group_3.ba3d1b53.chunk.min.js:0
+[    5771ms] [WARNING] react-i18next:: It seems you are still using the old wait option, you may migrate to the new useSuspense behaviour. @ https://static.parastorage.com/services/communities-blog-ooi/1.3148.0/PostViewerWidgetNoCss.bundle.min.js:0
+[   10980ms] [ERROR] suspense rendered fallback for - comp-mhtivit8 - (ExpandableMenu) @ https://static.parastorage.com/services/wix-thunderbolt/dist/group_3.ba3d1b53.chunk.min.js:0
+[   11015ms] [WARNING] react-i18next:: It seems you are still using the old wait option, you may migrate to the new useSuspense behaviour. @ https://static.parastorage.com/services/communities-blog-ooi/1.3148.0/PostViewerWidgetNoCss.bundle.min.js:0

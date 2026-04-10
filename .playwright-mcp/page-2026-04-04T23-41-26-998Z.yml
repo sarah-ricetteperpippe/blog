@@ -1,0 +1,300 @@
+- generic [ref=e3]:
+  - region "top of page" [active]
+  - button "Passa al contenuto principale"
+  - link "wix Questo sito è stato realizzato con Wix. Crea il tuo oggi. Inizia" [ref=e5] [cursor=pointer]:
+    - /url: https://it.wix.com/lp-it/website-builder?orig_msid=98af22b3-1d66-4d03-b888-a076714cd74f&adsVersion=banner_2024
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "wix" [ref=e10]
+        - text: Questo sito è stato realizzato con Wix. Crea il tuo oggi.
+      - generic [ref=e15]: Inizia
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic:
+            - generic:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+                - img [ref=e41]
+              - heading "Ricette per pippe ...if it's listed, it's tasted!" [level=4] [ref=e142]:
+                - link "Ricette per pippe ...if it's listed, it's tasted!" [ref=e144] [cursor=pointer]:
+                  - /url: https://ricetteperpippe.wixsite.com/blog
+                  - text: Ricette per pippe
+                  - generic [ref=e147]: ...if it's listed, it's tasted!
+        - generic [ref=e148]:
+          - generic:
+            - generic:
+              - search [ref=e153]:
+                - button "SEARCH" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: SEARCH
+                    - img [ref=e160]
+              - navigation "Sito" [ref=e164]:
+                - button "MENU" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e168]: MENU
+    - main [ref=e171]:
+      - generic [ref=e176]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e187]:
+                - navigation "Blog" [ref=e190]:
+                  - list [ref=e191] [cursor=pointer]:
+                    - listitem [ref=e192]:
+                      - link "All Posts" [ref=e193]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog
+                    - listitem [ref=e194]:
+                      - link "Antipasto" [ref=e195]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                    - listitem [ref=e196]:
+                      - link "Primi piatti" [ref=e197]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/primi-piatti
+                    - listitem [ref=e198]:
+                      - link "Dolci" [ref=e199]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/dolci
+                    - listitem [ref=e200]:
+                      - link "Piatti unici" [ref=e201]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-unici
+                    - listitem [ref=e202]:
+                      - link "Zuppe e vellutate" [ref=e203]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/zuppe-e-vellutate
+                    - listitem [ref=e204]:
+                      - link "Preparazioni base" [ref=e205]:
+                        - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/preparazioni-base
+                    - listitem [ref=e519]:
+                      - generic [ref=e520]:
+                        - button "Altro" [ref=e521]:
+                          - text: Altro
+                          - img [ref=e522]
+                        - list [ref=e525]:
+                          - listitem [ref=e526]:
+                            - link "Antispreco" [ref=e527]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antispreco
+                          - listitem [ref=e528]:
+                            - link "Pesti, salse e creme" [ref=e529]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/salse-e-creme
+                          - listitem [ref=e530]:
+                            - link "Piatti del mondo" [ref=e531]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/piatti-del-mondo
+                          - listitem [ref=e532]:
+                            - link "Contorni" [ref=e533]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/contorni
+                          - listitem [ref=e534]:
+                            - link "Insalate" [ref=e535]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/insalate
+                          - listitem [ref=e536]:
+                            - link "Frittate" [ref=e537]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/frittate
+                          - listitem [ref=e538]:
+                            - link "Risotti" [ref=e539]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/risotti
+                          - listitem [ref=e540]:
+                            - link "Secondi piatti" [ref=e541]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/secondi-piatti
+                          - listitem [ref=e542]:
+                            - link "Torte salate" [ref=e543]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/torte-salate
+                - article [ref=e229]:
+                  - generic [ref=e230]:
+                    - generic [ref=e232]:
+                      - generic [ref=e233]:
+                        - heading "Alberelli natalizi di brie o camembert" [level=1] [ref=e235]
+                        - list [ref=e237]:
+                          - listitem [ref=e238]:
+                            - 'img "Immagine del redattore: ricetteperpippe" [ref=e241]'
+                            - generic [ref=e242] [cursor=pointer]: ricetteperpippe
+                          - listitem [ref=e243]: ·3 gen
+                          - listitem [ref=e244]: "·Tempo di lettura: 1 min"
+                      - paragraph [ref=e245]: "Aggiornamento: 23 feb"
+                    - generic [ref=e252]:
+                      - paragraph [ref=e254]:
+                        - generic [ref=e255]: Carini e facilissimi da preparare last minute!
+                      - separator [ref=e259]:
+                        - img [ref=e261]
+                      - figure [ref=e266]:
+                        - generic [ref=e267]:
+                          - img "Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!" [ref=e270] [cursor=pointer]
+                          - button "Espandi immagine":
+                            - img
+                        - emphasis [ref=e274]:
+                          - generic [ref=e275]: Le foto dei piatti di Ricette per Pippe sono originali, il post-editing è fatto con l'AI!
+                      - heading [level=2] [ref=e277]
+                      - separator [ref=e282]:
+                        - img [ref=e284]
+                      - heading "Informazioni rapide" [level=2] [ref=e287]:
+                        - generic [ref=e289]: Informazioni rapide
+                      - list [ref=e291]:
+                        - listitem [level=1] [ref=e292]:
+                          - paragraph [ref=e293]:
+                            - generic [ref=e294]:
+                              - strong [ref=e295]: "Porzioni:"
+                              - text: 12 pezzi
+                        - listitem [level=1] [ref=e296]:
+                          - paragraph [ref=e297]:
+                            - generic [ref=e298]:
+                              - strong [ref=e299]: "Tempo di preparazione:"
+                              - text: 15 minuti
+                        - listitem [level=1] [ref=e300]:
+                          - paragraph [ref=e301]:
+                            - generic [ref=e302]:
+                              - strong [ref=e303]: "Tempo di cottura:"
+                              - text: –
+                        - listitem [level=1] [ref=e304]:
+                          - paragraph [ref=e305]:
+                            - generic [ref=e306]:
+                              - strong [ref=e307]: "Strumenti:"
+                              - text: coltello affilato, tagliere, ciotola piccola
+                        - listitem [level=1] [ref=e308]:
+                          - paragraph [ref=e309]:
+                            - generic [ref=e310]:
+                              - strong [ref=e311]: "Avvertenze:"
+                              - text: il formaggio non deve essere troppo freddo, altrimenti si rompe nel taglio
+                      - heading "Ingredienti" [level=2] [ref=e313]:
+                        - generic [ref=e315]: Ingredienti
+                      - list [ref=e317]:
+                        - listitem [level=1] [ref=e318]:
+                          - paragraph [ref=e319]:
+                            - generic [ref=e320]:
+                              - text: 1 forma di
+                              - strong [ref=e321]: brie o camembert
+                        - listitem [level=1] [ref=e322]:
+                          - paragraph [ref=e323]:
+                            - generic [ref=e324]:
+                              - strong [ref=e325]: 20 g frutta secca
+                              - text: tritata grossolanamente (noci, nocciole o mandorle)
+                        - listitem [level=1] [ref=e326]:
+                          - paragraph [ref=e327]:
+                            - generic [ref=e328]:
+                              - text: 1–2 cucchiai
+                              - strong [ref=e329]: miele
+                              - text: o sciroppo d’acero
+                              - emphasis [ref=e330]: (facoltativo, solo per far aderire la granella)
+                        - listitem [level=1] [ref=e331]:
+                          - paragraph [ref=e332]:
+                            - generic [ref=e333]:
+                              - text: "12"
+                              - strong [ref=e334]: bastoncini salati
+                              - text: o mini pretzel
+                        - listitem [level=1] [ref=e335]:
+                          - paragraph [ref=e336]:
+                            - generic [ref=e337]:
+                              - strong [ref=e338]: rosmarino fresco
+                              - text: q.b. (per decorare)
+                      - separator [ref=e342]:
+                        - img [ref=e344]
+                      - figure [ref=e349]:
+                        - generic [ref=e350]:
+                          - button "Espandi immagine":
+                            - img
+                      - separator [ref=e356]:
+                        - img [ref=e358]
+                      - heading "Procedura" [level=2] [ref=e361]:
+                        - generic [ref=e363]: Procedura
+                      - list [ref=e365]:
+                        - listitem [level=1] [ref=e366]:
+                          - paragraph [ref=e367]:
+                            - generic [ref=e368]:
+                              - text: Prendi la forma intera di brie o camembert e tagliala
+                              - strong [ref=e369]: verticalmente al centro
+                              - text: ", ottenendo"
+                              - strong [ref=e370]: 2 mezze forme
+                              - text: .
+                        - listitem [level=1] [ref=e371]:
+                          - paragraph [ref=e372]:
+                            - generic [ref=e373]:
+                              - text: Da
+                              - strong [ref=e374]: ogni metà
+                              - text: ricava
+                              - strong [ref=e375]: 3 spicchi
+                              - text: .
+                        - listitem [level=1] [ref=e376]:
+                          - paragraph [ref=e377]:
+                            - generic [ref=e378]:
+                              - text: Ogni spicchio
+                              - strong [ref=e379]: sezionalo in due fette più sottili
+                              - text: ", seguendo lo spessore. Otterrai"
+                              - strong [ref=e380]: 12 triangoli
+                              - text: sottili e regolari.
+                        - listitem [level=1] [ref=e381]:
+                          - paragraph [ref=e382]:
+                            - generic [ref=e383]:
+                              - emphasis [ref=e384]: (Facoltativo)
+                              - text: Spennella leggermente la superficie dei triangoli con
+                              - strong [ref=e385]: miele o sciroppo d’acero
+                              - text: .
+                        - listitem [level=1] [ref=e386]:
+                          - paragraph [ref=e387]:
+                            - generic [ref=e388]:
+                              - text: Passa i triangoli nella
+                              - strong [ref=e389]: frutta secca tritata
+                              - text: ", premendo appena per farla aderire."
+                        - listitem [level=1] [ref=e390]:
+                          - paragraph [ref=e391]:
+                            - generic [ref=e392]:
+                              - text: Inserisci
+                              - strong [ref=e393]: un bastoncino salato
+                              - text: alla base di ogni triangolo, come fosse il tronco.
+                      - heading "Servizio" [level=2] [ref=e398]:
+                        - generic [ref=e400]: Servizio
+                      - paragraph [ref=e402]:
+                        - generic [ref=e403]:
+                          - text: Disponi gli alberelli su un piatto e completa con
+                          - strong [ref=e404]: aghi di rosmarino
+                          - text: .Servi a
+                          - strong [ref=e405]: temperatura ambiente
+                          - text: .
+                    - generic [ref=e411]:
+                      - navigation "Tag" [ref=e413]:
+                        - list [ref=e414]:
+                          - listitem [ref=e415]:
+                            - link "Natale" [ref=e416] [cursor=pointer]:
+                              - /url: https://ricetteperpippe.wixsite.com/blog/blog/tags/natale
+                      - list "Post categories" [ref=e418]:
+                        - listitem [ref=e419]:
+                          - link "Antipasto" [ref=e420] [cursor=pointer]:
+                            - /url: https://ricetteperpippe.wixsite.com/blog/blog/categories/antipasto
+                      - generic [ref=e421]:
+                        - generic [ref=e423]:
+                          - button "Condividi tramite link" [ref=e426] [cursor=pointer]:
+                            - img [ref=e427]
+                          - button "Stampa post" [ref=e431] [cursor=pointer]:
+                            - img [ref=e432]
+                        - generic [ref=e435]:
+                          - generic [ref=e436]:
+                            - status "5 visualizzazioni" [ref=e544]
+                            - status "0 commenti" [ref=e545]
+                          - button "Like post" [ref=e546]:
+                            - generic [ref=e547]: Post non contrassegnato con Mi piace
+                            - img [ref=e554] [cursor=pointer]
+              - generic [ref=e440]:
+                - generic:
+                  - generic:
+                    - img "Amici mangiare la cena" [ref=e458]
+                    - generic [ref=e469]:
+                      - generic:
+                        - generic:
+                          - heading "Ricevi aggiornamenti!" [level=2] [ref=e470]:
+                            - generic [ref=e477]: Ricevi aggiornamenti!
+                          - paragraph [ref=e478]:
+                            - generic [ref=e486]: Quando un miracolo accade nella mia cucina (evento più unico che raro), va condiviso!
+                          - generic [ref=e487]:
+                            - generic [ref=e488]: Email *
+                            - textbox "Email *" [ref=e490]:
+                              - /placeholder: ""
+                          - button "Tienimi aggiornat*!" [ref=e492] [cursor=pointer]:
+                            - generic [ref=e493]: Tienimi aggiornat*!
+    - contentinfo [ref=e498]:
+      - generic [ref=e504]:
+        - generic:
+          - generic:
+            - paragraph [ref=e505]:
+              - link "Ricette per pippe" [ref=e510] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+              - link "If it's listed, it's tasted by Sarah" [ref=e515] [cursor=pointer]:
+                - /url: https://ricetteperpippe.wixsite.com/blog
+            - generic:
+              - paragraph [ref=e516]
+              - paragraph [ref=e517]: © 2026 by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.
+              - paragraph [ref=e518]
+  - region "bottom of page"
