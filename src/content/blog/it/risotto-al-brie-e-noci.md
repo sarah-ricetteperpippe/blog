@@ -1,4 +1,5 @@
 ---
+heroImage: "/images/ricette/risotto-brie-noci.jpg"
 title: "Risotto al brie e noci"
 description: "Questo è spaziale, spa-zia-leeeee!!!"
 pubDate: "2026-01-12"

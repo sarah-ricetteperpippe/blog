@@ -1,4 +1,5 @@
 ---
+heroImage: "/images/ricette/pasta-lenticchie.jpg"
 title: "Pasta e lenticchie (in zuppa o non)"
 description: "Mangerei lenticchie anche a colazione!"
 pubDate: "2026-01-07"

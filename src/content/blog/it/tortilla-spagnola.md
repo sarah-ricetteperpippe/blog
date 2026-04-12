@@ -1,4 +1,5 @@
 ---
+heroImage: "/images/ricette/tortilla-spagnola.jpg"
 title: "Tortilla spagnola"
 description: "...Perché frittata di patate e cipolle suonava meno cool! Una garanzia!"
 pubDate: "2025-12-16"

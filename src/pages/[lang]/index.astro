@@ -17,7 +17,7 @@ const allPosts = await getCollection('blog');
 const posts = allPosts
   .filter(p => p.id.startsWith(`${lang}/`))
   .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf())
-  .slice(0, 4);
+  .slice(0, 8);
 
 const slug = (post: any) => post.id.replace(`${lang}/`, '').replace(/\.md$/, '');
 

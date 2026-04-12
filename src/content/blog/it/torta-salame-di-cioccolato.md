@@ -1,4 +1,5 @@
 ---
+heroImage: "/images/ricette/torta-salame-cioccolato.jpg"
 title: "Torta salame di cioccolato"
 description: "E tanti auguri a zia Antonella!"
 pubDate: "2026-01-09"
