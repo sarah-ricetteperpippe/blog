@@ -2,6 +2,7 @@
 title: "Torta fredda al cioccolato"
 description: "Simile alla cheesecake, ma con un tocco più pasticciero!"
 pubDate: "2025-11-11"
+heroImage: "/images/ricette/torta-fredda-cioccolato.jpg"
 category: "Dolci"
 tags: ["4 stagioni", "Dolci", "Torte", "Cioccolato", "Compleanno"]
 ---

@@ -2,6 +2,7 @@
 title: "Torta soffice al latte di cocco"
 description: "Per consumare il latte di cocco che non finisce mai!"
 pubDate: "2025-11-18"
+heroImage: "/images/ricette/torta-soffice-cocco.jpg"
 category: "Dolci"
 tags: ["Dolci", "Antispreco", "Torte"]
 ---

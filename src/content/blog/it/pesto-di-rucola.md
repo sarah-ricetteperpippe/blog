@@ -2,6 +2,7 @@
 title: "Pesto di rucola"
 description: "Più picca la rucola, meglio è!"
 pubDate: "2025-11-12"
+heroImage: "/images/ricette/pesto-rucola.jpg"
 category: "Pesti salse e creme"
 tags: ["4 stagioni", "Rucola", "Pesti salse e creme"]
 ---
