@@ -16,7 +16,7 @@
   --color-green-footer: #C8DB9C;
   --color-white: #FCFCFC;
 
-  --font-heading: 'Fraunces', 'Georgia', serif;
+  --font-heading: 'Pacifico', cursive;
   --font-body: 'Fraunces', 'Georgia', serif;
   --font-small: 'Helvetica Neue', sans-serif;
 
@@ -51,9 +51,8 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  font-weight: 400;
-  font-style: italic;
-  line-height: 1.15;
+  font-weight: normal;
+  line-height: 1.1;
   color: var(--color-primary-orange);
 }
 
