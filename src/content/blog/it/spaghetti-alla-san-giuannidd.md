@@ -1,5 +1,5 @@
 ---
-heroImage: "/images/ricette/spaghetti-san-giuannidd.jpg"
+heroImage: "https://static.wixstatic.com/media/c9ca99_baf913c05a924a93b96bf469c57bdea2~mv2.png/v1/fill/w_667,h_1000,al_c,q_90,usm_0.66_1.00_0.01/c9ca99_baf913c05a924a93b96bf469c57bdea2~mv2.png"
 title: "Spaghetti alla San Giuannidd"
 description: "Che bella la baresità!"
 pubDate: "2026-01-05"
