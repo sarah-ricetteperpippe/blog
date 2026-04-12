@@ -65,10 +65,10 @@ Togli dal bagno maria, lascia raffreddare a temperatura ambiente, poi in frigo m
 
 Decora con qualche topping o fiori freschi, fa più festa!
 
-![Torta Crème Caramel](/images/ricette/torta-creme-caramel.png)
+![Torta Crème Caramel](/images/ricette/torta-creme-caramel.jpg)
 
 ![Torta Crème Caramel — fetta](/images/ricette/torta-creme-caramel3.jpg)
 
-![Torta Crème Caramel — versione asciugacapelli](/images/ricette/torta-creme-caramel-asciugacapelli.png)
+![Torta Crème Caramel — versione asciugacapelli](/images/ricette/torta-creme-caramel-asciugacapelli.jpg)
 
-![Torta Crème Caramel — altra angolazione](/images/ricette/torata_creme_caramel.png)
+![Torta Crème Caramel — altra angolazione](/images/ricette/torata_creme_caramel.jpg)

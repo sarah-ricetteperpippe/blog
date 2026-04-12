@@ -54,6 +54,6 @@ Questa l'ho improvvisata ed è oggettivamente una bomba... per sapore, per aspet
 
 11. Spegni e lascia riposare 2 minuti prima di servire. Pepa solo alla fine.
 
-![Bistecche di funghi cardoncelli](/images/ricette/bistecca_cardoncelli1.png)
+![Bistecche di funghi cardoncelli](/images/ricette/bistecca_cardoncelli1.jpg)
 
-![Bistecche di funghi cardoncelli — vista ravvicinata](/images/ricette/bistecca_cardoncelli_2.png)
+![Bistecche di funghi cardoncelli — vista ravvicinata](/images/ricette/bistecca_cardoncelli_2.jpg)

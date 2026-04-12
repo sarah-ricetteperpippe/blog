@@ -38,4 +38,4 @@ Amanti della feta, quando non avete tempo ma volete un primo yummy yummy, con qu
 6. **Condimento:** sforna la pirofila e schiaccia feta e pomodorini con una forchetta fino a ottenere un sughetto cremoso.
 7. **Mantecatura:** unisci la pasta al condimento e manteca aggiungendo 1–2 cucchiai di acqua di cottura se serve. Mescola bene e servi subito.
 
-![Pasta con feta al forno e pomodorini](/images/ricette/pasta-feta-verticale.png)
+![Pasta con feta al forno e pomodorini](/images/ricette/pasta-feta-verticale.jpg)

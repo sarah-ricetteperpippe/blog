@@ -58,6 +58,6 @@ Porta a ebollizione un pentolino d'acqua. Versa i frutti di bosco ancora congela
 
 Tira la torta fuori dal frigo 25–30 minuti prima di servirla. Si conserva coperta in frigo per 3–4 giorni. La base può essere preparata anche il giorno prima.
 
-![Crostata morbida al cacao](/images/ricette/crostata-morbida-cacao.png)
+![Crostata morbida al cacao](/images/ricette/crostata-morbida-cacao.jpg)
 
-![Crostata morbida al cacao — dettaglio ganache](/images/ricette/crostata-morbida-cacao2.PNG)
+![Crostata morbida al cacao — dettaglio ganache](/images/ricette/crostata-morbida-cacao2.jpg)

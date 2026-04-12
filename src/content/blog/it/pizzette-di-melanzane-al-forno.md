@@ -46,4 +46,4 @@ E magnamosele due verdure ogni tanto!
 
 Si conservano in frigo per 1–2 giorni e si possono scaldare facilmente in forno o padella. In mezzo a due fette di pane, fingono umilmente di essere una parmigiana.
 
-![Pizzette di melanzane al forno](/images/ricette/pizzette-melanzane2.png)
+![Pizzette di melanzane al forno](/images/ricette/pizzette-melanzane2.jpg)
