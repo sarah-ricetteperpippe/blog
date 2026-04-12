@@ -2,8 +2,10 @@
    CSS Variables / Design Tokens
    ============================ */
 :root {
+  color-scheme: light;
+
   --color-primary-orange: #E76E51;
-  --color-primary-green: #597D38;
+  --color-primary-green: #598D38;
   --color-primary-green-light: #7FA88B;
   --color-primary-green-bg: #D4E4C8;
   --color-bg-light: #FCFCFC;
@@ -14,7 +16,7 @@
   --color-green-footer: #C8DB9C;
   --color-white: #FCFCFC;
 
-  --font-heading: 'Pacifico', cursive;
+  --font-heading: 'Fraunces', 'Georgia', serif;
   --font-body: 'Fraunces', 'Georgia', serif;
   --font-small: 'Helvetica Neue', sans-serif;
 
@@ -49,8 +51,9 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  font-weight: normal;
-  line-height: 1.1;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.15;
   color: var(--color-primary-orange);
 }
 
@@ -88,22 +91,36 @@ p {
   gap: 1.25rem;
 }
 
-.site-branding { display: flex; align-items: center; gap: 1rem; }
-.site-logo { width: 70px; height: auto; }
+.site-branding { display: flex; align-items: center; gap: 0.75rem; }
+.site-logo { width: 90px; height: auto; }
 
+/* Brand name — shown only as image fallback */
+.site-title-fallback {
+  display: none;
+}
 .site-title {
   font-family: var(--font-heading);
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
   color: var(--color-primary-green);
   margin: 0;
+  line-height: 1;
 }
 .site-title a { color: var(--color-primary-green); }
 
+/* Brand text block: name + payoff stacked */
+.site-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
 .site-tagline {
   font-family: var(--font-body);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--color-primary-orange);
   font-style: italic;
+  line-height: 1;
 }
 
 .header-nav { display: flex; gap: 1.5rem; align-items: center; }
@@ -457,7 +474,7 @@ p {
 }
 .recipe-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
 .recipe-card img,
-.recipe-card-image { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+.recipe-card-image { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; background: #f5f0e8; }
 .recipe-card-placeholder {
   display: flex;
   align-items: center;
