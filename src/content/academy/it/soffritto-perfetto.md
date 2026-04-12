@@ -3,7 +3,7 @@ title: "Il soffritto perfetto"
 description: "La base di mille ricette — cipolla, sedano, carota e la pazienza di non bruciare tutto."
 pubDate: "2024-04-01"
 difficulty: "base"
-category: "Tecniche di base"
+category: "Tecniche"
 tags: [soffritto, verdure, basi]
 lang: "it"
 translationKey: "soffritto-perfetto"

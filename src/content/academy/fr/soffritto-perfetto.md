@@ -3,7 +3,7 @@ title: "Le soffritto parfait"
 description: "La base de mille recettes — oignon, céleri, carotte et la patience de ne pas tout brûler."
 pubDate: "2024-04-01"
 difficulty: "base"
-category: "Techniques de base"
+category: "Tecniche"
 tags: [soffritto, légumes, bases]
 lang: "fr"
 translationKey: "soffritto-perfetto"

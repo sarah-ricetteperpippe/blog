@@ -11,100 +11,226 @@ export function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
+const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 
-const allPosts = (await getCollection('academy', ({ data }) => data.lang === lang)).sort(
-  (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
-);
+const allPosts = await getCollection('academy');
+const posts = allPosts
+  .filter(p => p.id.startsWith(`${lang}/`))
+  .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
 
-const categories = [...new Set(allPosts.map(p => p.data.category).filter(Boolean))];
+function postSlug(post: any): string {
+  return post.id.replace(`${lang}/`, '').replace(/\.md$/, '');
+}
 
-const i18n = {
+function readingTime(body: string): number {
+  const words = body.trim().split(/\s+/).length;
+  return Math.max(1, Math.ceil(words / 200));
+}
+
+const ui = {
   it: {
     title: 'Academy',
-    description: 'Guide e tecniche di cucina per pippe ambiziose.',
+    subtitle: 'Tecniche, salvataggi e sostituzioni per smettere di improvvisare.',
     eyebrow: 'Academy',
-    heading: 'Impara le tecniche base',
-    subheading: "Guide passo passo per smettere di improvvisare — dall'uovo in camicia alla pasta fatta in casa.",
+    searchPlaceholder: 'Cerca tecniche, ingredienti...',
+    filterAll: 'Tutte',
+    filters: [
+      { key: 'Tecniche', label: 'Tecniche' },
+      { key: 'Salvataggi', label: 'Salvataggi' },
+      { key: 'Sostituzioni', label: 'Sostituzioni' },
+    ],
+    noResults: 'Nessuna guida trovata. Prova con un\'altra parola chiave!',
+    readTime: (n: number) => `${n} min`,
+    difficulty: {
+      base: 'base',
+      intermedio: 'intermedio',
+      avanzato: 'avanzato',
+    },
     empty: 'Le guide sono in arrivo! Torna presto. 🍳',
   },
   en: {
     title: 'Academy',
-    description: 'Cooking guides and techniques for ambitious beginners.',
+    subtitle: 'Techniques, save-its, and substitutions to stop winging it.',
     eyebrow: 'Academy',
-    heading: 'Learn the basics',
-    subheading: 'Step-by-step guides to stop winging it — from poached eggs to homemade pasta.',
+    searchPlaceholder: 'Search techniques, ingredients...',
+    filterAll: 'All',
+    filters: [
+      { key: 'Tecniche', label: 'Techniques' },
+      { key: 'Salvataggi', label: 'Save-its' },
+      { key: 'Sostituzioni', label: 'Substitutions' },
+    ],
+    noResults: 'No guides found. Try a different keyword!',
+    readTime: (n: number) => `${n} min`,
+    difficulty: {
+      base: 'beginner',
+      intermedio: 'intermediate',
+      avanzato: 'advanced',
+    },
     empty: 'Guides coming soon! Check back later. 🍳',
   },
   fr: {
     title: 'Academy',
-    description: 'Guides et techniques de cuisine pour débutants ambitieux.',
+    subtitle: 'Techniques, sauvetages et substitutions pour arrêter d\'improviser.',
     eyebrow: 'Academy',
-    heading: 'Apprendre les bases',
-    subheading: "Guides pas à pas pour arrêter d'improviser — de l'œuf poché aux pâtes maison.",
-    empty: 'Les guides arrivent bientôt ! Revenez plus tard. 🍳',
+    searchPlaceholder: 'Chercher techniques, ingrédients...',
+    filterAll: 'Toutes',
+    filters: [
+      { key: 'Tecniche', label: 'Techniques' },
+      { key: 'Salvataggi', label: 'Sauvetages' },
+      { key: 'Sostituzioni', label: 'Substitutions' },
+    ],
+    noResults: 'Aucun guide trouvé. Essayez un autre mot-clé !',
+    readTime: (n: number) => `${n} min`,
+    difficulty: {
+      base: 'débutant',
+      intermedio: 'intermédiaire',
+      avanzato: 'avancé',
+    },
+    empty: 'Les guides arrivent bientôt ! 🍳',
   },
 } as const;
 
-const t = i18n[lang as keyof typeof i18n] ?? i18n.it;
-const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+const t = ui[lang as keyof typeof ui] ?? ui.it;
+const diffLabel = t.difficulty as Record<string, string>;
 
-const difficultyLabel: Record<string, Record<string, string>> = {
-  it: { base: 'base', intermedio: 'intermedio', avanzato: 'avanzato' },
-  en: { base: 'beginner', intermedio: 'intermediate', avanzato: 'advanced' },
-  fr: { base: 'débutant', intermedio: 'intermédiaire', avanzato: 'avancé' },
-};
-const langKey = lang as 'it' | 'en' | 'fr';
+const dateLocale = { it: 'it-IT', en: 'en-GB', fr: 'fr-FR' } as const;
+const locale = dateLocale[lang as keyof typeof dateLocale];
 
-function postSlug(post: { id: string }) {
-  const parts = post.id.split('/');
-  return parts.slice(1).join('/').replace(/\.md$/, '');
+function shortDate(date: Date) {
+  return date.toLocaleDateString(locale, { day: 'numeric', month: 'short' });
 }
 ---
 
-<BaseLayout title={t.title} description={t.description} lang={lang}>
+<BaseLayout title={t.title} description={t.subtitle} lang={lang}>
 
-  <div class="page-header">
+  <div class="blog-hero">
     <span class="academy-eyebrow">{t.eyebrow}</span>
-    <h1>{t.heading}</h1>
-    <p>{t.subheading}</p>
+    <h1 class="blog-hero-title">{t.title}</h1>
+    <p class="blog-hero-subtitle">{t.subtitle}</p>
+    <div class="search-wrapper">
+      <span class="search-icon">🔍</span>
+      <input
+        type="search"
+        id="guide-search"
+        class="search-input"
+        placeholder={t.searchPlaceholder}
+        autocomplete="off"
+      />
+    </div>
   </div>
 
-  {allPosts.length === 0 ? (
-    <div class="empty-state">
-      <p>{t.empty}</p>
-    </div>
+  <div class="filter-bar">
+    <button class="filter-pill filter-pill--active" data-category="all">
+      {t.filterAll}
+    </button>
+    {t.filters.map(f => (
+      <button class="filter-pill" data-category={f.key}>{f.label}</button>
+    ))}
+  </div>
+
+  {posts.length === 0 ? (
+    <div class="empty-state"><p>{t.empty}</p></div>
   ) : (
-    <div class="academy-page">
-      {categories.length > 1 && (
-        <div class="filter-bar">
-          {categories.map(cat => (
-            <span class="filter-chip">{cat}</span>
-          ))}
-        </div>
-      )}
-      <div class="academy-grid">
-        {allPosts.map(post => (
-          <a href={`${base}${lang}/guide/${postSlug(post)}/`} class="academy-card">
-            {post.data.heroImage
-              ? <img src={post.data.heroImage} alt={post.data.title} class="academy-card-image" />
-              : <div class="recipe-card-placeholder" style="height:200px; background:#f0ece4;"></div>
-            }
-            <div class="academy-card-body">
-              <div class="recipe-card-meta">
-                {post.data.difficulty && (
-                  <span class={`badge-difficulty badge-${post.data.difficulty}`}>
-                    {difficultyLabel[langKey]?.[post.data.difficulty] ?? post.data.difficulty}
+    <div class="blog-grid" id="guides-grid">
+      {posts.map(post => {
+        const mins = readingTime(post.body);
+        const slug = postSlug(post);
+        const diff = post.data.difficulty ?? null;
+        return (
+          <article
+            class="blog-card"
+            data-category={post.data.category ?? ''}
+            data-search={`${post.data.title} ${post.data.description ?? ''} ${(post.data.tags ?? []).join(' ')} ${post.data.category ?? ''}`}
+          >
+            <a href={`${base}${lang}/guide/${slug}/`} class="blog-card-link">
+              <div class="blog-card-image-wrap">
+                {post.data.heroImage
+                  ? <img class="blog-card-image" src={post.data.heroImage} alt={post.data.title} loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.blog-card-image-placeholder').style.display='flex'" />
+                  : <div class="blog-card-image-placeholder">📖</div>
+                }
+                {post.data.category && (
+                  <span class="blog-card-category">{post.data.category}</span>
+                )}
+                {diff && (
+                  <span class={`guide-difficulty-badge badge-${diff}`}>
+                    {diffLabel[diff] ?? diff}
                   </span>
                 )}
-                {post.data.category && <span class="badge-category">{post.data.category}</span>}
               </div>
-              <h3 class="academy-card-title">{post.data.title}</h3>
-              <p class="academy-card-excerpt">{post.data.description}</p>
+
+              <div class="blog-card-body">
+                <div class="blog-card-meta">
+                  <div class="blog-card-avatar" aria-hidden="true">S</div>
+                  <div class="blog-card-meta-info">
+                    <span class="blog-card-author">Sarah Lasaracina</span>
+                    <span class="blog-card-meta-sub">
+                      <span class="blog-card-date">{shortDate(new Date(post.data.pubDate))}</span>
+                      <span class="blog-card-dot">·</span>
+                      <span class="blog-card-readtime">{t.readTime(mins)}</span>
+                    </span>
+                  </div>
+                </div>
+
+                <h2 class="blog-card-title">{post.data.title}</h2>
+                <p class="blog-card-excerpt">{post.data.description}</p>
+              </div>
+            </a>
+
+            <div class="blog-card-footer">
+              <div class="blog-card-stats">
+                {post.data.tags && post.data.tags.slice(0, 3).map((tag: string) => (
+                  <span class="guide-tag">#{tag}</span>
+                ))}
+              </div>
             </div>
-          </a>
-        ))}
-      </div>
+          </article>
+        );
+      })}
     </div>
   )}
 
+  <p id="no-results-guide" class="no-results-msg" style="display:none">
+    {t.noResults}
+  </p>
+
 </BaseLayout>
+
+<script>
+  const pills = document.querySelectorAll<HTMLButtonElement>('.filter-pill');
+  const cards = document.querySelectorAll<HTMLElement>('#guides-grid .blog-card');
+  const searchInput = document.getElementById('guide-search') as HTMLInputElement | null;
+  const noResults = document.getElementById('no-results-guide') as HTMLElement | null;
+
+  let activeCategory = 'all';
+  let searchQuery = '';
+
+  function filterCards() {
+    let visible = 0;
+    cards.forEach(card => {
+      const cat = card.dataset.category ?? '';
+      const text = (card.dataset.search ?? '').toLowerCase();
+      const matchCat = activeCategory === 'all' || cat === activeCategory;
+      const matchSearch = searchQuery === '' || text.includes(searchQuery);
+      const show = matchCat && matchSearch;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    if (noResults) noResults.style.display = visible === 0 ? 'block' : 'none';
+  }
+
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      pills.forEach(p => p.classList.remove('filter-pill--active'));
+      pill.classList.add('filter-pill--active');
+      activeCategory = pill.dataset.category ?? 'all';
+      filterCards();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', e => {
+      searchQuery = (e.target as HTMLInputElement).value.toLowerCase().trim();
+      filterCards();
+    });
+  }
+</script>
