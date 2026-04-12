@@ -3,7 +3,7 @@ title: "The perfect soffritto"
 description: "The base of a thousand recipes — onion, celery, carrot, and the patience not to burn it all."
 pubDate: "2024-04-01"
 difficulty: "base"
-category: "Basic techniques"
+category: "Tecniche"
 tags: [soffritto, vegetables, basics]
 lang: "en"
 translationKey: "soffritto-perfetto"

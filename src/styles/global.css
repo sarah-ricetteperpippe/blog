@@ -1315,3 +1315,29 @@ p {
   border-radius: 2px;
 }
 a:focus-visible, button:focus-visible { outline: 3px solid var(--color-primary-green); }
+
+/* ============================
+   Guide / Academy card extras
+   ============================ */
+.guide-difficulty-badge {
+  position: absolute;
+  bottom: 0.6rem;
+  right: 0.6rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.92);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+.guide-difficulty-badge.badge-base   { color: #155724; }
+.guide-difficulty-badge.badge-intermedio { color: #856404; }
+.guide-difficulty-badge.badge-avanzato  { color: #842029; }
+
+.guide-tag {
+  font-size: 0.72rem;
+  color: var(--color-primary-green);
+  font-weight: 600;
+}
