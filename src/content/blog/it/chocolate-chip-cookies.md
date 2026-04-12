@@ -1,5 +1,5 @@
 ---
-heroImage: "https://static.wixstatic.com/media/c9ca99_3d7008afa2d34379b199ec6c86509eb3~mv2.png/v1/fill/w_667,h_1000,al_c,q_90,usm_0.66_1.00_0.01/c9ca99_3d7008afa2d34379b199ec6c86509eb3~mv2.png"
+heroImage: "/images/ricette/chocolate-chip-cookies.jpg"
 title: "Chocolate Chip Cookies"
 description: "Come quelli dei film!"
 pubDate: "2025-11-28"

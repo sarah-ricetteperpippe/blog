@@ -1,5 +1,5 @@
 ---
-heroImage: "https://static.wixstatic.com/media/c9ca99_2cb3931db510477ea8a888db68eb0789~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85,usm_0.66_1.00_0.01/c9ca99_2cb3931db510477ea8a888db68eb0789~mv2.jpg"
+heroImage: "/images/ricette/risotto-brie-noci.jpg"
 title: "Risotto al brie e noci"
 description: "Questo è spaziale, spa-zia-leeeee!!!"
 pubDate: "2026-01-12"
