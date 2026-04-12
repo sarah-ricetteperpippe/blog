@@ -4,7 +4,7 @@ description: "La base di mille ricette — cipolla, sedano, carota e la pazienza
 pubDate: "2024-04-01"
 difficulty: "base"
 category: "Tecniche"
-tags: [soffritto, verdure, basi]
+tags: [soffritto, verdure]
 lang: "it"
 translationKey: "soffritto-perfetto"
 ---

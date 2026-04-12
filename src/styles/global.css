@@ -435,7 +435,7 @@ p {
    Ricette Grid
    ============================ */
 .recipes-section {
-  padding: var(--spacing-lg) var(--spacing-md);
+  padding: var(--spacing-lg) 0;
   background: var(--color-bg-light);
 }
 
@@ -444,14 +444,14 @@ p {
 .recipes-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 0;
+  width: 100%;
+  margin: 0;
 }
 
 .recipe-card {
   overflow: hidden;
-  border-radius: var(--radius-md);
+  border-radius: 0;
   transition: var(--transition);
   cursor: pointer;
 }
@@ -523,7 +523,7 @@ p {
   outline: none;
   transition: var(--transition);
 }
-.search-input:focus { border-color: var(--color-primary-orange); box-shadow: 0 0 0 3px rgba(231,110,81,0.15); }
+.search-input:focus { border-color: var(--color-primary-green); border-radius: 12px; box-shadow: none; }
 .search-input::placeholder { color: var(--color-text-muted); }
 
 /* ============================
@@ -1344,12 +1344,12 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--color-primary-g
 
 /* Home banner */
 .home-banner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-md) var(--spacing-md);
+  width: 100%;
+  margin: 0;
+  padding: 0 0 var(--spacing-md);
 }
 .home-banner-img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0;
   display: block;
 }

@@ -4,7 +4,7 @@ description: "La base de mille recettes — oignon, céleri, carotte et la patie
 pubDate: "2024-04-01"
 difficulty: "base"
 category: "Tecniche"
-tags: [soffritto, légumes, bases]
+tags: [soffritto, légumes]
 lang: "fr"
 translationKey: "soffritto-perfetto"
 ---

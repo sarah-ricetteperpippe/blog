@@ -4,7 +4,7 @@ description: "The base of a thousand recipes — onion, celery, carrot, and the 
 pubDate: "2024-04-01"
 difficulty: "base"
 category: "Tecniche"
-tags: [soffritto, vegetables, basics]
+tags: [soffritto, vegetables]
 lang: "en"
 translationKey: "soffritto-perfetto"
 ---
