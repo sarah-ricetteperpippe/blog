@@ -22,7 +22,23 @@
 - [x] Rimosso il tag "base/basi/basics/bases" dagli articoli academy
 
 ## Engagement
-- [ ] Implementare commenti, visualizzazioni e like (vedi note sotto)
+- [ ] **Commenti → Giscus** (semplice, solo codice — posso fare da solo)
+  - Abilitare Discussions sul repo GitHub (Settings → Features → Discussions)
+  - Installare app giscus su github.com/apps/giscus
+  - Aggiungere `<script>` in PostLayout.astro e GuideLayout.astro
+  - Stima: 20 min
+- [ ] **Visualizzazioni → Umami** (solo script tag in BaseLayout.astro)
+  - Creare account Umami Cloud (free tier)
+  - Aggiungere script con website ID
+  - Opzionale: mostrare contatore in-page via API
+  - Stima: 10 min
+- [ ] **Like → Supabase** (richiede credenziali da Sarah)
+  - Sarah crea progetto su supabase.com e passa anon key + project URL
+  - Creo tabella `likes (slug text, count int)` con RLS (solo increment)
+  - Aggiungo JS client-side in PostLayout e GuideLayout
+  - Stima: 40 min
+
+**Ordine proposto:** Giscus → Umami → Supabase likes
 
 ---
 
