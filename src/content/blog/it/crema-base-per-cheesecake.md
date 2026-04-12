@@ -1,4 +1,5 @@
 ---
+heroImage: "/images/ricette/crema-cheesecake.jpg"
 title: "Crema base per cheesecake senza cottura"
 description: "Queste le proporzioni vincenti per una cheesecake 0 acidula!"
 pubDate: "2025-11-11"

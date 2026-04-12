@@ -1,4 +1,5 @@
 ---
+heroImage: "/images/ricette/cheesecake-fragole.jpg"
 title: "Cheesecake alle fragole"
 description: "La miglior cheesecake che io abbia mai fatto...e tanti auguri mamma!"
 pubDate: "2025-11-11"

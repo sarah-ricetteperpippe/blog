@@ -1,4 +1,5 @@
 ---
+heroImage: "/images/ricette/riso-sushi.jpg"
 title: "Riso per sushi"
 description: "La base perfetta per nigiri, maki, uramaki e chirashi."
 pubDate: "2025-11-11"

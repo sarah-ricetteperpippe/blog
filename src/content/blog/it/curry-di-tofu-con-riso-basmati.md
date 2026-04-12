@@ -1,4 +1,5 @@
 ---
+heroImage: "/images/ricette/curry-tofu.jpg"
 title: "Curry di tofu con riso basmati"
 description: "Variante vegana di questa delizia indiana!"
 pubDate: "2025-11-10"
