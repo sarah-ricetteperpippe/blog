@@ -1,0 +1,215 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export interface Props {
+  title: string;
+  description?: string;
+  pubDate?: Date | string;
+  heroImage?: string;
+  category?: string;
+  tags?: string[];
+  difficulty?: string;
+  lang?: string;
+  slug?: string;
+  body?: string;
+}
+
+const { title, description, pubDate, heroImage, category, tags, difficulty, lang = 'it', slug = '', body = '' } = Astro.props;
+const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+
+const dateLocale = { it: 'it-IT', en: 'en-GB', fr: 'fr-FR' } as const;
+const locale = dateLocale[lang as keyof typeof dateLocale] ?? 'it-IT';
+
+const backLabel = { it: '← Tutte le guide', en: '← All guides', fr: '← Tous les guides' } as const;
+const back = backLabel[lang as keyof typeof backLabel] ?? backLabel.it;
+
+const wordCount = body.trim().split(/\s+/).length;
+const readMins = Math.max(1, Math.ceil(wordCount / 200));
+const readLabel = { it: `${readMins} min di lettura`, en: `${readMins} min read`, fr: `${readMins} min de lecture` } as const;
+const readTime = readLabel[lang as keyof typeof readLabel];
+
+const shareLabel = { it: 'Condividi', en: 'Share', fr: 'Partager' } as const;
+const shareText = shareLabel[lang as keyof typeof shareLabel];
+const copyLabel = { it: 'Link copiato!', en: 'Link copied!', fr: 'Lien copié !' } as const;
+const copiedText = copyLabel[lang as keyof typeof copyLabel];
+const relatedLabel = { it: 'Potrebbe interessarti anche', en: 'You might also like', fr: 'Vous pourriez aussi aimer' } as const;
+const relatedTitle = relatedLabel[lang as keyof typeof relatedLabel];
+const likeLabel = { it: 'Mi piace', en: 'Like', fr: "J'aime" } as const;
+const likeText = likeLabel[lang as keyof typeof likeLabel];
+
+const difficultyLabel: Record<string, Record<string, string>> = {
+  it: { base: 'Base', intermedio: 'Intermedio', avanzato: 'Avanzato' },
+  en: { base: 'Beginner', intermedio: 'Intermediate', avanzato: 'Advanced' },
+  fr: { base: 'Débutant', intermedio: 'Intermédiaire', avanzato: 'Avancé' },
+};
+const diffLabel = difficultyLabel[lang] ?? difficultyLabel.it;
+
+// Hardcoded guide categories (same as index filters)
+const guideCategories = ['Tecniche', 'Salvataggi', 'Sostituzioni'];
+
+const categoryLabels: Record<string, Record<string, string>> = {
+  it: { Tecniche: 'Tecniche', Salvataggi: 'Salvataggi', Sostituzioni: 'Sostituzioni' },
+  en: { Tecniche: 'Techniques', Salvataggi: 'Save-its', Sostituzioni: 'Substitutions' },
+  fr: { Tecniche: 'Techniques', Salvataggi: 'Sauvetages', Sostituzioni: 'Substitutions' },
+};
+const catLabels = categoryLabels[lang] ?? categoryLabels.it;
+
+const allPosts = await getCollection('academy');
+
+const related = allPosts
+  .filter(p =>
+    p.id.startsWith(`${lang}/`) &&
+    p.data.category === category &&
+    !p.id.includes(slug)
+  )
+  .slice(0, 3);
+const relSlug = (post: any) => post.id.replace(`${lang}/`, '').replace(/\.md$/, '');
+
+const pageUrl = `${import.meta.env.SITE}${base}${lang}/guide/${slug}/`;
+const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(title + ' ' + pageUrl)}`;
+const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(pageUrl)}`;
+
+const formattedDate = pubDate
+  ? new Date(pubDate).toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' })
+  : '';
+---
+
+<BaseLayout title={title} description={description} lang={lang}>
+
+  <div class="post-page">
+
+    <!-- Barra categorie guide -->
+    <nav class="filter-bar" aria-label="Categorie guide">
+      <a href={`${base}${lang}/guide/`} class="filter-pill">{back.replace('← ', '')}</a>
+      {guideCategories.map(cat => (
+        <a
+          href={`${base}${lang}/guide/?categoria=${encodeURIComponent(cat)}`}
+          class={`filter-pill${cat === category ? ' filter-pill--active' : ''}`}
+        >{catLabels[cat] ?? cat}</a>
+      ))}
+    </nav>
+
+    <div class="post-card">
+
+      <!-- Meta info -->
+      <div class="post-card-meta">
+        <div class="post-meta-avatar" aria-hidden="true">S</div>
+        <div class="post-meta-info">
+          <span class="post-author">Sarah Lasaracina</span>
+          <span class="post-meta-sub">
+            {formattedDate && <span>{formattedDate}</span>}
+            {formattedDate && <span class="post-meta-dot">·</span>}
+            <span>{readTime}</span>
+            {difficulty && (
+              <>
+                <span class="post-meta-dot">·</span>
+                <span class={`guide-difficulty-badge badge-${difficulty}`}>{diffLabel[difficulty] ?? difficulty}</span>
+              </>
+            )}
+          </span>
+        </div>
+      </div>
+
+      <!-- Titolo -->
+      <h1 class="post-title">{title}</h1>
+
+      <!-- Separatore -->
+      <hr class="post-section-hr" />
+
+      <!-- Immagine hero -->
+      {heroImage && (
+        <figure class="post-hero-figure">
+          <img src={`${base}${heroImage.replace(/^\//, '')}`} alt={title} />
+        </figure>
+      )}
+
+      <!-- Contenuto markdown -->
+      <article class="post-content">
+        <slot />
+      </article>
+
+      <!-- Tags -->
+      {tags && tags.length > 0 && (
+        <div class="post-tags-section">
+          {tags.map(tag => <span class="tag-chip">{tag}</span>)}
+        </div>
+      )}
+
+      <!-- Separatore azioni -->
+      <hr class="post-actions-hr" />
+
+      <!-- Like + Share -->
+      <div class="post-actions">
+        <div class="post-share">
+          <a href={whatsappUrl} target="_blank" rel="noopener" class="share-btn share-btn--whatsapp" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href={twitterUrl} target="_blank" rel="noopener" class="share-btn share-btn--twitter" aria-label="X / Twitter">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <button class="share-btn share-btn--copy" id="copy-link-btn" aria-label="Copia link" data-url={pageUrl} data-copied={copiedText}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          </button>
+        </div>
+        <button class="post-like-btn" data-post-id={`guide-${slug}`} aria-label={likeText}>
+          <span class="post-like-heart">♡</span>
+        </button>
+      </div>
+
+    </div><!-- /post-card -->
+
+    <!-- Guide correlate -->
+    {related.length > 0 && (
+      <div class="post-related">
+        <h3 class="post-related-title">{relatedTitle}</h3>
+        <div class="post-related-grid">
+          {related.map(post => (
+            <a href={`${base}${lang}/guide/${relSlug(post)}/`} class="post-related-card">
+              {post.data.heroImage
+                ? <img src={`${base}${(post.data.heroImage as string).replace(/^\//, '')}`} alt={post.data.title} />
+                : <div class="post-related-placeholder">📖</div>
+              }
+              <span class="post-related-name">{post.data.title}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Torna alle guide -->
+    <div class="post-back">
+      <a href={`${base}${lang}/guide/`} class="post-back-link">{back}</a>
+    </div>
+
+  </div><!-- /post-page -->
+
+</BaseLayout>
+
+<script>
+  const likeBtn = document.querySelector<HTMLButtonElement>('.post-like-btn');
+  if (likeBtn) {
+    const id = likeBtn.dataset.postId ?? '';
+    const heart = likeBtn.querySelector('.post-like-heart') as HTMLElement;
+    if (localStorage.getItem(`liked-${id}`) === 'true') {
+      likeBtn.classList.add('liked');
+      heart.textContent = '♥';
+    }
+    likeBtn.addEventListener('click', () => {
+      const isLiked = likeBtn.classList.toggle('liked');
+      heart.textContent = isLiked ? '♥' : '♡';
+      localStorage.setItem(`liked-${id}`, String(isLiked));
+    });
+  }
+
+  const copyBtn = document.getElementById('copy-link-btn') as HTMLButtonElement;
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async () => {
+      await navigator.clipboard.writeText(copyBtn.dataset.url ?? location.href);
+      const original = copyBtn.innerHTML;
+      copyBtn.innerHTML = `<span style="font-size:0.75rem;font-weight:700">${copyBtn.dataset.copied}</span>`;
+      copyBtn.classList.add('copied');
+      setTimeout(() => { copyBtn.innerHTML = original; copyBtn.classList.remove('copied'); }, 2000);
+    });
+  }
+</script>
