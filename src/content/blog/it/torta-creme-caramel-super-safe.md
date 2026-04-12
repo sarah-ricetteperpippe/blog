@@ -2,7 +2,7 @@
 title: "Torta Crème Caramel super safe"
 description: "Un incubo di 7 ore di errori, aggiusti e bestemmie. Ma habemus torta crème caramel per pippe rapida e indolore!"
 pubDate: "2025-02-17"
-heroImage: "/images/ricette/tota-creme-caramel-principale.png"
+heroImage: "/images/ricette/tota-creme-caramel-principale.jpg"
 category: "Dolci"
 tags: ["Dolci", "Compleanno", "Torte"]
 ---

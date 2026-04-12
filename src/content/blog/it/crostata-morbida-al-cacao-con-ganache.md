@@ -2,7 +2,7 @@
 title: "Crostata morbida al cacao con ganache al cioccolato"
 description: "È molto semplice, ma fa la sua figura per morbidezza ed eleganza!"
 pubDate: "2025-02-01"
-heroImage: "/images/ricette/crostata-morbida-cacao-principale.PNG"
+heroImage: "/images/ricette/crostata-morbida-cacao-principale.jpg"
 category: "Dolci"
 tags: ["Dolci", "Cioccolato", "Torte", "Natale", "Compleanno"]
 ---

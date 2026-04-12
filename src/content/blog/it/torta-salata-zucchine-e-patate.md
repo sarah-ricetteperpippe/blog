@@ -2,7 +2,7 @@
 title: "Torta salata zucchine e patate"
 description: "Non le davo una lira e invece si è rivelata uno svuotafrigo strabuonissimo!"
 pubDate: "2025-02-13"
-heroImage: "/images/ricette/torta-salata-zucchine-patate.png"
+heroImage: "/images/ricette/torta-salata-zucchine-patate.jpg"
 category: "Piatti unici"
 tags: ["Piatti unici", "Aperitivo", "Patate", "Zucchine", "Forno", "Antispreco"]
 ---

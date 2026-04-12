@@ -2,7 +2,7 @@
 title: "Torta fit alle carote per colazione"
 description: "Una torta semplice, umida e profumata, buona da mangiare più volte a colazione."
 pubDate: "2025-02-12"
-heroImage: "/images/ricette/torta-fit-carote.jpeg"
+heroImage: "/images/ricette/torta-fit-carote.jpg"
 category: "Dolci"
 tags: ["Torte", "Colazione", "Dolci"]
 ---

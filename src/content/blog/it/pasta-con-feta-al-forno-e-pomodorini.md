@@ -2,7 +2,7 @@
 title: "Pasta con feta al forno e pomodorini"
 description: "Non hai tempo ma vuoi un primo yummy? Butta questa in forno e via!"
 pubDate: "2025-01-17"
-heroImage: "/images/ricette/pasta-feta.png"
+heroImage: "/images/ricette/pasta-feta.jpg"
 category: "Primi piatti"
 tags: ["Feta", "Pomodorini", "Primi piatti", "4 stagioni"]
 translationKey: "pasta-con-feta-al-forno-e-pomodorini"

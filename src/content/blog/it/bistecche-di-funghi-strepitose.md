@@ -2,7 +2,7 @@
 title: "Bistecche di funghi strepitose"
 description: "Questa l'ho improvvisata ed è oggettivamente una bomba... per sapore, per aspetto, per facilità. Mondiale!"
 pubDate: "2025-02-27"
-heroImage: "/images/ricette/bistecca-cardoncelli.png"
+heroImage: "/images/ricette/bistecca-cardoncelli.jpg"
 category: "Secondi piatti"
 tags: ["Funghi", "Secondi piatti", "4 stagioni"]
 ---

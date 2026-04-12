@@ -2,7 +2,7 @@
 title: "Brodo vegetale base (da verdure fresche)"
 description: "Se sei pippa certamente ti servono riferimenti anche per questo..."
 pubDate: "2025-01-26"
-heroImage: "/images/ricette/brodo-vegetale.png"
+heroImage: "/images/ricette/brodo-vegetale.jpg"
 category: "Preparazioni base"
 tags: ["Preparazioni base", "Antispreco"]
 ---

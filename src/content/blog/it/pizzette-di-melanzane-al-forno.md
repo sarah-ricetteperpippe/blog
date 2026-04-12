@@ -2,7 +2,7 @@
 title: "Pizzette di melanzane al forno"
 description: "E magnamosele due verdure ogni tanto!"
 pubDate: "2025-01-22"
-heroImage: "/images/ricette/pizzette-melanzane.png"
+heroImage: "/images/ricette/pizzette-melanzane.jpg"
 category: "Piatti unici"
 tags: ["Piatti unici", "Forno", "Melanzane", "4 stagioni"]
 ---

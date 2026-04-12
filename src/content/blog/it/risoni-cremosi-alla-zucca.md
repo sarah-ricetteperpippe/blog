@@ -2,7 +2,7 @@
 title: "Risoni cremosi alla zucca 0 pretese"
 description: "Zucca 0 pretese, ingredienti minimi, velocità turbo!"
 pubDate: "2025-11-26"
-heroImage: "/images/ricette/risocardoncelli.png"
+heroImage: "/images/ricette/risocardoncelli.jpg"
 category: "Primi piatti"
 tags: ["Autunno/inverno", "Zucca", "Primi piatti"]
 ---
