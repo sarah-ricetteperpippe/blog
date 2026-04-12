@@ -1,4 +1,5 @@
 ---
+heroImage: "https://static.wixstatic.com/media/c9ca99_070de1a2b9c94c9bbdd17b8baeeab524~mv2.png/v1/fill/w_1000,h_667,al_c,q_90,usm_0.66_1.00_0.01/c9ca99_070de1a2b9c94c9bbdd17b8baeeab524~mv2.png"
 title: "Frittata alla menta"
 description: "La mia frittata preferita"
 pubDate: "2026-01-14"

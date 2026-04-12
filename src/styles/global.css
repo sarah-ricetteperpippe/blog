@@ -424,7 +424,7 @@ p {
   font-weight: 600;
   padding: 0 2rem;
 }
-.marquee-inner span::after { content: '✦'; padding: 0 1.5rem; color: var(--color-primary-green); font-size: 0.8em; }
+.marquee-inner span::after { content: '•'; padding: 0 1.5rem; color: var(--color-primary-green); font-size: 0.8em; }
 
 @keyframes marquee {
   0% { transform: translateX(0); }
@@ -1340,4 +1340,16 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--color-primary-g
   font-size: 0.72rem;
   color: var(--color-primary-green);
   font-weight: 600;
+}
+
+/* Home banner */
+.home-banner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md) var(--spacing-md);
+}
+.home-banner-img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
 }

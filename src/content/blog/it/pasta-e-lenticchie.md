@@ -1,4 +1,5 @@
 ---
+heroImage: "https://static.wixstatic.com/media/c9ca99_1ae27ffb64dd4dbb8e842510dbce589a~mv2.jpg/v1/fill/w_995,h_1000,al_c,q_85,usm_0.66_1.00_0.01/c9ca99_1ae27ffb64dd4dbb8e842510dbce589a~mv2.jpg"
 title: "Pasta e lenticchie (in zuppa o non)"
 description: "Mangerei lenticchie anche a colazione!"
 pubDate: "2026-01-07"

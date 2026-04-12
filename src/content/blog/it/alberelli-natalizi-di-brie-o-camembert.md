@@ -1,4 +1,5 @@
 ---
+heroImage: "https://static.wixstatic.com/media/12ee43_a870f0573390408c97154f55cb0f7154%7Emv2.png/v1/fit/w_2500,h_1330,al_c/12ee43_a870f0573390408c97154f55cb0f7154%7Emv2.png"
 title: "Alberelli natalizi di brie o camembert"
 description: "Carini e facilissimi da preparare last minute!"
 pubDate: "2026-01-03"

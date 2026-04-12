@@ -1,4 +1,5 @@
 ---
+heroImage: "https://static.wixstatic.com/media/c9ca99_90ca0649f5cb46278ef05afc6e63d680~mv2.png/v1/fill/w_1000,h_1000,al_c,q_90,usm_0.66_1.00_0.01/c9ca99_90ca0649f5cb46278ef05afc6e63d680~mv2.png"
 title: "Insalata di zucchine, feta e cipolla rossa"
 description: "Idea svuota frigo bella, buona e veloce, must have for feta lovers!"
 pubDate: "2025-12-18"
