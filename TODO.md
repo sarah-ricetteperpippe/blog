@@ -15,3 +15,32 @@
 
 ## Engagement
 - [ ] Capire come raccogliere commenti, visualizzazioni e like (opzioni: Supabase, servizio esterno, ecc.)
+
+---
+
+## Note tecniche: Commenti, Visualizzazioni, Like
+
+### Opzioni per sito statico su Netlify
+
+**Commenti**
+- **Giscus** (consigliato): usa GitHub Discussions come backend. Gratuito, zero infrastruttura, basta un repo GitHub pubblico. Integrazione con `<script>` in PostLayout. Aspetto personalizzabile.
+- Alternativa: **Disqus** (gratuito ma con pubblicità), **Utterances** (simile a Giscus ma più datato)
+
+**Visualizzazioni**
+- **Umami** (consigliato): analytics open source self-hosted, GDPR-friendly, no cookie banner. Deploy gratuito su Railway o Vercel. Dashboard proprio.
+- Alternativa: **Plausible** (a pagamento dopo trial), **Google Analytics** (richiede cookie banner)
+
+**Like**
+- **Supabase** (consigliato): database PostgreSQL gratuito (fino a 500MB), API REST pronte. Si aggiunge un `fetch` in PostLayout al click del cuore. Semplice da implementare.
+- Alternativa: **LikeBtn.me** (servizio esterno pronto), ma con branding altrui
+
+### Stack consigliato (tutto gratuito)
+1. Giscus per i commenti → ~30 min di setup
+2. Umami per le views → ~1h (deploy su Railway)
+3. Supabase per i like → ~1h (crea tabella, aggiungi fetch)
+
+### Prossimi passi quando vuoi procedere
+- Scegli quale feature prioritizzare
+- Per Giscus: serve abilitare GitHub Discussions sul repo (Settings → Features → Discussions)
+- Per Umami: serve un account Railway o Vercel
+- Per Supabase: serve creare un account su supabase.com
