@@ -12,9 +12,9 @@ const { title, description = "Le migliori ricette per le peggiori pippe in cucin
 const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 
 const navLabels = {
-  it: { blog: 'Blog', guide: 'Guide', close: 'Chiudi', search: 'Cerca' },
-  en: { blog: 'Blog', guide: 'Guides', close: 'Close', search: 'Search' },
-  fr: { blog: 'Blog', guide: 'Guides', close: 'Fermer', search: 'Chercher' },
+  it: { blog: 'Blog', guide: 'Guide', chiSono: 'Chi sono', close: 'Chiudi', search: 'Cerca' },
+  en: { blog: 'Blog', guide: 'Guides', chiSono: 'About', close: 'Close', search: 'Search' },
+  fr: { blog: 'Blog', guide: 'Guides', chiSono: 'À propos', close: 'Fermer', search: 'Chercher' },
 } as const;
 
 const t = navLabels[lang as keyof typeof navLabels] ?? navLabels.it;
@@ -52,13 +52,17 @@ function switchLangUrl(targetLang: string) {
 
   <header class="site-header">
     <div class="site-branding">
-      <a href={`${base}${lang}/`} class="site-title">Ricette per Pippe</a>
+      <a href={`${base}${lang}/`} class="site-logo-link" aria-label="Ricette per Pippe - Home">
+        <img src={`${base}logo-pippe.png`} alt="Ricette per Pippe" class="site-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+        <span class="site-title site-title-fallback">Ricette per Pippe</span>
+      </a>
       <span class="site-tagline">...if it's listed, it's tasted!</span>
     </div>
     <div class="header-right">
       <nav class="header-nav">
         <a href={`${base}${lang}/blog/`}>{t.blog}</a>
         <a href={`${base}${lang}/guide/`}>{t.guide}</a>
+        <a href={`${base}${lang}/chi-sono/`}>{t.chiSono}</a>
       </nav>
       <button class="search-trigger" id="search-trigger" aria-label={t.search}>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">

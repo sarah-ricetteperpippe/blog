@@ -1129,3 +1129,161 @@ p {
   .post-content ol li::before { top: 1rem; transform: none; }
 }
 
+
+/* ============================
+   Logo & Branding
+   ============================ */
+.site-logo-link { display: flex; align-items: center; text-decoration: none; }
+.site-logo { height: 52px; width: auto; object-fit: contain; }
+.site-title-fallback { display: none; }
+
+/* ============================
+   Academy / Guide
+   ============================ */
+.academy-eyebrow {
+  display: inline-block;
+  background: var(--color-primary-green);
+  color: var(--color-white);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+}
+
+.page-header {
+  text-align: center;
+  padding: 4rem 2rem 2.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.page-header h1 { font-size: 2.8rem; margin: 0.5rem 0; }
+.page-header p { color: var(--color-text-muted); font-size: 1.05rem; }
+
+.academy-page { max-width: 1100px; margin: 0 auto; padding: 0 2rem 4rem; }
+
+.academy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.75rem;
+  margin-top: 2rem;
+}
+
+.academy-card {
+  background: var(--color-white);
+  border: 1px solid #e8e3d9;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.academy-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.10); transform: translateY(-2px); }
+
+.academy-card-image { width: 100%; height: 200px; object-fit: cover; display: block; }
+
+.academy-card-body { padding: 1.25rem 1.25rem 1.5rem; flex: 1; }
+
+.academy-card-title { font-size: 1.15rem; font-weight: 600; margin: 0.6rem 0 0.4rem; }
+
+.academy-card-excerpt { font-size: 0.9rem; color: var(--color-text-muted); margin: 0; line-height: 1.5; }
+
+/* Badges */
+.recipe-card-meta { display: flex; gap: 0.4rem; flex-wrap: wrap; align-items: center; }
+
+.badge-difficulty {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+.badge-base { background: #d4edda; color: #155724; }
+.badge-intermedio, .badge-intermediate, .badge-intermédiaire, .badge-débutant {
+  background: #fff3cd; color: #856404;
+}
+.badge-avanzato, .badge-advanced, .badge-avancé {
+  background: #f8d7da; color: #842029;
+}
+
+.badge-category {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: #f0ece4;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-tag {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  background: #e9f5e9;
+  color: var(--color-primary-green);
+  font-weight: 600;
+}
+
+.filter-chip {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border: 1.5px solid var(--color-primary-green);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-primary-green);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.filter-chip:hover, .filter-chip.active { background: var(--color-primary-green); color: #fff; }
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+}
+
+/* ============================
+   Chi Sono page
+   ============================ */
+.chi-sono-page { max-width: 900px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
+.chi-sono-hero {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 3rem 0 2rem;
+}
+
+.chi-sono-photo img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.chi-sono-intro h1 { font-size: 2.6rem; margin: 0.4rem 0 0.6rem; }
+
+.chi-sono-lead { font-size: 1.1rem; color: var(--color-text-muted); margin: 0; }
+
+.chi-sono-content { padding-top: 1rem; }
+
+.chi-sono-text h2 { font-size: 1.4rem; margin: 2rem 0 0.6rem; color: var(--color-primary-green); }
+.chi-sono-text p { line-height: 1.75; color: var(--color-text); }
+
+.chi-sono-cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2.5rem; }
+
+@media (max-width: 700px) {
+  .chi-sono-hero { grid-template-columns: 1fr; gap: 1.5rem; }
+  .chi-sono-photo img { max-width: 200px; margin: 0 auto; display: block; }
+  .academy-grid { grid-template-columns: 1fr; }
+}

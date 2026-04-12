@@ -1,0 +1,78 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('academy');
+  return posts.map(post => {
+    const [lang, ...rest] = post.id.split('/');
+    const slug = rest.join('/').replace(/\.md$/, '');
+    return {
+      params: { lang, slug },
+      props: { post },
+    };
+  });
+}
+
+const { lang } = Astro.params;
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+
+const backLabel: Record<string, string> = {
+  it: "← Torna all'Academy",
+  en: '← Back to Academy',
+  fr: "← Retour à l'Academy",
+};
+
+const dateLocale: Record<string, string> = {
+  it: 'it-IT',
+  en: 'en-GB',
+  fr: 'fr-FR',
+};
+
+const difficultyLabel: Record<string, Record<string, string>> = {
+  it: { base: 'base', intermedio: 'intermedio', avanzato: 'avanzato' },
+  en: { base: 'beginner', intermedio: 'intermediate', avanzato: 'advanced' },
+  fr: { base: 'débutant', intermedio: 'intermédiaire', avanzato: 'avancé' },
+};
+
+const langKey = lang as 'it' | 'en' | 'fr';
+---
+
+<BaseLayout title={post.data.title} description={post.data.description} lang={lang}>
+
+  <div class="single-post-header">
+    <div class="recipe-card-meta" style="justify-content: center; margin-bottom: 0.75rem;">
+      {post.data.difficulty && (
+        <span class={`badge-difficulty badge-${post.data.difficulty}`}>
+          {difficultyLabel[langKey]?.[post.data.difficulty] ?? post.data.difficulty}
+        </span>
+      )}
+      {post.data.category && <span class="badge-category">{post.data.category}</span>}
+      {post.data.tags && post.data.tags.map((tag: string) => (
+        <span class="badge-tag">#{tag}</span>
+      ))}
+    </div>
+    <h1>{post.data.title}</h1>
+    <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-top: 0.5rem;">
+      {new Date(post.data.pubDate).toLocaleDateString(dateLocale[langKey] ?? 'it-IT', { year: 'numeric', month: 'long', day: 'numeric' })}
+    </p>
+  </div>
+
+  {post.data.heroImage && (
+    <div style="max-width: 860px; margin: 2rem auto; padding: 0 2rem;">
+      <img src={post.data.heroImage} alt={post.data.title} style="width:100%; border-radius: 8px;" />
+    </div>
+  )}
+
+  <div class="single-post-content">
+    <Content />
+  </div>
+
+  <div style="text-align: center; padding: 2rem;">
+    <a href={`${base}${lang}/guide/`} class="btn-secondary">{backLabel[langKey] ?? backLabel.it}</a>
+  </div>
+
+</BaseLayout>

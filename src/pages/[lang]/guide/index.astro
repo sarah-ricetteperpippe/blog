@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'it' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'fr' } },
+  ];
+}
+
+const { lang } = Astro.params;
+
+const allPosts = (await getCollection('academy', ({ data }) => data.lang === lang)).sort(
+  (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+);
+
+const categories = [...new Set(allPosts.map(p => p.data.category).filter(Boolean))];
+
+const i18n = {
+  it: {
+    title: 'Academy',
+    description: 'Guide e tecniche di cucina per pippe ambiziose.',
+    eyebrow: 'Academy',
+    heading: 'Impara le tecniche base',
+    subheading: "Guide passo passo per smettere di improvvisare — dall'uovo in camicia alla pasta fatta in casa.",
+    empty: 'Le guide sono in arrivo! Torna presto. 🍳',
+  },
+  en: {
+    title: 'Academy',
+    description: 'Cooking guides and techniques for ambitious beginners.',
+    eyebrow: 'Academy',
+    heading: 'Learn the basics',
+    subheading: 'Step-by-step guides to stop winging it — from poached eggs to homemade pasta.',
+    empty: 'Guides coming soon! Check back later. 🍳',
+  },
+  fr: {
+    title: 'Academy',
+    description: 'Guides et techniques de cuisine pour débutants ambitieux.',
+    eyebrow: 'Academy',
+    heading: 'Apprendre les bases',
+    subheading: "Guides pas à pas pour arrêter d'improviser — de l'œuf poché aux pâtes maison.",
+    empty: 'Les guides arrivent bientôt ! Revenez plus tard. 🍳',
+  },
+} as const;
+
+const t = i18n[lang as keyof typeof i18n] ?? i18n.it;
+const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+
+const difficultyLabel: Record<string, Record<string, string>> = {
+  it: { base: 'base', intermedio: 'intermedio', avanzato: 'avanzato' },
+  en: { base: 'beginner', intermedio: 'intermediate', avanzato: 'advanced' },
+  fr: { base: 'débutant', intermedio: 'intermédiaire', avanzato: 'avancé' },
+};
+const langKey = lang as 'it' | 'en' | 'fr';
+
+function postSlug(post: { id: string }) {
+  const parts = post.id.split('/');
+  return parts.slice(1).join('/').replace(/\.md$/, '');
+}
+---
+
+<BaseLayout title={t.title} description={t.description} lang={lang}>
+
+  <div class="page-header">
+    <span class="academy-eyebrow">{t.eyebrow}</span>
+    <h1>{t.heading}</h1>
+    <p>{t.subheading}</p>
+  </div>
+
+  {allPosts.length === 0 ? (
+    <div class="empty-state">
+      <p>{t.empty}</p>
+    </div>
+  ) : (
+    <div class="academy-page">
+      {categories.length > 1 && (
+        <div class="filter-bar">
+          {categories.map(cat => (
+            <span class="filter-chip">{cat}</span>
+          ))}
+        </div>
+      )}
+      <div class="academy-grid">
+        {allPosts.map(post => (
+          <a href={`${base}${lang}/guide/${postSlug(post)}/`} class="academy-card">
+            {post.data.heroImage
+              ? <img src={post.data.heroImage} alt={post.data.title} class="academy-card-image" />
+              : <div class="recipe-card-placeholder" style="height:200px; background:#f0ece4;"></div>
+            }
+            <div class="academy-card-body">
+              <div class="recipe-card-meta">
+                {post.data.difficulty && (
+                  <span class={`badge-difficulty badge-${post.data.difficulty}`}>
+                    {difficultyLabel[langKey]?.[post.data.difficulty] ?? post.data.difficulty}
+                  </span>
+                )}
+                {post.data.category && <span class="badge-category">{post.data.category}</span>}
+              </div>
+              <h3 class="academy-card-title">{post.data.title}</h3>
+              <p class="academy-card-excerpt">{post.data.description}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+
+</BaseLayout>
