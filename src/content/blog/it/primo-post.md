@@ -22,7 +22,6 @@ Per aggiungere una nuova ricetta, crea un file `.md` nella cartella `src/content
 title: "Il titolo della ricetta"
 description: "Una breve descrizione"
 pubDate: "2024-03-01"
-heroImage: "/blog/images/mia-foto.jpg"
 category: "Primi"
 ---
 

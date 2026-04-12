@@ -44,9 +44,30 @@ function switchLangUrl(targetLang: string) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title} — Ricette per Pippe</title>
   <meta name="description" content={description} />
+  <link rel="canonical" href={Astro.url.href} />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ricette per Pippe" />
+  <meta property="og:title" content={`${title} — Ricette per Pippe`} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={Astro.url.href} />
+  <meta property="og:locale" content={lang === 'it' ? 'it_IT' : lang === 'fr' ? 'fr_FR' : 'en_GB'} />
+  <meta property="og:image" content={`${Astro.site}images/og-default.png`} />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={`${title} — Ricette per Pippe`} />
+  <meta name="twitter:description" content={description} />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/logo-pippe.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/logo-pippe.png" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Fraunces:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet" />
 </head>
 <body>
 

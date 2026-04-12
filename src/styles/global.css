@@ -424,7 +424,7 @@ p {
   font-weight: 600;
   padding: 0 2rem;
 }
-.marquee-inner span::after { content: '•'; padding-left: 2rem; color: var(--color-primary-green); }
+.marquee-inner span::after { content: '✦'; padding: 0 1.5rem; color: var(--color-primary-green); font-size: 0.8em; }
 
 @keyframes marquee {
   0% { transform: translateX(0); }
@@ -456,7 +456,18 @@ p {
   cursor: pointer;
 }
 .recipe-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
-.recipe-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.recipe-card img,
+.recipe-card-image { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+.recipe-card-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: #f5f0e8;
+  font-size: 2.5rem;
+  color: #a89f8c;
+}
 
 .recipe-card-content { padding: var(--spacing-sm); background: var(--color-bg-light); }
 .recipe-card-title {
@@ -575,7 +586,7 @@ p {
 
 .blog-card-image-wrap { position: relative; overflow: hidden; }
 /* Le immagini reali usano la loro proporzione naturale — masonry effect! */
-.blog-card-image { width: 100%; display: block; object-fit: cover; }
+.blog-card-image { width: 100%; height: 220px; display: block; object-fit: cover; }
 .blog-card-image-placeholder {
   width: 100%;
   aspect-ratio: 4/3;
@@ -1133,9 +1144,16 @@ p {
 /* ============================
    Logo & Branding
    ============================ */
-.site-logo-link { display: flex; align-items: center; text-decoration: none; }
-.site-logo { height: 52px; width: auto; object-fit: contain; }
-.site-title-fallback { display: none; }
+.site-logo-link { display: flex; align-items: center; text-decoration: none; gap: 0.75rem; }
+.site-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.10));
+  transition: transform 0.2s;
+}
+.site-logo:hover { transform: scale(1.04); }
+.site-title-fallback { display: none; font-family: var(--font-heading); color: var(--color-primary-green); font-size: 1.4rem; }
 
 /* ============================
    Academy / Guide
@@ -1287,3 +1305,13 @@ p {
   .chi-sono-photo img { max-width: 200px; margin: 0 auto; display: block; }
   .academy-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================
+   Accessibility
+   ============================ */
+:focus-visible {
+  outline: 3px solid var(--color-primary-green);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+a:focus-visible, button:focus-visible { outline: 3px solid var(--color-primary-green); }

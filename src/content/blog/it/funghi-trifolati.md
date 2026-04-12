@@ -2,7 +2,6 @@
 title: "Funghi trifolati"
 description: "Contorno veloce e sfizioso!"
 pubDate: "2025-11-11"
-heroImage: "/images/ricette/image-de07419c1d4f4de2a86ecf3a12ee89ed.png"
 category: "Contorni"
 tags: ["Funghi", "Contorni", "Autunno/inverno"]
 ---

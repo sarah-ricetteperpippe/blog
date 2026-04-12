@@ -112,7 +112,7 @@ function shortDate(date: Date) {
           <a href={`${base}${lang}/blog/${postSlug}/`} class="blog-card-link">
             <div class="blog-card-image-wrap">
               {post.data.heroImage
-                ? <img class="blog-card-image" src={`${base}${post.data.heroImage.replace(/^\//, '')}`} alt={post.data.title} loading="lazy" />
+                ? <img class="blog-card-image" src={post.data.heroImage} alt={post.data.title} loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.blog-card-image-placeholder').style.display='flex'" />
                 : <div class="blog-card-image-placeholder">🍳</div>
               }
               {post.data.category && (

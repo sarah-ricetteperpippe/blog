@@ -2,7 +2,7 @@
 title: "Torta di zucca morbidissima"
 description: "L'unica buona ragione per amare l'autunno è la zucca (che non finisce maaai)!"
 pubDate: "2025-11-19"
-heroImage: "/images/ricette/torta.jpeg"
+heroImage: "/images/ricette/torta_luce_migliorata.jpg"
 category: "Dolci"
 tags: ["Autunno/inverno", "Dolci", "Torte", "Antispreco"]
 ---

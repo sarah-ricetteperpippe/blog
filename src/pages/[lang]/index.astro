@@ -29,7 +29,7 @@ const ui = {
     subscribe: 'Iscriviti',
     latest: 'Ultimi articoli',
     allPosts: 'Tutti gli articoli →',
-    marquee: ['Se può farlo una pippa come me', 'puoi farlo anche tu!'],
+    marquee: ['Se può farlo una pippa come me, puoi farlo anche tu!'],
   },
   en: {
     heroTitle: 'The best recipes\nfor the worst cooks in the kitchen!',
@@ -38,7 +38,7 @@ const ui = {
     subscribe: 'Subscribe',
     latest: 'Latest posts',
     allPosts: 'All posts →',
-    marquee: ['If a total klutz like me can do it', 'so can you!'],
+    marquee: ['If a total klutz like me can do it, so can you!'],
   },
   fr: {
     heroTitle: 'Les meilleures recettes\npour les pires cuisiniers !',
@@ -47,7 +47,7 @@ const ui = {
     subscribe: "S'abonner",
     latest: 'Derniers articles',
     allPosts: 'Tous les articles →',
-    marquee: ['Si une quiche comme moi peut le faire', 'vous pouvez le faire aussi !'],
+    marquee: ['Si une quiche comme moi peut le faire, vous pouvez le faire aussi !'],
   },
 } as const;
 
@@ -77,9 +77,11 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
     <div class="recipes-grid">
       {posts.map(post => (
         <a href={`${base}${lang}/blog/${slug(post)}/`} class="recipe-card">
-          {post.data.heroImage && (
-            <img src={post.data.heroImage} alt={post.data.title} />
-          )}
+          {post.data.heroImage
+            ? <img src={post.data.heroImage} alt={post.data.title} class="recipe-card-image" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            : null
+          }
+          <div class="recipe-card-placeholder" style={post.data.heroImage ? 'display:none' : ''}>🍳</div>
           <div class="recipe-card-content">
             <h3 class="recipe-card-title">{post.data.title}</h3>
             <p class="recipe-card-excerpt">{post.data.description}</p>
