@@ -4,7 +4,7 @@ description: "In barba a chi dice che la tradizione non può diventare vegetale!
 pubDate: "2025-11-11"
 category: "Primi piatti"
 tags: ["4 stagioni", "Tempeh", "Primi piatti"]
-heroImage: "/images/ricette/ragu-bianco-di-tempeh.jpg"
+heroImage: "/images/ricette/ragu-bianco-di-tempeh.webp"
 ---
 
 <!-- 12ee43_4b67f415edef483da32072f67c61f5b4~mv2.png -->

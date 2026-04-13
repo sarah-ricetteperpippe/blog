@@ -1,5 +1,5 @@
 ---
-heroImage: "/images/ricette/chocolate-chip-cookies.jpg"
+heroImage: "/images/ricette/chocolate-chip-cookies.webp"
 title: "Chocolate Chip Cookies"
 description: "Come quelli dei film!"
 pubDate: "2025-11-28"

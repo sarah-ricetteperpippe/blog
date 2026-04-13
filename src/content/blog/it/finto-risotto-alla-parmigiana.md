@@ -2,7 +2,7 @@
 title: "(Finto) Risotto alla parmigiana"
 description: "Aka risotto per disperati che non hanno nulla in frigo. Qualsiasi alternativa va bene, tanto sempre di riso e formaggio si tratta!"
 pubDate: "2025-01-26"
-heroImage: "/images/ricette/risotto-finta-parmigiana.jpg"
+heroImage: "/images/ricette/risotto-finta-parmigiana.webp"
 category: "Primi piatti"
 tags: ["Primi piatti", "Risotti", "Antispreco", "Autunno/inverno"]
 ---

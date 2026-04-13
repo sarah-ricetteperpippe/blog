@@ -1,5 +1,5 @@
 ---
-heroImage: "/images/ricette/vellutata-funghi.jpg"
+heroImage: "/images/ricette/vellutata-funghi.webp"
 title: "Vellutata di funghi"
 description: "Scoperta in Egitto, mai più senza!"
 pubDate: "2025-11-10"

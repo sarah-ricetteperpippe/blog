@@ -2,7 +2,7 @@
 title: "Torta di albumi e cacao"
 description: "Per consumare gli albumi della carbonara!"
 pubDate: "2025-11-11"
-heroImage: "/images/ricette/torta-albumi-cacao.jpg"
+heroImage: "/images/ricette/torta-albumi-cacao.webp"
 category: "Dolci"
 tags: ["4 stagioni", "Dolci", "Torte", "Cioccolato", "Antispreco", "Merenda/colazione"]
 ---

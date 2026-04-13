@@ -2,7 +2,7 @@
 title: "Pasta svelta alla feta"
 description: "La feta non si smentisce mai!"
 pubDate: "2025-11-11"
-heroImage: "/images/ricette/pasta-feta.jpg"
+heroImage: "/images/ricette/pasta-feta.webp"
 category: "Primi piatti"
 tags: ["4 stagioni", "Feta", "Pomodorini", "Primi piatti"]
 ---

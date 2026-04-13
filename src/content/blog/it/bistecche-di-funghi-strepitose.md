@@ -2,7 +2,7 @@
 title: "Bistecche di funghi strepitose"
 description: "Questa l'ho improvvisata ed è oggettivamente una bomba... per sapore, per aspetto, per facilità. Mondiale!"
 pubDate: "2025-02-27"
-heroImage: "/images/ricette/bistecca-cardoncelli.jpg"
+heroImage: "/images/ricette/bistecca-cardoncelli.webp"
 category: "Secondi piatti"
 tags: ["Funghi", "Secondi piatti", "4 stagioni"]
 ---
@@ -54,6 +54,6 @@ Questa l'ho improvvisata ed è oggettivamente una bomba... per sapore, per aspet
 
 11. Spegni e lascia riposare 2 minuti prima di servire. Pepa solo alla fine.
 
-![Bistecche di funghi cardoncelli](/images/ricette/bistecca_cardoncelli1.jpg)
+![Bistecche di funghi cardoncelli](/images/ricette/bistecca_cardoncelli1.webp)
 
-![Bistecche di funghi cardoncelli — vista ravvicinata](/images/ricette/bistecca_cardoncelli_2.jpg)
+![Bistecche di funghi cardoncelli — vista ravvicinata](/images/ricette/bistecca_cardoncelli_2.webp)

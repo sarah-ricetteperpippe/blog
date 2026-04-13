@@ -514,6 +514,38 @@ p {
   line-height: 1.2;
 }
 .recipe-card-excerpt { font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.4; }
+
+.recipe-card-link { text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1; }
+
+.recipe-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem var(--spacing-sm);
+  border-top: 1px solid rgba(29, 14, 3, 0.1);
+  margin-top: auto;
+}
+.recipe-card-views {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-small);
+}
+.recipe-like-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  font-size: 1rem;
+  color: var(--color-primary-orange);
+  line-height: 1;
+  transition: transform 0.15s ease;
+}
+.recipe-like-btn:hover { transform: scale(1.2); }
+.recipe-like-btn.liked .recipe-like-heart { content: '♥'; }
+
 .recipes-cta { text-align: center; margin-top: var(--spacing-lg); }
 
 /* ============================

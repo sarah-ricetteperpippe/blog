@@ -1,5 +1,5 @@
 ---
-heroImage: "/images/ricette/insalata-zucchine-feta.jpg"
+heroImage: "/images/ricette/insalata-zucchine-feta.webp"
 title: "Insalata di zucchine, feta e cipolla rossa"
 description: "Idea svuota frigo bella, buona e veloce, must have for feta lovers!"
 pubDate: "2025-12-18"

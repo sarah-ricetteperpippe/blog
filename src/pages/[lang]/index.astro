@@ -80,17 +80,28 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
     <h2 class="section-title">{t.latest}</h2>
     <div class="recipes-grid">
       {posts.map(post => (
-        <a href={`${base}${lang}/blog/${slug(post)}/`} class="recipe-card">
-          {post.data.heroImage
-            ? <img src={post.data.heroImage} alt={post.data.title} class="recipe-card-image" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-            : null
-          }
-          <div class="recipe-card-placeholder" style={post.data.heroImage ? 'display:none' : ''}>🍳</div>
-          <div class="recipe-card-content">
-            <h3 class="recipe-card-title">{post.data.title}</h3>
-            <p class="recipe-card-excerpt">{post.data.description}</p>
+        <article class="recipe-card">
+          <a href={`${base}${lang}/blog/${slug(post)}/`} class="recipe-card-link">
+            {post.data.heroImage
+              ? <img src={post.data.heroImage} alt={post.data.title} class="recipe-card-image" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              : null
+            }
+            <div class="recipe-card-placeholder" style={post.data.heroImage ? 'display:none' : ''}>🍳</div>
+            <div class="recipe-card-content">
+              <h3 class="recipe-card-title">{post.data.title}</h3>
+              <p class="recipe-card-excerpt">{post.data.description}</p>
+            </div>
+          </a>
+          <div class="recipe-card-footer">
+            <span class="recipe-card-views">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              0
+            </span>
+            <button class="recipe-like-btn" data-post-id={slug(post)} aria-label="Mi piace">
+              <span class="recipe-like-heart">♡</span>
+            </button>
           </div>
-        </a>
+        </article>
       ))}
     </div>
     <div class="recipes-cta">
@@ -99,3 +110,19 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
   </section>
 
 </BaseLayout>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('.recipe-like-btn').forEach(btn => {
+    const id = btn.dataset.postId ?? '';
+    const heart = btn.querySelector('.recipe-like-heart') as HTMLElement;
+    if (localStorage.getItem(`liked-${id}`) === 'true') {
+      btn.classList.add('liked');
+      heart.textContent = '♥';
+    }
+    btn.addEventListener('click', () => {
+      const isLiked = btn.classList.toggle('liked');
+      heart.textContent = isLiked ? '♥' : '♡';
+      localStorage.setItem(`liked-${id}`, String(isLiked));
+    });
+  });
+</script>

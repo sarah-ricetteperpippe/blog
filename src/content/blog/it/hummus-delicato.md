@@ -1,5 +1,5 @@
 ---
-heroImage: "/images/ricette/hummus-delicato.jpg"
+heroImage: "/images/ricette/hummus-delicato.webp"
 title: "Hummus delicato"
 description: "Cremoso, profumato e facilissimo da preparare in casa."
 pubDate: "2025-11-11"

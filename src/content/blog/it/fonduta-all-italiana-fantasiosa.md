@@ -2,7 +2,7 @@
 title: "Fonduta all'italiana fantasiosa"
 description: "Cercare sui siti svizzeri è un delirio perché non abbiamo gli stessi formaggi, quindi l'ho inventata con l'AI. Anna, Giando e Giul approvano!"
 pubDate: "2025-02-14"
-heroImage: "/images/ricette/fonduta-all-italiana.jpg"
+heroImage: "/images/ricette/fonduta-all-italiana.webp"
 category: "Piatti unici"
 tags: ["Formaggio", "Piatti unici", "Piatti del mondo", "Autunno/inverno"]
 ---

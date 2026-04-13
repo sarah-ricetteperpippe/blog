@@ -1,5 +1,5 @@
 ---
-heroImage: "/images/ricette/red-velvet-cake.jpg"
+heroImage: "/images/ricette/red-velvet-cake.webp"
 title: "Red Velvet Cake"
 description: "Buona e vegana! L'ho adattata per farne 28 porzioni (non senza difficoltà) e ha conquistato tutti."
 pubDate: "2025-12-09"
