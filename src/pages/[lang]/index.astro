@@ -24,7 +24,7 @@ const slug = (post: any) => post.id.replace(`${lang}/`, '').replace(/\.md$/, '')
 const ui = {
   it: {
     heroTitle: 'Le migliori ricette\nper le peggiori pippe in cucina!',
-    heroDesc: 'Benvenuti su Ricette per pippe, il luogo perfetto per scoprire nuove ricette a prova di incapace, testate e approvate da Sarah.',
+    heroDesc: 'Benvenuti su Ricette per pippe, il luogo perfetto per scoprire nuove ricette a prova di incapace, testate e approvate da Sarah.\nPer pippe in cucina che ambiscono alla mera sopravvivenza, e per tutte quelle che ogni tanto sperano anche di fare (umilmente) figura!',
     cta: 'Scopri di più',
     subscribe: 'Iscriviti',
     latest: 'Ultimi articoli',
@@ -59,7 +59,7 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
 
   <section class="hero-section">
     <h1 class="hero-title">{t.heroTitle.split('\n').map((line, i) => <>{line}{i === 0 && <br/>}</>)}</h1>
-    <p class="hero-description">{t.heroDesc}</p>
+    <p class="hero-description">{t.heroDesc.split('\n').map((line, i, arr) => <>{line}{i < arr.length - 1 && <br/>}</>)}</p>
     <div class="hero-buttons">
       <a href={`${base}${lang}/blog/`} class="btn-primary">{t.cta}</a>
       <a href={`${base}${lang}/blog/`} class="btn-secondary">{t.subscribe}</a>
