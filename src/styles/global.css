@@ -516,7 +516,7 @@ p {
 }
 .recipe-card-excerpt {
   font-family: 'Wix Madefor Text', 'Helvetica Neue', sans-serif;
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--color-text-dark);
   line-height: 1.5;
 }
