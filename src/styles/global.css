@@ -502,18 +502,24 @@ p {
 }
 
 .recipe-card-content {
-  padding: 0.75rem var(--spacing-sm);
+  padding: 1rem var(--spacing-sm) 0.75rem;
   background: var(--color-bg-light);
   flex: 1;
 }
 .recipe-card-title {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  color: var(--color-primary-orange);
-  margin-bottom: 0.35rem;
-  line-height: 1.2;
+  font-family: 'Wix Madefor Display', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-primary-green);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
 }
-.recipe-card-excerpt { font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.4; }
+.recipe-card-excerpt {
+  font-family: 'Wix Madefor Text', 'Helvetica Neue', sans-serif;
+  font-size: 0.9rem;
+  color: var(--color-text-dark);
+  line-height: 1.5;
+}
 
 .recipe-card-link { text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1; }
 
@@ -531,7 +537,7 @@ p {
   gap: 0.3rem;
   font-size: 0.8rem;
   color: var(--color-text-muted);
-  font-family: var(--font-small);
+  font-family: 'Wix Madefor Text', sans-serif;
 }
 .recipe-like-btn {
   background: none;
