@@ -443,7 +443,7 @@ p {
   font-weight: 600;
   padding: 0 2rem;
 }
-.marquee-inner span::after { content: '•'; padding: 0 1.5rem; color: var(--color-primary-green); font-size: 0.8em; }
+.marquee-inner span::after { content: '•'; padding: 0 1.5rem; color: var(--color-primary-green); font-size: 0.8em; vertical-align: middle; }
 
 @keyframes marquee {
   0% { transform: translateX(0); }
