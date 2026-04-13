@@ -433,7 +433,7 @@ p {
 .marquee-inner {
   display: flex;
   white-space: nowrap;
-  animation: marquee 20s linear infinite;
+  animation: marquee 13s linear infinite;
 }
 
 .marquee-inner span {
