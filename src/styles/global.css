@@ -383,7 +383,7 @@ p {
 .hero-description {
   font-size: 1.125rem;
   color: var(--color-text-dark);
-  max-width: 700px;
+  max-width: 860px;
   margin: 0 auto var(--spacing-md);
   line-height: 1.7;
 }
