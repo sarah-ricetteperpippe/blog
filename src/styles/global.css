@@ -96,13 +96,13 @@ p {
 .site-branding { display: flex; align-items: center; gap: 0.75rem; }
 .site-logo { width: 90px; height: auto; }
 
-/* Brand name — shown only as image fallback */
 .site-title-fallback {
-  display: none;
+  display: block;
 }
 .site-title {
-  font-family: var(--font-heading);
-  font-size: 1.8rem;
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1.6rem;
   font-weight: 600;
   color: var(--color-primary-green);
   margin: 0;
@@ -363,7 +363,7 @@ p {
    Hero
    ============================ */
 .hero-section {
-  background-color: var(--color-primary-green-bg);
+  background-color: var(--color-bg-light);
   text-align: center;
   padding: var(--spacing-xl) var(--spacing-md);
   min-height: 70vh;
