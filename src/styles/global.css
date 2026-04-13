@@ -438,9 +438,9 @@ p {
 
 .marquee-inner span {
   font-family: var(--font-body);
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: var(--color-primary-orange);
-  font-weight: 600;
+  font-weight: 400;
 }
 .marquee-inner span::after {
   content: '•';
