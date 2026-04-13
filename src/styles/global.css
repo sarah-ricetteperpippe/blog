@@ -688,13 +688,20 @@ p {
 
 .blog-card-body { padding: 1rem 1.1rem 1.1rem; }
 .blog-card-title {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  color: var(--color-primary-orange);
-  margin-bottom: 0.4rem;
-  line-height: 1.2;
+  font-family: 'Wix Madefor Display', 'Helvetica Neue', sans-serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: var(--color-primary-green);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
 }
-.blog-card-excerpt { font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.45; margin-bottom: 0.75rem; }
+.blog-card-excerpt {
+  font-family: 'Wix Madefor Text', 'Helvetica Neue', sans-serif;
+  font-size: 1.05rem;
+  color: var(--color-text-dark);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
 .blog-card-footer {
   display: flex;
   justify-content: space-between;
@@ -1175,9 +1182,10 @@ p {
   font-size: 2rem;
 }
 .post-related-name {
-  font-family: var(--font-heading);
+  font-family: 'Wix Madefor Display', 'Helvetica Neue', sans-serif;
   font-size: 0.95rem;
-  color: var(--color-primary-orange);
+  font-weight: 400;
+  color: var(--color-primary-green);
   padding: 0.4rem 0.6rem 0.6rem;
   line-height: 1.2;
 }
@@ -1281,9 +1289,22 @@ p {
 
 .academy-card-body { padding: 1.25rem 1.25rem 1.5rem; flex: 1; }
 
-.academy-card-title { font-size: 1.15rem; font-weight: 600; margin: 0.6rem 0 0.4rem; }
+.academy-card-title {
+  font-family: 'Wix Madefor Display', 'Helvetica Neue', sans-serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: var(--color-primary-green);
+  margin: 0.6rem 0 0.4rem;
+  line-height: 1.4;
+}
 
-.academy-card-excerpt { font-size: 0.9rem; color: var(--color-text-muted); margin: 0; line-height: 1.5; }
+.academy-card-excerpt {
+  font-family: 'Wix Madefor Text', 'Helvetica Neue', sans-serif;
+  font-size: 1.05rem;
+  color: var(--color-text-dark);
+  margin: 0;
+  line-height: 1.5;
+}
 
 /* Badges */
 .recipe-card-meta { display: flex; gap: 0.4rem; flex-wrap: wrap; align-items: center; }

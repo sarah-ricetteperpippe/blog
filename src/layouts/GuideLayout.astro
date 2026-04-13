@@ -101,12 +101,6 @@ const formattedDate = pubDate
             {formattedDate && <span>{formattedDate}</span>}
             {formattedDate && <span class="post-meta-dot">·</span>}
             <span>{readTime}</span>
-            {difficulty && (
-              <>
-                <span class="post-meta-dot">·</span>
-                <span class={`guide-difficulty-badge badge-${difficulty}`}>{diffLabel[difficulty] ?? difficulty}</span>
-              </>
-            )}
           </span>
         </div>
       </div>
