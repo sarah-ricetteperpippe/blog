@@ -441,9 +441,14 @@ p {
   font-size: 1.1rem;
   color: var(--color-primary-orange);
   font-weight: 600;
-  padding: 0 2rem;
 }
-.marquee-inner span::after { content: '•'; padding: 0 1.5rem; color: var(--color-primary-green); font-size: 0.8em; vertical-align: middle; }
+.marquee-inner span::after {
+  content: '•';
+  margin: 0 2rem;
+  color: var(--color-primary-green);
+  font-size: 0.8em;
+  vertical-align: middle;
+}
 
 @keyframes marquee {
   0% { transform: translateX(0); }
