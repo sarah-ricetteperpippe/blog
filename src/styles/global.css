@@ -75,7 +75,7 @@ p {
    ============================ */
 .site-header {
   background: var(--color-bg-light);
-  border-bottom: none;
+  border-bottom: 1px solid var(--color-text-dark);
   box-shadow: none;
   padding: 0.75rem 2rem;
   position: sticky;
@@ -426,7 +426,7 @@ p {
   background: var(--color-bg-light);
   overflow: hidden;
   padding: 0.75rem 0;
-  border-top: none;
+  border-top: 1px solid var(--color-text-dark);
   border-bottom: none;
 }
 
