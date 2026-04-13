@@ -385,7 +385,12 @@ p {
   color: var(--color-text-dark);
   max-width: 700px;
   margin: 0 auto var(--spacing-md);
-  line-height: 1.5;
+  line-height: 1.7;
+}
+.hero-brand {
+  font-style: italic;
+  font-weight: 700;
+  color: var(--color-primary-green);
 }
 
 .hero-buttons { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
