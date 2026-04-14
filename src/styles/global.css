@@ -113,7 +113,7 @@ p {
 .site-brand-text {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 0.8em;
 }
 
 .site-tagline {
