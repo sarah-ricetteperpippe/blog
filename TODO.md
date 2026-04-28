@@ -1,55 +1,57 @@
-# TODO — Ricette per Pippe
+# Ricette per Pippe — Piano di lavoro
 
-## Immagini
-- [x] **8 ricette IT ancora senza heroImage** (da scrappare da Wix):
-  - ✓ Cheesecake alle fragole
-  - ✓ Crema base per cheesecake senza cottura
-  - ✓ Curry di tofu con riso basmati
-  - ✓ Hummus delicato
-  - ✓ Ragù bianco di tempeh
-  - ✓ Riso per sushi
-  - ✓ Vellutata di funghi
-  - "Benvenuta nel blog!" (primo-post — nessuna immagine su Wix, skip)
-- [x] Per le ricette con più immagini, inserirle nel corpo del testo — fatto. Riferimenti .png/.PNG corretti in .jpg
-
-## Layout / UI
-- [x] Banner (main-banner) aveva troppi margini — ora full-width senza bordi
-- [x] Card in homepage: margini rimossi, gap rimosso
-- [x] Card in homepage: angoli arrotondati rimossi (border-radius: 0)
-- [x] Barra di ricerca: focus cambia solo il radius, niente bordo verde
-
-## Contenuto Academy
-- [x] Rimosso il tag "base/basi/basics/bases" dagli articoli academy
-
-## Engagement
-- [ ] **Commenti → Giscus** (semplice, solo codice — posso fare da solo)
-  - Abilitare Discussions sul repo GitHub (Settings → Features → Discussions)
-  - Installare app giscus su github.com/apps/giscus
-  - Aggiungere `<script>` in PostLayout.astro e GuideLayout.astro
-  - Stima: 20 min
-- [ ] **Visualizzazioni → Umami** (solo script tag in BaseLayout.astro)
-  - Creare account Umami Cloud (free tier)
-  - Aggiungere script con website ID
-  - Opzionale: mostrare contatore in-page via API
-  - Stima: 10 min
-- [ ] **Like → Supabase** (richiede credenziali da Sarah)
-  - Sarah crea progetto su supabase.com e passa anon key + project URL
-  - Creo tabella `likes (slug text, count int)` con RLS (solo increment)
-  - Aggiungo JS client-side in PostLayout e GuideLayout
-  - Stima: 40 min
-
-**Ordine proposto:** Giscus → Umami → Supabase likes
+## ✅ Completato
+- Conversione immagini in WebP (52 file)
+- HeroImage corrette per tutte le ricette
+- Identità visiva allineata al Wix (bordi, colori, card)
+- Font Wix Madefor Display/Text su tutte le card
+- Header: logo + brand name Pacifico + tagline
+- Marquee: bullet centrato, velocità, font
+- Homepage hero: testo benvenuto con accapo e brand in verde italic
+- Card homepage: barra visualizzazioni + cuoricino (localStorage)
+- Rimossi post/categoria "Benvenuto" e badge "BASE"
 
 ---
 
-## Note tecniche: Commenti, Visualizzazioni, Like
+## 🔄 In corso — Newsletter con n8n
 
-### Stack consigliato (tutto gratuito)
-1. **Commenti → Giscus**: usa GitHub Discussions come backend. Zero infrastruttura, `<script>` in PostLayout. Setup ~30 min. Richiede: abilitare Discussions sul repo (Settings → Features → Discussions)
-2. **Visualizzazioni → Umami**: analytics open source, GDPR-friendly, no cookie banner. Deploy gratuito su Railway. Setup ~1h. Richiede: account Railway
-3. **Like → Supabase**: database PostgreSQL gratuito, API REST pronte. Un `fetch()` al click del cuore. Setup ~1h. Richiede: account supabase.com
+### FASE 2a — Codice (Claude)
+- [ ] Form iscrizione newsletter nel sito (nome + email → POST a webhook n8n)
+- [ ] Pagina di conferma iscrizione
+- [ ] GitHub Action: trigger webhook n8n a ogni push su main con dati del post
 
-### Alternative
-- Commenti: Disqus (gratuito ma con ads), Utterances
-- Views: Plausible (a pagamento), Google Analytics (cookie banner)
-- Like: LikeBtn.me (pronto ma con branding altrui)
+### FASE 2b — n8n (Sarah configura, Claude dà istruzioni)
+- [ ] Workflow 1: nuova iscrizione → salva in Google Sheet → email di benvenuto via Gmail
+- [ ] Workflow 2: nuova pubblicazione → legge dati post → manda email agli iscritti
+
+**Prerequisito:** URL webhook n8n da Sarah → poi Claude aggiunge al form e alla GitHub Action
+
+---
+
+## 📋 Step successivi
+
+### Commenti Giscus
+- [ ] Sarah abilita GitHub Discussions sul repo
+- [ ] Installare app Giscus e ottenere script
+- [ ] Claude aggiunge script a PostLayout e GuideLayout
+
+### Instagram automation
+- [ ] Sarah converte account a Creator
+- [ ] Sarah crea Pagina Facebook e collega Instagram
+- [ ] Sarah richiede accesso Instagram Graph API su Meta for Developers
+- [ ] Claude aggiunge GitHub Action che passa dati post a n8n
+- [ ] Workflow 3 n8n: webhook → compone post con immagine + caption → pubblica su Instagram
+
+### Analytics Umami (opzionale)
+- [ ] Sarah crea account Umami Cloud
+- [ ] Claude aggiunge script a BaseLayout
+
+### Like persistenti con Supabase (opzionale)
+- [ ] Sarah crea progetto su supabase.com e passa anon key + URL
+- [ ] Claude crea tabella likes e aggiunge client JS
+
+### Review responsive mobile
+- [ ] Claude verifica e aggiusta layout su schermi piccoli
+
+### Contenuti EN/FR
+- [ ] Tradurre ricette in inglese e francese (o decidere se tenere solo IT)
