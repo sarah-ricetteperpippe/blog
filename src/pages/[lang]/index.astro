@@ -182,7 +182,7 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
       const res = await fetch(WEBHOOK, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nome: data.nome, email: data.email }),
+        body: JSON.stringify({ nome: data.nome, email: data.email, lang: document.documentElement.lang || 'it' }),
       });
       if (res.ok || res.status === 200) {
         form.style.display = 'none';
