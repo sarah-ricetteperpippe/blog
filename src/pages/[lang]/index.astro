@@ -21,6 +21,8 @@ const posts = allPosts
 
 const slug = (post: any) => post.id.replace(`${lang}/`, '').replace(/\.md$/, '');
 
+const NEWSLETTER_WEBHOOK = 'https://ricetteperpippe.app.n8n.cloud/webhook-test/bd4c2a49-e94d-4b4f-83c7-a4db67d4d200';
+
 const ui = {
   it: {
     heroTitle: 'Le migliori ricette\nper le peggiori pippe in cucina!',
@@ -30,6 +32,13 @@ const ui = {
     latest: 'Ultimi articoli',
     allPosts: 'Tutti gli articoli →',
     marquee: ['Se può farlo una pippa come me, puoi farlo anche tu!'],
+    newsletterTitle: 'Ricevi ricettine!',
+    newsletterDesc: 'Vuoi che condivida con te quando accade un (più unico che raro) miracolo nella mia cucina?',
+    newsletterName: 'Il tuo nome',
+    newsletterEmail: 'La tua email',
+    newsletterCta: 'Condividi la gioia!',
+    newsletterSuccess: '🎉 Ci sei! Controlla la tua casella di posta.',
+    newsletterError: 'Qualcosa è andato storto. Riprova tra poco.',
   },
   en: {
     heroTitle: 'The best recipes\nfor the worst cooks in the kitchen!',
@@ -39,6 +48,13 @@ const ui = {
     latest: 'Latest posts',
     allPosts: 'All posts →',
     marquee: ['If a total klutz like me can do it, so can you!'],
+    newsletterTitle: 'Get little recipes!',
+    newsletterDesc: 'Want me to share with you when a (rare) kitchen miracle happens?',
+    newsletterName: 'Your name',
+    newsletterEmail: 'Your email',
+    newsletterCta: 'Share the joy!',
+    newsletterSuccess: '🎉 You\'re in! Check your inbox.',
+    newsletterError: 'Something went wrong. Please try again.',
   },
   fr: {
     heroTitle: 'Les meilleures recettes\npour les pires cuisiniers !',
@@ -48,6 +64,13 @@ const ui = {
     latest: 'Derniers articles',
     allPosts: 'Tous les articles →',
     marquee: ['Si une quiche comme moi peut le faire, vous pouvez le faire aussi !'],
+    newsletterTitle: 'Recevez des petites recettes !',
+    newsletterDesc: 'Envie que je partage avec vous quand un miracle (rare) se produit dans ma cuisine ?',
+    newsletterName: 'Votre prénom',
+    newsletterEmail: 'Votre email',
+    newsletterCta: 'Partager la joie !',
+    newsletterSuccess: '🎉 Vous êtes inscrit·e ! Vérifiez votre boîte mail.',
+    newsletterError: 'Une erreur est survenue. Réessayez.',
   },
 } as const;
 
@@ -109,9 +132,25 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
     </div>
   </section>
 
+  <section class="newsletter-section">
+    <div class="newsletter-inner">
+      <div class="newsletter-text">
+        <h2 class="newsletter-title">{t.newsletterTitle}</h2>
+        <p class="newsletter-desc">{t.newsletterDesc}</p>
+      </div>
+      <form class="newsletter-form" id="newsletter-form" novalidate>
+        <input type="text" name="nome" class="newsletter-input" placeholder={t.newsletterName} required autocomplete="given-name" />
+        <input type="email" name="email" class="newsletter-input" placeholder={t.newsletterEmail} required autocomplete="email" />
+        <button type="submit" class="newsletter-btn">{t.newsletterCta}</button>
+      </form>
+      <p class="newsletter-feedback" id="newsletter-feedback" aria-live="polite"></p>
+    </div>
+  </section>
+
 </BaseLayout>
 
 <script>
+  // Like buttons
   document.querySelectorAll<HTMLButtonElement>('.recipe-like-btn').forEach(btn => {
     const id = btn.dataset.postId ?? '';
     const heart = btn.querySelector('.recipe-like-heart') as HTMLElement;
@@ -124,5 +163,37 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
       heart.textContent = isLiked ? '♥' : '♡';
       localStorage.setItem(`liked-${id}`, String(isLiked));
     });
+  });
+
+  // Newsletter form
+  const form = document.getElementById('newsletter-form') as HTMLFormElement | null;
+  const feedback = document.getElementById('newsletter-feedback') as HTMLElement | null;
+  const WEBHOOK = 'https://ricetteperpippe.app.n8n.cloud/webhook-test/bd4c2a49-e94d-4b4f-83c7-a4db67d4d200';
+  const MSG_OK = form?.closest('section')?.querySelector('.newsletter-feedback')?.getAttribute('data-ok') ?? '🎉 Ci sei! Controlla la tua casella di posta.';
+  const MSG_ERR = '❌ Qualcosa è andato storto. Riprova tra poco.';
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(form));
+    const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+    btn.disabled = true;
+    btn.textContent = '...';
+    try {
+      const res = await fetch(WEBHOOK, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nome: data.nome, email: data.email }),
+      });
+      if (res.ok || res.status === 200) {
+        form.style.display = 'none';
+        if (feedback) { feedback.textContent = MSG_OK; feedback.className = 'newsletter-feedback newsletter-feedback--ok'; }
+      } else {
+        throw new Error('Non-OK response');
+      }
+    } catch {
+      if (feedback) { feedback.textContent = MSG_ERR; feedback.className = 'newsletter-feedback newsletter-feedback--err'; }
+      btn.disabled = false;
+      btn.textContent = 'Condividi la gioia!';
+    }
   });
 </script>
