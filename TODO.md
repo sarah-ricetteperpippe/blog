@@ -24,30 +24,34 @@
 
 ---
 
-## 🔴 Problema aperto — Switch node
+## ✅ Risolto — Switch + Email recipients (2026-04-29)
 
-Il Switch usa `{{ $json.lang }}` ma dopo il nodo Google Sheets i dati originali del webhook non sono più in `$json`. **Fix da applicare:** aprire il nodo Switch e cambiare l'espressione in:
-```
-{{ $('Webhook').item.json.body.lang }}
-```
-Poi rieseguire il test con:
-```bash
-curl -X POST "https://ricetteperpippe.app.n8n.cloud/webhook-test/bd4c2a49-e94d-4b4f-83c7-a4db67d4d200" \
-  -H "Content-Type: application/json" \
-  -d '{"nome":"Sarah","email":"ricetteperpippe@gmail.com","lang":"it"}'
-```
-Verificare che la mail arrivi su `ricetteperpippe@gmail.com`.
+- Switch node: `{{ $json.lang }}` → `{{ $('Webhook').item.json.body.lang }}`
+- Send Email nodes (IT/EN/FR): campo To Email da `body.nome` (sbagliato) → `{{ $('Webhook').item.json.body.email }}`
+- From Email con display name brandizzato per lingua:
+  - IT: `Ricette per Pippe <ricetteperpippe@gmail.com>`
+  - EN: `Clueless Cooks <ricetteperpippe@gmail.com>`
+  - FR: `Recettes pour Quiches <ricetteperpippe@gmail.com>`
+- Email di benvenuto IT verificata in arrivo ✅
 
-Quando funziona → attivare il workflow (toggle Inactive → Active) → l'URL diventa `webhook` invece di `webhook-test` → aggiornare nel codice Astro.
+## ✅ Refactor env var newsletter webhook (2026-04-29)
+
+- Webhook URL estratto da hardcoded a `PUBLIC_NEWSLETTER_WEBHOOK`
+- File toccati:
+  - `src/pages/[lang]/index.astro`: rimossa costante dead code, `WEBHOOK` ora legge da `import.meta.env.PUBLIC_NEWSLETTER_WEBHOOK`
+  - `.env.example`: creato con la URL test come default e commenti
+- Per lavorare in locale: `cp .env.example .env`
 
 ---
 
 ## 🔄 Da fare — Newsletter
 
-- [ ] Fix Switch expression (vedi sopra)
-- [ ] Verificare ricezione email di benvenuto
-- [ ] Attivare workflow (Inactive → Active)
-- [ ] Aggiornare URL nel codice da `webhook-test` a `webhook`
+- [ ] Test EN e FR con curl (sostituire `lang:it` con `lang:en` / `lang:fr`)
+- [ ] Attivare workflow n8n (Inactive → Active in alto a destra del canvas)
+- [ ] Copiare la URL persistente del Webhook node (sarà `/webhook/<id>` senza `-test`)
+- [ ] Aggiornare `PUBLIC_NEWSLETTER_WEBHOOK` in `.env` locale con la URL prod
+- [ ] Aggiungere `PUBLIC_NEWSLETTER_WEBHOOK` come Environment variable su Netlify (Site configuration → Environment variables) con la URL prod
+- [ ] Test end-to-end sul sito deployed (form home → mail in casella)
 - [ ] **Workflow 2** — Nuova pubblicazione → email agli iscritti:
   - Trigger: GitHub Action su push a main
   - n8n legge titolo + URL + immagine del post dal payload

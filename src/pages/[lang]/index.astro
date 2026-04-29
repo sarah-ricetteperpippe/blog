@@ -21,8 +21,6 @@ const posts = allPosts
 
 const slug = (post: any) => post.id.replace(`${lang}/`, '').replace(/\.md$/, '');
 
-const NEWSLETTER_WEBHOOK = 'https://ricetteperpippe.app.n8n.cloud/webhook-test/bd4c2a49-e94d-4b4f-83c7-a4db67d4d200';
-
 const ui = {
   it: {
     heroTitle: 'Le migliori ricette\nper le peggiori pippe in cucina!',
@@ -168,7 +166,7 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
   // Newsletter form
   const form = document.getElementById('newsletter-form') as HTMLFormElement | null;
   const feedback = document.getElementById('newsletter-feedback') as HTMLElement | null;
-  const WEBHOOK = 'https://ricetteperpippe.app.n8n.cloud/webhook-test/bd4c2a49-e94d-4b4f-83c7-a4db67d4d200';
+  const WEBHOOK = import.meta.env.PUBLIC_NEWSLETTER_WEBHOOK;
   const MSG_OK = form?.closest('section')?.querySelector('.newsletter-feedback')?.getAttribute('data-ok') ?? '🎉 Ci sei! Controlla la tua casella di posta.';
   const MSG_ERR = '❌ Qualcosa è andato storto. Riprova tra poco.';
 
