@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'it' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'fr' } },
+  ];
+}
+
+const { lang } = Astro.params;
+
+const ui = {
+  it: {
+    title: 'Cancellazione iscrizione',
+    pageTitle: 'Ti cancello dalla newsletter',
+    pending: 'Sto cancellando la tua iscrizione…',
+    success: '✅ Sei stata cancellata dalla newsletter. Ci dispiace vederti andare!',
+    error: '❌ Qualcosa non ha funzionato. Riprova tra poco o scrivici a ricetteperpippe@gmail.com.',
+    missing: '⚠️ Link di cancellazione non valido (token mancante).',
+    home: 'Torna alla home',
+  },
+  en: {
+    title: 'Unsubscribe',
+    pageTitle: 'Unsubscribe from the newsletter',
+    pending: 'Unsubscribing you…',
+    success: '✅ You have been unsubscribed from the newsletter. Sorry to see you go!',
+    error: '❌ Something went wrong. Try again later or write to ricetteperpippe@gmail.com.',
+    missing: '⚠️ Invalid unsubscribe link (missing token).',
+    home: 'Back to home',
+  },
+  fr: {
+    title: 'Désinscription',
+    pageTitle: 'Désinscription de la newsletter',
+    pending: 'Désinscription en cours…',
+    success: '✅ Vous êtes désinscrit·e de la newsletter. Désolé·e de vous voir partir !',
+    error: '❌ Une erreur est survenue. Réessayez plus tard ou écrivez à ricetteperpippe@gmail.com.',
+    missing: '⚠️ Lien de désinscription invalide (jeton manquant).',
+    home: "Retour à l'accueil",
+  },
+};
+
+const t = ui[lang as keyof typeof ui] ?? ui.it;
+const base = (import.meta.env.BASE_URL as string).endsWith('/')
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + '/';
+---
+
+<BaseLayout title={t.title} lang={lang}>
+  <section class="unsubscribe">
+    <h1>{t.pageTitle}</h1>
+    <p
+      id="unsub-message"
+      data-pending={t.pending}
+      data-success={t.success}
+      data-error={t.error}
+      data-missing={t.missing}
+    >
+      {t.pending}
+    </p>
+    <p class="back">
+      <a href={`${base}${lang}/`}>{t.home}</a>
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .unsubscribe {
+    max-width: 640px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    font-family: 'Wix Madefor Text', Georgia, serif;
+    color: #1d0e03;
+    text-align: center;
+  }
+  .unsubscribe h1 {
+    font-family: 'Wix Madefor Display', Georgia, serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .unsubscribe #unsub-message {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  .unsubscribe .back a {
+    color: #1d0e03;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  const WEBHOOK = import.meta.env.PUBLIC_UNSUBSCRIBE_WEBHOOK;
+  const messageEl = document.getElementById('unsub-message') as HTMLElement | null;
+  if (!messageEl) {
+    // page hydration race; nothing to do
+  } else {
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get('token');
+
+    if (!token) {
+      messageEl.textContent = messageEl.dataset.missing ?? '';
+    } else if (!WEBHOOK) {
+      console.error('PUBLIC_UNSUBSCRIBE_WEBHOOK is not configured');
+      messageEl.textContent = messageEl.dataset.error ?? '';
+    } else {
+      (async () => {
+        try {
+          const res = await fetch(WEBHOOK, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ token }),
+          });
+          if (res.ok) {
+            messageEl.textContent = messageEl.dataset.success ?? '';
+          } else {
+            throw new Error(`Non-OK ${res.status}`);
+          }
+        } catch (err) {
+          console.error('unsubscribe failed', err);
+          messageEl.textContent = messageEl.dataset.error ?? '';
+        }
+      })();
+    }
+  }
+</script>
