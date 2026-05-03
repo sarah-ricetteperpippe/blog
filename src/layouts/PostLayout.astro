@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import CommentSection from '../components/CommentSection.astro';
 import { getCollection } from 'astro:content';
 
 export interface Props {
@@ -169,6 +170,9 @@ const formattedDate = pubDate
         </div>
       </div>
     )}
+
+    <!-- Commenti -->
+    <CommentSection slug={slug} lang={lang as 'it' | 'en' | 'fr'} />
 
     <!-- Torna al blog -->
     <div class="post-back">

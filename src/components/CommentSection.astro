@@ -1,0 +1,548 @@
+---
+// Comments section for recipe / guide pages.
+// - Public list: only approved comments (RLS enforces). Threaded one level
+//   deep: top-level user comments with admin replies indented underneath.
+// - Form: anyone can submit. Email is OPTIONAL — only used to notify the
+//   commenter when Sarah replies. If not provided, the comment is "anonymous"
+//   from the notification standpoint (still tied to a name+text in the DB).
+// - Honeypot field "website" catches naive bots; rate limit + length checks
+//   are enforced server-side via RLS policy.
+
+interface Props {
+  slug: string;
+  lang: 'it' | 'en' | 'fr';
+}
+
+const { slug, lang } = Astro.props;
+
+const ui = {
+  it: {
+    title: 'Commenti & domande',
+    formTitle: 'Scrivi un commento o chiedimi qualcosa',
+    nameLabel: 'Nome',
+    emailLabel: 'Email (facoltativa)',
+    emailHint: 'Lascia la mail per ricevere una notifica quando Sarah risponde al tuo commento. Se vuoi solo postare, lasciala vuota.',
+    bodyLabel: 'Il tuo commento',
+    consent: 'Acconsento alla pubblicazione del mio commento dopo moderazione. Se ho inserito una mail, non sarà visibile pubblicamente.',
+    submit: 'Pubblica',
+    sending: 'Invio…',
+    success: 'Grazie! Il commento è in moderazione, comparirà appena Sarah lo approva.',
+    errorGeneric: 'Errore nell\'invio. Riprova tra poco.',
+    empty: 'Nessun commento ancora. Scrivi tu il primo commento!',
+    loading: 'Carico i commenti…',
+    honeypotLabel: 'Lascia vuoto questo campo',
+    adminBadge: 'Autrice',
+  },
+  en: {
+    title: 'Comments & questions',
+    formTitle: 'Write a comment or ask me something',
+    nameLabel: 'Name',
+    emailLabel: 'Email (optional)',
+    emailHint: 'Leave your email to receive a notification when Sarah replies to your comment. If you just want to post, leave it blank.',
+    bodyLabel: 'Your comment',
+    consent: 'I agree to my comment being published after moderation. Any email I provide will not be shown publicly.',
+    submit: 'Post',
+    sending: 'Sending…',
+    success: 'Thanks! Your comment is in moderation, it will appear once Sarah approves it.',
+    errorGeneric: 'Something went wrong. Please try again.',
+    empty: 'No comments yet. Write the first one!',
+    loading: 'Loading comments…',
+    honeypotLabel: 'Leave this field empty',
+    adminBadge: 'Author',
+  },
+  fr: {
+    title: 'Commentaires & questions',
+    formTitle: 'Écrivez un commentaire ou posez-moi une question',
+    nameLabel: 'Nom',
+    emailLabel: 'Email (facultatif)',
+    emailHint: 'Laissez votre email pour recevoir une notification quand Sarah répond à votre commentaire. Sinon, laissez-le vide.',
+    bodyLabel: 'Votre commentaire',
+    consent: 'J\'accepte que mon commentaire soit publié après modération. Si j\'ai fourni un email, il restera privé.',
+    submit: 'Publier',
+    sending: 'Envoi…',
+    success: 'Merci ! Votre commentaire est en modération, il apparaîtra dès que Sarah l\'approuvera.',
+    errorGeneric: 'Une erreur est survenue. Veuillez réessayer.',
+    empty: 'Aucun commentaire encore. Écrivez le premier !',
+    loading: 'Chargement des commentaires…',
+    honeypotLabel: 'Laissez ce champ vide',
+    adminBadge: 'Auteure',
+  },
+};
+
+const t = ui[lang] ?? ui.it;
+---
+
+<section class="comments" data-slug={slug} data-lang={lang} data-i18n={JSON.stringify(t)}>
+  <h3 class="comments-title">{t.title}</h3>
+
+  <ul class="comments-list" aria-busy="true">
+    <li class="comments-loading">{t.loading}</li>
+  </ul>
+
+  <form class="comments-form" novalidate>
+    <h4 class="comments-form-title">{t.formTitle}</h4>
+    <div class="comments-field-row">
+      <label class="comments-field">
+        <span class="comments-field-label">{t.nameLabel} *</span>
+        <input type="text" name="name" required minlength="1" maxlength="100" autocomplete="name" />
+      </label>
+
+      <label class="comments-field">
+        <span class="comments-field-label">
+          {t.emailLabel}
+          <span class="comments-field-info" tabindex="0" aria-label={t.emailHint}>
+            <span class="comments-field-info-icon" aria-hidden="true">i</span>
+            <span class="comments-field-info-tooltip" role="tooltip">{t.emailHint}</span>
+          </span>
+        </span>
+        <input type="email" name="email" autocomplete="email" />
+      </label>
+    </div>
+
+    <label class="comments-field">
+      <span class="comments-field-label">{t.bodyLabel} *</span>
+      <textarea name="body" required minlength="1" maxlength="5000" rows="4"></textarea>
+    </label>
+
+    <!-- honeypot — hidden from real users via CSS; bots fill it and we discard -->
+    <label class="comments-honeypot" aria-hidden="true">
+      <span>{t.honeypotLabel}</span>
+      <input type="text" name="website" tabindex="-1" autocomplete="off" />
+    </label>
+
+    <label class="comments-consent">
+      <input type="checkbox" name="consent" required />
+      <span>{t.consent}</span>
+    </label>
+
+    <button type="submit" class="comments-submit">{t.submit}</button>
+    <p class="comments-feedback" aria-live="polite"></p>
+  </form>
+</section>
+
+<style>
+  .comments {
+    max-width: 900px;
+    margin: 3rem auto 2rem;
+    padding: 0 1.5rem;
+    font-family: var(--font-body), Georgia, serif;
+    color: var(--color-text-dark, #1d0e03);
+  }
+  .comments-title {
+    font-family: var(--font-body), Georgia, serif;
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem;
+  }
+
+  /* Outlined bubbles (no fill) rounded, reply indentata con riga L verde */
+  .comments-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .comments-list :global(.comments-item) {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+  }
+  /* La barra verde è sul wrapper interno cosicché non scenda di fianco
+     al box delle reply (che è figlio di .comments-item) */
+  .comments-list :global(.comments-item-content) {
+    padding: 0.25rem 0 0.25rem 0.9rem;
+    border-left: 3px solid var(--color-primary-green, #598D38);
+  }
+  /* Il reply admin ha barra a sinistra ARANCIONE (in pendant al nome del parent verde) */
+  .comments-list :global(.comments-reply) > :global(.comments-item-content) {
+    border-left-color: var(--color-primary-orange, #E76E51);
+  }
+  /* Nome dell'autrice (Sarah) in arancione anche lui */
+  .comments-list :global(.comments-reply) :global(.comments-item-header strong) {
+    color: var(--color-primary-orange, #E76E51);
+  }
+
+  /* Replies wrapper */
+  .comments-list :global(.comments-replies) {
+    list-style: none;
+    padding: 0;
+    margin: 1.2rem 0 0 2.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .comments-list :global(.comments-reply) {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    font-size: 0.95rem;
+  }
+
+  /* Comment header: name + date adjacent on the left */
+  .comments-list :global(.comments-item-header) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 0.65rem;
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+  }
+  .comments-list :global(.comments-item-header strong) {
+    font-family: var(--font-body), Georgia, serif;
+    color: var(--color-primary-green, #598D38);
+    font-weight: 700;
+    font-size: 1.0625rem;
+  }
+  .comments-list :global(.comments-item-header time) {
+    color: var(--color-text-muted, #8d8580);
+    font-size: 0.8rem;
+  }
+
+  /* Admin badge: green pill from palette */
+  .comments-list :global(.comments-admin-badge) {
+    display: inline-block;
+    margin-left: 0.45rem;
+    background: var(--color-primary-green, #598D38);
+    color: #fff;
+    font-family: var(--font-small), sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.12rem 0.55rem;
+    border-radius: 999px;
+    vertical-align: 0.12em;
+    letter-spacing: 0.02em;
+  }
+
+  .comments-list :global(.comments-item-body) {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+  .comments-empty,
+  .comments-loading {
+    color: var(--color-text-muted, #8d8580);
+    font-style: italic;
+    padding: 0.5rem 0;
+  }
+
+  /* Form title */
+  .comments-form-title {
+    font-family: var(--font-body), Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-primary-orange, #E76E51);
+    margin: 0 0 1rem;
+  }
+
+  /* Form */
+  .comments-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid var(--color-primary-green-light, #7FA88B);
+    padding-top: 1.5rem;
+  }
+  .comments-field-row {
+    display: flex;
+    gap: 1rem;
+  }
+  .comments-field-row > .comments-field {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+  @media (max-width: 540px) {
+    .comments-field-row {
+      flex-direction: column;
+    }
+  }
+  .comments-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+  }
+  .comments-field-label {
+    font-weight: 600;
+    color: var(--color-primary-green, #598D38);
+    display: inline-flex;
+    align-items: center;
+  }
+  .comments-field input,
+  .comments-field textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #d4d4d4;
+    border-radius: 0;
+    background: #fff;
+    color: var(--color-text-dark, #1d0e03);
+  }
+  .comments-field textarea {
+    resize: vertical;
+    min-height: 90px;
+  }
+  .comments-field input:focus,
+  .comments-field textarea:focus {
+    outline: 2px solid var(--color-primary-orange, #c97c0e);
+    outline-offset: 1px;
+  }
+
+  /* Info icon next to optional email field */
+  .comments-field-info {
+    display: inline-block;
+    position: relative;
+    margin-left: 0.4rem;
+    cursor: help;
+  }
+  .comments-field-info-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    border: 1px solid #1d0e03;
+    color: #1d0e03;
+    background: transparent;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1;
+    user-select: none;
+  }
+  .comments-field-info-tooltip {
+    position: absolute;
+    bottom: calc(100% + 0.5rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-primary-green, #598D38);
+    color: #fff;
+    padding: 0.55rem 0.75rem;
+    border-radius: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    width: max-content;
+    max-width: 260px;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+    z-index: 5;
+  }
+  .comments-field-info-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: var(--color-primary-green, #598D38);
+  }
+  .comments-field-info:hover .comments-field-info-tooltip,
+  .comments-field-info:focus .comments-field-info-tooltip,
+  .comments-field-info:focus-within .comments-field-info-tooltip {
+    opacity: 1;
+  }
+
+  /* Honeypot — visually hidden but still in DOM */
+  .comments-honeypot {
+    position: absolute !important;
+    left: -10000px !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+  }
+
+  .comments-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  .comments-consent input {
+    margin-top: 0.2rem;
+  }
+
+  .comments-submit {
+    align-self: flex-start;
+    background: var(--color-primary-green, #598D38);
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    padding: 0.7rem 1.6rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+  .comments-submit:hover:not(:disabled) {
+    background: #4a6a2f;
+  }
+  .comments-submit:disabled {
+    opacity: 0.5;
+    cursor: progress;
+  }
+
+  .comments-feedback {
+    margin: 0;
+    font-size: 0.9rem;
+    min-height: 1.2em;
+  }
+  .comments-feedback--ok { color: #2d6a3d; }
+  .comments-feedback--err { color: #b9482e; }
+</style>
+
+<script>
+  import { submitComment, getApprovedComments, type PublicComment } from '../lib/recipes-data';
+
+  const section = document.querySelector<HTMLElement>('.comments');
+  if (section) {
+    const slug = section.dataset.slug ?? '';
+    const lang = section.dataset.lang ?? 'it';
+    const t = JSON.parse(section.dataset.i18n ?? '{}') as Record<string, string>;
+    const list = section.querySelector<HTMLUListElement>('.comments-list');
+    const form = section.querySelector<HTMLFormElement>('.comments-form');
+    const feedback = section.querySelector<HTMLElement>('.comments-feedback');
+    const submitBtn = section.querySelector<HTMLButtonElement>('.comments-submit');
+
+    const dateLocale = lang === 'fr' ? 'fr-FR' : lang === 'en' ? 'en-GB' : 'it-IT';
+    const dateFmt = new Intl.DateTimeFormat(dateLocale, {
+      year: 'numeric', month: 'long', day: 'numeric',
+    });
+
+    function escapeHtml(s: string): string {
+      return s
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function commentMarkup(c: PublicComment): string {
+      const date = dateFmt.format(new Date(c.created_at));
+      const badge = c.is_admin
+        ? `<span class="comments-admin-badge">${escapeHtml(t.adminBadge ?? 'Author')}</span>`
+        : '';
+      return `
+        <div class="comments-item-content">
+          <header class="comments-item-header">
+            <strong>${escapeHtml(c.name)}${badge}</strong>
+            <time datetime="${escapeHtml(c.created_at)}">${escapeHtml(date)}</time>
+          </header>
+          <p class="comments-item-body">${escapeHtml(c.body)}</p>
+        </div>
+      `;
+    }
+
+    async function loadComments() {
+      if (!list) return;
+      const all = await getApprovedComments(slug);
+      list.innerHTML = '';
+      list.setAttribute('aria-busy', 'false');
+
+      const topLevel = all.filter(c => !c.parent_id);
+      // top-level comments come back DESC (newest first); replies should
+      // read chronologically under each parent
+      const repliesByParent = new Map<string, PublicComment[]>();
+      for (const c of all) {
+        if (c.parent_id) {
+          const arr = repliesByParent.get(c.parent_id) ?? [];
+          arr.push(c);
+          repliesByParent.set(c.parent_id, arr);
+        }
+      }
+
+      if (topLevel.length === 0) {
+        const li = document.createElement('li');
+        li.className = 'comments-empty';
+        li.textContent = t.empty ?? '';
+        list.appendChild(li);
+        return;
+      }
+
+      for (const c of topLevel) {
+        const li = document.createElement('li');
+        li.className = 'comments-item';
+        li.innerHTML = commentMarkup(c);
+
+        const replies = (repliesByParent.get(c.id) ?? [])
+          .slice()
+          .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+        if (replies.length > 0) {
+          const repliesUl = document.createElement('ul');
+          repliesUl.className = 'comments-replies';
+          for (const r of replies) {
+            const replyLi = document.createElement('li');
+            replyLi.className = 'comments-item comments-reply';
+            replyLi.innerHTML = commentMarkup(r);
+            repliesUl.appendChild(replyLi);
+          }
+          li.appendChild(repliesUl);
+        }
+
+        list.appendChild(li);
+      }
+    }
+
+    loadComments();
+
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const data = new FormData(form);
+
+        // Honeypot trap: silently pretend success without persisting.
+        const honeypot = ((data.get('website') as string) ?? '').trim();
+        if (honeypot) {
+          form.style.display = 'none';
+          if (feedback) {
+            feedback.textContent = t.success ?? '';
+            feedback.className = 'comments-feedback comments-feedback--ok';
+          }
+          return;
+        }
+
+        const name = ((data.get('name') as string) ?? '').trim();
+        const email = ((data.get('email') as string) ?? '').trim();
+        const body = ((data.get('body') as string) ?? '').trim();
+        const consent = data.get('consent');
+        if (!name || !body || !consent) return;
+
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.textContent = t.sending ?? '…';
+        }
+        if (feedback) feedback.textContent = '';
+
+        // email is optional — pass undefined when blank so the helper omits
+        // the field from the payload entirely (RLS allows null/empty).
+        const result = await submitComment(slug, name, body, email || undefined);
+        if (result.ok) {
+          form.style.display = 'none';
+          if (feedback) {
+            feedback.textContent = t.success ?? '';
+            feedback.className = 'comments-feedback comments-feedback--ok';
+          }
+        } else {
+          if (feedback) {
+            feedback.textContent = t.errorGeneric ?? '';
+            feedback.className = 'comments-feedback comments-feedback--err';
+          }
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = t.submit ?? 'Send';
+          }
+        }
+      });
+    }
+  }
+</script>
