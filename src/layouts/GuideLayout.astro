@@ -181,7 +181,17 @@ const formattedDate = pubDate
 </BaseLayout>
 
 <script>
+  import { incrementView, incrementLike, decrementLike } from '../lib/recipes-data';
+
   const likeBtn = document.querySelector<HTMLButtonElement>('.post-like-btn');
+  const slug = likeBtn?.dataset.postId ?? '';
+
+  // Fire-and-forget view increment on page load (guides tracked separately
+  // from recipes thanks to the "guide-" prefix in data-post-id).
+  if (slug) {
+    incrementView(slug);
+  }
+
   if (likeBtn) {
     const id = likeBtn.dataset.postId ?? '';
     const heart = likeBtn.querySelector('.post-like-heart') as HTMLElement;
@@ -189,10 +199,15 @@ const formattedDate = pubDate
       likeBtn.classList.add('liked');
       heart.textContent = '♥';
     }
-    likeBtn.addEventListener('click', () => {
+    likeBtn.addEventListener('click', async () => {
       const isLiked = likeBtn.classList.toggle('liked');
       heart.textContent = isLiked ? '♥' : '♡';
       localStorage.setItem(`liked-${id}`, String(isLiked));
+      if (isLiked) {
+        await incrementLike(id);
+      } else {
+        await decrementLike(id);
+      }
     });
   }
 

@@ -117,9 +117,9 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
             </div>
           </a>
           <div class="recipe-card-footer">
-            <span class="recipe-card-views">
+            <span class="recipe-card-views" data-slug={slug(post)}>
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-              0
+              <span class="recipe-card-view-count">—</span>
             </span>
             <button class="recipe-like-btn" data-post-id={slug(post)} aria-label="Mi piace">
               <span class="recipe-like-heart">♡</span>
@@ -174,7 +174,22 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
 </BaseLayout>
 
 <script>
-  // Like buttons
+  import { incrementLike, decrementLike, getViewCounts } from '../../lib/recipes-data';
+
+  // Fetch real view counts for all displayed cards in one batched call
+  const viewSpans = Array.from(document.querySelectorAll<HTMLElement>('.recipe-card-views'));
+  const slugs = viewSpans.map(s => s.dataset.slug ?? '').filter(Boolean);
+  if (slugs.length > 0) {
+    getViewCounts(slugs).then(counts => {
+      viewSpans.forEach(span => {
+        const slug = span.dataset.slug ?? '';
+        const countEl = span.querySelector('.recipe-card-view-count');
+        if (countEl) countEl.textContent = String(counts[slug] ?? 0);
+      });
+    });
+  }
+
+  // Like buttons: localStorage toggle + Supabase counter increment/decrement
   document.querySelectorAll<HTMLButtonElement>('.recipe-like-btn').forEach(btn => {
     const id = btn.dataset.postId ?? '';
     const heart = btn.querySelector('.recipe-like-heart') as HTMLElement;
@@ -182,10 +197,15 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
       btn.classList.add('liked');
       heart.textContent = '♥';
     }
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', async () => {
       const isLiked = btn.classList.toggle('liked');
       heart.textContent = isLiked ? '♥' : '♡';
       localStorage.setItem(`liked-${id}`, String(isLiked));
+      if (isLiked) {
+        await incrementLike(id);
+      } else {
+        await decrementLike(id);
+      }
     });
   });
 

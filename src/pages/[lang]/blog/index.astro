@@ -198,7 +198,9 @@ function shortDate(date: Date) {
     filterCards();
   });
 
-  // --- Like button con localStorage ---
+  // --- Like button: localStorage + Supabase counter ---
+  import { incrementLike as bumpLike, decrementLike as cutLike } from '../../../lib/recipes-data';
+
   document.querySelectorAll<HTMLButtonElement>('.like-btn').forEach(btn => {
     const id = btn.dataset.postId ?? '';
     const heart = btn.querySelector('.like-heart') as HTMLElement;
@@ -206,10 +208,15 @@ function shortDate(date: Date) {
       btn.classList.add('liked');
       heart.textContent = '♥';
     }
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', async () => {
       const isLiked = btn.classList.toggle('liked');
       heart.textContent = isLiked ? '♥' : '♡';
       localStorage.setItem(`liked-${id}`, String(isLiked));
+      if (isLiked) {
+        await bumpLike(id);
+      } else {
+        await cutLike(id);
+      }
     });
   });
 </script>

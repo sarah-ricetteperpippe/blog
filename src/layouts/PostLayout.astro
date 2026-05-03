@@ -144,10 +144,10 @@ const formattedDate = pubDate
       </div>
 
       <!-- Stats -->
-      <div class="post-stats">
-        <span>0 visualizzazioni</span>
+      <div class="post-stats" data-slug={slug}>
+        <span><span class="post-view-count">—</span> visualizzazioni</span>
         <span class="post-meta-dot">·</span>
-        <span>0 commenti</span>
+        <span><span class="post-comment-count">—</span> commenti</span>
       </div>
 
     </div><!-- /post-card -->
@@ -180,7 +180,39 @@ const formattedDate = pubDate
 </BaseLayout>
 
 <script>
+  import {
+    incrementView,
+    incrementLike,
+    decrementLike,
+    getViewCount,
+    getCommentCount,
+  } from '../lib/recipes-data';
+
   const likeBtn = document.querySelector<HTMLButtonElement>('.post-like-btn');
+  const statsEl = document.querySelector<HTMLElement>('.post-stats');
+  const slug = likeBtn?.dataset.postId ?? statsEl?.dataset.slug ?? '';
+
+  // Increment view counter on page load (fire-and-forget) and refresh display
+  if (slug) {
+    incrementView(slug).then(newCount => {
+      const viewEl = document.querySelector<HTMLElement>('.post-view-count');
+      // increment_view returns the new count atomically; if 0 (failure), fall
+      // back to a separate read so the user still sees a real value.
+      if (viewEl) {
+        if (newCount > 0) {
+          viewEl.textContent = String(newCount);
+        } else {
+          getViewCount(slug).then(c => { viewEl.textContent = String(c); });
+        }
+      }
+    });
+    getCommentCount(slug).then(c => {
+      const commentEl = document.querySelector<HTMLElement>('.post-comment-count');
+      if (commentEl) commentEl.textContent = String(c);
+    });
+  }
+
+  // Like toggle: localStorage state + Supabase counter
   if (likeBtn) {
     const id = likeBtn.dataset.postId ?? '';
     const heart = likeBtn.querySelector('.post-like-heart') as HTMLElement;
@@ -188,10 +220,15 @@ const formattedDate = pubDate
       likeBtn.classList.add('liked');
       heart.textContent = '♥';
     }
-    likeBtn.addEventListener('click', () => {
+    likeBtn.addEventListener('click', async () => {
       const isLiked = likeBtn.classList.toggle('liked');
       heart.textContent = isLiked ? '♥' : '♡';
       localStorage.setItem(`liked-${id}`, String(isLiked));
+      if (isLiked) {
+        await incrementLike(id);
+      } else {
+        await decrementLike(id);
+      }
     });
   }
 
