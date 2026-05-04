@@ -176,6 +176,84 @@ function switchLangUrl(targetLang: string) {
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeModal();
     });
+
+    // Reveal-on-scroll: fade-up per qualsiasi elemento con classe .js-reveal.
+    // Stagger automatico per gruppi: ogni elemento riceve --reveal-idx in
+    // base alla sua posizione tra i siblings con la stessa classe.
+    {
+      const revealEls = Array.from(document.querySelectorAll<HTMLElement>('.js-reveal'));
+
+      // Calcola stagger: indice progressivo solo all'interno di un gruppo
+      // (siblings consecutivi con .js-reveal). Reset quando si cambia parent
+      // o quando si esce dal "blocco" di card.
+      const groups = new Map<HTMLElement, HTMLElement[]>();
+      for (const el of revealEls) {
+        const parent = el.parentElement ?? document.body;
+        if (!groups.has(parent)) groups.set(parent, []);
+        groups.get(parent)!.push(el);
+      }
+      for (const siblings of groups.values()) {
+        siblings.forEach((el, i) => {
+          // cap a 8 così l'ottavo non aspetta mezzo secondo
+          el.style.setProperty('--reveal-idx', String(Math.min(i, 8)));
+        });
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        }
+      }, {
+        rootMargin: '0px 0px -8% 0px',
+        threshold: 0.05,
+      });
+
+      for (const el of revealEls) {
+        observer.observe(el);
+      }
+    }
+
+    // Parallax: per ogni .js-parallax, sposta l'<img> figlia in base alla
+    // posizione di scroll. L'immagine è alta 130% del container; la trasli
+    // tra -15% e +15% per dare l'effetto "stretch" mentre passi davanti.
+    {
+      const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reduced) {
+        const containers = Array.from(document.querySelectorAll<HTMLElement>('.js-parallax'));
+        let raf = 0;
+
+        const update = () => {
+          raf = 0;
+          const winH = window.innerHeight;
+          for (const container of containers) {
+            const img = container.querySelector<HTMLImageElement>('img');
+            if (!img) continue;
+            const rect = container.getBoundingClientRect();
+            if (rect.bottom < -100 || rect.top > winH + 100) continue;
+            // progress 0 → 1 mentre il container attraversa il viewport
+            const progress = (winH - rect.top) / (winH + rect.height);
+            const clamped = Math.max(0, Math.min(1, progress));
+            // translateY: ±20% (range 40% dell'altezza container)
+            const offsetPct = (0.5 - clamped) * 40;
+            // scale: cresce da 1.0 (entering dal basso) a 1.18 (exit dall'alto)
+            // — l'immagine si "espande" continuamente mentre scorri il banner
+            const scale = 1 + clamped * 0.18;
+            img.style.transform = `translate3d(0, ${offsetPct}%, 0) scale(${scale.toFixed(3)})`;
+          }
+        };
+
+        const onScroll = () => {
+          if (!raf) raf = requestAnimationFrame(update);
+        };
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', onScroll);
+        update();
+      }
+    }
   </script>
 
 </body>
