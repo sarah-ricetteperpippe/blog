@@ -135,14 +135,19 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
 
   <section class="newsletter-section">
     <div class="newsletter-stack">
-      <div class="newsletter-card newsletter-card--intro">
+      <div class="newsletter-photo-wrap" aria-hidden="true">
+        <img
+          src="/images/ricette/newsletter-subs-section.webp"
+          alt=""
+          class="newsletter-photo"
+          loading="lazy"
+        />
+      </div>
+      <div class="newsletter-card newsletter-card--form">
         <div class="newsletter-text">
-          <span class="newsletter-stamp">Newsletter</span>
           <h2 class="newsletter-title">{t.newsletterTitle}</h2>
           <p class="newsletter-desc">{t.newsletterDesc}</p>
         </div>
-      </div>
-      <div class="newsletter-card newsletter-card--form">
         <form class="newsletter-form" id="newsletter-form" novalidate>
           <input type="text" name="nome" class="newsletter-input" placeholder={t.newsletterName} required autocomplete="given-name" />
           <input type="email" name="email" class="newsletter-input" placeholder={t.newsletterEmail} required autocomplete="email" />
