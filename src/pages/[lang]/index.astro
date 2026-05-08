@@ -192,7 +192,9 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
   // Newsletter form
   const form = document.getElementById('newsletter-form') as HTMLFormElement | null;
   const feedback = document.getElementById('newsletter-feedback') as HTMLElement | null;
-  const WEBHOOK = import.meta.env.PUBLIC_NEWSLETTER_WEBHOOK;
+  const WEBHOOK =
+    import.meta.env.PUBLIC_NEWSLETTER_SUBSCRIBE_WEBHOOK ||
+    import.meta.env.PUBLIC_NEWSLETTER_WEBHOOK;
   const submitBtn = form?.querySelector('button[type="submit"]') as HTMLButtonElement | null;
   const MSG_OK = feedback?.dataset.ok ?? '🎉 Ci sei! Controlla la tua casella di posta.';
   const MSG_ERR = feedback?.dataset.error ?? '❌ Qualcosa è andato storto. Riprova tra poco.';
@@ -201,6 +203,13 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
 
   form?.addEventListener('submit', async (e) => {
     e.preventDefault();
+    if (!WEBHOOK) {
+      if (feedback) {
+        feedback.textContent = MSG_ERR;
+        feedback.className = 'newsletter-feedback newsletter-feedback--err';
+      }
+      return;
+    }
     const data = Object.fromEntries(new FormData(form));
     const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
     btn.disabled = true;
