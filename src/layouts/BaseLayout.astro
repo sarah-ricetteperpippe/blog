@@ -19,6 +19,23 @@ const navLabels = {
 
 const t = navLabels[lang as keyof typeof navLabels] ?? navLabels.it;
 
+const footerLabels = {
+  it: {
+    tagline: "Se è in lista, Sarah l'ha assaggiata",
+    copyright: `© ${new Date().getFullYear()} by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.`,
+  },
+  en: {
+    tagline: "If it's listed, it's tasted by Sarah",
+    copyright: `© ${new Date().getFullYear()} by Ricette per pippe by Sarah Lasaracina. All rights reserved.`,
+  },
+  fr: {
+    tagline: "Si c'est listé, Sarah l'a goûté",
+    copyright: `© ${new Date().getFullYear()} par Ricette per pippe de Sarah Lasaracina. Tous droits réservés.`,
+  },
+} as const;
+
+const footerT = footerLabels[lang as keyof typeof footerLabels] ?? footerLabels.it;
+
 const flags = [
   { code: 'it', flag: '🇮🇹', label: 'Italiano' },
   { code: 'en', flag: '🇬🇧', label: 'English' },
@@ -124,8 +141,11 @@ function switchLangUrl(targetLang: string) {
   </main>
 
   <footer class="site-footer">
-    <span class="footer-tagline">Ricette per Pippe — cucina senza paura</span>
-    <span class="footer-copyright">© {new Date().getFullYear()} Sarah Lasaracina</span>
+    <div class="footer-branding" aria-label="Ricette per Pippe">
+      <span class="footer-brand-name">Ricette per pippe</span>
+      <span class="footer-tagline">{footerT.tagline}</span>
+    </div>
+    <span class="footer-copyright">{footerT.copyright}</span>
   </footer>
 
   <script>

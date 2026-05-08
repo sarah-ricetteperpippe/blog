@@ -17,7 +17,7 @@ const allPosts = await getCollection('blog');
 const posts = allPosts
   .filter(p => p.id.startsWith(`${lang}/`))
   .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf())
-  .slice(0, 8);
+  .slice(0, 9);
 
 const slug = (post: any) => post.id.replace(`${lang}/`, '').replace(/\.md$/, '');
 
@@ -35,6 +35,7 @@ const ui = {
     newsletterName: 'Il tuo nome',
     newsletterEmail: 'La tua email',
     newsletterCta: 'Condividi la gioia!',
+    newsletterLoading: 'Un attimo...',
     newsletterSuccess: '🎉 Ci sei! Controlla la tua casella di posta.',
     newsletterError: 'Qualcosa è andato storto. Riprova tra poco.',
   },
@@ -44,13 +45,14 @@ const ui = {
     cta: 'Discover more',
     subscribe: 'Subscribe',
     latest: 'Latest posts',
-    allPosts: 'All posts →',
+    allPosts: 'Go to recipes',
     marquee: ['If a total klutz like me can do it, so can you!'],
     newsletterTitle: 'Get little recipes!',
     newsletterDesc: 'Want me to share with you when a (rare) kitchen miracle happens?',
     newsletterName: 'Your name',
     newsletterEmail: 'Your email',
     newsletterCta: 'Share the joy!',
+    newsletterLoading: 'Just a sec...',
     newsletterSuccess: '🎉 You\'re in! Check your inbox.',
     newsletterError: 'Something went wrong. Please try again.',
   },
@@ -60,13 +62,14 @@ const ui = {
     cta: 'Découvrir',
     subscribe: "S'abonner",
     latest: 'Derniers articles',
-    allPosts: 'Tous les articles →',
+    allPosts: 'Toutes mes recettes',
     marquee: ['Si une quiche comme moi peut le faire, vous pouvez le faire aussi !'],
     newsletterTitle: 'Recevez des petites recettes !',
     newsletterDesc: 'Envie que je partage avec vous quand un miracle (rare) se produit dans ma cuisine ?',
     newsletterName: 'Votre prénom',
     newsletterEmail: 'Votre email',
     newsletterCta: 'Partager la joie !',
+    newsletterLoading: 'Un instant...',
     newsletterSuccess: '🎉 Vous êtes inscrit·e ! Vérifiez votre boîte mail.',
     newsletterError: 'Une erreur est survenue. Réessayez.',
   },
@@ -99,7 +102,7 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
 
   <section class="recipes-section">
     <h2 class="section-title">{t.latest}</h2>
-    <div class="recipes-grid">
+    <div class="recipes-grid recipes-grid--home">
       {posts.map(post => (
         <article class="recipe-card">
           <a href={`${base}${lang}/blog/${slug(post)}/`} class="recipe-card-link">
@@ -131,17 +134,35 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
   </section>
 
   <section class="newsletter-section">
-    <div class="newsletter-inner">
-      <div class="newsletter-text">
-        <h2 class="newsletter-title">{t.newsletterTitle}</h2>
-        <p class="newsletter-desc">{t.newsletterDesc}</p>
+    <div class="newsletter-stack">
+      <div class="newsletter-card newsletter-card--intro">
+        <div class="newsletter-text">
+          <span class="newsletter-stamp">Newsletter</span>
+          <h2 class="newsletter-title">{t.newsletterTitle}</h2>
+          <p class="newsletter-desc">{t.newsletterDesc}</p>
+        </div>
       </div>
-      <form class="newsletter-form" id="newsletter-form" novalidate>
-        <input type="text" name="nome" class="newsletter-input" placeholder={t.newsletterName} required autocomplete="given-name" />
-        <input type="email" name="email" class="newsletter-input" placeholder={t.newsletterEmail} required autocomplete="email" />
-        <button type="submit" class="newsletter-btn">{t.newsletterCta}</button>
-      </form>
-      <p class="newsletter-feedback" id="newsletter-feedback" aria-live="polite"></p>
+      <div class="newsletter-card newsletter-card--form">
+        <form class="newsletter-form" id="newsletter-form" novalidate>
+          <input type="text" name="nome" class="newsletter-input" placeholder={t.newsletterName} required autocomplete="given-name" />
+          <input type="email" name="email" class="newsletter-input" placeholder={t.newsletterEmail} required autocomplete="email" />
+          <button
+            type="submit"
+            class="newsletter-btn"
+            data-label={t.newsletterCta}
+            data-loading={t.newsletterLoading}
+          >
+            {t.newsletterCta}
+          </button>
+        </form>
+        <p
+          class="newsletter-feedback"
+          id="newsletter-feedback"
+          aria-live="polite"
+          data-ok={t.newsletterSuccess}
+          data-error={t.newsletterError}
+        ></p>
+      </div>
     </div>
   </section>
 
@@ -167,15 +188,18 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
   const form = document.getElementById('newsletter-form') as HTMLFormElement | null;
   const feedback = document.getElementById('newsletter-feedback') as HTMLElement | null;
   const WEBHOOK = import.meta.env.PUBLIC_NEWSLETTER_WEBHOOK;
-  const MSG_OK = form?.closest('section')?.querySelector('.newsletter-feedback')?.getAttribute('data-ok') ?? '🎉 Ci sei! Controlla la tua casella di posta.';
-  const MSG_ERR = '❌ Qualcosa è andato storto. Riprova tra poco.';
+  const submitBtn = form?.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+  const MSG_OK = feedback?.dataset.ok ?? '🎉 Ci sei! Controlla la tua casella di posta.';
+  const MSG_ERR = feedback?.dataset.error ?? '❌ Qualcosa è andato storto. Riprova tra poco.';
+  const BTN_LABEL = submitBtn?.dataset.label ?? 'Condividi la gioia!';
+  const BTN_LOADING = submitBtn?.dataset.loading ?? '...';
 
   form?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(form));
     const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
     btn.disabled = true;
-    btn.textContent = '...';
+    btn.textContent = BTN_LOADING;
     try {
       const res = await fetch(WEBHOOK, {
         method: 'POST',
@@ -191,7 +215,7 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
     } catch {
       if (feedback) { feedback.textContent = MSG_ERR; feedback.className = 'newsletter-feedback newsletter-feedback--err'; }
       btn.disabled = false;
-      btn.textContent = 'Condividi la gioia!';
+      btn.textContent = BTN_LABEL;
     }
   });
 </script>
