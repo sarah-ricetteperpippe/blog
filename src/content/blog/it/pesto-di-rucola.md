@@ -2,7 +2,7 @@
 title: "Pesto di rucola"
 description: "Più picca la rucola, meglio è!"
 pubDate: "2025-11-12"
-heroImage: "/images/ricette/ChatGPT Image 19 mar 2026, 10_22_03.png"
+heroImage: "/images/ricette/pesto-rucola.webp"
 category: "Pesti salse e creme"
 tags: ["4 stagioni", "Rucola", "Pesti salse e creme"]
 ---

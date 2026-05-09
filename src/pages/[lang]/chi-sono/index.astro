@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'it' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'fr' } },
+  ];
+}
+
+const { lang } = Astro.params;
+const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+
+const i18n = {
+  it: {
+    title: 'Chi sono',
+    description: 'Sono Sarah, la pippa più ambiziosa in cucina. Questo è il mio blog.',
+    eyebrow: 'Chi sono',
+    h1: 'Ciao, sono Sarah!',
+    lead: 'La pippa più ambiziosa in cucina — e fondatrice di Ricette per pippe.',
+    h2story: 'La storia',
+    p1: 'Tutto è iniziato con un risotto bruciato, un soufflé collassato e una carbonara con la panna (sì, quella volta). Nonostante tutto, non ho smesso di cucinare — anzi, ho deciso di trasformare i miei disastri in contenuti utili per tutte le pippe come me.',
+    p2: 'Ricette per pippe nasce dalla convinzione che in cucina si può sbagliare, ridere, riprovare — e alla fine fare anche bella figura. Ogni ricetta qui è stata testata personalmente, errori compresi.',
+    h2phil: 'La filosofia',
+    p3: 'Niente ingredienti introvabili. Niente tecniche da chef stellato senza spiegazione. Solo ricette vere, passi chiari, e qualche aneddoto su cosa è andato storto la prima volta.',
+    p4: 'Se può farlo una pippa come me, puoi farlo anche tu.',
+    h2academy: "L'Academy",
+    p5: 'Ho creato una sezione dedicata alle tecniche di base: le cose che nessuno ti insegna ma che cambiano tutto. Dal soffritto perfetto all\'uovo in camicia, passo dopo passo.',
+    cta1: 'Esplora le ricette',
+    cta2: "Vai all'Academy",
+  },
+  en: {
+    title: 'About me',
+    description: 'I\'m Sarah, the most ambitious kitchen disaster. This is my blog.',
+    eyebrow: 'About me',
+    h1: 'Hi, I\'m Sarah!',
+    lead: 'The most ambitious kitchen disaster — and founder of Ricette per pippe.',
+    h2story: 'The story',
+    p1: 'It all started with a burnt risotto, a collapsed soufflé, and a carbonara with cream (yes, that time). Despite everything, I never stopped cooking — in fact, I decided to turn my disasters into useful content for everyone like me.',
+    p2: 'Ricette per pippe was born from the belief that in the kitchen you can make mistakes, laugh, try again — and still impress people. Every recipe here has been personally tested, mistakes included.',
+    h2phil: 'The philosophy',
+    p3: 'No hard-to-find ingredients. No Michelin-star techniques without explanation. Just real recipes, clear steps, and the occasional story about what went wrong the first time.',
+    p4: 'If a disaster like me can do it, so can you.',
+    h2academy: 'The Academy',
+    p5: 'I created a section dedicated to basic techniques: the things nobody teaches you but that change everything. From the perfect soffritto to the poached egg, step by step.',
+    cta1: 'Explore recipes',
+    cta2: 'Go to Academy',
+  },
+  fr: {
+    title: 'À propos',
+    description: 'Je suis Sarah, la plus ambitieuse des catastrophes culinaires. Voici mon blog.',
+    eyebrow: 'À propos',
+    h1: 'Salut, je suis Sarah !',
+    lead: 'La catastrophe culinaire la plus ambitieuse — et fondatrice de Ricette per pippe.',
+    h2story: "L'histoire",
+    p1: "Tout a commencé avec un risotto brûlé, un soufflé effondré et une carbonara à la crème (oui, cette fois-là). Malgré tout, je n'ai jamais arrêté de cuisiner — au contraire, j'ai décidé de transformer mes désastres en contenu utile pour tous ceux comme moi.",
+    p2: "Ricette per pippe est né de la conviction qu'en cuisine on peut se tromper, rire, recommencer — et finalement impressionner les gens. Chaque recette ici a été testée personnellement, erreurs comprises.",
+    h2phil: 'La philosophie',
+    p3: "Pas d'ingrédients introuvables. Pas de techniques étoilées sans explication. Juste de vraies recettes, des étapes claires, et quelques anecdotes sur ce qui a mal tourné la première fois.",
+    p4: 'Si une catastrophe comme moi peut le faire, vous pouvez le faire aussi.',
+    h2academy: "L'Academy",
+    p5: "J'ai créé une section dédiée aux techniques de base : les choses que personne ne vous apprend mais qui changent tout. Du soffritto parfait à l'œuf poché, étape par étape.",
+    cta1: 'Explorer les recettes',
+    cta2: "Aller à l'Academy",
+  },
+} as const;
+
+const t = i18n[lang as keyof typeof i18n] ?? i18n.it;
+---
+
+<BaseLayout title={t.title} description={t.description} lang={lang}>
+
+  <div class="chi-sono-page">
+
+    <div class="chi-sono-hero">
+      <div class="chi-sono-photo">
+        <img src={`${base}images/main-banner.png`} alt="Sarah - Ricette per Pippe" onerror="this.style.display='none'" />
+      </div>
+      <div class="chi-sono-intro">
+        <span class="academy-eyebrow">{t.eyebrow}</span>
+        <h1>{t.h1}</h1>
+        <p class="chi-sono-lead">{t.lead}</p>
+      </div>
+    </div>
+
+    <div class="chi-sono-content">
+      <div class="chi-sono-text">
+
+        <h2>{t.h2story}</h2>
+        <p>{t.p1}</p>
+        <p><em>{t.p2}</em></p>
+
+        <h2>{t.h2phil}</h2>
+        <p>{t.p3}</p>
+        <p><strong>{t.p4}</strong></p>
+
+        <h2>{t.h2academy}</h2>
+        <p>{t.p5}</p>
+
+        <div class="chi-sono-cta">
+          <a href={`${base}${lang}/blog/`} class="btn-primary">{t.cta1}</a>
+          <a href={`${base}${lang}/guide/`} class="btn-secondary">{t.cta2}</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</BaseLayout>

@@ -17,19 +17,27 @@ const allPosts = await getCollection('blog');
 const posts = allPosts
   .filter(p => p.id.startsWith(`${lang}/`))
   .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf())
-  .slice(0, 4);
+  .slice(0, 9);
 
 const slug = (post: any) => post.id.replace(`${lang}/`, '').replace(/\.md$/, '');
 
 const ui = {
   it: {
     heroTitle: 'Le migliori ricette\nper le peggiori pippe in cucina!',
-    heroDesc: 'Benvenuti su Ricette per pippe, il luogo perfetto per scoprire nuove ricette a prova di incapace, testate e approvate da Sarah.',
+    heroDesc: 'Benvenuti su <em class="hero-brand">Ricette per pippe</em>,<br>il luogo perfetto per scoprire nuove ricette a prova di incapace, testate e approvate da Sarah.<br>Per pippe in cucina che ambiscono alla mera sopravvivenza,<br>e per tutte quelle che ogni tanto sperano anche di fare (umilmente) figura!',
     cta: 'Scopri di più',
     subscribe: 'Iscriviti',
     latest: 'Ultimi articoli',
-    allPosts: 'Tutti gli articoli →',
-    marquee: ['Se può farlo una pippa come me', 'puoi farlo anche tu!'],
+    allPosts: 'Vai alle ricette',
+    marquee: ['Se può farlo una pippa come me, puoi farlo anche tu!'],
+    newsletterTitle: 'Ricevi ricettine!',
+    newsletterDesc: 'Vuoi che condivida con te quando accade un (più unico che raro) miracolo nella mia cucina?',
+    newsletterName: 'Il tuo nome',
+    newsletterEmail: 'La tua email',
+    newsletterCta: 'Condividi la gioia!',
+    newsletterLoading: 'Un attimo...',
+    newsletterSuccess: 'Che coraggio!',
+    newsletterError: 'Qualcosa è andato storto. Riprova tra poco.',
   },
   en: {
     heroTitle: 'The best recipes\nfor the worst cooks in the kitchen!',
@@ -37,8 +45,16 @@ const ui = {
     cta: 'Discover more',
     subscribe: 'Subscribe',
     latest: 'Latest posts',
-    allPosts: 'All posts →',
-    marquee: ['If a total klutz like me can do it', 'so can you!'],
+    allPosts: 'Go to recipes',
+    marquee: ['If a total klutz like me can do it, so can you!'],
+    newsletterTitle: 'Get little recipes!',
+    newsletterDesc: 'Want me to share with you when a (rare) kitchen miracle happens?',
+    newsletterName: 'Your name',
+    newsletterEmail: 'Your email',
+    newsletterCta: 'Share the joy!',
+    newsletterLoading: 'Just a sec...',
+    newsletterSuccess: 'How brave!',
+    newsletterError: 'Something went wrong. Please try again.',
   },
   fr: {
     heroTitle: 'Les meilleures recettes\npour les pires cuisiniers !',
@@ -46,8 +62,16 @@ const ui = {
     cta: 'Découvrir',
     subscribe: "S'abonner",
     latest: 'Derniers articles',
-    allPosts: 'Tous les articles →',
-    marquee: ['Si une quiche comme moi peut le faire', 'vous pouvez le faire aussi !'],
+    allPosts: 'Toutes mes recettes',
+    marquee: ['Si une quiche comme moi peut le faire, vous pouvez le faire aussi !'],
+    newsletterTitle: 'Recevez des petites recettes !',
+    newsletterDesc: 'Envie que je partage avec vous quand un miracle (rare) se produit dans ma cuisine ?',
+    newsletterName: 'Votre prénom',
+    newsletterEmail: 'Votre email',
+    newsletterCta: 'Partager la joie !',
+    newsletterLoading: 'Un instant...',
+    newsletterSuccess: 'Quel courage !',
+    newsletterError: 'Une erreur est survenue. Réessayez.',
   },
 } as const;
 
@@ -58,9 +82,9 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
 <BaseLayout title="Home" lang={lang}>
 
   <section class="hero-section">
-    <h1 class="hero-title">{t.heroTitle.split('\n').map((line, i) => <>{line}{i === 0 && <br/>}</>)}</h1>
-    <p class="hero-description">{t.heroDesc}</p>
-    <div class="hero-buttons">
+    <h1 class="hero-title js-reveal">{t.heroTitle.split('\n').map((line, i) => <>{line}{i === 0 && <br/>}</>)}</h1>
+    <p class="hero-description js-reveal" set:html={t.heroDesc} />
+    <div class="hero-buttons js-reveal">
       <a href={`${base}${lang}/blog/`} class="btn-primary">{t.cta}</a>
       <a href={`${base}${lang}/blog/`} class="btn-secondary">{t.subscribe}</a>
     </div>
@@ -72,19 +96,36 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
     </div>
   </section>
 
+  <div class="home-banner js-parallax">
+    <img src={`${base}main-banner.png`} alt="Ricette per pippe" class="home-banner-img" loading="lazy" />
+  </div>
+
   <section class="recipes-section">
-    <h2 class="section-title">{t.latest}</h2>
-    <div class="recipes-grid">
+    <h2 class="section-title js-reveal">{t.latest}</h2>
+    <div class="recipes-grid recipes-grid--home">
       {posts.map(post => (
-        <a href={`${base}${lang}/blog/${slug(post)}/`} class="recipe-card">
-          {post.data.heroImage && (
-            <img src={post.data.heroImage} alt={post.data.title} />
-          )}
-          <div class="recipe-card-content">
-            <h3 class="recipe-card-title">{post.data.title}</h3>
-            <p class="recipe-card-excerpt">{post.data.description}</p>
+        <article class="recipe-card js-reveal">
+          <a href={`${base}${lang}/blog/${slug(post)}/`} class="recipe-card-link">
+            {post.data.heroImage
+              ? <img src={post.data.heroImage} alt={post.data.title} class="recipe-card-image" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              : null
+            }
+            <div class="recipe-card-placeholder" style={post.data.heroImage ? 'display:none' : ''}>🍳</div>
+            <div class="recipe-card-content">
+              <h3 class="recipe-card-title">{post.data.title}</h3>
+              <p class="recipe-card-excerpt">{post.data.description}</p>
+            </div>
+          </a>
+          <div class="recipe-card-footer">
+            <span class="recipe-card-views" data-slug={slug(post)}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <span class="recipe-card-view-count">—</span>
+            </span>
+            <button class="recipe-like-btn" data-post-id={slug(post)} aria-label="Mi piace">
+              <span class="recipe-like-heart">♡</span>
+            </button>
           </div>
-        </a>
+        </article>
       ))}
     </div>
     <div class="recipes-cta">
@@ -92,4 +133,116 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
     </div>
   </section>
 
+  <section class="newsletter-section js-reveal">
+    <div class="newsletter-inner">
+      <div class="newsletter-card">
+        <h2 class="newsletter-title">{t.newsletterTitle}</h2>
+        <p class="newsletter-desc">{t.newsletterDesc}</p>
+        <form class="newsletter-form" id="newsletter-form" novalidate>
+          <input type="text" name="nome" class="newsletter-input" placeholder={t.newsletterName} required autocomplete="given-name" />
+          <input type="email" name="email" class="newsletter-input" placeholder={t.newsletterEmail} required autocomplete="email" />
+          <button
+            type="submit"
+            class="newsletter-btn"
+            data-label={t.newsletterCta}
+            data-loading={t.newsletterLoading}
+          >
+            {t.newsletterCta}
+          </button>
+        </form>
+        <p
+          class="newsletter-feedback"
+          id="newsletter-feedback"
+          aria-live="polite"
+          data-ok={t.newsletterSuccess}
+          data-err={t.newsletterError}
+        ></p>
+      </div>
+      <div class="newsletter-image">
+        <img src={`${base}images/ricette/newsletter-subs-section.webp`} alt="" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
 </BaseLayout>
+
+<script>
+  import { incrementLike, decrementLike, getViewCounts } from '../../lib/recipes-data';
+
+  // Fetch real view counts for all displayed cards in one batched call
+  const viewSpans = Array.from(document.querySelectorAll<HTMLElement>('.recipe-card-views'));
+  const slugs = viewSpans.map(s => s.dataset.slug ?? '').filter(Boolean);
+  if (slugs.length > 0) {
+    getViewCounts(slugs).then(counts => {
+      viewSpans.forEach(span => {
+        const slug = span.dataset.slug ?? '';
+        const countEl = span.querySelector('.recipe-card-view-count');
+        if (countEl) countEl.textContent = String(counts[slug] ?? 0);
+      });
+    });
+  }
+
+  // Like buttons: localStorage toggle + Supabase counter increment/decrement
+  document.querySelectorAll<HTMLButtonElement>('.recipe-like-btn').forEach(btn => {
+    const id = btn.dataset.postId ?? '';
+    const heart = btn.querySelector('.recipe-like-heart') as HTMLElement;
+    if (localStorage.getItem(`liked-${id}`) === 'true') {
+      btn.classList.add('liked');
+      heart.textContent = '♥';
+    }
+    btn.addEventListener('click', async () => {
+      const isLiked = btn.classList.toggle('liked');
+      heart.textContent = isLiked ? '♥' : '♡';
+      localStorage.setItem(`liked-${id}`, String(isLiked));
+      if (isLiked) {
+        await incrementLike(id);
+      } else {
+        await decrementLike(id);
+      }
+    });
+  });
+
+  // Newsletter form
+  const form = document.getElementById('newsletter-form') as HTMLFormElement | null;
+  const feedback = document.getElementById('newsletter-feedback') as HTMLElement | null;
+  const WEBHOOK =
+    import.meta.env.PUBLIC_NEWSLETTER_SUBSCRIBE_WEBHOOK ||
+    import.meta.env.PUBLIC_NEWSLETTER_WEBHOOK;
+  const submitBtn = form?.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+  const MSG_OK = feedback?.dataset.ok ?? 'Che coraggio!';
+  const MSG_ERR = feedback?.dataset.err ?? 'Qualcosa è andato storto. Riprova tra poco.';
+  const BTN_LABEL = submitBtn?.dataset.label ?? 'Condividi la gioia!';
+  const BTN_LOADING = submitBtn?.dataset.loading ?? '...';
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!WEBHOOK) {
+      if (feedback) {
+        feedback.textContent = MSG_ERR;
+        feedback.className = 'newsletter-feedback newsletter-feedback--err';
+      }
+      return;
+    }
+    const data = Object.fromEntries(new FormData(form));
+    const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+    btn.disabled = true;
+    btn.textContent = BTN_LOADING;
+    try {
+      const res = await fetch(WEBHOOK, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nome: data.nome, email: data.email, lang: document.documentElement.lang || 'it' }),
+      });
+      if (res.ok || res.status === 200) {
+        form.style.display = 'none';
+        if (feedback) { feedback.textContent = MSG_OK; feedback.className = 'newsletter-feedback newsletter-feedback--ok'; }
+      } else {
+        throw new Error('Non-OK response');
+      }
+    } catch {
+      if (feedback) { feedback.textContent = MSG_ERR; feedback.className = 'newsletter-feedback newsletter-feedback--err'; }
+      btn.disabled = false;
+      btn.textContent = BTN_LABEL;
+    }
+  });
+</script>

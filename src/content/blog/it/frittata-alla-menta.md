@@ -1,4 +1,5 @@
 ---
+heroImage: "/images/ricette/frittata-menta.webp"
 title: "Frittata alla menta"
 description: "La mia frittata preferita"
 pubDate: "2026-01-14"

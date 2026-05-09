@@ -151,7 +151,30 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"blog": {
+		"academy": {
+"en/soffritto-perfetto.md": {
+	id: "en/soffritto-perfetto.md";
+  slug: "en/soffritto-perfetto";
+  body: string;
+  collection: "academy";
+  data: InferEntrySchema<"academy">
+} & { render(): Render[".md"] };
+"fr/soffritto-perfetto.md": {
+	id: "fr/soffritto-perfetto.md";
+  slug: "fr/soffritto-perfetto";
+  body: string;
+  collection: "academy";
+  data: InferEntrySchema<"academy">
+} & { render(): Render[".md"] };
+"it/soffritto-perfetto.md": {
+	id: "it/soffritto-perfetto.md";
+  slug: "it/soffritto-perfetto";
+  body: string;
+  collection: "academy";
+  data: InferEntrySchema<"academy">
+} & { render(): Render[".md"] };
+};
+"blog": {
 "en/pasta-con-feta-al-forno-e-pomodorini.md": {
 	id: "en/pasta-con-feta-al-forno-e-pomodorini.md";
   slug: "en/pasta-con-feta-al-forno-e-pomodorini";
@@ -302,13 +325,6 @@ declare module 'astro:content' {
 "it/pizzette-di-melanzane-al-forno.md": {
 	id: "it/pizzette-di-melanzane-al-forno.md";
   slug: "it/pizzette-di-melanzane-al-forno";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"it/primo-post.md": {
-	id: "it/primo-post.md";
-  slug: "it/primo-post";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

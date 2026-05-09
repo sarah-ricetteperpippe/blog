@@ -88,7 +88,7 @@ function shortDate(date: Date) {
   </div>
 
   {categories.length > 0 && (
-    <div class="filter-bar">
+    <div class="filter-bar filter-bar--recipes">
       <button class="filter-pill filter-pill--active" data-category="all">
         {t.filterAll}
       </button>
@@ -112,7 +112,7 @@ function shortDate(date: Date) {
           <a href={`${base}${lang}/blog/${postSlug}/`} class="blog-card-link">
             <div class="blog-card-image-wrap">
               {post.data.heroImage
-                ? <img class="blog-card-image" src={`${base}${post.data.heroImage.replace(/^\//, '')}`} alt={post.data.title} loading="lazy" />
+                ? <img class="blog-card-image" src={post.data.heroImage} alt={post.data.title} loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.blog-card-image-placeholder').style.display='flex'" />
                 : <div class="blog-card-image-placeholder">🍳</div>
               }
               {post.data.category && (
@@ -198,7 +198,9 @@ function shortDate(date: Date) {
     filterCards();
   });
 
-  // --- Like button con localStorage ---
+  // --- Like button: localStorage + Supabase counter ---
+  import { incrementLike as bumpLike, decrementLike as cutLike } from '../../../lib/recipes-data';
+
   document.querySelectorAll<HTMLButtonElement>('.like-btn').forEach(btn => {
     const id = btn.dataset.postId ?? '';
     const heart = btn.querySelector('.like-heart') as HTMLElement;
@@ -206,10 +208,15 @@ function shortDate(date: Date) {
       btn.classList.add('liked');
       heart.textContent = '♥';
     }
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', async () => {
       const isLiked = btn.classList.toggle('liked');
       heart.textContent = isLiked ? '♥' : '♡';
       localStorage.setItem(`liked-${id}`, String(isLiked));
+      if (isLiked) {
+        await bumpLike(id);
+      } else {
+        await cutLike(id);
+      }
     });
   });
 </script>

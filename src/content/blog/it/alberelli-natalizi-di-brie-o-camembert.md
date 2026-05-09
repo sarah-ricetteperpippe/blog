@@ -1,4 +1,5 @@
 ---
+heroImage: "/images/ricette/alberelli-natalizi-di-brie-o-camembert.webp"
 title: "Alberelli natalizi di brie o camembert"
 description: "Carini e facilissimi da preparare last minute!"
 pubDate: "2026-01-03"

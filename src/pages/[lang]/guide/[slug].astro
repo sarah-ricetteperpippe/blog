@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import GuideLayout from '../../../layouts/GuideLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('academy');
+  return posts.map(post => {
+    const [lang, ...rest] = post.id.split('/');
+    const slug = rest.join('/').replace(/\.md$/, '');
+    return {
+      params: { lang, slug },
+      props: { post },
+    };
+  });
+}
+
+const { lang, slug } = Astro.params;
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<GuideLayout
+  title={post.data.title}
+  description={post.data.description}
+  pubDate={post.data.pubDate}
+  heroImage={post.data.heroImage}
+  category={post.data.category}
+  tags={post.data.tags}
+  difficulty={post.data.difficulty}
+  lang={lang}
+  slug={slug}
+  body={post.body}
+>
+  <Content />
+</GuideLayout>
