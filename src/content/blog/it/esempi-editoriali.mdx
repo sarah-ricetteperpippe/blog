@@ -1,0 +1,222 @@
+---
+title: "Reference dei componenti editoriali"
+description: "Esempi visivi e snippet di codice per ogni componente di impaginazione editoriale."
+pubDate: "2026-05-11"
+category: "Reference"
+tags: ["reference", "editorial"]
+---
+
+Questa pagina mostra ogni componente editoriale in azione. Usala come riferimento quando scrivi una ricetta o una guida: trova il blocco che ti serve, copia lo snippet, sostituisci i contenuti.
+
+I componenti sono disponibili **automaticamente** in ogni file `.mdx` di `src/content/blog/{it,en,fr}/` e `src/content/academy/{it,en,fr}/`. Non serve importarli in cima al file.
+
+## Figure con testo accanto — ratio portrait
+
+L'immagine prende ~36% della larghezza, il testo riempie il resto. Adatto a foto in verticale.
+
+<Figure src="/images/demo/portrait.svg" alt="Caramello ambrato" side="right" ratio="portrait" caption="Ambrato, non bruciato — il caramello giusto.">
+
+Sciogli lo zucchero a fuoco medio in una padella antiaderente. Niente acqua, niente cucchiaio: solo zucchero e calore. All'inizio sembra non succeda nulla, poi i bordi cominciano a liquefarsi.
+
+È il momento più ansiogeno della ricetta, ma è anche quello dove la regola d'oro è: non toccare. Più giri il caramello, più rischi che cristallizzi.
+
+</Figure>
+
+```mdx
+<Figure src="/images/demo/portrait.svg" side="right" ratio="portrait"
+        caption="Ambrato, non bruciato.">
+
+Il paragrafo che vive nella colonna accanto.
+
+</Figure>
+```
+
+## Figure con testo accanto — ratio landscape
+
+L'immagine prende ~52% della larghezza. Adatto a foto in orizzontale.
+
+<Figure src="/images/demo/landscape.svg" alt="Lo stampo coperto" side="left" ratio="landscape" caption="Lo stampo coperto, pronto per il bagnomaria.">
+
+Versa il caramello caldo nello stampo, ruotandolo perché copra il fondo in modo uniforme. Lavora veloce: solidifica in pochi secondi.
+
+Prepara intanto il bagnomaria con acqua già calda fino a metà altezza dello stampo.
+
+</Figure>
+
+```mdx
+<Figure src="/images/demo/landscape.svg" side="left" ratio="landscape"
+        caption="Lo stampo coperto, pronto per il bagnomaria.">
+
+Paragrafo accanto all'immagine.
+
+</Figure>
+```
+
+## Figure con testo accanto — ratio square
+
+Via di mezzo: immagine ~44%, testo ~56%.
+
+<Figure src="/images/demo/square.svg" alt="Mise en place" side="right" ratio="square" caption="Mise en place: tutto pronto prima di accendere.">
+
+Disponi sul piano di lavoro tutti gli ingredienti già pesati e tagliati. In cucina la mise en place vale più di qualsiasi tecnica avanzata.
+
+</Figure>
+
+## Figure standalone (senza testo accanto)
+
+Se ometti i children, la figure si centra nella colonna testo.
+
+<Figure src="/images/demo/landscape.svg" alt="Il piatto finito" caption="Il piatto finito, pronto per la tavola." />
+
+```mdx
+<Figure src="/images/demo/landscape.svg" caption="Il piatto finito." />
+```
+
+## Figure con side="wide"
+
+L'immagine sfora la colonna testo a sinistra e destra. Effetto "wow" da usare con parsimonia, una o due volte per ricetta.
+
+<Figure src="/images/demo/wide.svg" alt="Tavola apparecchiata" side="wide" caption="La tavola apparecchiata — sforando intenzionalmente la colonna del testo." />
+
+```mdx
+<Figure src="/images/demo/wide.svg" side="wide"
+        caption="La tavola apparecchiata." />
+```
+
+## Pullquote
+
+Frase grande estratta dal testo, con accento arancione laterale. Usala per le frasi-mantra di una ricetta.
+
+<Pullquote>Il caramello non si mescola, si guarda.</Pullquote>
+
+Con attribuzione:
+
+<Pullquote cite="Nonna Pina">In cucina la fretta brucia tutto.</Pullquote>
+
+```mdx
+<Pullquote>Il caramello non si mescola, si guarda.</Pullquote>
+
+<Pullquote cite="Nonna Pina">In cucina la fretta brucia tutto.</Pullquote>
+```
+
+## Gallery a 2 colonne
+
+Griglia di immagini affiancate. Su mobile collassa a una colonna.
+
+<Gallery columns={2} items={[
+  { src: "/images/demo/step1.svg", alt: "Versare il caramello", caption: "Step 1 · versare" },
+  { src: "/images/demo/step2.svg", alt: "Coprire lo stampo", caption: "Step 2 · coprire" },
+]} />
+
+```mdx
+<Gallery columns={2} items={[
+  { src: "/images/demo/step1.svg", caption: "Step 1 · versare" },
+  { src: "/images/demo/step2.svg", caption: "Step 2 · coprire" },
+]} />
+```
+
+## Gallery a 3 colonne
+
+<Gallery columns={3} items={[
+  { src: "/images/demo/step1.svg", caption: "Step 1" },
+  { src: "/images/demo/step2.svg", caption: "Step 2" },
+  { src: "/images/demo/step3.svg", caption: "Step 3" },
+]} />
+
+## Gallery wide
+
+Anche la galleria può sforare la colonna testo con `side="wide"`.
+
+<Gallery side="wide" columns={3} items={[
+  { src: "/images/demo/step1.svg", caption: "Step 1" },
+  { src: "/images/demo/step2.svg", caption: "Step 2" },
+  { src: "/images/demo/step3.svg", caption: "Step 3" },
+]} />
+
+## TwoColumn — ingredienti accanto al procedimento
+
+Layout a due colonne testuali. Usa due `<div slot="left">` e `<div slot="right">`. Nota la riga vuota dopo il `<div>` di apertura e prima del `</div>` di chiusura — serve a MDX per processare il contenuto come markdown.
+
+<TwoColumn ratio="1/2">
+  <div slot="left">
+
+  ### Ingredienti
+  - 200g zucchero
+  - 4 uova grandi
+  - 500ml latte intero
+  - 1 baccello di vaniglia
+  - un pizzico di sale
+
+  </div>
+  <div slot="right">
+
+  ### Procedimento
+  1. Prepara il caramello sciogliendo lo zucchero a fuoco medio.
+  2. Sbatti le uova con un pizzico di sale, senza montarle.
+  3. Scalda il latte con la vaniglia fino a sfiorare il bollore.
+  4. Versa il latte sulle uova mescolando lentamente.
+  5. Filtra il composto e versalo nello stampo caramellato.
+  6. Cuoci a bagnomaria a 160°C per 45-50 minuti.
+
+  </div>
+</TwoColumn>
+
+```mdx
+<TwoColumn ratio="1/2">
+  <div slot="left">
+
+  ### Ingredienti
+  - 200g zucchero
+  - 4 uova grandi
+
+  </div>
+  <div slot="right">
+
+  ### Procedimento
+  1. Prepara il caramello…
+
+  </div>
+</TwoColumn>
+```
+
+## Aside — varianti tip, warning, nota
+
+Box laterali per trucchi, avvertenze e annotazioni.
+
+<Aside variant="tip" title="Trucco della nonna">
+
+Se la cipolla rischia di bruciarsi, aggiungi un cucchiaio di acqua e abbassa il fuoco. Si stufa e non si secca.
+
+</Aside>
+
+<Aside variant="warning" title="Attenzione">
+
+Il caramello supera facilmente i 180°C: usa una padella con il manico lungo e non avvicinare le mani al bordo. Se schizza sulla pelle, raffredda subito sotto acqua fredda.
+
+</Aside>
+
+<Aside variant="nota" title="Curiosità">
+
+Il termine "soffritto" viene da "sotto-friggere": cuocere a temperatura più bassa rispetto alla frittura vera, per estrarre sapore senza dorare troppo.
+
+</Aside>
+
+```mdx
+<Aside variant="tip" title="Trucco della nonna">
+
+Testo della tip, processato come markdown.
+
+</Aside>
+```
+
+## Riassunto dei componenti
+
+| Componente | Quando usarlo |
+|---|---|
+| `<Figure>` | Foto singola, eventualmente con testo accanto in 2 colonne |
+| `<Gallery>` | 2 o 3 foto affiancate in griglia |
+| `<Pullquote>` | Frase grande estratta dal testo |
+| `<TwoColumn>` | Due blocchi testuali affiancati (es. ingredienti vs procedimento) |
+| `<Aside>` | Box per trucchi, avvertenze o curiosità |
+
+Per le immagini reali, salvale in `public/images/<nome-ricetta>/` e referenziale con `src="/images/<nome-ricetta>/foto.jpg"`.

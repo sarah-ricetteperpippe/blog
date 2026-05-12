@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="300" fill="#D4E4C8"/>
+  <text x="200" y="150" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#27500A">LANDSCAPE 4:3</text>
+  <text x="200" y="175" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#3B6D11">demo placeholder</text>
+</svg>

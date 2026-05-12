@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice">
+  <rect width="300" height="300" fill="#F9C5B4"/>
+  <text x="150" y="150" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#712B13">SQUARE 1:1</text>
+  <text x="150" y="175" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#993C1D">demo placeholder</text>
+</svg>

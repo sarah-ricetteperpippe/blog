@@ -1,0 +1,127 @@
+---
+/**
+ * Figure — immagine editoriale.
+ *
+ * Uso con testo che le scorre accanto:
+ *   <Figure src="..." side="right" ratio="portrait" caption="...">
+ *     Il paragrafo di testo che vive nella colonna accanto.
+ *   </Figure>
+ *
+ * Uso standalone (centrata nella colonna testo):
+ *   <Figure src="..." caption="..." />
+ *
+ * Uso larga (sfora la colonna testo):
+ *   <Figure src="..." side="wide" caption="..." />
+ */
+export interface Props {
+  src: string;
+  alt?: string;
+  caption?: string;
+  side?: 'left' | 'right' | 'center' | 'wide';
+  ratio?: 'portrait' | 'landscape' | 'square';
+}
+
+const {
+  src,
+  alt = '',
+  caption,
+  side = 'center',
+  ratio = 'landscape',
+} = Astro.props;
+
+const hasSlot = Astro.slots.has('default');
+const effectiveSide = hasSlot && (side === 'left' || side === 'right') ? side : (side === 'left' || side === 'right' ? 'center' : side);
+---
+
+<figure class="ed-figure" data-side={effectiveSide} data-ratio={ratio}>
+  <div class="ed-figure-media">
+    <img src={src} alt={alt} loading="lazy" />
+    {caption && <figcaption>{caption}</figcaption>}
+  </div>
+  {hasSlot && (
+    <div class="ed-figure-body">
+      <slot />
+    </div>
+  )}
+</figure>
+
+<style>
+  .ed-figure {
+    margin: var(--editorial-gap, 1.75rem) 0;
+    padding: 0;
+  }
+
+  .ed-figure-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-md);
+  }
+
+  .ed-figure-media figcaption {
+    font-family: var(--font-small);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+    margin-top: 0.5rem;
+  }
+
+  .ed-figure-body :global(p) {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  .ed-figure-body :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  /* ----- side=center: standalone, dentro la colonna testo ----- */
+  .ed-figure[data-side='center'] {
+    max-width: 100%;
+  }
+
+  /* ----- side=wide: sfora la colonna testo ----- */
+  .ed-figure[data-side='wide'] {
+    width: min(var(--content-wide, 1080px), 100vw - 2rem);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+  }
+
+  /* ----- side=left|right: due colonne testo + immagine ----- */
+  .ed-figure[data-side='left'],
+  .ed-figure[data-side='right'] {
+    display: grid;
+    gap: var(--editorial-gap, 1.75rem);
+    align-items: start;
+  }
+
+  .ed-figure[data-side='right'][data-ratio='portrait']  { grid-template-columns: 1fr 36%; }
+  .ed-figure[data-side='right'][data-ratio='square']    { grid-template-columns: 1fr 44%; }
+  .ed-figure[data-side='right'][data-ratio='landscape'] { grid-template-columns: 1fr 52%; }
+
+  .ed-figure[data-side='left'][data-ratio='portrait']   { grid-template-columns: 36% 1fr; }
+  .ed-figure[data-side='left'][data-ratio='square']     { grid-template-columns: 44% 1fr; }
+  .ed-figure[data-side='left'][data-ratio='landscape']  { grid-template-columns: 52% 1fr; }
+
+  .ed-figure[data-side='left']  .ed-figure-media { grid-column: 1; grid-row: 1; }
+  .ed-figure[data-side='left']  .ed-figure-body  { grid-column: 2; grid-row: 1; }
+  .ed-figure[data-side='right'] .ed-figure-media { grid-column: 2; grid-row: 1; }
+  .ed-figure[data-side='right'] .ed-figure-body  { grid-column: 1; grid-row: 1; }
+
+  @media (max-width: 720px) {
+    .ed-figure[data-side='left'],
+    .ed-figure[data-side='right'] {
+      display: block;
+    }
+    .ed-figure[data-side='left']  .ed-figure-media,
+    .ed-figure[data-side='right'] .ed-figure-media {
+      margin-bottom: 1rem;
+    }
+    .ed-figure[data-side='wide'] {
+      width: 100%;
+      margin-left: 0;
+      transform: none;
+    }
+  }
+</style>

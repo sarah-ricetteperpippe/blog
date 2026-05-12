@@ -1,0 +1,51 @@
+---
+/**
+ * Pullquote — frase evidenziata estratta dal testo.
+ *
+ * Uso:
+ *   <Pullquote>Il caramello non si mescola, si guarda.</Pullquote>
+ *
+ * Con attribuzione:
+ *   <Pullquote cite="Nonna Pina">In cucina la fretta brucia tutto.</Pullquote>
+ */
+export interface Props {
+  cite?: string;
+}
+
+const { cite } = Astro.props;
+---
+
+<blockquote class="ed-pullquote">
+  <p><slot /></p>
+  {cite && <cite>— {cite}</cite>}
+</blockquote>
+
+<style>
+  .ed-pullquote {
+    margin: calc(var(--editorial-gap, 1.75rem) + 0.5rem) 0;
+    padding: 0.25rem 0 0.25rem 1.5rem;
+    border-left: 3px solid var(--color-primary-orange);
+  }
+
+  .ed-pullquote p {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 1.65rem;
+    line-height: 1.3;
+    color: var(--color-text-dark);
+    margin: 0;
+  }
+
+  .ed-pullquote cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-family: var(--font-small);
+    font-style: normal;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+
+  @media (max-width: 720px) {
+    .ed-pullquote p { font-size: 1.35rem; }
+  }
+</style>
