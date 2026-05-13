@@ -9,15 +9,12 @@
  *
  * Uso standalone (centrata nella colonna testo):
  *   <Figure src="..." caption="..." />
- *
- * Uso larga (sfora la colonna testo):
- *   <Figure src="..." side="wide" caption="..." />
  */
 export interface Props {
   src: string;
   alt?: string;
   caption?: string;
-  side?: 'left' | 'right' | 'center' | 'wide';
+  side?: 'left' | 'right' | 'center';
   ratio?: 'portrait' | 'landscape' | 'square';
 }
 
@@ -30,7 +27,7 @@ const {
 } = Astro.props;
 
 const hasSlot = Astro.slots.has('default');
-const effectiveSide = hasSlot && (side === 'left' || side === 'right') ? side : (side === 'left' || side === 'right' ? 'center' : side);
+const effectiveSide = hasSlot && (side === 'left' || side === 'right') ? side : 'center';
 ---
 
 <figure class="ed-figure" data-side={effectiveSide} data-ratio={ratio}>
@@ -80,14 +77,6 @@ const effectiveSide = hasSlot && (side === 'left' || side === 'right') ? side : 
     max-width: 100%;
   }
 
-  /* ----- side=wide: sfora la colonna testo ----- */
-  .ed-figure[data-side='wide'] {
-    width: min(var(--content-wide, 1080px), 100vw - 2rem);
-    margin-left: 50%;
-    transform: translateX(-50%);
-    position: relative;
-  }
-
   /* ----- side=left|right: due colonne testo + immagine ----- */
   .ed-figure[data-side='left'],
   .ed-figure[data-side='right'] {
@@ -117,11 +106,6 @@ const effectiveSide = hasSlot && (side === 'left' || side === 'right') ? side : 
     .ed-figure[data-side='left']  .ed-figure-media,
     .ed-figure[data-side='right'] .ed-figure-media {
       margin-bottom: 1rem;
-    }
-    .ed-figure[data-side='wide'] {
-      width: 100%;
-      margin-left: 0;
-      transform: none;
     }
   }
 </style>

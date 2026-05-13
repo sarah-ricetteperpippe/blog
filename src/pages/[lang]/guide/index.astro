@@ -19,7 +19,7 @@ const posts = allPosts
   .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
 
 function postSlug(post: any): string {
-  return post.id.replace(`${lang}/`, '').replace(/\.md$/, '');
+  return post.id.replace(`${lang}/`, '').replace(/\.(md|mdx)$/, '');
 }
 
 function readingTime(body: string): number {
