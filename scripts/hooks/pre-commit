@@ -1,0 +1,73 @@
+#!/usr/bin/env bash
+#
+# Pre-commit hook: auto-traduzione con DeepL.
+#
+# Per ogni .mdx aggiunto o modificato in src/content/blog/it/ che non ha
+# ancora un corrispettivo in src/content/blog/en/ o src/content/blog/fr/,
+# lancia `node scripts/translate.js <slug>` e fa lo stage dei file generati.
+#
+# La traduzione tonale fine viene fatta in seguito con la skill Cowork
+# `translate-recipes-edit` (rifinisce il draft DeepL).
+#
+# Installazione (una tantum, dal Mac, nella root della repo):
+#   ln -s ../../scripts/hooks/pre-commit .git/hooks/pre-commit
+#   chmod +x scripts/hooks/pre-commit
+#
+# Bypass: `git commit --no-verify`
+
+set -e
+
+# Trova root della repo (anche se l'hook è invocato da una sottocartella)
+ROOT=$(git rev-parse --show-toplevel)
+cd "$ROOT"
+
+# File IT aggiunti/modificati in questo commit
+IT_FILES=$(git diff --cached --name-only --diff-filter=AM | grep -E '^src/content/blog/it/.*\.mdx?$' || true)
+
+if [ -z "$IT_FILES" ]; then
+  exit 0
+fi
+
+# Verifica che DeepL sia configurato
+if [ ! -f ".env" ] || ! grep -q '^DEEPL_API_KEY=' .env; then
+  echo "pre-commit: salto auto-traduzione — DEEPL_API_KEY non trovata in .env"
+  exit 0
+fi
+
+echo "pre-commit: rilevati file IT, controllo traduzioni mancanti..."
+
+TRANSLATED_ANY=0
+
+for it_file in $IT_FILES; do
+  slug=$(basename "$it_file" | sed -E 's/\.mdx?$//')
+  needs=()
+  [ ! -f "src/content/blog/en/${slug}.mdx" ] && [ ! -f "src/content/blog/en/${slug}.md" ] && needs+=("en")
+  [ ! -f "src/content/blog/fr/${slug}.mdx" ] && [ ! -f "src/content/blog/fr/${slug}.md" ] && needs+=("fr")
+
+  if [ ${#needs[@]} -eq 0 ]; then
+    echo "  ${slug}: già tradotto in en+fr, salto"
+    continue
+  fi
+
+  for lang in "${needs[@]}"; do
+    echo "  ${slug} → ${lang}..."
+    if node scripts/translate.js "$slug" --lang "$lang"; then
+      out_file="src/content/blog/${lang}/${slug}.mdx"
+      [ -f "$out_file" ] || out_file="src/content/blog/${lang}/${slug}.md"
+      if [ -f "$out_file" ]; then
+        git add "$out_file"
+        TRANSLATED_ANY=1
+      fi
+    else
+      echo "  ⚠️  Traduzione fallita per ${slug} → ${lang}. Procedo senza."
+    fi
+  done
+done
+
+if [ "$TRANSLATED_ANY" -eq 1 ]; then
+  echo ""
+  echo "pre-commit: traduzioni DeepL aggiunte al commit."
+  echo "  ricordati di passare poi la skill 'translate-recipes-edit' in Cowork per rifinire tono."
+fi
+
+exit 0
