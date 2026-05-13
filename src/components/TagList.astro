@@ -1,0 +1,45 @@
+---
+import { slugify } from '../utils/slugify';
+
+export interface Props {
+  tags: string[];
+  lang: string;
+  /** Tag attualmente attivo (per evidenziarlo nella lista). Opzionale. */
+  active?: string;
+}
+
+const { tags, lang, active } = Astro.props;
+const base = (import.meta.env.BASE_URL as string).endsWith('/')
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + '/';
+---
+
+{tags && tags.length > 0 && (
+  <div class="tag-list">
+    {tags.map(tag => (
+      <a
+        href={`${base}${lang}/blog/tag/${slugify(tag)}/`}
+        class={`tag-chip tag-chip--link${tag === active ? ' tag-chip--active' : ''}`}
+        rel="tag"
+      >{tag}</a>
+    ))}
+  </div>
+)}
+
+<style>
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .tag-chip--link {
+    text-decoration: none;
+    transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  }
+  .tag-chip--link:hover {
+    transform: translateY(-1px);
+  }
+  .tag-chip--active {
+    font-weight: 700;
+  }
+</style>
