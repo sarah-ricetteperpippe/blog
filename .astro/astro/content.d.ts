@@ -175,6 +175,20 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "blog": {
+"en/bistecche-di-funghi-strepitose.mdx": {
+	id: "en/bistecche-di-funghi-strepitose.mdx";
+  slug: "en/bistecche-di-funghi-strepitose";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
+"en/crostata-morbida-al-cacao-con-ganache.mdx": {
+	id: "en/crostata-morbida-al-cacao-con-ganache.mdx";
+  slug: "en/crostata-morbida-al-cacao-con-ganache";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
 "en/pasta-con-feta-al-forno-e-pomodorini.md": {
 	id: "en/pasta-con-feta-al-forno-e-pomodorini.md";
   slug: "en/pasta-con-feta-al-forno-e-pomodorini";
@@ -182,6 +196,27 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"en/torta-creme-caramel-super-safe.mdx": {
+	id: "en/torta-creme-caramel-super-safe.mdx";
+  slug: "en/torta-creme-caramel-super-safe";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
+"fr/bistecche-di-funghi-strepitose.mdx": {
+	id: "fr/bistecche-di-funghi-strepitose.mdx";
+  slug: "fr/bistecche-di-funghi-strepitose";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
+"fr/crostata-morbida-al-cacao-con-ganache.mdx": {
+	id: "fr/crostata-morbida-al-cacao-con-ganache.mdx";
+  slug: "fr/crostata-morbida-al-cacao-con-ganache";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
 "fr/pasta-con-feta-al-forno-e-pomodorini.md": {
 	id: "fr/pasta-con-feta-al-forno-e-pomodorini.md";
   slug: "fr/pasta-con-feta-al-forno-e-pomodorini";
@@ -189,6 +224,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"fr/torta-creme-caramel-super-safe.mdx": {
+	id: "fr/torta-creme-caramel-super-safe.mdx";
+  slug: "fr/torta-creme-caramel-super-safe";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
 "it/alberelli-natalizi-di-brie-o-camembert.md": {
 	id: "it/alberelli-natalizi-di-brie-o-camembert.md";
   slug: "it/alberelli-natalizi-di-brie-o-camembert";
@@ -196,13 +238,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"it/bistecche-di-funghi-strepitose.md": {
-	id: "it/bistecche-di-funghi-strepitose.md";
+"it/bistecche-di-funghi-strepitose.mdx": {
+	id: "it/bistecche-di-funghi-strepitose.mdx";
   slug: "it/bistecche-di-funghi-strepitose";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "it/brodo-vegetale-base.md": {
 	id: "it/brodo-vegetale-base.md";
   slug: "it/brodo-vegetale-base";
@@ -238,13 +280,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"it/crostata-morbida-al-cacao-con-ganache.md": {
-	id: "it/crostata-morbida-al-cacao-con-ganache.md";
+"it/crostata-morbida-al-cacao-con-ganache.mdx": {
+	id: "it/crostata-morbida-al-cacao-con-ganache.mdx";
   slug: "it/crostata-morbida-al-cacao-con-ganache";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "it/curry-di-tofu-con-riso-basmati.md": {
 	id: "it/curry-di-tofu-con-riso-basmati.md";
   slug: "it/curry-di-tofu-con-riso-basmati";
@@ -252,6 +294,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"it/esempi-editoriali.mdx": {
+	id: "it/esempi-editoriali.mdx";
+  slug: "it/esempi-editoriali";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
 "it/finto-risotto-alla-parmigiana.md": {
 	id: "it/finto-risotto-alla-parmigiana.md";
   slug: "it/finto-risotto-alla-parmigiana";
@@ -378,13 +427,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"it/torta-creme-caramel-super-safe.md": {
-	id: "it/torta-creme-caramel-super-safe.md";
+"it/torta-creme-caramel-super-safe.mdx": {
+	id: "it/torta-creme-caramel-super-safe.mdx";
   slug: "it/torta-creme-caramel-super-safe";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "it/torta-di-albumi-e-cacao.md": {
 	id: "it/torta-di-albumi-e-cacao.md";
   slug: "it/torta-di-albumi-e-cacao";

@@ -1,0 +1,154 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { slugify } from '../../../../utils/slugify';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+  const langs = ['it', 'en', 'fr'] as const;
+
+  const paths: Array<{
+    params: { lang: string; tag: string };
+    props: { originalTag: string };
+  }> = [];
+
+  for (const lang of langs) {
+    const seen = new Map<string, string>(); // slug → originalTag (primo incontrato)
+    for (const post of allPosts) {
+      if (!post.id.startsWith(`${lang}/`)) continue;
+      for (const t of post.data.tags ?? []) {
+        const s = slugify(t);
+        if (!seen.has(s)) seen.set(s, t);
+      }
+    }
+    for (const [s, originalTag] of seen) {
+      paths.push({ params: { lang, tag: s }, props: { originalTag } });
+    }
+  }
+  return paths;
+}
+
+const { lang, tag } = Astro.params;
+const { originalTag } = Astro.props;
+const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+
+const allPosts = await getCollection('blog');
+const posts = allPosts
+  .filter(p => p.id.startsWith(`${lang}/`) && (p.data.tags ?? []).some(t => slugify(t) === tag))
+  .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
+
+const slug = (post: any) => post.id.replace(`${lang}/`, '').replace(/\.(md|mdx)$/, '');
+
+function readingTime(body: string): number {
+  const words = body.trim().split(/\s+/).length;
+  return Math.max(1, Math.ceil(words / 200));
+}
+
+const ui = {
+  it: {
+    pageTitle: (t: string) => `Ricette con tag: ${t}`,
+    subtitle: (n: number, t: string) =>
+      n === 1
+        ? `1 ricetta con il tag "${t}".`
+        : `${n} ricette con il tag "${t}".`,
+    backToBlog: '← Tutte le ricette',
+    empty: 'Nessuna ricetta per questo tag.',
+    readTime: (n: number) => `${n} min di lettura`,
+  },
+  en: {
+    pageTitle: (t: string) => `Recipes tagged: ${t}`,
+    subtitle: (n: number, t: string) =>
+      n === 1
+        ? `1 recipe tagged "${t}".`
+        : `${n} recipes tagged "${t}".`,
+    backToBlog: '← All recipes',
+    empty: 'No recipes for this tag.',
+    readTime: (n: number) => `${n} min read`,
+  },
+  fr: {
+    pageTitle: (t: string) => `Recettes avec le tag : ${t}`,
+    subtitle: (n: number, t: string) =>
+      n === 1
+        ? `1 recette avec le tag « ${t} ».`
+        : `${n} recettes avec le tag « ${t} ».`,
+    backToBlog: '← Toutes les recettes',
+    empty: 'Aucune recette pour ce tag.',
+    readTime: (n: number) => `${n} min de lecture`,
+  },
+} as const;
+
+const t = ui[lang as keyof typeof ui] ?? ui.it;
+
+const dateLocale = { it: 'it-IT', en: 'en-GB', fr: 'fr-FR' } as const;
+const locale = dateLocale[lang as keyof typeof dateLocale];
+function shortDate(d: Date) {
+  return d.toLocaleDateString(locale, { day: 'numeric', month: 'short' });
+}
+---
+
+<BaseLayout title={t.pageTitle(originalTag)} lang={lang}>
+
+  <div class="blog-hero">
+    <h1 class="blog-hero-title">{t.pageTitle(originalTag)}</h1>
+    <p class="blog-hero-subtitle">{t.subtitle(posts.length, originalTag)}</p>
+    <a href={`${base}${lang}/blog/`} class="tag-page-back">{t.backToBlog}</a>
+  </div>
+
+  {posts.length === 0 ? (
+    <p class="no-results-msg" style="display:block">{t.empty}</p>
+  ) : (
+    <div class="blog-grid">
+      {posts.map(post => {
+        const mins = readingTime(post.body);
+        const postSlug = slug(post);
+        return (
+          <article class="blog-card" data-slug={postSlug}>
+            <a href={`${base}${lang}/blog/${postSlug}/`} class="blog-card-link">
+              <div class="blog-card-image-wrap">
+                {post.data.heroImage
+                  ? <img class="blog-card-image" src={post.data.heroImage} alt={post.data.title} loading="lazy" />
+                  : <div class="blog-card-image-placeholder">🍳</div>
+                }
+                {post.data.category && (
+                  <span class="blog-card-category">{post.data.category}</span>
+                )}
+              </div>
+
+              <div class="blog-card-body">
+                <div class="blog-card-meta">
+                  <div class="blog-card-avatar" aria-hidden="true">S</div>
+                  <div class="blog-card-meta-info">
+                    <span class="blog-card-author">Sarah Lasaracina</span>
+                    <span class="blog-card-meta-sub">
+                      <span class="blog-card-date">{shortDate(new Date(post.data.pubDate))}</span>
+                      <span class="blog-card-dot">·</span>
+                      <span class="blog-card-readtime">{t.readTime(mins)}</span>
+                    </span>
+                  </div>
+                </div>
+
+                <h2 class="blog-card-title">{post.data.title}</h2>
+                <p class="blog-card-excerpt">{post.data.description}</p>
+              </div>
+            </a>
+          </article>
+        );
+      })}
+    </div>
+  )}
+
+</BaseLayout>
+
+<style>
+  .tag-page-back {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opacity 0.15s ease;
+  }
+  .tag-page-back:hover {
+    opacity: 1;
+  }
+</style>

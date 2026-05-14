@@ -1,12 +1,13 @@
 ---
 import { getCollection } from 'astro:content';
 import GuideLayout from '../../../layouts/GuideLayout.astro';
+import { Figure, Gallery, Pullquote, TwoColumn, Aside } from '../../../components/editorial';
 
 export async function getStaticPaths() {
   const posts = await getCollection('academy');
   return posts.map(post => {
     const [lang, ...rest] = post.id.split('/');
-    const slug = rest.join('/').replace(/\.md$/, '');
+    const slug = rest.join('/').replace(/\.(md|mdx)$/, '');
     return {
       params: { lang, slug },
       props: { post },
@@ -17,6 +18,9 @@ export async function getStaticPaths() {
 const { lang, slug } = Astro.params;
 const { post } = Astro.props;
 const { Content } = await post.render();
+
+// Componenti editoriali auto-iniettati: nei .mdx scrivi <Figure …/> senza importarli.
+const editorialComponents = { Figure, Gallery, Pullquote, TwoColumn, Aside };
 ---
 
 <GuideLayout
@@ -31,5 +35,5 @@ const { Content } = await post.render();
   slug={slug}
   body={post.body}
 >
-  <Content />
+  <Content components={editorialComponents} />
 </GuideLayout>

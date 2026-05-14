@@ -570,13 +570,38 @@ p {
   border: none;
   cursor: pointer;
   padding: 0.2rem 0.4rem;
-  font-size: 1rem;
-  color: var(--color-primary-orange);
+  color: var(--color-text-muted);
   line-height: 1;
-  transition: transform 0.15s ease;
+  transition: transform 0.15s ease, color 0.2s ease;
 }
-.recipe-like-btn:hover { transform: scale(1.2); }
-.recipe-like-btn.liked .recipe-like-heart { content: '♥'; }
+.recipe-like-btn:hover { transform: scale(1.12); color: #e74c6a; }
+.recipe-like-heart,
+.like-heart,
+.post-like-heart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.recipe-like-heart svg,
+.like-heart svg,
+.post-like-heart svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: block;
+  fill: transparent;
+  stroke: currentColor;
+  transition: fill 0.2s ease, stroke 0.2s ease, transform 0.2s ease;
+}
+.recipe-like-btn.liked,
+.like-btn.liked,
+.post-like-btn.liked {
+  color: #e74c6a;
+}
+.recipe-like-btn.liked .recipe-like-heart svg,
+.like-btn.liked .like-heart svg,
+.post-like-btn.liked .post-like-heart svg {
+  fill: currentColor;
+}
 
 .recipes-cta { text-align: center; margin-top: var(--spacing-lg); }
 
@@ -1105,12 +1130,11 @@ p {
   border: none;
   cursor: pointer;
   padding: 0.2rem 0.4rem;
-  transition: transform 0.15s ease;
+  transition: transform 0.15s ease, color 0.2s ease;
   line-height: 1;
+  color: var(--color-text-muted);
 }
-.like-btn:hover { transform: scale(1.2); }
-.like-heart { font-size: 1.1rem; color: var(--color-text-muted); transition: color 0.2s; }
-.like-btn.liked .like-heart { color: #e74c6a; }
+.like-btn:hover { transform: scale(1.12); color: #e74c6a; }
 
 /* ============================
    Post Actions (like + share)
@@ -1140,13 +1164,11 @@ p {
   cursor: pointer;
   padding: 0.2rem 0.3rem;
   color: var(--color-text-muted);
-  transition: var(--transition);
-  font-size: 1.3rem;
+  transition: color 0.2s ease, transform 0.15s ease;
   line-height: 1;
 }
-.post-like-btn:hover { color: #e74c6a; }
-.post-like-btn.liked { color: #e74c6a; }
-.post-like-heart { font-size: 1.3rem; }
+.post-like-btn:hover { color: #e74c6a; transform: scale(1.08); }
+.post-like-heart svg { width: 1.35rem; height: 1.35rem; }
 .post-like-label { display: none; }
 
 .post-share { display: flex; align-items: center; gap: 0.5rem; }
@@ -1243,9 +1265,9 @@ p {
 }
 .footer-brand-name {
   font-family: var(--font-heading);
-  font-size: 2.2rem;
+  font-size: 1.95rem;
   line-height: 1;
-  color: #c7dc63;
+  color: var(--color-primary-green);
 }
 .footer-tagline {
   font-family: var(--font-body);
@@ -1347,7 +1369,7 @@ p {
   /* Footer */
   .site-footer { flex-direction: column; gap: 1rem; text-align: center; padding: 1.25rem 1rem; }
   .footer-branding { justify-content: center; }
-  .footer-brand-name { font-size: 1.8rem; }
+  .footer-brand-name { font-size: 1.6rem; }
   .footer-copyright { text-align: center; }
 
   .filter-bar { padding: 1rem; }

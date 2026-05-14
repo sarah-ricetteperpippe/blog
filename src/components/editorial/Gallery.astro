@@ -1,0 +1,91 @@
+---
+/**
+ * Gallery — griglia di immagini affiancate.
+ *
+ * Uso:
+ *   <Gallery columns={2} items={[
+ *     { src: "/images/step1.jpg", alt: "Versare il caramello", caption: "Step 1" },
+ *     { src: "/images/step2.jpg", alt: "Coprire lo stampo", caption: "Step 2" },
+ *   ]} />
+ *
+ * Con side="wide" la galleria sfora la colonna testo.
+ */
+export interface GalleryItem {
+  src: string;
+  alt?: string;
+  caption?: string;
+}
+
+export interface Props {
+  items: GalleryItem[];
+  columns?: 2 | 3;
+  side?: 'normal' | 'wide';
+}
+
+const { items, columns = 2, side = 'normal' } = Astro.props;
+---
+
+<div class="ed-gallery" data-columns={columns} data-side={side}>
+  {items.map((item) => (
+    <figure class="ed-gallery-item">
+      <img src={item.src} alt={item.alt ?? ''} loading="lazy" />
+      {item.caption && <figcaption>{item.caption}</figcaption>}
+    </figure>
+  ))}
+</div>
+
+<style>
+  .ed-gallery {
+    display: grid;
+    gap: 0.75rem;
+    margin: var(--editorial-gap, 1.75rem) 0;
+  }
+
+  .ed-gallery[data-columns='2'] { grid-template-columns: repeat(2, 1fr); }
+  .ed-gallery[data-columns='3'] { grid-template-columns: repeat(3, 1fr); }
+
+  .ed-gallery[data-side='wide'] {
+    width: min(var(--content-wide, 1080px), 100vw - 2rem);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+  }
+
+  .ed-gallery-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .ed-gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-md);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  .ed-gallery-item figcaption {
+    font-family: var(--font-small);
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+    margin-top: 0.4rem;
+  }
+
+  @media (max-width: 720px) {
+    .ed-gallery[data-columns='3'] { grid-template-columns: repeat(2, 1fr); }
+    .ed-gallery[data-side='wide'] {
+      width: 100%;
+      margin-left: 0;
+      transform: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .ed-gallery[data-columns='2'],
+    .ed-gallery[data-columns='3'] {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

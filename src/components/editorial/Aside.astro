@@ -1,0 +1,70 @@
+---
+/**
+ * Aside — box laterale per trucchi, curiosità, avvertenze.
+ *
+ * Uso (nota la riga vuota dopo <Aside> per processare il markdown interno):
+ *
+ *   <Aside variant="tip" title="Trucco della nonna">
+ *
+ *   Se la cipolla rischia di bruciarsi, aggiungi un cucchiaio di acqua
+ *   e abbassa il fuoco.
+ *
+ *   </Aside>
+ *
+ * variant: "tip" (verde), "warning" (arancione), "nota" (neutra)
+ */
+export interface Props {
+  title?: string;
+  variant?: 'tip' | 'warning' | 'nota';
+}
+
+const { title, variant = 'tip' } = Astro.props;
+---
+
+<aside class="ed-aside" data-variant={variant}>
+  {title && <p class="ed-aside-title">{title}</p>}
+  <div class="ed-aside-body"><slot /></div>
+</aside>
+
+<style>
+  .ed-aside {
+    margin: var(--editorial-gap, 1.75rem) 0;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid var(--color-primary-green);
+    background: var(--color-primary-green-bg);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  }
+
+  .ed-aside[data-variant='warning'] {
+    border-left-color: var(--color-primary-orange);
+    background: #FCEEE7;
+  }
+
+  .ed-aside[data-variant='nota'] {
+    border-left-color: var(--color-text-muted);
+    background: #F4F2EE;
+  }
+
+  .ed-aside-title {
+    font-family: var(--font-small);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-dark);
+    margin: 0 0 0.5rem;
+  }
+
+  .ed-aside-body :global(p) {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 0.75rem;
+  }
+  .ed-aside-body :global(p:last-child) {
+    margin-bottom: 0;
+  }
+  .ed-aside-body :global(ul),
+  .ed-aside-body :global(ol) {
+    margin: 0 0 0.75rem 1.25rem;
+  }
+</style>

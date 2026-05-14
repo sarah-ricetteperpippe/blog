@@ -1,0 +1,68 @@
+---
+/**
+ * TwoColumn — layout a due colonne testuali (es. ingredienti | procedimento).
+ *
+ * Usa due slot named: "left" e "right".
+ *
+ * Uso (nota le righe vuote dopo <div slot> e prima di </div>:
+ * servono a MDX per processare il contenuto come markdown):
+ *
+ *   <TwoColumn ratio="1/2">
+ *     <div slot="left">
+ *
+ *     ## Ingredienti
+ *     - 200g zucchero
+ *     - 4 uova
+ *
+ *     </div>
+ *     <div slot="right">
+ *
+ *     ## Procedimento
+ *     1. Sciogli lo zucchero...
+ *
+ *     </div>
+ *   </TwoColumn>
+ *
+ * ratio: "1/1" (default, 50/50), "1/2" (33/67), "2/1" (67/33)
+ */
+export interface Props {
+  ratio?: '1/1' | '1/2' | '2/1';
+}
+
+const { ratio = '1/1' } = Astro.props;
+---
+
+<div class="ed-twocolumn" data-ratio={ratio}>
+  <div class="ed-twocolumn-left"><slot name="left" /></div>
+  <div class="ed-twocolumn-right"><slot name="right" /></div>
+</div>
+
+<style>
+  .ed-twocolumn {
+    display: grid;
+    gap: var(--editorial-gap, 1.75rem);
+    margin: var(--editorial-gap, 1.75rem) 0;
+    align-items: start;
+  }
+
+  .ed-twocolumn[data-ratio='1/1'] { grid-template-columns: 1fr 1fr; }
+  .ed-twocolumn[data-ratio='1/2'] { grid-template-columns: 1fr 2fr; }
+  .ed-twocolumn[data-ratio='2/1'] { grid-template-columns: 2fr 1fr; }
+
+  .ed-twocolumn-left :global(> :first-child),
+  .ed-twocolumn-right :global(> :first-child) {
+    margin-top: 0;
+  }
+  .ed-twocolumn-left :global(> :last-child),
+  .ed-twocolumn-right :global(> :last-child) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 720px) {
+    .ed-twocolumn[data-ratio='1/1'],
+    .ed-twocolumn[data-ratio='1/2'],
+    .ed-twocolumn[data-ratio='2/1'] {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
