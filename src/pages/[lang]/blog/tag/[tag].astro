@@ -16,6 +16,7 @@ export async function getStaticPaths() {
     const seen = new Map<string, string>(); // slug → originalTag (primo incontrato)
     for (const post of allPosts) {
       if (!post.id.startsWith(`${lang}/`)) continue;
+      if (post.data.draft) continue;
       for (const t of post.data.tags ?? []) {
         const s = slugify(t);
         if (!seen.has(s)) seen.set(s, t);
@@ -34,7 +35,7 @@ const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.en
 
 const allPosts = await getCollection('blog');
 const posts = allPosts
-  .filter(p => p.id.startsWith(`${lang}/`) && (p.data.tags ?? []).some(t => slugify(t) === tag))
+  .filter(p => p.id.startsWith(`${lang}/`) && !p.data.draft && (p.data.tags ?? []).some(t => slugify(t) === tag))
   .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
 
 const slug = (post: any) => post.id.replace(`${lang}/`, '').replace(/\.(md|mdx)$/, '');

@@ -16,6 +16,7 @@ const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.en
 const allPosts = await getCollection('academy');
 const posts = allPosts
   .filter(p => p.id.startsWith(`${lang}/`))
+  .filter(p => !p.data.draft)
   .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
 
 function postSlug(post: any): string {

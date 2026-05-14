@@ -11,6 +11,7 @@ const blog = defineCollection({
     tags: z.array(z.string()).optional(),
     lang: z.enum(['it', 'en', 'fr']).default('it'),
     translationKey: z.string().optional(),
+    draft: z.boolean().optional().default(false),
   }),
 });
 
@@ -26,6 +27,7 @@ const academy = defineCollection({
     tags: z.array(z.string()).optional(),
     lang: z.enum(['it', 'en', 'fr']).default('it'),
     translationKey: z.string().optional(),
+    draft: z.boolean().optional().default(false),
   }),
 });
 
