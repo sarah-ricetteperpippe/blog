@@ -5,6 +5,7 @@ pubDate: "2025-11-11"
 heroImage: "/images/ricette/funghi-trifolati.webp"
 category: "Contorni"
 tags: ["Funghi", "Contorni", "Autunno/inverno"]
+translationKey: "funghi-trifolati"
 ---
 
 <!-- 12ee43_ab86247834c74437b40babb4eb0ddf56~mv2.png -->

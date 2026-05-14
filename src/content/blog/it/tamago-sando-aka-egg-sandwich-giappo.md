@@ -5,6 +5,7 @@ pubDate: "2025-02-11"
 heroImage: "/images/ricette/tamago.webp"
 category: "Piatti unici"
 tags: ["Uova", "Sandwich", "Piatti del mondo", "Antispreco"]
+translationKey: "tamago-sando-aka-egg-sandwich-giappo"
 ---
 
 <!-- c9ca99_5c9be5c9420e4e6bb0f48beb258a68d6~mv2.png -->

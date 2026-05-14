@@ -5,6 +5,7 @@ pubDate: "2025-11-26"
 heroImage: "/images/ricette/risocardoncelli.webp"
 category: "Primi piatti"
 tags: ["Autunno/inverno", "Zucca", "Primi piatti"]
+translationKey: "risoni-cremosi-alla-zucca"
 ---
 
 <!-- c9ca99_0acf31825b834c6a9e371d7dfb8fdfd6~mv2.png -->

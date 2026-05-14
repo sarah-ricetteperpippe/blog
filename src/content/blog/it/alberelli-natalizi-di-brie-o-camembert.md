@@ -5,6 +5,7 @@ description: "Carini e facilissimi da preparare last minute!"
 pubDate: "2026-01-03"
 category: "Antipasto"
 tags: ["Natale", "Antipasto"]
+translationKey: "alberelli-natalizi-di-brie-o-camembert"
 ---
 
 <!-- c9ca99_d0c06c40ea8e4bf99447eed072858179~mv2.png -->

@@ -5,6 +5,7 @@ pubDate: "2025-11-11"
 heroImage: "/images/ricette/torta-fredda-cioccolato.webp"
 category: "Dolci"
 tags: ["4 stagioni", "Dolci", "Torte", "Cioccolato", "Compleanno"]
+translationKey: "torta-fredda-al-cioccolato"
 ---
 
 <!-- 12ee43_508804da73d34a129652b53749d6db44~mv2.png -->

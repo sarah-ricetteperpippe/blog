@@ -5,6 +5,7 @@ description: "E tanti auguri a zia Antonella!"
 pubDate: "2026-01-09"
 category: "Dolci"
 tags: ["4 stagioni", "Dolci", "Torte", "Cioccolato"]
+translationKey: "torta-salame-di-cioccolato"
 ---
 
 <!-- c9ca99_1ae27ffb64dd4dbb8e842510dbce589a~mv2.jpg -->

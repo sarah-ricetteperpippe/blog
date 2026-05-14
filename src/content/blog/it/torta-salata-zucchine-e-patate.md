@@ -5,6 +5,7 @@ pubDate: "2025-02-13"
 heroImage: "/images/ricette/torta-salata-zucchine-patate.webp"
 category: "Piatti unici"
 tags: ["Piatti unici", "Aperitivo", "Patate", "Zucchine", "Forno", "Antispreco"]
+translationKey: "torta-salata-zucchine-e-patate"
 ---
 
 <!-- c9ca99_475f1da46dd84d1b8235885630bb86d4~mv2.png -->

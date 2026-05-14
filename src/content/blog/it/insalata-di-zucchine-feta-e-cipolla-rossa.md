@@ -5,6 +5,7 @@ description: "Idea svuota frigo bella, buona e veloce, must have for feta lovers
 pubDate: "2025-12-18"
 category: "Insalate"
 tags: ["Insalate", "Feta", "Primavera/estate", "Antispreco"]
+translationKey: "insalata-di-zucchine-feta-e-cipolla-rossa"
 ---
 
 <!-- c9ca99_90ca0649f5cb46278ef05afc6e63d680~mv2.png -->

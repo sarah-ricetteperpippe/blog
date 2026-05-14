@@ -5,6 +5,7 @@ pubDate: "2025-01-26"
 heroImage: "/images/ricette/risotto-finta-parmigiana.webp"
 category: "Primi piatti"
 tags: ["Primi piatti", "Risotti", "Antispreco", "Autunno/inverno"]
+translationKey: "finto-risotto-alla-parmigiana"
 ---
 
 <!-- c9ca99_390b030e3d07402b82ce24c891e6f948~mv2.png -->

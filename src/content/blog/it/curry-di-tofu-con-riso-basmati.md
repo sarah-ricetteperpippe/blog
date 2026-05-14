@@ -5,6 +5,7 @@ description: "Variante vegana di questa delizia indiana!"
 pubDate: "2025-11-10"
 category: "Piatti unici"
 tags: ["4 stagioni", "Piatti dal mondo", "Piatti unici"]
+translationKey: "curry-di-tofu-con-riso-basmati"
 ---
 
 <!-- 12ee43_8e9ba3f51ca94ce0bfbe424eb6341eb0~mv2.jpg -->

@@ -5,6 +5,7 @@ pubDate: "2025-11-19"
 heroImage: "/images/ricette/torta-di-zucca-morbidissima.webp"
 category: "Dolci"
 tags: ["Autunno/inverno", "Dolci", "Torte", "Antispreco"]
+translationKey: "torta-di-zucca-morbidissima"
 ---
 
 <!-- c9ca99_aa43440af00a4c319bc4bb38b51fc8f9~mv2.png -->

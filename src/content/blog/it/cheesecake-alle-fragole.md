@@ -5,6 +5,7 @@ description: "La miglior cheesecake che io abbia mai fatto...e tanti auguri mamm
 pubDate: "2025-11-11"
 category: "Dolci"
 tags: ["Dolci", "Torte", "Compleanno", "Cheesecake", "Primavera/estate", "Fragole"]
+translationKey: "cheesecake-alle-fragole"
 ---
 
 <!-- c9ca99_d90d444d705d4a66ae778e0b527d36e6~mv2.png -->

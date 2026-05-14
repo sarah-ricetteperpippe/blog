@@ -5,6 +5,7 @@ description: "Come quelli dei film!"
 pubDate: "2025-11-28"
 category: "Dolci"
 tags: ["4 stagioni", "Dolci", "Cioccolato", "Piatti dal mondo", "Merenda/colazione"]
+translationKey: "chocolate-chip-cookies"
 ---
 
 <!-- c9ca99_b09d0dff7873498fa0584a7f30b77c54~mv2.png -->

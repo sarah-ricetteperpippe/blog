@@ -5,6 +5,7 @@ description: "Cremoso, profumato e facilissimo da preparare in casa."
 pubDate: "2025-11-11"
 category: "Pesti salse e creme"
 tags: ["4 stagioni", "Piatti dal mondo", "Aperitivo", "Ceci"]
+translationKey: "hummus-delicato"
 ---
 
 <!-- 12ee43_2a1072b91c22450ab2b31166641b3166~mv2.png -->

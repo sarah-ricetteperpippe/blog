@@ -5,6 +5,7 @@ description: "Mangerei lenticchie anche a colazione!"
 pubDate: "2026-01-07"
 category: "Primi piatti"
 tags: ["Autunno/inverno", "Lenticchie", "Zuppe", "Piatti unici", "Primi piatti"]
+translationKey: "pasta-e-lenticchie"
 ---
 
 <!-- c9ca99_1ae27ffb64dd4dbb8e842510dbce589a~mv2.jpg -->

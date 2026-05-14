@@ -5,6 +5,7 @@ pubDate: "2025-11-11"
 heroImage: "/images/ricette/pasta-feta.webp"
 category: "Primi piatti"
 tags: ["4 stagioni", "Feta", "Pomodorini", "Primi piatti"]
+translationKey: "pasta-svelta-alla-feta"
 ---
 
 <!-- 12ee43_ab86247834c74437b40babb4eb0ddf56~mv2.png -->

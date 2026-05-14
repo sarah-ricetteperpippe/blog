@@ -5,6 +5,7 @@ pubDate: "2025-02-14"
 heroImage: "/images/ricette/fonduta-all-italiana.webp"
 category: "Piatti unici"
 tags: ["Formaggio", "Piatti unici", "Piatti del mondo", "Autunno/inverno"]
+translationKey: "fonduta-all-italiana-fantasiosa"
 ---
 
 <!-- c9ca99_084867f1837643e4b6f94d0c8c7e8d90~mv2.png -->

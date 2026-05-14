@@ -5,6 +5,7 @@ description: "...Perché frittata di patate e cipolle suonava meno cool! Una gar
 pubDate: "2025-12-16"
 category: "Frittate"
 tags: ["4 stagioni", "Piatti dal mondo", "Frittate", "Patate"]
+translationKey: "tortilla-spagnola"
 ---
 
 <!-- c9ca99_49b0e85c0b0d460e8e54ed13b5db4804~mv2.png -->

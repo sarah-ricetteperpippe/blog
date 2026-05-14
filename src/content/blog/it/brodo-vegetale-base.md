@@ -5,6 +5,7 @@ pubDate: "2025-01-26"
 heroImage: "/images/ricette/brodo-vegetale.webp"
 category: "Preparazioni base"
 tags: ["Preparazioni base", "Antispreco"]
+translationKey: "brodo-vegetale-base"
 ---
 
 <!-- c9ca99_0750cea780b841f298b465cf1a675a15~mv2.png -->

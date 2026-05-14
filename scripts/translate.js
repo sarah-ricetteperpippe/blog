@@ -47,11 +47,15 @@ if (!slug) {
   process.exit(1);
 }
 
-const itFile = path.join(ROOT, 'src/content/blog/it', `${slug}.md`);
-if (!fs.existsSync(itFile)) {
-  console.error(`❌  File non trovato: ${itFile}`);
+// Cerca prima .mdx, poi .md — preserva l'estensione per l'output
+const itMdx = path.join(ROOT, 'src/content/blog/it', `${slug}.mdx`);
+const itMd  = path.join(ROOT, 'src/content/blog/it', `${slug}.md`);
+const itFile = fs.existsSync(itMdx) ? itMdx : (fs.existsSync(itMd) ? itMd : null);
+if (!itFile) {
+  console.error(`❌  File non trovato: né ${itMdx} né ${itMd}`);
   process.exit(1);
 }
+const ext = path.extname(itFile); // ".md" o ".mdx"
 
 // --- Parser frontmatter minimale (no dipendenze) ---
 function parseFrontmatter(raw) {
@@ -117,9 +121,10 @@ async function main() {
   console.log(`   Lingue target: ${targetLangs.join(', ')}`);
 
   for (const lang of targetLangs) {
-    const outFile = path.join(ROOT, 'src/content/blog', lang, `${slug}.md`);
-    if (fs.existsSync(outFile)) {
-      console.log(`⚠️   ${lang}/${slug}.md esiste già — salto. (Elimina il file per ritradurre)`);
+    const outFile = path.join(ROOT, 'src/content/blog', lang, `${slug}${ext}`);
+    const outFileAlt = path.join(ROOT, 'src/content/blog', lang, `${slug}${ext === '.md' ? '.mdx' : '.md'}`);
+    if (fs.existsSync(outFile) || fs.existsSync(outFileAlt)) {
+      console.log(`⚠️   ${lang}/${slug}${ext} esiste già — salto. (Elimina il file per ritradurre)`);
       continue;
     }
 
@@ -150,7 +155,7 @@ async function main() {
 
     fs.mkdirSync(path.dirname(outFile), { recursive: true });
     fs.writeFileSync(outFile, output, 'utf8');
-    console.log(`✅  Salvato: src/content/blog/${lang}/${slug}.md`);
+    console.log(`✅  Salvato: src/content/blog/${lang}/${slug}${ext}`);
   }
 
   // Aggiungi translationKey anche al file IT originale se non c'è

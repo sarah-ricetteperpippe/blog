@@ -5,6 +5,7 @@ description: "Questo è spaziale, spa-zia-leeeee!!!"
 pubDate: "2026-01-12"
 category: "Risotti"
 tags: ["Autunno/inverno", "Brie", "Noci", "Risotti"]
+translationKey: "risotto-al-brie-e-noci"
 ---
 
 <!-- c9ca99_475f1da46dd84d1b8235885630bb86d4~mv2.png -->

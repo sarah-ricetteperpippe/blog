@@ -5,6 +5,7 @@ description: "Queste le proporzioni vincenti per una cheesecake 0 acidula!"
 pubDate: "2025-11-11"
 category: "Preparazioni base"
 tags: ["Dolci", "Cheesecake"]
+translationKey: "crema-base-per-cheesecake"
 ---
 
 <!-- 12ee43_d48c50cba7a94b7b8e0cbe677856caa0~mv2.png -->

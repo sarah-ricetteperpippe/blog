@@ -5,6 +5,7 @@ description: "La mia frittata preferita"
 pubDate: "2026-01-14"
 category: "Frittate"
 tags: ["4 stagioni", "Frittate", "Uova", "Menta"]
+translationKey: "frittata-alla-menta"
 ---
 
 <!-- c9ca99_070de1a2b9c94c9bbdd17b8baeeab524~mv2.png -->

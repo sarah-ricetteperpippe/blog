@@ -1,0 +1,213 @@
+---
+title: "Référence du composant éditorial"
+description: "Des exemples visuels et des extraits de code pour chaque composant de la mise en page éditoriale."
+pubDate: "2026-05-11"
+category: "Référence"
+tags: ["reference", "editorial"]
+lang: "fr"
+translationKey: "esempi-editoriali"
+---
+
+Cette page présente chaque composant éditorial en action. Utilisez-la comme référence lorsque vous rédigez une recette ou un guide : trouvez le bloc dont vous avez besoin, copiez l'extrait, remplacez le contenu.
+
+Les composants sont disponibles **automatiquement** dans chaque fichier `.mdx` de `src/content/blog/{en,en,fr}/` et `src/content/academy/{en,en,fr}/`. Il n'est pas nécessaire de les importer au début du fichier.
+
+## Figures avec texte à côté - ratio portrait
+
+L'image prend ~36% de la largeur, le texte remplit le reste. Convient aux photos en format portrait.
+
+<Figure src="/images/demo/portrait.svg" alt="Caramel à l'ambre" side="right" ratio="portrait" caption="L'ambre, pas brûlé - le bon caramel.">
+
+Faites fondre le sucre à feu moyen dans une poêle antiadhésive. Pas d'eau, pas de cuillère : juste du sucre et de la chaleur. Au début, rien ne semble se passer, puis les bords commencent à se liquéfier.
+
+C'est le moment le plus angoissant de la recette, mais c'est aussi celui où la règle d'or est : ne pas toucher. Plus on remue le caramel, plus on risque de le voir se cristalliser.
+
+</Figure>.
+
+``mdx
+<Figure src="/images/demo/portrait.svg" side="right" ratio="portrait"
+        caption="Ambre, pas brûlé.">
+
+Le paragraphe qui se trouve dans la colonne suivante.
+
+</Figure>.
+```
+
+## Figures avec texte à côté d'elles - ratio paysage
+
+L'image occupe ~52% de la largeur. Convient aux images de paysage.
+
+<Figure src="/images/demo/landscape.svg" alt="Le moule couvert" side="left" ratio="landscape" caption="Le moule couvert, prêt pour le bain-marie.">
+
+Versez le caramel chaud dans le moule en le faisant tourner de façon à ce qu'il recouvre uniformément le fond. Travaillez rapidement : il se solidifie en quelques secondes.
+
+Pendant ce temps, préparez le bain-marie avec de l'eau déjà chaude jusqu'à la moitié de la hauteur du moule.
+
+</Figure>.
+
+``mdx
+<Figure src="/images/demo/landscape.svg" side="left" ratio="landscape"
+        caption="Le moule couvert, prêt pour le bain-marie.">
+
+Paragraphe à côté de l'image.
+
+</Figure>.
+```
+
+## Figures avec texte à côté - ratio carré
+
+Entre les deux : image ~44%, texte ~56%.
+
+<Figure src="/images/demo/square.svg" alt="Mise en place" side="right" ratio="square" caption="Mise en place : tout est prêt avant d'allumer.">
+
+Placez tous les ingrédients déjà pesés et coupés sur le plan de travail. En cuisine, la mise en place vaut plus que n'importe quelle technique avancée.
+
+</Figure>
+
+## Figure autonome (sans texte à côté)
+
+Si vous omettez les enfants, la figure est centrée dans la colonne de texte.
+
+<Figure src="/images/demo/landscape.svg" alt="Le plat fini" caption="Le plat fini, prêt pour la table." />
+
+``mdx
+<Figure src="/images/demo/landscape.svg" caption="Le plat fini". />
+```
+
+## Pullquote
+
+Grande phrase extraite du texte, avec un accent orange sur le côté. Utilisez-la pour la citation d'une recette.
+
+<Pullquote>Le caramel ne se mélange pas, il se regarde.</Pullquote>
+
+Avec attribution :
+
+<Pullquote cite="Nonna Pina">En cuisine, la précipitation brûle tout.</Pullquote>
+
+``mdx
+<Pullquote>Le caramel ne se remue pas, il se regarde.</Pullquote>
+
+<Pullquote cite="Nonna Pina">En cuisine, la hâte brûle tout.</Pullquote>
+```
+
+## Galerie 2 colonnes
+
+Grille d'images côte à côte. Sur mobile, se réduit à une seule colonne.
+
+<Gallery columns={2} items={[
+  { src : "/images/demo/step1.svg", alt : "Verser le caramel", caption : "Étape 1 - verser" }
+  { src : "/images/demo/step2.svg", alt : "Couvrir le moule", caption : "Étape 2 - couvrir" }
+]} />
+
+```mdx
+<Gallery columns={2} items={[
+  { src : "/images/demo/step1.svg", caption : "Étape 1 - verser" }
+  { src : "/images/demo/step2.svg", caption : "Étape 2 - couvrir" },
+]} />
+```
+
+## Galerie 3 colonnes
+
+<Gallery columns={3} items={[
+  { src : "/images/demo/step1.svg", caption : "Step 1" },
+  { src : "/images/demo/step2.svg", caption : "Step 2" },
+  { src : "/images/demo/step3.svg", caption : "Step 3" },
+]} />
+
+## Galerie large
+
+La galerie peut également s'étendre sur la colonne de texte avec `side="wide"`.
+
+<Gallery side="wide" columns={3} items={[
+  { src : "/images/demo/step1.svg", caption : "Step 1" },
+  { src : "/images/demo/step2.svg", caption : "Step 2" },
+  { src : "/images/demo/step3.svg", caption : "Step 3" },
+]} />
+
+## TwoColumn - ingrédients à côté du processus
+
+Mise en page du texte sur deux colonnes. Utilisez deux `<div slot="left">` et `<div slot="right">`. Notez la ligne vide après le `<div>` d'ouverture et avant le `</div>` de fermeture - c'est pour que MDX traite le contenu en tant que markdown.
+
+<TwoColumn ratio="1/2">
+  <div slot="left">
+
+  ### Ingrédients
+  - 200g de sucre
+  - 4 gros œufs
+  - 500ml de lait entier
+  - 1 gousse de vanille
+  - une pincée de sel
+
+  </div>
+  <div slot="right">
+
+  ### Procédure
+  1) Préparer le caramel en faisant fondre le sucre à feu moyen.
+  2) Battre les œufs avec une pincée de sel, sans les fouetter.
+  3. Faire chauffer le lait avec la vanille jusqu'à ébullition.
+  4. Verser le lait sur les œufs en remuant lentement.
+  5. Filtrer le mélange et le verser dans le moule caramélisé.
+  6. Cuire au bain-marie à 160°C pendant 45-50 minutes.
+
+  </div>.
+</TwoColumn>.
+
+``mdx
+<TwoColumn ratio="1/2">
+  <div slot="left">
+
+  ### Ingrédients
+  - 200g de sucre
+  - 4 gros œufs
+
+  </div>
+  <div slot="right">
+
+  ### Procédure
+  1. préparer le caramel
+
+  </div>.
+</TwoColumn>
+```
+
+## Aside - tip variants, warning, note
+
+Boîtes latérales pour les conseils, les avertissements et les notes.
+
+<Aside variant="tip" title="Grandma's trick">
+
+Si l'oignon risque de brûler, ajoutez une cuillère à soupe d'eau et baissez le feu. Il mijote et ne se dessèche pas.
+
+</Aside>.
+
+<Aside variant="warning" title="Warning">
+
+Le caramel monte facilement au-dessus de 180°C : utilisez une casserole à long manche et n'approchez pas vos mains du bord. En cas d'éclaboussures sur la peau, refroidissez immédiatement sous l'eau froide.
+
+</Aside>.
+
+<Aside variant="note" title="Curiosité">
+
+Le terme "soffritto" vient de "under-frying" : cuisson à une température inférieure à celle de la vraie friture, pour extraire la saveur sans trop brunir.
+
+</Aside>
+
+``mdx
+<Aside variant="tip" title="truc de grand-mère">
+
+Texte de l'astuce, traité comme du markdown.
+
+</Aside>
+```
+
+## Résumé des composants
+
+| Composant | Quand l'utiliser
+|---|---|
+| `<Figures>` | Une seule photo, éventuellement accompagnée d'un texte, sur deux colonnes.
+| `<Gallery>` | 2 ou 3 photos côte à côte dans une grille
+| `<Pullquote>` | Grande phrase extraite du texte |
+| `<TwoColumn>` | Deux blocs de texte côte à côte (par ex. ingrédients vs. processus) |
+| `<Aside>` | Boîte pour les astuces, les avertissements ou les anecdotes |
+
+Pour les images réelles, enregistrez-les dans `public/images/<nom de la recette>/` et référencez-les avec `src="/images/<nom de la recette>/photo.jpg"`.

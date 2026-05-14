@@ -1,0 +1,88 @@
+---
+heroImage: "/images/ricette/red-velvet-cake.webp"
+title: "Red Velvet Cake"
+description: "Bon et vegan ! Je l'ai adapté pour en faire 28 parts (non sans galère) et il a conquis tout le monde."
+pubDate: "2025-12-09"
+category: "Desserts"
+tags: ["4 stagioni", "Dolci", "Torte", "Compleanno", "Piatti dal mondo"]
+lang: "fr"
+translationKey: "red-velvet-cake"
+---
+
+<!-- c9ca99_3acefd1bc70f458f9681a9bbdcc0ce7c~mv2.png -->
+<!-- c9ca99_5a926fd43cdf44e0b4e048486424e343~mv2.png -->
+<!-- c9ca99_d9ef42a2ed5e4361bbb15b439ca6a3df~mv2.png -->
+
+Bon et vegan ! Je l'ai adapté pour en faire 28 parts (non sans galère) et il a conquis tout le monde. Je le referai, en améliorant surtout le rouge, qui n'a pas pris ici (heureusement sans gâcher le goût).
+
+## Infos rapides
+
+- **Portions :** 10
+- **Préparation :** 4 h 30 (20 min pour la base, 10 min pour la garniture, beaucoup de temps de refroidissement et de décoration)
+- **Cuisson :** 45 minutes
+- **Matériel :** 2 saladiers, fouet électrique, moule à charnière de 24 cm, spatule pour étaler la garniture, règle et cure-dents
+- **Note :** tu peux la décorer sur un thème de Noël ou comme tu veux !
+
+## Ingrédients
+
+**Base :**
+- 250 g de farine T45
+- 2 cuillères à soupe de cacao amer
+- 200 g de sucre de canne
+- 1 cuillère à café d'extrait de vanille
+- 250 g de yaourt de soja nature
+- 120 ml de lait de soja
+- 120 ml d'huile de tournesol
+- 3 cuillères à café de colorant rouge en gel
+- 1 cuillère à café de jus de citron
+- 1 cuillère à café de bicarbonate de soude
+- 1 cuillère à café de vinaigre de cidre
+
+**Garniture :**
+- 250 g de fromage frais végétal type cream cheese
+- 200 ml de crème de soja (ou crème végétale)
+- 120 g de sucre glace
+- 1 cuillère à café d'extrait de vanille
+
+**Pour décorer :**
+- Fraises
+- Crème de soja (ou crème végétale) fouettée
+
+## Préparation
+
+### 1. Prépare la pâte du gâteau
+
+- Dans un grand saladier, mélange tous les ingrédients secs sauf le bicarbonate : farine T45, cacao amer, sucre de canne, extrait de vanille.
+- Dans un autre saladier, mélange les liquides : yaourt de soja, lait de soja, huile, colorant rouge, jus de citron.
+- Verse les liquides dans le saladier des secs petit à petit, en fouettant jusqu'à obtenir une pâte homogène.
+- Dans un petit bol, mélange le bicarbonate avec le vinaigre de cidre : une mousse se forme.
+- Verse aussitôt ce mélange dans la pâte et mélange brièvement (sans trop insister).
+
+### 2. Cuisson du gâteau
+
+- Verse la pâte dans un moule à charnière de 24 cm beurré et fariné.
+- Cuis à 180 °C pendant 40 à 45 minutes, le bord du moule à mi-hauteur du four.
+- Fais le test du cure-dent : il doit ressortir sec.
+- Sors le gâteau et laisse-le refroidir complètement (au moins 2 h).
+- Astuce : si le gâteau ne se démoule pas, mouille un torchon avec de l'eau bouillante et pose le moule dessus — le beurre fond et le gâteau se décolle !
+
+### 3. Prépare la garniture
+
+- Dans un saladier, travaille le cream cheese végétal avec le sucre glace (ajoutes-en la moitié, goûte) et l'extrait de vanille.
+- À part, monte la crème au fouet.
+- Incorpore la crème montée au mélange en mélangeant délicatement de bas en haut.
+
+### 4. Monte le Red Velvet
+
+- Démoule le gâteau.
+- Retire la croûte la plus foncée : garde les chutes de côté (tu peux les utiliser comme miettes pour décorer).
+- Découpe le gâteau en 3 disques : pose la règle contre le gâteau, plante des cure-dents pour marquer la hauteur de coupe et sers-t'en comme guide.
+- Pose le premier disque sur le plat de service et étale environ 1/5 de la garniture (une couche d'environ 1 cm).
+- Couvre avec le deuxième disque, garnis de la même manière, ajoute le troisième.
+- À la spatule, recouvre les bords et le dessus avec le reste de crème.
+- (Facultatif) Étale un peu de crème sur le gâteau, lisse et mets au frais 5 minutes pour créer une sous-couche, puis recouvre complètement.
+- Décore les bords avec les miettes rouges récupérées des chutes, et le dessus avec de la crème fouettée et des fraises.
+
+### 5. Repos
+
+Laisse reposer le gâteau au frigo 1 heure avant de servir.

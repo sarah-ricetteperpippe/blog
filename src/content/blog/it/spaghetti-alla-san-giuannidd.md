@@ -5,6 +5,7 @@ description: "Che bella la baresità!"
 pubDate: "2026-01-05"
 category: "Primi piatti"
 tags: ["4 stagioni", "Pomodorini", "Capperi", "Primi piatti"]
+translationKey: "spaghetti-alla-san-giuannidd"
 ---
 
 <!-- c9ca99_baf913c05a924a93b96bf469c57bdea2~mv2.png -->

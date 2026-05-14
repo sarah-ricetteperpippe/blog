@@ -5,6 +5,7 @@ pubDate: "2025-02-24"
 heroImage: "/images/ricette/cotolette-funghi.webp"
 category: "Secondi piatti"
 tags: ["Funghi", "Secondi piatti", "4 stagioni"]
+translationKey: "cotolette-di-funghi-cardoncelli"
 ---
 
 <!-- c9ca99_38a0fa2ef73349e1a119cd7794fe1265~mv2.png -->

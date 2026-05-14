@@ -5,6 +5,7 @@ pubDate: "2025-11-11"
 category: "Primi piatti"
 tags: ["4 stagioni", "Tempeh", "Primi piatti"]
 heroImage: "/images/ricette/ragu-bianco-di-tempeh.webp"
+translationKey: "ragu-bianco-di-tempeh"
 ---
 
 <!-- 12ee43_4b67f415edef483da32072f67c61f5b4~mv2.png -->

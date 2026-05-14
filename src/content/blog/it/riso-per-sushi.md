@@ -5,6 +5,7 @@ description: "La base perfetta per nigiri, maki, uramaki e chirashi."
 pubDate: "2025-11-11"
 category: "Preparazioni base"
 tags: ["Piatti dal mondo", "Preparazioni base"]
+translationKey: "riso-per-sushi"
 ---
 
 <!-- 12ee43_1d23df77959b4e2c975544cb95f0371a~mv2.png -->

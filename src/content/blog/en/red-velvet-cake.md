@@ -1,0 +1,88 @@
+---
+heroImage: "/images/ricette/red-velvet-cake.webp"
+title: "Red Velvet Cake"
+description: "Delicious and vegan! I scaled it up to 28 servings (not without drama) and it won everyone over."
+pubDate: "2025-12-09"
+category: "Sweets"
+tags: ["4 stagioni", "Dolci", "Torte", "Compleanno", "Piatti dal mondo"]
+lang: "en"
+translationKey: "red-velvet-cake"
+---
+
+<!-- c9ca99_3acefd1bc70f458f9681a9bbdcc0ce7c~mv2.png -->
+<!-- c9ca99_5a926fd43cdf44e0b4e048486424e343~mv2.png -->
+<!-- c9ca99_d9ef42a2ed5e4361bbb15b439ca6a3df~mv2.png -->
+
+Delicious and vegan! I scaled it up to 28 servings (not without drama) and it won everyone over. I'll definitely make it again, mostly to nail the red — which didn't really pop here (luckily without affecting the flavour).
+
+## Quick info
+
+- **Servings:** 10
+- **Prep:** 4.5 hours (20 min for the base, 10 min for the filling, lots of cooling and decorating time)
+- **Baking:** 45 minutes
+- **Tools:** 2 bowls, electric whisk, 24 cm (9.4 in) springform tin, spatula for spreading the filling, ruler and toothpicks
+- **Heads-up:** you can decorate it Christmas-style or however you like!
+
+## Ingredients
+
+**Base:**
+- 250g (8.8 oz) plain flour
+- 2 tablespoons unsweetened cocoa
+- 200g (7.1 oz) brown sugar
+- 1 teaspoon vanilla extract
+- 250g (8.8 oz) plain soy yoghurt
+- 120ml (4.1 fl oz) soy milk
+- 120ml (4.1 fl oz) sunflower oil
+- 3 teaspoons red gel food colouring
+- 1 teaspoon lemon juice
+- 1 teaspoon baking soda
+- 1 teaspoon apple cider vinegar
+
+**Filling:**
+- 250g (8.8 oz) vegan cream cheese
+- 200ml (6.8 fl oz) soy cream (or other plant cream)
+- 120g (4.2 oz) icing sugar
+- 1 teaspoon vanilla extract
+
+**To decorate:**
+- Strawberries
+- Whipped soy cream (or other plant cream)
+
+## Method
+
+### 1. Make the cake batter
+
+- In a large bowl, mix all the dry ingredients except the baking soda: plain flour, cocoa, brown sugar, vanilla extract.
+- In another bowl, mix the wet ingredients: soy yoghurt, soy milk, sunflower oil, red food colouring, lemon juice.
+- Pour the wet into the dry a little at a time, whisking until smooth.
+- In a small bowl, combine the baking soda with the apple cider vinegar: it will foam up.
+- Pour the foam straight into the batter and stir briefly (don't overmix).
+
+### 2. Bake the cake
+
+- Pour the batter into a greased and floured 24 cm (9.4 in) springform tin.
+- Bake at 180°C (356°F) for 40–45 minutes, with the tin on the middle rack.
+- Toothpick test: it should come out dry.
+- Take it out and let it cool completely (at least 2 hours).
+- Tip: if the cake won't release, soak a tea towel in boiling water and rest the tin on it — the butter melts and the cake comes free!
+
+### 3. Make the filling
+
+- In a bowl, beat the vegan cream cheese with the icing sugar (add half first and taste) and the vanilla extract.
+- Separately, whip the cream with electric beaters.
+- Fold the whipped cream into the cream cheese mixture, working from the bottom up.
+
+### 4. Assemble the Red Velvet
+
+- Release the cake from the tin.
+- Trim off the darker crust: keep the scraps aside (you can crumble them for decorating).
+- Slice the cake into 3 discs: hold the ruler next to the cake, stick toothpicks in to mark the cutting line and use them as a guide.
+- Place the first disc on the serving plate and spread on about 1/5 of the filling (a layer about 1 cm / 0.4 in thick).
+- Top with the second disc, fill the same way, then add the third.
+- Use a spatula to cover the sides and top with the remaining filling.
+- (Optional) Spread a thin layer of cream all over, smooth it out and chill for 5 min to set a crumb coat, then cover completely.
+- Decorate the sides with red crumbs from the scraps, and the top with whipped cream and strawberries.
+
+### 5. Rest
+
+Let the cake rest in the fridge for 1 hour before serving.

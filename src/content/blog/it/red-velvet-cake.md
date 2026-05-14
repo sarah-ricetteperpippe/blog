@@ -5,6 +5,7 @@ description: "Buona e vegana! L'ho adattata per farne 28 porzioni (non senza dif
 pubDate: "2025-12-09"
 category: "Dolci"
 tags: ["4 stagioni", "Dolci", "Torte", "Compleanno", "Piatti dal mondo"]
+translationKey: "red-velvet-cake"
 ---
 
 <!-- c9ca99_3acefd1bc70f458f9681a9bbdcc0ce7c~mv2.png -->

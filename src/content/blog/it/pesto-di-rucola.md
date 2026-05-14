@@ -5,6 +5,7 @@ pubDate: "2025-11-12"
 heroImage: "/images/ricette/pesto-rucola.webp"
 category: "Pesti salse e creme"
 tags: ["4 stagioni", "Rucola", "Pesti salse e creme"]
+translationKey: "pesto-di-rucola"
 ---
 
 <!-- 12ee43_b833b714f3da4531be3835dac8db4df3~mv2.png -->

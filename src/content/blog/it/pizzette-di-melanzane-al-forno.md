@@ -5,6 +5,7 @@ pubDate: "2025-01-22"
 heroImage: "/images/ricette/pizzette-melanzane.webp"
 category: "Piatti unici"
 tags: ["Piatti unici", "Forno", "Melanzane", "4 stagioni"]
+translationKey: "pizzette-di-melanzane-al-forno"
 ---
 
 <!-- c9ca99_50c5336c11e94aee8f58091a2b8aa160~mv2.png -->

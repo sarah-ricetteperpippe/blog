@@ -5,6 +5,7 @@ pubDate: "2025-11-11"
 heroImage: "/images/ricette/torta-albumi-cacao.webp"
 category: "Dolci"
 tags: ["4 stagioni", "Dolci", "Torte", "Cioccolato", "Antispreco", "Merenda/colazione"]
+translationKey: "torta-di-albumi-e-cacao"
 ---
 
 <!-- 12ee43_aba7f5a4aa0c4d2997ff8c50396bfbd2~mv2.jpg -->

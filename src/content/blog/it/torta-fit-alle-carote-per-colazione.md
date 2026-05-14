@@ -5,6 +5,7 @@ pubDate: "2025-02-12"
 heroImage: "/images/ricette/torta-fit-carote.webp"
 category: "Dolci"
 tags: ["Torte", "Colazione", "Dolci"]
+translationKey: "torta-fit-alle-carote-per-colazione"
 ---
 
 <!-- c9ca99_70ee35943fa647d0981b52c931d6e29a~mv2.png -->

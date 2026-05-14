@@ -5,6 +5,7 @@ pubDate: "2025-11-18"
 heroImage: "/images/ricette/torta-soffice-cocco.webp"
 category: "Dolci"
 tags: ["Dolci", "Antispreco", "Torte"]
+translationKey: "torta-soffice-al-latte-di-cocco"
 ---
 
 Per consumare il latte di cocco che non finisce mai!
