@@ -1,213 +1,214 @@
 ---
-title: "Référence du composant éditorial"
-description: "Des exemples visuels et des extraits de code pour chaque composant de la mise en page éditoriale."
+title: "Référence des composants éditoriaux"
+description: "Exemples visuels et extraits de code pour chaque composant de mise en page éditoriale."
 pubDate: "2026-05-11"
 category: "Référence"
 tags: ["reference", "editorial"]
 lang: "fr"
 translationKey: "esempi-editoriali"
+draft: true
 ---
 
-Cette page présente chaque composant éditorial en action. Utilisez-la comme référence lorsque vous rédigez une recette ou un guide : trouvez le bloc dont vous avez besoin, copiez l'extrait, remplacez le contenu.
+Cette page montre chaque composant éditorial en action. Utilise-la comme référence quand tu écris une recette ou un guide : trouve le bloc dont tu as besoin, copie le snippet, remplace les contenus.
 
-Les composants sont disponibles **automatiquement** dans chaque fichier `.mdx` de `src/content/blog/{en,en,fr}/` et `src/content/academy/{en,en,fr}/`. Il n'est pas nécessaire de les importer au début du fichier.
+Les composants sont disponibles **automatiquement** dans chaque fichier `.mdx` de `src/content/blog/{it,en,fr}/` et `src/content/academy/{it,en,fr}/`. Pas besoin de les importer en haut du fichier.
 
-## Figures avec texte à côté - ratio portrait
+## Figure avec texte à côté — ratio portrait
 
-L'image prend ~36% de la largeur, le texte remplit le reste. Convient aux photos en format portrait.
+L'image prend ~36 % de la largeur, le texte remplit le reste. Adapté aux photos verticales.
 
-<Figure src="/images/demo/portrait.svg" alt="Caramel à l'ambre" side="right" ratio="portrait" caption="L'ambre, pas brûlé - le bon caramel.">
+<Figure src="/images/demo/portrait.svg" alt="Caramel ambré" side="right" ratio="portrait" caption="Ambré, pas brûlé — le bon caramel.">
 
-Faites fondre le sucre à feu moyen dans une poêle antiadhésive. Pas d'eau, pas de cuillère : juste du sucre et de la chaleur. Au début, rien ne semble se passer, puis les bords commencent à se liquéfier.
+Fais fondre le sucre à feu moyen dans une poêle antiadhésive. Pas d'eau, pas de cuillère : juste du sucre et de la chaleur. Au début on dirait qu'il ne se passe rien, puis les bords commencent à se liquéfier.
 
-C'est le moment le plus angoissant de la recette, mais c'est aussi celui où la règle d'or est : ne pas toucher. Plus on remue le caramel, plus on risque de le voir se cristalliser.
+C'est le moment le plus stressant de la recette, mais c'est aussi celui où la règle d'or est : ne pas toucher. Plus tu remues le caramel, plus tu risques de le faire cristalliser.
 
-</Figure>.
+</Figure>
 
-``mdx
+```mdx
 <Figure src="/images/demo/portrait.svg" side="right" ratio="portrait"
-        caption="Ambre, pas brûlé.">
+        caption="Ambré, pas brûlé.">
 
-Le paragraphe qui se trouve dans la colonne suivante.
+Le paragraphe qui vit dans la colonne à côté.
 
-</Figure>.
+</Figure>
 ```
 
-## Figures avec texte à côté d'elles - ratio paysage
+## Figure avec texte à côté — ratio landscape
 
-L'image occupe ~52% de la largeur. Convient aux images de paysage.
+L'image prend ~52 % de la largeur. Adapté aux photos horizontales.
 
 <Figure src="/images/demo/landscape.svg" alt="Le moule couvert" side="left" ratio="landscape" caption="Le moule couvert, prêt pour le bain-marie.">
 
-Versez le caramel chaud dans le moule en le faisant tourner de façon à ce qu'il recouvre uniformément le fond. Travaillez rapidement : il se solidifie en quelques secondes.
+Verse le caramel chaud dans le moule, en le tournant pour qu'il en tapisse le fond uniformément. Travaille vite : il se solidifie en quelques secondes.
 
-Pendant ce temps, préparez le bain-marie avec de l'eau déjà chaude jusqu'à la moitié de la hauteur du moule.
+Pendant ce temps, prépare le bain-marie avec de l'eau déjà chaude jusqu'à mi-hauteur du moule.
 
-</Figure>.
+</Figure>
 
-``mdx
+```mdx
 <Figure src="/images/demo/landscape.svg" side="left" ratio="landscape"
         caption="Le moule couvert, prêt pour le bain-marie.">
 
 Paragraphe à côté de l'image.
 
-</Figure>.
+</Figure>
 ```
 
-## Figures avec texte à côté - ratio carré
+## Figure avec texte à côté — ratio square
 
-Entre les deux : image ~44%, texte ~56%.
+Entre les deux : image ~44 %, texte ~56 %.
 
 <Figure src="/images/demo/square.svg" alt="Mise en place" side="right" ratio="square" caption="Mise en place : tout est prêt avant d'allumer.">
 
-Placez tous les ingrédients déjà pesés et coupés sur le plan de travail. En cuisine, la mise en place vaut plus que n'importe quelle technique avancée.
+Dispose sur ton plan de travail tous les ingrédients déjà pesés et coupés. En cuisine, la mise en place vaut plus que n'importe quelle technique avancée.
 
 </Figure>
 
-## Figure autonome (sans texte à côté)
+## Figure standalone (sans texte à côté)
 
-Si vous omettez les enfants, la figure est centrée dans la colonne de texte.
+Si tu omets les children, la figure se centre dans la colonne de texte.
 
-<Figure src="/images/demo/landscape.svg" alt="Le plat fini" caption="Le plat fini, prêt pour la table." />
+<Figure src="/images/demo/landscape.svg" alt="Le plat fini" caption="Le plat fini, prêt à servir." />
 
-``mdx
-<Figure src="/images/demo/landscape.svg" caption="Le plat fini". />
+```mdx
+<Figure src="/images/demo/landscape.svg" caption="Le plat fini." />
 ```
 
 ## Pullquote
 
-Grande phrase extraite du texte, avec un accent orange sur le côté. Utilisez-la pour la citation d'une recette.
+Phrase en gros extraite du corps de texte, avec une touche orange sur le côté. Utilise-la pour les phrases-mantra d'une recette.
 
-<Pullquote>Le caramel ne se mélange pas, il se regarde.</Pullquote>
+<Pullquote>Le caramel ne se remue pas, il se regarde.</Pullquote>
 
 Avec attribution :
 
 <Pullquote cite="Nonna Pina">En cuisine, la précipitation brûle tout.</Pullquote>
 
-``mdx
+```mdx
 <Pullquote>Le caramel ne se remue pas, il se regarde.</Pullquote>
 
-<Pullquote cite="Nonna Pina">En cuisine, la hâte brûle tout.</Pullquote>
+<Pullquote cite="Nonna Pina">En cuisine, la précipitation brûle tout.</Pullquote>
 ```
 
 ## Galerie 2 colonnes
 
-Grille d'images côte à côte. Sur mobile, se réduit à une seule colonne.
+Grille d'images côte à côte. Sur mobile, se replie en une seule colonne.
 
 <Gallery columns={2} items={[
-  { src : "/images/demo/step1.svg", alt : "Verser le caramel", caption : "Étape 1 - verser" }
-  { src : "/images/demo/step2.svg", alt : "Couvrir le moule", caption : "Étape 2 - couvrir" }
+  { src: "/images/demo/step1.svg", alt: "Verser le caramel", caption: "Étape 1 · verser" },
+  { src: "/images/demo/step2.svg", alt: "Couvrir le moule", caption: "Étape 2 · couvrir" },
 ]} />
 
 ```mdx
 <Gallery columns={2} items={[
-  { src : "/images/demo/step1.svg", caption : "Étape 1 - verser" }
-  { src : "/images/demo/step2.svg", caption : "Étape 2 - couvrir" },
+  { src: "/images/demo/step1.svg", caption: "Étape 1 · verser" },
+  { src: "/images/demo/step2.svg", caption: "Étape 2 · couvrir" },
 ]} />
 ```
 
 ## Galerie 3 colonnes
 
 <Gallery columns={3} items={[
-  { src : "/images/demo/step1.svg", caption : "Step 1" },
-  { src : "/images/demo/step2.svg", caption : "Step 2" },
-  { src : "/images/demo/step3.svg", caption : "Step 3" },
+  { src: "/images/demo/step1.svg", caption: "Étape 1" },
+  { src: "/images/demo/step2.svg", caption: "Étape 2" },
+  { src: "/images/demo/step3.svg", caption: "Étape 3" },
 ]} />
 
-## Galerie large
+## Galerie wide
 
-La galerie peut également s'étendre sur la colonne de texte avec `side="wide"`.
+La galerie peut aussi déborder de la colonne de texte avec `side="wide"`.
 
 <Gallery side="wide" columns={3} items={[
-  { src : "/images/demo/step1.svg", caption : "Step 1" },
-  { src : "/images/demo/step2.svg", caption : "Step 2" },
-  { src : "/images/demo/step3.svg", caption : "Step 3" },
+  { src: "/images/demo/step1.svg", caption: "Étape 1" },
+  { src: "/images/demo/step2.svg", caption: "Étape 2" },
+  { src: "/images/demo/step3.svg", caption: "Étape 3" },
 ]} />
 
-## TwoColumn - ingrédients à côté du processus
+## TwoColumn — ingrédients à côté du procédé
 
-Mise en page du texte sur deux colonnes. Utilisez deux `<div slot="left">` et `<div slot="right">`. Notez la ligne vide après le `<div>` d'ouverture et avant le `</div>` de fermeture - c'est pour que MDX traite le contenu en tant que markdown.
+Layout à deux colonnes textuelles. Utilise deux `<div slot="left">` et `<div slot="right">`. Note la ligne vide après le `<div>` d'ouverture et avant le `</div>` de fermeture — c'est nécessaire à MDX pour traiter le contenu comme du markdown.
 
 <TwoColumn ratio="1/2">
   <div slot="left">
 
   ### Ingrédients
-  - 200g de sucre
+  - 200 g de sucre
   - 4 gros œufs
-  - 500ml de lait entier
+  - 500 ml de lait entier
   - 1 gousse de vanille
   - une pincée de sel
 
   </div>
   <div slot="right">
 
-  ### Procédure
-  1) Préparer le caramel en faisant fondre le sucre à feu moyen.
-  2) Battre les œufs avec une pincée de sel, sans les fouetter.
-  3. Faire chauffer le lait avec la vanille jusqu'à ébullition.
-  4. Verser le lait sur les œufs en remuant lentement.
-  5. Filtrer le mélange et le verser dans le moule caramélisé.
-  6. Cuire au bain-marie à 160°C pendant 45-50 minutes.
+  ### Procédé
+  1. Prépare le caramel en faisant fondre le sucre à feu moyen.
+  2. Bats les œufs avec une pincée de sel, sans les monter.
+  3. Chauffe le lait avec la vanille jusqu'à frémissement.
+  4. Verse le lait sur les œufs en remuant lentement.
+  5. Filtre le mélange et verse-le dans le moule caramélisé.
+  6. Cuis au bain-marie à 160 °C pendant 45 à 50 minutes.
 
-  </div>.
-</TwoColumn>.
+  </div>
+</TwoColumn>
 
-``mdx
+```mdx
 <TwoColumn ratio="1/2">
   <div slot="left">
 
   ### Ingrédients
-  - 200g de sucre
+  - 200 g de sucre
   - 4 gros œufs
 
   </div>
   <div slot="right">
 
-  ### Procédure
-  1. préparer le caramel
+  ### Procédé
+  1. Prépare le caramel…
 
-  </div>.
+  </div>
 </TwoColumn>
 ```
 
-## Aside - tip variants, warning, note
+## Aside — variantes tip, warning, note
 
-Boîtes latérales pour les conseils, les avertissements et les notes.
+Encadrés latéraux pour astuces, avertissements et annotations.
 
-<Aside variant="tip" title="Grandma's trick">
+<Aside variant="tip" title="Astuce de mamie">
 
-Si l'oignon risque de brûler, ajoutez une cuillère à soupe d'eau et baissez le feu. Il mijote et ne se dessèche pas.
-
-</Aside>.
-
-<Aside variant="warning" title="Warning">
-
-Le caramel monte facilement au-dessus de 180°C : utilisez une casserole à long manche et n'approchez pas vos mains du bord. En cas d'éclaboussures sur la peau, refroidissez immédiatement sous l'eau froide.
-
-</Aside>.
-
-<Aside variant="note" title="Curiosité">
-
-Le terme "soffritto" vient de "under-frying" : cuisson à une température inférieure à celle de la vraie friture, pour extraire la saveur sans trop brunir.
+Si l'oignon menace de brûler, ajoute une cuillère d'eau et baisse le feu. Il étuve au lieu de sécher.
 
 </Aside>
 
-``mdx
-<Aside variant="tip" title="truc de grand-mère">
+<Aside variant="warning" title="Attention">
+
+Le caramel dépasse facilement les 180 °C : utilise une poêle à long manche et n'approche pas les mains du bord. S'il éclabousse sur la peau, refroidis tout de suite sous l'eau froide.
+
+</Aside>
+
+<Aside variant="nota" title="Le savais-tu ?">
+
+Le terme italien "soffritto" vient de "sotto-friggere" : cuire à une température plus basse que la vraie friture, pour extraire la saveur sans trop colorer.
+
+</Aside>
+
+```mdx
+<Aside variant="tip" title="Astuce de mamie">
 
 Texte de l'astuce, traité comme du markdown.
 
 </Aside>
 ```
 
-## Résumé des composants
+## Récapitulatif des composants
 
-| Composant | Quand l'utiliser
+| Composant | Quand l'utiliser |
 |---|---|
-| `<Figures>` | Une seule photo, éventuellement accompagnée d'un texte, sur deux colonnes.
-| `<Gallery>` | 2 ou 3 photos côte à côte dans une grille
-| `<Pullquote>` | Grande phrase extraite du texte |
-| `<TwoColumn>` | Deux blocs de texte côte à côte (par ex. ingrédients vs. processus) |
-| `<Aside>` | Boîte pour les astuces, les avertissements ou les anecdotes |
+| `<Figure>` | Photo unique, éventuellement avec texte à côté sur 2 colonnes |
+| `<Gallery>` | 2 ou 3 photos côte à côte en grille |
+| `<Pullquote>` | Phrase en gros extraite du corps |
+| `<TwoColumn>` | Deux blocs textuels côte à côte (ex. ingrédients vs procédé) |
+| `<Aside>` | Encadré pour astuces, avertissements ou anecdotes |
 
-Pour les images réelles, enregistrez-les dans `public/images/<nom de la recette>/` et référencez-les avec `src="/images/<nom de la recette>/photo.jpg"`.
+Pour les vraies images, sauvegarde-les dans `public/images/<nom-recette>/` et référence-les avec `src="/images/<nom-recette>/photo.jpg"`.

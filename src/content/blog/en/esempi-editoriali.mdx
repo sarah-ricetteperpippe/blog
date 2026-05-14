@@ -1,108 +1,109 @@
 ---
-title: "Editorial Component Reference"
+title: "Editorial component reference"
 description: "Visual examples and code snippets for each editorial layout component."
 pubDate: "2026-05-11"
 category: "Reference"
 tags: ["reference", "editorial"]
 lang: "en"
 translationKey: "esempi-editoriali"
+draft: true
 ---
 
-This page shows each editorial component in action. Use it as a reference when writing a recipe or guide: find the block you need, copy the snippet, replace the content.
+This page shows every editorial component in action. Use it as a reference when writing a recipe or guide: find the block you need, copy the snippet, swap in your content.
 
-The components are available **automatically** in each `.mdx` file of `src/content/blog/{en,en,fr}/` and `src/content/academy/{en,en,fr}/`. There is no need to import them at the top of the file.
+The components are available **automatically** in every `.mdx` file under `src/content/blog/{it,en,fr}/` and `src/content/academy/{it,en,fr}/`. No need to import them at the top of the file.
 
-## Figures with text beside them - ratio portrait
+## Figure with side text — ratio portrait
 
-The picture takes ~36% of the width, the text fills the rest. Suitable for portrait photos.
+The image takes ~36% of the width, the text fills the rest. Suited to vertical photos.
 
-<Figure src="/images/demo/portrait.svg" alt="Amber caramel" side="right" ratio="portrait" caption="Amber, not burnt - the right caramel.">
+<Figure src="/images/demo/portrait.svg" alt="Amber caramel" side="right" ratio="portrait" caption="Amber, not burnt — the right caramel.">
 
 Melt the sugar over medium heat in a non-stick pan. No water, no spoon: just sugar and heat. At first nothing seems to happen, then the edges start to liquefy.
 
-It is the most anxious moment in the recipe, but it is also the one where the golden rule is: don't touch. The more you stir the caramel, the more you risk it crystallising.
-
-</Figure>.
-
-``mdx
-<Figure src="/images/demo/portrait.svg" side="right" ratio="portrait"
-        caption="Amber, not burnt.">
-
-The paragraph that lives in the next column.
-
-</Figure>.
-```
-
-## Figures with text next to them - ratio landscape
-
-The image takes up ~52% of the width. Suitable for landscape pictures.
-
-<Figure src="/images/demo/landscape.svg" alt="The covered mould" side="left" ratio="landscape" caption="The covered mould, ready for the bain-marie.">
-
-Pour the hot caramel into the mould, rotating it so that it covers the bottom evenly. Work quickly: it solidifies in seconds.
-
-In the meantime, prepare the bain-marie with already hot water up to half the height of the mould.
-
-</Figure>.
-
-``mdx
-<Figure src="/images/demo/landscape.svg" side="left" ratio="landscape"
-        caption="The covered mould, ready for the bain-marie.">
-
-Paragraph next to the image.
-
-</Figure>.
-```
-
-## Figures with text beside - ratio square
-
-In between: image ~44%, text ~56%.
-
-<Figure src="/images/demo/square.svg" alt="Mise en place" side="right" ratio="square" caption="Mise en place: everything ready before switching on.">
-
-Arrange all the ingredients already weighed and cut on the worktop. In the kitchen, mise en place is worth more than any advanced technique.
+It's the most nerve-racking moment of the recipe, but it's also where the golden rule is: don't touch. The more you stir the caramel, the more you risk crystallising it.
 
 </Figure>
 
-## Standalone figure (without text beside it)
+```mdx
+<Figure src="/images/demo/portrait.svg" side="right" ratio="portrait"
+        caption="Amber, not burnt.">
 
-If you omit the children, the figure is centred in the text column.
+The paragraph that lives in the column next to it.
 
-<Figure src="/images/demo/landscape.svg" alt="The finished dish" caption="The finished dish, ready for the table." />
+</Figure>
+```
 
-``mdx
+## Figure with side text — ratio landscape
+
+The image takes ~52% of the width. Suited to horizontal photos.
+
+<Figure src="/images/demo/landscape.svg" alt="The covered mould" side="left" ratio="landscape" caption="The covered mould, ready for the water bath.">
+
+Pour the hot caramel into the mould, rotating it so it coats the bottom evenly. Work fast: it sets in seconds.
+
+Meanwhile prep the water bath with hot water up to halfway up the mould.
+
+</Figure>
+
+```mdx
+<Figure src="/images/demo/landscape.svg" side="left" ratio="landscape"
+        caption="The covered mould, ready for the water bath.">
+
+Paragraph next to the image.
+
+</Figure>
+```
+
+## Figure with side text — ratio square
+
+In between: image ~44%, text ~56%.
+
+<Figure src="/images/demo/square.svg" alt="Mise en place" side="right" ratio="square" caption="Mise en place: everything ready before you fire up the stove.">
+
+Lay out on your work surface all the ingredients, already weighed and chopped. In the kitchen, mise en place is worth more than any advanced technique.
+
+</Figure>
+
+## Standalone figure (no side text)
+
+If you omit the children, the figure centres in the text column.
+
+<Figure src="/images/demo/landscape.svg" alt="The finished dish" caption="The finished dish, ready to serve." />
+
+```mdx
 <Figure src="/images/demo/landscape.svg" caption="The finished dish." />
 ```
 
 ## Pullquote
 
-Large phrase pulled from the text, with a side orange accent. Use it for the pullquote of a recipe.
+A large phrase pulled from the body text, with an orange accent on the side. Use it for the mantra-lines of a recipe.
 
-<Pullquote>Caramel doesn't mix, it looks.</Pullquote>
+<Pullquote>You don't stir the caramel, you watch it.</Pullquote>
 
 With attribution:
 
 <Pullquote cite="Nonna Pina">In the kitchen, haste burns everything.</Pullquote>
 
-``mdx
-<Pullquote>The caramel is not stirred, it is looked at.</Pullquote>
+```mdx
+<Pullquote>You don't stir the caramel, you watch it.</Pullquote>
 
 <Pullquote cite="Nonna Pina">In the kitchen, haste burns everything.</Pullquote>
 ```
 
 ## 2-column gallery
 
-Grid of images side by side. On mobile collapses to one column.
+Grid of side-by-side images. On mobile it collapses to a single column.
 
 <Gallery columns={2} items={[
-  { src: "/images/demo/step1.svg", alt: "Pour caramel", caption: "Step 1 - pour" }
-  { src: "/images/demo/step2.svg", alt: "Cover the mould", caption: "Step 2 - cover" }
+  { src: "/images/demo/step1.svg", alt: "Pour the caramel", caption: "Step 1 · pour" },
+  { src: "/images/demo/step2.svg", alt: "Cover the mould", caption: "Step 2 · cover" },
 ]} />
 
 ```mdx
 <Gallery columns={2} items={[
-  { src: "/images/demo/step1.svg", caption: "Step 1 - pour" }
-  { src: "/images/demo/step2.svg", caption: "Step 2 - cover" },
+  { src: "/images/demo/step1.svg", caption: "Step 1 · pour" },
+  { src: "/images/demo/step2.svg", caption: "Step 2 · cover" },
 ]} />
 ```
 
@@ -114,9 +115,9 @@ Grid of images side by side. On mobile collapses to one column.
   { src: "/images/demo/step3.svg", caption: "Step 3" },
 ]} />
 
-## Gallery wide
+## Wide gallery
 
-The gallery can also span the text column with `side="wide"`.
+The gallery can also break out of the text column with `side="wide"`.
 
 <Gallery side="wide" columns={3} items={[
   { src: "/images/demo/step1.svg", caption: "Step 1" },
@@ -124,9 +125,9 @@ The gallery can also span the text column with `side="wide"`.
   { src: "/images/demo/step3.svg", caption: "Step 3" },
 ]} />
 
-## TwoColumn - ingredients next to the process
+## TwoColumn — ingredients next to method
 
-Two-column text layout. Use two `<div slot="left">` and `<div slot="right">`. Note the blank line after the opening `<div>` and before the closing `</div>` - this is for MDX to process the content as markdown.
+Two-column text layout. Use two `<div slot="left">` and `<div slot="right">`. Note the blank line after the opening `<div>` and before the closing `</div>` — MDX needs it to process the content as markdown.
 
 <TwoColumn ratio="1/2">
   <div slot="left">
@@ -141,73 +142,73 @@ Two-column text layout. Use two `<div slot="left">` and `<div slot="right">`. No
   </div>
   <div slot="right">
 
-  ### Procedure
-  1. Prepare the caramel by melting the sugar over medium heat.
-  2. Beat the eggs with a pinch of salt, without whipping them.
-  3. Heat the milk with the vanilla until it comes to the boil.
-  4. Pour the milk over the eggs, stirring slowly.
+  ### Method
+  1. Make the caramel by melting the sugar over medium heat.
+  2. Whisk the eggs with a pinch of salt, without aerating them.
+  3. Warm the milk with the vanilla just up to a simmer.
+  4. Pour the milk onto the eggs while stirring slowly.
   5. Strain the mixture and pour it into the caramelised mould.
-  6. Bake in a bain-marie at 160°C (320°F) for 45-50 minutes.
+  6. Bake in a water bath at 160°C (320°F) for 45–50 minutes.
 
-  </div>.
-</TwoColumn>.
+  </div>
+</TwoColumn>
 
-``mdx
+```mdx
 <TwoColumn ratio="1/2">
   <div slot="left">
 
   ### Ingredients
-  - 200g (7.1 oz) sugar
+  - 200g sugar
   - 4 large eggs
 
   </div>
   <div slot="right">
 
-  ### Procedure
-  1. Prepare the caramel
+  ### Method
+  1. Make the caramel…
 
-  </div>.
+  </div>
 </TwoColumn>
 ```
 
-## Aside - tip variants, warning, note
+## Aside — tip, warning, note variants
 
-Side boxes for tips, warnings and notes.
+Side boxes for tricks, warnings and annotations.
 
 <Aside variant="tip" title="Grandma's trick">
 
-If the onion is in danger of burning, add a tablespoon of water and lower the heat. It stews and does not dry out.
-
-</Aside>.
-
-<Aside variant="warning" title="Warning">
-
-Caramel easily rises above 180°C (356°F): use a pan with a long handle and do not bring your hands near the edge. If it splashes on your skin, cool immediately under cold water.
-
-</Aside>.
-
-<Aside variant="note" title="Curiosity">
-
-The term 'soffritto' comes from 'under-frying': cooking at a lower temperature than real frying, to extract flavour without browning too much.
+If the onion is about to burn, add a spoon of water and lower the heat. It stews instead of drying out.
 
 </Aside>
 
-``mdx
+<Aside variant="warning" title="Watch out">
+
+Caramel easily exceeds 180°C (356°F): use a pan with a long handle and keep your hands away from the rim. If it splashes on your skin, cool it immediately under cold water.
+
+</Aside>
+
+<Aside variant="nota" title="Fun fact">
+
+The Italian term "soffritto" comes from "sotto-friggere": cooking at a lower temperature than proper frying, to extract flavour without browning too much.
+
+</Aside>
+
+```mdx
 <Aside variant="tip" title="Grandma's trick">
 
-Text of the tip, processed as markdown.
+Tip body, processed as markdown.
 
 </Aside>
 ```
 
-## Summary of components
+## Component summary
 
 | Component | When to use it |
 |---|---|
-| `<Figures>` | Single photo, possibly with text next to it in 2 columns |
+| `<Figure>` | Single photo, optionally with side text in 2 columns |
 | `<Gallery>` | 2 or 3 photos side by side in a grid |
-| `<Pullquote>` | Large sentence extracted from the text |
-| `<TwoColumn>` | Two text blocks side by side (e.g. ingredients vs. process) |
-| | `<Aside>` | Box for tricks, warnings or trivia |
+| `<Pullquote>` | Large phrase pulled from the body |
+| `<TwoColumn>` | Two text blocks side by side (e.g. ingredients vs method) |
+| `<Aside>` | Box for tips, warnings or fun facts |
 
 For real images, save them in `public/images/<recipe-name>/` and reference them with `src="/images/<recipe-name>/photo.jpg"`.
