@@ -16,27 +16,27 @@ const ui = {
     title: 'Cancellazione iscrizione',
     pageTitle: 'Ti cancello dalla newsletter',
     pending: 'Sto cancellando la tua iscrizione…',
-    success: '✅ Sei stata cancellata dalla newsletter. Ci dispiace vederti andare!',
-    error: '❌ Qualcosa non ha funzionato. Riprova tra poco o scrivici a ricetteperpippe@gmail.com.',
-    missing: '⚠️ Link di cancellazione non valido (token mancante).',
+    success: 'Sei stata cancellata dalla newsletter. Ci dispiace vederti andare!',
+    error: 'Qualcosa non ha funzionato. Riprova tra poco o scrivici a ricetteperpippe@gmail.com.',
+    missing: 'Link di cancellazione non valido (token mancante).',
     home: 'Torna alla home',
   },
   en: {
     title: 'Unsubscribe',
     pageTitle: 'Unsubscribe from the newsletter',
     pending: 'Unsubscribing you…',
-    success: '✅ You have been unsubscribed from the newsletter. Sorry to see you go!',
-    error: '❌ Something went wrong. Try again later or write to ricetteperpippe@gmail.com.',
-    missing: '⚠️ Invalid unsubscribe link (missing token).',
+    success: 'You have been unsubscribed from the newsletter. Sorry to see you go!',
+    error: 'Something went wrong. Try again later or write to ricetteperpippe@gmail.com.',
+    missing: 'Invalid unsubscribe link (missing token).',
     home: 'Back to home',
   },
   fr: {
     title: 'Désinscription',
     pageTitle: 'Désinscription de la newsletter',
     pending: 'Désinscription en cours…',
-    success: '✅ Vous êtes désinscrit·e de la newsletter. Désolé·e de vous voir partir !',
-    error: '❌ Une erreur est survenue. Réessayez plus tard ou écrivez à ricetteperpippe@gmail.com.',
-    missing: '⚠️ Lien de désinscription invalide (jeton manquant).',
+    success: 'Vous êtes désinscrit·e de la newsletter. Désolé·e de vous voir partir !',
+    error: 'Une erreur est survenue. Réessayez plus tard ou écrivez à ricetteperpippe@gmail.com.',
+    missing: 'Lien de désinscription invalide (jeton manquant).',
     home: "Retour à l'accueil",
   },
 };
@@ -48,17 +48,37 @@ const base = (import.meta.env.BASE_URL as string).endsWith('/')
 ---
 
 <BaseLayout title={t.title} lang={lang}>
-  <section class="unsubscribe">
+  <section class="unsubscribe" id="unsub-section" data-state="pending">
     <h1>{t.pageTitle}</h1>
-    <p
-      id="unsub-message"
-      data-pending={t.pending}
-      data-success={t.success}
-      data-error={t.error}
-      data-missing={t.missing}
-    >
-      {t.pending}
-    </p>
+    <div class="unsub-feedback">
+      <span class="unsub-icon" aria-hidden="true">
+        <!-- Pending: spinner-style dots (mostrato di default) -->
+        <svg class="unsub-icon-svg unsub-icon-pending" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+        </svg>
+        <!-- Success: check in cerchio -->
+        <svg class="unsub-icon-svg unsub-icon-success" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/>
+        </svg>
+        <!-- Error: X in cerchio -->
+        <svg class="unsub-icon-svg unsub-icon-error" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="9"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/>
+        </svg>
+        <!-- Missing: triangolo di avviso -->
+        <svg class="unsub-icon-svg unsub-icon-missing" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3 2 21h20L12 3z"/><line x1="12" y1="10" x2="12" y2="14"/><circle cx="12" cy="17.5" r="0.5" fill="currentColor"/>
+        </svg>
+      </span>
+      <p
+        id="unsub-message"
+        data-pending={t.pending}
+        data-success={t.success}
+        data-error={t.error}
+        data-missing={t.missing}
+      >
+        {t.pending}
+      </p>
+    </div>
     <p class="back">
       <a href={`${base}${lang}/`}>{t.home}</a>
     </p>
@@ -82,8 +102,20 @@ const base = (import.meta.env.BASE_URL as string).endsWith('/')
   .unsubscribe #unsub-message {
     font-size: 1.125rem;
     line-height: 1.6;
-    margin-bottom: 2rem;
+    margin: 0 0 2rem 0;
   }
+  .unsub-feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .unsub-icon { display: inline-flex; align-items: center; justify-content: center; }
+  .unsub-icon-svg { display: none; }
+  .unsubscribe[data-state="pending"] .unsub-icon-pending { display: block; color: #8d8580; }
+  .unsubscribe[data-state="success"] .unsub-icon-success { display: block; color: var(--color-primary-green, #598d38); }
+  .unsubscribe[data-state="error"]   .unsub-icon-error   { display: block; color: var(--color-primary-orange, #e76e51); }
+  .unsubscribe[data-state="missing"] .unsub-icon-missing { display: block; color: #c89a3c; }
   .unsubscribe .back a {
     color: #1d0e03;
     text-decoration: underline;
@@ -92,18 +124,26 @@ const base = (import.meta.env.BASE_URL as string).endsWith('/')
 
 <script>
   const WEBHOOK = import.meta.env.PUBLIC_UNSUBSCRIBE_WEBHOOK;
+  const sectionEl = document.getElementById('unsub-section') as HTMLElement | null;
   const messageEl = document.getElementById('unsub-message') as HTMLElement | null;
-  if (!messageEl) {
+
+  type UnsubState = 'pending' | 'success' | 'error' | 'missing';
+  function setState(state: UnsubState) {
+    if (sectionEl) sectionEl.dataset.state = state;
+    if (messageEl) messageEl.textContent = messageEl.dataset[state] ?? '';
+  }
+
+  if (!messageEl || !sectionEl) {
     // page hydration race; nothing to do
   } else {
     const params = new URLSearchParams(window.location.search);
     const token = params.get('token');
 
     if (!token) {
-      messageEl.textContent = messageEl.dataset.missing ?? '';
+      setState('missing');
     } else if (!WEBHOOK) {
       console.error('PUBLIC_UNSUBSCRIBE_WEBHOOK is not configured');
-      messageEl.textContent = messageEl.dataset.error ?? '';
+      setState('error');
     } else {
       (async () => {
         try {
@@ -113,13 +153,13 @@ const base = (import.meta.env.BASE_URL as string).endsWith('/')
             body: JSON.stringify({ token }),
           });
           if (res.ok) {
-            messageEl.textContent = messageEl.dataset.success ?? '';
+            setState('success');
           } else {
             throw new Error(`Non-OK ${res.status}`);
           }
         } catch (err) {
           console.error('unsubscribe failed', err);
-          messageEl.textContent = messageEl.dataset.error ?? '';
+          setState('error');
         }
       })();
     }
