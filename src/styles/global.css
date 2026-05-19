@@ -349,11 +349,18 @@ p {
 .lang-switcher { display: flex; gap: 0.4rem; align-items: center; }
 
 .lang-flag {
-  font-size: 1.4rem;
+  display: inline-flex;
+  align-items: center;
   line-height: 1;
   opacity: 0.45;
   transition: opacity 0.2s ease, transform 0.2s ease;
   text-decoration: none;
+  /* font-size controlla la dimensione delle SVG flag-icons (width 1.33em) */
+  font-size: 1.1rem;
+}
+.lang-flag .fi {
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 .lang-flag:hover { opacity: 0.8; transform: scale(1.15); }
 .lang-flag--active { opacity: 1; transform: scale(1.1); }
@@ -638,7 +645,9 @@ p {
   left: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-primary-green);
   pointer-events: none;
 }
 .search-input {
@@ -1397,7 +1406,7 @@ p {
   }
   .header-nav a { font-size: 0.85rem; }
   .lang-switcher { gap: 0.3rem; }
-  .lang-flag { font-size: 1.1rem; }
+  .lang-flag { font-size: 0.95rem; }
 
   /* Hero: titolo ridotto, padding contenuti */
   .hero-section { min-height: auto; padding: 2.5rem 1rem 2rem; }
