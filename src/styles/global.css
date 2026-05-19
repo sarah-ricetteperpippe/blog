@@ -969,11 +969,15 @@ p {
   height: 1.1rem;
   border: 2px solid var(--color-primary-orange);
   vertical-align: middle;
-  margin-left: 0.6rem;
   cursor: pointer;
   position: relative;
   flex-shrink: 0;
   transition: background 0.15s;
+}
+/* Wrapper: tiene "ultima parola + nbsp + check" sulla stessa riga.
+   Senza questo, il check puo' finire a capo da solo. */
+.step-check-wrap {
+  white-space: nowrap;
 }
 .step-check.checked {
   background: var(--color-primary-orange);
