@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import 'flag-icons/css/flag-icons.min.css';
 import Search from 'astro-pagefind/components/Search';
 
 export interface Props {
@@ -36,10 +37,12 @@ const footerLabels = {
 
 const footerT = footerLabels[lang as keyof typeof footerLabels] ?? footerLabels.it;
 
+// flag-icons usa codici ISO 3166-1 alpha-2; per l'inglese usiamo `gb`
+// (Gran Bretagna) per coerenza con la bandierina precedente 🇬🇧.
 const flags = [
-  { code: 'it', flag: '🇮🇹', label: 'Italiano' },
-  { code: 'en', flag: '🇬🇧', label: 'English' },
-  { code: 'fr', flag: '🇫🇷', label: 'Français' },
+  { code: 'it', flagCode: 'it', label: 'Italiano' },
+  { code: 'en', flagCode: 'gb', label: 'English' },
+  { code: 'fr', flagCode: 'fr', label: 'Français' },
 ];
 
 function switchLangUrl(targetLang: string) {
@@ -111,14 +114,14 @@ function switchLangUrl(targetLang: string) {
         </svg>
       </button>
       <div class="lang-switcher">
-        {flags.map(({ code, flag, label }) => (
+        {flags.map(({ code, flagCode, label }) => (
           <a
             href={switchLangUrl(code)}
             class={`lang-flag ${lang === code ? 'lang-flag--active' : ''}`}
             title={label}
             aria-label={label}
           >
-            {flag}
+            <span class={`fi fi-${flagCode}`} aria-hidden="true"></span>
           </a>
         ))}
       </div>

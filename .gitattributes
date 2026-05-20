@@ -1,0 +1,39 @@
+# Normalizza line endings per evitare problemi cross-platform.
+# Senza questo, Git su Windows applica core.autocrlf=true e converte i fine
+# riga a CRLF al checkout, rompendo lo shebang del pre-commit hook
+# (`bash\r: bad interpreter`) e sporcando i diff dei file di contenuto.
+
+# Default: tratta tutto come testo, normalizza a LF nel repo,
+# checkout con line endings nativi del SO (Git sceglie).
+* text=auto eol=lf
+
+# Script di shell: LF obbligatorio sempre, anche su Windows.
+*.sh text eol=lf
+scripts/hooks/* text eol=lf
+
+# File di contenuto: LF per diff puliti.
+*.md text eol=lf
+*.mdx text eol=lf
+*.astro text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+
+# Binari: non normalizzare mai.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.pdf binary
