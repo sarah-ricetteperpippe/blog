@@ -28,7 +28,7 @@ const ui = {
     heroDesc: 'Benvenuti su <em class="hero-brand">Ricette per pippe</em>,<br>il luogo perfetto per scoprire nuove ricette a prova di incapace, testate e approvate da Sarah.<br>Per pippe in cucina che ambiscono alla mera sopravvivenza,<br>e per tutte quelle che ogni tanto sperano anche di fare (umilmente) figura!',
     cta: 'Scopri di più',
     subscribe: 'Iscriviti',
-    latest: 'Ultimi articoli',
+    latest: 'Ricette alla rinfusa',
     allPosts: 'Vai alle ricette',
     marquee: ['Se può farlo una pippa come me, puoi farlo anche tu!'],
     newsletterTitle: 'Ricevi ricettine!',
@@ -45,7 +45,7 @@ const ui = {
     heroDesc: 'Welcome to Ricette per pippe, the perfect place to discover new foolproof recipes, tested and approved by Sarah.',
     cta: 'Discover more',
     subscribe: 'Subscribe',
-    latest: 'Latest posts',
+    latest: 'A grab bag of recipes',
     allPosts: 'Go to recipes',
     marquee: ['If a total klutz like me can do it, so can you!'],
     newsletterTitle: 'Get little recipes!',
@@ -62,7 +62,7 @@ const ui = {
     heroDesc: 'Bienvenue sur Ricette per pippe, le lieu idéal pour découvrir des recettes simples et infaillibles, testées et approuvées par Sarah.',
     cta: 'Découvrir',
     subscribe: "S'abonner",
-    latest: 'Derniers articles',
+    latest: 'Recettes en vrac',
     allPosts: 'Toutes mes recettes',
     marquee: ['Si une quiche comme moi peut le faire, vous pouvez le faire aussi !'],
     newsletterTitle: 'Recevez des petites recettes !',
@@ -86,8 +86,8 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
     <h1 class="hero-title js-reveal">{t.heroTitle.split('\n').map((line, i) => <>{line}{i === 0 && <br/>}</>)}</h1>
     <p class="hero-description js-reveal" set:html={t.heroDesc} />
     <div class="hero-buttons js-reveal">
-      <a href={`${base}${lang}/blog/`} class="btn-primary">{t.cta}</a>
-      <a href={`${base}${lang}/blog/`} class="btn-secondary">{t.subscribe}</a>
+      <a href="#ricette" class="btn-primary">{t.cta}</a>
+      <a href="#newsletter" class="btn-secondary">{t.subscribe}</a>
     </div>
   </section>
 
@@ -101,7 +101,7 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
     <img src={`${base}main-banner.png`} alt="Ricette per pippe" class="home-banner-img" loading="lazy" />
   </div>
 
-  <section class="recipes-section">
+  <section class="recipes-section" id="ricette">
     <h2 class="section-title js-reveal">{t.latest}</h2>
     <div class="recipes-grid recipes-grid--home">
       {posts.map(post => (
@@ -138,7 +138,7 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
     </div>
   </section>
 
-  <section class="newsletter-section js-reveal">
+  <section class="newsletter-section js-reveal" id="newsletter">
     <div class="newsletter-inner">
       <div class="newsletter-card">
         <h2 class="newsletter-title">{t.newsletterTitle}</h2>

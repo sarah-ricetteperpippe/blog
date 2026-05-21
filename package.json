@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "translate": "node scripts/translate.js"
+    "translate": "node scripts/translate.js",
+    "prepare": "git config core.hooksPath scripts/hooks || true"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.0.0",
@@ -14,6 +15,7 @@
     "astro": "^4.0.0",
     "astro-pagefind": "^1.8.5",
     "resend": "^4.0.0"
+    "flag-icons": "^7.5.0"
   },
   "devDependencies": {
     "@netlify/functions": "^2.8.0",

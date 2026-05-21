@@ -9,9 +9,10 @@
 # La traduzione tonale fine viene fatta in seguito con la skill Cowork
 # `translate-recipes-edit` (rifinisce il draft DeepL).
 #
-# Installazione (una tantum, dal Mac, nella root della repo):
-#   ln -s ../../scripts/hooks/pre-commit .git/hooks/pre-commit
-#   chmod +x scripts/hooks/pre-commit
+# Installazione: nessuna manuale richiesta. Il `prepare` script di npm
+# imposta `git config core.hooksPath scripts/hooks` al primo `npm install`,
+# quindi questo file viene riconosciuto come hook su qualsiasi SO (Mac,
+# Windows con Git Bash, Linux). Senza symlink, senza chmod manuale.
 #
 # Bypass: `git commit --no-verify`
 
