@@ -1,5 +1,8 @@
 [build]
-  command = "npm run build"
+  # Rimuoviamo il lockfile prima di npm install per aggirare il bug npm con le
+  # optional deps di piattaforma (Rollup, esbuild). Su Linux il fresh install
+  # registra correttamente i binari linux-x64-gnu nel nuovo lockfile.
+  command = "rm -f package-lock.json && npm install && npm run build"
   publish = "dist"
 
 [build.environment]
