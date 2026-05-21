@@ -219,7 +219,83 @@ Netlify deploya su produzione. Ripeti almeno il test 6.1 e 6.6 sull'URL di prod 
 
 ---
 
-## Step 8 — Decommissionare n8n
+## Step 8a — GitHub Action: trigger automatico send-recipe
+
+Una volta che la PR è mergiata in main, l'automazione di invio newsletter sui nuovi post è già in piedi nel repo:
+
+- Workflow: `.github/workflows/notify-newsletter.yml`
+- Script: `scripts/notify-newsletter.mjs`
+
+Cosa fa: ad ogni push su `main` che tocca file sotto `src/content/blog/` o `src/content/academy/`, parte una job che:
+
+1. Legge i file `.md` / `.mdx` aggiunti in quel commit
+2. Parsa il frontmatter (title, description, heroImage, pubDate)
+3. Salta i draft (`draft: true` nel frontmatter)
+4. Aspetta che il primo nuovo post sia effettivamente live sul sito (poll HEAD ogni 10s, max 10 min — gestisce il delay di deploy Netlify)
+5. POSTa l'array di post a `/api/send-recipe` con bearer token
+6. La function manda le mail batch agli iscritti delle lingue corrispondenti
+
+### Setup una tantum su GitHub
+
+Va su https://github.com/sarah-ricetteperpippe/blog/settings/secrets/actions e aggiungi:
+
+**Repository secret** (tab "Secrets"):
+- Name: `SEND_RECIPE_TOKEN`
+- Value: esattamente lo stesso valore di `SEND_RECIPE_TOKEN` configurato su Netlify
+
+**Repository variable** (tab "Variables", accanto a Secrets):
+- Name: `SITE_URL`
+- Value: `https://ricetteperpippe.com` (o `.netlify.app` se non hai il custom domain)
+
+Senza queste due cose il workflow fallisce con un errore esplicito allo step "Run notify script".
+
+### Trigger manuale (utile per test)
+
+Vai su `https://github.com/sarah-ricetteperpippe/blog/actions/workflows/notify-newsletter.yml` → bottone **Run workflow** → seleziona `main` → **Run**.
+
+Lancia lo script come se ci fosse stato un push. Se nel commit più recente non ci sono nuovi `.md` sotto blog/academy, esce con "No newly added content files" e nessun invio.
+
+### Test end-to-end del trigger
+
+1. Crea un file di prova: `src/content/blog/it/test-newsletter-trigger.md` con frontmatter completo:
+   ```yaml
+   ---
+   title: "Test trigger newsletter"
+   description: "Sto solo verificando che la GH Action funzioni."
+   pubDate: "2026-05-21"
+   heroImage: "/images/ricette/vellutata-funghi.webp"
+   draft: true
+   ---
+   Testo placeholder.
+   ```
+2. Commit + push su main.
+3. Vai su Actions → vedi il workflow partire.
+4. Siccome `draft: true`, lo script lo skippa e esce senza mandare email. Output: "Skipping draft".
+5. Rimuovi `draft: true` dal file, commit + push.
+6. Workflow riparte → aspetta deploy → manda email agli iscritti IT.
+7. Cancella il file di prova quando hai finito (rimane visibile sul sito sennò).
+
+---
+
+## Step 8b — Test della mail di conferma disiscrizione
+
+La function `unsubscribe.ts` ora oltre a marcare la riga su Supabase manda anche una mail di conferma cancellazione nella lingua dell'iscritto.
+
+### Test rapido
+
+1. Iscriviti come test (vedi Step 6.1).
+2. Apri il Sheet/Supabase, prendi l'`unsubscribe_token` della tua riga.
+3. Apri nel browser: `https://<dominio-prod>/it/unsubscribe?token=<UUID>` (o EN/FR).
+4. La pagina mostra "✅ Sei stata cancellata".
+5. **Controlla inbox**: deve arrivare una mail "Cancellazione confermata — Ricette per Pippe" con il template branded.
+
+Se non arriva la mail di conferma ma la riga su Supabase è correttamente marcata `unsubscribed=true`, controlla:
+- Netlify → Functions → tab Logs della function `unsubscribe` → cerca `unsubscribe confirm email failed` o eccezioni.
+- Resend dashboard → Logs → cerca l'invio.
+
+---
+
+## Step 9 — Decommissionare n8n
 
 Una volta che la prod funziona stabilmente per qualche giorno:
 

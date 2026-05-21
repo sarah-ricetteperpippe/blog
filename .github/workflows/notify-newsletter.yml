@@ -27,6 +27,10 @@ jobs:
 
       - name: Run notify script
         env:
-          N8N_PUBLISH_WEBHOOK: ${{ secrets.N8N_PUBLISH_WEBHOOK }}
-          SITE_URL: 'https://ricetteperpippe.com'
+          # SITE_URL come repo variable (Settings → Variables → Actions).
+          # Fallback su ricetteperpippe.com se la variable non è impostata.
+          SITE_URL: ${{ vars.SITE_URL || 'https://ricetteperpippe.com' }}
+          # SEND_RECIPE_TOKEN come repo secret (Settings → Secrets → Actions).
+          # Stesso valore esatto della env var Netlify SEND_RECIPE_TOKEN.
+          SEND_RECIPE_TOKEN: ${{ secrets.SEND_RECIPE_TOKEN }}
         run: node scripts/notify-newsletter.mjs

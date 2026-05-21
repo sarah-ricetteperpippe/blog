@@ -206,6 +206,82 @@ export function newPostEmail(
   };
 }
 
+// ---------- UNSUBSCRIBE CONFIRMATION ---------------------------------
+
+const UNSUBSCRIBE_COPY = {
+  it: {
+    subject: 'Cancellazione confermata — Ricette per Pippe',
+    greeting: (nome: string) => `Ciao <strong>${escapeHtml(nome)}</strong>!`,
+    p1: "Ti scrivo per confermarti che la tua iscrizione alla newsletter di Ricette per Pippe è stata cancellata.",
+    p2: "Mi dispiace vederti andare. Se ti va di dirmi cosa non ha funzionato (troppe email? non era roba per te?), rispondi pure a questa mail — leggo tutto, prometto.",
+    sign: 'A presto in cucina, quando vorrai.<br><strong>Sarah 🐱</strong>',
+    footer: 'Hai ricevuto questa mail perché hai appena cliccato il link di cancellazione su ricetteperpippe.it.',
+  },
+  en: {
+    subject: 'Unsubscribe confirmed — Recipes for Clueless Cooks',
+    greeting: (nome: string) => `Hi <strong>${escapeHtml(nome)}</strong>!`,
+    p1: 'Quick note to confirm your subscription to Recipes for Clueless Cooks has been cancelled.',
+    p2: "Sorry to see you go. If you want to tell me what didn't work (too many emails? not your thing?), just reply to this — I read everything, promise.",
+    sign: 'See you in the kitchen, whenever you feel like it.<br><strong>Sarah 🐱</strong>',
+    footer: 'You received this email because you just clicked the unsubscribe link on ricetteperpippe.it.',
+  },
+  fr: {
+    subject: 'Désinscription confirmée — Recettes pour Quiches',
+    greeting: (nome: string) => `Bonjour <strong>${escapeHtml(nome)}</strong> !`,
+    p1: "Petit mot pour vous confirmer que votre inscription à la newsletter Recettes pour Quiches a bien été annulée.",
+    p2: "Désolée de vous voir partir. Si vous voulez me dire ce qui n'a pas marché (trop d'emails ? pas votre truc ?), répondez à cet email — je lis tout, promis.",
+    sign: 'À bientôt en cuisine, quand vous voudrez.<br><strong>Sarah 🐱</strong>',
+    footer: 'Vous avez reçu cet email car vous venez de cliquer sur le lien de désinscription sur ricetteperpippe.it.',
+  },
+} as const;
+
+export function unsubscribeConfirmEmail(
+  lang: Lang,
+  opts: { nome: string; fromEmail: string; siteUrl: string },
+): EmailEnvelope {
+  const b = BRAND[lang];
+  const c = UNSUBSCRIBE_COPY[lang];
+  const logoUrl = `${opts.siteUrl.replace(/\/$/, '')}/logo-pippe.png`;
+
+  const html = `<!DOCTYPE html>
+<html lang="${lang}">
+<body style="margin:0;padding:0;background:#f9f5f0;font-family:Georgia,serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f9f5f0;padding:32px 16px;">
+    <tr><td align="center">
+      <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#ffffff;border:1px solid #1D0E03;">
+        <tr>
+          <td align="center" style="padding:28px 32px 20px;border-bottom:1px solid #1D0E03;">
+            <img src="${logoUrl}" alt="${escapeHtml(b.siteName)}" width="80" style="display:block;margin:0 auto 10px;" />
+            <div style="font-size:26px;color:#598D38;font-family:Georgia,serif;font-style:italic;font-weight:bold;">${escapeHtml(b.siteName)}</div>
+            <div style="font-size:13px;color:#E76E51;font-style:italic;margin-top:4px;">${escapeHtml(b.tagline)}</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:32px 40px;">
+            <p style="font-size:16px;color:#1D0E03;line-height:1.6;margin:0 0 16px;">${c.greeting(opts.nome)}</p>
+            <p style="font-size:16px;color:#1D0E03;line-height:1.6;margin:0 0 16px;">${c.p1}</p>
+            <p style="font-size:16px;color:#1D0E03;line-height:1.6;margin:0 0 28px;">${c.p2}</p>
+            <p style="font-size:15px;color:#1D0E03;line-height:1.6;margin:0;">${c.sign}</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:16px 40px;border-top:1px solid #1D0E03;background:#f9f5f0;">
+            <p style="font-size:12px;color:#8D8580;text-align:center;margin:0;">${c.footer}</p>
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>`;
+
+  return {
+    from: `${b.fromName} <${opts.fromEmail}>`,
+    subject: c.subject,
+    html,
+  };
+}
+
 // ---------- UTIL ------------------------------------------------------
 
 function escapeHtml(s: string): string {
