@@ -258,7 +258,28 @@ const formattedDate = pubDate
     box.addEventListener('keydown', (e) => {
       if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); box.click(); }
     });
-    li.appendChild(box);
+
+    // Wrap "ultima parola + nbsp + checkbox" in uno span con white-space: nowrap
+    // cosi' il check non va mai a capo separato dal punto finale dello step.
+    const walker = document.createTreeWalker(li, NodeFilter.SHOW_TEXT);
+    let lastTextNode: Text | null = null;
+    while (walker.nextNode()) lastTextNode = walker.currentNode as Text;
+
+    if (lastTextNode && lastTextNode.nodeValue) {
+      const m = lastTextNode.nodeValue.match(/^([\s\S]*?)(\S+)\s*$/);
+      if (m) {
+        lastTextNode.nodeValue = m[1];
+        const wrap = document.createElement('span');
+        wrap.className = 'step-check-wrap';
+        wrap.appendChild(document.createTextNode(m[2] + '\u00A0'));
+        wrap.appendChild(box);
+        lastTextNode.parentNode!.insertBefore(wrap, lastTextNode.nextSibling);
+      } else {
+        li.appendChild(box);
+      }
+    } else {
+      li.appendChild(box);
+    }
   });
 
   const copyBtn = document.getElementById('copy-link-btn') as HTMLButtonElement;
