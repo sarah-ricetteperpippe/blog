@@ -14,9 +14,16 @@
     "@supabase/supabase-js": "^2.45.0",
     "astro": "^4.0.0",
     "astro-pagefind": "^1.8.5",
-    "flag-icons": "^7.5.0"
+    "flag-icons": "^7.5.0",
+    "resend": "^4.0.0"
   },
   "devDependencies": {
+    "@netlify/functions": "^2.8.0",
     "deepl-node": "^1.24.0"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "*",
+    "@rollup/rollup-darwin-arm64": "*",
+    "@rollup/rollup-darwin-x64": "*"
   }
 }
