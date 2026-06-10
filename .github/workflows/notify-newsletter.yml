@@ -30,7 +30,7 @@ jobs:
           # SITE_URL come repo variable (Settings → Variables → Actions).
           # Fallback su ricetteperpippe.com se la variable non è impostata.
           SITE_URL: ${{ vars.SITE_URL || 'https://ricetteperpippe.com' }}
-          # SEND_RECIPE_TOKEN come repo secret (Settings → Secrets → Actions).
-          # Stesso valore esatto della env var Netlify SEND_RECIPE_TOKEN.
-          SEND_RECIPE_TOKEN: ${{ secrets.SEND_RECIPE_TOKEN }}
+          # N8N_SEND_RECIPE_WEBHOOK come repo secret (Settings → Secrets → Actions).
+          # Production URL del webhook n8n "Send recipe flow" (senza -test).
+          N8N_SEND_RECIPE_WEBHOOK: ${{ secrets.N8N_SEND_RECIPE_WEBHOOK }}
         run: node scripts/notify-newsletter.mjs

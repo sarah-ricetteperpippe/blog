@@ -4,14 +4,11 @@
 // Rileva i .md/.mdx aggiunti sotto src/content/{blog,academy}/<lang>/ nel
 // commit più recente, parsa il frontmatter, aspetta che il primo post sia
 // live sul sito (per gestire il delay del deploy Netlify), poi POSTa il
-// payload all'endpoint /api/send-recipe protetto da bearer token.
-//
-// Sostituisce la chiamata al webhook n8n con la chiamata diretta alla
-// Netlify Function send-recipe.
+// payload al webhook n8n "Send recipe flow".
 //
 // Env vars (impostate dal workflow):
-//   SITE_URL              URL pubblica del sito (es: https://ricetteperpippe.com)
-//   SEND_RECIPE_TOKEN     bearer token che protegge /api/send-recipe
+//   SITE_URL                  URL pubblica del sito (es: https://ricetteperpippe.com)
+//   N8N_SEND_RECIPE_WEBHOOK   Production URL del webhook n8n "Send recipe flow"
 
 import { execSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
@@ -20,11 +17,11 @@ const SITE_URL = (process.env.SITE_URL || 'https://ricetteperpippe.com').replace
   /\/$/,
   '',
 );
-const SEND_RECIPE_TOKEN = process.env.SEND_RECIPE_TOKEN;
+const N8N_SEND_RECIPE_WEBHOOK = process.env.N8N_SEND_RECIPE_WEBHOOK;
 
-if (!SEND_RECIPE_TOKEN) {
+if (!N8N_SEND_RECIPE_WEBHOOK) {
   console.error(
-    'SEND_RECIPE_TOKEN env var is not set. Add it as a repo secret on GitHub.',
+    'N8N_SEND_RECIPE_WEBHOOK env var is not set. Add it as a repo secret on GitHub.',
   );
   process.exit(1);
 }
@@ -168,16 +165,12 @@ if (!isLive) {
   process.exit(1);
 }
 
-// Send-recipe.
-const endpoint = `${SITE_URL}/api/send-recipe`;
-console.log(`\nPosting ${posts.length} post(s) to ${endpoint}...`);
+// Send-recipe via n8n webhook.
+console.log(`\nPosting ${posts.length} post(s) to n8n send-recipe webhook...`);
 
-const res = await fetch(endpoint, {
+const res = await fetch(N8N_SEND_RECIPE_WEBHOOK, {
   method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    Authorization: `Bearer ${SEND_RECIPE_TOKEN}`,
-  },
+  headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ posts }),
 });
 

@@ -207,9 +207,7 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
   // Newsletter form
   const form = document.getElementById('newsletter-form') as HTMLFormElement | null;
   const feedback = document.getElementById('newsletter-feedback') as HTMLElement | null;
-  const WEBHOOK =
-    import.meta.env.PUBLIC_NEWSLETTER_SUBSCRIBE_WEBHOOK ||
-    import.meta.env.PUBLIC_NEWSLETTER_WEBHOOK;
+  const WEBHOOK = import.meta.env.PUBLIC_NEWSLETTER_WEBHOOK;
   const submitBtn = form?.querySelector('button[type="submit"]') as HTMLButtonElement | null;
   const MSG_OK = feedback?.dataset.ok ?? 'Che coraggio!';
   const MSG_ERR = feedback?.dataset.err ?? 'Qualcosa è andato storto. Riprova tra poco.';
