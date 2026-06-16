@@ -7,7 +7,7 @@
 // Uso: npm run new-recipe
 
 import { createInterface } from 'node:readline';
-import { writeFileSync, existsSync } from 'node:fs';
+import { writeFileSync, existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -25,6 +25,22 @@ const CATEGORIES = [
   'Bevande',
 ];
 
+// Legge i tag già usati nelle ricette esistenti
+function getExistingTags() {
+  const tags = new Set();
+  const files = readdirSync(CONTENT_DIR).filter((f) => /\.(md|mdx)$/.test(f));
+  for (const file of files) {
+    const content = readFileSync(join(CONTENT_DIR, file), 'utf8');
+    const match = content.match(/^tags:\s*\[([^\]]*)\]/m);
+    if (!match) continue;
+    match[1].split(',').forEach((t) => {
+      const clean = t.trim().replace(/^["']|["']$/g, '');
+      if (clean && !['reference', 'editorial'].includes(clean)) tags.add(clean);
+    });
+  }
+  return [...tags].sort((a, b) => a.localeCompare(b, 'it'));
+}
+
 const rl = createInterface({ input: process.stdin, output: process.stdout });
 const ask = (q) => new Promise((res) => rl.question(q, res));
 
@@ -32,7 +48,7 @@ function toSlug(title) {
   return title
     .toLowerCase()
     .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '') // rimuovi accenti
+    .replace(/[̀-ͯ]/g, '')
     .replace(/[^a-z0-9\s-]/g, '')
     .trim()
     .replace(/\s+/g, '-');
@@ -97,17 +113,33 @@ if (!title) { console.error('Titolo obbligatorio.'); process.exit(1); }
 const description = (await ask('Descrizione breve (tono di pancia): ')).trim();
 if (!description) { console.error('Descrizione obbligatoria.'); process.exit(1); }
 
-console.log('\nCategorie disponibili:');
+// Categoria — selezione singola
+console.log('\nCategorie disponibili (scegli 1):');
 CATEGORIES.forEach((c, i) => console.log(`  ${i + 1}. ${c}`));
-const catChoice = (await ask('Scegli il numero della categoria: ')).trim();
+const catChoice = (await ask('Numero categoria: ')).trim();
 const category = CATEGORIES[parseInt(catChoice, 10) - 1];
 if (!category) { console.error('Categoria non valida.'); process.exit(1); }
 
-const tagsRaw = (await ask('Tag separati da virgola (es. Funghi, Secondi piatti, 4 stagioni): ')).trim();
-const tags = tagsRaw ? tagsRaw.split(',') : [category];
+// Tag — selezione multipla da lista esistente + possibilità di aggiungerne
+const existingTags = getExistingTags();
+console.log('\nTag esistenti:');
+existingTags.forEach((t, i) => process.stdout.write(`  ${i + 1}. ${t.padEnd(22)}`  + ((i + 1) % 3 === 0 ? '\n' : '')));
+console.log('\n');
+console.log('Inserisci i numeri separati da virgola (es. 3,7,12)');
+const tagNumbers = (await ask('Numeri tag esistenti (invio per saltare): ')).trim();
+const selectedTags = tagNumbers
+  ? tagNumbers.split(',').map((n) => existingTags[parseInt(n.trim(), 10) - 1]).filter(Boolean)
+  : [];
 
+const newTagsRaw = (await ask('Aggiungi nuovi tag separati da virgola (invio per saltare): ')).trim();
+const newTags = newTagsRaw ? newTagsRaw.split(',').map((t) => t.trim()).filter(Boolean) : [];
+
+const tags = [...new Set([...selectedTags, ...newTags])];
+if (tags.length === 0) tags.push(category);
+
+// Slug
 const slugSuggerito = toSlug(title);
-const slugInput = (await ask(`Slug (invio per usare "${slugSuggerito}"): `)).trim();
+const slugInput = (await ask(`\nSlug (invio per usare "${slugSuggerito}"): `)).trim();
 const slug = slugInput || slugSuggerito;
 
 rl.close();
