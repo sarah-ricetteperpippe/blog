@@ -14,7 +14,115 @@ import { createRequire } from 'node:module';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const CONTENT_DIR = join(__dirname, '../src/content/blog/it');
-
+#!/usr/bin/env node
+2
+// scripts/new-recipe.mjs
+3
+//
+4
+// Crea un nuovo file .mdx per una ricetta italiana in src/content/blog/it/
+5
+// con frontmatter e struttura già impostati.
+6
+//
+7
+// Uso: npm run new-recipe
+8
+​
+9
+import { createInterface } from 'node:readline';
+10
+import { writeFileSync, existsSync, readdirSync, readFileSync } from 'node:fs';
+11
+import { join, dirname } from 'node:path';
+12
+import { fileURLToPath } from 'node:url';
+ |  | 
+13
+ 
+14
+ 
+import { createRequire } from 'node:module';
+15
+ 
+17
+​
+18
+const __dirname = dirname(fileURLToPath(import.meta.url));
+19
+const CONTENT_DIR = join(__dirname, '../src/content/blog/it');
+20
+​
+ |  | 
+21
+ 
+22
+ 
+// Fonte di verità: src/config/taxonomy.json
+23
+ 
+const require = createRequire(import.meta.url);
+24
+ 
+const { blogCategories: CATEGORIES } = require('../src/config/taxonomy.json');
+25
+ 
+37
+​
+38
+// Legge i tag già usati nelle ricette esistenti
+39
+function getExistingTags() {
+40
+  const tags = new Set();
+41
+  const files = readdirSync(CONTENT_DIR).filter((f) => /\.(md|mdx)$/.test(f));
+42
+  for (const file of files) {
+43
+    const content = readFileSync(join(CONTENT_DIR, file), 'utf8');
+44
+    const match = content.match(/^tags:\s*\[([^\]]*)\]/m);
+45
+    if (!match) continue;
+46
+    match[1].split(',').forEach((t) => {
+47
+      const clean = t.trim().replace(/^["']|["']$/g, '');
+48
+      if (clean && !['reference', 'editorial'].includes(clean)) tags.add(clean);
+49
+    });
+50
+  }
+51
+  return [...tags].sort((a, b) => a.localeCompare(b, 'it'));
+52
+}
+53
+​
+54
+const rl = createInterface({ input: process.stdin, output: process.stdout });
+55
+const ask = (q) => new Promise((res) => rl.question(q, res));
+56
+​
+57
+function toSlug(title) {
+58
+  return title
+59
+    .toLowerCase()
+60
+    .normalize('NFD')
+61
+    .replace(/[̀-ͯ]/g, '')
+62
+    .replace(/[^a-z0-9\s-]/g, '')
+63
+    .trim()
+64
+    .replace(/\s+/g, '-');
 // Fonte di verità: src/config/taxonomy.json
 const require = createRequire(import.meta.url);
 const { blogCategories: CATEGORIES } = require('../src/config/taxonomy.json');
