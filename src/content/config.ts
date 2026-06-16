@@ -1,4 +1,8 @@
 import { defineCollection, z } from 'astro:content';
+import taxonomy from '../config/taxonomy.json';
+
+const [first, ...rest] = taxonomy.blogCategories;
+const categoryEnum = z.enum([first, ...rest] as [string, ...string[]]).optional();
 
 const blog = defineCollection({
   type: 'content',
@@ -7,7 +11,7 @@ const blog = defineCollection({
     description: z.string(),
     pubDate: z.coerce.date(),
     heroImage: z.string().optional(),
-    category: z.string().optional(),
+    category: categoryEnum,
     tags: z.array(z.string()).optional(),
     lang: z.enum(['it', 'en', 'fr']).default('it'),
     translationKey: z.string().optional(),
@@ -23,7 +27,7 @@ const academy = defineCollection({
     pubDate: z.coerce.date(),
     heroImage: z.string().optional(),
     difficulty: z.enum(['base', 'intermedio', 'avanzato']).optional(),
-    category: z.string().optional(),
+    category: categoryEnum,
     tags: z.array(z.string()).optional(),
     lang: z.enum(['it', 'en', 'fr']).default('it'),
     translationKey: z.string().optional(),
