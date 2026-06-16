@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "new-recipe": "node scripts/new-recipe.mjs",
     "translate": "node scripts/translate.js",
     "prepare": "git config core.hooksPath scripts/hooks || true"
   },
