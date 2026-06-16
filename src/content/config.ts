@@ -1,4 +1,19 @@
 import { defineCollection, z } from 'astro:content';
+import {
+  ACADEMY_CATEGORIES,
+  BLOG_CATEGORIES,
+  normalizeAcademyCategory,
+  normalizeBlogCategory,
+} from '../config/taxonomy';
+
+const [firstBlogCategory, ...restBlogCategories] = BLOG_CATEGORIES;
+const [firstAcademyCategory, ...restAcademyCategories] = ACADEMY_CATEGORIES;
+
+const blogCategoryEnum = z.enum([firstBlogCategory, ...restBlogCategories] as [string, ...string[]]);
+const academyCategoryEnum = z.enum([firstAcademyCategory, ...restAcademyCategories] as [string, ...string[]]);
+
+const blogCategorySchema = z.preprocess(normalizeBlogCategory, blogCategoryEnum.optional());
+const academyCategorySchema = z.preprocess(normalizeAcademyCategory, academyCategoryEnum);
 
 const blog = defineCollection({
   type: 'content',
@@ -7,7 +22,7 @@ const blog = defineCollection({
     description: z.string(),
     pubDate: z.coerce.date(),
     heroImage: z.string().optional(),
-    category: z.string().optional(),
+    category: blogCategorySchema,
     tags: z.array(z.string()).optional(),
     lang: z.enum(['it', 'en', 'fr']).default('it'),
     translationKey: z.string().optional(),
@@ -23,7 +38,7 @@ const academy = defineCollection({
     pubDate: z.coerce.date(),
     heroImage: z.string().optional(),
     difficulty: z.enum(['base', 'intermedio', 'avanzato']).optional(),
-    category: z.string().optional(),
+    category: academyCategorySchema,
     tags: z.array(z.string()).optional(),
     lang: z.enum(['it', 'en', 'fr']).default('it'),
     translationKey: z.string().optional(),

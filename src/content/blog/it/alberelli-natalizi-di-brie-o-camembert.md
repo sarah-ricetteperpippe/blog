@@ -3,8 +3,8 @@ heroImage: "/images/ricette/alberelli-natalizi-di-brie-o-camembert.webp"
 title: "Alberelli natalizi di brie o camembert"
 description: "Carini e facilissimi da preparare last minute!"
 pubDate: "2026-01-03"
-category: "Antipasto"
-tags: ["Natale", "Antipasto"]
+category: "Antipasti"
+tags: ["Natale", "Antipasti"]
 translationKey: "alberelli-natalizi-di-brie-o-camembert"
 ---
 

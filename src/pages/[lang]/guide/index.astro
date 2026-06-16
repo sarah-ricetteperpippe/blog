@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { ACADEMY_CATEGORIES, getAcademyCategoryLabel, type SiteLang } from '../../../config/taxonomy';
 
 export function getStaticPaths() {
   return [
@@ -12,6 +13,7 @@ export function getStaticPaths() {
 
 const { lang } = Astro.params;
 const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+const currentLang = (lang === 'en' || lang === 'fr' || lang === 'it' ? lang : 'it') as SiteLang;
 
 const allPosts = await getCollection('academy');
 const posts = allPosts
@@ -35,11 +37,6 @@ const ui = {
     eyebrow: 'Academy',
     searchPlaceholder: 'Cerca tecniche, ingredienti...',
     filterAll: 'Tutte',
-    filters: [
-      { key: 'Tecniche', label: 'Tecniche' },
-      { key: 'Salvataggi', label: 'Salvataggi' },
-      { key: 'Sostituzioni', label: 'Sostituzioni' },
-    ],
     noResults: 'Nessuna guida trovata. Prova con un\'altra parola chiave!',
     readTime: (n: number) => `${n} min`,
     difficulty: {
@@ -55,11 +52,6 @@ const ui = {
     eyebrow: 'Academy',
     searchPlaceholder: 'Search techniques, ingredients...',
     filterAll: 'All',
-    filters: [
-      { key: 'Tecniche', label: 'Techniques' },
-      { key: 'Salvataggi', label: 'Save-its' },
-      { key: 'Sostituzioni', label: 'Substitutions' },
-    ],
     noResults: 'No guides found. Try a different keyword!',
     readTime: (n: number) => `${n} min`,
     difficulty: {
@@ -75,11 +67,6 @@ const ui = {
     eyebrow: 'Academy',
     searchPlaceholder: 'Chercher techniques, ingrédients...',
     filterAll: 'Toutes',
-    filters: [
-      { key: 'Tecniche', label: 'Techniques' },
-      { key: 'Salvataggi', label: 'Sauvetages' },
-      { key: 'Sostituzioni', label: 'Substitutions' },
-    ],
     noResults: 'Aucun guide trouvé. Essayez un autre mot-clé !',
     readTime: (n: number) => `${n} min`,
     difficulty: {
@@ -93,6 +80,10 @@ const ui = {
 
 const t = ui[lang as keyof typeof ui] ?? ui.it;
 const diffLabel = t.difficulty as Record<string, string>;
+const guideFilters = ACADEMY_CATEGORIES.map(category => ({
+  key: category,
+  label: getAcademyCategoryLabel(category, currentLang),
+}));
 
 const dateLocale = { it: 'it-IT', en: 'en-GB', fr: 'fr-FR' } as const;
 const locale = dateLocale[lang as keyof typeof dateLocale];
@@ -128,7 +119,7 @@ function shortDate(date: Date) {
     <button class="filter-pill filter-pill--active" data-category="all">
       {t.filterAll}
     </button>
-    {t.filters.map(f => (
+    {guideFilters.map(f => (
       <button class="filter-pill" data-category={f.key}>{f.label}</button>
     ))}
   </div>
@@ -141,11 +132,14 @@ function shortDate(date: Date) {
         const mins = readingTime(post.body);
         const slug = postSlug(post);
         const diff = post.data.difficulty ?? null;
+        const categoryLabel = post.data.category
+          ? getAcademyCategoryLabel(post.data.category, currentLang)
+          : '';
         return (
           <article
             class="blog-card"
             data-category={post.data.category ?? ''}
-            data-search={`${post.data.title} ${post.data.description ?? ''} ${(post.data.tags ?? []).join(' ')} ${post.data.category ?? ''}`}
+            data-search={`${post.data.title} ${post.data.description ?? ''} ${(post.data.tags ?? []).join(' ')} ${post.data.category ?? ''} ${categoryLabel}`}
           >
             <a href={`${base}${lang}/guide/${slug}/`} class="blog-card-link">
               <div class="blog-card-image-wrap">
@@ -154,7 +148,7 @@ function shortDate(date: Date) {
                   : <div class="blog-card-image-placeholder">📖</div>
                 }
                 {post.data.category && (
-                  <span class="blog-card-category">{post.data.category}</span>
+                  <span class="blog-card-category">{categoryLabel}</span>
                 )}
                 {diff && (
                   <span class={`guide-difficulty-badge badge-${diff}`}>

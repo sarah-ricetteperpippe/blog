@@ -115,7 +115,6 @@ async function main() {
 
   const title = getFrontmatterValue(frontmatter, 'title');
   const description = getFrontmatterValue(frontmatter, 'description');
-  const category = getFrontmatterValue(frontmatter, 'category');
 
   console.log(`\n📄  Traduco: ${slug}`);
   console.log(`   Lingue target: ${targetLangs.join(', ')}`);
@@ -130,11 +129,11 @@ async function main() {
 
     console.log(`\n🌍  Traduco in ${lang.toUpperCase()}...`);
 
-    // Traduci i campi del frontmatter
-    const [tTitle, tDesc, tCategory, tBody] = await Promise.all([
+    // Traduci i campi visibili del frontmatter.
+    // category resta canonica in italiano per non rompere schema e filtri.
+    const [tTitle, tDesc, tBody] = await Promise.all([
       title ? translateText(translator, title, lang) : Promise.resolve(''),
       description ? translateText(translator, description, lang) : Promise.resolve(''),
-      category ? translateText(translator, category, lang) : Promise.resolve(''),
       translateText(translator, body, lang),
     ]);
 
@@ -142,7 +141,6 @@ async function main() {
     let newFm = frontmatter;
     if (title) newFm = setFrontmatterValue(newFm, 'title', tTitle);
     if (description) newFm = setFrontmatterValue(newFm, 'description', tDesc);
-    if (category) newFm = setFrontmatterValue(newFm, 'category', tCategory);
     // Aggiungi/aggiorna lang e translationKey
     newFm = newFm.replace(/^lang:.*$/m, '');
     newFm = newFm.replace(/^translationKey:.*$/m, '');
