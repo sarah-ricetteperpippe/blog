@@ -351,16 +351,16 @@ p {
 .lang-flag {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   line-height: 1;
   opacity: 0.45;
   transition: opacity 0.2s ease, transform 0.2s ease;
   text-decoration: none;
-  /* font-size controlla la dimensione delle SVG flag-icons (width 1.33em) */
   font-size: 1.1rem;
 }
-.lang-flag .fi {
-  border-radius: 2px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+.lang-flag-emoji {
+  display: block;
+  filter: saturate(0.96);
 }
 .lang-flag:hover { opacity: 0.8; transform: scale(1.15); }
 .lang-flag--active { opacity: 1; transform: scale(1.1); }

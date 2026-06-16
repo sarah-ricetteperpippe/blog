@@ -1,6 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { ACADEMY_CATEGORIES, getAcademyCategoryLabel, type SiteLang } from '../config/taxonomy';
 
 export interface Props {
   title: string;
@@ -17,6 +18,7 @@ export interface Props {
 
 const { title, description, pubDate, heroImage, category, tags, difficulty, lang = 'it', slug = '', body = '' } = Astro.props;
 const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+const currentLang = (lang === 'en' || lang === 'fr' || lang === 'it' ? lang : 'it') as SiteLang;
 
 const dateLocale = { it: 'it-IT', en: 'en-GB', fr: 'fr-FR' } as const;
 const locale = dateLocale[lang as keyof typeof dateLocale] ?? 'it-IT';
@@ -45,16 +47,6 @@ const difficultyLabel: Record<string, Record<string, string>> = {
 };
 const diffLabel = difficultyLabel[lang] ?? difficultyLabel.it;
 
-// Hardcoded guide categories (same as index filters)
-const guideCategories = ['Tecniche', 'Salvataggi', 'Sostituzioni'];
-
-const categoryLabels: Record<string, Record<string, string>> = {
-  it: { Tecniche: 'Tecniche', Salvataggi: 'Salvataggi', Sostituzioni: 'Sostituzioni' },
-  en: { Tecniche: 'Techniques', Salvataggi: 'Save-its', Sostituzioni: 'Substitutions' },
-  fr: { Tecniche: 'Techniques', Salvataggi: 'Sauvetages', Sostituzioni: 'Substitutions' },
-};
-const catLabels = categoryLabels[lang] ?? categoryLabels.it;
-
 const allPosts = await getCollection('academy');
 
 const related = allPosts
@@ -82,11 +74,11 @@ const formattedDate = pubDate
     <!-- Barra categorie guide -->
     <nav class="filter-bar" aria-label="Categorie guide">
       <a href={`${base}${lang}/guide/`} class="filter-pill">{back.replace('← ', '')}</a>
-      {guideCategories.map(cat => (
+      {ACADEMY_CATEGORIES.map(cat => (
         <a
           href={`${base}${lang}/guide/?categoria=${encodeURIComponent(cat)}`}
           class={`filter-pill${cat === category ? ' filter-pill--active' : ''}`}
-        >{catLabels[cat] ?? cat}</a>
+        >{getAcademyCategoryLabel(cat, currentLang)}</a>
       ))}
     </nav>
 

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { getBlogCategoryLabel, type SiteLang } from '../../../../config/taxonomy';
 import { slugify } from '../../../../utils/slugify';
 
 export async function getStaticPaths() {
@@ -32,6 +33,7 @@ export async function getStaticPaths() {
 const { lang, tag } = Astro.params;
 const { originalTag } = Astro.props;
 const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+const currentLang = (lang === 'en' || lang === 'fr' || lang === 'it' ? lang : 'it') as SiteLang;
 
 const allPosts = await getCollection('blog');
 const posts = allPosts
@@ -102,6 +104,9 @@ function shortDate(d: Date) {
       {posts.map(post => {
         const mins = readingTime(post.body);
         const postSlug = slug(post);
+        const categoryLabel = post.data.category
+          ? getBlogCategoryLabel(post.data.category, currentLang)
+          : '';
         return (
           <article class="blog-card" data-slug={postSlug}>
             <a href={`${base}${lang}/blog/${postSlug}/`} class="blog-card-link">
@@ -111,7 +116,7 @@ function shortDate(d: Date) {
                   : <div class="blog-card-image-placeholder">🍳</div>
                 }
                 {post.data.category && (
-                  <span class="blog-card-category">{post.data.category}</span>
+                  <span class="blog-card-category">{categoryLabel}</span>
                 )}
               </div>
 
