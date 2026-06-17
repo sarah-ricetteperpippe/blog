@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 #
-# Pre-commit hook: auto-traduzione con DeepL.
+# Pre-commit hook: auto-traduzione con DeepL per blog e academy.
 #
-# Per ogni .mdx aggiunto o modificato in src/content/blog/it/ che non ha
-# ancora un corrispettivo in src/content/blog/en/ o src/content/blog/fr/,
-# lancia `node scripts/translate.js <slug>` e fa lo stage dei file generati.
+# Per ogni .md/.mdx aggiunto o modificato in src/content/{blog,academy}/it/
+# che non ha ancora un corrispettivo in en/ o fr/, lancia
+# `node scripts/translate.js <slug> --collection ...` e fa lo stage dei file
+# generati.
 #
 # La traduzione tonale fine viene fatta in seguito con la skill Cowork
 # `translate-recipes-edit` (rifinisce il draft DeepL).
@@ -23,7 +24,7 @@ ROOT=$(git rev-parse --show-toplevel)
 cd "$ROOT"
 
 # File IT aggiunti/modificati in questo commit
-IT_FILES=$(git diff --cached --name-only --diff-filter=AM | grep -E '^src/content/blog/it/.*\.mdx?$' || true)
+IT_FILES=$(git diff --cached --name-only --diff-filter=AM | grep -E '^src/content/(blog|academy)/it/.*\.mdx?$' || true)
 
 if [ -z "$IT_FILES" ]; then
   exit 0
@@ -40,27 +41,28 @@ echo "pre-commit: rilevati file IT, controllo traduzioni mancanti..."
 TRANSLATED_ANY=0
 
 for it_file in $IT_FILES; do
+  collection=$(echo "$it_file" | sed -E 's#^src/content/([^/]+)/it/.*$#\1#')
   slug=$(basename "$it_file" | sed -E 's/\.mdx?$//')
   needs=()
-  [ ! -f "src/content/blog/en/${slug}.mdx" ] && [ ! -f "src/content/blog/en/${slug}.md" ] && needs+=("en")
-  [ ! -f "src/content/blog/fr/${slug}.mdx" ] && [ ! -f "src/content/blog/fr/${slug}.md" ] && needs+=("fr")
+  [ ! -f "src/content/${collection}/en/${slug}.mdx" ] && [ ! -f "src/content/${collection}/en/${slug}.md" ] && needs+=("en")
+  [ ! -f "src/content/${collection}/fr/${slug}.mdx" ] && [ ! -f "src/content/${collection}/fr/${slug}.md" ] && needs+=("fr")
 
   if [ ${#needs[@]} -eq 0 ]; then
-    echo "  ${slug}: già tradotto in en+fr, salto"
+    echo "  ${collection}/${slug}: già tradotto in en+fr, salto"
     continue
   fi
 
   for lang in "${needs[@]}"; do
-    echo "  ${slug} → ${lang}..."
-    if node scripts/translate.js "$slug" --lang "$lang"; then
-      out_file="src/content/blog/${lang}/${slug}.mdx"
-      [ -f "$out_file" ] || out_file="src/content/blog/${lang}/${slug}.md"
+    echo "  ${collection}/${slug} → ${lang}..."
+    if node scripts/translate.js "$slug" --collection "$collection" --lang "$lang"; then
+      out_file="src/content/${collection}/${lang}/${slug}.mdx"
+      [ -f "$out_file" ] || out_file="src/content/${collection}/${lang}/${slug}.md"
       if [ -f "$out_file" ]; then
         git add "$out_file"
         TRANSLATED_ANY=1
       fi
     else
-      echo "  ⚠️  Traduzione fallita per ${slug} → ${lang}. Procedo senza."
+      echo "  ⚠️  Traduzione fallita per ${collection}/${slug} → ${lang}. Procedo senza."
     fi
   done
 done
@@ -68,7 +70,7 @@ done
 if [ "$TRANSLATED_ANY" -eq 1 ]; then
   echo ""
   echo "pre-commit: traduzioni DeepL aggiunte al commit."
-  echo "  ricordati di passare poi la skill 'translate-recipes-edit' in Cowork per rifinire tono."
+  echo "  ricordati di rifinire poi il tono dei draft tradotti."
 fi
 
 exit 0

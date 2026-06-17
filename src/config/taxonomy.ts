@@ -9,7 +9,7 @@
 import data from './taxonomy.json';
 
 export const BLOG_CATEGORIES = data.blogCategories as readonly string[];
-export const ACADEMY_CATEGORIES = ['Tecniche', 'Salvataggi', 'Sostituzioni'] as const;
+export const ACADEMY_CATEGORIES = data.academyCategories as readonly string[];
 export const SITE_LANGS = ['it', 'en', 'fr'] as const;
 
 export type BlogCategory = (typeof BLOG_CATEGORIES)[number];

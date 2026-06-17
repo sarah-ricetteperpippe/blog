@@ -1,15 +1,16 @@
 #!/usr/bin/env node
 /**
- * Script di traduzione ricette con DeepL
+ * Script di traduzione contenuti con DeepL.
+ *
+ * Default: traduce ricette blog.
  *
  * Uso:
- *   node scripts/translate.js <slug>           # traduce IT → EN + FR
- *   node scripts/translate.js <slug> --lang en # traduce solo in inglese
+ *   node scripts/translate.js <slug>
+ *   node scripts/translate.js <slug> --lang en
+ *   node scripts/translate.js <slug> --collection academy
+ *   node scripts/translate.js <slug> --collection guide --lang fr
  *
- * Esempio:
- *   node scripts/translate.js pasta-con-feta-al-forno-e-pomodorini
- *
- * Richiede DEEPL_API_KEY nel file .env (o nella variabile d'ambiente)
+ * Richiede DEEPL_API_KEY nel file .env (o nella variabile d'ambiente).
  */
 
 import * as deepl from 'deepl-node';
@@ -19,6 +20,18 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
+const COLLECTIONS = {
+  blog: {
+    contentDir: 'blog',
+    label: 'ricetta',
+    keepCanonicalFieldsLabel: 'category resta canonica in italiano per non rompere schema e filtri.',
+  },
+  academy: {
+    contentDir: 'academy',
+    label: 'guida',
+    keepCanonicalFieldsLabel: 'category e difficulty restano canonici in italiano per non rompere schema e filtri.',
+  },
+};
 
 // --- Carica .env manualmente (no dipendenze extra) ---
 const envPath = path.join(ROOT, '.env');
@@ -35,21 +48,45 @@ if (!DEEPL_API_KEY) {
   process.exit(1);
 }
 
+function getOptionValue(args, name) {
+  return args.find((arg) => arg.startsWith(`--${name}=`))?.split('=')[1]
+    ?? (args.includes(`--${name}`) ? args[args.indexOf(`--${name}`) + 1] : null);
+}
+
+function normalizeCollectionName(value) {
+  if (!value) return 'blog';
+  if (value === 'guide') return 'academy';
+  return value;
+}
+
 // --- Argomenti ---
 const args = process.argv.slice(2);
 const slug = args.find(a => !a.startsWith('--'));
-const langArg = args.find(a => a.startsWith('--lang='))?.split('=')[1]
-             ?? (args.includes('--lang') ? args[args.indexOf('--lang') + 1] : null);
+const langArg = getOptionValue(args, 'lang');
+const collectionArg = normalizeCollectionName(getOptionValue(args, 'collection'));
 const targetLangs = langArg ? [langArg] : ['en', 'fr'];
+
+if (!collectionArg || !(collectionArg in COLLECTIONS)) {
+  console.error('❌  Collection non valida. Usa --collection blog oppure --collection academy.');
+  process.exit(1);
+}
+if (targetLangs.some((lang) => !['en', 'fr'].includes(lang))) {
+  console.error('❌  Lingua non valida. Usa --lang en oppure --lang fr.');
+  process.exit(1);
+}
 
 if (!slug) {
   console.error('❌  Specifica uno slug. Es: node scripts/translate.js pasta-con-feta-al-forno-e-pomodorini');
   process.exit(1);
 }
 
+const collection = collectionArg;
+const collectionConfig = COLLECTIONS[collection];
+const contentRoot = path.join(ROOT, 'src/content', collectionConfig.contentDir);
+
 // Cerca prima .mdx, poi .md — preserva l'estensione per l'output
-const itMdx = path.join(ROOT, 'src/content/blog/it', `${slug}.mdx`);
-const itMd  = path.join(ROOT, 'src/content/blog/it', `${slug}.md`);
+const itMdx = path.join(contentRoot, 'it', `${slug}.mdx`);
+const itMd  = path.join(contentRoot, 'it', `${slug}.md`);
 const itFile = fs.existsSync(itMdx) ? itMdx : (fs.existsSync(itMd) ? itMd : null);
 if (!itFile) {
   console.error(`❌  File non trovato: né ${itMdx} né ${itMd}`);
@@ -59,7 +96,7 @@ const ext = path.extname(itFile); // ".md" o ".mdx"
 
 // --- Parser frontmatter minimale (no dipendenze) ---
 function parseFrontmatter(raw) {
-  const match = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+  const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
   if (!match) throw new Error('Frontmatter non trovato nel file.');
   return { frontmatter: match[1], body: match[2] };
 }
@@ -116,12 +153,13 @@ async function main() {
   const title = getFrontmatterValue(frontmatter, 'title');
   const description = getFrontmatterValue(frontmatter, 'description');
 
-  console.log(`\n📄  Traduco: ${slug}`);
+  console.log(`\n📄  Traduco ${collectionConfig.label}: ${slug}`);
+  console.log(`   Collection: ${collection}`);
   console.log(`   Lingue target: ${targetLangs.join(', ')}`);
 
   for (const lang of targetLangs) {
-    const outFile = path.join(ROOT, 'src/content/blog', lang, `${slug}${ext}`);
-    const outFileAlt = path.join(ROOT, 'src/content/blog', lang, `${slug}${ext === '.md' ? '.mdx' : '.md'}`);
+    const outFile = path.join(contentRoot, lang, `${slug}${ext}`);
+    const outFileAlt = path.join(contentRoot, lang, `${slug}${ext === '.md' ? '.mdx' : '.md'}`);
     if (fs.existsSync(outFile) || fs.existsSync(outFileAlt)) {
       console.log(`⚠️   ${lang}/${slug}${ext} esiste già — salto. (Elimina il file per ritradurre)`);
       continue;
@@ -130,7 +168,8 @@ async function main() {
     console.log(`\n🌍  Traduco in ${lang.toUpperCase()}...`);
 
     // Traduci i campi visibili del frontmatter.
-    // category resta canonica in italiano per non rompere schema e filtri.
+    // I campi strutturali restano canonici per non rompere schema e filtri.
+    console.log(`   ℹ️  ${collectionConfig.keepCanonicalFieldsLabel}`);
     const [tTitle, tDesc, tBody] = await Promise.all([
       title ? translateText(translator, title, lang) : Promise.resolve(''),
       description ? translateText(translator, description, lang) : Promise.resolve(''),
@@ -153,7 +192,7 @@ async function main() {
 
     fs.mkdirSync(path.dirname(outFile), { recursive: true });
     fs.writeFileSync(outFile, output, 'utf8');
-    console.log(`✅  Salvato: src/content/blog/${lang}/${slug}${ext}`);
+    console.log(`✅  Salvato: src/content/${collectionConfig.contentDir}/${lang}/${slug}${ext}`);
   }
 
   // Aggiungi translationKey anche al file IT originale se non c'è
