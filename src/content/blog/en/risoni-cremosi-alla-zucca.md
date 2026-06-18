@@ -2,7 +2,7 @@
 title: "No-fuss creamy pumpkin risoni"
 description: "Creamy pumpkin risoni with barely any ingredients and very little effort."
 pubDate: "2025-11-26"
-heroImage: "/images/ricette/risocardoncelli.webp"
+heroImage: "/images/ricette/risoni-zucca-zero-pretese.webp"
 category: "First courses"
 tags: ["Autunno/inverno", "Zucca", "Primi piatti"]
 lang: "en"

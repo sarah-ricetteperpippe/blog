@@ -2,7 +2,7 @@
 title: "Risoni crémeux au potiron"
 description: "Des risoni crémeux au potiron, avec peu d'ingrédients et très peu d'effort."
 pubDate: "2025-11-26"
-heroImage: "/images/ricette/risocardoncelli.webp"
+heroImage: "/images/ricette/risoni-zucca-zero-pretese.webp"
 category: "Plats de pâtes"
 tags: ["Autunno/inverno", "Zucca", "Primi piatti"]
 lang: "fr"

@@ -1,4 +1,4 @@
- traduzioni?---
+---
 heroImage: "/images/ricette/alberelli-natalizi-di-brie-o-camembert.webp"
 title: "Petits sapins de Noël au brie ou au camembert"
 description: "Une bouchée de fête très facile à préparer au dernier moment, mais qui fait tout de même son effet."
