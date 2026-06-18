@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/risotto-brie-noci.webp"
 title: "Brie and walnut risotto"
-description: "This one is out of this world, out-of-this-wooorld!!!"
+description: "A rich, cosy risotto with brie and walnuts that tastes far fancier than the effort it takes."
 pubDate: "2026-01-12"
 category: "Risottos"
 tags: ["Autunno/inverno", "Brie", "Noci", "Risotti"]
@@ -11,7 +11,7 @@ translationKey: "risotto-al-brie-e-noci"
 
 <!-- c9ca99_475f1da46dd84d1b8235885630bb86d4~mv2.png -->
 
-This one is out of this world, out-of-this-wooorld!!!
+This is one of those risottos that feels a bit luxurious while still being very easy to pull off: creamy, savoury and great with the walnuts on top.
 
 ## Quick info
 
@@ -43,7 +43,7 @@ This one is out of this world, out-of-this-wooorld!!!
 
 5. **Add the brie.** When there are 2–3 minutes left, add **60g (2.1 oz) of brie in small pieces** and stir until it starts melting and coating the rice.
 
-6. **Mantecatura.** Take the pan off the heat, add 20g (0.7 oz) of margarine and stir until creamy.
+6. **Finish off the heat.** Take the pan off the heat, add 20g (0.7 oz) of margarine and stir until creamy.
 
 7. **Walnuts.** Add the chopped walnuts, stir and let it rest for 1 minute with the lid on.
 

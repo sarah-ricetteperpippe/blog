@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/alberelli-natalizi-di-brie-o-camembert.webp"
-title: "Christmas brie or camembert trees"
-description: "Cute and dead easy to throw together last minute!"
+title: "Brie or camembert Christmas trees"
+description: "A very easy last-minute holiday nibble that still looks properly festive."
 pubDate: "2026-01-03"
 category: "Appetiser"
 tags: ["Natale", "Antipasto"]
@@ -12,7 +12,7 @@ translationKey: "alberelli-natalizi-di-brie-o-camembert"
 <!-- c9ca99_d0c06c40ea8e4bf99447eed072858179~mv2.png -->
 <!-- c9ca99_5bcf6b3cf0a440a095a3aa0a40db5e10~mv2.png -->
 
-Cute and dead easy to throw together last minute!
+A last-minute holiday nibble that looks festive with almost no effort.
 
 ## Quick info
 

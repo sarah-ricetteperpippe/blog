@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/frittata-menta.webp"
 title: "Omelette à la menthe"
-description: "Mon omelette préférée"
+description: "Mon omelette fétiche : moelleuse, parfumée et beaucoup plus intéressante qu'un simple dîner aux œufs."
 pubDate: "2026-01-14"
 category: "Omelettes"
 tags: ["4 stagioni", "Frittate", "Uova", "Menta"]
@@ -11,7 +11,7 @@ translationKey: "frittata-alla-menta"
 
 <!-- c9ca99_070de1a2b9c94c9bbdd17b8baeeab524~mv2.png -->
 
-Mon omelette préférée.
+C'est mon omelette fétiche : moelleuse, parfumée à la menthe et assez simple pour un soir de semaine, sans jamais être ennuyeuse.
 
 ## Infos rapides
 

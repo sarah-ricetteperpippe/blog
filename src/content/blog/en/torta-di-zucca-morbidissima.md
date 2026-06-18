@@ -1,6 +1,6 @@
 ---
 title: "Super-soft pumpkin cake"
-description: "The only good reason to love autumn is pumpkin (which never eeever runs out)!"
+description: "A soft, simple pumpkin cake that is perfect when you have cooked pumpkin to use up."
 pubDate: "2025-11-19"
 heroImage: "/images/ricette/torta-di-zucca-morbidissima.webp"
 category: "Sweets"
@@ -11,7 +11,7 @@ translationKey: "torta-di-zucca-morbidissima"
 
 <!-- c9ca99_aa43440af00a4c319bc4bb38b51fc8f9~mv2.png -->
 
-The only good reason to love autumn is pumpkin (which never eeever runs out)!
+This is the pumpkin cake I make when I want something soft, simple and reliably good, especially when there is cooked pumpkin waiting to be used up.
 
 ## Quick info
 

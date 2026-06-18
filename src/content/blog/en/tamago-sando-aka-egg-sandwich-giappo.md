@@ -1,6 +1,6 @@
 ---
-title: "Tamago Sando (aka the Japanese egg sandwich)"
-description: "This is the Tamago Sando, the Japanese egg sandwich. Super fluffy and full of flavour!"
+title: "Tamago sando (Japanese egg sandwich)"
+description: "My pantry-friendly take on tamago sando: creamy, fluffy and easy to pull off with supermarket ingredients."
 pubDate: "2025-02-11"
 heroImage: "/images/ricette/tamago.webp"
 category: "One-dish meals"
@@ -11,7 +11,7 @@ translationKey: "tamago-sando-aka-egg-sandwich-giappo"
 
 <!-- c9ca99_5c9be5c9420e4e6bb0f48beb258a68d6~mv2.png -->
 
-This is the Tamago Sando (*tamago* means "egg" in Japanese), basically the Japanese egg sandwich, in its more Europe-friendly form using easy-to-find ingredients. Super fluffy and full of flavour!
+This is tamago sando (*tamago* means "egg" in Japanese): the famously soft, creamy Japanese egg sandwich, here in a supermarket-friendly version made with easy-to-find ingredients.
 
 ## Quick info
 

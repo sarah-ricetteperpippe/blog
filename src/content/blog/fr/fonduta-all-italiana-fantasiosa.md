@@ -1,6 +1,6 @@
 ---
-title: "Fondue fantaisiste à l'italienne"
-description: "Fouiller les sites suisses est un cauchemar parce qu'on n'a pas les mêmes fromages, alors je l'ai bricolée avec l'IA. Anna, Giando et Giul approuvent !"
+title: "Fondue improvisée à l'italienne"
+description: "Une fondue pensée pour les fromages qu'on trouve facilement ici : fondante, généreuse et plus simple qu'elle n'en a l'air."
 pubDate: "2025-02-14"
 heroImage: "/images/ricette/fonduta-all-italiana.webp"
 category: "Plats uniques"
@@ -11,9 +11,9 @@ translationKey: "fonduta-all-italiana-fantasiosa"
 
 <!-- c9ca99_084867f1837643e4b6f94d0c8c7e8d90~mv2.png -->
 
-Menu pour une super soirée cocooning avec Anna, Giando et Giuliano ! En ligne, c'est à devenir fou : fouiller les sites suisses (parce que oui, chers Français, la fondue, c'est suisse !) est un cauchemar parce qu'on n'a pas les mêmes fromages. Alors je l'ai bricolée avec l'IA, et pour une *pippa* (quiche en cuisine) comme moi, le résultat est franchement honorable.
+Je l'avais prévue pour une soirée très cocooning avec Anna, Giando et Giuliano. Chercher des recettes suisses classiques, c'est bien, mais les fromages ne sont presque jamais ceux qu'on trouve vraiment ici, alors j'ai préféré construire une version plus facile à reproduire avec des produits de supermarché.
 
-Tu peux la faire avec ou sans appareil à fondue… moi, j'en ai trouvé un pas cher sur Vinted, mais je te dis aussi comment faire avec une casserole sur le feu. Allez, hop !
+Tu peux la faire avec ou sans appareil à fondue. J'ai trouvé le mien à petit prix sur Vinted, mais je t'explique aussi comment t'en sortir avec une simple casserole.
 
 ## Infos rapides
 

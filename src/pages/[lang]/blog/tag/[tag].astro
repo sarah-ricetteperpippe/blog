@@ -2,7 +2,7 @@
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { getBlogCategoryLabel, type SiteLang } from '../../../../config/taxonomy';
-import { slugify } from '../../../../utils/slugify';
+import { getBlogTagLabel, getBlogTagSlug, normalizeBlogTags } from '../../../../config/tags';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog');
@@ -10,34 +10,36 @@ export async function getStaticPaths() {
 
   const paths: Array<{
     params: { lang: string; tag: string };
-    props: { originalTag: string };
+    props: { canonicalTag: string };
   }> = [];
 
   for (const lang of langs) {
-    const seen = new Map<string, string>(); // slug → originalTag (primo incontrato)
+    const seen = new Set<string>();
     for (const post of allPosts) {
       if (!post.id.startsWith(`${lang}/`)) continue;
       if (post.data.draft) continue;
-      for (const t of post.data.tags ?? []) {
-        const s = slugify(t);
-        if (!seen.has(s)) seen.set(s, t);
+      for (const tag of normalizeBlogTags(post.data.tags)) {
+        if (seen.has(tag)) continue;
+        seen.add(tag);
+        paths.push({
+          params: { lang, tag: getBlogTagSlug(tag, lang) },
+          props: { canonicalTag: tag },
+        });
       }
-    }
-    for (const [s, originalTag] of seen) {
-      paths.push({ params: { lang, tag: s }, props: { originalTag } });
     }
   }
   return paths;
 }
 
-const { lang, tag } = Astro.params;
-const { originalTag } = Astro.props;
+const { lang } = Astro.params;
+const { canonicalTag } = Astro.props;
 const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 const currentLang = (lang === 'en' || lang === 'fr' || lang === 'it' ? lang : 'it') as SiteLang;
+const tagLabel = getBlogTagLabel(canonicalTag, currentLang);
 
 const allPosts = await getCollection('blog');
 const posts = allPosts
-  .filter(p => p.id.startsWith(`${lang}/`) && !p.data.draft && (p.data.tags ?? []).some(t => slugify(t) === tag))
+  .filter(p => p.id.startsWith(`${lang}/`) && !p.data.draft && normalizeBlogTags(p.data.tags).includes(canonicalTag))
   .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
 
 const slug = (post: any) => post.id.replace(`${lang}/`, '').replace(/\.(md|mdx)$/, '');
@@ -89,11 +91,11 @@ function shortDate(d: Date) {
 }
 ---
 
-<BaseLayout title={t.pageTitle(originalTag)} lang={lang}>
+<BaseLayout title={t.pageTitle(tagLabel)} lang={lang}>
 
   <div class="blog-hero">
-    <h1 class="blog-hero-title">{t.pageTitle(originalTag)}</h1>
-    <p class="blog-hero-subtitle">{t.subtitle(posts.length, originalTag)}</p>
+    <h1 class="blog-hero-title">{t.pageTitle(tagLabel)}</h1>
+    <p class="blog-hero-subtitle">{t.subtitle(posts.length, tagLabel)}</p>
     <a href={`${base}${lang}/blog/`} class="tag-page-back">{t.backToBlog}</a>
   </div>
 

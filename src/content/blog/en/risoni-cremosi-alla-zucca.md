@@ -1,6 +1,6 @@
 ---
 title: "No-fuss creamy pumpkin risoni"
-description: "Pumpkin with zero pretensions, minimal ingredients, turbo speed!"
+description: "Creamy pumpkin risoni with barely any ingredients and very little effort."
 pubDate: "2025-11-26"
 heroImage: "/images/ricette/risocardoncelli.webp"
 category: "First courses"
@@ -11,7 +11,7 @@ translationKey: "risoni-cremosi-alla-zucca"
 
 <!-- c9ca99_0acf31825b834c6a9e371d7dfb8fdfd6~mv2.png -->
 
-Pumpkin with zero pretensions, minimal ingredients, turbo speed!
+Creamy pumpkin risoni with no fuss: just a few ingredients, a soft pumpkin puree, and dinner sorted.
 
 ## Quick info
 

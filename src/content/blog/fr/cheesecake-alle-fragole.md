@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/cheesecake-fragole.webp"
 title: "Cheesecake aux fraises"
-description: "Le meilleur cheesecake que j'aie jamais fait… et joyeux anniversaire maman !"
+description: "Un cheesecake frais sans cuisson, très joli sur la table et beaucoup plus simple qu'il n'en a l'air."
 pubDate: "2025-11-11"
 category: "Desserts"
 tags: ["Dolci", "Torte", "Compleanno", "Cheesecake", "Primavera/estate", "Fragole"]
@@ -13,7 +13,7 @@ translationKey: "cheesecake-alle-fragole"
 <!-- c9ca99_bd44037add18457fab25d20094f48419~mv2.png -->
 <!-- c9ca99_e86f8b87fed74ad08fcadb74b4a21844~mv2.png -->
 
-Le meilleur cheesecake que j'aie jamais fait… et joyeux anniversaire maman !
+C'est encore l'un de mes cheesecakes préférés : frais, crémeux, facile à monter, et avec les fraises sur le bord qui font presque tout le travail visuel.
 
 ## Infos rapides
 

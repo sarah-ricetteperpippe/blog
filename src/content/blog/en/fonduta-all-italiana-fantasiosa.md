@@ -1,6 +1,6 @@
 ---
-title: "Freestyle Italian-style fondue"
-description: "Searching Swiss sites is a nightmare because we don't have the same cheeses, so I made it up with AI. Anna, Giando and Giul approve!"
+title: "Improvised Italian-style fondue"
+description: "A cosy fondue workaround for Italian supermarkets: melty, forgiving, and much easier than it looks."
 pubDate: "2025-02-14"
 heroImage: "/images/ricette/fonduta-all-italiana.webp"
 category: "One-pot dishes"
@@ -11,9 +11,9 @@ translationKey: "fonduta-all-italiana-fantasiosa"
 
 <!-- c9ca99_084867f1837643e4b6f94d0c8c7e8d90~mv2.png -->
 
-Menu for a lovely comfy evening with Anna, Giando and Giuliano! Online it's a mess — searching Swiss sites (because fondue, dear French friends, is Swiss!) is a nightmare because we just don't have the same cheeses. So I made one up with AI and honestly, for a *pippa* (clueless cook) like me, the result is pretty solid.
+This was the plan for a cosy evening with Anna, Giando and Giuliano. Looking up classic Swiss fondue recipes is all well and good, but the cheeses are rarely the same ones we actually find here, so I built an Italian-supermarket-friendly version instead. And honestly? It works.
 
-You can make it with or without a fondue pot... I found mine cheap on Vinted, but I'll also tell you how to do it with a pan on the stove. Let's go!
+You can make it with or without a fondue pot. I found mine cheaply on Vinted, but I'll also tell you how to do it in a saucepan on the hob.
 
 ## Quick info
 

@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/risotto-brie-noci.webp"
 title: "Risotto au brie et aux noix"
-description: "Celui-là, il est dément, dé-men-tiiiel !!!"
+description: "Un risotto au brie et aux noix, riche, très crémeux et plus simple qu'il n'en a l'air."
 pubDate: "2026-01-12"
 category: "Risottos"
 tags: ["Autunno/inverno", "Brie", "Noci", "Risotti"]
@@ -11,7 +11,7 @@ translationKey: "risotto-al-brie-e-noci"
 
 <!-- c9ca99_475f1da46dd84d1b8235885630bb86d4~mv2.png -->
 
-Celui-là, il est dément, dé-men-tiiiel !!!
+C'est le genre de risotto qui paraît un peu luxueux tout en restant très simple à réussir : crémeux, gourmand et parfait avec le croquant des noix.
 
 ## Infos rapides
 
@@ -43,7 +43,7 @@ Celui-là, il est dément, dé-men-tiiiel !!!
 
 5. **Ajout du brie.** Quand il reste 2 à 3 minutes de cuisson, ajoute **60 g de brie en petits morceaux** et mélange jusqu'à ce qu'il commence à fondre et à enrober le riz.
 
-6. **Mantecatura.** Éteins le feu, ajoute 20 g de margarine et remue énergiquement jusqu'à obtenir une consistance crémeuse.
+6. **Finition hors du feu.** Éteins le feu, ajoute 20 g de margarine et remue énergiquement jusqu'à obtenir une consistance crémeuse.
 
 7. **Noix.** Incorpore les noix concassées, mélange et laisse reposer 1 minute à couvert.
 

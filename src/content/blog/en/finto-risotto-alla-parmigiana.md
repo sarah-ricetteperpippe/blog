@@ -1,6 +1,6 @@
 ---
-title: "(Fake) Risotto alla parmigiana"
-description: "Aka risotto for desperate souls with nothing in the fridge. Any swap works — it's still rice and cheese!"
+title: "Fake risotto alla parmigiana"
+description: "Risotto for low-fridge days: flexible, cosy and still properly creamy even when you improvise."
 pubDate: "2025-01-26"
 heroImage: "/images/ricette/risotto-finta-parmigiana.webp"
 category: "First courses"
@@ -11,7 +11,7 @@ translationKey: "finto-risotto-alla-parmigiana"
 
 <!-- c9ca99_390b030e3d07402b82ce24c891e6f948~mv2.png -->
 
-Aka risotto for desperate souls with nothing in the fridge. In theory it should be made with Parmesan — I used something else... any swap works, it's still rice and cheese!
+This is risotto for low-fridge days. In theory it should be made with Parmesan, but if you use another grating cheese it still works beautifully: at heart, it's rice, butter and cheese doing their job.
 
 > Fun fact: Parmesan and Grana aren't vegetarian cheeses!
 
@@ -38,5 +38,5 @@ Aka risotto for desperate souls with nothing in the fridge. In theory it should 
 2. **Rice:** add the rice and stir for 1–2 minutes over medium heat.
 3. **Cooking:** cover the rice with hot broth and bring to the boil. Keep cooking over medium heat, adding more broth as it gets absorbed and stirring often.
 4. **Salt:** towards the end, taste and adjust the salt (remember the cheese already brings savouriness).
-5. **Mantecatura (cream it up):** when the rice is cooked but still moist (not soupy!), turn off the heat. Add 25g (0.9 oz) vegan butter and 40g (1.4 oz) grated cheese. Stir vigorously until creamy.
+5. **Finish off the heat:** when the rice is cooked but still loose and moist, not soupy, turn off the heat. Add 25g (0.9 oz) vegan butter and 40g (1.4 oz) grated cheese. Stir vigorously until glossy and creamy.
 6. **Finish:** add a grind of pepper if you like. Serve right away.

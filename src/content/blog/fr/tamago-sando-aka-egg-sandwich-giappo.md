@@ -1,6 +1,6 @@
 ---
-title: "Tamago Sando (alias egg sandwich japonais)"
-description: "Voici le Tamago Sando, l'egg sandwich japonais. Hyper fluffy et bourré de goût !"
+title: "Tamago sando (sandwich japonais aux œufs)"
+description: "Ma version du tamago sando : crémeuse, moelleuse et faisable avec des ingrédients faciles à trouver."
 pubDate: "2025-02-11"
 heroImage: "/images/ricette/tamago.webp"
 category: "Plats uniques"
@@ -11,7 +11,7 @@ translationKey: "tamago-sando-aka-egg-sandwich-giappo"
 
 <!-- c9ca99_5c9be5c9420e4e6bb0f48beb258a68d6~mv2.png -->
 
-Voici le Tamago Sando, autrement dit l'egg sandwich japonais (dans sa version la plus européenne possible, avec des ingrédients du quotidien). Hyper fluffy et bourré de goût !
+Voici le tamago sando, le célèbre sandwich japonais aux œufs, dans une version facile à faire avec des ingrédients du quotidien : moelleux, crémeux et très satisfaisant.
 
 ## Infos rapides
 

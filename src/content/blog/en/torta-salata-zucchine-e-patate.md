@@ -1,6 +1,6 @@
 ---
 title: "Courgette and potato savoury tart"
-description: "I'd written it off, and instead it turned out to be a stellar fridge-clear-out!"
+description: "A reliable savoury tart for using up courgettes, potatoes and whatever melty cheese you have around."
 pubDate: "2025-02-13"
 heroImage: "/images/ricette/torta-salata-zucchine-patate.webp"
 category: "One-dish meals"
@@ -11,7 +11,7 @@ translationKey: "torta-salata-zucchine-e-patate"
 
 <!-- c9ca99_475f1da46dd84d1b8235885630bb86d4~mv2.png -->
 
-I'd written it off, and instead it turned out to be a stellar fridge-clear-out (*svuotafrigo*)!
+I did not expect much from this one, and instead it turned into an excellent savoury fridge-clearer: soft vegetables, plenty of cheese and very little drama.
 
 ## Quick info
 

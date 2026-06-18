@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/frittata-menta.webp"
 title: "Mint frittata"
-description: "My favourite frittata"
+description: "My go-to frittata: soft, fragrant and much more interesting than a plain egg dinner."
 pubDate: "2026-01-14"
 category: "Frittatas"
 tags: ["4 stagioni", "Frittate", "Uova", "Menta"]
@@ -11,7 +11,7 @@ translationKey: "frittata-alla-menta"
 
 <!-- c9ca99_070de1a2b9c94c9bbdd17b8baeeab524~mv2.png -->
 
-My favourite frittata.
+This is my go-to frittata: soft, minty and simple enough for a weeknight, but never boring.
 
 ## Quick info
 

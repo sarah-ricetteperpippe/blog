@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/insalata-zucchine-feta.webp"
 title: "Salade de courgettes, feta et oignon rouge"
-description: "Idée vide-frigo belle, bonne et rapide — must have for feta lovers !"
+description: "Une salade de courgettes rapide et très fraîche, parfaite si tu aimes la feta."
 pubDate: "2025-12-18"
 category: "Salades"
 tags: ["Insalate", "Feta", "Primavera/estate", "Antispreco"]
@@ -11,7 +11,7 @@ translationKey: "insalata-di-zucchine-feta-e-cipolla-rossa"
 
 <!-- c9ca99_90ca0649f5cb46278ef05afc6e63d680~mv2.png -->
 
-Idée vide-frigo belle, bonne et rapide — must have for feta lovers !
+Une salade toute simple, fraîche et rapide, qui marche très bien quand tu veux quelque chose de léger sans renoncer au goût.
 
 ## Infos rapides
 

@@ -1,6 +1,6 @@
 ---
 title: "Gâteau au potiron ultra moelleux"
-description: "La seule bonne raison d'aimer l'automne, c'est le potiron (qui n'en finit plus, jamaaaais) !"
+description: "Un gâteau au potiron très moelleux, parfait quand on a de la purée de potiron à écouler."
 pubDate: "2025-11-19"
 heroImage: "/images/ricette/torta-di-zucca-morbidissima.webp"
 category: "Desserts"
@@ -11,7 +11,7 @@ translationKey: "torta-di-zucca-morbidissima"
 
 <!-- c9ca99_aa43440af00a4c319bc4bb38b51fc8f9~mv2.png -->
 
-La seule bonne raison d'aimer l'automne, c'est le potiron (qui n'en finit plus, jamaaaais) !
+C'est le gâteau au potiron que je fais quand j'ai envie de quelque chose de simple, très moelleux et fiable, surtout quand il reste du potiron cuit à utiliser.
 
 ## Infos rapides
 

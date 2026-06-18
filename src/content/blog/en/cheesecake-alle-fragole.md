@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/cheesecake-fragole.webp"
 title: "Strawberry cheesecake"
-description: "The best cheesecake I've ever made... and happy birthday mum!"
+description: "A fresh no-bake strawberry cheesecake that looks special without being difficult to make."
 pubDate: "2025-11-11"
 category: "Sweets"
 tags: ["Dolci", "Torte", "Compleanno", "Cheesecake", "Primavera/estate", "Fragole"]
@@ -13,7 +13,7 @@ translationKey: "cheesecake-alle-fragole"
 <!-- c9ca99_bd44037add18457fab25d20094f48419~mv2.png -->
 <!-- c9ca99_e86f8b87fed74ad08fcadb74b4a21844~mv2.png -->
 
-The best cheesecake I've ever made... and happy birthday mum!
+This is still one of my favourite cheesecakes: fresh, creamy and simple to assemble, with the strawberries around the edge doing most of the visual work.
 
 ## Quick info
 

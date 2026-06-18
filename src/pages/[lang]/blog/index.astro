@@ -2,6 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { BLOG_CATEGORIES, getBlogCategoryLabel, type SiteLang } from '../../../config/taxonomy';
+import { getBlogTagLabel, normalizeBlogTags } from '../../../config/tags';
 
 export async function getStaticPaths() {
   return [
@@ -111,11 +112,12 @@ function shortDate(date: Date) {
       const categoryLabel = post.data.category
         ? getBlogCategoryLabel(post.data.category, currentLang)
         : '';
+      const localizedTags = normalizeBlogTags(post.data.tags).map((tag) => getBlogTagLabel(tag, currentLang));
       return (
         <article
           class="blog-card"
           data-category={post.data.category ?? ''}
-          data-search={`${post.data.title} ${post.data.description ?? ''} ${(post.data.tags ?? []).join(' ')} ${post.data.category ?? ''} ${categoryLabel}`}
+          data-search={`${post.data.title} ${post.data.description ?? ''} ${(post.data.tags ?? []).join(' ')} ${localizedTags.join(' ')} ${post.data.category ?? ''} ${categoryLabel}`}
           data-slug={postSlug}
         >
           <a href={`${base}${lang}/blog/${postSlug}/`} class="blog-card-link">

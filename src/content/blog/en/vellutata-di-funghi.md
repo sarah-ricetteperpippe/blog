@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/vellutata-funghi.webp"
 title: "Mushroom velouté"
-description: "Discovered in Egypt — never going back!"
+description: "A silky mushroom soup with deep flavour and very little fuss."
 pubDate: "2025-11-10"
 category: "Soups and veloutés"
 tags: ["Funghi", "Zuppe e vellutate", "Autunno/inverno"]
@@ -11,7 +11,7 @@ translationKey: "vellutata-di-funghi"
 
 <!-- 12ee43_ae70b279d38a4d0fb725b06a68f1b81d~mv2.png -->
 
-Discovered in Egypt — never going back!
+I first had a version of this in Egypt and have been making it ever since. It is simple, creamy and deeply mushroomy without needing much effort.
 
 ## Quick info
 

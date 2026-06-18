@@ -1,6 +1,6 @@
 ---
 title: "Ragù blanc de tempeh"
-description: "Na na nère à ceux qui disent que la tradition ne peut pas passer au végétal !"
+description: "La preuve qu'une sauce pour les pâtes peut devenir végétale tout en restant riche et pleine de caractère."
 pubDate: "2025-11-11"
 category: "Plats de pâtes"
 tags: ["4 stagioni", "Tempeh", "Primi piatti"]
@@ -11,7 +11,7 @@ translationKey: "ragu-bianco-di-tempeh"
 
 <!-- 12ee43_4b67f415edef483da32072f67c61f5b4~mv2.png -->
 
-Na na nère à ceux qui disent que la tradition ne peut pas passer au végétal !
+La preuve qu'une sauce pour les pâtes peut très bien passer au végétal sans perdre en profondeur ni en gourmandise.
 
 ## Infos rapides
 
@@ -37,9 +37,9 @@ Na na nère à ceux qui disent que la tradition ne peut pas passer au végétal 
 
 ## Préparation
 
-1. **Prépare le sofrito.** Hache finement l'oignon, l'ail, le céleri et le romarin. Fais chauffer un filet d'huile dans la poêle et fais revenir à feu moyen jusqu'à ce que l'oignon devienne translucide. Sale et poivre.
+1. **Prépare la base aromatique.** Hache finement l'oignon, l'ail, le céleri et le romarin. Fais chauffer un filet d'huile dans la poêle et laisse revenir à feu moyen jusqu'à ce que l'oignon devienne translucide. Sale et poivre.
 2. **Prépare le tempeh.** Hache 150 g de tempeh jusqu'à obtenir une consistance proche d'une viande hachée.
-3. **Fais dorer le tempeh.** Ajoute-le au sofrito et laisse-le dorer 5 à 6 minutes en mélangeant souvent.
+3. **Fais dorer le tempeh.** Ajoute-le à la base aromatique et laisse-le dorer 5 à 6 minutes en mélangeant souvent.
 4. **Déglace.** Verse le vin blanc et laisse l'alcool s'évaporer à feu vif pendant 1 à 2 minutes.
 5. **Ajuste la consistance.** Si le ragù est trop sec, ajoute quelques cuillères d'eau chaude. Si tu as besoin de lier la sauce, délaie 1 cuillère à café de farine dans un peu d'eau et incorpore-la au mélange.
 6. **Termine.** Éteins le feu, ajoute le persil haché et mélange bien.
