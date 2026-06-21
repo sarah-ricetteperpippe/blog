@@ -15,6 +15,8 @@ translationKey: "cheesecake-alle-fragole"
 
 This is still one of my favourite cheesecakes: fresh, creamy and simple to assemble, with the strawberries around the edge doing most of the visual work.
 
+![Strawberry cheesecake decorated for a birthday](/images/ricette/cheesecake-fragole-compleanno.png)
+
 ## Quick info
 
 - **Servings:** 8–12 people
@@ -39,6 +41,8 @@ This is still one of my favourite cheesecakes: fresh, creamy and simple to assem
 
 **For the decoration:**
 - 250g (8.8 oz) fresh strawberries
+
+![Whole strawberry cheesecake with a fresh strawberry border](/images/ricette/cheesecake-fragole-frontale.png)
 
 ## Method
 
@@ -75,3 +79,10 @@ This is still one of my favourite cheesecakes: fresh, creamy and simple to assem
 - **Fruity:** use other seasonal fruit (cherries, peaches, apricots, melon).
 - **Lactose-free:** use plant-based or lactose-free butter, cheese, cream and yoghurt.
 - **Freezer-friendly:** up to 1 month; thaw in the fridge 2 hours before serving and add the strawberries only at the last minute.
+
+## Storage
+
+- **In the fridge:** up to 3 days, covered with cling film or stored under a cake dome.
+- **In the freezer:** up to 1 month; thaw in the fridge about 2 hours before serving.
+
+![Close-up of the strawberry cheesecake](/images/ricette/cheesecake-fragole-dettaglio.png)

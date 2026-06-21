@@ -15,6 +15,8 @@ translationKey: "cheesecake-alle-fragole"
 
 C'est encore l'un de mes cheesecakes préférés : frais, crémeux, facile à monter, et avec les fraises sur le bord qui font presque tout le travail visuel.
 
+![Cheesecake aux fraises décoré pour un anniversaire](/images/ricette/cheesecake-fragole-compleanno.png)
+
 ## Infos rapides
 
 - **Portions :** 8–12 personnes
@@ -39,6 +41,8 @@ C'est encore l'un de mes cheesecakes préférés : frais, crémeux, facile à mo
 
 **Pour la déco :**
 - 250 g de fraises fraîches
+
+![Cheesecake aux fraises entier avec bordure de fraises fraîches](/images/ricette/cheesecake-fragole-frontale.png)
 
 ## Préparation
 
@@ -75,3 +79,10 @@ C'est encore l'un de mes cheesecakes préférés : frais, crémeux, facile à mo
 - **Fruitée :** utilise d'autres fruits de saison (cerises, pêches, abricots, melon).
 - **Sans lactose :** utilise beurre, fromage, crème et yaourt végétaux ou sans lactose.
 - **Au congélateur :** jusqu'à 1 mois ; décongèle au frigo 2 heures avant de servir et ajoute les fraises uniquement au dernier moment.
+
+## Conservation
+
+- **Au frigo :** jusqu'à 3 jours, couverte de film alimentaire ou sous une cloche à gâteau.
+- **Au congélateur :** jusqu'à 1 mois ; décongèle-la au frigo environ 2 heures avant de servir.
+
+![Détail du cheesecake aux fraises](/images/ricette/cheesecake-fragole-dettaglio.png)

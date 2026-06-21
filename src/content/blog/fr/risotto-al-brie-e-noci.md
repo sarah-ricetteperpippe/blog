@@ -4,7 +4,7 @@ title: "Risotto au brie et aux noix"
 description: "Un risotto au brie et aux noix, riche, très crémeux et plus simple qu'il n'en a l'air."
 pubDate: "2026-01-12"
 category: "Risottos"
-tags: ["Autunno/inverno", "Brie", "Noci", "Risotti"]
+tags: ["Autunno/inverno", "Brie", "Noci", "Primi piatti", "Risotti"]
 lang: "fr"
 translationKey: "risotto-al-brie-e-noci"
 ---

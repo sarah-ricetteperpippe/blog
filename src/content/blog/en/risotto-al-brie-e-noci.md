@@ -4,7 +4,7 @@ title: "Brie and walnut risotto"
 description: "A rich, cosy risotto with brie and walnuts that tastes far fancier than the effort it takes."
 pubDate: "2026-01-12"
 category: "Risottos"
-tags: ["Autunno/inverno", "Brie", "Noci", "Risotti"]
+tags: ["Autunno/inverno", "Brie", "Noci", "Primi piatti", "Risotti"]
 lang: "en"
 translationKey: "risotto-al-brie-e-noci"
 ---
