@@ -8,7 +8,7 @@ export interface Props {
   lang?: string;
 }
 
-const { title, description = "Le migliori ricette per le peggiori pippe in cucina!", lang = 'it' } = Astro.props;
+const { title, description, lang = 'it' } = Astro.props;
 const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 
 const navLabels = {
@@ -18,23 +18,43 @@ const navLabels = {
 } as const;
 
 const t = navLabels[lang as keyof typeof navLabels] ?? navLabels.it;
+const showGuidesInNav = false;
 
-const footerLabels = {
+const siteLabels = {
   it: {
+    brandTitle: 'Ricette per Pippe',
+    brandInline: 'Ricette per pippe',
+    defaultDescription: 'Le migliori ricette per le peggiori pippe in cucina!',
+    homeLabel: 'Ricette per Pippe - Home',
+    logoAlt: 'Ricette per Pippe',
+    headerTagline: "...if it's listed, it's tasted!",
     tagline: "If it's listed, it's tasted by Sarah",
     copyright: `© ${new Date().getFullYear()} by Ricette per pippe di Sarah Lasaracina. Tutti i diritti riservati.`,
   },
   en: {
+    brandTitle: 'Clueless Cooks',
+    brandInline: 'Clueless Cooks',
+    defaultDescription: 'The best recipes for the most clueless cooks in the kitchen!',
+    homeLabel: 'Clueless Cooks - Home',
+    logoAlt: 'Clueless Cooks',
+    headerTagline: "...if it's listed, it's tasted!",
     tagline: "If it's listed, it's tasted by Sarah",
-    copyright: `© ${new Date().getFullYear()} by Ricette per pippe by Sarah Lasaracina. All rights reserved.`,
+    copyright: `© ${new Date().getFullYear()} Clueless Cooks by Sarah Lasaracina. All rights reserved.`,
   },
   fr: {
+    brandTitle: 'Recettes pour Quiches',
+    brandInline: 'Recettes pour quiches',
+    defaultDescription: 'Les meilleures recettes pour les pires cuisiniers !',
+    homeLabel: 'Recettes pour Quiches - Accueil',
+    logoAlt: 'Recettes pour Quiches',
+    headerTagline: "...if it's listed, it's tasted!",
     tagline: "If it's listed, it's tasted by Sarah",
-    copyright: `© ${new Date().getFullYear()} par Ricette per pippe de Sarah Lasaracina. Tous droits réservés.`,
+    copyright: `© ${new Date().getFullYear()} par Recettes pour quiches de Sarah Lasaracina. Tous droits réservés.`,
   },
 } as const;
 
-const footerT = footerLabels[lang as keyof typeof footerLabels] ?? footerLabels.it;
+const siteT = siteLabels[lang as keyof typeof siteLabels] ?? siteLabels.it;
+const metaDescription = description ?? siteT.defaultDescription;
 
 const flags = [
   { code: 'it', emoji: '🇮🇹', label: 'Italiano' },
@@ -60,23 +80,23 @@ function switchLangUrl(targetLang: string) {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light" />
-  <title>{title} — Ricette per Pippe</title>
-  <meta name="description" content={description} />
+  <title>{title} — {siteT.brandTitle}</title>
+  <meta name="description" content={metaDescription} />
   <link rel="canonical" href={Astro.url.href} />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Ricette per Pippe" />
-  <meta property="og:title" content={`${title} — Ricette per Pippe`} />
-  <meta property="og:description" content={description} />
+  <meta property="og:site_name" content={siteT.brandTitle} />
+  <meta property="og:title" content={`${title} — ${siteT.brandTitle}`} />
+  <meta property="og:description" content={metaDescription} />
   <meta property="og:url" content={Astro.url.href} />
   <meta property="og:locale" content={lang === 'it' ? 'it_IT' : lang === 'fr' ? 'fr_FR' : 'en_GB'} />
   <meta property="og:image" content={`${Astro.site}images/og-default.png`} />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={`${title} — Ricette per Pippe`} />
-  <meta name="twitter:description" content={description} />
+  <meta name="twitter:title" content={`${title} — ${siteT.brandTitle}`} />
+  <meta name="twitter:description" content={metaDescription} />
 
   <!-- Favicon -->
   <link rel="icon" href="/logo-pippe.png" type="image/png" />
@@ -91,18 +111,18 @@ function switchLangUrl(targetLang: string) {
 
   <header class="site-header">
     <div class="site-branding">
-      <a href={`${base}${lang}/`} class="site-logo-link" aria-label="Ricette per Pippe - Home">
-        <img src={`${base}logo-pippe.png`} alt="Ricette per Pippe" class="site-logo" />
+      <a href={`${base}${lang}/`} class="site-logo-link" aria-label={siteT.homeLabel}>
+        <img src={`${base}logo-pippe.png`} alt={siteT.logoAlt} class="site-logo" />
       </a>
       <div class="site-brand-text">
-        <span class="site-title site-title-fallback">Ricette per Pippe</span>
-        <span class="site-tagline">...if it's listed, it's tasted!</span>
+        <span class="site-title site-title-fallback">{siteT.brandTitle}</span>
+        <span class="site-tagline">{siteT.headerTagline}</span>
       </div>
     </div>
     <div class="header-right">
       <nav class="header-nav">
         <a href={`${base}${lang}/blog/`}>{t.blog}</a>
-        <a href={`${base}${lang}/guide/`}>{t.guide}</a>
+        {showGuidesInNav && <a href={`${base}${lang}/guide/`}>{t.guide}</a>}
         <a href={`${base}${lang}/chi-sono/`}>{t.chiSono}</a>
       </nav>
       <button class="search-trigger" id="search-trigger" aria-label={t.search}>
@@ -141,11 +161,11 @@ function switchLangUrl(targetLang: string) {
   </main>
 
   <footer class="site-footer">
-    <div class="footer-branding" aria-label="Ricette per Pippe">
-      <span class="footer-brand-name">Ricette per pippe</span>
-      <span class="footer-tagline">{footerT.tagline}</span>
+    <div class="footer-branding" aria-label={siteT.brandTitle}>
+      <span class="footer-brand-name">{siteT.brandInline}</span>
+      <span class="footer-tagline">{siteT.tagline}</span>
     </div>
-    <span class="footer-copyright">{footerT.copyright}</span>
+    <span class="footer-copyright">{siteT.copyright}</span>
   </footer>
 
   <script>

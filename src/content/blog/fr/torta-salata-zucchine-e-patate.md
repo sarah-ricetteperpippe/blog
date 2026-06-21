@@ -1,6 +1,6 @@
 ---
 title: "Tarte salée courgettes et pommes de terre"
-description: "Je n'aurais pas misé un radis dessus, et finalement c'est un vide-frigo de folie !"
+description: "Une tarte salée très fiable pour écouler courgettes, pommes de terre et fromage qui fond bien."
 pubDate: "2025-02-13"
 heroImage: "/images/ricette/torta-salata-zucchine-patate.webp"
 category: "Plats uniques"
@@ -11,7 +11,7 @@ translationKey: "torta-salata-zucchine-e-patate"
 
 <!-- c9ca99_475f1da46dd84d1b8235885630bb86d4~mv2.png -->
 
-Je n'aurais pas misé un radis dessus, et finalement c'est un vide-frigo de folie !
+Je n'en attendais pas grand-chose, et au final c'est devenue une excellente tarte salée de fond de frigo : légumes fondants, fromage généreux et très peu de complications.
 
 ## Infos rapides
 

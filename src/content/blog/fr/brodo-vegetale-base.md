@@ -1,6 +1,6 @@
 ---
 title: "Bouillon de légumes de base (à partir de légumes frais)"
-description: "Si t'es une quiche en cuisine, il te faut forcément un repère même pour ça…"
+description: "Un bouillon de légumes maison très simple, à faire avec ce que tu as déjà dans le frigo."
 pubDate: "2025-01-26"
 heroImage: "/images/ricette/brodo-vegetale.webp"
 category: "Préparations de base"
@@ -11,7 +11,7 @@ translationKey: "brodo-vegetale-base"
 
 <!-- c9ca99_0750cea780b841f298b465cf1a675a15~mv2.png -->
 
-Si t'es une *pippa* (quiche en cuisine), il te faut forcément un repère même pour ça…
+Un bouillon de légumes maison tout simple, avec juste assez de repères pour qu'il soit fiable même si tu n'en fais pas souvent.
 
 ## Infos rapides
 

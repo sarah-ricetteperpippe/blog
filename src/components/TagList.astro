@@ -1,4 +1,6 @@
 ---
+import { getBlogTagLabel, getBlogTagSlug, normalizeBlogTag } from '../config/tags';
+import type { SiteLang } from '../config/taxonomy';
 import { slugify } from '../utils/slugify';
 
 export interface Props {
@@ -12,16 +14,28 @@ const { tags, lang, active } = Astro.props;
 const base = (import.meta.env.BASE_URL as string).endsWith('/')
   ? import.meta.env.BASE_URL
   : import.meta.env.BASE_URL + '/';
+const currentLang = (lang === 'en' || lang === 'fr' || lang === 'it' ? lang : 'it') as SiteLang;
+const activeTag = typeof active === 'string' ? normalizeBlogTag(active) : null;
+const localizedTags = (tags ?? []).map((tag) => {
+  const normalizedTag = normalizeBlogTag(tag);
+  return {
+    label: getBlogTagLabel(tag, currentLang),
+    hrefTag: getBlogTagSlug(tag, currentLang) || slugify(tag),
+    isActive: typeof normalizedTag === 'string'
+      ? normalizedTag === activeTag
+      : tag === active,
+  };
+});
 ---
 
 {tags && tags.length > 0 && (
   <div class="tag-list">
-    {tags.map(tag => (
+    {localizedTags.map((tag) => (
       <a
-        href={`${base}${lang}/blog/tag/${slugify(tag)}/`}
-        class={`tag-chip tag-chip--link${tag === active ? ' tag-chip--active' : ''}`}
+        href={`${base}${lang}/blog/tag/${tag.hrefTag}/`}
+        class={`tag-chip tag-chip--link${tag.isActive ? ' tag-chip--active' : ''}`}
         rel="tag"
-      >{tag}</a>
+      >{tag.label}</a>
     ))}
   </div>
 )}

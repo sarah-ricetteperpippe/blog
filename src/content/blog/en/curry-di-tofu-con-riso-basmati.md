@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/curry-tofu.webp"
 title: "Tofu curry with basmati rice"
-description: "Vegan take on this Indian delight!"
+description: "A cosy tofu curry with basmati rice: fragrant, creamy and weeknight-friendly."
 pubDate: "2025-11-10"
 category: "One-pot dishes"
 tags: ["4 stagioni", "Piatti dal mondo", "Piatti unici"]
@@ -11,7 +11,7 @@ translationKey: "curry-di-tofu-con-riso-basmati"
 
 <!-- 12ee43_8e9ba3f51ca94ce0bfbe424eb6341eb0~mv2.jpg -->
 
-A vegan spin on a yummy yummy Indian dish!
+A comforting tofu curry with basmati rice: warmly spiced, creamy, and very manageable even if you're not in the mood to cook something complicated.
 
 ## Quick info
 
@@ -27,7 +27,7 @@ A vegan spin on a yummy yummy Indian dish!
 - 1 pack of tofu (about 250g / 8.8 oz)
 - 2 tbsp coconut milk
 - soy milk to taste (enough to cover the tofu while marinating)
-- 3 tbsp curry powder total (1.5 for the marinade + 1.5 for the soffritto)
+- 3 tbsp curry powder total (1.5 for the marinade + 1.5 for the aromatic base)
 - 1 tablespoon turmeric
 - ½ tablespoon brown sugar
 - 1 tablespoon plain (00) flour or rice flour (thickener)
@@ -57,7 +57,7 @@ A vegan spin on a yummy yummy Indian dish!
 
 In a pan with a drizzle of oil, toast the tofu for a few minutes until lightly browned. Set aside.
 
-### Spiced soffritto
+### Spiced aromatic base
 
 1. Slice the onion.
 2. Heat a drizzle of oil in a large pan.

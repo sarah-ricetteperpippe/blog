@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/alberelli-natalizi-di-brie-o-camembert.webp"
-title: "Petits sapins de Noël au brie ou camembert"
-description: "Mignons et hyper faciles à improviser à la dernière minute !"
+title: "Petits sapins de Noël au brie ou au camembert"
+description: "Une bouchée de fête très facile à préparer au dernier moment, mais qui fait tout de même son effet."
 pubDate: "2026-01-03"
 category: "Entrée"
 tags: ["Natale", "Antipasto"]
@@ -12,7 +12,7 @@ translationKey: "alberelli-natalizi-di-brie-o-camembert"
 <!-- c9ca99_d0c06c40ea8e4bf99447eed072858179~mv2.png -->
 <!-- c9ca99_5bcf6b3cf0a440a095a3aa0a40db5e10~mv2.png -->
 
-Mignons et hyper faciles à improviser à la dernière minute !
+Une petite bouchée de fête improvisée en quelques minutes, mais qui reste très jolie à servir.
 
 ## Infos rapides
 

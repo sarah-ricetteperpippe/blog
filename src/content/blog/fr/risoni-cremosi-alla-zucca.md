@@ -1,8 +1,8 @@
 ---
-title: "Risoni crémeux au potiron, zéro prétention"
-description: "Potiron zéro prétention, ingrédients minimalistes, vitesse turbo !"
+title: "Risoni crémeux au potiron"
+description: "Des risoni crémeux au potiron, avec peu d'ingrédients et très peu d'effort."
 pubDate: "2025-11-26"
-heroImage: "/images/ricette/risocardoncelli.webp"
+heroImage: "/images/ricette/risoni-zucca-zero-pretese.webp"
 category: "Plats de pâtes"
 tags: ["Autunno/inverno", "Zucca", "Primi piatti"]
 lang: "fr"
@@ -11,7 +11,7 @@ translationKey: "risoni-cremosi-alla-zucca"
 
 <!-- c9ca99_0acf31825b834c6a9e371d7dfb8fdfd6~mv2.png -->
 
-Potiron zéro prétention, ingrédients minimalistes, vitesse turbo !
+Des risoni crémeux au potiron, sans chichi : quelques ingrédients, une purée bien lisse, et le dîner est réglé.
 
 ## Infos rapides
 
@@ -30,7 +30,7 @@ Potiron zéro prétention, ingrédients minimalistes, vitesse turbo !
 - huile d'olive extra vierge selon besoin
 - sel selon besoin
 - poivre selon besoin
-- du fromage au choix pour mantecare (fromage végétal, brie, provola, fromage frais, etc.)
+- du fromage au choix pour la finition (fromage végétal, brie, provola, fromage frais, etc.)
 
 ## Préparation
 
@@ -40,5 +40,5 @@ Potiron zéro prétention, ingrédients minimalistes, vitesse turbo !
 4. **Fais revenir les risoni.** Verse les risoni dans la poêle et fais-les torréfier doucement 30 à 40 secondes.
 5. **Cuisson façon risotto.** Ajoute une louche d'eau bouillante. Continue en ajoutant de l'eau au fur et à mesure, comme pour un risotto.
 6. **Incorpore le potiron.** Vers la fin de cuisson des risoni, ajoute la crème de potiron. Mélange bien et ajuste la quantité d'eau pour garder une consistance crémeuse. Rectifie en sel si besoin.
-7. **Mantecatura.** Hors du feu, ajoute le fromage et mélange énergiquement jusqu'à obtenir une texture veloutée.
+7. **Finition hors du feu.** Hors du feu, ajoute le fromage et mélange énergiquement jusqu'à obtenir une texture veloutée.
 8. **Sers.** Dresse aussitôt, avec un tour de poivre frais si tu aimes.

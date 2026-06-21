@@ -44,5 +44,3 @@ Non le davo una lira e invece si è rivelata uno svuotafrigo strabuonissimo!
 8. Completa con 40g di formaggio grattugiato e una spolverata di pepe nero.
 9. Cuoci in forno statico preriscaldato a 180°C per 35 minuti (o ventilato a 170°C).
 10. Sforna e lascia riposare 5 minuti prima di tagliare.
-
-![Torta salata zucchine e patate](/images/ricette/torta-zucchine.webp)

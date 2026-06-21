@@ -4,7 +4,7 @@ title: "Risotto al brie e noci"
 description: "Questo è spaziale, spa-zia-leeeee!!!"
 pubDate: "2026-01-12"
 category: "Risotti"
-tags: ["Autunno/inverno", "Brie", "Noci", "Risotti"]
+tags: ["Autunno/inverno", "Brie", "Noci", "Primi piatti", "Risotti"]
 translationKey: "risotto-al-brie-e-noci"
 ---
 

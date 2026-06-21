@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/vellutata-funghi.webp"
 title: "Velouté de champignons"
-description: "Découvert en Égypte, plus jamais sans !"
+description: "Un velouté de champignons très soyeux, profond en goût et vraiment simple à préparer."
 pubDate: "2025-11-10"
 category: "Soupes et veloutés"
 tags: ["Funghi", "Zuppe e vellutate", "Autunno/inverno"]
@@ -11,7 +11,7 @@ translationKey: "vellutata-di-funghi"
 
 <!-- 12ee43_ae70b279d38a4d0fb725b06a68f1b81d~mv2.png -->
 
-Découvert en Égypte, plus jamais sans !
+J'en ai goûté une version en Égypte et j'en refais depuis. C'est simple, crémeux et très champignon, sans demander beaucoup d'effort.
 
 ## Infos rapides
 

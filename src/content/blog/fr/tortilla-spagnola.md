@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/tortilla-spagnola.webp"
 title: "Tortilla espagnole"
-description: "...parce qu'« omelette aux patates et aux oignons », ça sonnait moins cool ! Valeur sûre !"
+description: "La tortilla espagnole, ou l'un des meilleurs moyens de transformer pommes de terre, oignon et œufs en dîner."
 pubDate: "2025-12-16"
 category: "Omelettes"
 tags: ["4 stagioni", "Piatti dal mondo", "Frittate", "Patate"]
@@ -11,7 +11,7 @@ translationKey: "tortilla-spagnola"
 
 <!-- c9ca99_49b0e85c0b0d460e8e54ed13b5db4804~mv2.png -->
 
-...parce qu'« omelette aux patates et aux oignons », ça sonnait moins cool ! Valeur sûre !
+Appelle-la tortilla espagnole ou omelette aux pommes de terre et aux oignons : dans tous les cas, c'est un grand classique et une valeur très sûre.
 
 ## Infos rapides
 

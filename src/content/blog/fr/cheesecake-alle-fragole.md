@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/cheesecake-fragole.webp"
 title: "Cheesecake aux fraises"
-description: "Le meilleur cheesecake que j'aie jamais fait… et joyeux anniversaire maman !"
+description: "Un cheesecake frais sans cuisson, très joli sur la table et beaucoup plus simple qu'il n'en a l'air."
 pubDate: "2025-11-11"
 category: "Desserts"
 tags: ["Dolci", "Torte", "Compleanno", "Cheesecake", "Primavera/estate", "Fragole"]
@@ -13,7 +13,9 @@ translationKey: "cheesecake-alle-fragole"
 <!-- c9ca99_bd44037add18457fab25d20094f48419~mv2.png -->
 <!-- c9ca99_e86f8b87fed74ad08fcadb74b4a21844~mv2.png -->
 
-Le meilleur cheesecake que j'aie jamais fait… et joyeux anniversaire maman !
+C'est encore l'un de mes cheesecakes préférés : frais, crémeux, facile à monter, et avec les fraises sur le bord qui font presque tout le travail visuel.
+
+![Cheesecake aux fraises décoré pour un anniversaire](/images/ricette/cheesecake-fragole-compleanno.png)
 
 ## Infos rapides
 
@@ -39,6 +41,8 @@ Le meilleur cheesecake que j'aie jamais fait… et joyeux anniversaire maman !
 
 **Pour la déco :**
 - 250 g de fraises fraîches
+
+![Cheesecake aux fraises entier avec bordure de fraises fraîches](/images/ricette/cheesecake-fragole-frontale.png)
 
 ## Préparation
 
@@ -75,3 +79,10 @@ Le meilleur cheesecake que j'aie jamais fait… et joyeux anniversaire maman !
 - **Fruitée :** utilise d'autres fruits de saison (cerises, pêches, abricots, melon).
 - **Sans lactose :** utilise beurre, fromage, crème et yaourt végétaux ou sans lactose.
 - **Au congélateur :** jusqu'à 1 mois ; décongèle au frigo 2 heures avant de servir et ajoute les fraises uniquement au dernier moment.
+
+## Conservation
+
+- **Au frigo :** jusqu'à 3 jours, couverte de film alimentaire ou sous une cloche à gâteau.
+- **Au congélateur :** jusqu'à 1 mois ; décongèle-la au frigo environ 2 heures avant de servir.
+
+![Détail du cheesecake aux fraises](/images/ricette/cheesecake-fragole-dettaglio.png)

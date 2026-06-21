@@ -14,6 +14,8 @@ translationKey: "cheesecake-alle-fragole"
 
 La miglior cheesecake che io abbia mai fatto...e tanti auguri mamma!
 
+![Cheesecake alle fragole decorata per un compleanno](/images/ricette/cheesecake-fragole-compleanno.png)
+
 ## Informazioni rapide
 
 - **Porzioni:** 8–12 persone
@@ -38,6 +40,8 @@ La miglior cheesecake che io abbia mai fatto...e tanti auguri mamma!
 
 **Per la decorazione:**
 - 250 g di fragole fresche
+
+![Cheesecake alle fragole intera con bordo di fragole fresche](/images/ricette/cheesecake-fragole-frontale.png)
 
 ## Procedimento
 
@@ -74,3 +78,10 @@ La miglior cheesecake che io abbia mai fatto...e tanti auguri mamma!
 - **Fruttata:** usa altri frutti di stagione (ciliegie, pesche, albicocche, melone).
 - **Senza lattosio:** usa burro, formaggio, panna e yogurt vegetali o senza lattosio.
 - **Si può congelare:** fino a 1 mese; scongela in frigo 2 ore prima di servire e aggiungi le fragole solo al momento.
+
+## Conservazione
+
+- **In frigorifero:** fino a 3 giorni, coperta con pellicola o sotto una campana per dolci.
+- **In freezer:** fino a 1 mese, da scongelare in frigorifero circa 2 ore prima di servirla.
+
+![Dettaglio della cheesecake alle fragole](/images/ricette/cheesecake-fragole-dettaglio.png)

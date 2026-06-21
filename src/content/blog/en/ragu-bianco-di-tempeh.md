@@ -1,6 +1,6 @@
 ---
 title: "White tempeh ragù"
-description: "Take that, anyone who says tradition can't go plant-based!"
+description: "Proof that a comforting pasta sauce can absolutely go plant-based without losing character."
 pubDate: "2025-11-11"
 category: "First courses"
 tags: ["4 stagioni", "Tempeh", "Primi piatti"]
@@ -11,7 +11,7 @@ translationKey: "ragu-bianco-di-tempeh"
 
 <!-- 12ee43_4b67f415edef483da32072f67c61f5b4~mv2.png -->
 
-Take that, anyone who says tradition can't go plant-based!
+Proof that a comforting pasta sauce can absolutely go plant-based and still feel rich, savoury and satisfying.
 
 ## Quick info
 
@@ -37,9 +37,9 @@ Take that, anyone who says tradition can't go plant-based!
 
 ## Method
 
-1. **Make the soffritto (*soffritto*).** Finely chop the onion, garlic, celery and rosemary. Heat a drizzle of oil in a frying pan and sauté over medium heat until the onion turns translucent. Season with salt and pepper.
+1. **Build the aromatic base.** Finely chop the onion, garlic, celery and rosemary. Heat a drizzle of oil in a frying pan and cook everything over medium heat until the onion turns translucent. Season with salt and pepper.
 2. **Prep the tempeh.** Chop the 150g (5.3 oz) of tempeh until it has a mince-like texture.
-3. **Toast the tempeh.** Add it to the soffritto and let it brown for 5–6 minutes, stirring often.
+3. **Toast the tempeh.** Add it to the aromatic base and let it brown for 5–6 minutes, stirring often.
 4. **Deglaze.** Pour in the white wine and let the alcohol cook off over high heat for 1–2 minutes.
 5. **Adjust the consistency.** If the ragù is dry, add a few tablespoons of hot water. If you need to thicken it, dissolve 1 teaspoon of flour in a splash of water and stir it in.
 6. **Finish.** Turn off the heat, add the chopped parsley and mix well.

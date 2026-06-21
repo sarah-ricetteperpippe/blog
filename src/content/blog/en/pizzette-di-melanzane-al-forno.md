@@ -1,6 +1,6 @@
 ---
 title: "Baked aubergine mini-pizzas"
-description: "Come on, let's eat some veg every once in a while!"
+description: "A fun, low-effort way to turn aubergines into something halfway between dinner and a snack."
 pubDate: "2025-01-22"
 heroImage: "/images/ricette/pizzette-melanzane.webp"
 category: "One-pot dishes"
@@ -11,7 +11,7 @@ translationKey: "pizzette-di-melanzane-al-forno"
 
 <!-- c9ca99_50c5336c11e94aee8f58091a2b8aa160~mv2.png -->
 
-Come on, let's eat some veg every once in a while!
+An easy way to make aubergines feel a lot more exciting: halfway between mini pizzas, a snack and a light dinner.
 
 ## Quick info
 

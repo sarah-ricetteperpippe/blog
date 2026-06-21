@@ -1,6 +1,6 @@
 ---
 title: "Escalopes de pleurotes du panicaut"
-description: "On dirait des escalopes classiques, c'est savoureux, ça croustille à mort — je m'étonne moi-même !"
+description: "Elles ont l'air de vraies escalopes, elles sont croustillantes et franchement très satisfaisantes."
 pubDate: "2025-02-24"
 heroImage: "/images/ricette/cotolette-funghi.webp"
 category: "Plats principaux"
@@ -11,7 +11,7 @@ translationKey: "cotolette-di-funghi-cardoncelli"
 
 <!-- c9ca99_38a0fa2ef73349e1a119cd7794fe1265~mv2.png -->
 
-On dirait des escalopes classiques, c'est savoureux, ça croustille à mort — je m'étonne moi-même !
+Elles ont vraiment l'air de petites escalopes panées, avec une croûte très croustillante et un résultat étonnamment convaincant.
 
 ## Infos rapides
 

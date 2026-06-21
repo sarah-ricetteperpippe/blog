@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/pasta-lenticchie.webp"
 title: "Pasta and lentils (soupy or not)"
-description: "I'd eat lentils for breakfast too!"
+description: "Cosy, filling and flexible: one of the best ways to turn lentils into dinner."
 pubDate: "2026-01-07"
 category: "First courses"
 tags: ["Autunno/inverno", "Lenticchie", "Zuppe", "Piatti unici", "Primi piatti"]
@@ -11,7 +11,7 @@ translationKey: "pasta-e-lenticchie"
 
 <!-- c9ca99_1ae27ffb64dd4dbb8e842510dbce589a~mv2.jpg -->
 
-I'd eat lentils for breakfast too!
+I could happily eat lentils every day, and this is one of the best ways to do it: hearty, comforting and easy to tweak depending on how brothy you want it.
 
 ## Quick info
 
@@ -25,9 +25,9 @@ I'd eat lentils for breakfast too!
 - 160g (5.6 oz) pasta (conchigliette or tubetti)
 - 140g (4.9 oz) dried lentils
 - 3 litres (12.7 cups) water (for the homemade broth)
-- 4 medium carrots (3 for the broth, 1 for the soffritto)
-- 1 medium onion + ½ onion (1 whole for the broth, ½ for the soffritto)
-- 10 cherry tomatoes (6 for the broth, 4 for the soffritto)
+- 4 medium carrots (3 for the broth, 1 for the aromatic base)
+- 1 medium onion + ½ onion (1 whole for the broth, ½ for the aromatic base)
+- 10 cherry tomatoes (6 for the broth, 4 for the aromatic base)
 - 1 celery stalk (for the broth)
 - parsley to taste (optional)
 - 2 bay leaves
@@ -40,13 +40,13 @@ I'd eat lentils for breakfast too!
 
 Put 3.5 litres (14.8 cups) of water in a pot with: 1 whole onion, 3 carrots halved, 1 celery stalk, 6 cherry tomatoes, parsley (if using) and 1 bay leaf. Bring to the boil, then drop the heat and let it simmer for 30–50 minutes. Keep the broth warm. (If you're using ready-made broth, just bring it up to temperature.)
 
-### 2. Make the soffritto
+### 2. Build the aromatic base
 
-Heat a glug of oil in a saucepan. Add ½ onion, roughly chopped, and 1 carrot in thin rounds. Cook over medium heat until soft, then add 4 quartered cherry tomatoes and let them mingle.
+Heat a generous glug of oil in a saucepan. Add ½ onion, roughly chopped, and 1 carrot sliced into thin rounds. Cook over medium heat until softened, then add 4 quartered cherry tomatoes and let them cook down for a few minutes.
 
 ### 3. Cook the lentils
 
-Rinse 140g (4.9 oz) of lentils and add them to the soffritto. Let them pick up flavour, then cover with hot broth (about twice their height). Bring to the boil, add 1 bay leaf and let it simmer, topping up with broth as needed.
+Rinse 140g (4.9 oz) of lentils and add them to the aromatic base. Let them pick up some flavour, then cover with hot broth, roughly twice their height. Bring to the boil, add 1 bay leaf and let them simmer, topping up with broth as needed.
 
 ### 4. Add the pasta
 

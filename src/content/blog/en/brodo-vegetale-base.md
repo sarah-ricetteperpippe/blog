@@ -1,6 +1,6 @@
 ---
 title: "Basic vegetable broth (from fresh veg)"
-description: "If you're a clueless cook, you definitely need notes for this one too..."
+description: "A simple homemade vegetable broth you can build from whatever is already in the fridge."
 pubDate: "2025-01-26"
 heroImage: "/images/ricette/brodo-vegetale.webp"
 category: "Basic preparations"
@@ -11,7 +11,7 @@ translationKey: "brodo-vegetale-base"
 
 <!-- c9ca99_0750cea780b841f298b465cf1a675a15~mv2.png -->
 
-If you're a *pippa* (clueless cook), you definitely need notes for this one too...
+This is a very straightforward homemade vegetable broth, with enough notes to make it reliable even if you do not make stock often.
 
 ## Quick info
 

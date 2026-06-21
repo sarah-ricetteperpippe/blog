@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/tortilla-spagnola.webp"
 title: "Spanish tortilla"
-description: "...Because \"potato and onion omelette\" sounded less cool! A sure thing!"
+description: "Spanish tortilla: potato, onion and eggs in one of the most reliable combinations on earth."
 pubDate: "2025-12-16"
 category: "Omelettes"
 tags: ["4 stagioni", "Piatti dal mondo", "Frittate", "Patate"]
@@ -11,7 +11,7 @@ translationKey: "tortilla-spagnola"
 
 <!-- c9ca99_49b0e85c0b0d460e8e54ed13b5db4804~mv2.png -->
 
-...Because "potato and onion omelette" sounded less cool! A sure thing!
+Call it what you like, potato and onion omelette or Spanish tortilla: either way, it is an absolute classic and a very dependable thing to cook.
 
 ## Quick info
 

@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/cheesecake-fragole.webp"
 title: "Strawberry cheesecake"
-description: "The best cheesecake I've ever made... and happy birthday mum!"
+description: "A fresh no-bake strawberry cheesecake that looks special without being difficult to make."
 pubDate: "2025-11-11"
 category: "Sweets"
 tags: ["Dolci", "Torte", "Compleanno", "Cheesecake", "Primavera/estate", "Fragole"]
@@ -13,7 +13,9 @@ translationKey: "cheesecake-alle-fragole"
 <!-- c9ca99_bd44037add18457fab25d20094f48419~mv2.png -->
 <!-- c9ca99_e86f8b87fed74ad08fcadb74b4a21844~mv2.png -->
 
-The best cheesecake I've ever made... and happy birthday mum!
+This is still one of my favourite cheesecakes: fresh, creamy and simple to assemble, with the strawberries around the edge doing most of the visual work.
+
+![Strawberry cheesecake decorated for a birthday](/images/ricette/cheesecake-fragole-compleanno.png)
 
 ## Quick info
 
@@ -39,6 +41,8 @@ The best cheesecake I've ever made... and happy birthday mum!
 
 **For the decoration:**
 - 250g (8.8 oz) fresh strawberries
+
+![Whole strawberry cheesecake with a fresh strawberry border](/images/ricette/cheesecake-fragole-frontale.png)
 
 ## Method
 
@@ -75,3 +79,10 @@ The best cheesecake I've ever made... and happy birthday mum!
 - **Fruity:** use other seasonal fruit (cherries, peaches, apricots, melon).
 - **Lactose-free:** use plant-based or lactose-free butter, cheese, cream and yoghurt.
 - **Freezer-friendly:** up to 1 month; thaw in the fridge 2 hours before serving and add the strawberries only at the last minute.
+
+## Storage
+
+- **In the fridge:** up to 3 days, covered with cling film or stored under a cake dome.
+- **In the freezer:** up to 1 month; thaw in the fridge about 2 hours before serving.
+
+![Close-up of the strawberry cheesecake](/images/ricette/cheesecake-fragole-dettaglio.png)

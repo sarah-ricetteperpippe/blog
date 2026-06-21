@@ -1,6 +1,6 @@
 ---
-title: "(Faux) Risotto alla parmigiana"
-description: "Alias le risotto des désespérés qui n'ont plus rien au frigo. N'importe quelle alternative fait l'affaire, de toute façon ça reste du riz et du fromage !"
+title: "Faux risotto alla parmigiana"
+description: "Le risotto des jours de frigo vide : souple, réconfortant et quand même bien crémeux."
 pubDate: "2025-01-26"
 heroImage: "/images/ricette/risotto-finta-parmigiana.webp"
 category: "Plats de pâtes et riz"
@@ -11,7 +11,7 @@ translationKey: "finto-risotto-alla-parmigiana"
 
 <!-- c9ca99_390b030e3d07402b82ce24c891e6f948~mv2.png -->
 
-Alias le risotto des désespérés qui n'ont plus rien au frigo. La version originale veut qu'on le fasse au parmesan — moi, j'ai fait avec autre chose… n'importe quelle alternative fait l'affaire, de toute façon ça reste du riz et du fromage !
+C'est le risotto des jours de frigo vide. En théorie il se fait au parmesan, mais un autre fromage à râper fonctionne très bien aussi : au fond, c'est du riz, du beurre et du fromage qui font le travail.
 
 > Petit info : le parmesan et le grana ne sont pas des fromages végétariens !
 

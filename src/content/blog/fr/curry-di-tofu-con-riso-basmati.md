@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/curry-tofu.webp"
 title: "Curry de tofu et riz basmati"
-description: "La version vegan de cette merveille indienne !"
+description: "Un curry de tofu au riz basmati, parfumé, crémeux et très réconfortant."
 pubDate: "2025-11-10"
 category: "Plats uniques"
 tags: ["4 stagioni", "Piatti dal mondo", "Piatti unici"]
@@ -11,7 +11,7 @@ translationKey: "curry-di-tofu-con-riso-basmati"
 
 <!-- 12ee43_8e9ba3f51ca94ce0bfbe424eb6341eb0~mv2.jpg -->
 
-La version vegan d'un plat indien yummy yummy !
+Un curry de tofu parfumé, crémeux et très réconfortant, assez simple à préparer même quand on n'a pas envie de cuisiner quelque chose de trop compliqué.
 
 ## Infos rapides
 
