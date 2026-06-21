@@ -26,6 +26,7 @@ const ui = {
   it: {
     heroTitle: 'Le migliori ricette\nper le peggiori pippe in cucina!',
     heroDesc: 'Benvenuti su <em class="hero-brand">Ricette per pippe</em>,<br>il luogo perfetto per scoprire nuove ricette a prova di incapace, testate e approvate da Sarah.<br>Per pippe in cucina che ambiscono alla mera sopravvivenza,<br>e per tutte quelle che ogni tanto sperano anche di fare (umilmente) figura!',
+    bannerAlt: 'Ricette per pippe',
     cta: 'Scopri di più',
     subscribe: 'Iscriviti',
     latest: 'Ricette alla rinfusa',
@@ -42,7 +43,8 @@ const ui = {
   },
   en: {
     heroTitle: 'The best recipes\nfor the worst cooks in the kitchen!',
-    heroDesc: 'Welcome to Ricette per pippe, the perfect place to discover new foolproof recipes, tested and approved by Sarah.',
+    heroDesc: 'Welcome to <em class="hero-brand">Clueless Cooks</em>, the perfect place to discover new foolproof recipes, tested and approved by Sarah.',
+    bannerAlt: 'Clueless Cooks',
     cta: 'Discover more',
     subscribe: 'Subscribe',
     latest: 'A grab bag of recipes',
@@ -59,7 +61,8 @@ const ui = {
   },
   fr: {
     heroTitle: 'Les meilleures recettes\npour les pires cuisiniers !',
-    heroDesc: 'Bienvenue sur Ricette per pippe, le lieu idéal pour découvrir des recettes simples et infaillibles, testées et approuvées par Sarah.',
+    heroDesc: 'Bienvenue sur <em class="hero-brand">Recettes pour quiches</em>, le lieu idéal pour découvrir des recettes simples et infaillibles, testées et approuvées par Sarah.',
+    bannerAlt: 'Recettes pour quiches',
     cta: 'Découvrir',
     subscribe: "S'abonner",
     latest: 'Recettes en vrac',
@@ -98,7 +101,7 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
   </section>
 
   <div class="home-banner js-parallax">
-    <img src={`${base}main-banner.png`} alt="Ricette per pippe" class="home-banner-img" loading="lazy" />
+    <img src={`${base}main-banner.png`} alt={t.bannerAlt} class="home-banner-img" loading="lazy" />
   </div>
 
   <section class="recipes-section" id="ricette">

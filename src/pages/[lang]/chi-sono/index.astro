@@ -12,100 +12,323 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 
-const i18n = {
+type ParagraphTone = 'highlight' | 'quote' | 'aside';
+
+type AboutParagraph = {
+  text: string;
+  tone?: ParagraphTone;
+};
+
+type AboutPageCopy = {
+  title: string;
+  description: string;
+  eyebrow: string;
+  h1: string;
+  story: AboutParagraph[];
+  philosophyTitle: string;
+  philosophy: AboutParagraph[];
+  cta1: string;
+  avatarAlt: string;
+};
+
+const i18n: Record<'it' | 'en' | 'fr', AboutPageCopy> = {
   it: {
     title: 'Chi sono',
-    description: 'Sono Sarah, la pippa più ambiziosa in cucina. Questo è il mio blog.',
+    description: 'Sono Sarah, technical writer e fondatrice di Ricette per pippe: ricette chiare, vegetali e senza cose date per scontate.',
     eyebrow: 'Chi sono',
-    h1: 'Ciao, sono Sarah!',
-    lead: 'La pippa più ambiziosa in cucina — e fondatrice di Ricette per pippe.',
-    h2story: 'La storia',
-    p1: 'Tutto è iniziato con un risotto bruciato, un soufflé collassato e una carbonara con la panna (sì, quella volta). Nonostante tutto, non ho smesso di cucinare — anzi, ho deciso di trasformare i miei disastri in contenuti utili per tutte le pippe come me.',
-    p2: 'Ricette per pippe nasce dalla convinzione che in cucina si può sbagliare, ridere, riprovare — e alla fine fare anche bella figura. Ogni ricetta qui è stata testata personalmente, errori compresi.',
-    h2phil: 'La filosofia',
-    p3: 'Niente ingredienti introvabili. Niente tecniche da chef stellato senza spiegazione. Solo ricette vere, passi chiari, e qualche aneddoto su cosa è andato storto la prima volta.',
-    p4: 'Se può farlo una pippa come me, puoi farlo anche tu.',
-    h2academy: "L'Academy",
-    p5: 'Ho creato una sezione dedicata alle tecniche di base: le cose che nessuno ti insegna ma che cambiano tutto. Dal soffritto perfetto all\'uovo in camicia, passo dopo passo.',
+    h1: 'Ciao, sono Sarah. Una vera pippa in cucina.',
+    story: [
+      { text: 'Fino a 35 anni ho mostrato un sensazionale talento in cucina: creare disastri memorabili.' },
+      { text: 'Poi ho iniziato a chiedermi se il problema fossi davvero io.' },
+      { text: 'Nella vita sono una technical writer: scrivo istruzioni e manuali per software complessi. Il mio lavoro è prendere informazioni difficili, organizzarle e spiegarle nel modo giusto alla persona giusta.' },
+      { text: 'E lì ho capito una cosa: nessuno è una pippa, è la lobby del food blog a farcelo credere!', tone: 'highlight' },
+      { text: 'Spesso le ricette sono scritte da chi cucina benissimo e dà per scontato quello che per altri non lo è.' },
+      { text: '“Cuoci finché è pronto” funziona solo se sai già cosa significa “pronto”. E il famoso “sale q.b.” è molto poetico, ma se non hai idea di quale sia quel “quanto basta”, resta solo un elegante modo per dire: arrangiati.', tone: 'quote' },
+      { text: 'Così nasce Ricette per pippe: ricette scritte pensando a chi sta dall’altra parte, con passaggi chiari, quantità vere, zero cose date per ovvie e tutti quegli avvertimenti che avrei voluto ricevere prima di combinare alcuni dei miei capolavori del disastro.' },
+      { text: 'Con un ringraziamento speciale a ChatGPT, che è arrivato giusto in tempo per assistermi in parecchi momenti di crisi davanti ai fornelli.', tone: 'aside' },
+    ],
+    philosophyTitle: 'La filosofia di Ricette per pippe',
+    philosophy: [
+      { text: 'Mi sono davvero avvicinata alla cucina quando ho eliminato la carne.' },
+      { text: 'Per anni credo che il mio corpo stesse provando a dirmi che non ero a mio agio nel mangiare qualcuno invece di qualcosa.' },
+      { text: 'Sono molto fiera di questa scelta e credo che oggi sia difficile ignorare l’impatto che il nostro modo di mangiare ha sugli animali e sul pianeta.' },
+      { text: 'Qui non troverai ricette con carne, ma troverai ancora qualche ricetta con formaggi e derivati. Il vegetale è un percorso: alcune ricette appartengono a una fase precedente e sono rimaste.' },
+      { text: 'Quelle più recenti invece cercano di fare una cosa semplice: prendere piatti goduriosi e portarli in versione vegetale.' },
+      { text: 'Mangiare qualcosa di buono sapendo che nessuno ha sofferto per quei cinque minuti di felicità—per me—ha tutto un altro sapore.', tone: 'highlight' },
+    ],
     cta1: 'Esplora le ricette',
-    cta2: "Vai all'Academy",
+    avatarAlt: 'Sarah, fondatrice di Ricette per Pippe',
   },
   en: {
     title: 'About me',
-    description: 'I\'m Sarah, the most ambitious kitchen disaster. This is my blog.',
-    eyebrow: 'About me',
-    h1: 'Hi, I\'m Sarah!',
-    lead: 'The most ambitious kitchen disaster — and founder of Ricette per pippe.',
-    h2story: 'The story',
-    p1: 'It all started with a burnt risotto, a collapsed soufflé, and a carbonara with cream (yes, that time). Despite everything, I never stopped cooking — in fact, I decided to turn my disasters into useful content for everyone like me.',
-    p2: 'Ricette per pippe was born from the belief that in the kitchen you can make mistakes, laugh, try again — and still impress people. Every recipe here has been personally tested, mistakes included.',
-    h2phil: 'The philosophy',
-    p3: 'No hard-to-find ingredients. No Michelin-star techniques without explanation. Just real recipes, clear steps, and the occasional story about what went wrong the first time.',
-    p4: 'If a disaster like me can do it, so can you.',
-    h2academy: 'The Academy',
-    p5: 'I created a section dedicated to basic techniques: the things nobody teaches you but that change everything. From the perfect soffritto to the poached egg, step by step.',
+    description: 'I am Sarah, technical writer and founder of Clueless Cooks: clear recipes with no hidden assumptions.',
+    eyebrow: 'About',
+    h1: "Hi, I'm Sarah. A true Clueless Cook.",
+    story: [
+      { text: 'Until I was 35, I had shown a spectacular talent in the kitchen: creating memorable disasters.' },
+      { text: 'Then I started wondering whether I was really the problem.' },
+      { text: 'I am a technical writer: I write instructions and manuals for complex software. My job is to take difficult information, organize it, and explain it to the right person in the right way.' },
+      { text: 'That is when I understood something: nobody is born a Clueless Cook, the food-blog lobby just wants us to believe that!', tone: 'highlight' },
+      { text: 'Recipes are often written by people who cook brilliantly and take for granted what is not obvious at all for someone else.' },
+      { text: '“Cook until ready” only works if you already know what “ready” means. And “salt to taste” can sound poetic, but if you have no clue what that means, it really just says: figure it out.', tone: 'quote' },
+      { text: 'Clueless Cooks was born from there: recipes written for the person on the other side, with clear steps, real quantities, nothing treated as obvious, and all the warnings I wish I had received before some of my greatest kitchen failures.' },
+      { text: 'Special thanks to ChatGPT, which arrived just in time to help me through many kitchen crisis moments.', tone: 'aside' },
+    ],
+    philosophyTitle: 'The philosophy behind Clueless Cooks',
+    philosophy: [
+      { text: 'I truly got closer to cooking when I stopped eating meat.' },
+      { text: 'For years, I think my body was trying to tell me that I was not comfortable eating someone instead of something.' },
+      { text: 'I am proud of that choice, and I think it is hard today to ignore the impact our way of eating has on animals and on the planet.' },
+      { text: 'You will not find meat recipes here, though you may still come across some older recipes with cheese and dairy. Going plant-based is a path, and some recipes belong to an earlier phase of mine.' },
+      { text: 'The newer ones try to do one simple thing: take deeply satisfying dishes and bring them into a plant-based version.' },
+      { text: 'Eating something delicious knowing that no one suffered for those five minutes of happiness has a completely different flavor for me.', tone: 'highlight' },
+    ],
     cta1: 'Explore recipes',
-    cta2: 'Go to Academy',
+    avatarAlt: 'Sarah, founder of Clueless Cooks',
   },
   fr: {
     title: 'À propos',
-    description: 'Je suis Sarah, la plus ambitieuse des catastrophes culinaires. Voici mon blog.',
+    description: 'Je suis Sarah, technical writer et fondatrice de Recettes pour quiches : des recettes claires, sans implicites cachés.',
     eyebrow: 'À propos',
-    h1: 'Salut, je suis Sarah !',
-    lead: 'La catastrophe culinaire la plus ambitieuse — et fondatrice de Ricette per pippe.',
-    h2story: "L'histoire",
-    p1: "Tout a commencé avec un risotto brûlé, un soufflé effondré et une carbonara à la crème (oui, cette fois-là). Malgré tout, je n'ai jamais arrêté de cuisiner — au contraire, j'ai décidé de transformer mes désastres en contenu utile pour tous ceux comme moi.",
-    p2: "Ricette per pippe est né de la conviction qu'en cuisine on peut se tromper, rire, recommencer — et finalement impressionner les gens. Chaque recette ici a été testée personnellement, erreurs comprises.",
-    h2phil: 'La philosophie',
-    p3: "Pas d'ingrédients introuvables. Pas de techniques étoilées sans explication. Juste de vraies recettes, des étapes claires, et quelques anecdotes sur ce qui a mal tourné la première fois.",
-    p4: 'Si une catastrophe comme moi peut le faire, vous pouvez le faire aussi.',
-    h2academy: "L'Academy",
-    p5: "J'ai créé une section dédiée aux techniques de base : les choses que personne ne vous apprend mais qui changent tout. Du soffritto parfait à l'œuf poché, étape par étape.",
+    h1: 'Salut, moi c’est Sarah. Une vraie quiche en cuisine.',
+    story: [
+      { text: 'Jusqu’à mes 35 ans, j’ai montré un talent sensationnel en cuisine : créer des désastres mémorables.' },
+      { text: 'Puis j’ai commencé à me demander si le problème, c’était vraiment moi.' },
+      { text: 'Dans la vie, je suis technical writer : j’écris des instructions et des manuels pour des logiciels complexes. Mon travail consiste à prendre des informations difficiles, les organiser et les expliquer de la bonne manière à la bonne personne.' },
+      { text: 'Et là, j’ai compris une chose : personne n’est une quiche, c’est le lobby des food blogs qui veut nous le faire croire !', tone: 'highlight' },
+      { text: 'Les recettes sont souvent écrites par des gens qui cuisinent très bien et qui considèrent comme évidentes des choses qui ne le sont pas du tout pour d’autres.' },
+      { text: '« Cuire jusqu’à ce que ce soit prêt » ne fonctionne que si l’on sait déjà ce que « prêt » veut dire. Et le fameux « sel selon le goût » reste très poétique, mais si l’on n’a aucune idée de ce que cela représente, cela veut surtout dire : débrouille-toi.', tone: 'quote' },
+      { text: 'Recettes pour quiches est né ainsi : des recettes écrites en pensant à la personne d’en face, avec des étapes claires, de vraies quantités, rien de supposé évident, et tous les avertissements que j’aurais aimé recevoir avant certains de mes plus grands désastres.' },
+      { text: 'Avec un merci tout particulier à ChatGPT, arrivé juste à temps pour m’aider pendant plusieurs crises devant les fourneaux.', tone: 'aside' },
+    ],
+    philosophyTitle: 'La philosophie de Recettes pour quiches',
+    philosophy: [
+      { text: 'Je me suis vraiment rapprochée de la cuisine quand j’ai arrêté de manger de la viande.' },
+      { text: 'Pendant des années, je crois que mon corps essayait de me dire que je n’étais pas à l’aise à l’idée de manger quelqu’un plutôt que quelque chose.' },
+      { text: 'Je suis très fière de ce choix, et je crois qu’il est difficile aujourd’hui d’ignorer l’impact de notre alimentation sur les animaux et sur la planète.' },
+      { text: 'Tu ne trouveras pas ici de recettes avec de la viande, mais il reste encore quelques recettes plus anciennes avec des fromages et des produits dérivés. Le végétal est un chemin, et certaines recettes appartiennent à une étape précédente.' },
+      { text: 'Les plus récentes essaient de faire quelque chose de simple : prendre des plats ultra réconfortants et les amener vers une version végétale.' },
+      { text: 'Manger quelque chose de bon en sachant que personne n’a souffert pour ces cinq minutes de bonheur, pour moi, ça n’a vraiment pas le même goût.', tone: 'highlight' },
+    ],
     cta1: 'Explorer les recettes',
-    cta2: "Aller à l'Academy",
+    avatarAlt: 'Sarah, fondatrice de Recettes pour quiches',
   },
-} as const;
+};
 
 const t = i18n[lang as keyof typeof i18n] ?? i18n.it;
 ---
 
 <BaseLayout title={t.title} description={t.description} lang={lang}>
+  <div class="about-shell">
+    <header class="about-header">
+      <span class="academy-eyebrow">{t.eyebrow}</span>
+      <h1>{t.h1}</h1>
+    </header>
 
-  <div class="chi-sono-page">
+    <section class="about-panel about-panel--story">
+      <div class="about-copy">
+        <figure class="about-avatar-figure">
+          <div class="about-avatar-halo">
+            <div class="about-avatar-frame">
+              <img src={`${base}images/sarah.jpg`} alt={t.avatarAlt} loading="eager" />
+            </div>
+          </div>
+        </figure>
 
-    <div class="chi-sono-hero">
-      <div class="chi-sono-photo">
-        <img src={`${base}images/main-banner.png`} alt="Sarah - Ricette per Pippe" onerror="this.style.display='none'" />
+        {t.story.map((paragraph) => (
+          <p class={paragraph.tone ? `about-paragraph about-paragraph--${paragraph.tone}` : 'about-paragraph'}>
+            {paragraph.text}
+          </p>
+        ))}
       </div>
-      <div class="chi-sono-intro">
-        <span class="academy-eyebrow">{t.eyebrow}</span>
-        <h1>{t.h1}</h1>
-        <p class="chi-sono-lead">{t.lead}</p>
+    </section>
+
+    <section class="about-panel about-panel--philosophy">
+      <h2>{t.philosophyTitle}</h2>
+      <div class="about-philosophy-copy">
+        {t.philosophy.map((paragraph) => (
+          <p class={paragraph.tone ? `about-paragraph about-paragraph--${paragraph.tone}` : 'about-paragraph'}>
+            {paragraph.text}
+          </p>
+        ))}
       </div>
+    </section>
+
+    <div class="about-cta">
+      <a href={`${base}${lang}/blog/`} class="btn-primary">{t.cta1}</a>
     </div>
-
-    <div class="chi-sono-content">
-      <div class="chi-sono-text">
-
-        <h2>{t.h2story}</h2>
-        <p>{t.p1}</p>
-        <p><em>{t.p2}</em></p>
-
-        <h2>{t.h2phil}</h2>
-        <p>{t.p3}</p>
-        <p><strong>{t.p4}</strong></p>
-
-        <h2>{t.h2academy}</h2>
-        <p>{t.p5}</p>
-
-        <div class="chi-sono-cta">
-          <a href={`${base}${lang}/blog/`} class="btn-primary">{t.cta1}</a>
-          <a href={`${base}${lang}/guide/`} class="btn-secondary">{t.cta2}</a>
-        </div>
-
-      </div>
-    </div>
-
   </div>
 
+  <style>
+    .about-shell {
+      max-width: 1020px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem 4.5rem;
+    }
+
+    .about-header {
+      max-width: 760px;
+      margin: 0 auto 2rem;
+      text-align: center;
+    }
+
+    .about-header h1 {
+      font-size: clamp(2.7rem, 5vw, 4.6rem);
+      line-height: 1.05;
+      margin: 0.8rem 0 1rem;
+    }
+
+    .about-panel {
+      position: relative;
+      overflow: visible;
+      margin-top: 1.75rem;
+      padding: clamp(1.5rem, 3vw, 2.6rem);
+      background:
+        radial-gradient(circle at top right, rgba(212, 228, 200, 0.92), transparent 34%),
+        linear-gradient(180deg, rgba(252, 252, 252, 0.98), rgba(252, 252, 252, 1));
+      border: 1px solid rgba(89, 141, 56, 0.18);
+      border-radius: 28px;
+      box-shadow: 0 22px 60px rgba(89, 141, 56, 0.08);
+    }
+
+    .about-panel--philosophy {
+      background:
+        radial-gradient(circle at bottom left, rgba(249, 197, 180, 0.85), transparent 30%),
+        linear-gradient(180deg, rgba(252, 252, 252, 0.98), rgba(252, 252, 252, 1));
+    }
+
+    .about-panel h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 1.1rem;
+      color: var(--color-primary-green);
+    }
+
+    .about-copy::after,
+    .about-philosophy-copy::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .about-avatar-figure {
+      float: right;
+      width: clamp(190px, 29vw, 290px);
+      aspect-ratio: 1;
+      margin: 0.25rem 0 1rem 2rem;
+      shape-outside: circle(50%);
+      shape-margin: 1.25rem;
+    }
+
+    .about-avatar-halo {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 0.7rem;
+      border-radius: 50%;
+      background:
+        conic-gradient(
+          from 210deg,
+          var(--color-primary-orange),
+          #f2c46e,
+          var(--color-primary-green-light),
+          var(--color-primary-green),
+          #f7b0b8,
+          var(--color-primary-orange)
+        );
+      box-shadow:
+        0 18px 42px rgba(29, 14, 3, 0.16),
+        0 0 0 10px rgba(252, 252, 252, 0.92);
+    }
+
+    .about-avatar-frame {
+      width: 100%;
+      height: 100%;
+      padding: 0.45rem;
+      border-radius: 50%;
+      background: rgba(252, 252, 252, 0.95);
+    }
+
+    .about-avatar-frame img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 18%;
+      border: 3px solid rgba(252, 252, 252, 0.96);
+      background: var(--color-primary-green-bg);
+    }
+
+    .about-paragraph {
+      margin: 0 0 1rem;
+      font-size: 1.12rem;
+      line-height: 1.8;
+      color: var(--color-text-dark);
+    }
+
+    .about-paragraph--highlight {
+      font-size: 1.22rem;
+      color: var(--color-primary-green);
+    }
+
+    .about-paragraph--quote {
+      padding: 1rem 1.15rem;
+      background: rgba(249, 197, 180, 0.22);
+      border-left: 4px solid var(--color-primary-orange);
+      border-radius: 16px;
+      color: #5a3427;
+    }
+
+    .about-paragraph--aside {
+      margin-top: 1.4rem;
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--color-text-muted);
+    }
+
+    .about-cta {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2.25rem;
+    }
+
+    @media (max-width: 860px) {
+      .about-shell {
+        padding-inline: 1.4rem;
+      }
+
+      .about-avatar-figure {
+        width: min(230px, 48vw);
+        margin-left: 1.25rem;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .about-shell {
+        padding: 2rem 1rem 4rem;
+      }
+
+      .about-header h1 {
+        font-size: 2.4rem;
+      }
+
+      .about-panel {
+        border-radius: 24px;
+        padding: 1.35rem 1.1rem 1.5rem;
+      }
+
+      .about-avatar-figure {
+        float: none;
+        width: min(230px, 68vw);
+        margin: 0 auto 1.4rem;
+        shape-outside: none;
+      }
+
+      .about-paragraph,
+      .about-paragraph--highlight {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
 </BaseLayout>
