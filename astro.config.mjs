@@ -3,7 +3,7 @@ import mdx from '@astrojs/mdx';
 import pagefind from 'astro-pagefind';
 
 export default defineConfig({
-  site: 'https://ricetteperpippe.netlify.app',
+  site: 'https://ricetteperpippe.com',
   integrations: [mdx(), pagefind()],
   vite: {
     // Cache di Vite redirezionabile via env var (utile in CI/sandbox dove
