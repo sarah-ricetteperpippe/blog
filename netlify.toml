@@ -11,10 +11,28 @@
 [[redirects]]
   from = "/"
   to = "/it/"
-  status = 301
+  status = 302
+  conditions = {Language = ["it"]}
+
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+  conditions = {Language = ["en"]}
+
+[[redirects]]
+  from = "/"
+  to = "/fr/"
+  status = 302
+  conditions = {Language = ["fr"]}
+
+[[redirects]]
+  from = "/"
+  to = "/it/"
+  status = 302
 
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
+  X-Frame-Options = "DENY"
+  X-Content-Type-Options = "nosniff"
