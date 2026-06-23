@@ -1,13 +1,5 @@
 ---
-// Questa pagina non fa nulla: il redirect viene gestito da Netlify (netlify.toml)
-// in base all'header Accept-Language del browser, senza mostrare schermate di redirect.
-// In locale (dev) facciamo un fallback JS silenzioso.
+// Redirect alla versione italiana di default
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+return Astro.redirect(`${base}it/`);
 ---
-<script>
-  (function() {
-    var lang = (navigator.language || navigator.userLanguage || 'it').slice(0, 2).toLowerCase();
-    var supported = ['it', 'en', 'fr'];
-    var target = supported.indexOf(lang) !== -1 ? lang : 'it';
-    window.location.replace('/' + target + '/');
-  })();
-</script>
