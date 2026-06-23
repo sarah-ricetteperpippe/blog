@@ -2,6 +2,7 @@
 title: "Pasta with baked feta and cherry tomatoes"
 description: "An easy baked feta pasta with cherry tomatoes: creamy, quick and ideal for weeknights."
 pubDate: "2025-01-17"
+heroImage: "/images/ricette/pasta-feta.webp"
 category: "First courses"
 tags: ["Feta", "Pomodorini", "Primi piatti", "4 stagioni"]
 lang: "en"

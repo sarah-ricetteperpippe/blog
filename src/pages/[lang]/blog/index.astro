@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { BLOG_CATEGORIES, getBlogCategoryLabel, type SiteLang } from '../../../config/taxonomy';
 import { getBlogTagLabel, normalizeBlogTags } from '../../../config/tags';
+import { createHeroImageResolver } from '../../../lib/hero-image';
 
 export async function getStaticPaths() {
   return [
@@ -17,6 +18,7 @@ const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.en
 const currentLang = (lang === 'en' || lang === 'fr' || lang === 'it' ? lang : 'it') as SiteLang;
 
 const allPosts = await getCollection('blog');
+const resolveHeroImage = createHeroImageResolver(allPosts);
 const posts = allPosts
   .filter(p => p.id.startsWith(`${lang}/`))
   .filter(p => !p.data.draft)
@@ -109,6 +111,7 @@ function shortDate(date: Date) {
     {posts.map(post => {
       const mins = readingTime(post.body);
       const postSlug = slug(post);
+      const heroImage = resolveHeroImage(post);
       const categoryLabel = post.data.category
         ? getBlogCategoryLabel(post.data.category, currentLang)
         : '';
@@ -122,8 +125,8 @@ function shortDate(date: Date) {
         >
           <a href={`${base}${lang}/blog/${postSlug}/`} class="blog-card-link">
             <div class="blog-card-image-wrap">
-              {post.data.heroImage
-                ? <img class="blog-card-image" src={post.data.heroImage} alt={post.data.title} loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.blog-card-image-placeholder').style.display='flex'" />
+              {heroImage
+                ? <img class="blog-card-image" src={heroImage} alt={post.data.title} loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.blog-card-image-placeholder').style.display='flex'" />
                 : <div class="blog-card-image-placeholder">🍳</div>
               }
               {post.data.category && (

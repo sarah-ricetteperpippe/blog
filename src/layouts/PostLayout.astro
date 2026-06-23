@@ -4,6 +4,7 @@ import CommentSection from '../components/CommentSection.astro';
 import TagList from '../components/TagList.astro';
 import { getCollection } from 'astro:content';
 import { BLOG_CATEGORIES, getBlogCategoryLabel, type SiteLang } from '../config/taxonomy';
+import { createHeroImageResolver } from '../lib/hero-image';
 
 export interface Props {
   title: string;
@@ -36,12 +37,19 @@ const shareLabel = { it: 'Condividi', en: 'Share', fr: 'Partager' } as const;
 const shareText = shareLabel[lang as keyof typeof shareLabel];
 const copyLabel = { it: 'Link copiato!', en: 'Link copied!', fr: 'Lien copié !' } as const;
 const copiedText = copyLabel[lang as keyof typeof copyLabel];
+const stepDoneLabel = ({ it: 'Fatto', en: 'Done', fr: 'Fait' } as const)[lang as keyof typeof shareLabel] ?? 'Fatto';
+const heroCaption = ({
+  it: 'Tutte le foto del blog sono originali, ma editate con AI',
+  en: 'All the photos on the blog are original, but edited with AI',
+  fr: "Toutes les photos du blog sont originales, mais retouchées avec l'IA",
+} as const)[currentLang];
 const relatedLabel = { it: 'Potrebbe interessarti anche', en: 'You might also like', fr: 'Vous pourriez aussi aimer' } as const;
 const relatedTitle = relatedLabel[lang as keyof typeof relatedLabel];
 const likeLabel = { it: 'Mi piace', en: 'Like', fr: "J'aime" } as const;
 const likeText = likeLabel[lang as keyof typeof likeLabel];
 
 const allPosts = await getCollection('blog');
+const resolveHeroImage = createHeroImageResolver(allPosts);
 
 const availableCategories = new Set(
   allPosts
@@ -70,6 +78,61 @@ const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(t
 const formattedDate = pubDate
   ? new Date(pubDate).toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' })
   : '';
+
+const normalizeText = (value: string) => value
+  .replace(/<!--[\s\S]*?-->/g, ' ')
+  .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+  .replace(/[*_`~]/g, '')
+  .replace(/<[^>]+>/g, ' ')
+  .replace(/\s+/g, ' ')
+  .trim();
+
+const getLeadingParagraph = (value: string) => {
+  const lines = value.replace(/\r\n/g, '\n').split('\n');
+  const paragraph: string[] = [];
+  let insideComment = false;
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+
+    if (insideComment) {
+      if (line.includes('-->')) insideComment = false;
+      continue;
+    }
+
+    if (!line) {
+      if (paragraph.length > 0) break;
+      continue;
+    }
+
+    if (line.startsWith('<!--')) {
+      if (!line.includes('-->')) insideComment = true;
+      continue;
+    }
+
+    if (paragraph.length === 0) {
+      if (line.startsWith('![') || /^<\w+[^>]*\/>$/.test(line)) continue;
+      if (/^(#{1,6}\s|[-*]\s|\d+\.\s|>\s|```|~~~)/.test(line)) break;
+    }
+
+    paragraph.push(line);
+  }
+
+  return normalizeText(paragraph.join(' '));
+};
+
+const excerpt = normalizeText(description ?? '');
+const excerptWordCount = excerpt ? excerpt.split(/\s+/).length : 0;
+const excerptSentenceCount = (excerpt.match(/[.!?](?=\s|$)/g) ?? []).length;
+const leadingParagraph = getLeadingParagraph(body);
+const hasDuplicatedLeadingExcerpt = Boolean(excerpt) && leadingParagraph === excerpt;
+const showExcerptAboveHero = Boolean(excerpt) && (
+  !heroImage ||
+  excerptWordCount > 12 ||
+  excerpt.length > 90 ||
+  excerptSentenceCount > 1
+);
+const showExcerptBelowHero = Boolean(excerpt) && !showExcerptAboveHero;
 ---
 
 <BaseLayout title={title} description={description} lang={lang}>
@@ -105,6 +168,10 @@ const formattedDate = pubDate
       <!-- Titolo -->
       <h1 class="post-title">{title}</h1>
 
+      {showExcerptAboveHero && (
+        <p class="post-description post-description--lead">{excerpt}</p>
+      )}
+
       <!-- Separatore -->
       <hr class="post-section-hr" />
 
@@ -112,11 +179,19 @@ const formattedDate = pubDate
       {heroImage && (
         <figure class="post-hero-figure">
           <img src={`${base}${heroImage.replace(/^\//, '')}`} alt={title} />
+          <figcaption>{heroCaption}</figcaption>
         </figure>
       )}
 
+      {showExcerptBelowHero && (
+        <p class="post-description post-description--below-hero">{excerpt}</p>
+      )}
+
       <!-- Contenuto markdown -->
-      <article class="post-content">
+      <article
+        class:list={['post-content', hasDuplicatedLeadingExcerpt && 'post-content--dedupe-intro']}
+        data-step-done-label={stepDoneLabel}
+      >
         <slot />
       </article>
 
@@ -166,15 +241,18 @@ const formattedDate = pubDate
       <div class="post-related">
         <h3 class="post-related-title">{relatedTitle}</h3>
         <div class="post-related-grid">
-          {related.map(post => (
-            <a href={`${base}${lang}/blog/${relSlug(post)}/`} class="post-related-card">
-              {post.data.heroImage
-                ? <img src={`${base}${post.data.heroImage.replace(/^\//, '')}`} alt={post.data.title} />
-                : <div class="post-related-placeholder">🍳</div>
-              }
-              <span class="post-related-name">{post.data.title}</span>
-            </a>
-          ))}
+          {related.map(post => {
+            const relatedHeroImage = resolveHeroImage(post);
+            return (
+              <a href={`${base}${lang}/blog/${relSlug(post)}/`} class="post-related-card">
+                {relatedHeroImage
+                  ? <img src={`${base}${relatedHeroImage.replace(/^\//, '')}`} alt={post.data.title} />
+                  : <div class="post-related-placeholder">🍳</div>
+                }
+                <span class="post-related-name">{post.data.title}</span>
+              </a>
+            );
+          })}
         </div>
       </div>
     )}
@@ -242,47 +320,40 @@ const formattedDate = pubDate
   }
 
   const postId = document.querySelector<HTMLButtonElement>('.post-like-btn')?.dataset.postId ?? location.pathname;
+  const postContent = document.querySelector<HTMLElement>('.post-content');
+  const stepDoneText = postContent?.dataset.stepDoneLabel ?? 'fatto';
+
   document.querySelectorAll<HTMLElement>('.post-content ol li').forEach((li, i) => {
+    const toggle = document.createElement('button');
+    toggle.type = 'button';
+    toggle.className = 'step-check-row';
+    toggle.setAttribute('aria-pressed', 'false');
+
     const box = document.createElement('span');
     box.className = 'step-check';
-    box.setAttribute('role', 'checkbox');
-    box.setAttribute('aria-checked', 'false');
-    box.tabIndex = 0;
+    box.setAttribute('aria-hidden', 'true');
+
+    const label = document.createElement('span');
+    label.className = 'step-check-label';
+    label.textContent = stepDoneText;
+
+    toggle.append(box, label);
+
     const key = `step-${postId}-${i}`;
     if (localStorage.getItem(key) === 'true') {
+      toggle.classList.add('checked');
+      toggle.setAttribute('aria-pressed', 'true');
       box.classList.add('checked');
-      box.setAttribute('aria-checked', 'true');
     }
-    box.addEventListener('click', () => {
-      const checked = box.classList.toggle('checked');
-      box.setAttribute('aria-checked', String(checked));
+
+    toggle.addEventListener('click', () => {
+      const checked = toggle.classList.toggle('checked');
+      toggle.setAttribute('aria-pressed', String(checked));
+      box.classList.toggle('checked', checked);
       localStorage.setItem(key, String(checked));
     });
-    box.addEventListener('keydown', (e) => {
-      if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); box.click(); }
-    });
 
-    // Wrap "ultima parola + nbsp + checkbox" in uno span con white-space: nowrap
-    // cosi' il check non va mai a capo separato dal punto finale dello step.
-    const walker = document.createTreeWalker(li, NodeFilter.SHOW_TEXT);
-    let lastTextNode: Text | null = null;
-    while (walker.nextNode()) lastTextNode = walker.currentNode as Text;
-
-    if (lastTextNode && lastTextNode.nodeValue) {
-      const m = lastTextNode.nodeValue.match(/^([\s\S]*?)(\S+)\s*$/);
-      if (m) {
-        lastTextNode.nodeValue = m[1];
-        const wrap = document.createElement('span');
-        wrap.className = 'step-check-wrap';
-        wrap.appendChild(document.createTextNode(m[2] + '\u00A0'));
-        wrap.appendChild(box);
-        lastTextNode.parentNode!.insertBefore(wrap, lastTextNode.nextSibling);
-      } else {
-        li.appendChild(box);
-      }
-    } else {
-      li.appendChild(box);
-    }
+    li.appendChild(toggle);
   });
 
   const copyBtn = document.getElementById('copy-link-btn') as HTMLButtonElement;
