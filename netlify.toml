@@ -11,9 +11,3 @@ NODE_VERSION = "20"
 [[edge_functions]]
 function = "lang-redirect"
 path = "/"
-
-[[headers]]
-for = "/*"
-[headers.values]
-X-Frame-Options = "DENY"
-X-Content-Type-Options = "nosniff"
