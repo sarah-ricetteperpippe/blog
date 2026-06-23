@@ -907,7 +907,7 @@ p {
   object-fit: cover;
 }
 .post-hero-figure figcaption {
-  font-family: var(--font-small);
+  font-family: var(--font-body);
   font-size: 0.78rem;
   color: var(--color-text-muted);
   font-style: italic;
@@ -985,30 +985,60 @@ p {
 }
 .post-content ol li {
   counter-increment: steps;
-  padding: 0.75rem 1rem 0.75rem 3.5rem;
+  padding: 0.75rem 1rem 1rem 3.5rem;
   position: relative;
   font-size: 1.1rem;
   line-height: 1.5;
 }
 /* Checkbox step */
+.step-check-row {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 0.55rem;
+  margin-top: 0.7rem;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--color-text-muted);
+  font-family: inherit;
+  font-size: 0.82rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.18s ease;
+}
+.step-check-row:hover {
+  color: var(--color-primary-orange);
+}
+.step-check-row:focus-visible {
+  outline: 2px solid rgba(231, 110, 81, 0.45);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
 .step-check {
   display: inline-block;
   width: 1.1rem;
   height: 1.1rem;
-  border: 2px solid var(--color-primary-orange);
-  vertical-align: middle;
-  cursor: pointer;
+  border: 2px solid #b9b0aa;
   position: relative;
   flex-shrink: 0;
-  transition: background 0.15s;
+  transition: background 0.18s ease, border-color 0.18s ease;
 }
-/* Wrapper: tiene "ultima parola + nbsp + check" sulla stessa riga.
-   Senza questo, il check puo' finire a capo da solo. */
-.step-check-wrap {
-  white-space: nowrap;
+.step-check-row:hover .step-check {
+  border-color: var(--color-primary-orange);
+}
+.step-check-row.checked:hover .step-check {
+  border-color: var(--color-primary-green);
+}
+.step-check-label {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: color 0.18s ease;
+}
+.step-check-row.checked {
+  color: var(--color-primary-green);
 }
 .step-check.checked {
-  background: var(--color-primary-orange);
   border-color: var(--color-primary-green);
   background: var(--color-primary-green);
 }
@@ -1028,8 +1058,7 @@ p {
   content: counter(steps);
   position: absolute;
   left: 0.85rem;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0.95rem;
   width: 1.75rem;
   height: 1.75rem;
   background: var(--color-primary-orange);

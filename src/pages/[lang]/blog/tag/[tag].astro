@@ -3,6 +3,7 @@ import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { getBlogCategoryLabel, type SiteLang } from '../../../../config/taxonomy';
 import { getBlogTagLabel, getBlogTagSlug, normalizeBlogTags } from '../../../../config/tags';
+import { createHeroImageResolver } from '../../../../lib/hero-image';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog');
@@ -38,6 +39,7 @@ const currentLang = (lang === 'en' || lang === 'fr' || lang === 'it' ? lang : 'i
 const tagLabel = getBlogTagLabel(canonicalTag, currentLang);
 
 const allPosts = await getCollection('blog');
+const resolveHeroImage = createHeroImageResolver(allPosts);
 const posts = allPosts
   .filter(p => p.id.startsWith(`${lang}/`) && !p.data.draft && normalizeBlogTags(p.data.tags).includes(canonicalTag))
   .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
@@ -106,6 +108,7 @@ function shortDate(d: Date) {
       {posts.map(post => {
         const mins = readingTime(post.body);
         const postSlug = slug(post);
+        const heroImage = resolveHeroImage(post);
         const categoryLabel = post.data.category
           ? getBlogCategoryLabel(post.data.category, currentLang)
           : '';
@@ -113,8 +116,8 @@ function shortDate(d: Date) {
           <article class="blog-card" data-slug={postSlug}>
             <a href={`${base}${lang}/blog/${postSlug}/`} class="blog-card-link">
               <div class="blog-card-image-wrap">
-                {post.data.heroImage
-                  ? <img class="blog-card-image" src={post.data.heroImage} alt={post.data.title} loading="lazy" />
+                {heroImage
+                  ? <img class="blog-card-image" src={heroImage} alt={post.data.title} loading="lazy" />
                   : <div class="blog-card-image-placeholder">🍳</div>
                 }
                 {post.data.category && (

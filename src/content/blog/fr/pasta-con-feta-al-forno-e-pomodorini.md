@@ -2,6 +2,7 @@
 title: "Pâtes à la feta rôtie et aux tomates cerises"
 description: "Des pâtes à la feta rôtie et aux tomates cerises : crémeuses, faciles et parfaites pour un soir de semaine."
 pubDate: "2025-01-17"
+heroImage: "/images/ricette/pasta-feta.webp"
 category: "Premiers cours"
 tags: ["Feta", "Pomodorini", "Primi piatti", "4 stagioni"]
 lang: "fr"
