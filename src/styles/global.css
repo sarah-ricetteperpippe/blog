@@ -93,7 +93,17 @@ p {
   gap: 1.25rem;
 }
 
-.site-branding { display: flex; align-items: center; gap: 0.75rem; }
+.site-branding {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+.site-branding:focus-visible {
+  outline: 2px solid var(--color-primary-orange);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
 .site-logo { width: 90px; height: auto; }
 
 .site-title-fallback {
@@ -872,6 +882,12 @@ p {
   margin-bottom: 1.5rem;
   line-height: 1.5;
 }
+.post-description--lead {
+  max-width: 68ch;
+}
+.post-description--below-hero {
+  margin: 1rem 0 1.75rem;
+}
 
 /* Separatore orizzontale tra desc e immagine/contenuto */
 .post-section-hr {
@@ -905,6 +921,9 @@ p {
 .post-content {
   font-size: 1rem;
   line-height: 1.5;
+}
+.post-content--dedupe-intro > p:first-of-type {
+  display: none;
 }
 
 .post-content p { font-size: 1.05rem; line-height: 1.5; margin-bottom: 1.25rem; color: var(--color-text-dark); }

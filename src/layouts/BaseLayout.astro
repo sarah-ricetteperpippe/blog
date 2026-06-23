@@ -110,15 +110,15 @@ function switchLangUrl(targetLang: string) {
 <body>
 
   <header class="site-header">
-    <div class="site-branding">
-      <a href={`${base}${lang}/`} class="site-logo-link" aria-label={siteT.homeLabel}>
+    <a href={`${base}${lang}/`} class="site-branding" aria-label={siteT.homeLabel}>
+      <span class="site-logo-link">
         <img src={`${base}logo-pippe.png`} alt={siteT.logoAlt} class="site-logo" />
-      </a>
+      </span>
       <div class="site-brand-text">
         <span class="site-title site-title-fallback">{siteT.brandTitle}</span>
         <span class="site-tagline">{siteT.headerTagline}</span>
       </div>
-    </div>
+    </a>
     <div class="header-right">
       <nav class="header-nav">
         <a href={`${base}${lang}/blog/`}>{t.blog}</a>

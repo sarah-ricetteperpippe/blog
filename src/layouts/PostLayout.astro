@@ -70,6 +70,61 @@ const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(t
 const formattedDate = pubDate
   ? new Date(pubDate).toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' })
   : '';
+
+const normalizeText = (value: string) => value
+  .replace(/<!--[\s\S]*?-->/g, ' ')
+  .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+  .replace(/[*_`~]/g, '')
+  .replace(/<[^>]+>/g, ' ')
+  .replace(/\s+/g, ' ')
+  .trim();
+
+const getLeadingParagraph = (value: string) => {
+  const lines = value.replace(/\r\n/g, '\n').split('\n');
+  const paragraph: string[] = [];
+  let insideComment = false;
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+
+    if (insideComment) {
+      if (line.includes('-->')) insideComment = false;
+      continue;
+    }
+
+    if (!line) {
+      if (paragraph.length > 0) break;
+      continue;
+    }
+
+    if (line.startsWith('<!--')) {
+      if (!line.includes('-->')) insideComment = true;
+      continue;
+    }
+
+    if (paragraph.length === 0) {
+      if (line.startsWith('![') || /^<\w+[^>]*\/>$/.test(line)) continue;
+      if (/^(#{1,6}\s|[-*]\s|\d+\.\s|>\s|```|~~~)/.test(line)) break;
+    }
+
+    paragraph.push(line);
+  }
+
+  return normalizeText(paragraph.join(' '));
+};
+
+const excerpt = normalizeText(description ?? '');
+const excerptWordCount = excerpt ? excerpt.split(/\s+/).length : 0;
+const excerptSentenceCount = (excerpt.match(/[.!?](?=\s|$)/g) ?? []).length;
+const leadingParagraph = getLeadingParagraph(body);
+const hasDuplicatedLeadingExcerpt = Boolean(excerpt) && leadingParagraph === excerpt;
+const showExcerptAboveHero = Boolean(excerpt) && (
+  !heroImage ||
+  excerptWordCount > 12 ||
+  excerpt.length > 90 ||
+  excerptSentenceCount > 1
+);
+const showExcerptBelowHero = Boolean(excerpt) && !showExcerptAboveHero;
 ---
 
 <BaseLayout title={title} description={description} lang={lang}>
@@ -105,6 +160,10 @@ const formattedDate = pubDate
       <!-- Titolo -->
       <h1 class="post-title">{title}</h1>
 
+      {showExcerptAboveHero && (
+        <p class="post-description post-description--lead">{excerpt}</p>
+      )}
+
       <!-- Separatore -->
       <hr class="post-section-hr" />
 
@@ -115,8 +174,12 @@ const formattedDate = pubDate
         </figure>
       )}
 
+      {showExcerptBelowHero && (
+        <p class="post-description post-description--below-hero">{excerpt}</p>
+      )}
+
       <!-- Contenuto markdown -->
-      <article class="post-content">
+      <article class:list={['post-content', hasDuplicatedLeadingExcerpt && 'post-content--dedupe-intro']}>
         <slot />
       </article>
 

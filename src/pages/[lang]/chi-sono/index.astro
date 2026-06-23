@@ -36,7 +36,7 @@ const i18n: Record<'it' | 'en' | 'fr', AboutPageCopy> = {
     title: 'Chi sono',
     description: 'Sono Sarah, technical writer e fondatrice di Ricette per pippe: ricette chiare, vegetali e senza cose date per scontate.',
     eyebrow: 'Chi sono',
-    h1: 'Ciao, sono Sarah. Una vera pippa in cucina.',
+    h1: 'Ciao, sono Sarah.\nUna vera pippa in cucina.',
     story: [
       { text: 'Fino a 35 anni ho mostrato un sensazionale talento in cucina: creare disastri memorabili.' },
       { text: 'Poi ho iniziato a chiedermi se il problema fossi davvero io.' },
@@ -63,7 +63,7 @@ const i18n: Record<'it' | 'en' | 'fr', AboutPageCopy> = {
     title: 'About me',
     description: 'I am Sarah, technical writer and founder of Clueless Cooks: clear recipes with no hidden assumptions.',
     eyebrow: 'About',
-    h1: "Hi, I'm Sarah. A true Clueless Cook.",
+    h1: "Hi, I'm Sarah.\nA true Clueless Cook.",
     story: [
       { text: 'Until I was 35, I had shown a spectacular talent in the kitchen: creating memorable disasters.' },
       { text: 'Then I started wondering whether I was really the problem.' },
@@ -90,7 +90,7 @@ const i18n: Record<'it' | 'en' | 'fr', AboutPageCopy> = {
     title: 'À propos',
     description: 'Je suis Sarah, technical writer et fondatrice de Recettes pour quiches : des recettes claires, sans implicites cachés.',
     eyebrow: 'À propos',
-    h1: 'Salut, moi c’est Sarah. Une vraie quiche en cuisine.',
+    h1: 'Salut, moi c’est Sarah.\nUne vraie quiche en cuisine.',
     story: [
       { text: 'Jusqu’à mes 35 ans, j’ai montré un talent sensationnel en cuisine : créer des désastres mémorables.' },
       { text: 'Puis j’ai commencé à me demander si le problème, c’était vraiment moi.' },
@@ -122,7 +122,7 @@ const t = i18n[lang as keyof typeof i18n] ?? i18n.it;
   <div class="about-shell">
     <header class="about-header">
       <span class="academy-eyebrow">{t.eyebrow}</span>
-      <h1>{t.h1}</h1>
+      <h1>{t.h1.split('\n').map((line, index) => <>{index > 0 && <br />}{line}</>)}</h1>
     </header>
 
     <section class="about-panel about-panel--story">
@@ -183,18 +183,15 @@ const t = i18n[lang as keyof typeof i18n] ?? i18n.it;
       overflow: visible;
       margin-top: 1.75rem;
       padding: clamp(1.5rem, 3vw, 2.6rem);
-      background:
-        radial-gradient(circle at top right, rgba(212, 228, 200, 0.92), transparent 34%),
-        linear-gradient(180deg, rgba(252, 252, 252, 0.98), rgba(252, 252, 252, 1));
+      background: transparent;
       border: 1px solid rgba(89, 141, 56, 0.18);
       border-radius: 28px;
       box-shadow: 0 22px 60px rgba(89, 141, 56, 0.08);
     }
 
     .about-panel--philosophy {
-      background:
-        radial-gradient(circle at bottom left, rgba(249, 197, 180, 0.85), transparent 30%),
-        linear-gradient(180deg, rgba(252, 252, 252, 0.98), rgba(252, 252, 252, 1));
+      background: transparent;
+      border-color: rgba(231, 110, 81, 0.2);
     }
 
     .about-panel h2 {
