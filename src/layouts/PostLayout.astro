@@ -121,11 +121,25 @@ const getLeadingParagraph = (value: string) => {
   return normalizeText(paragraph.join(' '));
 };
 
+// Confronto "morbido" per il dedup: alcune ricette hanno l'excerpt del
+// frontmatter quasi identico al paragrafo iniziale del corpo, ma con
+// punteggiatura finale diversa (es. "..." vs "—", "!" vs "."). Per la
+// verifica di duplicato ignoriamo queste differenze; il testo mostrato
+// resta comunque quello originale, non normalizzato.
+const normalizeForDuplicateCheck = (value: string) => value
+  .toLowerCase()
+  .replace(/[…]|\.\.\./g, ' ')
+  .replace(/[—–]/g, ' ')
+  .replace(/[.!?]+(?=\s|$)/g, '')
+  .replace(/\s+/g, ' ')
+  .trim();
+
 const excerpt = normalizeText(description ?? '');
 const excerptWordCount = excerpt ? excerpt.split(/\s+/).length : 0;
 const excerptSentenceCount = (excerpt.match(/[.!?](?=\s|$)/g) ?? []).length;
 const leadingParagraph = getLeadingParagraph(body);
-const hasDuplicatedLeadingExcerpt = Boolean(excerpt) && leadingParagraph === excerpt;
+const hasDuplicatedLeadingExcerpt = Boolean(excerpt) &&
+  normalizeForDuplicateCheck(leadingParagraph) === normalizeForDuplicateCheck(excerpt);
 const showExcerptAboveHero = Boolean(excerpt) && (
   !heroImage ||
   excerptWordCount > 12 ||
@@ -326,6 +340,10 @@ const showExcerptBelowHero = Boolean(excerpt) && !showExcerptAboveHero;
   // Solo gli step di primo livello ricevono il checkbox "Fatto": eventuali
   // sotto-liste (consigli, opzioni o sotto-procedure) dentro uno step non
   // devono avere un checkbox proprio, ma restano legate a quello dello step.
+  // Una ricetta con Procedimento sezionato ("### 1. Titolo" + <ol>) rientra
+  // comunque qui: ogni sezione è semplicemente un <ol> di primo livello a sé,
+  // col proprio contatore che riparte da 1 — stesso trattamento di uno step
+  // "semplice", nessuna regola separata da mantenere.
   document.querySelectorAll<HTMLElement>('.post-content > ol > li').forEach((li, i) => {
     const toggle = document.createElement('button');
     toggle.type = 'button';
