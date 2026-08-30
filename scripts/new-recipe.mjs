@@ -172,7 +172,7 @@ tags: [${tagsFormatted}]
 translationKey: "${slug}"
 ---
 
-<!-- Intro: una o due righe di pancia sulla ricetta. -->
+{/* Intro: una o due righe di pancia sulla ricetta. */}
 
 ## Informazioni rapide
 
@@ -195,15 +195,19 @@ translationKey: "${slug}"
 
 1.
 
-<!-- Aggiungi foto con: -->
-<!-- <Figure src="/images/ricette/${slug}-step.webp" alt="descrizione" side="right" ratio="landscape" caption="didascalia"> -->
-<!-- testo accanto alla foto -->
-<!-- </Figure> -->
+{/*
+Aggiungi foto con:
+<Figure src="/images/ricette/${slug}-step.webp" alt="descrizione" side="right" ratio="landscape" caption="didascalia">
+testo accanto alla foto
+</Figure>
+*/}
 
-<!-- Aggiungi note con: -->
-<!-- <Aside variant="tip" title="Consiglio"> -->
-<!-- testo del consiglio -->
-<!-- </Aside> -->
+{/*
+Aggiungi note con:
+<Aside variant="tip" title="Consiglio">
+testo del consiglio
+</Aside>
+*/}
 `;
 }
 
