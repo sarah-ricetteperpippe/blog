@@ -323,7 +323,10 @@ const showExcerptBelowHero = Boolean(excerpt) && !showExcerptAboveHero;
   const postContent = document.querySelector<HTMLElement>('.post-content');
   const stepDoneText = postContent?.dataset.stepDoneLabel ?? 'fatto';
 
-  document.querySelectorAll<HTMLElement>('.post-content ol li').forEach((li, i) => {
+  // Solo gli step di primo livello ricevono il checkbox "Fatto": eventuali
+  // sotto-liste (consigli, opzioni o sotto-procedure) dentro uno step non
+  // devono avere un checkbox proprio, ma restano legate a quello dello step.
+  document.querySelectorAll<HTMLElement>('.post-content > ol > li').forEach((li, i) => {
     const toggle = document.createElement('button');
     toggle.type = 'button';
     toggle.className = 'step-check-row';
