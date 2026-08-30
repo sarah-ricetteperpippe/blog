@@ -12,9 +12,9 @@ const { title, description, lang = 'it' } = Astro.props;
 const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 
 const navLabels = {
-  it: { blog: 'Blog', guide: 'Guide', chiSono: 'Chi sono', close: 'Chiudi', search: 'Cerca' },
-  en: { blog: 'Blog', guide: 'Guides', chiSono: 'About', close: 'Close', search: 'Search' },
-  fr: { blog: 'Blog', guide: 'Guides', chiSono: 'À propos', close: 'Fermer', search: 'Chercher' },
+  it: { blog: 'Blog', guide: 'Guide', chiSono: 'Chi sono', close: 'Chiudi', search: 'Cerca', privacy: 'Privacy' },
+  en: { blog: 'Blog', guide: 'Guides', chiSono: 'About', close: 'Close', search: 'Search', privacy: 'Privacy' },
+  fr: { blog: 'Blog', guide: 'Guides', chiSono: 'À propos', close: 'Fermer', search: 'Chercher', privacy: 'Confidentialité' },
 } as const;
 
 const t = navLabels[lang as keyof typeof navLabels] ?? navLabels.it;
@@ -102,10 +102,8 @@ function switchLangUrl(targetLang: string) {
   <link rel="icon" href="/logo-pippe.png" type="image/png" />
   <link rel="apple-touch-icon" href="/logo-pippe.png" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Wix+Madefor+Display:wght@400;500;600&family=Wix+Madefor+Text:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Fonts: auto-ospitati in public/fonts (vedi @font-face in global.css),
+       nessuna richiesta esterna a Google -->
 </head>
 <body>
 
@@ -165,7 +163,10 @@ function switchLangUrl(targetLang: string) {
       <span class="footer-brand-name">{siteT.brandInline}</span>
       <span class="footer-tagline">{siteT.tagline}</span>
     </div>
-    <span class="footer-copyright">{siteT.copyright}</span>
+    <div class="footer-legal">
+      <span class="footer-copyright">{siteT.copyright}</span>
+      <a href={`${base}${lang}/privacy/`} class="footer-privacy-link">{t.privacy}</a>
+    </div>
   </footer>
 
   <script>

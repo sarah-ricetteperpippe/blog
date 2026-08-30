@@ -1,6 +1,6 @@
 ---
 heroImage: "/images/ricette/torta-salame-cioccolato.webp"
-title: "Saucisson au chocolat (*torta salame*)"
+title: "Saucisson au chocolat (torta salame)"
 description: "Joyeux anniversaire à tante Antonella !"
 pubDate: "2026-01-09"
 category: "Desserts"

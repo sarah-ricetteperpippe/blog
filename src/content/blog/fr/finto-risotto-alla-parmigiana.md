@@ -3,7 +3,7 @@ title: "Faux risotto alla parmigiana"
 description: "Le risotto des jours de frigo vide : souple, réconfortant et quand même bien crémeux."
 pubDate: "2025-01-26"
 heroImage: "/images/ricette/risotto-finta-parmigiana.webp"
-category: "Plats de pâtes et riz"
+category: "Risottos"
 tags: ["Primi piatti", "Risotti", "Antispreco", "Autunno/inverno"]
 lang: "fr"
 translationKey: "finto-risotto-alla-parmigiana"

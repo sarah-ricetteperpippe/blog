@@ -1,0 +1,277 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'it' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'fr' } },
+  ];
+}
+
+const { lang } = Astro.params;
+
+type PolicySection = {
+  heading: string;
+  // Ogni voce è HTML già pronto (per poter includere link mailto/esterni),
+  // renderizzato con set:html — non contiene mai input dell'utente.
+  paragraphs: string[];
+};
+
+type PolicyCopy = {
+  title: string;
+  description: string;
+  eyebrow: string;
+  h1: string;
+  updated: string;
+  sections: PolicySection[];
+};
+
+const CONTACT_EMAIL = 'ricetteperpippe@gmail.com';
+const GARANTE_URL = 'https://www.garanteprivacy.it';
+
+const i18n: Record<'it' | 'en' | 'fr', PolicyCopy> = {
+  it: {
+    title: 'Informativa sulla privacy',
+    description: 'Che dati raccogliamo su Ricette per Pippe, perché, e come puoi esercitare i tuoi diritti.',
+    eyebrow: 'Privacy',
+    h1: 'Informativa sulla privacy',
+    updated: 'Ultimo aggiornamento: 31 agosto 2026',
+    sections: [
+      {
+        heading: 'Chi tratta i tuoi dati',
+        paragraphs: [
+          `Il titolare del trattamento dei dati raccolti tramite questo sito è Sarah Lasaracina, in qualità di autrice e responsabile del blog "Ricette per Pippe" (ricetteperpippe.com). Per qualsiasi domanda su questa informativa o sui dati che ti riguardano puoi scrivere a <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`,
+        ],
+      },
+      {
+        heading: 'Che dati raccolgo e perché',
+        paragraphs: [
+          `<strong>Iscrizione alla newsletter.</strong> Se ti iscrivi, raccolgo il tuo nome e la tua email per inviarti comunicazioni su nuove ricette e contenuti del blog. La base giuridica è il tuo consenso (art. 6.1.a del Regolamento UE 2016/679, "GDPR"), che presti al momento dell'iscrizione. Puoi revocarlo in ogni momento tramite il link di cancellazione presente in ogni email, oppure scrivendomi.`,
+          `<strong>Commenti alle ricette.</strong> Se lasci un commento, raccolgo il nome che indichi, il testo del commento e — solo se scegli di inserirla — la tua email. Nome e commento vengono pubblicati dopo una moderazione manuale; l'email, se fornita, non è mai mostrata pubblicamente e serve solo per eventuali risposte dirette al tuo commento. Anche qui la base giuridica è il tuo consenso, prestato spuntando l'apposita casella al momento dell'invio.`,
+          `<strong>Contatori "mi piace" e visualizzazioni.</strong> Sono numeri aggregati e anonimi, non collegati a nessuna informazione che ti identifichi. Il fatto che tu abbia messo "mi piace" a una ricetta, o spuntato uno step come fatto, viene ricordato solo sul tuo dispositivo (local storage del browser): non viene mai inviato né salvato sui miei server.`,
+        ],
+      },
+      {
+        heading: 'A chi vengono comunicati i tuoi dati',
+        paragraphs: [
+          `Per far funzionare il sito mi appoggio ad alcuni fornitori esterni, che trattano i dati per mio conto in qualità di responsabili del trattamento (art. 28 GDPR): <strong>Supabase Inc.</strong> (ospita il database di commenti e contatori), <strong>n8n</strong> (gestisce l'invio e la cancellazione dalla newsletter) e <strong>Netlify Inc.</strong> (ospita il sito).`,
+          `Questi fornitori possono avere sede o server fuori dall'Unione Europea; in tal caso il trasferimento è regolato dalle garanzie previste dal GDPR (es. clausole contrattuali standard). Non vendo né cedo i tuoi dati a fini pubblicitari o di marketing di terzi.`,
+        ],
+      },
+      {
+        heading: 'Per quanto tempo conservo i tuoi dati',
+        paragraphs: [
+          `I dati di iscrizione alla newsletter restano finché non ti cancelli o me lo richiedi esplicitamente. I commenti (ed eventuale email associata) restano finché la ricetta resta pubblicata, salvo tua richiesta di cancellazione. I contatori di "mi piace" e visualizzazioni sono aggregati e anonimi, senza una scadenza legata a una persona specifica.`,
+        ],
+      },
+      {
+        heading: 'I tuoi diritti',
+        paragraphs: [
+          `In qualsiasi momento puoi chiedermi di: accedere ai dati che ho su di te, correggerli se sbagliati o incompleti, cancellarli, limitarne il trattamento, riceverli in un formato portabile, opporti al trattamento, o revocare un consenso dato in precedenza (senza che questo pregiudichi la liceità di quanto fatto prima della revoca).`,
+          `Per esercitare uno di questi diritti scrivimi a <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>. Hai inoltre sempre diritto di proporre reclamo al <a href="${GARANTE_URL}" target="_blank" rel="noopener noreferrer">Garante per la protezione dei dati personali</a> italiano, o all'autorità di controllo del tuo Paese di residenza, se ritieni che il trattamento violi la normativa.`,
+        ],
+      },
+      {
+        heading: 'Cookie e tecnologie simili',
+        paragraphs: [
+          `Questo sito non usa cookie di profilazione, analytics o pubblicitari di alcun tipo. I font sono ospitati direttamente su questo sito: nessuna richiesta a servizi esterni per caricarli. L'unico uso di local storage riguarda il ricordo, sul tuo browser, delle ricette messe "mi piace" o degli step di una ricetta spuntati come completati — resta sul tuo dispositivo e non viene mai trasmesso altrove.`,
+        ],
+      },
+      {
+        heading: 'Modifiche a questa informativa',
+        paragraphs: [
+          `Questa informativa può essere aggiornata nel tempo, ad esempio in caso di cambi nei servizi usati dal sito. La data di ultimo aggiornamento è sempre indicata in cima alla pagina.`,
+        ],
+      },
+    ],
+  },
+  en: {
+    title: 'Privacy notice',
+    description: 'What data Clueless Cooks collects, why, and how you can exercise your rights.',
+    eyebrow: 'Privacy',
+    h1: 'Privacy notice',
+    updated: 'Last updated: 31 August 2026',
+    sections: [
+      {
+        heading: 'Who processes your data',
+        paragraphs: [
+          `The controller for the data collected through this site is Sarah Lasaracina, as author and owner of the "Clueless Cooks" blog (ricetteperpippe.com). For any question about this notice or about your data, you can write to <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`,
+        ],
+      },
+      {
+        heading: 'What data I collect and why',
+        paragraphs: [
+          `<strong>Newsletter sign-up.</strong> If you subscribe, I collect your name and email to send you updates about new recipes and content. The legal basis is your consent (Art. 6.1.a of EU Regulation 2016/679, "GDPR"), given at sign-up. You can withdraw it at any time via the unsubscribe link in every email, or by writing to me.`,
+          `<strong>Recipe comments.</strong> If you leave a comment, I collect the name you provide, the comment text, and — only if you choose to add it — your email. Name and comment are published after manual moderation; the email, if given, is never shown publicly and is only used to reply directly to your comment if needed. Here too the legal basis is your consent, given by ticking the checkbox when you submit.`,
+          `<strong>"Like" and view counters.</strong> These are anonymous, aggregate numbers not linked to anything that identifies you. Whether you've liked a recipe, or ticked off a step as done, is remembered only on your own device (browser local storage): it is never sent to or stored on my servers.`,
+        ],
+      },
+      {
+        heading: 'Who your data is shared with',
+        paragraphs: [
+          `To run the site I rely on a few external providers, who process data on my behalf as processors (Art. 28 GDPR): <strong>Supabase Inc.</strong> (hosts the database behind comments and counters), <strong>n8n</strong> (handles sending and unsubscribing from the newsletter) and <strong>Netlify Inc.</strong> (hosts the site).`,
+          `These providers may be based, or run servers, outside the European Union; in that case the transfer is governed by the safeguards required under the GDPR (e.g. standard contractual clauses). I never sell or share your data for advertising or third-party marketing purposes.`,
+        ],
+      },
+      {
+        heading: 'How long I keep your data',
+        paragraphs: [
+          `Newsletter sign-up data is kept until you unsubscribe or explicitly ask me to remove it. Comments (and any associated email) are kept for as long as the recipe stays published, unless you ask me to delete them. "Like" and view counters are aggregate and anonymous, with no expiry tied to a specific person.`,
+        ],
+      },
+      {
+        heading: 'Your rights',
+        paragraphs: [
+          `At any time you can ask me to: give you access to the data I hold about you, correct it if it's wrong or incomplete, delete it, restrict its processing, give it to you in a portable format, object to the processing, or withdraw a previously given consent (without affecting the lawfulness of processing carried out before the withdrawal).`,
+          `To exercise any of these rights, write to <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>. You also always have the right to lodge a complaint with the Italian <a href="${GARANTE_URL}" target="_blank" rel="noopener noreferrer">Data Protection Authority (Garante per la protezione dei dati personali)</a>, or with the data protection authority of your own country of residence, if you believe this processing breaches applicable law.`,
+        ],
+      },
+      {
+        heading: 'Cookies and similar technologies',
+        paragraphs: [
+          `This site does not use any tracking, analytics, or advertising cookies. Fonts are hosted directly on this site: no request is made to external services to load them. The only use of local storage is to remember, in your own browser, which recipes you've liked or which steps of a recipe you've ticked off as done — it stays on your device and is never transmitted anywhere else.`,
+        ],
+      },
+      {
+        heading: 'Changes to this notice',
+        paragraphs: [
+          `This notice may be updated over time, for example if the services used by the site change. The "last updated" date at the top of the page always reflects the latest version.`,
+        ],
+      },
+    ],
+  },
+  fr: {
+    title: 'Politique de confidentialité',
+    description: 'Quelles données Recettes pour Quiches collecte, pourquoi, et comment faire valoir tes droits.',
+    eyebrow: 'Confidentialité',
+    h1: 'Politique de confidentialité',
+    updated: 'Dernière mise à jour : 31 août 2026',
+    sections: [
+      {
+        heading: 'Qui traite tes données',
+        paragraphs: [
+          `Le responsable du traitement des données collectées sur ce site est Sarah Lasaracina, autrice et responsable du blog « Recettes pour Quiches » (ricetteperpippe.com). Pour toute question sur cette politique ou sur tes données, tu peux écrire à <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`,
+        ],
+      },
+      {
+        heading: 'Quelles données je collecte, et pourquoi',
+        paragraphs: [
+          `<strong>Inscription à la newsletter.</strong> Si tu t'inscris, je collecte ton nom et ton email pour t'envoyer des actualités sur les nouvelles recettes et le contenu du blog. La base juridique est ton consentement (art. 6.1.a du Règlement UE 2016/679, « RGPD »), donné au moment de l'inscription. Tu peux le retirer à tout moment via le lien de désinscription présent dans chaque email, ou en m'écrivant.`,
+          `<strong>Commentaires sur les recettes.</strong> Si tu laisses un commentaire, je collecte le nom que tu indiques, le texte du commentaire et — seulement si tu choisis de le renseigner — ton email. Le nom et le commentaire sont publiés après une modération manuelle ; l'email, s'il est fourni, n'est jamais affiché publiquement et sert uniquement à te répondre directement si besoin. Là aussi, la base juridique est ton consentement, donné en cochant la case prévue lors de l'envoi.`,
+          `<strong>Compteurs « j'aime » et vues.</strong> Ce sont des chiffres agrégés et anonymes, non liés à une information qui t'identifie. Le fait que tu aies aimé une recette, ou coché une étape comme faite, n'est mémorisé que sur ton propre appareil (stockage local du navigateur) : cette information n'est jamais envoyée ni enregistrée sur mes serveurs.`,
+        ],
+      },
+      {
+        heading: 'À qui tes données sont communiquées',
+        paragraphs: [
+          `Pour faire fonctionner le site, je m'appuie sur quelques prestataires externes, qui traitent les données pour mon compte en tant que sous-traitants (art. 28 RGPD) : <strong>Supabase Inc.</strong> (héberge la base de données des commentaires et des compteurs), <strong>n8n</strong> (gère l'envoi et la désinscription de la newsletter) et <strong>Netlify Inc.</strong> (héberge le site).`,
+          `Ces prestataires peuvent être situés, ou faire tourner des serveurs, hors de l'Union européenne ; dans ce cas, le transfert est encadré par les garanties prévues par le RGPD (ex. clauses contractuelles types). Je ne vends ni ne cède jamais tes données à des fins publicitaires ou de marketing tiers.`,
+        ],
+      },
+      {
+        heading: 'Combien de temps je conserve tes données',
+        paragraphs: [
+          `Les données d'inscription à la newsletter sont conservées jusqu'à ta désinscription ou ta demande explicite. Les commentaires (et l'email éventuellement associé) sont conservés tant que la recette reste publiée, sauf demande de suppression de ta part. Les compteurs « j'aime » et vues sont agrégés et anonymes, sans durée liée à une personne en particulier.`,
+        ],
+      },
+      {
+        heading: 'Tes droits',
+        paragraphs: [
+          `À tout moment, tu peux me demander de : te donner accès aux données que je détiens sur toi, les rectifier si elles sont incorrectes ou incomplètes, les supprimer, en limiter le traitement, te les fournir dans un format portable, t'opposer au traitement, ou retirer un consentement donné précédemment (sans que cela remette en cause la licéité du traitement effectué avant ce retrait).`,
+          `Pour exercer l'un de ces droits, écris-moi à <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>. Tu as aussi toujours le droit de déposer une plainte auprès de l'autorité italienne <a href="${GARANTE_URL}" target="_blank" rel="noopener noreferrer">Garante per la protezione dei dati personali</a>, ou auprès de l'autorité de protection des données de ton pays de résidence, si tu estimes que ce traitement viole la réglementation.`,
+        ],
+      },
+      {
+        heading: 'Cookies et technologies similaires',
+        paragraphs: [
+          `Ce site n'utilise aucun cookie de profilage, d'analyse ou publicitaire. Les polices de caractères sont hébergées directement sur ce site : aucune requête n'est envoyée à des services externes pour les charger. Le seul usage du stockage local sert à mémoriser, dans ton propre navigateur, les recettes que tu as aimées ou les étapes d'une recette cochées comme faites — cette information reste sur ton appareil et n'est jamais transmise ailleurs.`,
+        ],
+      },
+      {
+        heading: 'Modifications de cette politique',
+        paragraphs: [
+          `Cette politique peut être mise à jour au fil du temps, par exemple en cas de changement dans les services utilisés par le site. La date de dernière mise à jour en haut de page reflète toujours la version la plus récente.`,
+        ],
+      },
+    ],
+  },
+};
+
+const t = i18n[lang as keyof typeof i18n] ?? i18n.it;
+---
+
+<BaseLayout title={t.title} description={t.description} lang={lang}>
+  <div class="policy-shell">
+    <header class="policy-header">
+      <span class="academy-eyebrow">{t.eyebrow}</span>
+      <h1>{t.h1}</h1>
+      <p class="policy-updated">{t.updated}</p>
+    </header>
+
+    <div class="policy-body">
+      {t.sections.map((section) => (
+        <section class="policy-section">
+          <h2>{section.heading}</h2>
+          {section.paragraphs.map((html) => (
+            <p set:html={html} />
+          ))}
+        </section>
+      ))}
+    </div>
+  </div>
+
+  <style>
+    .policy-shell {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem 4.5rem;
+    }
+
+    .policy-header {
+      max-width: 620px;
+      margin: 0 auto 2rem;
+      text-align: center;
+    }
+
+    .policy-header h1 {
+      font-size: clamp(2.2rem, 4vw, 3rem);
+      line-height: 1.1;
+      margin: 0.8rem 0 0.6rem;
+    }
+
+    .policy-updated {
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      margin: 0;
+    }
+
+    .policy-section {
+      margin-top: 2.25rem;
+    }
+
+    .policy-section h2 {
+      font-size: 1.4rem;
+      color: var(--color-primary-green);
+      margin-bottom: 0.75rem;
+    }
+
+    .policy-section p {
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: var(--color-text-dark);
+      margin: 0 0 1rem;
+    }
+
+    .policy-section p a {
+      color: var(--color-primary-orange);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .policy-shell {
+        padding: 2rem 1rem 4rem;
+      }
+    }
+  </style>
+</BaseLayout>

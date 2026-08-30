@@ -1,6 +1,6 @@
 ---
 heroImage: "/images/ricette/torta-salame-cioccolato.webp"
-title: "Chocolate salami cake"
+title: "Chocolate salami cake (torta salame)"
 description: "A no-bake chocolate biscuit cake finished with ganache: simple, nostalgic and always a crowd-pleaser."
 pubDate: "2026-01-09"
 category: "Sweets"
@@ -11,7 +11,7 @@ translationKey: "torta-salame-di-cioccolato"
 
 <!-- c9ca99_1ae27ffb64dd4dbb8e842510dbce589a~mv2.jpg -->
 
-This is one of those no-bake chocolate cakes that disappears fast: crunchy biscuit pieces, rich chocolate and a glossy ganache on top.
+This is one of those no-bake chocolate cakes that disappears fast: crunchy biscuit pieces, rich chocolate and a glossy ganache on top. In Italy, *torta salame di cioccolato* is a classic no-bake treat — traditionally rolled into a log and sliced into rounds that look like salami slices (hence the playful name, no actual meat involved!). Here it's made in a tin instead, as a round cake.
 
 ## Quick info
 

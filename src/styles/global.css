@@ -1,4 +1,58 @@
 /* ============================
+   Font faces (self-hosted)
+   ============================
+   Prima caricati da Google Fonts (fonts.googleapis.com/fonts.gstatic.com):
+   ogni richiesta esponeva l'IP del visitatore a Google. Auto-ospitando i
+   file .woff2 eliminiamo del tutto quella chiamata a terzi. Sottoinsieme
+   "latin" (U+0000-00FF + estensioni tipografiche di base): copre it/en/fr,
+   le uniche lingue del sito — niente cirillico/vietnamita/greco scaricati
+   a vuoto. Fraunces 400/600 e Wix Madefor Display 400/500/600 condividono
+   lo stesso file perché Google li serve come istanze di un font variabile.
+*/
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/pacifico-normal-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('/fonts/fraunces-normal-400-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/fraunces-italic-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Wix Madefor Display';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('/fonts/wix-madefor-display-normal-400-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Wix Madefor Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/wix-madefor-text-normal-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Wix Madefor Text';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/wix-madefor-text-normal-500.woff2') format('woff2');
+}
+
+/* ============================
    CSS Variables / Design Tokens
    ============================ */
 :root {
@@ -1373,6 +1427,21 @@ p {
   color: var(--color-text-dark);
   text-align: right;
 }
+.footer-legal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+.footer-privacy-link {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  text-decoration: underline;
+}
+.footer-privacy-link:hover {
+  color: var(--color-primary-orange);
+}
 
 /* ============================
    Reveal-on-scroll utility (Wix-style fade-up)
@@ -1461,6 +1530,7 @@ p {
   .footer-branding { justify-content: center; }
   .footer-brand-name { font-size: 1.6rem; }
   .footer-copyright { text-align: center; }
+  .footer-legal { align-items: center; }
 
   .filter-bar { padding: 1rem; }
   .post-content > ol > li::before { top: 1rem; transform: none; }
@@ -1886,6 +1956,22 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--color-primary-g
 .newsletter-input:focus {
   outline: none;
   border-color: var(--color-primary-green);
+}
+.newsletter-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+.newsletter-consent input {
+  margin-top: 0.2rem;
+}
+.newsletter-consent a {
+  color: var(--color-primary-green);
+  text-decoration: underline;
 }
 .newsletter-btn {
   width: 100%;
