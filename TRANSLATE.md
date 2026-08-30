@@ -67,6 +67,8 @@ Alla fine Claude ti riporta regionalismi/idiomi risolti e eventuali termini "app
 
 Puoi chiedere una sola lingua ("traduci solo in FR") o entrambe.
 
+> **Tip:** Claude riconosce da solo quando attivare la skill — non serve nominarla. Basta una richiesta che assomigli a "traduci ricetta", "portala in inglese/francese", "translate this recipe", oppure dargli direttamente un `.mdx` da `it/`. È un riconoscimento a giudizio, non una regola rigida: se vuoi la certezza assoluta che parta la skill giusta, scrivi esplicitamente `/translate-recipes` (o `/translate-recipes-edit` per la rifinitura) all'inizio del messaggio.
+
 ---
 
 ## Rifinire una traduzione esistente
@@ -77,7 +79,25 @@ Se hai già un draft EN/FR (es. vecchie traduzioni DeepL, o una bozza che vuoi s
 rifinisci la traduzione EN di pasta-con-feta
 ```
 
-Questo attiva **`translate-recipes-edit`** ([.claude/skills/translate-recipes-edit/SKILL.md](.claude/skills/translate-recipes-edit/SKILL.md)), che confronta la traduzione esistente con la sorgente IT e la riscrive dove serve (stessa checklist di tono/regionalismi/idiomi/quantità), senza toccare frontmatter strutturale o numeri già corretti.
+Questo attiva **`translate-recipes-edit`** ([.claude/skills/translate-recipes-edit/SKILL.md](.claude/skills/translate-recipes-edit/SKILL.md)), che confronta la traduzione esistente con la sorgente IT e la riscrive dove serve, senza ripartire da zero.
+
+**Le tappe che segue:**
+
+1. **Legge** il file sorgente IT e il file target (`en/` o `fr/`) — se manca uno dei due, si ferma e chiede.
+2. **Diff mentale** prima di toccare nulla:
+   - lunghezza dei paragrafi vs. sorgente IT (scarto >15% → probabile taglio/ridondanza da riscrivere)
+   - componenti MDX (`<Figure>`, `<Aside>`, `<TwoColumn>`) presenti con gli stessi prop strutturali
+   - frontmatter: `translationKey`, `pubDate`, `heroImage`, `tags`, slug devono combaciare con l'IT; `lang` deve essere corretto
+3. **Riscrive paragrafo per paragrafo**, applicando la stessa checklist della traduzione da zero:
+   - **tono**: esclamazioni/prima persona appiattite da un traduttore automatico → riportate a un registro naturale
+   - **regionalismi**: verifica che nomi di piatti/ingredienti locali abbiano il pattern `nome target (nome IT in corsivo)`
+   - **idiomi**: sostituisce i calchi letterali con l'equivalente idiomatico nella lingua target
+   - **US vs UK (solo EN)**: dove c'è ambiguità (`courgette`/`zucchini`, `grill`/`broiler`, ecc.) corregge sempre verso **US**
+   - **quantità (solo EN)**: verifica che ogni numero metrico abbia già la parentesi imperiale; aggiunge quella mancante, mai una seconda se già presente
+4. **Sovrascrive** direttamente il file target.
+5. **Reportistica finale**: quanti paragrafi ha riscritto vs. lasciati invariati, esempi before→after (max 5) di regionalismi/idiomi corretti, eventuali termini "appiattiti" da rivedere.
+
+**Cosa non tocca mai:** `translationKey`, `pubDate`, `heroImage`, slug, `tags` (restano in IT), path immagini, nomi/prop strutturali dei componenti MDX, numeri già espressi correttamente.
 
 ---
 
