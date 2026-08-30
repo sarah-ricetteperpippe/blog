@@ -1,102 +1,124 @@
-# Come tradurre le ricette
+# Come creare e tradurre le ricette
 
-Lo script legge il file italiano e genera automaticamente le versioni in inglese e francese tramite DeepL.
+La traduzione IT → EN/FR **non passa più da DeepL**: la fa Claude, seguendo le regole di stile del blog (tono, regionalismi, idiomi, conversioni imperiali) descritte nelle skill di progetto in [.claude/skills/](.claude/skills/). Nessuna API key a pagamento — usa la sessione Claude Code già autenticata su questa macchina.
 
----
+**Due passaggi, entrambi da terminale:**
 
-## Setup (una volta sola)
+```bash
+npm run new-recipe                          # crea il file .mdx in it/
+npm run translate -- <slug>                 # genera en/ e fr/ via Claude Code headless
+```
 
-1. Assicurati di avere un file `.env` nella root del progetto con la chiave DeepL:
+`npm run translate` lancia in background un processo `claude -p` che carica automaticamente la skill `translate-recipes`, legge il file IT e scrive i file EN/FR. Richiede il CLI `claude` installato (`npm install -g @anthropic-ai/claude-code`) — su questa macchina è già installato e autenticato.
 
-   ```
-   DEEPL_API_KEY=tua_chiave_deepl
-   ```
-
-2. Installa le dipendenze se non l'hai ancora fatto:
-
-   ```bash
-   npm install
-   ```
+In alternativa, puoi sempre chiedere direttamente in chat (utile se vuoi restare nella conversazione, vedere il ragionamento, o dare indicazioni al volo):
+```
+traduci la ricetta <slug> in EN e FR
+```
 
 ---
 
 ## Scrivere una nuova ricetta
 
-1. Crea il file italiano in `src/content/blog/it/` con questo formato:
+Lancia lo scaffolding interattivo, che chiede titolo, descrizione, categoria e tag e crea il file in `src/content/blog/it/`:
 
-   ```markdown
-   ---
-   title: "Titolo della ricetta"
-   description: "Descrizione breve e appetitosa"
-   pubDate: "2026-03-22"
-   category: "Primi piatti"
-   tags: ["Pasta", "Forno", "Veloce"]
-   ---
+```bash
+npm run new-recipe
+```
 
-   Testo della ricetta...
-   ```
+In alternativa puoi creare il file a mano con questo formato:
 
-2. Il nome del file diventa lo **slug** dell'URL, usalo nel comando di traduzione.
-   Esempio: `pasta-con-feta.md` → slug `pasta-con-feta`
+```markdown
+---
+title: "Titolo della ricetta"
+description: "Descrizione breve e appetitosa"
+pubDate: "2026-03-22"
+category: "Primi piatti"
+tags: ["Pasta", "Forno", "Veloce"]
+---
+
+Testo della ricetta...
+```
+
+Il nome del file diventa lo **slug** dell'URL (es. `pasta-con-feta.md` → slug `pasta-con-feta`).
 
 ---
 
 ## Tradurre una ricetta
 
-```bash
-# Traduce IT → EN + FR (entrambe le lingue)
-npm run translate -- pasta-con-feta
+In chat, chiedi semplicemente:
 
-# Solo inglese
-npm run translate -- pasta-con-feta --lang en
-
-# Solo francese
-npm run translate -- pasta-con-feta --lang fr
+```
+traduci la ricetta pasta-con-feta in EN e FR
 ```
 
-> **Nota:** i `--` tra `translate` e lo slug sono necessari per passare argomenti a npm.
+Claude attiva la skill **`translate-recipes`** ([.claude/skills/translate-recipes/SKILL.md](.claude/skills/translate-recipes/SKILL.md)), legge `src/content/blog/it/pasta-con-feta.md` e scrive:
+- `src/content/blog/en/pasta-con-feta.md` (persona *Clueless Cooks*)
+- `src/content/blog/fr/pasta-con-feta.md` (persona *Recettes pour Quiches*)
 
-Lo script crea automaticamente:
-- `src/content/blog/en/pasta-con-feta.md`
-- `src/content/blog/fr/pasta-con-feta.md`
+La skill si occupa di:
+- **tono**: mantiene prima persona, esclamazioni, ironia — non appiattisce come farebbe un traduttore automatico
+- **regionalismi**: nomi di piatti/ingredienti locali resi con `nome target (nome IT in corsivo)` alla prima occorrenza
+- **idiomi**: cerca l'equivalente naturale invece del calco letterale
+- **quantità**: per l'EN aggiunge la conversione imperiale tra parentesi (`400g` → `400g (14.1 oz)`); per il FR lascia i metrici invariati
+- **frontmatter**: traduce `title`/`description`/`category`, lascia invariati `translationKey`, `pubDate`, `heroImage`, `tags`, slug
 
-Nella versione inglese aggiunge anche le misure americane in parallelo:
-`100g → 100g (3.5 oz)`, `200°C → 200°C (392°F)`, ecc.
+Alla fine Claude ti riporta regionalismi/idiomi risolti e eventuali termini "appiattiti" da rivedere.
+
+Puoi chiedere una sola lingua ("traduci solo in FR") o entrambe.
+
+> **Tip:** Claude riconosce da solo quando attivare la skill — non serve nominarla. Basta una richiesta che assomigli a "traduci ricetta", "portala in inglese/francese", "translate this recipe", oppure dargli direttamente un `.mdx` da `it/`. È un riconoscimento a giudizio, non una regola rigida: se vuoi la certezza assoluta che parta la skill giusta, scrivi esplicitamente `/translate-recipes` (o `/translate-recipes-edit` per la rifinitura) all'inizio del messaggio.
 
 ---
 
-## Se vuoi ritradurre un file già esistente
+## Rifinire una traduzione esistente
 
-Lo script non sovrascrive file già tradotti. Per ritradurre:
+Se hai già un draft EN/FR (es. vecchie traduzioni DeepL, o una bozza che vuoi solo aggiustare nel tono) e vuoi migliorarlo senza ripartire da zero:
 
-```bash
-rm src/content/blog/en/nome-ricetta.md
-npm run translate -- nome-ricetta --lang en
 ```
+rifinisci la traduzione EN di pasta-con-feta
+```
+
+Questo attiva **`translate-recipes-edit`** ([.claude/skills/translate-recipes-edit/SKILL.md](.claude/skills/translate-recipes-edit/SKILL.md)), che confronta la traduzione esistente con la sorgente IT e la riscrive dove serve, senza ripartire da zero.
+
+**Le tappe che segue:**
+
+1. **Legge** il file sorgente IT e il file target (`en/` o `fr/`) — se manca uno dei due, si ferma e chiede.
+2. **Diff mentale** prima di toccare nulla:
+   - lunghezza dei paragrafi vs. sorgente IT (scarto >15% → probabile taglio/ridondanza da riscrivere)
+   - componenti MDX (`<Figure>`, `<Aside>`, `<TwoColumn>`) presenti con gli stessi prop strutturali
+   - frontmatter: `translationKey`, `pubDate`, `heroImage`, `tags`, slug devono combaciare con l'IT; `lang` deve essere corretto
+3. **Riscrive paragrafo per paragrafo**, applicando la stessa checklist della traduzione da zero:
+   - **tono**: esclamazioni/prima persona appiattite da un traduttore automatico → riportate a un registro naturale
+   - **regionalismi**: verifica che nomi di piatti/ingredienti locali abbiano il pattern `nome target (nome IT in corsivo)`
+   - **idiomi**: sostituisce i calchi letterali con l'equivalente idiomatico nella lingua target
+   - **US vs UK (solo EN)**: dove c'è ambiguità (`courgette`/`zucchini`, `grill`/`broiler`, ecc.) corregge sempre verso **US**
+   - **quantità (solo EN)**: verifica che ogni numero metrico abbia già la parentesi imperiale; aggiunge quella mancante, mai una seconda se già presente
+4. **Sovrascrive** direttamente il file target.
+5. **Reportistica finale**: quanti paragrafi ha riscritto vs. lasciati invariati, esempi before→after (max 5) di regionalismi/idiomi corretti, eventuali termini "appiattiti" da rivedere.
+
+**Cosa non tocca mai:** `translationKey`, `pubDate`, `heroImage`, slug, `tags` (restano in IT), path immagini, nomi/prop strutturali dei componenti MDX, numeri già espressi correttamente.
 
 ---
 
 ## Workflow completo (esempio)
 
 ```bash
-# 1. Scrivi la ricetta in italiano
-# → crea src/content/blog/it/lasagne-della-domenica.md
+# 1. Crea la ricetta in italiano (scaffolding interattivo)
+npm run new-recipe
+# → crea src/content/blog/it/lasagne-della-domenica.mdx
 
-# 2. Traduci
-npm run translate -- lasagne-della-domenica
+# 2. In chat: "traduci la ricetta lasagne-della-domenica in EN e FR"
+# → Claude crea src/content/blog/en/lasagne-della-domenica.mdx
+# → Claude crea src/content/blog/fr/lasagne-della-domenica.mdx
 
-# 3. Controlla i file generati (opzionale ma consigliato)
-# → src/content/blog/en/lasagne-della-domenica.md
-# → src/content/blog/fr/lasagne-della-domenica.md
-
-# 4. Avvia il dev server per vedere il risultato
+# 3. Avvia il dev server per vedere il risultato
 npm run dev
 # → apri http://localhost:4321/blog/it/blog/lasagne-della-domenica/
 ```
 
 ---
 
-## Limiti DeepL Free
+## Nota — collection `academy`
 
-Il piano gratuito include **500.000 caratteri al mese**.
-Una ricetta media è circa 1.500–2.000 caratteri → puoi tradurre circa **120–160 ricette/mese** nel piano free.
+Le skill sono scritte per `src/content/blog/`. Per tradurre una guida in `src/content/academy/` chiedi comunque a Claude in chat indicando il path corretto — funziona lo stesso ma non è (ancora) coperto esplicitamente dalla skill.

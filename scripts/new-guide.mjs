@@ -64,7 +64,7 @@ tags: [${tagsFormatted}]
 translationKey: "${slug}"
 ---
 
-<!-- Intro: una o due righe sul problema che questa guida ti risolve. -->
+{/* Intro: una o due righe sul problema che questa guida ti risolve. */}
 
 ## Quando serve
 
@@ -84,15 +84,19 @@ translationKey: "${slug}"
 
 ## Da ricordare
 
-<!-- Aggiungi foto con: -->
-<!-- <Figure src="/images/guides/${slug}-step.webp" alt="descrizione" side="right" ratio="landscape" caption="didascalia"> -->
-<!-- testo accanto alla foto -->
-<!-- </Figure> -->
+{/*
+Aggiungi foto con:
+<Figure src="/images/guides/${slug}-step.webp" alt="descrizione" side="right" ratio="landscape" caption="didascalia">
+testo accanto alla foto
+</Figure>
+*/}
 
-<!-- Aggiungi note con: -->
-<!-- <Aside variant="tip" title="Consiglio"> -->
-<!-- testo del consiglio -->
-<!-- </Aside> -->
+{/*
+Aggiungi note con:
+<Aside variant="tip" title="Consiglio">
+testo del consiglio
+</Aside>
+*/}
 `;
 }
 
