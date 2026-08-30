@@ -3,7 +3,7 @@ title: "Fake risotto alla parmigiana"
 description: "Risotto for low-fridge days: flexible, cosy and still properly creamy even when you improvise."
 pubDate: "2025-01-26"
 heroImage: "/images/ricette/risotto-finta-parmigiana.webp"
-category: "First courses"
+category: "Risottos"
 tags: ["Primi piatti", "Risotti", "Antispreco", "Autunno/inverno"]
 lang: "en"
 translationKey: "finto-risotto-alla-parmigiana"

@@ -88,7 +88,7 @@ const BLOG_TAG_LABELS = {
     Pomodorini: 'Cherry tomatoes',
     'Preparazioni base': 'Basic preparations',
     'Primavera/estate': 'Spring/summer',
-    'Primi piatti': 'First courses',
+    'Primi piatti': 'Pasta dishes',
     reference: 'Reference',
     Risotti: 'Risottos',
     Rucola: 'Rocket',
@@ -138,7 +138,7 @@ const BLOG_TAG_LABELS = {
     Pomodorini: 'Tomates cerises',
     'Preparazioni base': 'Préparations de base',
     'Primavera/estate': 'Printemps/été',
-    'Primi piatti': 'Premiers plats',
+    'Primi piatti': 'Plats de pâtes',
     reference: 'Référence',
     Risotti: 'Risottos',
     Rucola: 'Roquette',
@@ -161,6 +161,10 @@ const BLOG_TAG_SET = new Set<string>(BLOG_TAGS);
 const BASE_BLOG_TAG_ALIASES: Partial<Record<string, BlogTag>> = {
   Antipasto: 'Antipasti',
   'Piatti del mondo': 'Piatti dal mondo',
+  // Vecchie label per "Primi piatti" (ora "Pasta dishes"/"Plats de pâtes"),
+  // tenute per compatibilità con contenuti/link esistenti.
+  'First courses': 'Primi piatti',
+  'Premiers plats': 'Primi piatti',
 };
 
 const BLOG_TAG_ALIASES: Partial<Record<string, BlogTag>> = { ...BASE_BLOG_TAG_ALIASES };

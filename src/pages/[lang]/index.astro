@@ -42,6 +42,10 @@ const ui = {
     newsletterLoading: 'Un attimo...',
     newsletterSuccess: 'Che coraggio!',
     newsletterError: 'Qualcosa è andato storto. Riprova tra poco.',
+    newsletterConsentBefore: 'Ho letto e accetto l\'',
+    newsletterConsentLink: 'informativa privacy',
+    newsletterConsentAfter: ' per il trattamento di nome ed email ai fini della newsletter.',
+    newsletterConsentError: 'Devi accettare l\'informativa privacy per iscriverti.',
   },
   en: {
     heroTitle: 'The best recipes\nfor the worst cooks in the kitchen!',
@@ -60,6 +64,10 @@ const ui = {
     newsletterLoading: 'Just a sec...',
     newsletterSuccess: 'How brave!',
     newsletterError: 'Something went wrong. Please try again.',
+    newsletterConsentBefore: 'I have read and accept the ',
+    newsletterConsentLink: 'privacy notice',
+    newsletterConsentAfter: ' for the processing of my name and email to send me the newsletter.',
+    newsletterConsentError: 'You need to accept the privacy notice to subscribe.',
   },
   fr: {
     heroTitle: 'Les meilleures recettes\npour les pires cuisiniers !',
@@ -78,6 +86,10 @@ const ui = {
     newsletterLoading: 'Un instant...',
     newsletterSuccess: 'Quel courage !',
     newsletterError: 'Une erreur est survenue. Réessayez.',
+    newsletterConsentBefore: 'J\'ai lu et j\'accepte la ',
+    newsletterConsentLink: 'politique de confidentialité',
+    newsletterConsentAfter: ' pour le traitement de mon nom et de mon email dans le cadre de la newsletter.',
+    newsletterConsentError: 'Tu dois accepter la politique de confidentialité pour t\'inscrire.',
   },
 } as const;
 
@@ -154,6 +166,10 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
         <form class="newsletter-form" id="newsletter-form" novalidate>
           <input type="text" name="nome" class="newsletter-input" placeholder={t.newsletterName} required autocomplete="given-name" />
           <input type="email" name="email" class="newsletter-input" placeholder={t.newsletterEmail} required autocomplete="email" />
+          <label class="newsletter-consent">
+            <input type="checkbox" name="consent" required />
+            <span>{t.newsletterConsentBefore}<a href={`${base}${lang}/privacy/`} target="_blank" rel="noopener noreferrer">{t.newsletterConsentLink}</a>{t.newsletterConsentAfter}</span>
+          </label>
           <button
             type="submit"
             class="newsletter-btn"
@@ -169,6 +185,7 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
           aria-live="polite"
           data-ok={t.newsletterSuccess}
           data-err={t.newsletterError}
+          data-consent-err={t.newsletterConsentError}
         ></p>
       </div>
       <div class="newsletter-image">
@@ -219,6 +236,7 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
   const submitBtn = form?.querySelector('button[type="submit"]') as HTMLButtonElement | null;
   const MSG_OK = feedback?.dataset.ok ?? 'Che coraggio!';
   const MSG_ERR = feedback?.dataset.err ?? 'Qualcosa è andato storto. Riprova tra poco.';
+  const MSG_CONSENT_ERR = feedback?.dataset.consentErr ?? MSG_ERR;
   const BTN_LABEL = submitBtn?.dataset.label ?? 'Condividi la gioia!';
   const BTN_LOADING = submitBtn?.dataset.loading ?? '...';
 
@@ -232,6 +250,16 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
       return;
     }
     const data = Object.fromEntries(new FormData(form));
+    // Il form ha novalidate: il controllo required del checkbox non blocca
+    // nativamente l'invio, quindi verifichiamo il consenso qui prima di
+    // contattare il webhook.
+    if (!data.consent) {
+      if (feedback) {
+        feedback.textContent = MSG_CONSENT_ERR;
+        feedback.className = 'newsletter-feedback newsletter-feedback--err';
+      }
+      return;
+    }
     const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
     btn.disabled = true;
     btn.textContent = BTN_LOADING;

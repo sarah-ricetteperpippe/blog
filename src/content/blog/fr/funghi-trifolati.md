@@ -1,5 +1,5 @@
 ---
-title: "Champignons à la persillade (*funghi trifolati*)"
+title: "Champignons à la persillade (funghi trifolati)"
 description: "Un accompagnement express et plein de goût !"
 pubDate: "2025-11-11"
 heroImage: "/images/ricette/funghi-trifolati.webp"
