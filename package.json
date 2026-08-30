@@ -8,7 +8,7 @@
     "preview": "astro preview",
     "new-recipe": "node scripts/new-recipe.mjs",
     "new-guide": "node scripts/new-guide.mjs",
-    "translate": "node scripts/translate.js",
+    "translate": "node scripts/translate-ai.mjs",
     "prepare": "git config core.hooksPath scripts/hooks || true"
   },
   "dependencies": {
@@ -18,12 +18,9 @@
     "astro-pagefind": "^1.8.5",
     "flag-icons": "^7.5.0"
   },
-  "devDependencies": {
-    "deepl-node": "^1.24.0"
-  },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "*",
     "@rollup/rollup-darwin-arm64": "*",
-    "@rollup/rollup-darwin-x64": "*"
+    "@rollup/rollup-darwin-x64": "*",
+    "@rollup/rollup-linux-x64-gnu": "*"
   }
 }
