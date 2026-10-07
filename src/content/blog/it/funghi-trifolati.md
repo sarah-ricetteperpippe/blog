@@ -23,25 +23,25 @@ Contorno veloce e sfizioso!
 ## Ingredienti
 
 - 400 g di funghi freschi
-- 1 spicchio d'aglio
+- 1 spicchio d'aglio intero
 - 2 cucchiai di vino bianco secco
-- Prezzemolo tritato q.b.
-- Olio extravergine d'oliva q.b.
-- Sale fino q.b.
-- Pepe nero q.b.
+- 2-3 foglioline di prezzemolo tritato (ad occhio)
+- 1 cucchiaio scarso Olio extravergine d'oliva 
+- 1/4 cucchiaino scarso di sale 
+- 3 colpetti di pepe nero 
 
 ## Procedimento
 
-1. **Pulisci i funghi.** Elimina i residui di terra strofinando delicatamente la superficie con un panno umido. Stacca i gambi, rimuovi se vuoi la pellicina del cappello e le lamelle. Taglia i funghi a fettine sottili e mettili in una ciotola.
+1. **Pulisci i 400g di funghi.** Elimina i residui di terra strofinando delicatamente la superficie con un panno umido. Stacca i gambi, rimuovi se vuoi la pellicina del cappello e le lamelle. Taglia i funghi a fettine sottili 5mm e mettili in una ciotola.
 
-2. **Prepara il soffritto.** Scalda in padella un filo d'olio d'oliva con uno **spicchio d'aglio intero**.
+2. **Prepara il soffritto.** Scalda in padella 1 cucchiaio scarso d'olio d'oliva con uno **spicchio d'aglio intero**.
 
-3. **Cuoci i funghi.** Aggiungi i funghi tagliati e una manciata di prezzemolo tritato. Cuoci a fuoco medio per circa **5–6 minuti**, mescolando di tanto in tanto finché iniziano ad ammorbidirsi.
+3. **Cuoci i funghi.** Aggiungi tutti i funghi tagliati e, gradualmente per intuire ad occhio, metà delle 2-3 foglioline di prezzemolo tritato. Cuoci a fuoco medio per circa **5–6 minuti**, mescolando di tanto in tanto finché iniziano ad ammorbidirsi.
 
-4. **Sfuma con il vino.** Versa **2 cucchiai di vino bianco secco**, alza la fiamma e lascia evaporare l'alcol per 1–2 minuti.
+4. **Sfuma con il vino.** Versa **2 cucchiai di vino bianco secco**, alza la fiamma e lascia evaporare l'alcol per 1–2 minuti. Mescola ogni tanto per evitare che si attacchino al fondo della pentola.
 
-5. **Insaporisci.** Aggiungi sale, pepe e un po' di prezzemolo fresco, poi cuoci ancora 2–3 minuti per farli insaporire bene.
+5. **Insaporisci.** Aggiungi 1/4 cucchiaino scarso di sale, 3 colpetti di pepe e il resto di prezzemolo fresco, poi cuoci ancora 2–3 minuti per farli insaporire bene.
 
 6. **Servi.** Togli l'aglio e servi i funghi trifolati caldi come contorno o condimento per la pasta.
 
-Puoi usare funghi misti per un sapore più complesso. Per una versione cremosa, aggiungi un cucchiaio di panna da cucina o una noce di burro a fine cottura. Ottimi anche su crostone di pane tostato o come base per una frittata ai funghi.
+Puoi usare funghi misti per un sapore più complesso. Per una versione cremosa, aggiungi un cucchiaio di panna da cucina o una noce di burro a fine cottura. Ottimi anche su crostone di pane tostato o come base per una frittata ai funghi!
