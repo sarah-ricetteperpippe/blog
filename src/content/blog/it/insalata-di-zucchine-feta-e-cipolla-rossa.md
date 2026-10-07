@@ -22,7 +22,7 @@ Idea svuota frigo bella, buona e veloce. Must have for feta lovers!
 ## Ingredienti
 
 - 1 zucchina medio-grande (circa 200 g)
-- 1/2 panetto di feta
+- 1/2 panetto di feta (io uso la [feta veg Vemondo](https://www.google.com/search?q=feta+veg+Vemondo))
 - 1/4 di cipolla rossa (circa 25 g, oppure secondo i tuoi gusti)
 - 10 foglioline di menta (oppure basilico)
 - 1 cucchiaio di olio extravergine di oliva
