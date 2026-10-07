@@ -1,5 +1,5 @@
 ---
-title: "Escalopes de pleurotes du panicaut"
+title: "Escalopes panées de pleurotes du panicaut"
 description: "On dirait de vraies escalopes panées : elles sont savoureuses et délicieusement croustillantes. Je m'épate moi-même !"
 pubDate: "2025-02-24"
 heroImage: "/images/ricette/cotolette-funghi.webp"
