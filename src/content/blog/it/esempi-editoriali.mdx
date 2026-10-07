@@ -73,6 +73,39 @@ Se ometti i children, la figure si centra nella colonna testo.
 <Figure src="/images/demo/landscape.svg" caption="Il piatto finito." />
 ```
 
+## Ingredienti con foto — 50/50
+
+`IngredientsPhoto` divide lo spazio disponibile in due colonne uguali, sottraendo prima lo spazio tra le colonne. La foto resta centrata rispetto alla lista, mantiene le sue proporzioni e non ha didascalia. Su mobile passa sotto gli ingredienti.
+
+Lascia il titolo della sezione **fuori dal componente**, come nel template delle nuove ricette: il separatore resta sopra entrambe le colonne. Scrivi in grassetto solo i nomi degli ingredienti, che useranno il verde del brand.
+
+<IngredientsPhoto src="/images/ricette/pizzette-melanzane.webp" alt="Pizzette di melanzane al forno con pomodoro e mozzarella" width={1024} height={1536}>
+
+- **Melanzane:** 600g
+- **Polpa di pomodoro:** 200g
+- **Mozzarella:** 125g
+- **Basilico fresco:** 2 o 3 foglioline
+- **Olio extravergine di oliva:** a filo
+- **Sale:** 1 pizzico
+- **Pepe:** 2 giri di macina
+
+</IngredientsPhoto>
+
+```mdx
+## Ingredienti
+
+<IngredientsPhoto src="/images/ricette/pizzette-melanzane.webp"
+                  alt="Pizzette di melanzane al forno">
+
+- **Melanzane:** 600g
+- **Polpa di pomodoro:** 200g
+- **Mozzarella:** 125g
+
+</IngredientsPhoto>
+```
+
+I campi `width` e `height` sono facoltativi: puoi indicarli quando conosci le dimensioni originali della foto.
+
 ## Pullquote
 
 Frase grande estratta dal testo, con accento arancione laterale. Usala per le frasi-mantra di una ricetta.
@@ -204,6 +237,7 @@ Testo della tip, processato come markdown.
 | Componente | Quando usarlo |
 |---|---|
 | `<Figure>` | Foto singola, eventualmente con testo accanto in 2 colonne |
+| `<IngredientsPhoto>` | Lista ingredienti e foto in due colonne 50/50, sotto il separatore |
 | `<Gallery>` | 2 o 3 foto affiancate in griglia |
 | `<Pullquote>` | Frase grande estratta dal testo |
 | `<TwoColumn>` | Due blocchi testuali affiancati (es. ingredienti vs procedimento) |

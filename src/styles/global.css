@@ -980,7 +980,66 @@ p {
   display: none;
 }
 
+/* Ingredienti e foto: due colonne uguali, sotto il separatore di sezione. */
+.recipe-overview {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--editorial-gap, 1.75rem);
+  align-items: center;
+  margin: 0 0 var(--editorial-gap, 1.75rem);
+}
+
+.recipe-overview-text {
+  min-width: 0;
+}
+
+.post-content .recipe-overview-text > :first-child {
+  margin-top: 0;
+}
+
+.post-content .recipe-overview-text > :last-child {
+  margin-bottom: 0;
+}
+
+.recipe-overview-photo {
+  align-self: center;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+.post-content .recipe-overview-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .recipe-overview {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .recipe-overview-photo {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    max-width: 22rem;
+  }
+}
+
 .post-content p { font-size: 1.05rem; line-height: 1.5; margin-bottom: 1.25rem; color: var(--color-text-dark); }
+
+.post-content a {
+  color: var(--color-primary-green);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+.post-content a:hover {
+  text-decoration-thickness: 2px;
+}
 
 /* Separatore automatico prima di ogni H2 (tranne il primo) */
 .post-content h2 ~ h2,
@@ -1167,8 +1226,13 @@ p {
 }
 .post-content blockquote p { font-size: 1.1rem; line-height: 1.5; margin: 0; }
 
-/* Strong / em */
-.post-content strong { color: var(--color-primary-green); font-weight: 700; }
+/* Grassetto: stesso verde per nomi degli ingredienti e informazioni rapide. */
+.post-content strong {
+  color: var(--color-primary-green);
+  font-weight: 700;
+}
+
+/* Corsivo */
 .post-content em { color: var(--color-primary-orange); }
 
 /* Immagini nel contenuto */

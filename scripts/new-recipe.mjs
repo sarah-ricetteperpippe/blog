@@ -74,7 +74,14 @@ translationKey: "${slug}"
 
 ## Ingredienti
 
--
+{/* Metti in grassetto solo il nome dell'ingrediente: sarà verde come le etichette delle informazioni rapide. Lascia quantità, alternative e note fuori dal grassetto. */}
+
+{/* Ingredienti e foto in due colonne 50/50. Cambia src e alt per scegliere la foto verticale; il titolo Ingredienti resta sopra il blocco. */}
+<IngredientsPhoto src="/images/ricette/${slug}.webp" alt={${JSON.stringify(title)}}>
+
+- **Nome ingrediente:** quantità (eventuali alternative o note)
+
+</IngredientsPhoto>
 
 ## Procedimento
 

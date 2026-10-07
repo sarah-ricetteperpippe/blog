@@ -1,0 +1,27 @@
+---
+/**
+ * Ingredienti a sinistra e foto centrata a destra, in due colonne uguali.
+ * Mantieni il titolo "## Ingredienti" prima del componente, per avere
+ * il separatore di sezione sopra entrambe le colonne.
+ *
+ * Le classi condividono gli stili globali con il markup delle ricette .md.
+ * Nei file .mdx il componente è disponibile senza importarlo.
+ */
+export interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+}
+
+const { src, alt, width, height } = Astro.props;
+---
+
+<div class="recipe-overview">
+  <div class="recipe-overview-text">
+    <slot />
+  </div>
+  <figure class="recipe-overview-photo">
+    <img src={src} alt={alt} width={width} height={height} loading="lazy" />
+  </figure>
+</div>
