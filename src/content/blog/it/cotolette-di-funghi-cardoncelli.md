@@ -23,25 +23,25 @@ Sembrano cotolette classiche, sono buone sfiziose e croccano da favola, sono stu
 
 - 400g funghi cardoncelli freschi (più i cappellini sono larghi e spessi, meglio è)
 - 1 uovo
-- 3 cucchiai di latte (io di soia senza zuccheri aggiunti)
+- 3 cucchiai di latte (io di soia/avena senza zuccheri aggiunti)
 - 8 cucchiai farina
 - 6 cucchiai pangrattato
 - 4 cucchiai formaggio grattugiato
-- Sale q.b.
-- Pepe q.b.
-- Spezie a piacere (consigliato prezzemolo tritato fine)
-- Olio per frittura (abbondante)
+- Sale 1 bel pizzicotto
+- Pepe 2 giri di macina
+- Spezie a piacere (consigliato 3 foglioline di prezzemolo tritato fine)
+- Olio per frittura (almeno 1/4 di bottiglia)
 
 ## Procedimento
 
 ### Preparazione funghi e impanatura
 
 1. Preriscalda il forno a 180°.
-2. Pulisci i 400g di cardoncelli accarezzandoli con un panno o carta assorbente. Non lavarli sotto acqua.
+2. Pulisci i 400g di cardoncelli accarezzandoli con un panno o carta assorbente. Non lavarli sotto acqua o l'assorbiranno.
 3. Disponi i funghi su carta forno e cuoci a 180° per 10–12 minuti, girandoli a metà cottura.
-4. In un piatto sbatti 1 uovo con 3 cucchiai di latte, sale e pepe.
+4. In un piatto sbatti 1 uovo con 3 cucchiai di latte (anche di soia o avena senza zuccheri aggiunti), 1 bel pizzicotto di sale e pepe (2 giri di macina).
 5. In un secondo piatto metti 8 cucchiai di farina.
-6. In un terzo piatto unisci 6 cucchiai di pangrattato, 4 cucchiai di formaggio grattugiato e le spezie scelte.
+6. In un terzo piatto unisci 6 cucchiai di pangrattato, 4 cucchiai di formaggio grattugiato e le spezie scelte (ti consiglio 3 foglioline di prezzemolo tritate fini).
 7. Sforna i funghi, tamponali bene con carta assorbente e lasciali intiepidire.
 8. Se necessario, appiattisci delicatamente le fette con colpetti leggeri di batticarne.
 
@@ -54,7 +54,7 @@ Sembrano cotolette classiche, sono buone sfiziose e croccano da favola, sono stu
 
 ### Frittura
 
-1. Versa olio abbondante in una pentola alta e scaldalo.
+1. Versa olio abbondante in una pentola alta (almeno 1/4 di bottiglia) e scaldalo.
 2. Verifica la temperatura inserendo un piccolo grumo di pangrattato: se fa bollicine immediate, l'olio è pronto.
 3. Friggi poche fette per volta. Quando sono ben dorate, rimuovile con la schiumarola.
 4. Adagiale su carta assorbente e lascia intiepidire qualche minuto.
