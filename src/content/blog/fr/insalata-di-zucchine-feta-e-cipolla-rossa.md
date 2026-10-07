@@ -23,7 +23,7 @@ Une salade anti-gaspi, jolie, bonne et vite prête. Avis aux fans de feta !
 ## Ingrédients
 
 - 1 courgette de taille moyenne à grosse (environ 200 g)
-- 1/2 bloc de feta
+- 1/2 bloc de feta (j'utilise la [feta végétale Vemondo](https://www.google.com/search?q=feta+v%C3%A9g%C3%A9tale+Vemondo))
 - 1/4 d'oignon rouge (environ 25 g, ou selon tes goûts)
 - 10 petites feuilles de menthe (ou de basilic)
 - 1 cuillère à soupe d'huile d'olive vierge extra

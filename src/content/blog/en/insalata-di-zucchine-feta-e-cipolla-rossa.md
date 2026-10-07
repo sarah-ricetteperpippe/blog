@@ -23,7 +23,7 @@ A quick salad that's pretty, tasty, and perfect for using up what's in your frid
 ## Ingredients
 
 - 1 medium to large zucchini, about 200 g (7.1 oz)
-- 1/2 block of feta
+- 1/2 block of feta (I use [Vemondo vegan feta](https://www.google.com/search?q=Vemondo+vegan+feta))
 - 1/4 red onion, about 25 g (0.9 oz) or to taste
 - 10 small mint leaves (or basil)
 - 1 tablespoon extra virgin olive oil
