@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import GuideLayout from '../../../layouts/GuideLayout.astro';
-import { Figure, Gallery, Pullquote, TwoColumn, Aside } from '../../../components/editorial';
+import { Figure, IngredientsPhoto, Gallery, Pullquote, TwoColumn, Aside } from '../../../components/editorial';
 
 export async function getStaticPaths() {
   const posts = await getCollection('academy');
@@ -20,7 +20,7 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 
 // Componenti editoriali auto-iniettati: nei .mdx scrivi <Figure …/> senza importarli.
-const editorialComponents = { Figure, Gallery, Pullquote, TwoColumn, Aside };
+const editorialComponents = { Figure, IngredientsPhoto, Gallery, Pullquote, TwoColumn, Aside };
 ---
 
 <GuideLayout
