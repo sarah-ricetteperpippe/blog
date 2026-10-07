@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/insalata-zucchine-feta.webp"
 title: "Salade de courgettes, feta et oignon rouge"
-description: "Une salade de courgettes rapide et très fraîche, parfaite si tu aimes la feta."
+description: "Une salade anti-gaspi, jolie, bonne et vite prête. Avis aux fans de feta !"
 pubDate: "2025-12-18"
 category: "Salades"
 tags: ["Insalate", "Feta", "Primavera/estate", "Antispreco"]
@@ -11,34 +11,38 @@ translationKey: "insalata-di-zucchine-feta-e-cipolla-rossa"
 
 <!-- c9ca99_90ca0649f5cb46278ef05afc6e63d680~mv2.png -->
 
-Une salade toute simple, fraîche et rapide, qui marche très bien quand tu veux quelque chose de léger sans renoncer au goût.
+Une salade anti-gaspi, jolie, bonne et vite prête. Avis aux fans de feta !
 
 ## Infos rapides
 
 - **Portions :** 1 personne
-- **Préparation :** 10 minutes
+- **Temps total :** environ 15 minutes
 - **Cuisson :** –
-- **Outils :** couteau, mandoline ou économe, bol
+- **Ustensiles :** couteau, mandoline ou économe, saladier, petit bol
 
 ## Ingrédients
 
-- 1 courgette moyenne-grande
-- feta, selon besoin (environ un demi-bloc)
-- oignon rouge, selon besoin
-- menthe ou basilic, selon besoin
-- huile d'olive extra vierge, selon besoin
-- sel, selon besoin
+- 1 courgette de taille moyenne à grosse (environ 200 g)
+- 1/2 bloc de feta
+- 1/4 d'oignon rouge (environ 25 g, ou selon tes goûts)
+- 10 petites feuilles de menthe (ou de basilic)
+- 1 cuillère à soupe d'huile d'olive vierge extra
+- Un peu moins de 1/4 de cuillère à café de sel
 
 ## Préparation
 
-1. **Prépare la courgette.** Lave 1 courgette moyenne-grande et taille-la en fines tranches **dans le sens de la longueur**, à la **mandoline** ou à l'**économe**. Pour les dernières tranches, il faudra te débrouiller au couteau, tant pis si elles ne sortent pas toutes parfaites ! Astuce déco : après avoir taillé les tranches, si la courgette est épaisse, coupe-les en deux dans le sens de la longueur — tu finiras par les enrouler comme des spaghettis !
+1. **Fais tremper l'oignon.** Coupe 1/4 d'oignon rouge en fines lamelles et mets-les dans un petit bol d'eau froide. Laisse-les tremper pendant que tu prépares le reste de la salade.
 
-2. **Prépare l'oignon.** Taille l'oignon rouge très finement, pour pouvoir le répartir et "l'émietter" sur les courgettes sans en couvrir la saveur.
+2. **Prépare la courgette.** Lave 1 courgette de taille moyenne à grosse (environ 200 g) et taille-la en fines tranches **dans le sens de la longueur**, à la **mandoline** ou à l'**économe**. Pour les dernières tranches, il faudra te débrouiller au couteau : elles ne seront pas toutes parfaites ! Si la courgette est épaisse, coupe les rubans en deux dans le sens de la longueur : tu finiras par les enrouler comme des spaghettis.
 
-3. **Prépare les herbes.** Hache grossièrement la menthe ou le basilic.
+3. **Prépare les herbes.** Hache grossièrement 10 petites feuilles de menthe ou de basilic.
 
-4. **Assemble la salade.** Mets les courgettes dans le bol, ajoute l'oignon et les herbes. Émiette la feta par-dessus (environ un demi-bloc).
+4. **Égoutte l'oignon.** Égoutte-le bien, sèche-le et hache-le grossièrement.
 
-5. **Assaisonne.** Ajoute l'huile d'olive extra vierge et le sel. Mélange délicatement pour ne pas casser les tranches.
+5. **Assemble la salade.** Mets les rubans de courgette dans un saladier, ajoute l'oignon égoutté et les herbes, puis émiette 1/2 bloc de feta par-dessus.
 
-Tu peux la laisser reposer 5–10 minutes avant de servir pour que les saveurs se lient. Marche aussi très bien en accompagnement ou en entrée fraîche.
+6. **Assaisonne.** Ajoute 1 cuillère à soupe d'huile d'olive vierge extra et un peu moins de 1/4 de cuillère à café de sel. Mélange délicatement pour répartir l'assaisonnement sans trop casser les rubans de courgette.
+
+7. **Laisse reposer.** Laisse reposer 5–10 minutes avant de servir.
+
+Accompagne-la de pain grillé ou de pain frais !
