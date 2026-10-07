@@ -1,5 +1,5 @@
 ---
-title: "Funghi trifolati (sautéed mushrooms with garlic and parsley)"
+title: "Sautéed mushrooms with garlic and parsley"
 description: "Quick and moreish side!"
 pubDate: "2025-11-11"
 heroImage: "/images/ricette/funghi-trifolati.webp"
