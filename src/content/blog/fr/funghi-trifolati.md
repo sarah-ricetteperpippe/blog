@@ -23,25 +23,25 @@ Un accompagnement express et plein de goût !
 
 ## Ingrédients
 
-- 400 g de champignons frais
-- 1 gousse d'ail
+- 400 g de champignons de Paris frais
+- 1 gousse d'ail entière
 - 2 cuillères à soupe de vin blanc sec
-- Persil haché, selon besoin
-- Huile d'olive extra vierge, selon besoin
-- Sel fin, selon besoin
-- Poivre noir, selon besoin
+- 2-3 feuilles de persil hachées
+- 1 cuillère à soupe rase d'huile d'olive extra vierge
+- 1/4 de cuillère à café rase de sel
+- 3 tours de moulin de poivre noir
 
 ## Préparation
 
-1. **Nettoie les champignons.** Enlève les résidus de terre en frottant délicatement la surface avec un torchon humide. Détache les pieds, retire si tu veux la pellicule du chapeau et les lamelles. Coupe les champignons en fines lamelles et mets-les dans un bol.
+1. **Nettoie les 400 g de champignons.** Enlève les résidus de terre en frottant délicatement la surface avec un torchon humide. Détache les pieds, retire si tu veux la pellicule du chapeau et les lamelles. Coupe les champignons en fines lamelles de 5 mm et mets-les dans un bol.
 
-2. **Prépare le revenu.** Fais chauffer dans une poêle un filet d'huile d'olive avec une **gousse d'ail entière**.
+2. **Prépare le revenu.** Fais chauffer dans une poêle 1 cuillère à soupe rase d'huile d'olive avec une **gousse d'ail entière**.
 
-3. **Cuis les champignons.** Ajoute les champignons en lamelles et une poignée de persil haché. Cuis à feu moyen pendant environ **5–6 minutes**, en remuant de temps en temps, jusqu'à ce qu'ils commencent à s'attendrir.
+3. **Cuis les champignons.** Ajoute tous les champignons en lamelles et, petit à petit pour doser à l'œil, la moitié des 2-3 feuilles de persil hachées. Cuis à feu moyen pendant environ **5–6 minutes**, en remuant de temps en temps, jusqu'à ce qu'ils commencent à s'attendrir.
 
-4. **Déglace au vin.** Verse **2 cuillères à soupe de vin blanc sec**, monte le feu et laisse l'alcool s'évaporer pendant 1–2 minutes.
+4. **Déglace au vin.** Verse **2 cuillères à soupe de vin blanc sec**, monte le feu et laisse l'alcool s'évaporer pendant 1–2 minutes. Remue de temps en temps pour qu'ils n'attachent pas au fond de la poêle.
 
-5. **Assaisonne.** Ajoute du sel, du poivre et un peu de persil frais, puis cuis encore 2–3 minutes pour bien laisser les saveurs se développer.
+5. **Assaisonne.** Ajoute 1/4 de cuillère à café rase de sel, 3 tours de moulin de poivre et le reste du persil frais, puis cuis encore 2–3 minutes pour bien laisser les saveurs se développer.
 
 6. **Sers.** Retire l'ail et sers les champignons chauds en accompagnement ou en sauce pour des pâtes.
 
