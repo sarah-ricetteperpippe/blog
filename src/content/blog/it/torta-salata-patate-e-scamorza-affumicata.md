@@ -23,12 +23,13 @@ Sfiziosissimo salvacena o stuzzicheria social dell'ultimo minuto! Top per consum
 
 ## Ingredienti
 
-- 1 rotolo di pasta sfoglia (rettangolare o tonda)
-- 3 patate medie
-- 200 g scamorza affumicata, a fette
-- olio extravergine di oliva q.b.
-- sale q.b.
-- formaggio grattugiato q.b.
+- 1 rotolo di pasta sfoglia (meglio tonda)
+- 3 patate medie (circa 450g)
+- 200 g scamorza affumicata (io uso [Affumicata Fermaggio](https://www.google.com/search?q=affumicata+fermaggio)), a dadini o fette
+- 3 bei cucchiai olio extravergine di oliva q.b.
+- 1/4 cucchiaino sale
+- 2 cucchiai formaggio grattugiato (io uso [Grattì](https://www.google.com/search?q=gratt%C3%AC) oppure [Grattugiato Vemondo](https://www.google.com/search?q=grattuggiato+Vemondo))
+- 1 rametto di rosmarino fresco (opzionale)
 
 ![Fetta di torta salata patate e scamorza affumicata](/images/ricette/torta-salata-patate-scamorza-affumicata-2.png)
 
@@ -46,6 +47,8 @@ Sfiziosissimo salvacena o stuzzicheria social dell'ultimo minuto! Top per consum
 
 6. **Formaggio.** Spolvera con formaggio grattugiato quanto basta.
 
-7. **Cottura.** Cuoci in forno statico a 180 C per 30 minuti. Negli ultimi 10 minuti attiva il grill per dorare bene la superficie.
+7. **Rosmarino.** SPezza in due il rametto di rosmarino e adagialo sulla torta.
 
-8. **Riposo e servizio.** Sforna e lascia assestare 5 minuti prima di tagliare. Servi calda o tiepida.
+8. **Cottura.** Cuoci in forno statico a 180 C per 30 minuti. Negli ultimi 10 minuti attiva il grill per dorare bene la superficie.
+
+9. **Riposo e servizio.** Sforna e lascia assestare 5 minuti prima di tagliare. Servi calda o tiepida.

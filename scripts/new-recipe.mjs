@@ -159,3 +159,4 @@ writeFileSync(filePath, template({ title, description, slug, category, tags }), 
 console.log(`\n✅ Creata: src/content/blog/it/${slug}.mdx`);
 console.log(`📸 Ricordati di mettere la foto in: public/images/ricette/${slug}.webp`);
 console.log(`\nQuando hai finito di scrivere, traduci con:\n   npm run translate -- ${slug}\n`);
+console.log(`📱 Genera la caption Instagram con:\n   npm run instagram -- ${slug}\n`);

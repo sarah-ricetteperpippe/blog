@@ -8,7 +8,8 @@
     "preview": "astro preview",
     "new-recipe": "node scripts/new-recipe.mjs",
     "new-guide": "node scripts/new-guide.mjs",
-    "translate": "node scripts/translate-ai.mjs"
+    "translate": "node scripts/translate-ai.mjs",
+    "instagram": "node scripts/instagram-caption.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.0.0",
