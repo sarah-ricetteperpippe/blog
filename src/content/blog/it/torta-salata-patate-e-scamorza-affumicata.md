@@ -8,9 +8,6 @@ tags: ["Piatti unici", "Aperitivo", "Patate", "Formaggio", "Forno", "Antispreco"
 translationKey: "torta-salata-patate-e-scamorza-affumicata"
 ---
 
-<!-- c9ca99_fc84b9dca508402582801eaa8be1a260~mv2.png -->
-<!-- c9ca99_47749c8eb45e480f82005222cf0eee99~mv2.png -->
-
 Sfiziosissimo salvacena o stuzzicheria social dell'ultimo minuto! Top per consumare qualche patata e sbrigarsela con pochi ingredienti.
 
 ## Informazioni rapide
@@ -24,8 +21,8 @@ Sfiziosissimo salvacena o stuzzicheria social dell'ultimo minuto! Top per consum
 ## Ingredienti
 
 - 1 rotolo di pasta sfoglia (meglio tonda)
-- 3 patate medie (circa 450g)
-- 200 g scamorza affumicata (io uso [Affumicata Fermaggio](https://www.google.com/search?q=affumicata+fermaggio)), a dadini o fette
+- 300–350 g di patate
+- 250 g scamorza affumicata (io uso [Affumicata Fermaggio](https://www.google.com/search?q=affumicata+fermaggio)), a dadini o fette
 - 3 bei cucchiai olio extravergine di oliva q.b.
 - 1/4 cucchiaino sale
 - 2 cucchiai formaggio grattugiato (io uso [Grattì](https://www.google.com/search?q=gratt%C3%AC) oppure [Grattugiato Vemondo](https://www.google.com/search?q=grattuggiato+Vemondo))
@@ -35,19 +32,19 @@ Sfiziosissimo salvacena o stuzzicheria social dell'ultimo minuto! Top per consum
 
 ## Procedura
 
-1. **Prepara la base.** Srotola la pasta sfoglia e sistemala in una teglia rivestita con carta forno, lasciando la carta sotto.
+1. **Prepara la base.** Srotola 1 rotolo di pasta sfoglia e sistemala in una teglia rivestita con carta forno, lasciando la carta sotto.
 
-2. **Affetta le patate.** Pela le patate e affettale molto sottili (max 2 mm), meglio con una mandolina. Metti le fette in una ciotola, aggiungi un filo d'olio e mescola con le mani per ungerle uniformemente.
+2. **Affetta le patate.** Pela 300–350 g di patate e affettale molto sottili (max 2 mm), meglio con una mandolina. Metti le fette in una ciotola, aggiungi una parte dei 3 bei cucchiai di olio extravergine di oliva e mescola con le mani per ungerle uniformemente, tenendo il resto dell'olio per la superficie.
 
-3. **Strato di scamorza.** Distribuisci sulla sfoglia le fette di scamorza affumicata, coprendo tutta la superficie in modo uniforme.
+3. **Strato di scamorza.** Distribuisci sulla sfoglia i 250 g di scamorza affumicata a fette, coprendo tutta la superficie in modo uniforme.
 
 4. **Disponi le patate.** Sistema le fettine di patate in file leggermente sovrapposte, come si fa per la torta di mele: ogni fetta deve coprire a meta quella accanto, formando uno strato compatto e ordinato.
 
-5. **Condisci.** Distribuisci un filo d'olio in superficie aiutandoti con una spatola morbida. Sala in modo uniforme.
+5. **Condisci.** Distribuisci in superficie l'olio rimasto dei 3 bei cucchiai totali, aiutandoti con una spatola morbida. Sala in modo uniforme con 1/4 di cucchiaino di sale.
 
-6. **Formaggio.** Spolvera con formaggio grattugiato quanto basta.
+6. **Formaggio.** Spolvera con 2 cucchiai di formaggio grattugiato.
 
-7. **Rosmarino.** SPezza in due il rametto di rosmarino e adagialo sulla torta.
+7. **Rosmarino.** Se lo usi, spezza in due 1 rametto di rosmarino fresco e adagialo sulla torta.
 
 8. **Cottura.** Cuoci in forno statico a 180 C per 30 minuti. Negli ultimi 10 minuti attiva il grill per dorare bene la superficie.
 
