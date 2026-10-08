@@ -44,6 +44,36 @@ Il nome del file diventa lo **slug** dell'URL (es. `pasta-con-feta.md` → slug 
 
 ---
 
+## Generare la caption Instagram
+
+Dopo aver completato la ricetta italiana, lancia:
+
+```bash
+npm run instagram -- pizzette-di-melanzane-al-forno
+```
+
+Il comando legge il file `.md` o `.mdx` da `src/content/blog/it/`, usa Claude Code come lo script di traduzione e salva la caption in `captions/instagram/<slug>.txt`. Mostra anche il testo nel terminale. Il prompt completo è in [scripts/prompts/instagram-caption.md](scripts/prompts/instagram-caption.md).
+
+Richiede Claude Code installato e autenticato. Il prompt e la ricetta vengono inviati a Claude per generare il testo; gli strumenti del CLI sono disabilitati. Se il CLI richiede l'accesso, apri `claude` e usa `/login`, poi rilancia il comando.
+
+Sceglie tra ricetta intera e anteprima secondo il prompt. Controlla il limite di **2200 caratteri**, inclusi spazi, a capo, emoji e hashtag, le righe del link in bio e della foto, l'assenza di URL e i tre gruppi di hashtag. Se serve, rigenera fino a tre tentativi; non tronca il testo e salva solo una caption che passa questi controlli. Gli ingredienti, le quantità e la scelta del formato seguono le istruzioni editoriali del prompt.
+
+Per proteggere una caption già scritta, il comando richiede `--force` per sostituirla:
+
+```bash
+npm run instagram -- pizzette-di-melanzane-al-forno --force
+```
+
+Per ottenere soltanto il testo senza creare file, anche da redirigere:
+
+```bash
+npm run --silent instagram -- pizzette-di-melanzane-al-forno --stdout
+```
+
+Il comando genera una bozza locale; la pubblicazione su Instagram resta manuale.
+
+---
+
 ## Tradurre una ricetta
 
 In chat, chiedi semplicemente:
