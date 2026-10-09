@@ -11,8 +11,6 @@ translationKey: "ragu-bianco-di-tempeh"
 
 <!-- 12ee43_4b67f415edef483da32072f67c61f5b4~mv2.png -->
 
-Proof that a comforting pasta sauce can absolutely go plant-based and still feel rich, savoury and satisfying.
-
 ## Quick info
 
 - **Servings:** 4

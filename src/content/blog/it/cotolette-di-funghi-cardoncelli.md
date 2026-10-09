@@ -10,8 +10,6 @@ translationKey: "cotolette-di-funghi-cardoncelli"
 
 <!-- c9ca99_38a0fa2ef73349e1a119cd7794fe1265~mv2.png -->
 
-Sembrano cotolette classiche, sono buone sfiziose e croccano da favola, sono stupita di me stessa!
-
 ## Informazioni rapide
 
 - **Porzioni:** 2 abbondanti

@@ -10,8 +10,6 @@ translationKey: "ragu-bianco-di-tempeh"
 
 <!-- 12ee43_4b67f415edef483da32072f67c61f5b4~mv2.png -->
 
-In barba a chi dice che la tradizione non può diventare vegetale!
-
 ## Informazioni rapide
 
 - **Porzioni:** 4 persone

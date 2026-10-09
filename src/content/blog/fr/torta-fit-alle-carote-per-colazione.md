@@ -12,8 +12,6 @@ translationKey: "torta-fit-alle-carote-per-colazione"
 <!-- c9ca99_70ee35943fa647d0981b52c931d6e29a~mv2.png -->
 <!-- c9ca99_89d5cefbd9bd450893b5edf138b3def8~mv2.jpg -->
 
-Un gâteau simple, avec des ingrédients plutôt légers, moelleux et parfumé, qu'on a envie de revoir au petit-déj plusieurs jours d'affilée.
-
 ## Infos rapides
 
 - **Moule :** 20 à 22 cm

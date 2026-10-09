@@ -11,8 +11,6 @@ translationKey: "torta-di-albumi-e-cacao"
 
 <!-- 12ee43_aba7f5a4aa0c4d2997ff8c50396bfbd2~mv2.jpg -->
 
-To use up the egg whites from your carbonara!
-
 *(It would have looked prettier if I'd baked it in an actual tin instead of a baking-paper parcel!)*
 
 ## Quick info

@@ -10,8 +10,6 @@ translationKey: "funghi-trifolati"
 
 <!-- 12ee43_ab86247834c74437b40babb4eb0ddf56~mv2.png -->
 
-Contorno veloce e sfizioso!
-
 ## Informazioni rapide
 
 - **Porzioni:** 2 persone

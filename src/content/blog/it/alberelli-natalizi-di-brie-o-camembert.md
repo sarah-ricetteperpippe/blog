@@ -11,8 +11,6 @@ translationKey: "alberelli-natalizi-di-brie-o-camembert"
 <!-- c9ca99_d0c06c40ea8e4bf99447eed072858179~mv2.png -->
 <!-- c9ca99_5bcf6b3cf0a440a095a3aa0a40db5e10~mv2.png -->
 
-Carini e facilissimi da preparare last minute!
-
 ## Informazioni rapide
 
 - **Porzioni:** 12 pezzi

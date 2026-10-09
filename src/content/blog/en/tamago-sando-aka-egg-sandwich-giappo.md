@@ -11,7 +11,7 @@ translationKey: "tamago-sando-aka-egg-sandwich-giappo"
 
 <!-- c9ca99_5c9be5c9420e4e6bb0f48beb258a68d6~mv2.png -->
 
-This is tamago sando (*tamago* means "egg" in Japanese): the famously soft, creamy Japanese egg sandwich, here in a supermarket-friendly version made with easy-to-find ingredients.
+*Tamago* means "egg" in Japanese.
 
 ## Quick info
 

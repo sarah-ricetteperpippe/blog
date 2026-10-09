@@ -11,7 +11,7 @@ translationKey: "fonduta-all-italiana-fantasiosa"
 
 <!-- c9ca99_084867f1837643e4b6f94d0c8c7e8d90~mv2.png -->
 
-This was the plan for a cosy evening with Anna, Giando and Giuliano. Looking up classic Swiss fondue recipes is all well and good, but the cheeses are rarely the same ones we actually find here, so I built an Italian-supermarket-friendly version instead. And honestly? It works.
+This was the plan for a cosy evening with Anna, Giando and Giuliano.
 
 You can make it with or without a fondue pot. I found mine cheaply on Vinted, but I'll also tell you how to do it in a saucepan on the hob.
 

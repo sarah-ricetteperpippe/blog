@@ -11,8 +11,6 @@ translationKey: "pasta-svelta-alla-feta"
 
 <!-- 12ee43_ab86247834c74437b40babb4eb0ddf56~mv2.png -->
 
-La feta, ça ne déçoit jamais !
-
 ## Infos rapides
 
 - **Portions :** 2 personnes

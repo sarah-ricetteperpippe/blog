@@ -9,8 +9,6 @@ lang: "en"
 translationKey: "pasta-con-feta-al-forno-e-pomodorini"
 ---
 
-If you love feta and need dinner to more or less take care of itself, this is the one: roast everything, cook the pasta, mash it together, done.
-
 ## Quick info
 
 - **Portions:** 2 people

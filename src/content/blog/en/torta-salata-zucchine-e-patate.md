@@ -11,8 +11,6 @@ translationKey: "torta-salata-zucchine-e-patate"
 
 <!-- c9ca99_475f1da46dd84d1b8235885630bb86d4~mv2.png -->
 
-I did not expect much from this one, and instead it turned into an excellent savoury fridge-clearer: soft vegetables, plenty of cheese and very little drama.
-
 ## Quick info
 
 - **Servings:** 4–6

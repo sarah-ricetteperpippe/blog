@@ -13,8 +13,6 @@ translationKey: "cheesecake-alle-fragole"
 <!-- c9ca99_bd44037add18457fab25d20094f48419~mv2.png -->
 <!-- c9ca99_e86f8b87fed74ad08fcadb74b4a21844~mv2.png -->
 
-C'est encore l'un de mes cheesecakes préférés : frais, crémeux, facile à monter, et avec les fraises sur le bord qui font presque tout le travail visuel.
-
 ![Cheesecake aux fraises décoré pour un anniversaire](/images/ricette/cheesecake-fragole-compleanno.png)
 
 ## Infos rapides

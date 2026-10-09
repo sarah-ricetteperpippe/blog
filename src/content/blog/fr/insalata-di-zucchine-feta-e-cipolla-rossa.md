@@ -11,8 +11,6 @@ translationKey: "insalata-di-zucchine-feta-e-cipolla-rossa"
 
 <!-- c9ca99_90ca0649f5cb46278ef05afc6e63d680~mv2.png -->
 
-Une salade anti-gaspi, jolie, bonne et vite prête. Avis aux fans de feta !
-
 ## Infos rapides
 
 - **Portions :** 1 personne

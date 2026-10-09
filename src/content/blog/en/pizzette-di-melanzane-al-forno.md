@@ -11,8 +11,6 @@ translationKey: "pizzette-di-melanzane-al-forno"
 
 <!-- c9ca99_50c5336c11e94aee8f58091a2b8aa160~mv2.png -->
 
-An easy way to make aubergines feel a lot more exciting: halfway between mini pizzas, a snack and a light dinner.
-
 ## Quick info
 
 - **Servings:** 1 medium aubergine = 1 person / 1 large aubergine = 2 people

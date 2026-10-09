@@ -10,7 +10,7 @@ translationKey: "finto-risotto-alla-parmigiana"
 
 <!-- c9ca99_390b030e3d07402b82ce24c891e6f948~mv2.png -->
 
-Aka risotto per disperati che non hanno nulla in frigo. La teoria originale prevede che si faccia col parmigiano — io ho fatto con altro... qualsiasi alternativa va bene, tanto sempre di riso e formaggio si tratta!
+La teoria originale prevede che si faccia col parmigiano — io ho fatto con altro...
 
 > Curiosità: parmigiano e grana non sono formaggi vegetariani!
 

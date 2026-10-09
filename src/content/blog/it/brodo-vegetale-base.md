@@ -10,8 +10,6 @@ translationKey: "brodo-vegetale-base"
 
 <!-- c9ca99_0750cea780b841f298b465cf1a675a15~mv2.png -->
 
-Se sei pippa certamente ti servono riferimenti anche per questo...
-
 ## Informazioni rapide
 
 - **Resa:** circa 1,5 L di brodo

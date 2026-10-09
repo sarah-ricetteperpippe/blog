@@ -11,7 +11,7 @@ translationKey: "spaghetti-alla-san-giuannidd"
 
 <!-- c9ca99_baf913c05a924a93b96bf469c57bdea2~mv2.png -->
 
-Bari pride on a plate! ("San Giuannidd" is the Bari dialect form of *San Giovannino* — little Saint John — and is the local name for this quick tomato-and-anchovy spaghetti.)
+"San Giuannidd" is the Bari dialect form of *San Giovannino* — little Saint John — and is the local name for this quick tomato-and-anchovy spaghetti.
 
 ## Quick info
 

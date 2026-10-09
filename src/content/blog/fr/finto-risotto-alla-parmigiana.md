@@ -11,7 +11,7 @@ translationKey: "finto-risotto-alla-parmigiana"
 
 <!-- c9ca99_390b030e3d07402b82ce24c891e6f948~mv2.png -->
 
-C'est le risotto des jours de frigo vide. En théorie il se fait au parmesan, mais un autre fromage à râper fonctionne très bien aussi : au fond, c'est du riz, du beurre et du fromage qui font le travail.
+En théorie il se fait au parmesan, mais un autre fromage à râper fonctionne très bien aussi : au fond, c'est du riz, du beurre et du fromage qui font le travail.
 
 > Petit info : le parmesan et le grana ne sont pas des fromages végétariens !
 

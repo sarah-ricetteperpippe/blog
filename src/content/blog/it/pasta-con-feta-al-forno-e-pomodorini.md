@@ -10,8 +10,6 @@ translationKey: "pasta-con-feta-al-forno-e-pomodorini"
 
 <!-- c9ca99_15910f6c269e4d1ab10e4bf7adbcebcd~mv2.jpg -->
 
-Amanti della feta, quando non avete tempo ma volete un primo yummy yummy, con questa schiaffate in forno e via!
-
 ## Informazioni rapide
 
 - **Porzioni:** 2 persone

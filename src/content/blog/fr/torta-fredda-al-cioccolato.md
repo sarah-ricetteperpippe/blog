@@ -11,8 +11,6 @@ translationKey: "torta-fredda-al-cioccolato"
 
 <!-- 12ee43_508804da73d34a129652b53749d6db44~mv2.png -->
 
-Façon cheesecake, mais avec une touche plus pâtissière !
-
 ## Infos rapides
 
 - **Portions :** 8 à 10 personnes

@@ -9,8 +9,6 @@ lang: "fr"
 translationKey: "pasta-con-feta-al-forno-e-pomodorini"
 ---
 
-Si tu aimes la feta et que tu veux un dîner qui se fait presque tout seul, c'est la bonne recette : on fait rôtir, on cuit les pâtes, on écrase tout ensemble et c'est prêt.
-
 ## Infos rapides
 
 - **Portions :** 2 personnes

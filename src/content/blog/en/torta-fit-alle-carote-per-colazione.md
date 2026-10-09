@@ -12,8 +12,6 @@ translationKey: "torta-fit-alle-carote-per-colazione"
 <!-- c9ca99_70ee35943fa647d0981b52c931d6e29a~mv2.png -->
 <!-- c9ca99_89d5cefbd9bd450893b5edf138b3def8~mv2.jpg -->
 
-A simple cake, with fairly light ingredients, moist and fragrant — the kind you'll happily eat for breakfast more than once.
-
 ## Quick info
 
 - **Cake tin:** 20–22 cm (7.9–8.7 in)

@@ -11,8 +11,6 @@ translationKey: "curry-di-tofu-con-riso-basmati"
 
 <!-- 12ee43_8e9ba3f51ca94ce0bfbe424eb6341eb0~mv2.jpg -->
 
-Un curry de tofu parfumé, crémeux et très réconfortant, assez simple à préparer même quand on n'a pas envie de cuisiner quelque chose de trop compliqué.
-
 ## Infos rapides
 
 - **Portions :** 2 personnes

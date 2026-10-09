@@ -10,7 +10,7 @@ translationKey: "tamago-sando-aka-egg-sandwich-giappo"
 
 <!-- c9ca99_5c9be5c9420e4e6bb0f48beb258a68d6~mv2.png -->
 
-Questo è il Tamago Sando, ovvero l'egg sandwich giapponese (nella sua forma più europea, con ingredienti comuni). Super fluffy e gustoso!
+Questa è la versione più europea, con ingredienti comuni.
 
 ## Informazioni rapide
 

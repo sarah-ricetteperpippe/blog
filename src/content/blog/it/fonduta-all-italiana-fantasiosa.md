@@ -10,7 +10,7 @@ translationKey: "fonduta-all-italiana-fantasiosa"
 
 <!-- c9ca99_084867f1837643e4b6f94d0c8c7e8d90~mv2.png -->
 
-Menu per una bellissima serata comfy con Anna, Giando e Giuliano! Online c'è da impazzire, cercare sui siti svizzeri (perché la fonduta, cari francesi, è svizzera!) è un delirio perché non abbiamo gli stessi formaggi. Quindi l'ho inventata con l'AI e devo dire che per una pippa come me mi sembra un ottimo risultato.
+Menu per una bellissima serata comfy con Anna, Giando e Giuliano!
 
 Puoi farla con o senza macchina da fonduta... io l'ho trovata a basso prezzo su Vinted, ma ti dico anche come farla con la pentola sul fuoco. Daje!
 

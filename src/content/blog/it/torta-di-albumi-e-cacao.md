@@ -10,8 +10,6 @@ translationKey: "torta-di-albumi-e-cacao"
 
 <!-- 12ee43_aba7f5a4aa0c4d2997ff8c50396bfbd2~mv2.jpg -->
 
-Per consumare gli albumi della carbonara!
-
 *(Sarebbe uscita più carina se l'avessi cotta in pentola anziché in un fagotto di carta forno!)*
 
 ## Informazioni rapide

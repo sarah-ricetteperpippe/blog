@@ -10,8 +10,6 @@ translationKey: "torta-di-zucca-morbidissima"
 
 <!-- c9ca99_aa43440af00a4c319bc4bb38b51fc8f9~mv2.png -->
 
-L'unica buona ragione per amare l'autunno è la zucca (che non finisce maaai)!
-
 ## Informazioni rapide
 
 - **Porzioni:** 6 persone

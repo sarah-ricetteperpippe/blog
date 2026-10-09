@@ -9,8 +9,6 @@ lang: "fr"
 translationKey: "torta-soffice-al-latte-di-cocco"
 ---
 
-Pour finir cette brique de lait de coco qui n'en finit plus !
-
 ## Infos rapides
 
 - **Portions :** 8 personnes

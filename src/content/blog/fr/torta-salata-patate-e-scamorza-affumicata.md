@@ -11,7 +11,11 @@ translationKey: "torta-salata-patate-e-scamorza-affumicata"
 
 Une tarte salée bien pratique pour un dîner improvisé ou un apéro de dernière minute. Parfaite pour utiliser quelques pommes de terre et se régaler sans se compliquer la vie.
 
+<<<<<<< Updated upstream
 ## Infos pratiques
+=======
+## Infos rapides
+>>>>>>> Stashed changes
 
 - **Portions :** 4 personnes
 - **Préparation :** 20 minutes

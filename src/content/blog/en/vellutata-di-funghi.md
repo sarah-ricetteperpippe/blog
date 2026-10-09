@@ -11,7 +11,7 @@ translationKey: "vellutata-di-funghi"
 
 <!-- 12ee43_ae70b279d38a4d0fb725b06a68f1b81d~mv2.png -->
 
-I first had a version of this in Egypt and have been making it ever since. It is simple, creamy and deeply mushroomy without needing much effort.
+I first had a version of this in Egypt and have been making it ever since.
 
 ## Quick info
 

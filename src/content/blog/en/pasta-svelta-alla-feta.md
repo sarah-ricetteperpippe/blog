@@ -11,8 +11,6 @@ translationKey: "pasta-svelta-alla-feta"
 
 <!-- 12ee43_ab86247834c74437b40babb4eb0ddf56~mv2.png -->
 
-Feta never lets you down!
-
 ## Quick info
 
 - **Servings:** 2 people

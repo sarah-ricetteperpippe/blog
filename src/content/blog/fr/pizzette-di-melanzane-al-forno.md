@@ -11,8 +11,6 @@ translationKey: "pizzette-di-melanzane-al-forno"
 
 <!-- c9ca99_50c5336c11e94aee8f58091a2b8aa160~mv2.png -->
 
-Allez, on se mange un peu de légumes de temps en temps !
-
 ## Infos rapides
 
 - **Portions :** 1 aubergine moyenne = 1 personne / 1 grosse aubergine = 2 personnes

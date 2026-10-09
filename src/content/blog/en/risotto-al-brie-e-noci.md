@@ -11,8 +11,6 @@ translationKey: "risotto-al-brie-e-noci"
 
 <!-- c9ca99_475f1da46dd84d1b8235885630bb86d4~mv2.png -->
 
-This is one of those risottos that feels a bit luxurious while still being very easy to pull off: creamy, savoury and great with the walnuts on top.
-
 ## Quick info
 
 - **Servings:** 2

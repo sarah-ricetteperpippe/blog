@@ -11,8 +11,6 @@ translationKey: "frittata-alla-menta"
 
 <!-- c9ca99_070de1a2b9c94c9bbdd17b8baeeab524~mv2.png -->
 
-This is my go-to frittata: soft, minty and simple enough for a weeknight, but never boring.
-
 ## Quick info
 
 - **Servings:** 4 people

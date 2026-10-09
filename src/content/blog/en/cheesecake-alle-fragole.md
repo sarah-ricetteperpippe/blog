@@ -13,8 +13,6 @@ translationKey: "cheesecake-alle-fragole"
 <!-- c9ca99_bd44037add18457fab25d20094f48419~mv2.png -->
 <!-- c9ca99_e86f8b87fed74ad08fcadb74b4a21844~mv2.png -->
 
-This is still one of my favourite cheesecakes: fresh, creamy and simple to assemble, with the strawberries around the edge doing most of the visual work.
-
 ![Strawberry cheesecake decorated for a birthday](/images/ricette/cheesecake-fragole-compleanno.png)
 
 ## Quick info

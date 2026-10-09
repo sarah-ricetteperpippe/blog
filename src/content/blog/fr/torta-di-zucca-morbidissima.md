@@ -11,8 +11,6 @@ translationKey: "torta-di-zucca-morbidissima"
 
 <!-- c9ca99_aa43440af00a4c319bc4bb38b51fc8f9~mv2.png -->
 
-C'est le gâteau au potiron que je fais quand j'ai envie de quelque chose de simple, très moelleux et fiable, surtout quand il reste du potiron cuit à utiliser.
-
 ## Infos rapides
 
 - **Portions :** 6 personnes

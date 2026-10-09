@@ -11,8 +11,6 @@ translationKey: "curry-di-tofu-con-riso-basmati"
 
 <!-- 12ee43_8e9ba3f51ca94ce0bfbe424eb6341eb0~mv2.jpg -->
 
-A comforting tofu curry with basmati rice: warmly spiced, creamy, and very manageable even if you're not in the mood to cook something complicated.
-
 ## Quick info
 
 - **Servings:** 2 people

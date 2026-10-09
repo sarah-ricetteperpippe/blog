@@ -11,8 +11,6 @@ translationKey: "crema-base-per-cheesecake"
 
 <!-- 12ee43_d48c50cba7a94b7b8e0cbe677856caa0~mv2.png -->
 
-These are the winning ratios for a cheesecake with zero sour edge!
-
 ## Quick info
 
 - **Servings:** enough for a 24 cm (9.4 in) cake (8–12 people)

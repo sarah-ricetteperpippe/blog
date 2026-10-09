@@ -11,8 +11,6 @@ translationKey: "chocolate-chip-cookies"
 
 <!-- c9ca99_b09d0dff7873498fa0584a7f30b77c54~mv2.png -->
 
-Just like the ones in the movies!
-
 ## Quick info
 
 - **Servings:** 30 cookies, 5–6 cm (2–2.4 in) each

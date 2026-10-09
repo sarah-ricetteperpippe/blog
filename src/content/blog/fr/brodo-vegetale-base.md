@@ -11,8 +11,6 @@ translationKey: "brodo-vegetale-base"
 
 <!-- c9ca99_0750cea780b841f298b465cf1a675a15~mv2.png -->
 
-Un bouillon de légumes maison tout simple, avec juste assez de repères pour qu'il soit fiable même si tu n'en fais pas souvent.
-
 ## Infos rapides
 
 - **Rendement :** environ 1,5 L de bouillon

@@ -11,9 +11,9 @@ translationKey: "risoni-cremosi-alla-zucca"
 
 <!-- c9ca99_0acf31825b834c6a9e371d7dfb8fdfd6~mv2.png -->
 
-Des risoni crémeux à la courge, sans chichi : quelques ingrédients, une purée bien lisse, et le dîner est prêt !
-
 ## Infos pratiques
+=======
+Des risoni crémeux à la courge, sans chichi : quelques ingrédients, une purée bien lisse, et le dîner est prêt !
 
 - **Portions :** 2 personnes
 - **Préparation :** 10 minutes

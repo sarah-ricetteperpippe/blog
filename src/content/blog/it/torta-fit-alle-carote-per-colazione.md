@@ -11,8 +11,6 @@ translationKey: "torta-fit-alle-carote-per-colazione"
 <!-- c9ca99_70ee35943fa647d0981b52c931d6e29a~mv2.png -->
 <!-- c9ca99_89d5cefbd9bd450893b5edf138b3def8~mv2.jpg -->
 
-Una torta semplice, con ingredienti abbastanza magri, umida e profumata, buona da mangiare più volte a colazione.
-
 ## Informazioni rapide
 
 - **Tortiera:** 20–22 cm

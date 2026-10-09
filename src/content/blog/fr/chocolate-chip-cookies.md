@@ -11,8 +11,6 @@ translationKey: "chocolate-chip-cookies"
 
 <!-- c9ca99_b09d0dff7873498fa0584a7f30b77c54~mv2.png -->
 
-Comme ceux des films !
-
 ## Infos rapides
 
 - **Portions :** 30 cookies de 5–6 cm
