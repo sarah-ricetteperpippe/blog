@@ -1,6 +1,6 @@
 ---
 title: "Smoked scamorza and potato savoury tart"
-description: "A very handy last-minute dinner or sharing bake, with potatoes, puff pastry and smoked scamorza doing all the heavy lifting."
+description: "An easy tart for a last-minute dinner or a snack to share, with just a few ingredients and hardly any effort."
 pubDate: "2026-01-16"
 heroImage: "/images/ricette/torta-salata-patate-scamorza-affumicata.png"
 category: "One-dish meals"
@@ -9,44 +9,44 @@ lang: "en"
 translationKey: "torta-salata-patate-e-scamorza-affumicata"
 ---
 
-<!-- c9ca99_fc84b9dca508402582801eaa8be1a260~mv2.png -->
-<!-- c9ca99_47749c8eb45e480f82005222cf0eee99~mv2.png -->
-
-A very handy last-minute dinner or social nibble. Great for using up a few potatoes and getting something satisfying on the table with very little effort.
+A handy recipe for a last-minute dinner or something to share with friends. It's a great way to use up a few potatoes and get a tasty meal on the table with very little fuss.
 
 ## Quick info
 
-- **Servings:** 4 people
+- **Servings:** 4
 - **Prep:** 20 minutes
 - **Baking:** 30 minutes
-- **Tools:** baking tray, baking paper, bowl, mandoline or sharp knife, flexible spatula
-- **Heads-up:** let the puff pastry sit out of the fridge for a few minutes before unrolling it, or it may crack
+- **Tools:** baking tin, baking paper, bowl, mandoline or sharp knife, flexible spatula
+- **Heads-up:** take the puff pastry out of the fridge a few minutes before unrolling it so it doesn't crack
 
 ## Ingredients
 
-- 1 sheet of puff pastry (round or rectangular)
-- 3 medium potatoes
-- 200g (7.1 oz) smoked scamorza, sliced
-- Extra virgin olive oil to taste
-- Salt to taste
-- Grated cheese to taste
+- 1 sheet of puff pastry (preferably round)
+- 300–350 g (10.6–12.3 oz) potatoes
+- 250 g (8.8 oz) smoked scamorza (I use [Affumicata Fermaggio](https://www.google.com/search?q=affumicata+fermaggio)), diced or sliced
+- 3 tablespoons extra virgin olive oil
+- 1/4 teaspoon salt
+- 2 tablespoons grated cheese (I use [Grattì](https://www.google.com/search?q=gratt%C3%AC) or [Grattugiato Vemondo](https://www.google.com/search?q=grattuggiato+Vemondo))
+- 1 sprig of fresh rosemary (optional)
 
 ![Slice of smoked scamorza and potato savoury tart](/images/ricette/torta-salata-patate-scamorza-affumicata-2.png)
 
 ## Method
 
-1. **Prepare the base.** Unroll the puff pastry and place it in a baking tray lined with baking paper, keeping the paper underneath.
+1. **Prepare the base.** Unroll 1 sheet of puff pastry and lay it in a baking tin, keeping the baking paper underneath.
 
-2. **Slice the potatoes.** Peel the potatoes and slice them very thinly, ideally no more than 2 mm thick. A mandoline is easiest, but a sharp knife works too. Put the slices in a bowl, add a drizzle of oil and mix with your hands so they are lightly coated.
+2. **Slice the potatoes.** Peel 300–350 g of potatoes and slice them very thinly, no more than 2 mm thick. A mandoline makes this easier, but a sharp knife works too. Put the slices in a bowl and add some of the 3 tablespoons of extra virgin olive oil. Toss with your hands to coat the slices evenly, saving the rest of the oil for the top.
 
-3. **Add the scamorza layer.** Arrange the smoked scamorza slices over the pastry, covering the whole surface evenly.
+3. **Add the scamorza.** Arrange 250 g of sliced smoked scamorza in an even layer over the pastry.
 
-4. **Layer the potatoes.** Lay the potato slices in slightly overlapping rows, a bit like an apple tart: each slice should cover about half of the one next to it, creating a neat, compact layer.
+4. **Arrange the potatoes.** Lay the potato slices in overlapping rows, as you would for an apple tart. Each slice should cover about half of the one next to it, creating a neat, even layer.
 
-5. **Season.** Drizzle a little more oil over the top, using a flexible spatula if it helps you spread it evenly. Salt the surface evenly.
+5. **Season.** Spread the reserved oil over the top with a flexible spatula. Sprinkle evenly with 1/4 teaspoon of salt.
 
-6. **Finish with cheese.** Sprinkle with as much grated cheese as you like.
+6. **Finish with cheese.** Sprinkle with 2 tablespoons of grated cheese.
 
-7. **Bake.** Bake in a preheated static oven at 180°C (356°F) for 30 minutes. For the last 10 minutes, switch on the grill/broiler to brown the top nicely.
+7. **Add the rosemary (optional).** Break 1 sprig of fresh rosemary in half and lay it on the tart.
 
-8. **Rest and serve.** Take it out of the oven and let it settle for 5 minutes before slicing. Serve warm or just slightly cooled.
+8. **Bake.** Bake for 30 minutes in a preheated conventional oven at 180°C (356°F), with the fan switched off. For the last 10 minutes, switch to the grill setting to brown the top.
+
+9. **Rest and serve.** Take the tart out of the oven and leave it to rest for 5 minutes before slicing. Serve hot or warm.
