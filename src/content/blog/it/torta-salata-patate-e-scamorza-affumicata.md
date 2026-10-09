@@ -8,8 +8,6 @@ tags: ["Piatti unici", "Aperitivo", "Patate", "Formaggio", "Forno", "Antispreco"
 translationKey: "torta-salata-patate-e-scamorza-affumicata"
 ---
 
-Sfiziosissimo salvacena o stuzzicheria social dell'ultimo minuto! Top per consumare qualche patata e sbrigarsela con pochi ingredienti.
-
 ## Informazioni rapide
 
 - **Porzioni:** 4 persone
