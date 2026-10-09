@@ -1,6 +1,6 @@
 ---
 title: "Risoni cremosi alla zucca 0 pretese"
-description: "Zucca 0 pretese, ingredienti minimi, velocità turbo!"
+description: "Perché tutt* presi dall'impeto autunnale abbiamo comprato una zucca che non finisce mai!! Questa è per utilizzarne i rimasugli: ingredienti minimi, velocità turbo, gusto top!"
 pubDate: "2025-11-26"
 heroImage: "/images/ricette/risoni-zucca-zero-pretese.webp"
 category: "Primi piatti"
@@ -10,7 +10,7 @@ translationKey: "risoni-cremosi-alla-zucca"
 
 <!-- c9ca99_0acf31825b834c6a9e371d7dfb8fdfd6~mv2.png -->
 
-Zucca 0 pretese, ingredienti minimi, velocità turbo!
+
 
 ## Informazioni rapide
 

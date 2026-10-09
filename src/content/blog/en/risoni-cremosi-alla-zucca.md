@@ -1,6 +1,6 @@
 ---
 title: "No-fuss creamy pumpkin risoni"
-description: "Creamy pumpkin risoni with just a few ingredients and hardly any effort. Dinner sorted!"
+description: "Because we all got caught up in the autumn mood and bought a pumpkin we can't seem to finish!! This one's for using up the last bits: just a few ingredients, ready in a flash, and packed with flavour!"
 pubDate: "2025-11-26"
 heroImage: "/images/ricette/risoni-zucca-zero-pretese.webp"
 category: "First courses"

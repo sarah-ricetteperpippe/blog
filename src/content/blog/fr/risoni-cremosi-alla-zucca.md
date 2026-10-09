@@ -1,6 +1,6 @@
 ---
 title: "Risoni crémeux à la courge, sans chichi"
-description: "Des risoni crémeux à la courge, quelques ingrédients et un dîner prêt en un rien de temps !"
+description: "Parce qu'avec l'arrivée de l'automne, on a craqué pour une courge qu'on n'arrive plus à finir !! De quoi utiliser les derniers morceaux : quelques ingrédients, une recette express et un max de goût !"
 pubDate: "2025-11-26"
 heroImage: "/images/ricette/risoni-zucca-zero-pretese.webp"
 category: "Plats de pâtes"
