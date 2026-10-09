@@ -11,8 +11,6 @@ translationKey: "cotolette-di-funghi-cardoncelli"
 
 <!-- c9ca99_38a0fa2ef73349e1a119cd7794fe1265~mv2.png -->
 
-They look just like classic breaded cutlets, taste delicious and have a wonderful crunch. I've surprised myself!
-
 ## Quick info
 
 - **Servings:** 2 generous portions

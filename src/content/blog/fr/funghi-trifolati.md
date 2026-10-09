@@ -11,8 +11,6 @@ translationKey: "funghi-trifolati"
 
 <!-- 12ee43_ab86247834c74437b40babb4eb0ddf56~mv2.png -->
 
-Un accompagnement express et plein de goût !
-
 ## Infos rapides
 
 - **Portions :** 2 personnes

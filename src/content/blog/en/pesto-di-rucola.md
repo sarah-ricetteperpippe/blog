@@ -11,8 +11,6 @@ translationKey: "pesto-di-rucola"
 
 <!-- 12ee43_b833b714f3da4531be3835dac8db4df3~mv2.png -->
 
-The peppier the rocket, the better!
-
 ## Quick info
 
 - **Servings:** 4 people

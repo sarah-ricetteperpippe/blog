@@ -10,8 +10,6 @@ translationKey: "insalata-di-zucchine-feta-e-cipolla-rossa"
 
 <!-- c9ca99_90ca0649f5cb46278ef05afc6e63d680~mv2.png -->
 
-Idea svuota frigo bella, buona e veloce. Must have for feta lovers!
-
 ## Informazioni rapide
 
 - **Porzioni:** 1 persona

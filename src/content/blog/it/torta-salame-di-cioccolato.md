@@ -10,8 +10,6 @@ translationKey: "torta-salame-di-cioccolato"
 
 <!-- c9ca99_1ae27ffb64dd4dbb8e842510dbce589a~mv2.jpg -->
 
-E tanti auguri a zia Antonella!
-
 ## Informazioni rapide
 
 - **Porzioni:** tortiera da 20 o 22 cm

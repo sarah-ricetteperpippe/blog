@@ -11,8 +11,6 @@ translationKey: "tortilla-spagnola"
 
 <!-- c9ca99_49b0e85c0b0d460e8e54ed13b5db4804~mv2.png -->
 
-Appelle-la tortilla espagnole ou omelette aux pommes de terre et aux oignons : dans tous les cas, c'est un grand classique et une valeur très sûre.
-
 ## Infos rapides
 
 - **Portions :** 4 personnes

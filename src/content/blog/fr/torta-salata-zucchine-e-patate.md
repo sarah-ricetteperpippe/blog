@@ -11,8 +11,6 @@ translationKey: "torta-salata-zucchine-e-patate"
 
 <!-- c9ca99_475f1da46dd84d1b8235885630bb86d4~mv2.png -->
 
-Je n'en attendais pas grand-chose, et au final c'est devenue une excellente tarte salée de fond de frigo : légumes fondants, fromage généreux et très peu de complications.
-
 ## Infos rapides
 
 - **Portions :** 4 à 6

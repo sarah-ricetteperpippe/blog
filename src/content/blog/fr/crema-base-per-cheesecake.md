@@ -11,8 +11,6 @@ translationKey: "crema-base-per-cheesecake"
 
 <!-- 12ee43_d48c50cba7a94b7b8e0cbe677856caa0~mv2.png -->
 
-Voilà les proportions gagnantes pour un cheesecake zéro acidulé !
-
 ## Infos rapides
 
 - **Portions :** pour un gâteau de 24 cm (8–12 personnes)

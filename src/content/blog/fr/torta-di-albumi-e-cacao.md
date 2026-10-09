@@ -11,8 +11,6 @@ translationKey: "torta-di-albumi-e-cacao"
 
 <!-- 12ee43_aba7f5a4aa0c4d2997ff8c50396bfbd2~mv2.jpg -->
 
-Pour recycler les blancs d'œufs de la carbonara !
-
 *(Il aurait été plus joli si je l'avais cuit dans un moule plutôt que dans un fagot improvisé en papier cuisson !)*
 
 ## Infos rapides

@@ -11,8 +11,6 @@ translationKey: "tamago-sando-aka-egg-sandwich-giappo"
 
 <!-- c9ca99_5c9be5c9420e4e6bb0f48beb258a68d6~mv2.png -->
 
-Voici le tamago sando, le célèbre sandwich japonais aux œufs, dans une version facile à faire avec des ingrédients du quotidien : moelleux, crémeux et très satisfaisant.
-
 ## Infos rapides
 
 - **Portions :** 1 sandwich

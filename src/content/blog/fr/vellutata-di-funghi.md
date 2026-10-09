@@ -11,7 +11,7 @@ translationKey: "vellutata-di-funghi"
 
 <!-- 12ee43_ae70b279d38a4d0fb725b06a68f1b81d~mv2.png -->
 
-J'en ai goûté une version en Égypte et j'en refais depuis. C'est simple, crémeux et très champignon, sans demander beaucoup d'effort.
+J'en ai goûté une version en Égypte et j'en refais depuis.
 
 ## Infos rapides
 

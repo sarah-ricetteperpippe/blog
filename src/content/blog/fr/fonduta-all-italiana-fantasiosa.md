@@ -11,7 +11,7 @@ translationKey: "fonduta-all-italiana-fantasiosa"
 
 <!-- c9ca99_084867f1837643e4b6f94d0c8c7e8d90~mv2.png -->
 
-Je l'avais prévue pour une soirée très cocooning avec Anna, Giando et Giuliano. Chercher des recettes suisses classiques, c'est bien, mais les fromages ne sont presque jamais ceux qu'on trouve vraiment ici, alors j'ai préféré construire une version plus facile à reproduire avec des produits de supermarché.
+Je l'avais prévue pour une soirée très cocooning avec Anna, Giando et Giuliano.
 
 Tu peux la faire avec ou sans appareil à fondue. J'ai trouvé le mien à petit prix sur Vinted, mais je t'explique aussi comment t'en sortir avec une simple casserole.
 

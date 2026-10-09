@@ -11,8 +11,6 @@ translationKey: "tortilla-spagnola"
 
 <!-- c9ca99_49b0e85c0b0d460e8e54ed13b5db4804~mv2.png -->
 
-Call it what you like, potato and onion omelette or Spanish tortilla: either way, it is an absolute classic and a very dependable thing to cook.
-
 ## Quick info
 
 - **Servings:** 4

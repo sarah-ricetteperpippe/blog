@@ -11,8 +11,6 @@ translationKey: "risotto-al-brie-e-noci"
 
 <!-- c9ca99_475f1da46dd84d1b8235885630bb86d4~mv2.png -->
 
-C'est le genre de risotto qui paraît un peu luxueux tout en restant très simple à réussir : crémeux, gourmand et parfait avec le croquant des noix.
-
 ## Infos rapides
 
 - **Portions :** 2 personnes

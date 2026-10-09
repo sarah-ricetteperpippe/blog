@@ -11,8 +11,6 @@ translationKey: "brodo-vegetale-base"
 
 <!-- c9ca99_0750cea780b841f298b465cf1a675a15~mv2.png -->
 
-This is a very straightforward homemade vegetable broth, with enough notes to make it reliable even if you do not make stock often.
-
 ## Quick info
 
 - **Yield:** about 1.5L (6.3 cups) of broth

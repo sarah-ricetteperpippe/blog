@@ -11,8 +11,6 @@ translationKey: "cotolette-di-funghi-cardoncelli"
 
 <!-- c9ca99_38a0fa2ef73349e1a119cd7794fe1265~mv2.png -->
 
-On dirait de vraies escalopes panées : elles sont savoureuses et délicieusement croustillantes. Je m'épate moi-même !
-
 ## Infos rapides
 
 - **Pour :** 2 personnes (portions généreuses)

@@ -9,7 +9,12 @@ lang: "en"
 translationKey: "torta-salata-patate-e-scamorza-affumicata"
 ---
 
+<<<<<<< Updated upstream
 A handy recipe for a last-minute dinner or something to share with friends. It's a great way to use up a few potatoes and get a tasty meal on the table with very little fuss.
+=======
+<!-- c9ca99_fc84b9dca508402582801eaa8be1a260~mv2.png -->
+<!-- c9ca99_47749c8eb45e480f82005222cf0eee99~mv2.png -->
+>>>>>>> Stashed changes
 
 ## Quick info
 

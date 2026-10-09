@@ -11,8 +11,6 @@ translationKey: "funghi-trifolati"
 
 <!-- 12ee43_ab86247834c74437b40babb4eb0ddf56~mv2.png -->
 
-Quick and moreish side dish!
-
 ## Quick info
 
 - **Servings:** 2 people

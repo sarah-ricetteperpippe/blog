@@ -12,8 +12,6 @@ translationKey: "cheesecake-alle-fragole"
 <!-- c9ca99_bd44037add18457fab25d20094f48419~mv2.png -->
 <!-- c9ca99_e86f8b87fed74ad08fcadb74b4a21844~mv2.png -->
 
-La miglior cheesecake che io abbia mai fatto...e tanti auguri mamma!
-
 ![Cheesecake alle fragole decorata per un compleanno](/images/ricette/cheesecake-fragole-compleanno.png)
 
 ## Informazioni rapide

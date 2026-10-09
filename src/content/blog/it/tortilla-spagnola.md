@@ -10,8 +10,6 @@ translationKey: "tortilla-spagnola"
 
 <!-- c9ca99_49b0e85c0b0d460e8e54ed13b5db4804~mv2.png -->
 
-...Perché frittata di patate e cipolle suonava meno cool! Una garanzia!
-
 ## Informazioni rapide
 
 - **Porzioni:** 4 persone

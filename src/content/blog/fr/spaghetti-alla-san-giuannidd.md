@@ -11,7 +11,7 @@ translationKey: "spaghetti-alla-san-giuannidd"
 
 <!-- c9ca99_baf913c05a924a93b96bf469c57bdea2~mv2.png -->
 
-Vive la *baresità* (l'art de vivre à Bari) ! Le nom "San Giuannidd" est du dialecte des Pouilles : il vient de "San Giovannino", petit Saint-Jean.
+Le nom "San Giuannidd" est du dialecte des Pouilles : il vient de "San Giovannino", petit Saint-Jean.
 
 ## Infos rapides
 

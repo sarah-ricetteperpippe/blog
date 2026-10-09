@@ -8,8 +8,6 @@ tags: ["Dolci", "Antispreco", "Torte"]
 translationKey: "torta-soffice-al-latte-di-cocco"
 ---
 
-Per consumare il latte di cocco che non finisce mai!
-
 ## Informazioni rapide
 
 - **Porzioni:** 8 persone

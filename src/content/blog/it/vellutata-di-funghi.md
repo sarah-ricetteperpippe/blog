@@ -10,8 +10,6 @@ translationKey: "vellutata-di-funghi"
 
 <!-- 12ee43_ae70b279d38a4d0fb725b06a68f1b81d~mv2.png -->
 
-Scoperta in Egitto, mai più senza!
-
 ## Informazioni rapide
 
 - **Porzioni:** 4 persone

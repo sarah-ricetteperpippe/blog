@@ -11,8 +11,6 @@ translationKey: "pesto-di-rucola"
 
 <!-- 12ee43_b833b714f3da4531be3835dac8db4df3~mv2.png -->
 
-Plus la roquette pique, mieux c'est !
-
 ## Infos rapides
 
 - **Portions :** 4 personnes

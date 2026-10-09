@@ -10,8 +10,6 @@ translationKey: "pasta-e-lenticchie"
 
 <!-- c9ca99_1ae27ffb64dd4dbb8e842510dbce589a~mv2.jpg -->
 
-Mangerei lenticchie anche a colazione!
-
 ## Informazioni rapide
 
 - **Porzioni:** 2 persone

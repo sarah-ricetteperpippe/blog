@@ -11,7 +11,7 @@ translationKey: "torta-salame-di-cioccolato"
 
 <!-- c9ca99_1ae27ffb64dd4dbb8e842510dbce589a~mv2.jpg -->
 
-Joyeux anniversaire à tante Antonella ! Le *torta salame di cioccolato* est un classique italien : ici on en fait la version "gâteau" dans un moule, plutôt qu'en forme de saucisson.
+Le *torta salame di cioccolato* est un classique italien : ici on en fait la version "gâteau" dans un moule, plutôt qu'en forme de saucisson.
 
 ## Infos rapides
 

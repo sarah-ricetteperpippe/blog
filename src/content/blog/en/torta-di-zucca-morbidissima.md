@@ -11,8 +11,6 @@ translationKey: "torta-di-zucca-morbidissima"
 
 <!-- c9ca99_aa43440af00a4c319bc4bb38b51fc8f9~mv2.png -->
 
-This is the pumpkin cake I make when I want something soft, simple and reliably good, especially when there is cooked pumpkin waiting to be used up.
-
 ## Quick info
 
 - **Servings:** 6

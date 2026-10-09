@@ -11,8 +11,6 @@ translationKey: "frittata-alla-menta"
 
 <!-- c9ca99_070de1a2b9c94c9bbdd17b8baeeab524~mv2.png -->
 
-C'est mon omelette fétiche : moelleuse, parfumée à la menthe et assez simple pour un soir de semaine, sans jamais être ennuyeuse.
-
 ## Infos rapides
 
 - **Portions :** 4 personnes

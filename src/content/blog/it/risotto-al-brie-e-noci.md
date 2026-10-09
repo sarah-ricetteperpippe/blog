@@ -10,8 +10,6 @@ translationKey: "risotto-al-brie-e-noci"
 
 <!-- c9ca99_475f1da46dd84d1b8235885630bb86d4~mv2.png -->
 
-Questo è spaziale, spa-zia-leeeee!!!
-
 ## Informazioni rapide
 
 - **Porzioni:** 2 persone

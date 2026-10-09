@@ -11,8 +11,6 @@ translationKey: "ragu-bianco-di-tempeh"
 
 <!-- 12ee43_4b67f415edef483da32072f67c61f5b4~mv2.png -->
 
-La preuve qu'une sauce pour les pâtes peut très bien passer au végétal sans perdre en profondeur ni en gourmandise.
-
 ## Infos rapides
 
 - **Portions :** 4 personnes

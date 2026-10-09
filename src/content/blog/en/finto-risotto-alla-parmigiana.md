@@ -11,7 +11,7 @@ translationKey: "finto-risotto-alla-parmigiana"
 
 <!-- c9ca99_390b030e3d07402b82ce24c891e6f948~mv2.png -->
 
-This is risotto for low-fridge days. In theory it should be made with Parmesan, but if you use another grating cheese it still works beautifully: at heart, it's rice, butter and cheese doing their job.
+In theory it should be made with Parmesan, but if you use another grating cheese it still works beautifully: at heart, it's rice, butter and cheese doing their job.
 
 > Fun fact: Parmesan and Grana aren't vegetarian cheeses!
 

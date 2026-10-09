@@ -9,8 +9,6 @@ lang: "en"
 translationKey: "torta-soffice-al-latte-di-cocco"
 ---
 
-To use up that coconut milk that just never runs out!
-
 ## Quick info
 
 - **Servings:** 8

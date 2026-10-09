@@ -10,8 +10,6 @@ translationKey: "crema-base-per-cheesecake"
 
 <!-- 12ee43_d48c50cba7a94b7b8e0cbe677856caa0~mv2.png -->
 
-Queste le proporzioni vincenti per una cheesecake 0 acidula!
-
 ## Informazioni rapide
 
 - **Porzioni:** per una torta da 24 cm (8–12 persone)

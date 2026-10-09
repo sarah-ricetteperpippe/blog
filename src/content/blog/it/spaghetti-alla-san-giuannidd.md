@@ -10,8 +10,6 @@ translationKey: "spaghetti-alla-san-giuannidd"
 
 <!-- c9ca99_baf913c05a924a93b96bf469c57bdea2~mv2.png -->
 
-Che bella la baresità!
-
 ## Informazioni rapide
 
 - **Porzioni:** 2 persone

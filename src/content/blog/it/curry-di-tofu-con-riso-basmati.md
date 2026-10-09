@@ -10,8 +10,6 @@ translationKey: "curry-di-tofu-con-riso-basmati"
 
 <!-- 12ee43_8e9ba3f51ca94ce0bfbe424eb6341eb0~mv2.jpg -->
 
-La variante vegana di un piatto yummy yummi indiano!
-
 ## Informazioni rapide
 
 - **Porzioni:** 2 persone

@@ -11,8 +11,6 @@ translationKey: "pasta-e-lenticchie"
 
 <!-- c9ca99_1ae27ffb64dd4dbb8e842510dbce589a~mv2.jpg -->
 
-I could happily eat lentils every day, and this is one of the best ways to do it: hearty, comforting and easy to tweak depending on how brothy you want it.
-
 ## Quick info
 
 - **Servings:** 2 people

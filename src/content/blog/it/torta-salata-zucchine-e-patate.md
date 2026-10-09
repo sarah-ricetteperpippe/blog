@@ -10,8 +10,6 @@ translationKey: "torta-salata-zucchine-e-patate"
 
 <!-- c9ca99_475f1da46dd84d1b8235885630bb86d4~mv2.png -->
 
-Non le davo una lira e invece si è rivelata uno svuotafrigo strabuonissimo!
-
 ## Informazioni rapide
 
 - **Porzioni:** 4–6
