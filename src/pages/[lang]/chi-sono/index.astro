@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { INSTAGRAM_URL } from '../../../config/social';
 
 export function getStaticPaths() {
   return [
@@ -28,6 +29,7 @@ type AboutPageCopy = {
   philosophyTitle: string;
   philosophy: AboutParagraph[];
   cta1: string;
+  cta2: string;
   avatarAlt: string;
 };
 
@@ -58,6 +60,7 @@ const i18n: Record<'it' | 'en' | 'fr', AboutPageCopy> = {
       { text: "Mangiare qualcosa di buono sapendo che nessuno ha sofferto per quei cinque minuti di gusto—per me—ha il sapore dell'essere in pace con la natura.", tone: 'highlight' },
     ],
     cta1: 'Esplora le ricette',
+    cta2: 'I miei disastri in diretta su Instagram',
     avatarAlt: 'Sarah, fondatrice di Ricette per Pippe',
   },
   en: {
@@ -86,6 +89,7 @@ const i18n: Record<'it' | 'en' | 'fr', AboutPageCopy> = {
       { text: 'For me, eating something delicious knowing that no one suffered for those five minutes of pleasure tastes like being at peace with nature.', tone: 'highlight' },
     ],
     cta1: 'Explore recipes',
+    cta2: 'My kitchen disasters, live on Instagram',
     avatarAlt: 'Sarah, founder of Clueless Cooks',
   },
   fr: {
@@ -114,6 +118,7 @@ const i18n: Record<'it' | 'en' | 'fr', AboutPageCopy> = {
       { text: 'Pour moi, manger quelque chose de bon en sachant que personne n’a souffert pour ces cinq minutes de plaisir, c’est avoir le sentiment d’être en paix avec la nature.', tone: 'highlight' },
     ],
     cta1: 'Explorer les recettes',
+    cta2: 'Mes désastres en direct sur Instagram',
     avatarAlt: 'Sarah, fondatrice de Recettes pour quiches',
   },
 };
@@ -159,6 +164,7 @@ const t = i18n[lang as keyof typeof i18n] ?? i18n.it;
 
     <div class="about-cta">
       <a href={`${base}${lang}/blog/`} class="btn-primary">{t.cta1}</a>
+      <a href={INSTAGRAM_URL} class="btn-secondary" target="_blank" rel="noopener noreferrer">{t.cta2}</a>
     </div>
   </div>
 

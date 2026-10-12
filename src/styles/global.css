@@ -217,6 +217,19 @@ p {
   background: var(--color-primary-green-bg);
 }
 
+/* Instagram (header icon): stesso stile della lente */
+.instagram-link {
+  color: var(--color-text-dark);
+  display: flex;
+  align-items: center;
+  padding: 0.4rem;
+  transition: var(--transition);
+}
+.instagram-link:hover {
+  color: var(--color-primary-green);
+  background: var(--color-primary-green-bg);
+}
+
 /* ============================
    Search Modal Overlay
    ============================ */
@@ -1491,6 +1504,17 @@ p {
   color: var(--color-text-dark);
   text-align: right;
 }
+.footer-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary-green);
+  transition: var(--transition);
+}
+.footer-instagram:hover { color: var(--color-primary-orange); }
 .footer-legal {
   display: flex;
   flex-direction: column;
