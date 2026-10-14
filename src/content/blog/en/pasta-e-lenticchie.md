@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/pasta-lenticchie.webp"
 title: "Pasta and lentils (soupy or not)"
-description: "Cosy, filling and flexible: one of the best ways to turn lentils into dinner."
+description: "Cozy, filling and flexible: one of the best ways to turn lentils into dinner."
 pubDate: "2026-01-07"
 category: "First courses"
 tags: ["Autunno/inverno", "Lenticchie", "Zuppe", "Piatti unici", "Primi piatti"]
@@ -15,36 +15,36 @@ translationKey: "pasta-e-lenticchie"
 
 - **Servings:** 2 people
 - **Prep:** 1 hour – 1 hour 30 minutes (if you make the broth from scratch) / 30 minutes (if you use ready-made broth)
-- **Tools:** large pot, saucepan, knife, chopping board, ladle, strainer (optional)
-- **Heads-up:** if you're not making your own broth, use carton vegetable broth — not stock cubes
+- **Tools:** large pot, saucepan, knife, chopping board, ladle, (optional) strainer
+- **Heads-up:** if you're not making your own broth, use carton vegetable broth — not bouillon cubes
 
 ## Ingredients
 
 - 160g (5.6 oz) pasta (conchigliette or tubetti)
 - 140g (4.9 oz) dried lentils
-- 3 litres (12.7 cups) water (for the homemade broth)
+- 3 liters (12.7 cups) water (for the homemade broth)
 - 4 medium carrots (3 for the broth, 1 for the aromatic base)
 - 1 medium onion + ½ onion (1 whole for the broth, ½ for the aromatic base)
 - 10 cherry tomatoes (6 for the broth, 4 for the aromatic base)
 - 1 celery stalk (for the broth)
-- parsley to taste (optional)
+- (Optional) 1 small bunch of parsley (for the broth)
 - 2 bay leaves
-- extra virgin olive oil to taste
-- coarse salt to taste
+- 2 tablespoons extra virgin olive oil (for the aromatic base)
+- 1 level teaspoon coarse salt (half that if you use ready-made broth, which is already salted)
 
 ## Method
 
 ### 1. Make the broth (if homemade)
 
-Put 3.5 litres (14.8 cups) of water in a pot with: 1 whole onion, 3 carrots halved, 1 celery stalk, 6 cherry tomatoes, parsley (if using) and 1 bay leaf. Bring to the boil, then drop the heat and let it simmer for 30–50 minutes. Keep the broth warm. (If you're using ready-made broth, just bring it up to temperature.)
+Put 3 liters (12.7 cups) of water in a pot with: 1 whole onion, 3 carrots halved, 1 celery stalk, 6 cherry tomatoes and 1 bay leaf. If you're using parsley, add it now. Bring to a boil, then drop the heat and let it simmer for 30–50 minutes. Keep the broth warm. (If you're using ready-made broth, just bring it up to temperature.)
 
 ### 2. Build the aromatic base
 
-Heat a generous glug of oil in a saucepan. Add ½ onion, roughly chopped, and 1 carrot sliced into thin rounds. Cook over medium heat until softened, then add 4 quartered cherry tomatoes and let them cook down for a few minutes.
+Heat 2 tablespoons of oil in a saucepan. Add ½ onion, roughly chopped, and 1 carrot sliced into thin rounds. Cook over medium heat until softened, then add 4 quartered cherry tomatoes and let them cook down for a few minutes.
 
 ### 3. Cook the lentils
 
-Rinse 140g (4.9 oz) of lentils and add them to the aromatic base. Let them pick up some flavour, then cover with hot broth, roughly twice their height. Bring to the boil, add 1 bay leaf and let them simmer, topping up with broth as needed.
+Rinse 140g (4.9 oz) of lentils and add them to the aromatic base. Let them pick up some flavor, then cover with hot broth, roughly twice their height. Bring to a boil, add 1 bay leaf and let them simmer, topping up with broth as needed.
 
 ### 4. Add the pasta
 
@@ -52,4 +52,4 @@ Cook the lentils on their own until the remaining time matches the pasta's cooki
 
 ### 5. Adjust and serve
 
-Salt towards the end with coarse salt. Taste and tweak the broth if needed. Serve soupy and brothy, or drier by draining off some of the broth through a strainer.
+Salt toward the end with 1 level teaspoon of coarse salt (½ teaspoon if you're using ready-made broth). Taste and tweak the broth if needed. Serve soupy and brothy, or drier by draining off some of the broth through a strainer.

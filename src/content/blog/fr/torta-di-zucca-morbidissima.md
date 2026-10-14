@@ -28,8 +28,8 @@ translationKey: "torta-di-zucca-morbidissima"
 - 50 ml de lait (ou lait de coco en brique, ou lait de soja)
 - 270 g de farine T45
 - 1 sachet de levure chimique
-- sucre glace selon besoin pour la finition
-- (facultatif) 2 à 3 cuillères à soupe de pépites de chocolat farinées
+- 2 cuillères à soupe de sucre glace, pour la finition
+- (Facultatif) 2 à 3 cuillères à soupe de pépites de chocolat farinées
 
 ## Préparation
 
@@ -37,6 +37,6 @@ translationKey: "torta-di-zucca-morbidissima"
 2. **Monte les œufs et le sucre.** Dans un saladier, fouette les œufs avec le sucre jusqu'à ce que le mélange blanchisse et devienne mousseux.
 3. **Ajoute les liquides.** Verse l'huile et le lait. Continue de mélanger pour bien amalgamer.
 4. **Incorpore le potiron.** Ajoute toute la purée et mélange jusqu'à ce que l'appareil soit homogène.
-5. **Ajoute les ingrédients secs.** Incorpore peu à peu la farine tamisée en mélangeant à la spatule. Ajoute la levure (et les pépites de chocolat si tu en utilises) et mélange le minimum nécessaire.
+5. **Ajoute les ingrédients secs.** Incorpore peu à peu la farine tamisée en mélangeant à la spatule. Ajoute la levure et, si tu en utilises, les pépites de chocolat, puis mélange le minimum nécessaire.
 6. **Cuis le gâteau.** Verse la pâte dans un moule de 20 à 22 cm beurré et fariné. Cuis au four statique à 170 °C pendant environ 45 minutes. Vérifie au cure-dent.
-7. **Refroidis et sers.** Laisse refroidir complètement et saupoudre de sucre glace.
+7. **Refroidis et sers.** Laisse refroidir complètement et saupoudre de 2 cuillères à soupe de sucre glace, à travers une petite passoire.

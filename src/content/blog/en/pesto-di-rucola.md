@@ -1,6 +1,6 @@
 ---
-title: "Rocket pesto"
-description: "The peppier the rocket, the better!"
+title: "Arugula pesto"
+description: "The peppier the arugula, the better!"
 pubDate: "2025-11-12"
 heroImage: "/images/ricette/pesto-rucola.webp"
 category: "Pestos, sauces and dips"
@@ -16,11 +16,11 @@ translationKey: "pesto-di-rucola"
 - **Servings:** 4 people
 - **Prep:** 10 minutes
 - **Tools:** food processor or blender, spatula, bowl, measuring spoon
-- **Heads-up:** drizzle the oil in slowly while blending so the pesto comes out creamy; for a milder flavour, dial down the garlic or skip it altogether, or swap half the rocket for **basil** or **baby spinach**.
+- **Heads-up:** drizzle the oil in slowly while blending so the pesto comes out creamy; for a milder flavor, dial down the garlic or skip it altogether, or swap half the arugula for **basil** or **baby spinach**.
 
 ## Ingredients
 
-- 100g (3.5 oz) fresh rocket
+- 100g (3.5 oz) fresh arugula
 - 50g (1.8 oz) walnuts
 - ½ glass of extra virgin olive oil
 - 50g (1.8 oz) grated cheese
@@ -29,6 +29,6 @@ translationKey: "pesto-di-rucola"
 
 ## Method
 
-1. **Blend.** Put the rocket, walnuts, cheese, garlic and salt in the processor. Start blending and trickle in the oil **slowly** until you get a smooth, thick cream.
+1. **Blend.** Put the arugula, walnuts, cheese, garlic and salt in the processor. Start blending and trickle in the oil **slowly** until you get a smooth, thick cream.
 
-2. **Adjust the texture.** If the pesto is too thick, add a bit more oil or a tablespoon of cold water.
+2. **Adjust the texture.** If the pesto is too thick, add up to 1 scant teaspoon more of oil or cold water.

@@ -27,7 +27,7 @@ translationKey: "risotto-al-brie-e-noci"
 - 75 g de brie (ou la moitié d'un petit fromage), sans la croûte, en petits morceaux
 - 6 cerneaux de noix entiers (environ 3 par personne), décortiqués et grossièrement concassés
 - 20 g de margarine
-- Poivre noir (facultatif)
+- (Facultatif) 4 tours de moulin de poivre noir (2 par assiette)
 
 ## Préparation
 
@@ -45,4 +45,4 @@ translationKey: "risotto-al-brie-e-noci"
 
 7. **Noix.** Incorpore les noix concassées, mélange et laisse reposer 1 minute à couvert.
 
-8. **Poivre (facultatif).** Si tu veux, ajoute un tour de poivre au moulin hors du feu ou directement dans l'assiette.
+8. **(Facultatif) Poivre.** Si tu veux, ajoute 2 tours de moulin de poivre par assiette, hors du feu ou directement dans l'assiette.

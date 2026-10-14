@@ -1,6 +1,6 @@
 ---
-title: "Courgette and potato savoury tart"
-description: "A reliable savoury tart for using up courgettes, potatoes and whatever melty cheese you have around."
+title: "Zucchini and potato savory tart"
+description: "A reliable savory tart for using up zucchini, potatoes and whatever melty cheese you have around."
 pubDate: "2025-02-13"
 heroImage: "/images/ricette/torta-salata-zucchine-patate.webp"
 category: "One-dish meals"
@@ -17,31 +17,31 @@ translationKey: "torta-salata-zucchine-e-patate"
 - **Prep:** 20 minutes
 - **Baking:** 35 minutes
 - **Resting:** 5 minutes
-- **Tools:** large frying pan, 26 cm (10.2 in) round tin
+- **Tools:** large frying pan, 26 cm (10.2 in) round pan
 
 ## Ingredients
 
 - 1 round sheet of puff pastry
-- 400g (14.1 oz) courgettes
+- 400g (14.1 oz) zucchini
 - 300g (10.6 oz) potatoes
 - 2 garlic cloves
-- Extra virgin olive oil to taste
-- Fine salt to taste
+- 3 tablespoons extra virgin olive oil
+- 1 level teaspoon fine salt (taste the vegetables and adjust: the mozzarella and cheese are already salty)
 - 200g (7.1 oz) mozzarella (or a mix of mozzarella + fontina or another melty cheese)
 - 40g (1.4 oz) grated cheese
-- Black pepper to taste
+- 6 turns of the pepper mill
 
 ## Method
 
-1. Lay 1 sheet of puff pastry into a 26 cm (10.2 in) tin and prick the base all over with a fork. Set aside.
-2. Wash and dice 400g (14.1 oz) of courgettes. Peel and cut 300g (10.6 oz) of potatoes into roughly 1–1.5 cm (0.4–0.6 in) cubes.
-3. In a large frying pan, heat a drizzle of oil with 2 garlic cloves. Add the vegetables and stir.
-4. Pour in a scant half glass of water, cover and cook over medium heat: the vegetables should stew, not dry out. Stir now and then and add a tiny splash more water if needed.
-5. Once the vegetables are soft, take off the lid and let any remaining liquid evaporate. Taste for salt.
+1. Lay 1 sheet of puff pastry into a 26 cm (10.2 in) pan and prick the base all over with a fork. Set aside.
+2. Wash and dice 400g (14.1 oz) of zucchini. Peel and cut 300g (10.6 oz) of potatoes into roughly 1–1.5 cm (0.4–0.6 in) cubes.
+3. In a large frying pan, heat 3 tablespoons of oil with 2 garlic cloves. Add the vegetables and stir.
+4. Pour in 80ml (2.7 fl oz) of water (a scant half glass), cover and cook over medium heat: the vegetables should stew, not dry out. Stir now and then and add a tiny splash more water if needed.
+5. Once the vegetables are soft, take off the lid and let any remaining liquid evaporate. Add 1 level teaspoon of salt, then taste and adjust.
 6. Spread half the cooked vegetables over the puff pastry base.
 7. Add 200g (7.1 oz) of diced mozzarella, then cover with the remaining vegetables.
-8. Finish with 40g (1.4 oz) of grated cheese and a sprinkle of black pepper.
-9. Bake in a preheated static oven at 180°C (356°F) for 35 minutes (or fan at 170°C / 338°F).
+8. Finish with 40g (1.4 oz) of grated cheese and 6 turns of the pepper mill.
+9. Bake in a preheated static oven at 180°C (356°F) for 35 minutes (or convection at 170°C / 338°F).
 10. Take it out and let it rest for 5 minutes before slicing.
 
-![Courgette and potato savoury tart](/images/ricette/torta-zucchine.webp)
+![Zucchini and potato savory tart](/images/ricette/torta-zucchine.webp)

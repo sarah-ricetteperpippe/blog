@@ -28,14 +28,14 @@ Le nom "San Giuannidd" est du dialecte des Pouilles : il vient de "San Giovannin
 - 3 cuillères à soupe d'huile d'olive extra vierge
 - 2 cuillères à café bombées de câpres dessalées
 - 2 filets d'anchois à l'huile
-- piment sec selon besoin
-- sel fin selon besoin
+- 1 petit piment sec, émietté (2 si tu aimes quand ça pique un peu ; ou ¼ de cuillère à café de piment en poudre)
+- à peine ¼ de cuillère à café de sel fin, seulement si besoin après avoir goûté (les anchois et les câpres sont déjà bien salés)
 - basilic frais, 2 feuilles pour servir
 
 ## Préparation
 
 1. Mets l'eau des pâtes à bouillir.
-2. Dans une grande poêle, fais chauffer 3 cuillères à soupe d'huile avec 1 gousse d'ail (coupée en deux et dégermée) et le piment à feu doux, jusqu'à ce que l'ail soit à peine doré.
+2. Dans une grande poêle, fais chauffer 3 cuillères à soupe d'huile avec 1 gousse d'ail (coupée en deux et dégermée) et le piment émietté à feu doux, jusqu'à ce que l'ail soit à peine doré.
 3. Retire la poêle du feu. Ajoute les 2 filets d'anchois dans l'huile chaude mais qui ne crépite plus, et remue jusqu'à ce qu'ils fondent.
 4. Remets la poêle sur feu moyen-doux. Coupe les tomates cerises en deux et place-les dans l'huile côté coupé. Couvre et laisse cuire 5 minutes, jusqu'à ce qu'elles soient tendres.
 5. Quand les tomates cerises sont bien fondantes, écrase-les dans la poêle à la fourchette et poursuis la cuisson à feu moyen-doux pendant 10 minutes pour que le fond prenne corps. Rince le sel des câpres et ajoute-les.
@@ -43,5 +43,5 @@ Le nom "San Giuannidd" est du dialecte des Pouilles : il vient de "San Giovannin
    - si elle est déjà humide et bien liée, n'ajoute pas de liquide
    - si elle a tendance à trop sécher, allonge avec une demi-louche d'eau de cuisson des pâtes
 7. Cuis les spaghetti et égoutte-les une minute avant la fin du temps de cuisson.
-8. Transfère les pâtes dans la poêle et fais-les sauter 1 à 2 minutes, en ajustant la fluidité avec de l'eau de cuisson si besoin.
+8. Transfère les pâtes dans la poêle et fais-les sauter 1 à 2 minutes, en ajustant la fluidité avec de l'eau de cuisson si besoin. Goûte et, si besoin, ajoute le sel.
 9. Sers tout de suite, bien chaud. Termine avec 2 feuilles de basilic déchirées à la main.

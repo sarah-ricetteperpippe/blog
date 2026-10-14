@@ -24,7 +24,7 @@ translationKey: "curry-di-tofu-con-riso-basmati"
 **Pour le tofu au curry :**
 - 1 paquet de tofu (environ 250 g)
 - 2 cuillères à soupe de lait de coco
-- lait de soja, selon besoin (pour couvrir le tofu pendant la marinade)
+- environ 200 ml de lait de soja (pour couvrir le tofu pendant la marinade)
 - 3 cuillères à soupe de curry au total (1,5 pour la marinade + 1,5 pour le sauté)
 - 1 cuillère à soupe de curcuma
 - ½ cuillère à soupe de sucre de canne
@@ -32,10 +32,10 @@ translationKey: "curry-di-tofu-con-riso-basmati"
 - 1 oignon blanc
 - 1 gousse d'ail
 - 2 feuilles de laurier
-- huile d'olive extra vierge
-- sel
-- piment (facultatif)
-- quelques gouttes de jus de citron (facultatif)
+- 3 cuillères à soupe d'huile d'olive extra vierge (1 pour le tofu, 2 pour le sauté), plus 1 cuillère à café par assiette, à cru, si tu aimes
+- ¼ de cuillère à café de sel fin (pour la marinade ; éventuellement 1 pincée de plus à la fin, après avoir goûté)
+- (Facultatif) ¼ de cuillère à café de piment en poudre (ou 1 piment séché émietté)
+- (Facultatif) ½ cuillère à café de jus de citron
 
 **Pour le riz :**
 - 2 tasses à café de riz basmati
@@ -47,19 +47,19 @@ translationKey: "curry-di-tofu-con-riso-basmati"
 ### Marinade du tofu (2–12 heures avant)
 
 1. Coupe le tofu en cubes.
-2. Mets-le dans un bol avec 2 cuillères à soupe de lait de coco, 1,5 cuillère à soupe de curry, du sel et quelques gouttes de citron (facultatif).
-3. Ajoute du lait de soja jusqu'à recouvrir le tofu.
+2. Mets-le dans un bol avec 2 cuillères à soupe de lait de coco, 1,5 cuillère à soupe de curry et ¼ de cuillère à café de sel. Si tu utilises du citron, ajoute ½ cuillère à café de jus.
+3. Ajoute environ 200 ml de lait de soja, jusqu'à recouvrir le tofu.
 4. Mélange et laisse mariner au moins 2 heures (idéalement toute la nuit au frigo). Garde le liquide de marinade de côté.
 
 ### Prépare le tofu
 
-Avec un filet d'huile dans une poêle, fais sauter le tofu quelques minutes pour le dorer. Réserve.
+Avec 1 cuillère à soupe d'huile dans une poêle, fais sauter le tofu quelques minutes pour le dorer. Réserve.
 
 ### Sauté épicé
 
 1. Émince l'oignon.
-2. Fais chauffer un filet d'huile dans une grande poêle.
-3. Ajoute l'oignon, l'ail coupé en deux, le laurier, 1,5 cuillère à soupe de curry, le curcuma et le piment (si tu en mets).
+2. Fais chauffer 2 cuillères à soupe d'huile dans une grande poêle.
+3. Ajoute l'oignon, l'ail coupé en deux, le laurier, 1,5 cuillère à soupe de curry et le curcuma. Si tu utilises du piment, ajoute-le maintenant.
 4. Cuis jusqu'à ce que l'oignon soit tendre et doré.
 
 ### Cuisson du curry
@@ -78,7 +78,7 @@ Avec un filet d'huile dans une poêle, fais sauter le tofu quelques minutes pour
 
 ### Pour servir
 
-Dresse le riz dans l'assiette et verse par-dessus le tofu au curry et sa sauce. Tu peux ajouter un filet d'huile à cru si l'envie te prend.
+Dresse le riz dans l'assiette et verse par-dessus le tofu au curry et sa sauce. Si tu veux, ajoute 1 cuillère à café d'huile à cru par assiette.
 
 ## Variantes
 

@@ -24,20 +24,20 @@ translationKey: "risoni-cremosi-alla-zucca"
 
 - 260 g di zucca delica già tagliata
 - 160 g di risoni (pasta)
-- rosmarino o salvia q.b.
+- 1 rametto di rosmarino o 4 foglie di salvia
 - 2 spicchi d'aglio (interi o schiacciati)
-- olio extravergine d'oliva q.b.
-- 3 bei pizzicotti di sale
-- pepe q.b.
-- formaggio grattugiato, burro o formaggio fresco a piacere per mantecare (le mie scelte veg: [Grattugiato Vemondo](https://www.google.com/search?q=grattuggiato+Vemondo), burro vegetale/margarina, o [spalmabile Valsoia](https://www.google.com/search?q=lo+spalmabile+Valsoia))
+- 3 cucchiai di olio extravergine d'oliva (1 per la zucca, 2 per la padella)
+- ½ cucchiaino di sale fino (per la zucca; assaggia alla fine e regola)
+- 6 giri di macina di pepe (2 sulla zucca, 2 a piatto)
+- per mantecare: 2 cucchiai di formaggio grattugiato, oppure 1 noce di burro (15 g), oppure 2 cucchiai di formaggio spalmabile (le mie scelte veg: [Grattugiato Vemondo](https://www.google.com/search?q=grattuggiato+Vemondo), burro vegetale/margarina, o [spalmabile Valsoia](https://www.google.com/search?q=lo+spalmabile+Valsoia))
 
 ## Procedimento
 
-1. **Cuoci la zucca.** Metti 260 g di zucca delica in una ciotola con olio, 3 bei pizzicotti di sale e pepe. Mescola bene. Cuoci in friggitrice ad aria a 180°C per 15–18 minuti (o in forno a 200°C per 20–30 minuti). Frullala fino a ottenere una crema liscia.
-2. **Prepara l'acqua per la pasta.** Porta a bollore una pentola con acqua leggermente salata (un po' meno sale del solito).
-3. **Prepara la base aromatica.** In padella scalda un filo d'olio con rosmarino o salvia e 2 spicchi d'aglio. Fai insaporire, poi rimuovi gli aromi.
+1. **Cuoci la zucca.** Metti 260 g di zucca delica in una ciotola con 1 cucchiaio di olio, ½ cucchiaino di sale e 2 giri di macina di pepe. Mescola bene. Cuoci in friggitrice ad aria a 180°C per 15–18 minuti (o in forno a 200°C per 20–30 minuti). Frullala fino a ottenere una crema liscia.
+2. **Prepara l'acqua per la pasta.** Porta a bollore una pentola con 1 litro d'acqua e 1 cucchiaino raso di sale grosso (meno del solito, perché la zucca è già salata).
+3. **Prepara la base aromatica.** In padella scalda 2 cucchiai di olio con il rosmarino o la salvia e 2 spicchi d'aglio. Fai insaporire, poi rimuovi gli aromi.
 4. **Insaporisci i risoni.** Versa 160 g di risoni nella padella e falli tostare delicatamente per 30–40 secondi.
 5. **Cottura tipo risotto.** Aggiungi un mestolo di acqua bollente. Prosegui aggiungendo acqua poco per volta, come per un risotto.
-6. **Unisci la zucca.** Verso fine cottura dei risoni, aggiungi la crema di zucca. Mescola bene e regola la quantità di acqua per mantenere la consistenza cremosa. Aggiusta di sale se necessario.
+6. **Unisci la zucca.** Verso fine cottura dei risoni, aggiungi la crema di zucca. Mescola bene e regola la quantità di acqua per mantenere la consistenza cremosa. Assaggia e, se serve, aggiungi un pizzico di sale.
 7. **Mantecatura.** A fuoco spento, aggiungi il formaggio, il burro o la margarina che preferisci e manteca fino a ottenere una consistenza vellutata.
-8. **Servi.** Impiatta subito, con una macinata di pepe fresco se ti piace.
+8. **Servi.** Impiatta subito e, se ti piace, aggiungi 2 giri di macina di pepe a piatto.

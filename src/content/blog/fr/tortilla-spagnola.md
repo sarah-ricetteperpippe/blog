@@ -23,25 +23,25 @@ translationKey: "tortilla-spagnola"
 - 500 g de pommes de terre
 - 4 œufs
 - 1 oignon moyen (pas trop petit)
-- huile selon besoin
-- sel selon besoin
-- poivre selon besoin
-- (facultatif) 2 à 3 brins de romarin
+- 6 cuillères à soupe d'huile d'olive extra vierge pour cuire les pommes de terre, plus 3 à 4 cuillères à soupe pour la cuisson à la poêle (ou 1 cuillère à café pour huiler le plat, si tu la cuis au four)
+- 1 cuillère à café et ½ de sel fin (1 cuillère à café pour les pommes de terre, ½ pour les œufs)
+- 8 tours de moulin de poivre
+- (Facultatif) 2 à 3 brins de romarin
 
 ## Préparation
 
 1. **Prépare les pommes de terre.** Coupe 500 g de pommes de terre en tranches très fines (environ 2 mm, sinon elles ne cuiront jamais), de préférence à la mandoline pour qu'elles soient toutes égales et cuisent uniformément. Mets-les à tremper dans de l'eau froide, puis égoutte-les et sèche-les très bien avec un torchon.
 
-2. **Cuis les pommes de terre à la poêle.** Dans la poêle de 24 cm max, fais chauffer de l'huile selon besoin avec 2 à 3 brins de romarin. Quand l'huile est chaude, retire le romarin et ajoute les pommes de terre. Cuis à feu moyen, en retournant souvent et en ajustant le feu si besoin : elles doivent cuire doucement, pas frire. Sale légèrement en cours de cuisson. Continue jusqu'à ce que les pommes de terre soient très tendres et **commencent à se défaire**.
+2. **Cuis les pommes de terre à la poêle.** Dans la poêle de 24 cm max, fais chauffer 6 cuillères à soupe d'huile avec 2 à 3 brins de romarin. Quand l'huile est chaude, retire le romarin et ajoute les pommes de terre. Cuis à feu moyen, en retournant souvent et en ajustant le feu si besoin : elles doivent cuire doucement, pas frire. En cours de cuisson, ajoute 1 cuillère à café de sel. Continue jusqu'à ce que les pommes de terre soient très tendres et **commencent à se défaire**.
 
 3. **Ajoute l'oignon.** Émince 1 oignon moyen finement. Ajoute-le aux pommes de terre quand elles commencent à se défaire. Poursuis la cuisson, toujours à feu moyen, jusqu'à ce que l'oignon soit complètement fondu et bien mêlé aux pommes de terre.
 
-4. **Prépare les œufs.** Dans un petit saladier, bats 4 œufs avec du sel selon besoin et du poivre selon besoin.
+4. **Prépare les œufs.** Dans un petit saladier, bats 4 œufs avec ½ cuillère à café de sel et 8 tours de moulin de poivre.
 
 5. **Mélange pommes de terre et œufs.** Sors les pommes de terre et l'oignon de la poêle et laisse-les tiédir. Quand ils sont tièdes, ajoute-les aux œufs dans le grand saladier et mélange délicatement.
 
 6. **Cuis la tortilla – choisis la méthode.**
    - **Option A · À la poêle :** Remets la poêle de 24 cm max sur le feu et ajoute 3 à 4 cuillères à soupe d'huile. Verse le mélange et cuis à feu moyen-vif en couvrant. Quand le fond est bien cuit et doré et que la surface est encore molle, retourne la tortilla en t'aidant d'une assiette. Remets-la dans la poêle et termine la cuisson de l'autre côté, en ajustant le feu.
-   - **Option B · Au four :** Verse le mélange dans un plat allant au four légèrement huilé. Cuis au four statique à 180 °C pendant 25 à 30 minutes, jusqu'à ce qu'elle soit bien cuite et dorée. Si tu veux plus de couleur, passe-la les 5 dernières minutes sous le gril.
+   - **Option B · Au four :** Verse le mélange dans un plat allant au four huilé avec 1 cuillère à café d'huile. Cuis au four statique à 180 °C pendant 25 à 30 minutes, jusqu'à ce qu'elle soit bien cuite et dorée. Si tu veux plus de couleur, passe-la les 5 dernières minutes sous le gril.
 
 7. **Sers.** Sers la tortilla chaude ou froide.

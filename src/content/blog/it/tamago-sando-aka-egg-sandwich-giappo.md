@@ -24,7 +24,7 @@ Questa è la versione più europea, con ingredienti comuni.
 
 - 2 fette di pane shokupan (in alternativa: pane in cassetta bianco, più alto e soffice meglio è)
 - 2 uova grandi
-- Burro salato q.b. a temperatura ambiente
+- 8 g di burro salato a temperatura ambiente (circa 1 cucchiaino scarso per fetta; se non hai il burro salato, usa quello normale con 1 pizzico scarso di sale, preso con la punta delle dita)
 - 1 pizzico di sale
 - 1 pizzico di pepe nero o bianco
 - 1 pizzico di zucchero (fidati!)
@@ -38,7 +38,7 @@ Questa è la versione più europea, con ingredienti comuni.
 3. Schiacciale con una forchetta senza ridurle in crema: i pezzetti devono restare visibili.
 4. Aggiungi 1 pizzico di sale, 1 pizzico di pepe e **1 pizzico di zucchero** (fidati!). Mescola.
 5. Unisci 1 cucchiaino di latte e 1 cucchiaio e mezzo di maionese. Mescola fino a ottenere un composto lucido e cremoso.
-6. Spalma un velo sottilissimo di burro salato su un lato di ciascuna fetta di pane. Serve a sigillare il pane e non farlo inumidire.
+6. Spalma 1 cucchiaino scarso di burro salato, in un velo sottilissimo, su un lato di ciascuna fetta di pane. Se usi burro normale, mescolalo prima con il pizzico di sale. Serve a sigillare il pane e non farlo inumidire.
 7. Distribuisci il ripieno su una fetta in modo uniforme, arrivando quasi ai bordi. Chiudi con la seconda fetta.
 8. Metti il sandwich tra due piatti e premi leggermente per 5 minuti, per compattarlo.
 9. Elimina le croste con un coltello affilato e taglia a metà. Servi con un'insalatina!

@@ -30,4 +30,4 @@ translationKey: "pesto-di-rucola"
 
 1. **Frulla.** Metti nel mixer la rucola, le noci, il formaggio, l'aglio e il sale. Inizia a frullare versando l'olio **a filo** fino a ottenere una crema liscia e densa.
 
-2. **Regola la consistenza.** Se il pesto è troppo denso, aggiungi ancora un filo d'olio o un cucchiaio di acqua fredda.
+2. **Regola la consistenza.** Se il pesto è troppo denso, aggiungi ancora 1 cucchiaino scarso di olio o di acqua fredda.

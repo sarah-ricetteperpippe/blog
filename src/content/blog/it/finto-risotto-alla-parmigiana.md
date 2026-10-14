@@ -25,17 +25,18 @@ La teoria originale prevede che si faccia col parmigiano — io ho fatto con alt
 
 - 160g di riso (Carnaroli, Arborio o simili)
 - ½ cipolla bianca
-- Brodo vegetale caldo q.b.
+- 1 cucchiaio di olio extravergine d'oliva (o 1 noce piccola di burro vegetale)
+- 700 ml di [brodo vegetale](/it/blog/brodo-vegetale-base/) caldo (tienine qualche mestolo in più a portata di mano: con la mia ricetta ne vengono circa 1,5 L)
 - 40g di formaggio grattugiato
 - 25g di burro vegetale
-- Sale q.b.
-- (Opzionale) Pepe q.b.
+- 2 pizzichi di sale fino (eventualmente 1 in più dopo l'assaggio)
+- (Opzionale) 4 giri di macina di pepe (2 a piatto)
 
 ## Procedura
 
-1. **Base di cipolla:** trita finemente ½ cipolla bianca e falla appassire in casseruola con un filo d'olio (o una piccola noce di burro vegetale) a fuoco basso, finché diventa morbida e traslucida. Non deve colorire.
+1. **Base di cipolla:** trita finemente ½ cipolla bianca e falla appassire in casseruola con 1 cucchiaio di olio (o 1 noce piccola di burro vegetale) a fuoco basso, finché diventa morbida e traslucida. Non deve colorire.
 2. **Riso:** aggiungi il riso e mescola per 1–2 minuti a fiamma media.
 3. **Cottura:** copri il riso con brodo caldo e porta a bollore. Prosegui la cottura a fuoco medio, aggiungendo altro brodo man mano che viene assorbito e mescolando spesso.
-4. **Sale:** verso fine cottura assaggia e aggiusta di sale (considera che il formaggio è già sapido).
+4. **Sale:** verso fine cottura assaggia e aggiungi 2 pizzichi di sale, poi riassaggia (considera che il formaggio è già sapido).
 5. **Mantecatura:** quando il riso è cotto ma ancora umido (non brodoso!), spegni il fuoco. Aggiungi 25g di burro vegetale e 40g di formaggio grattugiato. Mescola energicamente finché diventa cremoso.
-6. **Finitura:** aggiungi una macinata di pepe se piace. Servi subito.
+6. **Finitura:** se ti piace, aggiungi 2 giri di macina di pepe a piatto. Servi subito.

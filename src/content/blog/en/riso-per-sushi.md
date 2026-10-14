@@ -16,7 +16,7 @@ translationKey: "riso-per-sushi"
 - **Servings:** 3
 - **Prep:** 40 minutes (soaking included)
 - **Cooking:** 30 minutes
-- **Tools:** pot with a lid, bowl for rinsing, wooden spatula or spoon (*shamoji*), hand fan or small electric fan, *sushi oke* (traditional wooden bowl, optional). No metal.
+- **Tools:** pot with a lid, bowl for rinsing, wooden spatula or spoon (*shamoji*), hand fan or small electric fan, (optional) *sushi oke* (traditional wooden bowl). No metal.
 - **Heads-up:** Japanese rice must be **rinsed thoroughly** and **soaked for at least 30 minutes** before cooking.
 
 ## Ingredients

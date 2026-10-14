@@ -75,7 +75,9 @@ Se non c'è idioma equivalente, **appiattisci** in linguaggio piano.
   - `F = C * 9/5 + 32`
 - **Non aggiungere mai una seconda parentesi** se ne esiste già una. Idempotenza assoluta.
 - Range come `400–500g (14.1–17.6 oz)` non `400g (14.1 oz)–500g (17.6 oz)`.
-- `q.b.` → EN `to taste`, FR `selon besoin`.
+- **Zero q.b.:** le ricette IT non hanno più "q.b.", quindi in EN e FR non usare mai "to taste", "as needed", "selon besoin" o "au goût" al posto di una quantità. Se nella sorgente IT trovi ancora un "q.b.", non tradurlo: segnalalo all'utente nel report finale. "Assaggia e regola" si traduce normalmente (EN "taste and adjust", FR "goûte et rectifie").
+- `giri di macina` → EN `turns of the pepper mill`, FR `tours de moulin`.
+- Link alla ricetta del brodo: `/it/blog/brodo-vegetale-base/` diventa `/en/blog/brodo-vegetale-base/` o `/fr/blog/brodo-vegetale-base/` (lo slug resta italiano).
 
 ### Quantità (FR)
 Solo verifica che i metrici siano integri. Niente conversioni.

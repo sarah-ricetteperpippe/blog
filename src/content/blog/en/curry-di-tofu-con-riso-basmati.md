@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/curry-tofu.webp"
 title: "Tofu curry with basmati rice"
-description: "A cosy tofu curry with basmati rice: fragrant, creamy and weeknight-friendly."
+description: "A cozy tofu curry with basmati rice: fragrant, creamy and weeknight-friendly."
 pubDate: "2025-11-10"
 category: "One-pot dishes"
 tags: ["4 stagioni", "Piatti dal mondo", "Piatti unici"]
@@ -24,7 +24,7 @@ translationKey: "curry-di-tofu-con-riso-basmati"
 **For the tofu curry:**
 - 1 pack of tofu (about 250g / 8.8 oz)
 - 2 tbsp coconut milk
-- soy milk to taste (enough to cover the tofu while marinating)
+- about 200ml (6.8 fl oz) soy milk (enough to cover the tofu while marinating)
 - 3 tbsp curry powder total (1.5 for the marinade + 1.5 for the aromatic base)
 - 1 tablespoon turmeric
 - ½ tablespoon brown sugar
@@ -32,10 +32,10 @@ translationKey: "curry-di-tofu-con-riso-basmati"
 - 1 white onion
 - 1 garlic clove
 - 2 bay leaves
-- extra virgin olive oil
-- salt
-- chilli (optional)
-- a few drops of lemon juice (optional)
+- 3 tbsp extra virgin olive oil (1 for the tofu, 2 for the aromatic base), plus 1 teaspoon per plate for drizzling, if you like
+- ¼ teaspoon fine salt (for the marinade; maybe 1 more pinch at the end, after tasting)
+- (Optional) ¼ teaspoon chili powder (or 1 dried chili, crumbled)
+- (Optional) ½ teaspoon lemon juice
 
 **For the rice:**
 - 2 espresso cups of basmati rice
@@ -47,19 +47,19 @@ translationKey: "curry-di-tofu-con-riso-basmati"
 ### Marinate the tofu (2–12 hours ahead)
 
 1. Cut the tofu into cubes.
-2. Put it in a bowl with 2 tbsp coconut milk, 1.5 tbsp curry powder, salt and a few drops of lemon (optional).
-3. Add soy milk until the tofu is covered.
+2. Put it in a bowl with 2 tbsp coconut milk, 1.5 tbsp curry powder and ¼ teaspoon of salt. If you're using lemon, add ½ teaspoon of juice.
+3. Add about 200ml (6.8 fl oz) of soy milk, enough to cover the tofu.
 4. Stir and leave to marinate for at least 2 hours (better still, in the fridge overnight). Keep the marinade liquid aside.
 
 ### Sear the tofu
 
-In a pan with a drizzle of oil, toast the tofu for a few minutes until lightly browned. Set aside.
+In a pan with 1 tablespoon of oil, toast the tofu for a few minutes until lightly browned. Set aside.
 
 ### Spiced aromatic base
 
 1. Slice the onion.
-2. Heat a drizzle of oil in a large pan.
-3. Add the onion, garlic clove halved, bay leaves, 1.5 tbsp curry powder, turmeric and chilli (if using).
+2. Heat 2 tablespoons of oil in a large pan.
+3. Add the onion, garlic clove halved, bay leaves, 1.5 tbsp curry powder and turmeric. If you're using chili, add it now.
 4. Cook until the onion is soft and golden.
 
 ### Cooking the curry
@@ -72,14 +72,14 @@ In a pan with a drizzle of oil, toast the tofu for a few minutes until lightly b
 ### Basmati rice (absorption method)
 
 1. Rinse the rice under running water until it runs almost clear.
-2. Put it in a pot with 3 cups of water and a pinch of salt. Cover with a lid.
+2. Put it in a pot with 3 espresso cups of water and a pinch of salt. Cover with a lid.
 3. Cook on low heat for 10–12 minutes — don't lift the lid.
 4. Turn off the heat and let it rest, covered, for 5 minutes. Fluff with a fork.
 
 ### Serve
 
-Spoon the rice onto the plate and ladle the tofu curry with its sauce on top. Add a drizzle of raw oil if you like.
+Spoon the rice onto the plate and ladle the tofu curry with its sauce on top. If you like, finish each plate with 1 teaspoon of olive oil.
 
 ## Variations
 
-For a creamier version, up the coconut milk. For a spicier one, add a teaspoon of red curry paste or some chopped fresh chilli.
+For a creamier version, up the coconut milk. For a spicier one, add a teaspoon of red curry paste or some chopped fresh chili.

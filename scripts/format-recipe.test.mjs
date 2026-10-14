@@ -99,3 +99,9 @@ test('validateBody controlla le didascalie: identiche se date, assenti se non da
   assert.deepEqual(validateBody(`${base}<Figure src="/images/ricette/c3.webp" alt="x" />`, noCaption), []);
   assert.ok(validateBody(`${base}<Figure src="/images/ricette/c3.webp" alt="x" caption="Inventata" />`, noCaption)[0].includes('non deve'));
 });
+
+test('validateBody rifiuta i q.b.', () => {
+  const base = '## Informazioni rapide\n## Ingredienti\n## Procedimento\n';
+  assert.ok(validateBody(`${base}- Sale q.b.`, []).some((e) => e.includes('q.b.')));
+  assert.deepEqual(validateBody(`${base}- ½ cucchiaino di sale fino`, []), []);
+});

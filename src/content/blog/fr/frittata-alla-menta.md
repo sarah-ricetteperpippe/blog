@@ -24,8 +24,8 @@ translationKey: "frittata-alla-menta"
 - 1 oignon blanc
 - 20 g de menthe fraîche
 - 4 cuillères à soupe d'huile d'olive extra vierge
-- sel, selon besoin
-- poivre, selon besoin
+- 1 cuillère à café rase de sel fin
+- 8 tours de moulin de poivre
 
 ## Préparation
 
@@ -35,7 +35,7 @@ translationKey: "frittata-alla-menta"
 
 3. Retire la poêle du feu et laisse l'oignon refroidir légèrement.
 
-4. Dans un bol, bats les 6 œufs avec du sel et du poivre (environ deux bonnes pincées).
+4. Dans un bol, bats les 6 œufs avec 1 cuillère à café rase de sel et 8 tours de moulin de poivre.
 
 5. À la cuillère, sors l'oignon de la poêle en l'égouttant au mieux de son huile et ajoute-le aux œufs avec la menthe. Mélange bien.
 

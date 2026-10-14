@@ -25,21 +25,21 @@ translationKey: "hummus-delicato"
 - 1 cucchiaino di cumino
 - 30 g di semi di sesamo
 - 6 ml di olio di semi o extravergine (per la tahina)
-- Olio extravergine d'oliva q.b.
-- Acqua q.b.
-- Sale q.b.
+- 3 cucchiai di olio extravergine d'oliva (2 nell'hummus, 1 per condire)
+- 30–50 ml di acqua fredda (da aggiungere poco alla volta)
+- ½ cucchiaino raso di sale fino (eventualmente 1 pizzico in più dopo l'assaggio)
 - Prezzemolo, paprika dolce e nocciole tritate per decorare
 
 ## Procedimento
 
 1. **Prepara la tahina.** Frulla 30 g di semi di sesamo _(per un gusto più intenso puoi tostarli prima di frullarli)_ con 6 ml di olio fino a ottenere una pasta cremosa e omogenea. Tienila da parte.
 
-2. **Prepara la base.** Nel bicchiere del frullatore unisci 250 g di ceci, il succo e la scorza di 1 limone (dosandoli gradualmente), 1 spicchio d'aglio, 1 cucchiaino di cumino, un pizzico di sale e 2 cucchiai di olio extravergine.
+2. **Prepara la base.** Nel bicchiere del frullatore unisci 250 g di ceci, il succo e la scorza di 1 limone (dosandoli gradualmente), 1 spicchio d'aglio, 1 cucchiaino di cumino, ½ cucchiaino raso di sale e 2 cucchiai di olio extravergine.
 
 3. **Frulla e regola la consistenza.** Inizia a frullare aggiungendo a filo un po' d'acqua (circa 30–50 ml) fino a ottenere una consistenza liscia e cremosa.
 
 4. **Unisci la tahina.** Aggiungi la tahina preparata in precedenza e frulla ancora per amalgamare bene il tutto. Assaggia e regola di sale o limone se necessario.
 
-5. **Servi.** Trasferisci l'hummus in una ciotola, crea una spirale in superficie con il dorso del cucchiaio e condisci con un filo d'olio, paprika dolce e nocciole tritate.
+5. **Servi.** Trasferisci l'hummus in una ciotola, crea una spirale in superficie con il dorso del cucchiaio e condisci con 1 cucchiaio di olio, paprika dolce e nocciole tritate.
 
 Puoi aggiungere un pizzico di peperoncino per una nota piccante.

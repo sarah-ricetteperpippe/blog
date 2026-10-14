@@ -29,7 +29,7 @@ translationKey: "torta-salame-di-cioccolato"
 **Ganache:**
 - 150 g cioccolato fondente (50%)
 - 100 g panna fresca liquida
-- (Opzionale) nocciole tostate q.b., tritate grossolanamente per decorare
+- (Opzionale) 3 cucchiai di nocciole tostate tritate grossolanamente (circa 30 g), per decorare
 
 ## Procedimento
 
@@ -52,5 +52,5 @@ translationKey: "torta-salame-di-cioccolato"
 
 1. Riprendi la torta dal frigorifero.
 2. Versa la ganache sopra e livella bene.
-3. (Opzionale) Decora il bordo con nocciole tostate tritate.
+3. (Opzionale) Decora il bordo con i 3 cucchiai di nocciole tritate.
 4. Rimetti in frigorifero per almeno 2 ore prima di servire.

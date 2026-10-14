@@ -27,7 +27,7 @@ translationKey: "torta-di-zucca-morbidissima"
 - 50 ml di latte (oppure latte di cocco nel cartone o latte di soia)
 - 270 g di farina 00
 - 1 bustina di lievito per dolci
-- Zucchero a velo q.b. per finire
+- 2 cucchiai di zucchero a velo, per finire
 - (Opzionale) 2–3 cucchiai di gocce di cioccolato infarinate
 
 ## Procedimento
@@ -38,4 +38,4 @@ translationKey: "torta-di-zucca-morbidissima"
 4. **Incorpora la zucca.** Aggiungi tutta la purea e mescola finché il composto è uniforme.
 5. **Unisci gli ingredienti secchi.** Aggiungi gradualmente la farina setacciata, mescolando con una spatola. Aggiungi il lievito e, se le usi, le gocce di cioccolato, poi mescola il minimo indispensabile.
 6. **Cuoci la torta.** Versa l'impasto nello stampo da 20–22 cm imburrato e infarinato. Cuoci in forno statico a 170°C per circa 45 minuti. Controlla con lo stecchino.
-7. **Raffredda e servi.** Lascia raffreddare completamente e spolverizza con zucchero a velo.
+7. **Raffredda e servi.** Lascia raffreddare completamente e spolverizza con 2 cucchiai di zucchero a velo, passandolo in un colino.

@@ -21,7 +21,7 @@ translationKey: "torta-salata-patate-e-scamorza-affumicata"
 - 1 rotolo di pasta sfoglia (meglio tonda)
 - 300–350 g di patate
 - 250 g scamorza affumicata (io uso [Affumicata Fermaggio](https://www.google.com/search?q=affumicata+fermaggio)), a dadini o fette
-- 3 bei cucchiai olio extravergine di oliva q.b.
+- 3 cucchiai colmi di olio extravergine di oliva (2 per le patate, 1 per la superficie)
 - 1/4 cucchiaino sale
 - 2 cucchiai formaggio grattugiato (io uso [Grattì](https://www.google.com/search?q=gratt%C3%AC) oppure [Grattugiato Vemondo](https://www.google.com/search?q=grattuggiato+Vemondo))
 - (Opzionale) 1 rametto di rosmarino fresco
@@ -32,13 +32,13 @@ translationKey: "torta-salata-patate-e-scamorza-affumicata"
 
 1. **Prepara la base.** Srotola 1 rotolo di pasta sfoglia e sistemala in una teglia rivestita con carta forno, lasciando la carta sotto.
 
-2. **Affetta le patate.** Pela 300–350 g di patate e affettale molto sottili (max 2 mm), meglio con una mandolina. Metti le fette in una ciotola, aggiungi una parte dei 3 bei cucchiai di olio extravergine di oliva e mescola con le mani per ungerle uniformemente, tenendo il resto dell'olio per la superficie.
+2. **Affetta le patate.** Pela 300–350 g di patate e affettale molto sottili (max 2 mm), meglio con una mandolina. Metti le fette in una ciotola, aggiungi 2 cucchiai colmi di olio e mescola con le mani per ungerle uniformemente.
 
 3. **Strato di scamorza.** Distribuisci sulla sfoglia i 250 g di scamorza affumicata a fette, coprendo tutta la superficie in modo uniforme.
 
 4. **Disponi le patate.** Sistema le fettine di patate in file leggermente sovrapposte, come si fa per la torta di mele: ogni fetta deve coprire a meta quella accanto, formando uno strato compatto e ordinato.
 
-5. **Condisci.** Distribuisci in superficie l'olio rimasto dei 3 bei cucchiai totali, aiutandoti con una spatola morbida. Sala in modo uniforme con 1/4 di cucchiaino di sale.
+5. **Condisci.** Distribuisci in superficie l'ultimo cucchiaio di olio, aiutandoti con una spatola morbida. Sala in modo uniforme con 1/4 di cucchiaino di sale.
 
 6. **Formaggio.** Spolvera con 2 cucchiai di formaggio grattugiato.
 

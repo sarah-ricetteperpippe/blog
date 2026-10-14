@@ -23,7 +23,7 @@ translationKey: "tamago-sando-aka-egg-sandwich-giappo"
 
 - 2 tranches de pain *shokupan* (à défaut : pain de mie blanc, plus il est épais et moelleux, mieux c'est)
 - 2 gros œufs
-- beurre salé selon besoin, à température ambiante
+- 8 g de beurre demi-sel à température ambiante (environ 1 cuillère à café pas tout à fait pleine par tranche ; si tu n'as pas de beurre demi-sel, prends du beurre doux avec 1 petite pincée de sel, prise du bout des doigts)
 - 1 pincée de sel
 - 1 pincée de poivre noir ou blanc
 - 1 pincée de sucre (fais-moi confiance !)
@@ -37,7 +37,7 @@ translationKey: "tamago-sando-aka-egg-sandwich-giappo"
 3. Écrase-les à la fourchette sans en faire une crème : les petits morceaux doivent rester visibles.
 4. Ajoute 1 pincée de sel, 1 pincée de poivre et **1 pincée de sucre** (fais-moi confiance !). Mélange.
 5. Incorpore 1 cuillère à café de lait et 1 cuillère et demie à soupe de mayonnaise. Mélange jusqu'à obtenir un appareil brillant et crémeux.
-6. Étale un voile très fin de beurre salé sur un côté de chaque tranche de pain. Ça sert à imperméabiliser le pain pour qu'il ne s'humidifie pas.
+6. Étale à peine 1 cuillère à café de beurre demi-sel, en voile très fin, sur un côté de chaque tranche de pain. Si tu utilises du beurre doux, mélange-le d'abord avec la pincée de sel. Ça sert à imperméabiliser le pain pour qu'il ne s'humidifie pas.
 7. Répartis la garniture uniformément sur une tranche, presque jusqu'aux bords. Referme avec la deuxième tranche.
 8. Place le sandwich entre deux assiettes et appuie légèrement pendant 5 minutes pour le compacter.
 9. Enlève les croûtes avec un couteau bien aiguisé et coupe en deux. Sers avec une petite salade !

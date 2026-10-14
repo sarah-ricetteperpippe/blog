@@ -15,7 +15,7 @@ translationKey: "pasta-e-lenticchie"
 
 - **Portions :** 2 personnes
 - **Préparation :** 1 h – 1 h 30 (si tu prépares le bouillon maison) / 30 minutes (avec du bouillon tout prêt)
-- **Outils :** grande casserole, sauteuse, couteau, planche à découper, louche, passoire (facultatif)
+- **Outils :** grande casserole, sauteuse, couteau, planche à découper, louche, (facultatif) passoire
 - **Attention :** si tu ne fais pas ton bouillon maison, utilise du bouillon de légumes en brique, pas en cube
 
 ## Ingrédients
@@ -27,20 +27,20 @@ translationKey: "pasta-e-lenticchie"
 - 1 oignon moyen + ½ oignon (1 entier pour le bouillon, ½ pour le sauté)
 - 10 tomates cerises (6 pour le bouillon, 4 pour le sauté)
 - 1 branche de céleri (pour le bouillon)
-- persil, selon besoin (facultatif)
+- (Facultatif) 1 bouquet de persil (pour le bouillon)
 - 2 feuilles de laurier
-- huile d'olive extra vierge, selon besoin
-- gros sel, selon besoin
+- 2 cuillères à soupe d'huile d'olive extra vierge (pour le sauté)
+- 1 cuillère à café rase de gros sel (la moitié si tu utilises du bouillon tout prêt, déjà salé)
 
 ## Préparation
 
 ### 1. Prépare le bouillon (s'il est maison)
 
-Mets dans une grande casserole 3,5 litres d'eau avec : 1 oignon entier, 3 carottes coupées en deux, 1 branche de céleri, 6 tomates cerises, du persil (si tu en mets) et 1 feuille de laurier. Porte à ébullition, puis baisse le feu et laisse frémir 30–50 minutes. Garde le bouillon au chaud. (Si tu utilises du bouillon tout prêt, il suffit de l'amener à température.)
+Mets dans une grande casserole 3 litres d'eau avec : 1 oignon entier, 3 carottes coupées en deux, 1 branche de céleri, 6 tomates cerises et 1 feuille de laurier. Si tu utilises du persil, ajoute-le maintenant. Porte à ébullition, puis baisse le feu et laisse frémir 30–50 minutes. Garde le bouillon au chaud. (Si tu utilises du bouillon tout prêt, il suffit de l'amener à température.)
 
 ### 2. Prépare le sauté
 
-Dans une sauteuse, fais chauffer un filet d'huile. Ajoute ½ oignon grossièrement émincé et 1 carotte en fines rondelles. Cuis à feu moyen jusqu'à ce qu'ils soient tendres, puis ajoute 4 tomates cerises coupées en quartiers et laisse les saveurs se développer.
+Dans une sauteuse, fais chauffer 2 cuillères à soupe d'huile. Ajoute ½ oignon grossièrement émincé et 1 carotte en fines rondelles. Cuis à feu moyen jusqu'à ce qu'ils soient tendres, puis ajoute 4 tomates cerises coupées en quartiers et laisse les saveurs se développer.
 
 ### 3. Cuis les lentilles
 
@@ -52,4 +52,4 @@ Laisse les lentilles cuire seules jusqu'à ce qu'il reste le temps de cuisson de
 
 ### 5. Ajuste et sers
 
-Sale en fin de cuisson avec du gros sel. Goûte et ajuste avec un peu de bouillon si nécessaire. Sers en version soupe, bien généreuse en bouillon, ou plus sèche en égouttant une partie du bouillon avec une passoire.
+Sale en fin de cuisson avec 1 cuillère à café rase de gros sel (½ si le bouillon est tout prêt). Goûte et ajuste avec un peu de bouillon si nécessaire. Sers en version soupe, bien généreuse en bouillon, ou plus sèche en égouttant une partie du bouillon avec une passoire.

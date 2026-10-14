@@ -26,21 +26,21 @@ translationKey: "hummus-delicato"
 - 1 cuillère à café de cumin
 - 30 g de graines de sésame
 - 6 ml d'huile de pépins ou d'huile d'olive extra vierge (pour la tahina)
-- Huile d'olive extra vierge, selon besoin
-- Eau, selon besoin
-- Sel, selon besoin
+- 3 cuillères à soupe d'huile d'olive extra vierge (2 dans le houmous, 1 pour servir)
+- 30–50 ml d'eau froide (à ajouter petit à petit)
+- ½ cuillère à café rase de sel fin (éventuellement 1 pincée de plus après avoir goûté)
 - Persil, paprika doux et noisettes concassées pour la déco
 
 ## Préparation
 
 1. **Prépare la tahina.** Mixe 30 g de graines de sésame _(pour un goût plus intense, tu peux les torréfier avant de les mixer)_ avec 6 ml d'huile jusqu'à obtenir une pâte crémeuse et homogène. Réserve.
 
-2. **Prépare la base.** Dans le bol du blender, réunis 250 g de pois chiches, le jus et le zeste d'1 citron (à doser au fur et à mesure), 1 gousse d'ail, 1 cuillère à café de cumin, une pincée de sel et 2 cuillères à soupe d'huile d'olive extra vierge.
+2. **Prépare la base.** Dans le bol du blender, réunis 250 g de pois chiches, le jus et le zeste d'1 citron (à doser au fur et à mesure), 1 gousse d'ail, 1 cuillère à café de cumin, ½ cuillère à café rase de sel et 2 cuillères à soupe d'huile d'olive extra vierge.
 
-3. **Mixe et ajuste la consistance.** Commence à mixer en versant un filet d'eau (environ 30–50 ml) jusqu'à obtenir une texture lisse et crémeuse.
+3. **Mixe et ajuste la consistance.** Commence à mixer en versant l'eau en filet (environ 30–50 ml) jusqu'à obtenir une texture lisse et crémeuse.
 
 4. **Incorpore la tahina.** Ajoute la tahina préparée plus tôt et mixe à nouveau pour bien amalgamer le tout. Goûte et ajuste le sel ou le citron si besoin.
 
-5. **Sers.** Transfère le houmous dans un bol, dessine une spirale en surface avec le dos d'une cuillère et termine avec un filet d'huile, du paprika doux et des noisettes concassées.
+5. **Sers.** Transfère le houmous dans un bol, dessine une spirale en surface avec le dos d'une cuillère et termine avec 1 cuillère à soupe d'huile, du paprika doux et des noisettes concassées.
 
 Tu peux ajouter une pincée de piment pour une note piquante.

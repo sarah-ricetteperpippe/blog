@@ -23,14 +23,14 @@ J'en ai goûté une version en Égypte et j'en refais depuis.
 ## Ingrédients
 
 - 500 g de champignons mélangés déjà nettoyés (pleurotes, *pioppini* (pholiotes du peuplier), champignons de Paris ou autres au choix)
-- 500 ml de bouillon de légumes chaud
+- 500 ml de [bouillon de légumes](/fr/blog/brodo-vegetale-base/) chaud
 - 100 ml de crème fraîche liquide
 - 20 g de beurre
 - 4 échalotes
-- thym frais (quelques brins)
-- huile d'olive extra vierge
-- sel selon besoin
-- poivre noir selon besoin
+- 2 brins de thym frais
+- 4 cuillères à café d'huile d'olive extra vierge (1 par assiette, crue)
+- ½ cuillère à café rase de sel fin (goûte et rectifie : moins si le bouillon est déjà salé)
+- 8 tours de moulin de poivre noir (4 pendant la cuisson, 1 par assiette)
 
 ## Préparation
 
@@ -42,10 +42,10 @@ J'en ai goûté une version en Égypte et j'en refais depuis.
 
 4. **Prépare la base du velouté.** Verse 500 ml de bouillon de légumes chaud dans la casserole avec le reste des champignons. Ajoute 100 ml de crème fraîche, couvre et laisse cuire à feu doux pendant environ **20 minutes**, en remuant de temps en temps.
 
-5. **Assaisonne.** Rectifie en sel et poivre et mélange bien pour amalgamer les saveurs.
+5. **Assaisonne.** Ajoute ½ cuillère à café rase de sel et 4 tours de moulin de poivre, puis goûte et rectifie. Mélange bien pour amalgamer les saveurs.
 
 6. **Mixe.** Au mixeur plongeant, obtiens une crème lisse et veloutée. Si besoin, ajoute un peu de bouillon pour ajuster la consistance.
 
-7. **Sers.** Verse le velouté dans les assiettes. Termine avec les champignons réservés, un tour de poivre frais, quelques feuilles de thym et un filet d'huile d'olive extra vierge à cru.
+7. **Sers.** Verse le velouté dans les assiettes. Termine avec les champignons réservés, 1 tour de moulin de poivre, quelques feuilles de thym et 1 cuillère à café d'huile d'olive extra vierge crue par assiette.
 
 Pour un goût plus intense, tu peux remplacer une partie du bouillon de légumes par du bouillon de champignons, ou ajouter quelques cèpes frais ou secs réhydratés.

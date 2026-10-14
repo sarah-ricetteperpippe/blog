@@ -16,7 +16,7 @@ translationKey: "ragu-bianco-di-tempeh"
 - **Servings:** 4
 - **Prep:** 10 minutes
 - **Cooking:** about 30 minutes
-- **Tools:** large frying pan, chopping board, knife, wooden spoon, food processor or grater
+- **Tools:** large frying pan, cutting board, knife, wooden spoon, food processor or grater
 
 ## Ingredients
 
@@ -27,21 +27,22 @@ translationKey: "ragu-bianco-di-tempeh"
 - 1 celery stalk
 - 1 sprig of rosemary
 - 50ml (1.7 fl oz) dry white wine
-- 1 teaspoon plain flour (only if you need to bind the sauce)
+- 1 teaspoon all-purpose flour (only if you need to bind the sauce)
 - 3–4 tablespoons of hot water
-- extra virgin olive oil
-- salt and pepper to taste
-- chopped fresh parsley to serve
+- 3 tablespoons extra virgin olive oil for the base, plus 1 teaspoon per plate to drizzle over at the end
+- ½ level teaspoon fine salt (plus 1 extra pinch after tasting, if needed)
+- 12 turns of the pepper mill (4 in the base, 2 for each of the 4 plates)
+- 2 tablespoons chopped fresh parsley (about 1 small bunch), to serve
 
 ## Method
 
-1. **Build the aromatic base.** Finely chop the onion, garlic, celery and rosemary. Heat a drizzle of oil in a frying pan and cook everything over medium heat until the onion turns translucent. Season with salt and pepper.
-2. **Prep the tempeh.** Chop the 150g (5.3 oz) of tempeh until it has a mince-like texture.
+1. **Build the aromatic base.** Finely chop the onion, garlic, celery and rosemary. Heat 3 tablespoons of oil in a frying pan and cook everything over medium heat until the onion turns translucent. Add ½ level teaspoon of salt and 4 turns of the pepper mill.
+2. **Prep the tempeh.** Chop the 150g (5.3 oz) of tempeh until it has a ground-meat-like texture.
 3. **Toast the tempeh.** Add it to the aromatic base and let it brown for 5–6 minutes, stirring often.
 4. **Deglaze.** Pour in the white wine and let the alcohol cook off over high heat for 1–2 minutes.
 5. **Adjust the consistency.** If the ragù is dry, add a few tablespoons of hot water. If you need to thicken it, dissolve 1 teaspoon of flour in a splash of water and stir it in.
 6. **Finish.** Turn off the heat, add the chopped parsley and mix well.
-7. **Serve.** Cook the pasta, drain it al dente and toss with the ragù. Finish with a drizzle of raw oil and a sprinkle of black pepper.
+7. **Serve.** Cook the pasta, drain it al dente and toss with the ragù. Finish each plate with 1 teaspoon of raw olive oil and 2 turns of the pepper mill.
 
 ## Variation
 

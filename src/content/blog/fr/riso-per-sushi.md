@@ -16,7 +16,7 @@ translationKey: "riso-per-sushi"
 - **Portions :** 3 personnes
 - **Préparation :** 40 minutes (trempage inclus)
 - **Cuisson :** 30 minutes
-- **Matériel :** casserole avec couvercle, saladier pour le lavage, spatule ou cuillère en bois (*shamoji*), éventail ou petit ventilateur, *sushi oke* (bol traditionnel en bois, facultatif). N'utilise pas de métal.
+- **Matériel :** casserole avec couvercle, saladier pour le lavage, spatule ou cuillère en bois (*shamoji*), éventail ou petit ventilateur, (facultatif) *sushi oke* (bol traditionnel en bois). N'utilise pas de métal.
 - **Note :** le riz japonais doit être **lavé soigneusement** et **mis à tremper au moins 30 minutes** avant la cuisson.
 
 ## Ingrédients

@@ -25,22 +25,22 @@ translationKey: "torta-salata-zucchine-e-patate"
 - 400 g de courgettes
 - 300 g de pommes de terre
 - 2 gousses d'ail
-- huile d'olive extra vierge selon besoin
-- sel fin selon besoin
+- 3 cuillères à soupe d'huile d'olive extra vierge
+- 1 cuillère à café rase de sel fin (goûte les légumes et rectifie : la mozzarella et le fromage sont déjà salés)
 - 200 g de mozzarella (ou un mix mozzarella + fontina ou autre fromage qui file)
 - 40 g de fromage râpé
-- poivre noir selon besoin
+- 6 tours de moulin de poivre noir
 
 ## Préparation
 
 1. Étale 1 rouleau de pâte feuilletée dans un moule de 26 cm et pique bien le fond à la fourchette. Réserve.
 2. Lave et coupe 400 g de courgettes en dés. Épluche et coupe 300 g de pommes de terre en cubes d'environ 1 à 1,5 cm.
-3. Dans une grande poêle, fais chauffer un filet d'huile avec 2 gousses d'ail. Ajoute les légumes et mélange.
-4. Verse à peine un demi-verre d'eau, couvre et laisse cuire à feu moyen : les légumes doivent étuver, pas se dessécher. Mélange de temps en temps et rajoute très peu d'eau si besoin.
-5. Quand les légumes sont tendres, retire le couvercle et laisse évaporer le liquide restant. Rectifie en sel.
+3. Dans une grande poêle, fais chauffer 3 cuillères à soupe d'huile avec 2 gousses d'ail. Ajoute les légumes et mélange.
+4. Verse 80 ml d'eau (à peine un demi-verre), couvre et laisse cuire à feu moyen : les légumes doivent étuver, pas se dessécher. Mélange de temps en temps et rajoute très peu d'eau si besoin.
+5. Quand les légumes sont tendres, retire le couvercle et laisse évaporer le liquide restant. Ajoute 1 cuillère à café rase de sel, goûte et rectifie.
 6. Répartis la moitié des légumes cuits sur le fond de pâte.
 7. Ajoute 200 g de mozzarella en dés, puis recouvre avec le reste des légumes.
-8. Termine avec 40 g de fromage râpé et un tour de poivre noir.
+8. Termine avec 40 g de fromage râpé et 6 tours de moulin de poivre noir.
 9. Cuis au four statique préchauffé à 180 °C pendant 35 minutes (ou à chaleur tournante à 170 °C).
 10. Sors la tarte et laisse-la reposer 5 minutes avant de couper.
 

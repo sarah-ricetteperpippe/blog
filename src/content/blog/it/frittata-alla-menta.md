@@ -23,8 +23,8 @@ translationKey: "frittata-alla-menta"
 - 1 cipolla bianca
 - 20 g di menta fresca
 - 4 cucchiai di olio extravergine di oliva
-- sale q.b.
-- pepe q.b.
+- 1 cucchiaino raso di sale fino
+- 8 giri di macina di pepe
 
 ## Procedimento
 
@@ -34,7 +34,7 @@ translationKey: "frittata-alla-menta"
 
 3. Togli la padella dal fuoco e lascia raffreddare leggermente la cipolla.
 
-4. In una ciotola sbatti le 6 uova con sale e pepe (circa due bei pizzicotti).
+4. In una ciotola sbatti le 6 uova con 1 cucchiaino raso di sale e 8 giri di macina di pepe.
 
 5. Con un cucchiaio estrai la cipolla dalla padella, scolandola alla meglio dall'olio, e aggiungila alle uova insieme alla menta. Mescola bene.
 
