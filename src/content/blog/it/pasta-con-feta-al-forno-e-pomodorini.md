@@ -22,15 +22,15 @@ translationKey: "pasta-con-feta-al-forno-e-pomodorini"
 - 150g di pasta (formato a piacere)
 - 100g di feta
 - 250g di pomodorini (datterini o ciliegini)
-- Basilico fresco tritato o origano q.b.
-- Olio extravergine di oliva q.b.
-- Sale q.b.
+- 8 foglie di basilico fresco tritate, oppure 1 cucchiaino di origano secco
+- 3 cucchiai di olio extravergine di oliva (1 cucchiaino per ungere la pirofila, 2 cucchiai per i pomodorini, il resto sulla feta)
+- ¼ di cucchiaino scarso di sale fino (la feta è già sapida)
 
 ## Procedura
 
 1. **Prepara i pomodorini:** lava i 250g di pomodorini. Se sono grandi, tagliali a metà nel senso della lunghezza.
-2. **Pirofila:** ungi il fondo con un filino d'olio. Mescola i pomodorini con 2 cucchiai di olio, un pizzico di sale e la spezia scelta, poi mettili nella pirofila dalla parte del taglio.
-3. **Feta:** sciacqua la feta dalla salamoia e adagiala al centro della pirofila, tra i pomodorini. Aggiungi un filo d'olio e ancora un pizzico di spezia.
+2. **Pirofila:** ungi il fondo con 1 cucchiaino di olio. Mescola i pomodorini con 2 cucchiai di olio, ¼ di cucchiaino scarso di sale e ¾ del basilico o dell'origano, poi mettili nella pirofila con la parte tagliata verso il basso.
+3. **Feta:** sciacqua la feta dalla salamoia e adagiala al centro della pirofila, tra i pomodorini. Aggiungi l'olio rimasto e il resto del basilico o dell'origano.
 4. **Cottura in forno:** inforna in forno statico a 200°C già caldo per **25–30 minuti**. Pomodorini e feta devono risultare morbidi e succosi, non secchi.
 5. **Cuoci la pasta:** nel frattempo cuoci la pasta in acqua salata e scolala al dente, tenendo da parte un po' di acqua di cottura.
 6. **Condimento:** sforna la pirofila e schiaccia feta e pomodorini con una forchetta fino a ottenere un sughetto cremoso.

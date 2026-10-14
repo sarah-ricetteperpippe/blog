@@ -29,12 +29,12 @@ translationKey: "brodo-vegetale-base"
 - 3–4 tomates cerises
 - 1 brin de persil
 - 2 litres d'eau
-- Huile d'olive extra vierge selon besoin
+- 2 cuillères à soupe d'huile d'olive extra vierge
 
 ## Préparation
 
 1. **Prépare les légumes :** lave et coupe tout en gros morceaux. Pas besoin de précision, il faut juste qu'ils libèrent leur saveur.
-2. **Fais revenir légèrement :** mets tous les légumes dans la casserole avec un filet d'huile. Fais-les sauter à feu moyen quelques minutes pour les parfumer. Ils ne doivent pas colorer.
+2. **Fais revenir légèrement :** mets tous les légumes dans la casserole avec 2 cuillères à soupe d'huile. Fais-les sauter à feu moyen quelques minutes pour les parfumer. Ils ne doivent pas colorer.
 3. **Ajoute l'eau :** verse 2 litres d'eau froide.
 4. **Porte à ébullition :** dès que ça bout, baisse à feu moyen pour éviter une ébullition trop violente.
 5. **Cuisson :** laisse cuire au moins 30 minutes, jusqu'à 1 heure pour un bouillon plus corsé. Si le niveau descend trop, rallonge dans la première moitié de la cuisson.

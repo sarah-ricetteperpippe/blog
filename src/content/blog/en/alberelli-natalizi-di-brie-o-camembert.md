@@ -24,9 +24,9 @@ translationKey: "alberelli-natalizi-di-brie-o-camembert"
 
 - 1 wheel of brie or camembert
 - 20g (0.7 oz) coarsely chopped nuts (walnuts, hazelnuts or almonds)
-- 1–2 tbsp honey or maple syrup _(optional, just to help the nuts stick)_
+- (Optional) 1–2 tbsp honey or maple syrup _(just to help the nuts stick)_
 - 12 salted sticks or mini pretzels
-- fresh rosemary to taste (for decoration)
+- 2 sprigs of fresh rosemary (snip as much as you like, to decorate the plate)
 
 ## Method
 
@@ -36,7 +36,7 @@ translationKey: "alberelli-natalizi-di-brie-o-camembert"
 
 3. Slice each wedge **into two thinner pieces**, going through the thickness. You'll end up with **12 thin, even triangles**.
 
-4. _(Optional)_ Lightly brush the surface of the triangles with **honey or maple syrup**.
+4. (Optional) Lightly brush the surface of the triangles with **honey or maple syrup**.
 
 5. Press the triangles into the **chopped nuts**, just enough to make them stick.
 

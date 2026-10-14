@@ -25,10 +25,10 @@ translationKey: "cotolette-di-funghi-cardoncelli"
 - 8 cucchiai farina
 - 6 cucchiai pangrattato
 - 4 cucchiai formaggio grattugiato
-- Sale 1 bel pizzicotto
+- ¼ di cucchiaino di sale fino (per l'uovo)
 - Pepe 2 giri di macina
-- Spezie a piacere (consigliato 3 foglioline di prezzemolo tritato fine)
-- Olio per frittura (almeno 1/4 di bottiglia)
+- 3 foglioline di prezzemolo tritate fini (o un'altra erba o spezia che ti piace)
+- 250 ml di olio per frittura (¼ di bottiglia da 1 litro: deve arrivare ad almeno 2 cm di altezza nella pentola)
 
 ## Procedimento
 
@@ -37,7 +37,7 @@ translationKey: "cotolette-di-funghi-cardoncelli"
 1. Preriscalda il forno a 180°.
 2. Pulisci i 400g di cardoncelli accarezzandoli con un panno o carta assorbente. Non lavarli sotto acqua o l'assorbiranno.
 3. Disponi i funghi su carta forno e cuoci a 180° per 10–12 minuti, girandoli a metà cottura.
-4. In un piatto sbatti 1 uovo con 3 cucchiai di latte (anche di soia o avena senza zuccheri aggiunti), 1 bel pizzicotto di sale e pepe (2 giri di macina).
+4. In un piatto sbatti 1 uovo con 3 cucchiai di latte (anche di soia o avena senza zuccheri aggiunti), ¼ di cucchiaino di sale e pepe (2 giri di macina).
 5. In un secondo piatto metti 8 cucchiai di farina.
 6. In un terzo piatto unisci 6 cucchiai di pangrattato, 4 cucchiai di formaggio grattugiato e le spezie scelte (ti consiglio 3 foglioline di prezzemolo tritate fini).
 7. Sforna i funghi, tamponali bene con carta assorbente e lasciali intiepidire.
@@ -52,7 +52,7 @@ translationKey: "cotolette-di-funghi-cardoncelli"
 
 ### Frittura
 
-1. Versa olio abbondante in una pentola alta (almeno 1/4 di bottiglia) e scaldalo.
+1. Versa i 250 ml di olio in una pentola alta e scaldalo.
 2. Verifica la temperatura inserendo un piccolo grumo di pangrattato: se fa bollicine immediate, l'olio è pronto.
 3. Friggi poche fette per volta. Quando sono ben dorate, rimuovile con la schiumarola.
 4. Adagiale su carta assorbente e lascia intiepidire qualche minuto.

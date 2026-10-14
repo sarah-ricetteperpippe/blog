@@ -24,9 +24,9 @@ translationKey: "alberelli-natalizi-di-brie-o-camembert"
 
 - 1 meule de brie ou de camembert
 - 20 g de fruits secs grossièrement hachés (noix, noisettes ou amandes)
-- 1–2 cuillères à soupe de miel ou de sirop d'érable _(facultatif, juste pour faire adhérer la garniture)_
+- (Facultatif) 1–2 cuillères à soupe de miel ou de sirop d'érable _(juste pour faire adhérer la garniture)_
 - 12 bâtonnets salés ou mini bretzels
-- romarin frais, selon besoin (pour la déco)
+- 2 brins de romarin frais (à couper comme tu veux, pour décorer l'assiette)
 
 ## Préparation
 
@@ -36,7 +36,7 @@ translationKey: "alberelli-natalizi-di-brie-o-camembert"
 
 3. Coupe ensuite chaque quartier **en deux tranches plus fines**, dans le sens de l'épaisseur. Tu obtiens **12 triangles** fins et réguliers.
 
-4. _(Facultatif)_ Badigeonne légèrement la surface des triangles de **miel ou de sirop d'érable**.
+4. (Facultatif) Badigeonne légèrement la surface des triangles de **miel ou de sirop d'érable**.
 
 5. Passe les triangles dans les **fruits secs hachés**, en appuyant juste ce qu'il faut pour les faire adhérer.
 

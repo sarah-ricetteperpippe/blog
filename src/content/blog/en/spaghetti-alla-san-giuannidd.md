@@ -26,16 +26,16 @@ translationKey: "spaghetti-alla-san-giuannidd"
 - 200g (7.1 oz) cherry tomatoes, halved
 - 1 garlic clove
 - 3 tablespoons extra virgin olive oil
-- 2 heaped teaspoons of capers, desalted
+- 2 heaping teaspoons of capers, desalted
 - 2 anchovy fillets in oil
-- dried chilli to taste
-- fine salt to taste
+- 1 small dried chili, crumbled (2 if you like a bit of heat; or ¼ teaspoon chili flakes)
+- scant ¼ teaspoon fine salt, only if needed after tasting (the anchovies and capers are already salty)
 - fresh basil, 2 leaves to serve
 
 ## Method
 
 1. Get a pot of water on for the pasta.
-2. In a large frying pan, heat 3 tablespoons of oil with 1 garlic clove (cut in half, green core removed) and chilli over low heat, until the garlic is just golden.
+2. In a large frying pan, heat 3 tablespoons of oil with 1 garlic clove (cut in half, green core removed) and the crumbled chili over low heat, until the garlic is just golden.
 3. Take the pan off the heat. Add the 2 anchovy fillets to the hot — but no longer sizzling — oil and stir until they melt.
 4. Put the pan back over medium-low heat. Halve the cherry tomatoes and lay them cut-side down in the oil. Cover with a lid and cook for 5 minutes, until soft.
 5. Once the tomatoes are completely yielding, crush them in the pan with a fork and keep cooking over medium-low heat for 10 minutes to bring the sauce together. Rinse the salt off the capers and add them in.
@@ -43,5 +43,5 @@ translationKey: "spaghetti-alla-san-giuannidd"
    - if it's already moist and well-bound, don't add any liquid
    - if it's drying out too much, loosen it with half a ladleful of pasta cooking water
 7. Cook the spaghetti and drain it one minute before the end of the cooking time.
-8. Transfer the pasta to the pan and toss for 1–2 minutes, loosening with cooking water if needed.
-9. Serve straight away, piping hot. Finish with 2 basil leaves torn by hand.
+8. Transfer the pasta to the pan and toss for 1–2 minutes, loosening with cooking water if needed. Taste and add the salt if it needs it.
+9. Serve right away, piping hot. Finish with 2 basil leaves torn by hand.

@@ -32,7 +32,7 @@ Le *torta salame di cioccolato* est un classique italien : ici on en fait la ver
 **Ganache :**
 - 150 g de chocolat noir (50 %)
 - 100 g de crème fraîche liquide
-- (facultatif) noisettes torréfiées selon besoin, grossièrement concassées pour décorer
+- (Facultatif) 3 cuillères à soupe de noisettes torréfiées grossièrement concassées (environ 30 g), pour décorer
 
 ## Préparation
 
@@ -55,5 +55,5 @@ Le *torta salame di cioccolato* est un classique italien : ici on en fait la ver
 
 1. Sors le gâteau du frigo.
 2. Verse la ganache par-dessus et lisse bien.
-3. (Facultatif) Décore le bord avec les noisettes torréfiées concassées.
+3. (Facultatif) Décore le bord avec les 3 cuillères à soupe de noisettes concassées.
 4. Remets au frigo au moins 2 heures avant de servir.

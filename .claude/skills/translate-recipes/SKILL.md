@@ -96,7 +96,9 @@ Lascia il valore metrico e **aggiungi tra parentesi** il corrispettivo imperiale
 - Sotto 1000g → usa oz. Da 1000g/1kg in su → usa lb (`1500g` → `1.5kg (3.3 lb)`; riscrivi anche in kg).
 - Una decimale per oz/fl oz/cups/lb. Intero per °F.
 - Range come `400–500g` → `400–500g (14.1–17.6 oz)`.
-- `q.b.` → EN `to taste`, FR `selon besoin`.
+- **Zero q.b.:** le ricette IT non hanno più "q.b.", quindi in EN e FR non usare mai "to taste", "as needed", "selon besoin" o "au goût" al posto di una quantità. Se nella sorgente IT trovi ancora un "q.b.", non tradurlo: segnalalo all'utente nel report finale. "Assaggia e regola" si traduce normalmente (EN "taste and adjust", FR "goûte et rectifie").
+- `giri di macina` → EN `turns of the pepper mill`, FR `tours de moulin`.
+- Link alla ricetta del brodo: `/it/blog/brodo-vegetale-base/` diventa `/en/blog/brodo-vegetale-base/` o `/fr/blog/brodo-vegetale-base/` (lo slug resta italiano).
 - `un cucchiaio` (15 ml), `un cucchiaino` (5 ml), `una noce`, `un pizzico`: **non convertire**, traduci la formula (`1 tablespoon`, `1 cuillère à soupe`).
 
 **Idempotenza:** se un numero ha già una parentesi imperiale, non aggiungerne un'altra.

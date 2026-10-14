@@ -23,7 +23,7 @@ translationKey: "curry-di-tofu-con-riso-basmati"
 **Per il tofu al curry:**
 - 1 confezione di tofu (circa 250 g)
 - 2 cucchiai di latte di cocco
-- latte di soia q.b. (per coprire il tofu in marinatura)
+- 200 ml circa di latte di soia (per coprire il tofu in marinatura)
 - 3 cucchiai di curry in totale (1,5 per la marinatura + 1,5 per il soffritto)
 - 1 cucchiaio di curcuma
 - ½ cucchiaio di zucchero di canna
@@ -31,10 +31,10 @@ translationKey: "curry-di-tofu-con-riso-basmati"
 - 1 cipolla bianca
 - 1 spicchio d'aglio
 - 2 foglie di alloro
-- olio extravergine d'oliva
-- sale
-- (Opzionale) peperoncino
-- (Opzionale) qualche goccia di succo di limone
+- 3 cucchiai di olio extravergine d'oliva (1 per il tofu, 2 per il soffritto), più 1 cucchiaino a piatto a crudo se ti piace
+- ¼ di cucchiaino di sale fino (per la marinatura; eventualmente 1 pizzico in più alla fine, dopo l'assaggio)
+- (Opzionale) ¼ di cucchiaino di peperoncino in polvere (o 1 peperoncino secco sbriciolato)
+- (Opzionale) ½ cucchiaino di succo di limone
 
 **Per il riso:**
 - 2 tazzine da caffè di riso basmati
@@ -46,18 +46,18 @@ translationKey: "curry-di-tofu-con-riso-basmati"
 ### Marinatura del tofu (2–12 ore prima)
 
 1. Taglia il tofu a cubetti.
-2. Mettilo in una ciotola con 2 cucchiai di latte di cocco, 1,5 cucchiai di curry e sale. Se usi il limone, aggiungi qualche goccia.
-3. Aggiungi latte di soia fino a coprire il tofu.
+2. Mettilo in una ciotola con 2 cucchiai di latte di cocco, 1,5 cucchiai di curry e ¼ di cucchiaino di sale. Se usi il limone, aggiungi ½ cucchiaino di succo.
+3. Aggiungi circa 200 ml di latte di soia, fino a coprire il tofu.
 4. Mescola e lascia marinare almeno 2 ore (meglio in frigorifero tutta la notte). Tieni da parte il liquido di marinatura.
 
 ### Prepara il tofu
 
-Con un filo d'olio in padella, tosta il tofu per qualche minuto per rosolarlo. Tienilo da parte.
+Con 1 cucchiaio di olio in padella, tosta il tofu per qualche minuto per rosolarlo. Tienilo da parte.
 
 ### Soffritto speziato
 
 1. Affetta la cipolla.
-2. Scalda un filo d'olio in una padella capiente.
+2. Scalda 2 cucchiai di olio in una padella capiente.
 3. Aggiungi cipolla, aglio tagliato a metà, alloro, 1,5 cucchiai di curry e curcuma. Se usi il peperoncino, aggiungilo ora.
 4. Cuoci finché la cipolla è morbida e dorata.
 
@@ -77,7 +77,7 @@ Con un filo d'olio in padella, tosta il tofu per qualche minuto per rosolarlo. T
 
 ### Servi
 
-Metti il riso nel piatto e versa sopra il tofu al curry con la sua salsa. Se vuoi, aggiungi un filo d'olio a crudo.
+Metti il riso nel piatto e versa sopra il tofu al curry con la sua salsa. Se vuoi, aggiungi 1 cucchiaino di olio a crudo per piatto.
 
 ## Varianti
 

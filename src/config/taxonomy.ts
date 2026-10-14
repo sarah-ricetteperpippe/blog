@@ -34,7 +34,7 @@ const BLOG_CATEGORY_LABELS: Record<SiteLang, Record<BlogCategory, string>> = {
     'Zuppe e vellutate': 'Zuppe e vellutate',
   },
   en: {
-    Antipasti: 'Appetisers',
+    Antipasti: 'Appetizers',
     Colazione: 'Breakfast',
     Contorni: 'Side dishes',
     Dolci: 'Desserts',

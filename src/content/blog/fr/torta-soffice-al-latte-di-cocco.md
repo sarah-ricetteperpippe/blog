@@ -27,8 +27,8 @@ translationKey: "torta-soffice-al-latte-di-cocco"
 - 80 g d'huile végétale neutre
 - 1 sachet de levure chimique (16 g)
 - 1 pincée de sel
-- (facultatif) 120 g de pépites de chocolat
-- (facultatif) vanille ou zeste de citron
+- (Facultatif) 120 g de pépites de chocolat
+- (Facultatif) vanille ou zeste de citron
 
 ## Préparation
 

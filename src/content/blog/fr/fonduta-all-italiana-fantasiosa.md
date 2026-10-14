@@ -31,7 +31,7 @@ Tu peux la faire avec ou sans appareil à fondue. J'ai trouvé le mien à petit 
 - 250 ml de vin blanc sec (ou 250 ml de bouillon de légumes chaud)
 - 2 cuillères à café rases de fécule de maïs
 - 1 gousse d'ail
-- Poivre noir, selon besoin
+- 8 tours de moulin de poivre noir
 
 ### Pour servir
 - Croûtons (1 pain de campagne ou baguette de 500 g)
@@ -51,7 +51,7 @@ Coupe la fontina et le provolone, puis mixe-les jusqu'à obtenir un hachis gross
 
 Frotte l'intérieur de la casserole avec la gousse d'ail. Verse 250 ml de vin (ou de bouillon chaud) et chauffe à feu moyen-doux jusqu'à ce que ce soit chaud mais pas bouillant. Baisse le feu et ajoute le fromage petit à petit, en remuant en permanence en forme de "8". N'arrête jamais de remuer.
 
-La fondue est prête quand elle est lisse, homogène et crémeuse. Termine avec un tour de moulin à poivre.
+La fondue est prête quand elle est lisse, homogène et crémeuse. Termine avec 8 tours de moulin de poivre.
 
 **Signaux d'erreur :** grosses bulles → trop chaud ; séparation des graisses → température excessive ; filaments caoutchouteux → feu trop fort.
 

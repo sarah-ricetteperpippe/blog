@@ -71,6 +71,21 @@ Il titolo `## Ingredienti` resta fuori, sopra il componente.
 
 ⸻
 
+ZERO Q.B.
+
+Nel blog non esistono "q.b.": ogni ingrediente ha un numero e un'unità di casa. Vale anche per "a piacere" usato come quantità, "un filo d'olio", "una macinata", "qualche foglia". Se il testo ne contiene, sostituiscili con una stima secondo queste regole, e usa le stesse quantità sia negli ingredienti sia nel procedimento.
+
+* Sale fino: in cucchiaini (¼, ½, ¾, 1, con raso/scarso/abbondante), non in pizzichi. Riferimento: circa 1 cucchiaino ogni 500 g di verdure o ingrediente principale; per le uova circa ½ cucchiaino ogni 4 uova. Se ci sono ingredienti già sapidi (feta, formaggi stagionati, acciughe, capperi, brodo pronto) scendi a ¼ scarso e dillo tra parentesi. Nel procedimento il sale va sempre seguito da "assaggia e regola".
+* Il pizzico si usa solo nei dolci, per il ritocco dopo l'assaggio e per salare il burro.
+* Pepe: 2 giri di macina a porzione. Se si divide tra cottura e piatto, scrivi la divisione, es. "12 giri di macina (4 nel soffritto, 2 per ciascuno dei 4 piatti)".
+* Olio: in cucchiai, con la divisione tra i passaggi. A crudo: 1 cucchiaino a piatto. "A filo" resta solo come modo di versare ("1 cucchiaio di olio versato a filo").
+* Erbe fresche: foglie o rametti contati.
+* Liquidi da regolare (acqua, brodo, latte): quantità di partenza in ml più il criterio ("200 ml, fino a coprire il tofu"; "1 cucchiaio alla volta se si asciuga").
+* Decorazioni: in cucchiai, con i grammi tra parentesi se utili ("3 cucchiai di nocciole tritate (circa 30 g)").
+* Brodo vegetale: collegalo alla ricetta del blog, `[brodo vegetale](/it/blog/brodo-vegetale-base/)` (resa circa 1,5 L).
+
+⸻
+
 PROCEDIMENTO
 
 Lista numerata. Ogni passo ha un titolo breve in grassetto che termina con il punto, poi due spazi e a capo, e il testo indentato di 4 spazi su una nuova riga. Una riga vuota tra un passo e l'altro:

@@ -1,7 +1,7 @@
 ---
 heroImage: "/images/ricette/vellutata-funghi.webp"
 title: "Mushroom velouté"
-description: "A silky mushroom soup with deep flavour and very little fuss."
+description: "A silky mushroom soup with deep flavor and very little fuss."
 pubDate: "2025-11-10"
 category: "Soups and veloutés"
 tags: ["Funghi", "Zuppe e vellutate", "Autunno/inverno"]
@@ -23,14 +23,14 @@ I first had a version of this in Egypt and have been making it ever since.
 ## Ingredients
 
 - 500g (17.6 oz) mixed mushrooms, already cleaned (oyster, pioppini, button or whatever you like)
-- 500ml (16.9 fl oz) hot vegetable stock
+- 500ml (16.9 fl oz) hot [vegetable broth](/en/blog/brodo-vegetale-base/)
 - 100ml (3.4 fl oz) fresh cream
 - 20g (0.7 oz) butter
 - 4 shallots
-- Fresh thyme (a few sprigs)
-- Extra virgin olive oil
-- Salt to taste
-- Black pepper to taste
+- 2 sprigs of fresh thyme
+- 4 teaspoons extra virgin olive oil (1 per bowl, drizzled raw)
+- ½ level teaspoon fine salt (taste and adjust: use less if your broth is already salty)
+- 8 turns of the pepper mill (4 while cooking, 1 per bowl)
 
 ## Method
 
@@ -40,12 +40,12 @@ I first had a version of this in Egypt and have been making it ever since.
 
 3. **Brown the mushrooms.** Add the sliced mushrooms and brown them well for a few minutes, stirring. Once they're golden, take out 4 tablespoons of mushrooms and set them aside for finishing.
 
-4. **Build the velouté base.** Pour 500ml (16.9 fl oz) of hot vegetable stock into the pan with the remaining mushrooms. Add 100ml (3.4 fl oz) of fresh cream, cover with the lid and cook over low heat for about **20 minutes**, stirring occasionally.
+4. **Build the velouté base.** Pour 500ml (16.9 fl oz) of hot vegetable broth into the pan with the remaining mushrooms. Add 100ml (3.4 fl oz) of fresh cream, cover with the lid and cook over low heat for about **20 minutes**, stirring occasionally.
 
-5. **Season.** Adjust the salt and pepper and stir well to bring the flavours together.
+5. **Season.** Add ½ level teaspoon of salt and 4 turns of the pepper mill, then taste and adjust. Stir well to bring the flavors together.
 
-6. **Blend.** Use an immersion blender to get a smooth, velvety texture. If you need to, add a splash more stock to loosen it.
+6. **Blend.** Use an immersion blender to get a smooth, velvety texture. If you need to, add a splash more broth to loosen it.
 
-7. **Serve.** Ladle the velouté into bowls. Top with the reserved mushrooms, a grind of fresh pepper, a few thyme leaves, and a drizzle of raw extra virgin olive oil.
+7. **Serve.** Ladle the velouté into bowls. Top with the reserved mushrooms, 1 turn of the pepper mill, a few thyme leaves and 1 teaspoon of raw extra virgin olive oil per bowl.
 
-For a more intense flavour, swap part of the vegetable stock for mushroom stock, or add a few fresh porcini or rehydrated dried porcini.
+For a more intense flavor, swap part of the vegetable broth for mushroom broth, or add a few fresh porcini or rehydrated dried porcini.

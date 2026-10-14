@@ -26,7 +26,7 @@ translationKey: "risotto-al-brie-e-noci"
 - 75 g brie (o mezza forma piccola), senza crosta, a pezzetti
 - 6 noci intere (circa 3 a testa), sgusciate e tritate grossolanamente
 - 20 g margarina
-- (Opzionale) Pepe nero
+- (Opzionale) 4 giri di macina di pepe nero (2 a piatto)
 
 ## Procedimento
 
@@ -44,4 +44,4 @@ translationKey: "risotto-al-brie-e-noci"
 
 7. **Noci.** Unisci le noci tritate, mescola e lascia riposare 1 minuto a casseruola coperta.
 
-8. **(Opzionale) Pepe.** Se serve, aggiungi una leggera macinata di pepe a fuoco spento o direttamente nel piatto.
+8. **(Opzionale) Pepe.** Se ti piace, aggiungi 2 giri di macina di pepe a piatto, a fuoco spento o direttamente nel piatto.

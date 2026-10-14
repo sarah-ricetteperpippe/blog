@@ -24,8 +24,8 @@ translationKey: "pizzette-di-melanzane-al-forno"
 - **Melanzane** (meglio se lunghe) circa 600g (oppure 1 melanzana media = 1 persona / 1 melanzana grande = 2 persone)
 - **Polpa di pomodoro** (o sugo pronto al basilico) 200g
 - **Mozzarella** (io uso [Veggarella](https://ioveg.com/prodotto/veggarella/) oppure [Mezzarè](https://fermaggio.shop/products/mezzare-bio-150g-fermaggio%C2%AE)): 125g
-- **Basilico fresco** 2 o 3 foglioline (o 2 manciate di origano secco)
-- **Olio extravergine di oliva** a filo
+- **Basilico fresco** 2 o 3 foglioline (o 1 cucchiaino di origano secco)
+- **Olio extravergine di oliva** 3 cucchiai (1 per il pomodoro, 1 per le melanzane, 1 sulle pizzette)
 - **Sale** 1 pizzico
 - **Pepe** 2 giri di macina
 
@@ -41,15 +41,15 @@ translationKey: "pizzette-di-melanzane-al-forno"
 
 1. **Prepara le melanzane:** preriscalda il forno statico a **190°C**. Lava circa **600g di melanzane**, elimina le estremità e tagliale a rondelle spesse almeno **1 cm**. Evita fette più sottili: in forno si seccano.
 
-2. **Prepara il pomodoro:** condisci **200g di polpa di pomodoro** con un filo d'olio, metà del pizzico di sale e **1 giro di macina di pepe**. Se usi il sugo pronto al basilico, assaggialo prima di aggiungere il sale: potrebbe essere già saporito.
+2. **Prepara il pomodoro:** condisci **200g di polpa di pomodoro** con 1 cucchiaio di olio versato a filo, metà del pizzico di sale e **1 giro di macina di pepe**. Se usi il sugo pronto al basilico, assaggialo prima di aggiungere il sale: potrebbe essere già saporito.
 
-3. **Prepara formaggio e aromi:** scola bene **125g di mozzarella** e tagliala a pezzetti. Lava e spezzetta **2 o 3 foglioline di basilico fresco**, oppure tieni da parte **2 manciate di origano secco**.
+3. **Prepara formaggio e aromi:** scola bene **125g di mozzarella** e tagliala a pezzetti. Lava e spezzetta **2 o 3 foglioline di basilico fresco**, oppure tieni da parte **1 cucchiaino di origano secco**.
 
 ### Cottura
 
-1. **Cuoci le melanzane:** disponi le rondelle su una teglia con carta forno, senza sovrapporle. Spennellale con un filo d'olio e distribuisci il sale rimasto e **1 giro di macina di pepe**. Inforna nel forno già caldo a **190°C per 15 minuti**.
+1. **Cuoci le melanzane:** disponi le rondelle su una teglia con carta forno, senza sovrapporle. Spennellale con 1 cucchiaio di olio e distribuisci il sale rimasto e **1 giro di macina di pepe**. Inforna nel forno già caldo a **190°C per 15 minuti**.
 
-2. **Assembla le pizzette:** sforna le melanzane e distribuisci tutto il pomodoro sulle rondelle, lasciando i bordi puliti. Dividi la mozzarella tra le fette, mettendola al centro. Se hai scelto l'origano, distribuiscilo sulle pizzette, poi completa con un filo d'olio.
+2. **Assembla le pizzette:** sforna le melanzane e distribuisci tutto il pomodoro sulle rondelle, lasciando i bordi puliti. Dividi la mozzarella tra le fette, mettendola al centro. Se hai scelto l'origano, distribuiscilo sulle pizzette, poi completa con 1 cucchiaio di olio versato a filo.
 
 3. **Fai fondere il formaggio:** rimetti la teglia nel forno statico a **190°C per altri 7 minuti**, finché il formaggio è ben fuso.
 

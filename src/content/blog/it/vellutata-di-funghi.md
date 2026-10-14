@@ -20,14 +20,14 @@ translationKey: "vellutata-di-funghi"
 ## Ingredienti
 
 - 500 g di funghi misti già puliti (pleurotus, pioppini, champignon o altri a piacere)
-- 500 ml di brodo vegetale caldo
+- 500 ml di [brodo vegetale](/it/blog/brodo-vegetale-base/) caldo
 - 100 ml di panna fresca
 - 20 g di burro
 - 4 scalogni
-- Timo fresco (qualche rametto)
-- Olio extravergine d'oliva
-- Sale q.b.
-- Pepe nero q.b.
+- 2 rametti di timo fresco
+- 4 cucchiaini di olio extravergine d'oliva (1 a piatto, a crudo)
+- ½ cucchiaino raso di sale fino (assaggia e regola: meno se il brodo è già salato)
+- 8 giri di macina di pepe nero (4 in cottura, 1 a piatto)
 
 ## Procedimento
 
@@ -39,10 +39,10 @@ translationKey: "vellutata-di-funghi"
 
 4. **Crea la base della vellutata.** Versa 500 ml di brodo vegetale caldo nella casseruola con i funghi rimasti. Aggiungi 100 ml di panna fresca, copri con il coperchio e lascia cuocere a fiamma dolce per circa **20 minuti**, mescolando di tanto in tanto.
 
-5. **Insaporisci.** Regola di sale e pepe e mescola bene per amalgamare i sapori.
+5. **Insaporisci.** Aggiungi ½ cucchiaino raso di sale e 4 giri di macina di pepe, poi assaggia e regola. Mescola bene per amalgamare i sapori.
 
 6. **Frulla.** Usa un mixer a immersione per ottenere una crema liscia e vellutata. Se necessario, aggiungi un po' di brodo per regolare la consistenza.
 
-7. **Servi.** Versa la vellutata nei piatti. Completa con i funghi tenuti da parte, una macinata di pepe fresco, qualche foglia di timo, e un filo di olio extravergine d'oliva a crudo.
+7. **Servi.** Versa la vellutata nei piatti. Completa con i funghi tenuti da parte, 1 giro di macina di pepe, qualche foglia di timo e 1 cucchiaino di olio extravergine d'oliva a crudo per piatto.
 
 Per un sapore più intenso puoi sostituire parte del brodo vegetale con brodo di funghi, oppure aggiungere qualche fungo porcino fresco o secco reidratato.

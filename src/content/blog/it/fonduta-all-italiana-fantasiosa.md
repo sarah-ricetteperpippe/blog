@@ -30,7 +30,7 @@ Puoi farla con o senza macchina da fonduta... io l'ho trovata a basso prezzo su 
 - 250ml vino bianco secco (o 250ml brodo vegetale caldo)
 - 2 cucchiaini rasi amido di mais
 - 1 spicchio d'aglio
-- Pepe nero q.b.
+- 8 giri di macina di pepe nero
 
 ### Per servire
 - Crostini (1 filone di pane rustico o baguette da 500g)
@@ -50,7 +50,7 @@ Taglia fontina e provolone e frullali fino a ottenere un trito grossolano ma fin
 
 Strofina l'interno della pentola con lo spicchio d'aglio. Versa 250ml di vino (o brodo caldo) e scalda a fuoco medio-basso finché è caldo ma non in ebollizione. Abbassa la fiamma e aggiungi il formaggio poco alla volta mescolando continuamente a "8". Non smettere mai di mescolare.
 
-La fonduta è pronta quando è liscia, omogenea e cremosa. Aggiungi una macinata di pepe alla fine.
+La fonduta è pronta quando è liscia, omogenea e cremosa. Aggiungi 8 giri di macina di pepe alla fine.
 
 **Segnali di errore:** bolle grandi → troppo caldo; separazione del grasso → temperatura eccessiva; filamenti gommosi → fuoco troppo alto.
 

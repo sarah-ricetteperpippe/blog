@@ -28,12 +28,12 @@ translationKey: "brodo-vegetale-base"
 - 3–4 pomodorini
 - 1 ciuffo di prezzemolo
 - 2 litri di acqua
-- Olio extravergine di oliva q.b.
+- 2 cucchiai di olio extravergine di oliva
 
 ## Procedura
 
 1. **Prepara le verdure:** lava e taglia tutto a pezzi grossolani. Non serve precisione, devono solo rilasciare sapore.
-2. **Rosola leggermente:** metti tutte le verdure nella pentola con un filo d'olio. Falle saltare a fuoco medio qualche minuto per insaporire. Non devono colorire.
+2. **Rosola leggermente:** metti tutte le verdure nella pentola con 2 cucchiai di olio. Falle saltare a fuoco medio qualche minuto per insaporire. Non devono colorire.
 3. **Aggiungi l'acqua:** versa 2 litri di acqua fredda.
 4. **Porta a bollore:** appena bolle, abbassa la fiamma a medio per evitare un'ebollizione troppo violenta.
 5. **Cottura:** lascia cuocere almeno 30 minuti, fino a 1 ora per un brodo più intenso. Se il livello scende troppo, allungalo nella prima metà del tempo di cottura.

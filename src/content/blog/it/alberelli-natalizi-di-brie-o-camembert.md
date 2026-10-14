@@ -25,7 +25,7 @@ translationKey: "alberelli-natalizi-di-brie-o-camembert"
 - 20 g frutta secca tritata grossolanamente (noci, nocciole o mandorle)
 - (Opzionale) 1–2 cucchiai miele o sciroppo d'acero _(solo per far aderire la granella)_
 - 12 bastoncini salati o mini pretzel
-- rosmarino fresco q.b. (per decorare)
+- 2 rametti di rosmarino fresco (da tagliare a piacimento, per decorare il piatto)
 
 ## Procedimento
 

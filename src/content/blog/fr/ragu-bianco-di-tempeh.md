@@ -29,19 +29,20 @@ translationKey: "ragu-bianco-di-tempeh"
 - 50 ml de vin blanc sec
 - 1 cuillère à café de farine type 00 (uniquement si tu as besoin de lier)
 - 3 à 4 cuillères à soupe d'eau chaude
-- huile d'olive extra vierge
-- sel et poivre selon besoin
-- persil frais haché pour servir
+- 3 cuillères à soupe d'huile d'olive extra vierge pour la base aromatique, plus 1 cuillère à café par assiette, crue
+- ½ cuillère à café rase de sel fin (éventuellement 1 pincée de plus après avoir goûté)
+- 12 tours de moulin de poivre noir (4 dans la base aromatique, 2 pour chacune des 4 assiettes)
+- 2 cuillères à soupe de persil frais haché (environ 1 petit bouquet), pour servir
 
 ## Préparation
 
-1. **Prépare la base aromatique.** Hache finement l'oignon, l'ail, le céleri et le romarin. Fais chauffer un filet d'huile dans la poêle et laisse revenir à feu moyen jusqu'à ce que l'oignon devienne translucide. Sale et poivre.
+1. **Prépare la base aromatique.** Hache finement l'oignon, l'ail, le céleri et le romarin. Fais chauffer 3 cuillères à soupe d'huile dans la poêle et laisse revenir à feu moyen jusqu'à ce que l'oignon devienne translucide. Ajoute ½ cuillère à café rase de sel et 4 tours de moulin de poivre.
 2. **Prépare le tempeh.** Hache 150 g de tempeh jusqu'à obtenir une consistance proche d'une viande hachée.
 3. **Fais dorer le tempeh.** Ajoute-le à la base aromatique et laisse-le dorer 5 à 6 minutes en mélangeant souvent.
 4. **Déglace.** Verse le vin blanc et laisse l'alcool s'évaporer à feu vif pendant 1 à 2 minutes.
 5. **Ajuste la consistance.** Si le ragù est trop sec, ajoute quelques cuillères d'eau chaude. Si tu as besoin de lier la sauce, délaie 1 cuillère à café de farine dans un peu d'eau et incorpore-la au mélange.
 6. **Termine.** Éteins le feu, ajoute le persil haché et mélange bien.
-7. **Sers.** Cuis les pâtes, égoutte-les al dente et nappe-les de ragù. Sers avec un filet d'huile crue et un tour de poivre noir.
+7. **Sers.** Cuis les pâtes, égoutte-les al dente et nappe-les de ragù. Sers avec 1 cuillère à café d'huile crue et 2 tours de moulin de poivre par assiette.
 
 ## Variante
 

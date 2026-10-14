@@ -77,6 +77,8 @@ translationKey: "${slug}"
 
 {/* Metti in grassetto solo il nome dell'ingrediente: sarà verde come le etichette delle informazioni rapide. Lascia quantità, alternative e note fuori dal grassetto. Se un ingrediente è facoltativo, dillo prima, come eccezione: - (Opzionale) **Nome ingrediente:** quantità. Nel procedimento, la condizione va all'inizio della frase: "Se usi il lemongrass, aggiungine ¼ di cucchiaino", non "aggiungi ¼ di cucchiaino di lemongrass se lo usi". */}
 
+{/* Zero q.b.: ogni ingrediente ha un numero. Sale in cucchiaini (circa 1 ogni 500 g di verdure, poi assaggia e regola), pepe 2 giri di macina a porzione, olio in cucchiai (a crudo 1 cucchiaino a piatto), erbe in foglie o rametti. Regole complete in scripts/prompts/format-recipe.md. */}
+
 {/* Ingredienti e foto in due colonne 50/50. Cambia src e alt per scegliere la foto verticale; il titolo Ingredienti resta sopra il blocco. */}
 <IngredientsPhoto src="/images/ricette/${slug}.webp" alt={${JSON.stringify(title)}}>
 

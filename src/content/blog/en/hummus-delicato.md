@@ -26,21 +26,21 @@ translationKey: "hummus-delicato"
 - 1 teaspoon cumin
 - 30g (1.1 oz) sesame seeds
 - 6ml (0.2 fl oz) seed oil or extra virgin olive oil (for the tahini)
-- extra virgin olive oil to taste
-- water to taste
-- salt to taste
+- 3 tablespoons extra virgin olive oil (2 in the hummus, 1 for drizzling on top)
+- 30–50ml (1.0–1.7 fl oz) cold water (add it a little at a time)
+- ½ level teaspoon fine salt (maybe 1 more pinch after tasting)
 - parsley, sweet paprika and chopped hazelnuts to garnish
 
 ## Method
 
-1. **Make the tahini.** Blend 30g (1.1 oz) of sesame seeds _(for a stronger flavour, toast them first)_ with 6ml (0.2 fl oz) of oil until you get a smooth, creamy paste. Set aside.
+1. **Make the tahini.** Blend 30g (1.1 oz) of sesame seeds _(for a stronger flavor, toast them first)_ with 6ml (0.2 fl oz) of oil until you get a smooth, creamy paste. Set aside.
 
-2. **Prep the base.** In the blender jug, combine 250g (8.8 oz) of chickpeas, the juice and zest of 1 lemon (add them gradually), 1 garlic clove, 1 teaspoon of cumin, a pinch of salt and 2 tablespoons of extra virgin olive oil.
+2. **Prep the base.** In the blender jar, combine 250g (8.8 oz) of chickpeas, the juice and zest of 1 lemon (add them gradually), 1 garlic clove, 1 teaspoon of cumin, ½ level teaspoon of salt and 2 tablespoons of extra virgin olive oil.
 
 3. **Blend and adjust the texture.** Start blending, trickling in a little water (about 30–50ml / 1.0–1.7 fl oz) until you get a smooth, creamy consistency.
 
 4. **Add the tahini.** Add the tahini you made earlier and blend again to bring it all together. Taste and tweak salt or lemon if needed.
 
-5. **Serve.** Tip the hummus into a bowl, swoosh a spiral on top with the back of a spoon and finish with a drizzle of oil, sweet paprika and chopped hazelnuts.
+5. **Serve.** Tip the hummus into a bowl, swoosh a spiral on top with the back of a spoon and finish with 1 tablespoon of oil, sweet paprika and chopped hazelnuts.
 
-Add a pinch of chilli for a spicy kick.
+Add a pinch of chili for a spicy kick.

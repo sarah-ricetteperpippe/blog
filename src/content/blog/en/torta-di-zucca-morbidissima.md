@@ -16,20 +16,20 @@ translationKey: "torta-di-zucca-morbidissima"
 - **Servings:** 6
 - **Prep:** 15 minutes
 - **Baking:** 45 minutes
-- **Tools:** 20–22 cm (7.9–8.7 in) cake tin, electric whisks, bowls, spatula, baking paper, static oven, air fryer
+- **Tools:** 20–22 cm (7.9–8.7 in) cake pan, electric mixer, bowls, spatula, parchment paper, static oven, air fryer
 - **Heads-up:** the pumpkin needs to be really dry (if it stays wet, the cake will turn out flat and underdone in the middle)
 
 ## Ingredients
 
 - 300g (10.6 oz) pumpkin, already peeled and deseeded
 - 3 eggs
-- 150g (5.3 oz) caster sugar
+- 150g (5.3 oz) superfine sugar
 - 50ml (1.7 fl oz) sunflower oil
 - 50ml (1.7 fl oz) milk (or carton coconut milk, or soy milk)
-- 270g (9.5 oz) plain flour
-- 1 sachet of baking powder
-- Icing sugar to finish
-- (optional) 2–3 tablespoons of chocolate chips tossed in flour
+- 270g (9.5 oz) all-purpose flour
+- 1 packet of baking powder
+- 2 tablespoons powdered sugar, to finish
+- (Optional) 2–3 tablespoons of chocolate chips tossed in flour
 
 ## Method
 
@@ -37,6 +37,6 @@ translationKey: "torta-di-zucca-morbidissima"
 2. **Whip the eggs and sugar.** In a bowl, beat the eggs with the sugar until pale and fluffy.
 3. **Add the wet ingredients.** Pour in the sunflower oil and the milk. Keep mixing to combine.
 4. **Stir in the pumpkin.** Add all the purée and mix until smooth.
-5. **Add the dry ingredients.** Gradually add the sifted flour, folding with a spatula. Add the baking powder (and the chocolate chips, if using) and mix as little as possible.
-6. **Bake.** Pour the batter into the buttered and floured 20–22 cm (7.9–8.7 in) tin. Bake in a static oven at 170°C (338°F) for about 45 minutes. Check with a toothpick.
-7. **Cool and serve.** Let it cool completely and dust with icing sugar.
+5. **Add the dry ingredients.** Gradually add the sifted flour, folding with a spatula. Add the baking powder and, if you're using them, the chocolate chips, then mix as little as possible.
+6. **Bake.** Pour the batter into the buttered and floured 20–22 cm (7.9–8.7 in) pan. Bake in a static oven at 170°C (338°F) for about 45 minutes. Check with a toothpick.
+7. **Cool and serve.** Let it cool completely and dust with 2 tablespoons of powdered sugar through a small sieve.

@@ -26,10 +26,10 @@ translationKey: "cotolette-di-funghi-cardoncelli"
 - 8 cuillères à soupe de farine
 - 6 cuillères à soupe de chapelure
 - 4 cuillères à soupe de fromage râpé
-- 1 généreuse pincée de sel
+- ¼ de cuillère à café de sel fin (pour l'œuf)
 - Poivre (2 tours de moulin)
-- Herbes ou épices au choix (je recommande 3 petites feuilles de persil finement hachées)
-- Huile de friture (au moins un quart de bouteille)
+- 3 petites feuilles de persil finement hachées (ou une autre herbe ou épice que tu aimes)
+- 250 ml d'huile de friture (¼ d'une bouteille de 1 litre : elle doit monter à au moins 2 cm dans la casserole)
 
 ## Préparation
 
@@ -38,7 +38,7 @@ translationKey: "cotolette-di-funghi-cardoncelli"
 1. Préchauffe le four à 180 °C.
 2. Nettoie les 400 g de pleurotes en les essuyant délicatement avec un torchon ou du papier absorbant. Ne les passe pas sous l'eau : ils l'absorberaient.
 3. Dispose les champignons sur du papier cuisson et enfourne à 180 °C pendant 10–12 minutes, en les retournant à mi-cuisson.
-4. Dans une assiette creuse, bats 1 œuf avec 3 cuillères à soupe de lait (le lait de soja ou d'avoine sans sucres ajoutés convient aussi). Ajoute 1 généreuse pincée de sel et donne 2 tours de moulin à poivre.
+4. Dans une assiette creuse, bats 1 œuf avec 3 cuillères à soupe de lait (le lait de soja ou d'avoine sans sucres ajoutés convient aussi). Ajoute ¼ de cuillère à café de sel et donne 2 tours de moulin à poivre.
 5. Dans une deuxième assiette creuse, verse 8 cuillères à soupe de farine.
 6. Dans une troisième assiette creuse, mélange 6 cuillères à soupe de chapelure, 4 cuillères à soupe de fromage râpé et les herbes ou épices de ton choix. Je te conseille 3 petites feuilles de persil finement hachées.
 7. Sors les champignons du four, tamponne-les bien avec du papier absorbant et laisse-les tiédir.
@@ -53,7 +53,7 @@ translationKey: "cotolette-di-funghi-cardoncelli"
 
 ### Friture
 
-1. Verse une bonne quantité d'huile de friture dans une casserole à bords hauts (au moins un quart de bouteille) et fais-la chauffer.
+1. Verse les 250 ml d'huile dans une casserole à bords hauts et fais-la chauffer.
 2. Vérifie la température en y déposant un peu de chapelure : si de petites bulles se forment aussitôt, l'huile est prête.
 3. Fais frire quelques tranches à la fois. Quand elles sont bien dorées, retire-les à l'aide de l'écumoire.
 4. Dépose-les sur du papier absorbant et laisse-les tiédir quelques minutes.

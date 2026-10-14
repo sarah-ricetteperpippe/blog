@@ -26,17 +26,18 @@ En théorie il se fait au parmesan, mais un autre fromage à râper fonctionne t
 
 - 160 g de riz (Carnaroli, Arborio ou similaire)
 - ½ oignon blanc
-- Bouillon de légumes chaud, selon besoin
+- 1 cuillère à soupe d'huile d'olive extra vierge (ou 1 petite noix de beurre végétal)
+- 700 ml de [bouillon de légumes](/fr/blog/brodo-vegetale-base/) chaud (garde quelques louches de plus à portée de main : avec ma recette, tu en obtiens environ 1,5 L)
 - 40 g de fromage râpé
 - 25 g de beurre végétal
-- Sel, selon besoin
-- Poivre, selon besoin (facultatif)
+- 2 pincées de sel fin (éventuellement 1 de plus après avoir goûté)
+- (Facultatif) 4 tours de moulin de poivre (2 par assiette)
 
 ## Préparation
 
-1. **Base d'oignon :** hache finement ½ oignon blanc et fais-le revenir dans une casserole avec un filet d'huile (ou une petite noix de beurre végétal) à feu doux, jusqu'à ce qu'il soit tendre et translucide. Il ne doit pas colorer.
+1. **Base d'oignon :** hache finement ½ oignon blanc et fais-le revenir dans une casserole avec 1 cuillère à soupe d'huile (ou 1 petite noix de beurre végétal) à feu doux, jusqu'à ce qu'il soit tendre et translucide. Il ne doit pas colorer.
 2. **Riz :** ajoute le riz et remue 1–2 minutes à feu moyen.
 3. **Cuisson :** couvre le riz de bouillon chaud et porte à ébullition. Poursuis la cuisson à feu moyen, en ajoutant du bouillon au fur et à mesure qu'il est absorbé et en remuant souvent.
-4. **Sel :** en fin de cuisson, goûte et ajuste le sel (le fromage est déjà salé, garde ça en tête).
+4. **Sel :** en fin de cuisson, goûte et ajoute 2 pincées de sel, puis goûte à nouveau (le fromage est déjà salé, garde ça en tête).
 5. **Mantecatura :** quand le riz est cuit mais encore humide (pas en bouillon !), éteins le feu. Ajoute 25 g de beurre végétal et 40 g de fromage râpé. Remue énergiquement jusqu'à ce que ça devienne crémeux.
-6. **Finition :** un tour de moulin à poivre si tu aimes. Sers immédiatement.
+6. **Finition :** si tu aimes, ajoute 2 tours de moulin de poivre par assiette. Sers immédiatement.

@@ -1,5 +1,5 @@
 ---
-title: "Basic vegetable broth (from fresh veg)"
+title: "Basic vegetable broth (from fresh veggies)"
 description: "A simple homemade vegetable broth you can build from whatever is already in the fridge."
 pubDate: "2025-01-26"
 heroImage: "/images/ricette/brodo-vegetale.webp"
@@ -18,7 +18,7 @@ translationKey: "brodo-vegetale-base"
 - **Cooking:** 30 minutes – 1 hour
 - **Tools:** large pot with lid, knife, chopping board, spoon
 
-> Quantities and types of veg here are just a guide: use the broth to clear out the fridge. Just try to always keep carrots, potatoes, celery and onion as the base.
+> Quantities and types of veggies here are just a guide: use the broth to clear out the fridge. Just try to always keep carrots, potatoes, celery and onion as the base.
 
 ## Ingredients
 
@@ -28,15 +28,15 @@ translationKey: "brodo-vegetale-base"
 - 2 celery stalks, halved
 - 3–4 cherry tomatoes
 - 1 sprig of parsley
-- 2 litres (8.5 cups) of water
-- extra virgin olive oil to taste
+- 2 liters (8.5 cups) of water
+- 2 tablespoons extra virgin olive oil
 
 ## Method
 
-1. **Prep the veg:** wash and chop everything into rough pieces. No need to be precise — they just need to release flavour.
-2. **Sweat them off:** put all the veg in the pot with a glug of oil. Sauté over medium heat for a few minutes to bring out the flavour. They shouldn't colour.
-3. **Add water:** pour in 2 litres (8.5 cups) of cold water.
-4. **Bring to the boil:** as soon as it boils, drop the heat to medium so it doesn't bubble too aggressively.
+1. **Prep the veggies:** wash and chop everything into rough pieces. No need to be precise — they just need to release flavor.
+2. **Sweat them off:** put all the veggies in the pot with 2 tablespoons of oil. Sauté over medium heat for a few minutes to bring out the flavor. They shouldn't color.
+3. **Add water:** pour in 2 liters (8.5 cups) of cold water.
+4. **Bring to a boil:** as soon as it boils, drop the heat to medium so it doesn't bubble too aggressively.
 5. **Simmer:** cook for at least 30 minutes, up to 1 hour for a deeper broth. If the level drops too much, top it up during the first half of the cooking time.
 6. **Strain:** turn off the heat and strain the broth. You should end up with about 1.5L (6.3 cups).
 

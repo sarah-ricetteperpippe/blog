@@ -96,6 +96,7 @@ export function validateBody(body, photos, keep = []) {
     if (!body.includes(heading)) errors.push(`Manca la sezione "${heading}".`);
   }
   if (/\{\/\*/.test(body)) errors.push('Rimuovi i commenti del template {/* … */}.');
+  if (/\bq\.\s?b\./i.test(body)) errors.push('Sostituisci ogni "q.b." con una quantità (vedi ZERO Q.B.).');
   if (/\*\*Nome ingrediente:\*\*/.test(body)) errors.push('Rimuovi la riga di esempio "Nome ingrediente".');
   for (const photo of photos) {
     if (photo.position === 'hero' || photo.position === 'skip') continue;

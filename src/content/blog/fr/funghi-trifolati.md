@@ -31,7 +31,7 @@ translationKey: "funghi-trifolati"
 
 ## Préparation
 
-1. **Nettoie les 400 g de champignons.** Enlève les résidus de terre en frottant délicatement la surface avec un torchon humide. Détache les pieds, retire si tu veux la pellicule du chapeau et les lamelles. Coupe les champignons en fines lamelles de 5 mm et mets-les dans un bol.
+1. **Nettoie les 400 g de champignons.** Enlève les résidus de terre en frottant délicatement la surface avec un torchon humide. Détache les pieds et, si tu veux, retire la pellicule du chapeau et les lamelles. Coupe les champignons en fines lamelles de 5 mm et mets-les dans un bol.
 
 2. **Prépare le revenu.** Fais chauffer dans une poêle 1 cuillère à soupe rase d'huile d'olive avec une **gousse d'ail entière**.
 

@@ -31,7 +31,7 @@ translationKey: "torta-di-albumi-e-cacao"
 - 20 g de cacao amer en poudre
 - 175 g de yaourt nature
 - 50 g d'huile végétale neutre
-- (facultatif) une poignée de pépites de chocolat ou d'éclats de noisette
+- (Facultatif) une poignée de pépites de chocolat ou d'éclats de noisette
 - sucre glace pour décorer
 
 ## Préparation
@@ -39,7 +39,7 @@ translationKey: "torta-di-albumi-e-cacao"
 1. **Monte les blancs.** Mets les 2 blancs dans un grand saladier avec une pincée de sel et monte-les au fouet électrique jusqu'à neige ferme.
 2. **Prépare les ingrédients secs.** Dans un autre saladier, tamise la farine avec la levure. Ajoute le sucre et le cacao, puis mélange bien.
 3. **Incorpore les liquides.** Verse l'huile et le yaourt. Mélange à la spatule jusqu'à obtenir un appareil lisse et crémeux.
-4. **Incorpore les blancs.** Ajoute les blancs montés petit à petit, en mélangeant de bas en haut pour garder une pâte aérée. Ajoute les pépites de chocolat si tu en utilises.
+4. **Incorpore les blancs.** Ajoute les blancs montés petit à petit, en mélangeant de bas en haut pour garder une pâte aérée. Si tu utilises les pépites de chocolat, ajoute-les maintenant.
 5. **Enfourne.** Verse la pâte dans un moule de 18 cm tapissé de papier cuisson. Cuis au four statique préchauffé à 180 °C pendant 40 minutes. Fais le test du cure-dent : il doit ressortir sec.
 6. **Refroidis et sers.** Laisse refroidir le gâteau dans son moule, puis transfère-le sur un plat.
 

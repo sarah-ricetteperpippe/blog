@@ -28,19 +28,20 @@ translationKey: "ragu-bianco-di-tempeh"
 - 50 ml di vino bianco secco
 - 1 cucchiaino di farina 00 (solo se serve per legare)
 - 3–4 cucchiai di acqua calda
-- olio extravergine d'oliva
-- sale e pepe q.b.
-- prezzemolo fresco tritato per servire
+- 3 cucchiai di olio extravergine d'oliva per il soffritto, più 1 cucchiaino a piatto a crudo
+- ½ cucchiaino raso di sale fino (eventualmente 1 pizzico in più dopo l'assaggio)
+- 12 giri di macina di pepe nero (4 nel soffritto, 2 per ciascuno dei 4 piatti)
+- 2 cucchiai di prezzemolo fresco tritato (circa 1 ciuffo), per servire
 
 ## Procedimento
 
-1. **Prepara il soffritto.** Trita finemente cipolla, aglio, sedano e rosmarino. Scalda un filo d'olio in padella e fai soffriggere a fuoco medio finché la cipolla diventa traslucida. Aggiungi sale e pepe.
+1. **Prepara il soffritto.** Trita finemente cipolla, aglio, sedano e rosmarino. Scalda 3 cucchiai di olio in padella e fai soffriggere a fuoco medio finché la cipolla diventa traslucida. Aggiungi ½ cucchiaino raso di sale e 4 giri di macina di pepe.
 2. **Prepara il tempeh.** Trita 150 g di tempeh fino a ottenere una consistenza simile a quella di un macinato.
 3. **Tosta il tempeh.** Aggiungilo al soffritto e fallo rosolare per 5–6 minuti, mescolando spesso.
 4. **Sfumatura.** Versa il vino bianco e lascia evaporare l'alcol a fuoco vivo per 1–2 minuti.
 5. **Regola la consistenza.** Se il ragù risulta asciutto, aggiungi qualche cucchiaio di acqua calda. Se serve legare la salsa, sciogli 1 cucchiaino di farina in poca acqua e uniscila al composto.
 6. **Completa.** Spegni il fuoco, aggiungi il prezzemolo tritato e mescola bene.
-7. **Servi.** Cuoci la pasta, scolala al dente e condiscila con il ragù. Servi con un filo d'olio crudo e una spolverata di pepe nero.
+7. **Servi.** Cuoci la pasta, scolala al dente e condiscila con il ragù. Servi con 1 cucchiaino di olio a crudo e 2 giri di macina di pepe per piatto.
 
 ## Variante
 

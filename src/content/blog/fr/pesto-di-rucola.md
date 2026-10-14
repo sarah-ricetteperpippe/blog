@@ -31,4 +31,4 @@ translationKey: "pesto-di-rucola"
 
 1. **Mixe.** Mets dans le mixeur la roquette, les noix, le fromage, l'ail et le sel. Commence à mixer en versant l'huile **en filet** jusqu'à obtenir une crème lisse et dense.
 
-2. **Ajuste la consistance.** Si le pesto est trop épais, ajoute encore un filet d'huile ou une cuillère à soupe d'eau froide.
+2. **Ajuste la consistance.** Si le pesto est trop épais, ajoute encore à peine 1 cuillère à café d'huile ou d'eau froide.

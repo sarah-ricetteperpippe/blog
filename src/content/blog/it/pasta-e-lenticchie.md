@@ -26,20 +26,20 @@ translationKey: "pasta-e-lenticchie"
 - 1 cipolla media + ½ cipolla (1 intera per il brodo, ½ per il soffritto)
 - 10 pomodorini (6 per il brodo, 4 per il soffritto)
 - 1 gambo di sedano (per il brodo)
-- (Opzionale) prezzemolo q.b.
+- (Opzionale) 1 ciuffo di prezzemolo (per il brodo)
 - 2 foglie di alloro
-- olio extravergine di oliva q.b.
-- sale grosso q.b.
+- 2 cucchiai di olio extravergine di oliva (per il soffritto)
+- 1 cucchiaino raso di sale grosso (la metà se usi brodo pronto, che è già salato)
 
 ## Procedimento
 
 ### 1. Prepara il brodo (se fatto in casa)
 
-Metti in pentola 3,5 litri di acqua con: 1 cipolla intera, 3 carote tagliate a metà, 1 gambo di sedano, 6 pomodorini e 1 foglia di alloro. Se usi il prezzemolo, aggiungilo ora. Porta a bollore, poi abbassa la fiamma e lascia sobbollire 30–50 minuti. Tieni il brodo caldo. (Se usi brodo pronto, portalo semplicemente a temperatura.)
+Metti in pentola 3 litri di acqua con: 1 cipolla intera, 3 carote tagliate a metà, 1 gambo di sedano, 6 pomodorini e 1 foglia di alloro. Se usi il prezzemolo, aggiungilo ora. Porta a bollore, poi abbassa la fiamma e lascia sobbollire 30–50 minuti. Tieni il brodo caldo. (Se usi brodo pronto, portalo semplicemente a temperatura.)
 
 ### 2. Prepara il soffritto
 
-In una casseruola scalda olio q.b. Aggiungi ½ cipolla tagliata grossolanamente e 1 carota a rondelle sottili. Cuoci a fuoco medio finché sono morbide, poi unisci 4 pomodorini tagliati in quarti e lascia insaporire.
+In una casseruola scalda 2 cucchiai di olio. Aggiungi ½ cipolla tagliata grossolanamente e 1 carota a rondelle sottili. Cuoci a fuoco medio finché sono morbide, poi unisci 4 pomodorini tagliati in quarti e lascia insaporire.
 
 ### 3. Cuoci le lenticchie
 
@@ -51,4 +51,4 @@ Lascia cuocere le lenticchie da sole finché manca il tempo di cottura della pas
 
 ### 5. Regola e servi
 
-Sala verso la fine con sale grosso. Assaggia e regola di brodo se serve. Servi in versione zuppa, ben brodosa, oppure più asciutta scolando parte del brodo con un colino.
+Sala verso la fine con 1 cucchiaino raso di sale grosso (½ se il brodo è pronto). Assaggia e regola di brodo se serve. Servi in versione zuppa, ben brodosa, oppure più asciutta scolando parte del brodo con un colino.

@@ -24,18 +24,18 @@ translationKey: "frittata-alla-menta"
 - 1 white onion
 - 20g (0.7 oz) fresh mint
 - 4 tablespoons extra virgin olive oil
-- salt to taste
-- pepper to taste
+- 1 level teaspoon fine salt
+- 8 turns of the pepper mill
 
 ## Method
 
-1. Finely chop the onion. Put it in the pan with 4 tablespoons of oil and let it soften over low heat, stirring, until it's soft and translucent. It shouldn't colour.
+1. Finely chop the onion. Put it in the pan with 4 tablespoons of oil and let it soften over low heat, stirring, until it's soft and translucent. It shouldn't color.
 
 2. Finely chop 20g (0.7 oz) of fresh mint and set it aside.
 
 3. Take the pan off the heat and let the onion cool slightly.
 
-4. In a bowl, beat the 6 eggs with salt and pepper (about two good pinches).
+4. In a bowl, beat the 6 eggs with 1 level teaspoon of salt and 8 turns of the pepper mill.
 
 5. With a spoon, scoop the onion out of the pan, draining off as much oil as you can, and add it to the eggs along with the mint. Stir well.
 

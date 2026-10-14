@@ -11,11 +11,7 @@ translationKey: "torta-salata-patate-e-scamorza-affumicata"
 
 Une tarte salée bien pratique pour un dîner improvisé ou un apéro de dernière minute. Parfaite pour utiliser quelques pommes de terre et se régaler sans se compliquer la vie.
 
-<<<<<<< Updated upstream
-## Infos pratiques
-=======
 ## Infos rapides
->>>>>>> Stashed changes
 
 - **Portions :** 4 personnes
 - **Préparation :** 20 minutes
@@ -28,10 +24,10 @@ Une tarte salée bien pratique pour un dîner improvisé ou un apéro de derniè
 - 1 rouleau de pâte feuilletée, de préférence ronde
 - 300–350 g de pommes de terre
 - 250 g de scamorza fumée (j'utilise [Affumicata Fermaggio](https://www.google.com/search?q=affumicata+fermaggio)), en dés ou en tranches
-- 3 bonnes cuillères à soupe d'huile d'olive extra vierge
+- 3 cuillères à soupe bombées d'huile d'olive extra vierge (2 pour les pommes de terre, 1 pour le dessus)
 - 1/4 de cuillère à café de sel
 - 2 cuillères à soupe de fromage râpé (j'utilise [Grattì](https://www.google.com/search?q=gratt%C3%AC) ou [Grattugiato Vemondo](https://www.google.com/search?q=grattuggiato+Vemondo))
-- 1 brin de romarin frais (facultatif)
+- (Facultatif) 1 brin de romarin frais
 
 ![Part de tarte salée aux pommes de terre et à la scamorza fumée](/images/ricette/torta-salata-patate-scamorza-affumicata-2.png)
 
@@ -39,17 +35,17 @@ Une tarte salée bien pratique pour un dîner improvisé ou un apéro de derniè
 
 1. **Prépare la base.** Déroule 1 rouleau de pâte feuilletée et dépose la pâte dans un moule à tarte, en gardant le papier cuisson dessous.
 
-2. **Coupe les pommes de terre.** Épluche 300–350 g de pommes de terre et coupe-les en fines rondelles de 2 mm maximum, de préférence à la mandoline. Un couteau bien aiguisé fait aussi l'affaire. Mets les rondelles dans un saladier et ajoute une partie des 3 bonnes cuillères à soupe d'huile d'olive extra vierge. Mélange avec les mains pour bien les enrober et garde le reste de l'huile pour le dessus de la tarte.
+2. **Coupe les pommes de terre.** Épluche 300–350 g de pommes de terre et coupe-les en fines rondelles de 2 mm maximum, de préférence à la mandoline. Un couteau bien aiguisé fait aussi l'affaire. Mets les rondelles dans un saladier, ajoute 2 cuillères à soupe bombées d'huile et mélange avec les mains pour bien les enrober.
 
 3. **Ajoute la scamorza.** Répartis 250 g de scamorza fumée coupée en tranches sur la pâte pour la recouvrir uniformément.
 
 4. **Dispose les pommes de terre.** Dispose les rondelles en rangées, en les faisant se chevaucher comme pour une tarte aux pommes. Chaque rondelle doit recouvrir environ la moitié de la précédente pour former une couche régulière et bien serrée.
 
-5. **Assaisonne.** Étale l'huile réservée sur le dessus de la tarte à l'aide d'une spatule souple. Répartis uniformément 1/4 de cuillère à café de sel.
+5. **Assaisonne.** Étale la dernière cuillère à soupe d'huile sur le dessus de la tarte à l'aide d'une spatule souple. Répartis uniformément 1/4 de cuillère à café de sel.
 
 6. **Ajoute le fromage.** Parsème la tarte de 2 cuillères à soupe de fromage râpé.
 
-7. **Ajoute le romarin (facultatif).** Casse 1 brin de romarin frais en deux et dépose-le sur la tarte.
+7. **Romarin.** Si tu en utilises, casse 1 brin de romarin frais en deux et dépose-le sur la tarte.
 
 8. **Cuisson.** Fais cuire pendant 30 minutes dans un four préchauffé à 180 °C, en chaleur traditionnelle (sans ventilation). Pour les 10 dernières minutes, passe en mode gril pour faire dorer le dessus.
 

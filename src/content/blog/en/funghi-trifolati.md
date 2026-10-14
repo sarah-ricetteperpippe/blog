@@ -17,7 +17,7 @@ translationKey: "funghi-trifolati"
 - **Prep:** 15 minutes
 - **Cooking:** 10 minutes
 - **Tools:** medium frying pan, bowl, chopping board, knife, wooden spoon, kitchen cloth
-- **Heads-up:** clean the mushrooms with a damp cloth, not under water, so they don't soak up moisture and lose flavour
+- **Heads-up:** clean the mushrooms with a damp cloth, not under water, so they don't soak up moisture and lose flavor
 
 ## Ingredients
 
@@ -39,8 +39,8 @@ translationKey: "funghi-trifolati"
 
 4. **Deglaze with wine.** Pour in **2 tablespoons of dry white wine**, turn up the heat and let the alcohol cook off for 1–2 minutes. Stir now and again so they don't stick to the bottom of the pan.
 
-5. **Season.** Add 1 scant 1/4 teaspoon of salt, 3 grinds of pepper and the rest of the fresh parsley, then cook for another 2–3 minutes so the flavours come together.
+5. **Season.** Add 1 scant 1/4 teaspoon of salt, 3 grinds of pepper and the rest of the fresh parsley, then cook for another 2–3 minutes so the flavors come together.
 
 6. **Serve.** Fish out the garlic and serve the *funghi trifolati* hot, as a side or a pasta sauce.
 
-You can use a mix of mushrooms for a more complex flavour. For a creamier version, add a tablespoon of cooking cream or a knob of butter at the end. Also great on toasted bread or as a base for a mushroom frittata!
+You can use a mix of mushrooms for a more complex flavor. For a creamier version, add a tablespoon of cooking cream or a pat of butter at the end. Also great on toasted bread or as a base for a mushroom frittata!

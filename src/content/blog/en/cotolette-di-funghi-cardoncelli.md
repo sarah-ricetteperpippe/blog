@@ -16,7 +16,7 @@ translationKey: "cotolette-di-funghi-cardoncelli"
 - **Servings:** 2 generous portions
 - **Prep:** 20 minutes
 - **Cooking:** 20 minutes
-- **Equipment:** 4 shallow bowls, spoons, slotted spoon, deep saucepan for frying, baking paper, kitchen paper, meat mallet
+- **Equipment:** 4 shallow bowls, spoons, slotted spoon, deep saucepan for frying, parchment paper, paper towels, meat mallet
 
 ## Ingredients
 
@@ -26,22 +26,22 @@ translationKey: "cotolette-di-funghi-cardoncelli"
 - 8 tablespoons flour
 - 6 tablespoons breadcrumbs
 - 4 tablespoons grated cheese
-- 1 generous pinch of salt
+- ¼ teaspoon fine salt (for the egg)
 - Pepper (2 turns of the mill)
-- Herbs or spices of your choice (I recommend 3 small parsley leaves, finely chopped)
-- Frying oil (at least a quarter of a bottle)
+- 3 small parsley leaves, finely chopped (or another herb or spice you like)
+- 250 ml (8.5 fl oz) frying oil (¼ of a 1-liter bottle: it should be at least 2 cm deep in the pan)
 
 ## Method
 
 ### Prepare the mushrooms and breadcrumb coating
 
 1. Preheat the oven to 180°C (356°F).
-2. Clean the 400 g (14.1 oz) of mushrooms by gently wiping them with a cloth or kitchen paper. Don't rinse them under running water, as they'll absorb it.
-3. Arrange the mushrooms on baking paper and bake at 180°C (356°F) for 10–12 minutes, turning them halfway through.
-4. In a shallow bowl, beat 1 egg with 3 tablespoons of milk (unsweetened soy or oat milk works too). Season with 1 generous pinch of salt and two turns of the pepper mill.
+2. Clean the 400 g (14.1 oz) of mushrooms by gently wiping them with a cloth or paper towels. Don't rinse them under running water, as they'll absorb it.
+3. Arrange the mushrooms on parchment paper and bake at 180°C (356°F) for 10–12 minutes, turning them halfway through.
+4. In a shallow bowl, beat 1 egg with 3 tablespoons of milk (unsweetened soy or oat milk works too). Season with ¼ teaspoon of salt and two turns of the pepper mill.
 5. Put 8 tablespoons of flour in a second shallow bowl.
 6. In a third shallow bowl, combine 6 tablespoons of breadcrumbs, 4 tablespoons of grated cheese and your chosen herbs or spices. I recommend 3 small parsley leaves, finely chopped.
-7. Take the mushrooms out of the oven, blot them well with kitchen paper and let them cool slightly.
+7. Take the mushrooms out of the oven, blot them well with paper towels and let them cool slightly.
 8. If needed, gently flatten the slices with light taps of the meat mallet.
 
 ### Breading
@@ -53,10 +53,10 @@ translationKey: "cotolette-di-funghi-cardoncelli"
 
 ### Frying
 
-1. Pour plenty of frying oil into a deep saucepan (at least a quarter of a bottle) and heat it up.
+1. Pour the 250 ml (8.5 fl oz) of oil into a deep saucepan and heat it up.
 2. Check the temperature by dropping in a small clump of breadcrumbs: if bubbles form around it straight away, the oil is ready.
 3. Fry a few slices at a time. When they're golden brown, lift them out with the slotted spoon.
-4. Place them on kitchen paper and let them cool slightly for a few minutes.
+4. Place them on paper towels and let them cool slightly for a few minutes.
 
 ## Notes
 
