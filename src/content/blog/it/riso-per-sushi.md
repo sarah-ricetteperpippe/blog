@@ -15,7 +15,7 @@ translationKey: "riso-per-sushi"
 - **Porzioni:** 3 persone
 - **Preparazione:** 40 minuti (incluso l'ammollo)
 - **Cottura:** 30 minuti
-- **Strumenti:** pentola con coperchio, ciotola per il lavaggio, spatola o cucchiaio di legno (shamoji), ventaglio o ventolina, _sushi oke_ (ciotola di legno tradizionale, facoltativa). Non usare metallo.
+- **Strumenti:** pentola con coperchio, ciotola per il lavaggio, spatola o cucchiaio di legno (shamoji), ventaglio o ventolina, (opzionale) _sushi oke_ (ciotola di legno tradizionale). Non usare metallo.
 - **Avvertenze:** il riso giapponese deve essere **lavato accuratamente** e **lasciato in ammollo per almeno 30 minuti** prima della cottura.
 
 ## Ingredienti

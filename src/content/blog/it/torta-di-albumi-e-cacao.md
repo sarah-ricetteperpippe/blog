@@ -30,7 +30,7 @@ translationKey: "torta-di-albumi-e-cacao"
 - 20 g di cacao amaro in polvere
 - 175 g di yogurt bianco naturale
 - 50 g di olio di semi
-- (facoltativo) una manciata di gocce di cioccolato o scaglie di nocciola
+- (Opzionale) una manciata di gocce di cioccolato o scaglie di nocciola
 - zucchero a velo per decorare
 
 ## Procedimento
@@ -38,7 +38,7 @@ translationKey: "torta-di-albumi-e-cacao"
 1. **Monta gli albumi.** Metti i 2 albumi in una ciotola capiente con un pizzico di sale e monta con le fruste elettriche fino a neve ferma.
 2. **Prepara gli ingredienti secchi.** In un'altra ciotola setaccia la farina con il lievito. Aggiungi lo zucchero e il cacao, poi mescola bene.
 3. **Unisci gli ingredienti liquidi.** Versa l'olio di semi e lo yogurt. Mescola con una spatola fino a ottenere un composto omogeneo e cremoso.
-4. **Incorpora gli albumi.** Aggiungi gli albumi montati poco alla volta, mescolando dal basso verso l'alto per mantenere l'impasto soffice. Aggiungi le gocce di cioccolato se le usi.
+4. **Incorpora gli albumi.** Aggiungi gli albumi montati poco alla volta, mescolando dal basso verso l'alto per mantenere l'impasto soffice. Se usi le gocce di cioccolato, aggiungile ora.
 5. **Cuoci.** Versa l'impasto in uno stampo da 18 cm rivestito con carta forno. Cuoci in forno statico preriscaldato a 180°C per 40 minuti. Fai la prova stecchino: deve uscire asciutto.
 6. **Raffredda e servi.** Lascia raffreddare la torta nello stampo, poi trasferiscila su un piatto.
 

@@ -29,7 +29,7 @@ translationKey: "torta-salame-di-cioccolato"
 **Ganache:**
 - 150 g cioccolato fondente (50%)
 - 100 g panna fresca liquida
-- (opzionale) nocciole tostate q.b., tritate grossolanamente per decorare
+- (Opzionale) nocciole tostate q.b., tritate grossolanamente per decorare
 
 ## Procedimento
 

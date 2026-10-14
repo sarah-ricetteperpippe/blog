@@ -21,10 +21,24 @@ Se il file di destinazione esiste già, **sovrascrivi** senza chiedere.
 
 ## 1. Tono e voce
 
+### Localizza, non traslitterare
+
+Questa è la regola più importante e vale per ogni frase. Scrivi come scriverebbe oggi una food blogger madrelingua americana (EN) o francese (FR), non come una traduzione dall'italiano.
+
+- **Lingua corrente, non da dizionario.** Usa le parole e le costruzioni che si usano adesso nei blog e nei social di cucina della lingua target, non forme antiquate, formali o da manuale.
+- **Riscrivi la frase, non le parole.** Se una frase ricalca l'ordine, la sintassi o la punteggiatura dell'italiano, riscrivila da capo con la struttura naturale della lingua target. Frasi lunghe con molte subordinate vanno spezzate se in EN/FR suonano pesanti.
+- **Verbi e gesti di cucina come li dice chi cucina.** EN: "bring to a boil", "sauté until soft", "season to taste", "drain", "toss"; FR: "porter à ébullition", "faire revenir", "égoutter", "rectifier l'assaisonnement". Non calchi tipo "put on the fire" (mettere sul fuoco) o "make it wither" (far appassire).
+- **Tagli di verdura precisi:** "fiammiferini" (bastoncini di qualche millimetro) non è julienne, che è più sottile. EN "matchsticks", FR "fins bâtonnets" / "allumettes". Usa "julienne" solo se la sorgente dice julienne.
+- **Niente falsi amici:** "pasta al dente" resta, ma "cucchiaio di olio" è "tablespoon of oil", non "spoon of oil"; "panna da cucina" è "heavy cream" / "crème liquide", non "cooking cream"; "fiamma vivace" è "medium-high heat" / "feu vif", non "lively flame".
+- **Test finale:** rileggi ogni paragrafo chiedendoti "una persona madrelingua lo scriverebbe così?". Se la risposta è no, o se si capisce che dietro c'è l'italiano, riscrivilo.
+
+### Voce dell'autrice
+
 - Mantieni la prima persona quando la sorgente ce l'ha ("ho improvvisato", "io uso burro veg"). Non smorzarla.
 - Mantieni le esclamazioni e il ritmo colloquiale ("Mondiale!", "una bomba", "fidati"). Cerca l'equivalente naturale, non il calco letterale.
   - "una bomba" → EN "a banger" / "world-class", FR "une tuerie" / "une bombe"
   - "Mondiale!" → EN "World-class!" / "Top!", FR "Mondial !" / "Au top !"
+- **Facoltativo = eccezione detta prima.** Se nell'IT un ingrediente è `(Opzionale) **Nome:** …`, mantieni la posizione: EN `(Optional) **Name:** …`, FR `(Facultatif) **Nom :** …`. Nel procedimento la condizione resta in testa alla frase (EN "If you're using lemongrass, add…", FR "Si tu utilises de la citronnelle, ajoute…").
 - Le note tra parentesi a inciso (`*(con i pleurotus...)*`) restano come inciso.
 - **US vs UK:** se per un termine/costruzione esistono sia una variante US che una UK, scegli **sempre US**. Es: `courgette` → `zucchini` (non `courgette`), `aubergine` → `eggplant`, `coriander` (foglie) → `cilantro`, `grill` (elettrodomestico) → `broiler` (non `grill`), `tin` → `can`, `washing up` → `doing the dishes`. Se il termine US è ambiguo per un pubblico anche UK (es. "broiler" può confondere chi non lo conosce), puoi affiancare la variante UK tra parentesi la prima volta: `broiler (grill)`.
 - **Mai gendered Italian** (vale solo se per qualche motivo ti ritrovi a riscrivere in IT). In FR evita `le/la premier·e`: riformula al neutro o accorda all'oggetto. Vedi memoria `feedback_inclusive_italian_writing`.
@@ -87,7 +101,41 @@ Lascia il valore metrico e **aggiungi tra parentesi** il corrispettivo imperiale
 
 **Idempotenza:** se un numero ha già una parentesi imperiale, non aggiungerne un'altra.
 
-## 4. Cosa NON tradurre
+## 4. Pasta: spiega quello che in Italia si dà per scontato
+
+Nelle ricette italiane non spiego come si lessa la pasta, perché chi legge in italiano lo sa. Chi legge in EN e FR invece ha bisogno delle istruzioni. Quando la ricetta prevede di lessare pasta (secca, fresca, ripiena) o gnocchi, aggiungi nella traduzione l'acqua e il sale e i passaggi per farli bollire.
+
+**Se la sorgente IT indica già acqua e sale** (negli ingredienti e nel procedimento, come nelle pappardelle panna e funghi): non aggiungere niente, traduci e basta.
+
+### Dosi (non cercarle di nuovo: usa queste)
+
+Regola: **1 litro d'acqua ogni 100 g di pasta, 7 g di sale per litro.** È il rapporto indicato da Barilla sulle confezioni e quello già usato nel blog. Arrotonda l'acqua al litro intero superiore, minimo 1 litro. Se la ricetta non dà i grammi di pasta, calcola 100 g a porzione.
+
+| Porzioni | Pasta | Acqua | Sale (grosso o fino) |
+|---|---|---|---|
+| 1 | fino a 100 g | 1 L | 7 g (circa 1 cucchiaino) |
+| 2 | fino a 200 g | 2 L | 14 g (circa 2 cucchiaini) |
+| 3 | fino a 300 g | 3 L | 21 g (circa 1 cucchiaio) |
+| 4 | fino a 400 g | 4 L | 28 g (circa 1 cucchiaio e mezzo) |
+| 6 | fino a 600 g | 6 L | 42 g (circa 2 cucchiai) |
+
+Come si scrivono:
+
+- **EN:** acqua in litri con i quarti US tra parentesi (1 L ≈ 1 quart: `2 L (about 2 quarts)`); sale in grammi con once e cucchiaini tra parentesi: `14 g (0.5 oz, about 2 teaspoons) salt`. Specifica "fine salt or coarse sea salt", non "kosher salt" (ha densità diversa e sballa i cucchiaini).
+- **FR:** `2 L d'eau`, `14 g de gros sel (environ 2 cuillères à café)`.
+
+### Dove inserirli
+
+1. **Ingredienti:** aggiungi in fondo alla lista una riga nello stesso formato delle altre:
+   - EN: `- **Water and salt:** 2 L (about 2 quarts) of water and 14 g (0.5 oz, about 2 teaspoons) of salt, for cooking the pasta`
+   - FR: `- **Eau et sel :** 2 L d'eau et 14 g de gros sel (environ 2 cuillères à café) pour cuire les pâtes`
+2. **Primo passo del procedimento:** mettere l'acqua sul fuoco, coperta, e portarla a bollore. Es. EN: `1. **Put the water on to boil.** ⏎ Fill a large pot with 2 L (about 2 quarts) of water, cover it and bring it to a boil over high heat. Keep it covered on low heat until you need it.` FR equivalente.
+3. **Passo in cui la sorgente butta la pasta:** completa le istruzioni lì dove la sorgente dice solo "lessa / cuoci la pasta": quando l'acqua bolle, aggiungi il sale, aspetta che riprenda il bollore, versa la pasta, cuoci senza coperchio per il tempo indicato sulla confezione mescolando ogni tanto perché non si attacchi, poi scola. Non aggiungere passaggi che la sorgente non ha (es. conservare l'acqua di cottura) se non servono.
+4. **Rinumera** tutti i passi dopo l'inserimento, compresi quelli dentro le `<Figure>`, che hanno la numerazione spezzata.
+
+Se il passo 1 della sorgente è già "metti l'acqua sul fuoco" ma mancano le dosi, non duplicarlo: aggiungi solo dosi e ingrediente.
+
+## 5. Cosa NON tradurre
 
 - `translationKey` nel frontmatter — resta identico.
 - Slug del file — resta identico.
@@ -96,7 +144,7 @@ Lascia il valore metrico e **aggiungi tra parentesi** il corrispettivo imperiale
 - Nomi di componenti MDX: `<Figure>`, `<Aside>`, `<TwoColumn>`. Traduci solo i loro **prop testuali** (`caption`, `alt`, `title`) e il contenuto interno.
 - Nomi di marchi e prodotti commerciali.
 
-## 5. Frontmatter — cosa cambiare
+## 6. Frontmatter — cosa cambiare
 
 ```yaml
 title: # tradotto
@@ -109,21 +157,24 @@ translationKey: # invariato (uguale allo slug IT)
 lang: "en"  # o "fr" — aggiungi se manca
 ```
 
-## 6. Flusso
+## 7. Flusso
 
 1. Leggi il file IT.
 2. Conferma lingua target con l'utente se non è chiara.
 3. Se il file target esiste, sovrascrivilo.
 4. Traduci il frontmatter (title, description, category) prima del corpo.
-5. Traduci il corpo paragrafo per paragrafo, applicando le regole di tono, regionalismi, quantità.
-6. Per EN: passa il risultato attraverso le conversioni metriche → imperiali.
-7. Scrivi il file target.
-8. **Reportistica finale**: elenca all'utente
+5. Traduci il corpo paragrafo per paragrafo, applicando le regole di localizzazione, tono, regionalismi, quantità.
+6. Se la ricetta lessa pasta o gnocchi, applica la sezione 4 (acqua, sale, primo passo, rinumerazione).
+7. Per EN: passa il risultato attraverso le conversioni metriche → imperiali.
+8. Rileggi tutto con il test della sezione 1: ogni frase deve suonare scritta da una persona madrelingua.
+9. Scrivi il file target.
+10. **Reportistica finale**: elenca all'utente
    - i regionalismi incontrati e come li hai risolti (con quale opzione della cascata a/b/c)
    - eventuali termini "appiattiti" che lei potrebbe voler rivedere
    - le conversioni applicate (numero totale, non lista intera)
+   - se hai aggiunto acqua e sale per la pasta, e con quali dosi
 
-## 7. Esempi di trasformazione
+## 8. Esempi di trasformazione
 
 **IT sorgente:**
 > Questa l'ho improvvisata ed è oggettivamente una bomba — per sapore, per aspetto, per facilità. Mondiale!

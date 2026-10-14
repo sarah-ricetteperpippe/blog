@@ -14,7 +14,7 @@ translationKey: "pasta-e-lenticchie"
 
 - **Porzioni:** 2 persone
 - **Preparazione:** 1 ora – 1 ora e 30 minuti (se prepari il brodo in casa) / 30 minuti (se usi brodo già pronto)
-- **Strumenti:** pentola capiente, casseruola, coltello, tagliere, mestolo, colino (facoltativo)
+- **Strumenti:** pentola capiente, casseruola, coltello, tagliere, mestolo, (opzionale) colino
 - **Avvertenze:** se non prepari il brodo in casa, usa brodo vegetale in brick, non dado
 
 ## Ingredienti
@@ -26,7 +26,7 @@ translationKey: "pasta-e-lenticchie"
 - 1 cipolla media + ½ cipolla (1 intera per il brodo, ½ per il soffritto)
 - 10 pomodorini (6 per il brodo, 4 per il soffritto)
 - 1 gambo di sedano (per il brodo)
-- prezzemolo q.b. (opzionale)
+- (Opzionale) prezzemolo q.b.
 - 2 foglie di alloro
 - olio extravergine di oliva q.b.
 - sale grosso q.b.
@@ -35,7 +35,7 @@ translationKey: "pasta-e-lenticchie"
 
 ### 1. Prepara il brodo (se fatto in casa)
 
-Metti in pentola 3,5 litri di acqua con: 1 cipolla intera, 3 carote tagliate a metà, 1 gambo di sedano, 6 pomodorini, prezzemolo (se lo usi) e 1 foglia di alloro. Porta a bollore, poi abbassa la fiamma e lascia sobbollire 30–50 minuti. Tieni il brodo caldo. (Se usi brodo pronto, portalo semplicemente a temperatura.)
+Metti in pentola 3,5 litri di acqua con: 1 cipolla intera, 3 carote tagliate a metà, 1 gambo di sedano, 6 pomodorini e 1 foglia di alloro. Se usi il prezzemolo, aggiungilo ora. Porta a bollore, poi abbassa la fiamma e lascia sobbollire 30–50 minuti. Tieni il brodo caldo. (Se usi brodo pronto, portalo semplicemente a temperatura.)
 
 ### 2. Prepara il soffritto
 

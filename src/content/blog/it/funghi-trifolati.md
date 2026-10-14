@@ -30,7 +30,7 @@ translationKey: "funghi-trifolati"
 
 ## Procedimento
 
-1. **Pulisci i 400g di funghi.** Elimina i residui di terra strofinando delicatamente la superficie con un panno umido. Stacca i gambi, rimuovi se vuoi la pellicina del cappello e le lamelle. Taglia i funghi a fettine sottili 5mm e mettili in una ciotola.
+1. **Pulisci i 400g di funghi.** Elimina i residui di terra strofinando delicatamente la superficie con un panno umido. Stacca i gambi e, se vuoi, rimuovi la pellicina del cappello e le lamelle. Taglia i funghi a fettine sottili 5mm e mettili in una ciotola.
 
 2. **Prepara il soffritto.** Scalda in padella 1 cucchiaio scarso d'olio d'oliva con uno **spicchio d'aglio intero**.
 

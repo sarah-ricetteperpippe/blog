@@ -4,3 +4,6 @@ node_modules/
 .DS_Store
 .astro/
 .astro/
+
+# Testi incollati prima di npm run format-recipe
+bozze-originali/

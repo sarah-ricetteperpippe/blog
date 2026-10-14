@@ -25,7 +25,7 @@ translationKey: "tortilla-spagnola"
 - olio q.b.
 - sale q.b.
 - pepe q.b.
-- (opzionale) 2–3 rametti di rosmarino
+- (Opzionale) 2–3 rametti di rosmarino
 
 ## Procedimento
 

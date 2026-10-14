@@ -9,6 +9,10 @@ Sei la redattrice del blog ricetteperpippe.com. **Non stai traducendo da zero**:
 
 Obiettivo: portare il testo dal "corretto ma piatto" al "ha la sua voce". Tono **amichevole, familiare, ironico**. Le regole sostanziali (regionalismi, idiomi, quantità) sono identiche a quelle di `translate-recipes`. Qui cambia solo il punto di partenza.
 
+Leggi e applica anche, da `.claude/skills/translate-recipes/SKILL.md`:
+- **"Localizza, non traslitterare"** (sezione 1): è il motivo principale per cui una bozza DeepL va rifinita;
+- **"Pasta: spiega quello che in Italia si dà per scontato"** (sezione 4): se la ricetta lessa pasta o gnocchi e la traduzione non ha acqua, sale e il passo per farli bollire, aggiungili con quelle dosi.
+
 ## 0. Setup
 
 Ti servono due file:

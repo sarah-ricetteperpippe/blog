@@ -29,7 +29,7 @@ La teoria originale prevede che si faccia col parmigiano — io ho fatto con alt
 - 40g di formaggio grattugiato
 - 25g di burro vegetale
 - Sale q.b.
-- Pepe q.b. (facoltativo)
+- (Opzionale) Pepe q.b.
 
 ## Procedura
 

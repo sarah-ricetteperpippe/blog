@@ -24,7 +24,7 @@ translationKey: "torta-salata-patate-e-scamorza-affumicata"
 - 3 bei cucchiai olio extravergine di oliva q.b.
 - 1/4 cucchiaino sale
 - 2 cucchiai formaggio grattugiato (io uso [Grattì](https://www.google.com/search?q=gratt%C3%AC) oppure [Grattugiato Vemondo](https://www.google.com/search?q=grattuggiato+Vemondo))
-- 1 rametto di rosmarino fresco (opzionale)
+- (Opzionale) 1 rametto di rosmarino fresco
 
 ![Fetta di torta salata patate e scamorza affumicata](/images/ricette/torta-salata-patate-scamorza-affumicata-2.png)
 

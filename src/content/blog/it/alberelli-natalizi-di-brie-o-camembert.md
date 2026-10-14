@@ -23,7 +23,7 @@ translationKey: "alberelli-natalizi-di-brie-o-camembert"
 
 - 1 forma di brie o camembert
 - 20 g frutta secca tritata grossolanamente (noci, nocciole o mandorle)
-- 1–2 cucchiai miele o sciroppo d'acero _(facoltativo, solo per far aderire la granella)_
+- (Opzionale) 1–2 cucchiai miele o sciroppo d'acero _(solo per far aderire la granella)_
 - 12 bastoncini salati o mini pretzel
 - rosmarino fresco q.b. (per decorare)
 
@@ -35,7 +35,7 @@ translationKey: "alberelli-natalizi-di-brie-o-camembert"
 
 3. Ogni spicchio **sezionalo in due fette più sottili**, seguendo lo spessore. Otterrai **12 triangoli** sottili e regolari.
 
-4. _(Facoltativo)_ Spennella leggermente la superficie dei triangoli con **miele o sciroppo d'acero**.
+4. (Opzionale) Spennella leggermente la superficie dei triangoli con **miele o sciroppo d'acero**.
 
 5. Passa i triangoli nella **frutta secca tritata**, premendo appena per farla aderire.
 

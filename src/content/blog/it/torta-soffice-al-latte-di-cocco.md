@@ -26,8 +26,8 @@ translationKey: "torta-soffice-al-latte-di-cocco"
 - 80 g di olio di semi
 - 1 bustina di lievito per dolci (16 g)
 - 1 pizzico di sale
-- (opzionale) 120 g di gocce di cioccolato
-- (opzionale) vaniglia o scorza di limone
+- (Opzionale) 120 g di gocce di cioccolato
+- (Opzionale) vaniglia o scorza di limone
 
 ## Procedimento
 

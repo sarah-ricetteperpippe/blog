@@ -6,6 +6,7 @@
 //
 // Uso: npm run new-recipe
 
+import { spawnSync } from 'node:child_process';
 import { createInterface } from 'node:readline';
 import { writeFileSync, existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -74,7 +75,7 @@ translationKey: "${slug}"
 
 ## Ingredienti
 
-{/* Metti in grassetto solo il nome dell'ingrediente: sarà verde come le etichette delle informazioni rapide. Lascia quantità, alternative e note fuori dal grassetto. */}
+{/* Metti in grassetto solo il nome dell'ingrediente: sarà verde come le etichette delle informazioni rapide. Lascia quantità, alternative e note fuori dal grassetto. Se un ingrediente è facoltativo, dillo prima, come eccezione: - (Opzionale) **Nome ingrediente:** quantità. Nel procedimento, la condizione va all'inizio della frase: "Se usi il lemongrass, aggiungine ¼ di cucchiaino", non "aggiungi ¼ di cucchiaino di lemongrass se lo usi". */}
 
 {/* Ingredienti e foto in due colonne 50/50. Cambia src e alt per scegliere la foto verticale; il titolo Ingredienti resta sopra il blocco. */}
 <IngredientsPhoto src="/images/ricette/${slug}.webp" alt={${JSON.stringify(title)}}>
@@ -146,10 +147,9 @@ const slugSuggerito = toSlug(title);
 const slugInput = (await ask(`\nSlug (invio per usare "${slugSuggerito}"): `)).trim();
 const slug = slugInput || slugSuggerito;
 
-rl.close();
-
 const filePath = join(CONTENT_DIR, `${slug}.mdx`);
 if (existsSync(filePath)) {
+  rl.close();
   console.error(`\n❌ Esiste già: src/content/blog/it/${slug}.mdx`);
   process.exit(1);
 }
@@ -157,6 +157,16 @@ if (existsSync(filePath)) {
 writeFileSync(filePath, template({ title, description, slug, category, tags }), 'utf8');
 
 console.log(`\n✅ Creata: src/content/blog/it/${slug}.mdx`);
-console.log(`📸 Ricordati di mettere la foto in: public/images/ricette/${slug}.webp`);
+console.log('\n📋 Incolla la ricetta nel file, così com\'è, e salvalo.');
+console.log('📸 Metti le foto in public/images/ricette, con qualsiasi nome (es. nome.png, nome2.png…).');
+const formatNow = (await ask('Premi invio quando hai finito per sistemare testo e foto (oppure n per farlo dopo): ')).trim().toLowerCase();
+rl.close();
+
+if (formatNow !== 'n') {
+  const result = spawnSync(process.execPath, [join(__dirname, 'format-recipe.mjs'), slug], { stdio: 'inherit' });
+  if (result.status !== 0) console.log(`\nPuoi riprovare con:\n   npm run format-recipe -- ${slug}`);
+} else {
+  console.log(`\nQuando hai finito, sistema testo e foto con:\n   npm run format-recipe -- ${slug}`);
+}
 console.log(`\nQuando hai finito di scrivere, traduci con:\n   npm run translate -- ${slug}\n`);
 console.log(`📱 Genera la caption Instagram con:\n   npm run instagram -- ${slug}\n`);
