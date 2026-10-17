@@ -23,7 +23,7 @@ translationKey: "risotto-al-brie-e-noci"
 - 1 scalogno
 - 1 l brodo vegetale caldo
 - 4 cucchiai olio extravergine d'oliva
-- 75 g brie (o mezza forma piccola), senza crosta, a pezzetti
+- 75 g brie (io uso il [Brie veg Vemondo](https://www.facebook.com/photo/?fbid=9867758319974798&set=pcb.9363693513735190), o mezza forma piccola), senza crosta, a pezzetti
 - 6 noci intere (circa 3 a testa), sgusciate e tritate grossolanamente
 - 20 g margarina
 - (Opzionale) 4 giri di macina di pepe nero (2 a piatto)
