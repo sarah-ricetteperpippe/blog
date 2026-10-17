@@ -21,7 +21,7 @@ translationKey: "alberelli-natalizi-di-brie-o-camembert"
 
 ## Ingredienti
 
-- 1 forma di brie o camembert
+- 1 forma di brie (io uso il [Brie veg Vemondo](https://www.facebook.com/photo/?fbid=9867758319974798&set=pcb.9363693513735190)) o camembert
 - 20 g frutta secca tritata grossolanamente (noci, nocciole o mandorle)
 - (Opzionale) 1–2 cucchiai miele o sciroppo d'acero _(solo per far aderire la granella)_
 - 12 bastoncini salati o mini pretzel
