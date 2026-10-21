@@ -387,12 +387,16 @@ const showExcerptBelowHero = Boolean(excerpt) && !showExcerptAboveHero;
     li.appendChild(toggle);
   });
 
-  // Schermo sempre acceso mentre si cucina. Il browser rilascia il lock
-  // quando la pagina va in background, quindi lo richiediamo di nuovo al
-  // ritorno se l'interruttore è ancora attivo.
+  // Schermo sempre acceso mentre si cucina. Dove c'è la Wake Lock API la
+  // usiamo direttamente; altrimenti (es. Chrome su iPhone, Safari < 16.4)
+  // ripieghiamo su NoSleep.js, che tiene acceso lo schermo con un video muto
+  // in loop. In entrambi i casi il browser smette quando la pagina va in
+  // background, quindi al ritorno riattiviamo se l'interruttore è ancora on.
   const wakeToggle = document.querySelector<HTMLButtonElement>('.wake-lock-toggle');
-  if (wakeToggle && 'wakeLock' in navigator) {
+  if (wakeToggle) {
+    const hasNative = 'wakeLock' in navigator;
     let sentinel: WakeLockSentinel | null = null;
+    let noSleep: import('nosleep.js').default | null = null;
     let wanted = false;
 
     const setOn = (on: boolean) => {
@@ -402,11 +406,16 @@ const showExcerptBelowHero = Boolean(excerpt) && !showExcerptAboveHero;
 
     const acquire = async () => {
       try {
-        sentinel = await navigator.wakeLock.request('screen');
-        sentinel.addEventListener('release', () => {
-          sentinel = null;
-          if (!wanted) setOn(false);
-        });
+        if (hasNative) {
+          sentinel = await navigator.wakeLock.request('screen');
+          sentinel.addEventListener('release', () => { sentinel = null; });
+        } else {
+          if (!noSleep) {
+            const { default: NoSleep } = await import('nosleep.js');
+            noSleep = new NoSleep();
+          }
+          await noSleep.enable();
+        }
         setOn(true);
       } catch {
         wanted = false;
@@ -414,15 +423,17 @@ const showExcerptBelowHero = Boolean(excerpt) && !showExcerptAboveHero;
       }
     };
 
+    const release = async () => {
+      await sentinel?.release();
+      sentinel = null;
+      noSleep?.disable();
+      setOn(false);
+    };
+
     wakeToggle.hidden = false;
-    wakeToggle.addEventListener('click', async () => {
+    wakeToggle.addEventListener('click', () => {
       wanted = !wanted;
-      if (wanted) {
-        await acquire();
-      } else {
-        await sentinel?.release();
-        setOn(false);
-      }
+      wanted ? acquire() : release();
     });
 
     document.addEventListener('visibilitychange', () => {
