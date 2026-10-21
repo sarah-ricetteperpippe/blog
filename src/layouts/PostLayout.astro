@@ -205,7 +205,7 @@ const showExcerptBelowHero = Boolean(excerpt) && !showExcerptAboveHero;
         <p class="post-description post-description--below-hero">{excerpt}</p>
       )}
 
-      <!-- Schermo sempre acceso (Wake Lock): visibile solo se il browser lo supporta -->
+      <!-- Schermo sempre acceso (Wake Lock o fallback NoSleep): lo mostra lo script -->
       <button type="button" class="wake-lock-toggle" role="switch" aria-checked="false" hidden>
         <span class="wake-lock-track" aria-hidden="true"><span class="wake-lock-thumb"></span></span>
         <span class="wake-lock-label">{wakeLockLabel}</span>
