@@ -43,10 +43,13 @@ const heroCaption = ({
   en: 'All the photos on the blog are original, but edited with AI',
   fr: "Toutes les photos du blog sont originales, mais retouchées avec l'IA",
 } as const)[currentLang];
-const relatedLabel = { it: 'Potrebbe interessarti anche', en: 'You might also like', fr: 'Vous pourriez aussi aimer' } as const;
+const relatedLabel = { it: 'Potrebbe interessarti anche', en: 'You might also like', fr: 'Ça pourrait aussi te plaire' } as const;
 const relatedTitle = relatedLabel[lang as keyof typeof relatedLabel];
 const likeLabel = { it: 'Mi piace', en: 'Like', fr: "J'aime" } as const;
 const likeText = likeLabel[lang as keyof typeof likeLabel];
+const copyLinkAria = ({ it: 'Copia link', en: 'Copy link', fr: 'Copier le lien' } as const)[currentLang];
+const viewsLabel = ({ it: 'visualizzazioni', en: 'views', fr: 'vues' } as const)[currentLang];
+const commentsLabel = ({ it: 'commenti', en: 'comments', fr: 'commentaires' } as const)[currentLang];
 
 const allPosts = await getCollection('blog');
 const resolveHeroImage = createHeroImageResolver(allPosts);
@@ -228,7 +231,7 @@ const showExcerptBelowHero = Boolean(excerpt) && !showExcerptAboveHero;
           <a href={twitterUrl} target="_blank" rel="noopener" class="share-btn share-btn--twitter" aria-label="X / Twitter">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </a>
-          <button class="share-btn share-btn--copy" id="copy-link-btn" aria-label="Copia link" data-url={pageUrl} data-copied={copiedText}>
+          <button class="share-btn share-btn--copy" id="copy-link-btn" aria-label={copyLinkAria} data-url={pageUrl} data-copied={copiedText}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
           </button>
         </div>
@@ -243,9 +246,9 @@ const showExcerptBelowHero = Boolean(excerpt) && !showExcerptAboveHero;
 
       <!-- Stats -->
       <div class="post-stats" data-slug={slug}>
-        <span><span class="post-view-count">—</span> visualizzazioni</span>
+        <span><span class="post-view-count">—</span> {viewsLabel}</span>
         <span class="post-meta-dot">·</span>
-        <span><span class="post-comment-count">—</span> commenti</span>
+        <span><span class="post-comment-count">—</span> {commentsLabel}</span>
       </div>
 
     </div><!-- /post-card -->

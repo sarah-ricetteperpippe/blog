@@ -34,8 +34,8 @@ const ui = {
     title: 'Désinscription',
     pageTitle: 'Désinscription de la newsletter',
     pending: 'Désinscription en cours…',
-    success: 'Vous êtes désinscrit·e de la newsletter. Désolé·e de vous voir partir !',
-    error: 'Une erreur est survenue. Réessayez plus tard ou écrivez à ricetteperpippe@gmail.com.',
+    success: 'Tu es désinscrit·e de la newsletter. Désolée de te voir partir !',
+    error: 'Une erreur est survenue. Réessaie plus tard ou écris à ricetteperpippe@gmail.com.',
     missing: 'Lien de désinscription invalide (jeton manquant).',
     home: "Retour à l'accueil",
   },
@@ -47,7 +47,7 @@ const base = (import.meta.env.BASE_URL as string).endsWith('/')
   : import.meta.env.BASE_URL + '/';
 ---
 
-<BaseLayout title={t.title} lang={lang}>
+<BaseLayout title={t.title} lang={lang} showNewsletter={false}>
   <section class="unsubscribe" id="unsub-section" data-state="pending">
     <h1>{t.pageTitle}</h1>
     <div class="unsub-feedback">
