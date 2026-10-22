@@ -96,7 +96,10 @@ const t = ui[lang as keyof typeof ui] ?? ui.it;
 <script>
   const form = document.getElementById('newsletter-form') as HTMLFormElement | null;
   const feedback = document.getElementById('newsletter-feedback') as HTMLElement | null;
-  const WEBHOOK = import.meta.env.PUBLIC_NEWSLETTER_WEBHOOK;
+  // Fallback sulla URL prod (già pubblica in .env.example): su Cloudflare la
+  // variabile non arrivava alla build e il form falliva sempre.
+  const WEBHOOK = import.meta.env.PUBLIC_NEWSLETTER_WEBHOOK
+    || 'https://outofscope.app.n8n.cloud/webhook/bd4c2a49-e94d-4b4f-83c7-a4db67d4d200';
   const submitBtn = form?.querySelector('button[type="submit"]') as HTMLButtonElement | null;
   const MSG_OK = feedback?.dataset.ok ?? 'Che coraggio!';
   const MSG_ERR = feedback?.dataset.err ?? 'Qualcosa è andato storto. Riprova tra poco.';
