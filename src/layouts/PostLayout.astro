@@ -50,6 +50,7 @@ const likeText = likeLabel[lang as keyof typeof likeLabel];
 const copyLinkAria = ({ it: 'Copia link', en: 'Copy link', fr: 'Copier le lien' } as const)[currentLang];
 const viewsLabel = ({ it: 'visualizzazioni', en: 'views', fr: 'vues' } as const)[currentLang];
 const commentsLabel = ({ it: 'commenti', en: 'comments', fr: 'commentaires' } as const)[currentLang];
+const wakeLockLabel = ({ it: 'Tieni lo schermo acceso', en: 'Keep screen on', fr: "Garder l'écran allumé" } as const)[currentLang];
 
 const allPosts = await getCollection('blog');
 const resolveHeroImage = createHeroImageResolver(allPosts);
@@ -203,6 +204,12 @@ const showExcerptBelowHero = Boolean(excerpt) && !showExcerptAboveHero;
       {showExcerptBelowHero && (
         <p class="post-description post-description--below-hero">{excerpt}</p>
       )}
+
+      <!-- Schermo sempre acceso (Wake Lock o fallback NoSleep): lo mostra lo script -->
+      <button type="button" class="wake-lock-toggle" role="switch" aria-checked="false" hidden>
+        <span class="wake-lock-track" aria-hidden="true"><span class="wake-lock-thumb"></span></span>
+        <span class="wake-lock-label">{wakeLockLabel}</span>
+      </button>
 
       <!-- Contenuto markdown -->
       <article
@@ -379,6 +386,60 @@ const showExcerptBelowHero = Boolean(excerpt) && !showExcerptAboveHero;
 
     li.appendChild(toggle);
   });
+
+  // Schermo sempre acceso mentre si cucina. Dove c'è la Wake Lock API la
+  // usiamo direttamente; altrimenti (es. Chrome su iPhone, Safari < 16.4)
+  // ripieghiamo su NoSleep.js, che tiene acceso lo schermo con un video muto
+  // in loop. In entrambi i casi il browser smette quando la pagina va in
+  // background, quindi al ritorno riattiviamo se l'interruttore è ancora on.
+  const wakeToggle = document.querySelector<HTMLButtonElement>('.wake-lock-toggle');
+  if (wakeToggle) {
+    const hasNative = 'wakeLock' in navigator;
+    let sentinel: WakeLockSentinel | null = null;
+    let noSleep: import('nosleep.js').default | null = null;
+    let wanted = false;
+
+    const setOn = (on: boolean) => {
+      wakeToggle.classList.toggle('on', on);
+      wakeToggle.setAttribute('aria-checked', String(on));
+    };
+
+    const acquire = async () => {
+      try {
+        if (hasNative) {
+          sentinel = await navigator.wakeLock.request('screen');
+          sentinel.addEventListener('release', () => { sentinel = null; });
+        } else {
+          if (!noSleep) {
+            const { default: NoSleep } = await import('nosleep.js');
+            noSleep = new NoSleep();
+          }
+          await noSleep.enable();
+        }
+        setOn(true);
+      } catch {
+        wanted = false;
+        setOn(false);
+      }
+    };
+
+    const release = async () => {
+      await sentinel?.release();
+      sentinel = null;
+      noSleep?.disable();
+      setOn(false);
+    };
+
+    wakeToggle.hidden = false;
+    wakeToggle.addEventListener('click', () => {
+      wanted = !wanted;
+      wanted ? acquire() : release();
+    });
+
+    document.addEventListener('visibilitychange', () => {
+      if (wanted && !sentinel && document.visibilityState === 'visible') acquire();
+    });
+  }
 
   const copyBtn = document.getElementById('copy-link-btn') as HTMLButtonElement;
   if (copyBtn) {
