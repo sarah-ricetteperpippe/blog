@@ -3,7 +3,7 @@
 // Triggered by .github/workflows/notify-newsletter.yml on push to main.
 // Rileva i .md/.mdx aggiunti sotto src/content/{blog,academy}/<lang>/ nel
 // commit più recente, parsa il frontmatter, aspetta che il primo post sia
-// live sul sito (per gestire il delay del deploy Netlify), poi POSTa il
+// live sul sito (per gestire il delay del deploy Cloudflare), poi POSTa il
 // payload al webhook n8n "Send recipe flow".
 //
 // Env vars (impostate dal workflow):
@@ -153,7 +153,7 @@ console.log(`\nPosts to notify (${posts.length}):`);
 console.log(JSON.stringify(posts, null, 2));
 
 // Aspetta che il primo post sia effettivamente live sul sito.
-// Netlify ci mette ~3-5 min per deployare dopo il push. Polling fino a 10 min.
+// Cloudflare ci mette qualche minuto per deployare dopo il push. Polling fino a 10 min.
 console.log(`\nWaiting for first post URL to become live (max 10 min)...`);
 const firstPostUrl = posts[0].url;
 const isLive = await waitForPostLive(firstPostUrl);
@@ -161,7 +161,7 @@ if (!isLive) {
   console.error(
     `\nFirst post never became live within timeout: ${firstPostUrl}`,
   );
-  console.error('Aborting notify — Netlify deploy probably failed or is slow.');
+  console.error('Aborting notify — Cloudflare deploy probably failed or is slow.');
   process.exit(1);
 }
 
