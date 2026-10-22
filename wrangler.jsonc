@@ -1,0 +1,12 @@
+// Config Cloudflare Workers (account del dominio). Il Worker serve dist/ come
+// asset statici; gira codice solo sulla root "/" per il redirect lingua.
+{
+  "name": "blog",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/"]
+  }
+}
