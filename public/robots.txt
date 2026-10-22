@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ricetteperpippe.netlify.app/sitemap.xml
+Sitemap: https://ricetteperpippe.com/sitemap.xml

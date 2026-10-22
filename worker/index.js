@@ -1,5 +1,5 @@
 // Cloudflare Worker: redirect lingua sulla root "/", il resto sono asset statici.
-// Stessa logica di functions/index.js (Pages) e netlify/edge-functions/lang-redirect.js.
+// Sostituisce la vecchia edge function Netlify (lang-redirect.js).
 export default {
   fetch(request, env) {
     const url = new URL(request.url);

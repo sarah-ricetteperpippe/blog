@@ -50,7 +50,7 @@
 - [ ] Attivare workflow n8n (Inactive → Active in alto a destra del canvas)
 - [ ] Copiare la URL persistente del Webhook node (sarà `/webhook/<id>` senza `-test`)
 - [ ] Aggiornare `PUBLIC_NEWSLETTER_WEBHOOK` in `.env` locale con la URL prod
-- [ ] Aggiungere `PUBLIC_NEWSLETTER_WEBHOOK` come Environment variable su Netlify (Site configuration → Environment variables) con la URL prod
+- [x] `PUBLIC_NEWSLETTER_WEBHOOK` in produzione: build variable del Worker Cloudflare `blog`, con fallback nel codice (NewsletterSection.astro)
 - [ ] Test end-to-end sul sito deployed (form home → mail in casella)
 - [ ] **Workflow 2** — Nuova pubblicazione → email agli iscritti:
   - Trigger: GitHub Action su push a main
