@@ -982,6 +982,63 @@ p {
   margin-top: 0.4rem;
 }
 
+/* Interruttore "schermo sempre acceso" */
+.wake-lock-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--color-text-muted);
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.18s ease;
+}
+.wake-lock-toggle[hidden] {
+  display: none;
+}
+.wake-lock-toggle:hover {
+  color: var(--color-primary-orange);
+}
+.wake-lock-toggle:focus-visible {
+  outline: 2px solid rgba(231, 110, 81, 0.45);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+.wake-lock-track {
+  position: relative;
+  width: 2.4rem;
+  height: 1.35rem;
+  border-radius: 999px;
+  background: #d4cdc8;
+  flex-shrink: 0;
+  transition: background 0.18s ease;
+}
+.wake-lock-thumb {
+  position: absolute;
+  top: 0.175rem;
+  left: 0.175rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.18s ease;
+}
+.wake-lock-toggle.on {
+  color: var(--color-primary-green);
+}
+.wake-lock-toggle.on .wake-lock-track {
+  background: var(--color-primary-green);
+}
+.wake-lock-toggle.on .wake-lock-thumb {
+  transform: translateX(1.05rem);
+}
+
 /* ============================
    Contenuto Markdown ricetta
    ============================ */

@@ -1,6 +1,6 @@
 // Lazy singleton Supabase client.
 // Only initialized when first called (so SSG build doesn't break if env vars
-// happen to be missing at build time — though they should be set on Netlify).
+// happen to be missing at build time — though they should be set on Cloudflare).
 
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 
