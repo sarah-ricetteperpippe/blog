@@ -149,7 +149,7 @@ function shortDate(date: Date) {
               </div>
 
               <h2 class="blog-card-title">{post.data.title}</h2>
-              <p class="blog-card-excerpt">{post.data.description}</p>
+              <p class="blog-card-excerpt">{post.data.cardDescription ?? post.data.description}</p>
             </div>
           </a>
 

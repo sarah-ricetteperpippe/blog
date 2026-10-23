@@ -33,7 +33,7 @@ Prima di toccare niente, allinea i due file:
 
 1. **Lunghezza:** se la traduzione è significativamente più corta o più lunga della sorgente IT (>15% di scarto su un paragrafo), DeepL ha tagliato o ridondato. Segna il paragrafo per riscrittura.
 2. **Componenti MDX:** verifica che `<Figure>`, `<Aside>`, `<TwoColumn>` siano presenti nella traduzione con stessi prop strutturali (`variant`, `side`, `ratio`). Solo i prop testuali (`title`, `caption`, `alt`) sono tradotti.
-3. **Frontmatter:** `translationKey`, `pubDate`, `heroImage`, `tags`, slug devono essere identici al file IT. `lang` deve essere `"en"` o `"fr"`. Se uno di questi è sbagliato, correggilo.
+3. **Frontmatter:** `translationKey`, `pubDate`, `heroImage`, `tags`, slug devono essere identici al file IT. `lang` deve essere `"en"` o `"fr"`. Se uno di questi è sbagliato, correggilo. Se l'IT ha `cardDescription`, deve esserci anche nella traduzione, tradotto, e deve restare l'inizio della `description` tradotta.
 
 ## 2. Cosa rifinire — checklist
 

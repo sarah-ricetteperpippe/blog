@@ -57,6 +57,7 @@ function template({ title, description, slug, category, tags }) {
   return `---
 title: "${title}"
 description: "${description}"
+# cardDescription: "testo più corto solo per le card (home, elenco, tag); togli il # per usarlo"
 pubDate: "${today()}"
 heroImage: "/images/ricette/${slug}.webp"
 category: "${category}"

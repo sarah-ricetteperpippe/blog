@@ -20,6 +20,8 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    // Testo più corto per le card (home, elenco, tag); la pagina usa sempre description.
+    cardDescription: z.string().optional(),
     pubDate: z.coerce.date(),
     heroImage: z.string().optional(),
     category: blogCategorySchema,
