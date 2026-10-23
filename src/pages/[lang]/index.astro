@@ -97,7 +97,7 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
               <div class="recipe-card-placeholder" style={heroImage ? 'display:none' : ''}>🍳</div>
               <div class="recipe-card-content">
                 <h3 class="recipe-card-title">{post.data.title}</h3>
-                <p class="recipe-card-excerpt">{post.data.description}</p>
+                <p class="recipe-card-excerpt">{post.data.cardDescription ?? post.data.description}</p>
               </div>
             </a>
             <div class="recipe-card-footer">

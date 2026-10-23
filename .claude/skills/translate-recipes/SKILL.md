@@ -151,6 +151,7 @@ Se il passo 1 della sorgente è già "metti l'acqua sul fuoco" ma mancano le dos
 ```yaml
 title: # tradotto
 description: # tradotto, stesso registro ironico
+cardDescription: # solo se c'è nell'IT: tradotto, deve restare l'inizio della description tradotta
 pubDate: # invariato
 heroImage: # invariato
 category: # tradotto (es. "Secondi piatti" → "Main courses" / "Plats principaux")
@@ -164,7 +165,7 @@ lang: "en"  # o "fr" — aggiungi se manca
 1. Leggi il file IT.
 2. Conferma lingua target con l'utente se non è chiara.
 3. Se il file target esiste, sovrascrivilo.
-4. Traduci il frontmatter (title, description, category) prima del corpo.
+4. Traduci il frontmatter (title, description, cardDescription se c'è, category) prima del corpo.
 5. Traduci il corpo paragrafo per paragrafo, applicando le regole di localizzazione, tono, regionalismi, quantità.
 6. Se la ricetta lessa pasta o gnocchi, applica la sezione 4 (acqua, sale, primo passo, rinumerazione).
 7. Per EN: passa il risultato attraverso le conversioni metriche → imperiali.

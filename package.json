@@ -10,10 +10,12 @@
     "format-recipe": "node scripts/format-recipe.mjs",
     "new-guide": "node scripts/new-guide.mjs",
     "translate": "node scripts/translate-ai.mjs",
-    "instagram": "node scripts/instagram-caption.mjs"
+    "instagram": "node scripts/instagram-caption.mjs",
+    "webp": "node scripts/to-webp.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.0.0",
+    "@astrojs/sitemap": "3.2.1",
     "@supabase/supabase-js": "^2.45.0",
     "astro": "^4.0.0",
     "astro-pagefind": "^1.8.5",
