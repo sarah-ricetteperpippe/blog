@@ -11,7 +11,11 @@
     "new-guide": "node scripts/new-guide.mjs",
     "translate": "node scripts/translate-ai.mjs",
     "instagram": "node scripts/instagram-caption.mjs",
+<<<<<<< Updated upstream
     "webp": "node scripts/to-webp.mjs"
+=======
+    "import-subscribers": "node scripts/import-subscribers.mjs"
+>>>>>>> Stashed changes
   },
   "dependencies": {
     "@astrojs/mdx": "^3.0.0",
