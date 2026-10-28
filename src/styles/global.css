@@ -1085,6 +1085,29 @@ p {
   margin: 0;
 }
 
+/* Foto a sinistra: il titolo Ingredienti sta dentro la colonna del testo,
+   quindi il separatore di sezione passa sul blocco intero. */
+.post-content .recipe-overview--left {
+  align-items: start;
+  margin-top: 1.75rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid #d4d4d4;
+}
+
+.recipe-overview--left .recipe-overview-photo {
+  order: -1;
+  align-self: start;
+}
+
+.recipe-overview-photo figcaption {
+  font-family: var(--font-small);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
 @media (max-width: 720px) {
   .recipe-overview {
     grid-template-columns: minmax(0, 1fr);
@@ -1095,6 +1118,10 @@ p {
     justify-self: center;
     width: 100%;
     max-width: 22rem;
+  }
+
+  .recipe-overview--left .recipe-overview-photo {
+    order: 0;
   }
 }
 

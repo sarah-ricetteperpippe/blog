@@ -1,6 +1,9 @@
 ---
 /**
- * Ingredienti a sinistra e foto centrata a destra, in due colonne uguali.
+ * Ingredienti e foto centrata in due colonne uguali: foto a destra di default,
+ * a sinistra con side="left". Su mobile la foto va sempre sotto la lista.
+ * Con side="left" metti "## Ingredienti" dentro il componente, sopra la lista,
+ * così il titolo resta sulla colonna degli ingredienti.
  * Mantieni il titolo "## Ingredienti" prima del componente, per avere
  * il separatore di sezione sopra entrambe le colonne.
  *
@@ -12,16 +15,19 @@ export interface Props {
   alt: string;
   width?: number;
   height?: number;
+  side?: 'left' | 'right';
+  caption?: string;
 }
 
-const { src, alt, width, height } = Astro.props;
+const { src, alt, width, height, side = 'right', caption } = Astro.props;
 ---
 
-<div class="recipe-overview">
+<div class:list={['recipe-overview', side === 'left' && 'recipe-overview--left']}>
   <div class="recipe-overview-text">
     <slot />
   </div>
   <figure class="recipe-overview-photo">
     <img src={src} alt={alt} width={width} height={height} loading="lazy" />
+    {caption && <figcaption>{caption}</figcaption>}
   </figure>
 </div>
