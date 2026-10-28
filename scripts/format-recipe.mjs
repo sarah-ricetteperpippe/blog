@@ -11,7 +11,7 @@
 
 import { spawnSync } from 'node:child_process';
 import { createInterface } from 'node:readline';
-import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -216,6 +216,15 @@ function findRecipe(slug) {
   return matches[0];
 }
 
+// Scelte sulle foto salvate da un giro precedente, valide solo se i webp esistono ancora.
+function savedPhotos(planPath) {
+  if (!existsSync(planPath)) return null;
+  try {
+    const photos = JSON.parse(readFileSync(planPath, 'utf8'));
+    return photos.length && photos.every((p) => existsSync(join(IMAGES_DIR, p.output))) ? photos : null;
+  } catch { return null; }
+}
+
 async function askPhotos(ask, slug) {
   const recent = recentSources();
   if (recent.length) {
@@ -288,15 +297,14 @@ async function askPhotos(ask, slug) {
   return assignNames(photos.filter((p) => p.position !== 'skip'), slug);
 }
 
-async function convertPhotos(photos, ask) {
-  const existing = photos.filter((p) => existsSync(join(IMAGES_DIR, p.output)));
-  if (existing.length) {
-    console.log(`\nEsistono già: ${existing.map((p) => p.output).join(', ')}`);
-    const answer = (await ask('Le sovrascrivo? (s/N) ')).trim().toLowerCase();
-    if (answer !== 's') throw new Error('Interrotto: nessuna foto è stata sovrascritta.');
-  }
+// Se il webp con il nome giusto esiste già lo uso così com'è, senza riconvertire.
+async function convertPhotos(photos) {
   const sharp = await loadSharp();
   for (const photo of photos) {
+    if (existsSync(join(IMAGES_DIR, photo.output))) {
+      console.log(`  ✅ ${photo.output} esiste già, la uso`);
+      continue;
+    }
     let image = sharp(photo.path).rotate();
     if (photo.crop) image = image.extract(photo.crop);
     await image.webp({ quality: 80 }).toFile(join(IMAGES_DIR, photo.output));
@@ -314,17 +322,30 @@ async function main(args) {
   const original = readFileSync(recipePath, 'utf8');
   let { frontmatter, body } = splitFrontmatter(original);
 
+  // Il testo incollato non è ancora su git: lo conservo, nel caso il risultato non piaccia.
+  const backupDir = join(ROOT, 'bozze-originali');
+  const planPath = join(backupDir, `${slug}.foto.json`);
+
   const rl = createInterface({ input: process.stdin, output: process.stdout });
   const ask = (q) => new Promise((res) => rl.question(q, res));
   try {
     console.log(`\n🧹 Sistemo la ricetta: ${slug}`);
-    const photos = await askPhotos(ask, slug);
-    if (photos.length) {
-      console.log('\nConverto le foto in webp:');
-      await convertPhotos(photos, ask);
-      const hero = photos.find((p) => p.position === 'hero');
-      if (hero) frontmatter = setHeroImage(frontmatter, `${IMAGES_URL}/${hero.output}`);
+    // Se un giro precedente ha già convertito le foto (es. da npm run new-recipe) e poi si è fermato,
+    // riuso le stesse scelte invece di rifare domande e conversione.
+    let photos = savedPhotos(planPath);
+    if (photos) {
+      console.log(`\n📷 Uso le foto già pronte da un giro precedente: ${photos.map((p) => p.output).join(', ')}`);
+    } else {
+      photos = await askPhotos(ask, slug);
+      if (photos.length) {
+        console.log('\nConverto le foto in webp:');
+        await convertPhotos(photos);
+        mkdirSync(backupDir, { recursive: true });
+        writeFileSync(planPath, JSON.stringify(photos, null, 2), 'utf8');
+      }
     }
+    const hero = photos.find((p) => p.position === 'hero');
+    if (hero) frontmatter = setHeroImage(frontmatter, `${IMAGES_URL}/${hero.output}`);
     const heroSrc = frontmatter.match(/^heroImage:\s*"?([^"\n]+)"?/m)?.[1];
     if (!heroSrc || !existsSync(join(ROOT, 'public', heroSrc))) {
       console.log(`\n⚠️  La copertina ${heroSrc || '(non impostata)'} non esiste ancora in public/.`);
@@ -347,12 +368,12 @@ async function main(args) {
       console.log('\nNessuna modifica al file.');
       return;
     }
-    // Il testo incollato non è ancora su git: lo conservo, nel caso il risultato non piaccia.
-    const backupDir = join(ROOT, 'bozze-originali');
     mkdirSync(backupDir, { recursive: true });
     const backup = join(backupDir, `${slug}.mdx`);
     writeFileSync(backup, original, 'utf8');
     writeFileSync(recipePath, updated, 'utf8');
+    // Le foto ora sono nel testo: al prossimo giro verranno conservate da sole.
+    if (formatText) rmSync(planPath, { force: true });
     console.log(`\n✅ Aggiornata: ${recipePath.replace(ROOT, '')}`);
     console.log(`   Il testo com'era prima è in bozze-originali/${slug}.mdx (cartella ignorata da git, puoi cancellarla quando vuoi).`);
     if (photos.length) console.log('   I file originali delle foto sono ancora in public/images/ricette: cancellali se non ti servono.');
