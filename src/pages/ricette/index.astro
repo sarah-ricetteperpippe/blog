@@ -1,5 +1,11 @@
 ---
-// Redirect alla pagina blog italiana
+// Redirect alla pagina blog italiana. URL relativo (non Astro.redirect,
+// che con `site` impostato punta al dominio di produzione anche nelle preview).
 const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
-return Astro.redirect(`${base}it/blog/`);
+const target = `${base}it/blog/`;
 ---
+<!doctype html>
+<title>Ricette per Pippe</title>
+<meta http-equiv="refresh" content={`0;url=${target}`} />
+<meta name="robots" content="noindex" />
+<a href={target}>Vai alle ricette</a>
