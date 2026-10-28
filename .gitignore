@@ -10,3 +10,6 @@ bozze-originali/
 
 # cache locale di wrangler
 .wrangler/
+
+# log e snapshot del browser automatico (Playwright MCP)
+.playwright-mcp/

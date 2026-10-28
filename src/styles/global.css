@@ -1169,6 +1169,10 @@ p {
   left: 0.55rem;
   top: 0.45rem;
 }
+/* Paragrafo che riprende lo step dopo i sotto-punti: staccalo dalla lista. */
+.post-content > ol > li ul + p {
+  margin-top: 0.75rem;
+}
 
 /* Lista procedimento (ol) — solo il livello top: eventuali liste
    annidate dentro uno step (sotto-punti/sotto-procedure) non devono

@@ -46,6 +46,15 @@ export function findPhotos(files, bases) {
   return [...new Set(photos)];
 }
 
+// Risposta alla domanda sulle foto: numeri dell'elenco (es. "1,3") oppure nomi (nome → nome, nome2…).
+export function pickPhotos(answer, listed, files) {
+  const parts = answer.split(',').map((p) => p.trim()).filter(Boolean);
+  if (parts.length && parts.every((p) => /^\d+$/.test(p))) {
+    return [...new Set(parts.map((p) => listed[parseInt(p, 10) - 1]).filter(Boolean))];
+  }
+  return findPhotos(files, parts.map((b) => b.replace(SOURCE_EXT, '').replace(/\d+$/, '')));
+}
+
 export function ratioOf(width, height) {
   if (width > height * 1.1) return 'landscape';
   if (height > width * 1.1) return 'portrait';
@@ -220,17 +229,18 @@ async function askPhotos(ask, slug) {
   const recent = recentSources();
   if (recent.length) {
     console.log(`\nFoto aggiunte negli ultimi ${RECENT_DAYS} giorni in public/images/ricette:`);
-    recent.forEach((file) => console.log(`  - ${file}`));
+    recent.forEach((file, i) => console.log(`  ${String(i + 1).padStart(2)}. ${file}`));
+  } else {
+    console.log(`\nNessuna foto nuova in public/images/ricette negli ultimi ${RECENT_DAYS} giorni.`);
   }
   const files = readdirSync(IMAGES_DIR);
   let sources = [];
   while (true) {
-    const answer = (await ask('\nNome delle foto, senza numero né estensione (più nomi separati da virgola, invio per saltare): ')).trim();
+    const answer = (await ask('\nQuali foto usi? Numeri dell\'elenco separati da virgola, es. 1,2 (oppure il nome del file; invio per nessuna): ')).trim();
     if (!answer) return [];
-    const bases = answer.split(',').map((b) => b.trim().replace(SOURCE_EXT, '').replace(/\d+$/, '')).filter(Boolean);
-    sources = findPhotos(files, bases).filter((file) => !(file.startsWith(slug) && /\.webp$/i.test(file)));
+    sources = pickPhotos(answer, recent, files).filter((file) => !(file.startsWith(slug) && /\.webp$/i.test(file)));
     if (sources.length) break;
-    console.log('Nessuna foto trovata con questo nome. Controlla l\'elenco qui sopra e riprova.');
+    console.log('Nessuna foto trovata. Usa i numeri dell\'elenco qui sopra, oppure il nome del file originale (non il .webp).');
   }
 
   const sharp = await loadSharp();

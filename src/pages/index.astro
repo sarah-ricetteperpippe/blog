@@ -1,5 +1,12 @@
 ---
-// Redirect alla versione italiana di default
+// Redirect alla versione italiana di default. URL relativo (non Astro.redirect,
+// che in build statica usa `site` e in preview manda al sito pubblicato).
+// In produzione la root la gestisce comunque il Worker (worker/index.js).
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
-return Astro.redirect(`${base}it/`);
+const target = `${base}it/`;
 ---
+<!doctype html>
+<title>Redirect</title>
+<meta http-equiv="refresh" content={`0;url=${target}`} />
+<meta name="robots" content="noindex" />
+<a href={target}>{target}</a>
