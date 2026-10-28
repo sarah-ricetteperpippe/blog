@@ -2,7 +2,7 @@
 title: "Smoked scamorza and potato savory tart"
 description: "An easy tart for a last-minute dinner or a snack to share, with just a few ingredients and hardly any effort."
 pubDate: "2026-01-16"
-heroImage: "/images/ricette/torta-salata-patate-scamorza-affumicata.png"
+heroImage: "/images/ricette/torta-salata-patate-scamorza-affumicata.webp"
 category: "One-dish meals"
 tags: ["Piatti unici", "Aperitivo", "Patate", "Formaggio", "Forno", "Antispreco"]
 lang: "en"
@@ -29,7 +29,7 @@ A handy recipe for a last-minute dinner or something to share with friends. It's
 - 2 tablespoons grated cheese (I use [Grattì](https://www.google.com/search?q=gratt%C3%AC) or [Grattugiato Vemondo](https://www.google.com/search?q=grattuggiato+Vemondo))
 - (Optional) 1 sprig of fresh rosemary
 
-![Slice of smoked scamorza and potato savory tart](/images/ricette/torta-salata-patate-scamorza-affumicata-2.png)
+![Slice of smoked scamorza and potato savory tart](/images/ricette/torta-salata-patate-scamorza-affumicata-2.webp)
 
 ## Method
 

@@ -13,7 +13,7 @@ translationKey: "cheesecake-alle-fragole"
 <!-- c9ca99_bd44037add18457fab25d20094f48419~mv2.png -->
 <!-- c9ca99_e86f8b87fed74ad08fcadb74b4a21844~mv2.png -->
 
-![Cheesecake aux fraises décoré pour un anniversaire](/images/ricette/cheesecake-fragole-compleanno.png)
+![Cheesecake aux fraises décoré pour un anniversaire](/images/ricette/cheesecake-fragole-compleanno.webp)
 
 ## Infos rapides
 
@@ -40,7 +40,7 @@ translationKey: "cheesecake-alle-fragole"
 **Pour la déco :**
 - 250 g de fraises fraîches
 
-![Cheesecake aux fraises entier avec bordure de fraises fraîches](/images/ricette/cheesecake-fragole-frontale.png)
+![Cheesecake aux fraises entier avec bordure de fraises fraîches](/images/ricette/cheesecake-fragole-frontale.webp)
 
 ## Préparation
 
@@ -83,4 +83,4 @@ translationKey: "cheesecake-alle-fragole"
 - **Au frigo :** jusqu'à 3 jours, couverte de film alimentaire ou sous une cloche à gâteau.
 - **Au congélateur :** jusqu'à 1 mois ; décongèle-la au frigo environ 2 heures avant de servir.
 
-![Détail du cheesecake aux fraises](/images/ricette/cheesecake-fragole-dettaglio.png)
+![Détail du cheesecake aux fraises](/images/ricette/cheesecake-fragole-dettaglio.webp)

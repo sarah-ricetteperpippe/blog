@@ -2,7 +2,7 @@
 title: "Tarte salée aux pommes de terre et à la scamorza fumée"
 description: "Une tarte salée facile pour un dîner improvisé ou un apéro de dernière minute, avec peu d'ingrédients et presque aucun effort."
 pubDate: "2026-01-16"
-heroImage: "/images/ricette/torta-salata-patate-scamorza-affumicata.png"
+heroImage: "/images/ricette/torta-salata-patate-scamorza-affumicata.webp"
 category: "Plats uniques"
 tags: ["Piatti unici", "Aperitivo", "Patate", "Formaggio", "Forno", "Antispreco"]
 lang: "fr"
@@ -29,7 +29,7 @@ Une tarte salée bien pratique pour un dîner improvisé ou un apéro de derniè
 - 2 cuillères à soupe de fromage râpé (j'utilise [Grattì](https://www.google.com/search?q=gratt%C3%AC) ou [Grattugiato Vemondo](https://www.google.com/search?q=grattuggiato+Vemondo))
 - (Facultatif) 1 brin de romarin frais
 
-![Part de tarte salée aux pommes de terre et à la scamorza fumée](/images/ricette/torta-salata-patate-scamorza-affumicata-2.png)
+![Part de tarte salée aux pommes de terre et à la scamorza fumée](/images/ricette/torta-salata-patate-scamorza-affumicata-2.webp)
 
 ## Préparation
 

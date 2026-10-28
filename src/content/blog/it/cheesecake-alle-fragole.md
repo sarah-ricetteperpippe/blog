@@ -12,7 +12,7 @@ translationKey: "cheesecake-alle-fragole"
 <!-- c9ca99_bd44037add18457fab25d20094f48419~mv2.png -->
 <!-- c9ca99_e86f8b87fed74ad08fcadb74b4a21844~mv2.png -->
 
-![Cheesecake alle fragole decorata per un compleanno](/images/ricette/cheesecake-fragole-compleanno.png)
+![Cheesecake alle fragole decorata per un compleanno](/images/ricette/cheesecake-fragole-compleanno.webp)
 
 ## Informazioni rapide
 
@@ -39,7 +39,7 @@ translationKey: "cheesecake-alle-fragole"
 **Per la decorazione:**
 - 250 g di fragole fresche
 
-![Cheesecake alle fragole intera con bordo di fragole fresche](/images/ricette/cheesecake-fragole-frontale.png)
+![Cheesecake alle fragole intera con bordo di fragole fresche](/images/ricette/cheesecake-fragole-frontale.webp)
 
 ## Procedimento
 
@@ -82,4 +82,4 @@ translationKey: "cheesecake-alle-fragole"
 - **In frigorifero:** fino a 3 giorni, coperta con pellicola o sotto una campana per dolci.
 - **In freezer:** fino a 1 mese, da scongelare in frigorifero circa 2 ore prima di servirla.
 
-![Dettaglio della cheesecake alle fragole](/images/ricette/cheesecake-fragole-dettaglio.png)
+![Dettaglio della cheesecake alle fragole](/images/ricette/cheesecake-fragole-dettaglio.webp)
