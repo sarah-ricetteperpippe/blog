@@ -88,18 +88,28 @@ Nel blog non esistono "q.b.": ogni ingrediente ha un numero e un'unità di casa.
 
 PROCEDIMENTO
 
-Lista numerata. Ogni passo ha un titolo breve in grassetto che termina con il punto, poi due spazi e a capo, e il testo indentato di 4 spazi su una nuova riga. Una riga vuota tra un passo e l'altro:
+Lista numerata, con una riga vuota tra un passo e l'altro. Ogni passo si apre con il grassetto, che è l'inizio della frase e non un titolo ripetuto dopo:
 
-1. **Metti l’acqua sul fuoco.** 
-    Riempi una pentola d’acqua e portala a bollore con il coperchio.
+1. **Metti l’acqua sul fuoco:** riempi una pentola d’acqua e portala a bollore con il coperchio.
 
-2. **Prepara le verdure.** 
-    Taglia le carote a fiammiferini.
+2. **Accendi il forno** a 180 °C statico e intanto taglia le carote a fiammiferini.
 
-* Se il testo ha già titoli dei passi, tienili. Se non li ha, scrivine uno breve all'imperativo che riassuma il passo.
+Non scrivere "**Accendi il forno.**" e poi di nuovo "Accendi il forno a 180 °C": è ridondante. Usa i due punti dentro il grassetto quando serve un'etichetta ("**Prepara il roux:** aggiungi…"), altrimenti fai continuare la frase dopo il grassetto.
+
+* Raggruppa i passi in modo logico: le azioni fatte sulla stessa cosa nello stesso momento (es. lava, pela e taglia le verdure; pulisci, controlla e lava le rape) vanno in un unico passo. Leggere, fare e rileggere con le mani occupate è stressante: meglio pochi passi completi che tanti micro-passi.
+* Unendo i passi non perdere nulla: ogni quantità, tempo, controllo e consiglio del testo originale deve restare.
+* Niente muri di testo: un passo che supera due o tre frasi va spezzato dentro il passo stesso, così l'occhio ritrova il punto mentre cucini. Le parti parallele (le parti di un ingrediente da trattare in modo diverso, casi alternativi, esempi, tempi diversi a seconda della varietà) diventano una sotto-lista puntata; il seguito del passo diventa un nuovo paragrafo. Sotto-lista e paragrafo sono indentati di 4 spazi e separati da una riga vuota (un a capo semplice non indentato viene unito alla riga sopra e non si vede). Esempio:
+
+3. **Sbollenta le zucchine:** imposta il timer su:
+    - 3 minuti e 30 secondi se sono zucchine chiare;
+    - 4 minuti e 30 secondi se sono scure.
+
+    Quando l’acqua bolle, immergi le zucchine e fai partire il timer.
+
+* Nelle sotto-liste niente sotto-sotto-liste: se un punto ha due casi, scrivili nella stessa riga separati da punto e virgola.
+* I passi facoltativi restano separati.
 * Se il procedimento è diviso in fasi (es. Preparazione, Cottura), usa `### Fase` e ricomincia la numerazione da 1 in ciascuna fase.
-* Non spezzare né unire passi.
-* Passaggi o azioni facoltative: la condizione va all'inizio della frase. "Se usi il lemongrass, aggiungine ¼ di cucchiaino", non "aggiungi ¼ di cucchiaino di lemongrass se lo usi". Un passo interamente facoltativo inizia con `(Opzionale)` subito dopo il titolo.
+* Passaggi o azioni facoltative: la condizione va all'inizio della frase. "Se usi il lemongrass, aggiungine ¼ di cucchiaino", non "aggiungi ¼ di cucchiaino di lemongrass se lo usi". Un passo interamente facoltativo inizia con `(Opzionale)` prima del grassetto: `4. (Opzionale) **Prepara l’olio al peperoncino:** …`.
 
 ⸻
 
@@ -115,18 +125,15 @@ La foto di copertina è già nel frontmatter: non inserirla nel corpo.
 
 Foto accanto a un passo del procedimento: il componente non può stare dentro un elemento di lista, quindi spezza la lista. Chiudi la lista prima del passo, apri la Figure e mettici dentro il passo (con il suo numero originale, così la numerazione continua), poi riprendi la lista dal passo successivo con il suo numero:
 
-4. **Passo precedente.** 
-    Testo.
+4. **Passo precedente:** testo.
 
 <Figure src="..." alt="..." side="right" ratio="landscape">
 
-5. **Passo con la foto.** 
-    Testo.
+5. **Passo con la foto:** testo.
 
 </Figure>
 
-6. **Passo successivo.** 
-    Testo.
+6. **Passo successivo:** testo.
 
 (con `caption="..."` solo se il piano la indica)
 

@@ -2,7 +2,7 @@
 title: "Torta salata patate e scamorza affumicata"
 description: "Sfiziosissimo salvacena o stuzzicheria dell'ultimo minuto, con pochi ingredienti e zero sbatta."
 pubDate: "2026-01-16"
-heroImage: "/images/ricette/torta-salata-patate-scamorza-affumicata.png"
+heroImage: "/images/ricette/torta-salata-patate-scamorza-affumicata.webp"
 category: "Piatti unici"
 tags: ["Piatti unici", "Aperitivo", "Patate", "Formaggio", "Forno", "Antispreco"]
 translationKey: "torta-salata-patate-e-scamorza-affumicata"
@@ -26,7 +26,7 @@ translationKey: "torta-salata-patate-e-scamorza-affumicata"
 - 2 cucchiai formaggio grattugiato (io uso [Grattì](https://www.google.com/search?q=gratt%C3%AC) oppure [Grattugiato Vemondo](https://www.google.com/search?q=grattuggiato+Vemondo))
 - (Opzionale) 1 rametto di rosmarino fresco
 
-![Fetta di torta salata patate e scamorza affumicata](/images/ricette/torta-salata-patate-scamorza-affumicata-2.png)
+![Fetta di torta salata patate e scamorza affumicata](/images/ricette/torta-salata-patate-scamorza-affumicata-2.webp)
 
 ## Procedura
 

@@ -160,6 +160,8 @@ if (existsSync(filePath)) {
 writeFileSync(filePath, template({ title, description, slug, category, tags }), 'utf8');
 
 console.log(`\n✅ Creata: src/content/blog/it/${slug}.mdx`);
+// Lanciato da npm run ricetta: i passi successivi li guida lui.
+if (process.env.RICETTA_GUIDATA) { rl.close(); process.exit(0); }
 console.log('\n📋 Incolla la ricetta nel file, così com\'è, e salvalo.');
 console.log('📸 Metti le foto in public/images/ricette, con qualsiasi nome (es. nome.png, nome2.png…).');
 const formatNow = (await ask('Premi invio quando hai finito per sistemare testo e foto (oppure n per farlo dopo): ')).trim().toLowerCase();

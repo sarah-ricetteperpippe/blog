@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  assignNames, cleanBody, existingPhotos, findPhotos, formatBody, portraitCrop, ratioOf,
+  assignNames, cleanBody, existingPhotos, findPhotos, formatBody, pickPhotos, portraitCrop, ratioOf,
   setHeroImage, splitFrontmatter, validateBody,
 } from './format-recipe.mjs';
 
@@ -104,4 +104,12 @@ test('validateBody rifiuta i q.b.', () => {
   const base = '## Informazioni rapide\n## Ingredienti\n## Procedimento\n';
   assert.ok(validateBody(`${base}- Sale q.b.`, []).some((e) => e.includes('q.b.')));
   assert.deepEqual(validateBody(`${base}- ½ cucchiaino di sale fino`, []), []);
+});
+
+test('pickPhotos accetta i numeri dell\'elenco oppure i nomi', () => {
+  const listed = ['pasta-rape.PNG', 'pasta-rape2.PNG', 'altro.jpg'];
+  const files = [...listed, 'pasta-rape.webp'];
+  assert.deepEqual(pickPhotos('1, 2', listed, files), ['pasta-rape.PNG', 'pasta-rape2.PNG']);
+  assert.deepEqual(pickPhotos('9', listed, files), []);
+  assert.deepEqual(pickPhotos('pasta-rape.PNG', listed, files), ['pasta-rape.PNG', 'pasta-rape.webp', 'pasta-rape2.PNG']);
 });

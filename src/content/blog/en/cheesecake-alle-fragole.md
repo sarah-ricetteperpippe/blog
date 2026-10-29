@@ -13,7 +13,7 @@ translationKey: "cheesecake-alle-fragole"
 <!-- c9ca99_bd44037add18457fab25d20094f48419~mv2.png -->
 <!-- c9ca99_e86f8b87fed74ad08fcadb74b4a21844~mv2.png -->
 
-![Strawberry cheesecake decorated for a birthday](/images/ricette/cheesecake-fragole-compleanno.png)
+![Strawberry cheesecake decorated for a birthday](/images/ricette/cheesecake-fragole-compleanno.webp)
 
 ## Quick info
 
@@ -40,7 +40,7 @@ translationKey: "cheesecake-alle-fragole"
 **For the decoration:**
 - 250g (8.8 oz) fresh strawberries
 
-![Whole strawberry cheesecake with a fresh strawberry border](/images/ricette/cheesecake-fragole-frontale.png)
+![Whole strawberry cheesecake with a fresh strawberry border](/images/ricette/cheesecake-fragole-frontale.webp)
 
 ## Method
 
@@ -83,4 +83,4 @@ translationKey: "cheesecake-alle-fragole"
 - **In the fridge:** up to 3 days, covered with plastic wrap or stored under a cake dome.
 - **In the freezer:** up to 1 month; thaw in the fridge about 2 hours before serving.
 
-![Close-up of the strawberry cheesecake](/images/ricette/cheesecake-fragole-dettaglio.png)
+![Close-up of the strawberry cheesecake](/images/ricette/cheesecake-fragole-dettaglio.webp)
