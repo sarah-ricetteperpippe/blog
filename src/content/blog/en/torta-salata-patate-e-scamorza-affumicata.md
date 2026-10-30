@@ -26,7 +26,7 @@ A handy recipe for a last-minute dinner or something to share with friends. It's
 - 250 g (8.8 oz) smoked scamorza (I use [Affumicata Fermaggio](https://www.google.com/search?q=affumicata+fermaggio)), diced or sliced
 - 3 heaping tablespoons extra virgin olive oil (2 for the potatoes, 1 for the top)
 - 1/4 teaspoon salt
-- 2 tablespoons grated cheese (I use [Grattì](https://www.google.com/search?q=gratt%C3%AC) or [Grattugiato Vemondo](https://www.google.com/search?q=grattuggiato+Vemondo))
+- 2 tablespoons grated cheese (I use [Grattì](https://www.google.com/search?q=gratt%C3%AC) or [Vemondo grated cheese alternative](https://www.google.com/search?q=grattuggiato+Vemondo))
 - (Optional) 1 sprig of fresh rosemary
 
 ![Slice of smoked scamorza and potato savory tart](/images/ricette/torta-salata-patate-scamorza-affumicata-2.webp)

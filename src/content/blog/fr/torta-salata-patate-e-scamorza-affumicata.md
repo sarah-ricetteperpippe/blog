@@ -26,7 +26,7 @@ Une tarte salée bien pratique pour un dîner improvisé ou un apéro de derniè
 - 250 g de scamorza fumée (j'utilise [Affumicata Fermaggio](https://www.google.com/search?q=affumicata+fermaggio)), en dés ou en tranches
 - 3 cuillères à soupe bombées d'huile d'olive extra vierge (2 pour les pommes de terre, 1 pour le dessus)
 - 1/4 de cuillère à café de sel
-- 2 cuillères à soupe de fromage râpé (j'utilise [Grattì](https://www.google.com/search?q=gratt%C3%AC) ou [Grattugiato Vemondo](https://www.google.com/search?q=grattuggiato+Vemondo))
+- 2 cuillères à soupe de fromage râpé (j'utilise [Grattì](https://www.google.com/search?q=gratt%C3%AC) ou [râpé végétal Vemondo](https://www.google.com/search?q=grattuggiato+Vemondo))
 - (Facultatif) 1 brin de romarin frais
 
 ![Part de tarte salée aux pommes de terre et à la scamorza fumée](/images/ricette/torta-salata-patate-scamorza-affumicata-2.webp)
