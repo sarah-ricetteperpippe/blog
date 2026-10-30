@@ -1314,6 +1314,49 @@ p {
   font-size: 0.82rem;
   font-weight: 700;
 }
+/* Step con foto (<Figure step />): foto su metà colonna, numero e testo
+   dello step sull'altra metà. */
+.post-content > ol > li:has(> .ed-figure[data-step]) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.75rem;
+  align-items: start;
+  padding-left: 0;
+  padding-right: 0;
+}
+.post-content > ol > li:has(> .ed-figure[data-step]) > * {
+  grid-column: 2;
+  padding-left: 3.5rem;
+}
+.post-content > ol > li:has(> .ed-figure[data-step]) > .ed-figure[data-step] {
+  grid-column: 1;
+  grid-row: 1 / span 20;
+  padding-left: 0;
+}
+.post-content > ol > li > .ed-figure[data-step] img {
+  margin: 0;
+}
+.post-content > ol > li:has(> .ed-figure[data-step][data-side='left'])::before {
+  left: calc(50% + 0.875rem + 0.85rem);
+}
+.post-content > ol > li:has(> .ed-figure[data-step][data-side='right']) > * {
+  grid-column: 1;
+}
+.post-content > ol > li:has(> .ed-figure[data-step][data-side='right']) > .ed-figure[data-step] {
+  grid-column: 2;
+}
+@media (max-width: 720px) {
+  .post-content > ol > li:has(> .ed-figure[data-step]) {
+    display: block;
+    padding: 0.4rem 1rem 0.5rem 3.5rem;
+  }
+  .post-content > ol > li:has(> .ed-figure[data-step]) > * {
+    padding-left: 0;
+  }
+  .post-content > ol > li:has(> .ed-figure[data-step][data-side='left'])::before {
+    left: 0.85rem;
+  }
+}
 
 /* Blockquote (consigli, note) */
 .post-content blockquote {

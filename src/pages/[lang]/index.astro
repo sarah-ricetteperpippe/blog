@@ -91,7 +91,7 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
           <article class="recipe-card js-reveal">
             <a href={`${base}${lang}/blog/${slug(post)}/`} class="recipe-card-link">
               {heroImage
-                ? <img src={heroImage} alt={post.data.title} class="recipe-card-image" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                ? <img src={heroImage} alt={post.data.title} class="recipe-card-image" style={post.data.heroPosition && `object-position: ${post.data.heroPosition}`} loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
                 : null
               }
               <div class="recipe-card-placeholder" style={heroImage ? 'display:none' : ''}>🍳</div>
