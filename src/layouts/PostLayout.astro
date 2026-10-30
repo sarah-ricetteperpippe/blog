@@ -11,6 +11,7 @@ export interface Props {
   description?: string;
   pubDate?: Date | string;
   heroImage?: string;
+  heroPosition?: string;
   category?: string;
   tags?: string[];
   lang?: string;
@@ -18,7 +19,7 @@ export interface Props {
   body?: string;
 }
 
-const { title, description, pubDate, heroImage, category, tags, lang = 'it', slug = '', body = '' } = Astro.props;
+const { title, description, pubDate, heroImage, heroPosition, category, tags, lang = 'it', slug = '', body = '' } = Astro.props;
 const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 const currentLang = (lang === 'en' || lang === 'fr' || lang === 'it' ? lang : 'it') as SiteLang;
 
@@ -196,7 +197,7 @@ const showExcerptBelowHero = Boolean(excerpt) && !showExcerptAboveHero;
       <!-- Immagine hero -->
       {heroImage && (
         <figure class="post-hero-figure">
-          <img src={`${base}${heroImage.replace(/^\//, '')}`} alt={title} />
+          <img src={`${base}${heroImage.replace(/^\//, '')}`} alt={title} style={heroPosition && `object-position: ${heroPosition}`} />
           <figcaption>{heroCaption}</figcaption>
         </figure>
       )}
@@ -270,7 +271,7 @@ const showExcerptBelowHero = Boolean(excerpt) && !showExcerptAboveHero;
             return (
               <a href={`${base}${lang}/blog/${relSlug(post)}/`} class="post-related-card">
                 {relatedHeroImage
-                  ? <img src={`${base}${relatedHeroImage.replace(/^\//, '')}`} alt={post.data.title} />
+                  ? <img src={`${base}${relatedHeroImage.replace(/^\//, '')}`} alt={post.data.title} style={post.data.heroPosition && `object-position: ${post.data.heroPosition}`} />
                   : <div class="post-related-placeholder">🍳</div>
                 }
                 <span class="post-related-name">{post.data.title}</span>

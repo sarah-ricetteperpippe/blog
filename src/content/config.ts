@@ -24,6 +24,8 @@ const blog = defineCollection({
     cardDescription: z.string().optional(),
     pubDate: z.coerce.date(),
     heroImage: z.string().optional(),
+    // Inquadratura della foto nelle card e in cima alla pagina (CSS object-position), es. "center 70%" per mostrare più la parte bassa.
+    heroPosition: z.string().optional(),
     category: blogCategorySchema,
     tags: z.array(z.string()).optional(),
     lang: z.enum(['it', 'en', 'fr']).default('it'),
