@@ -28,7 +28,7 @@ translationKey: "torta-salata-patate-e-scamorza-affumicata"
 
 ![Fetta di torta salata patate e scamorza affumicata](/images/ricette/torta-salata-patate-scamorza-affumicata-2.webp)
 
-## Procedura
+## Procedimento
 
 1. **Prepara la base.** Srotola 1 rotolo di pasta sfoglia e sistemala in una teglia rivestita con carta forno, lasciando la carta sotto.
 

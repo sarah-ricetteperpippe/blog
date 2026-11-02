@@ -32,7 +32,7 @@ La teoria originale prevede che si faccia col parmigiano — io ho fatto con alt
 - 2 pizzichi di sale fino (eventualmente 1 in più dopo l'assaggio)
 - (Opzionale) 4 giri di macina di pepe (2 a piatto)
 
-## Procedura
+## Procedimento
 
 1. **Base di cipolla:** trita finemente ½ cipolla bianca e falla appassire in casseruola con 1 cucchiaio di olio (o 1 noce piccola di burro vegetale) a fuoco basso, finché diventa morbida e traslucida. Non deve colorire.
 2. **Riso:** aggiungi il riso e mescola per 1–2 minuti a fiamma media.

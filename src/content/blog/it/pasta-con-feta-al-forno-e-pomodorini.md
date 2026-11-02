@@ -26,7 +26,7 @@ translationKey: "pasta-con-feta-al-forno-e-pomodorini"
 - 3 cucchiai di olio extravergine di oliva (1 cucchiaino per ungere la pirofila, 2 cucchiai per i pomodorini, il resto sulla feta)
 - ¼ di cucchiaino scarso di sale fino (la feta è già sapida)
 
-## Procedura
+## Procedimento
 
 1. **Prepara i pomodorini:** lava i 250g di pomodorini. Se sono grandi, tagliali a metà nel senso della lunghezza.
 2. **Pirofila:** ungi il fondo con 1 cucchiaino di olio. Mescola i pomodorini con 2 cucchiai di olio, ¼ di cucchiaino scarso di sale e ¾ del basilico o dell'origano, poi mettili nella pirofila con la parte tagliata verso il basso.

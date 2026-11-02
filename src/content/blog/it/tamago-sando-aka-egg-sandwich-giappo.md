@@ -31,7 +31,7 @@ Questa è la versione più europea, con ingredienti comuni.
 - 1 cucchiaino di latte
 - 1 cucchiaio e mezzo di maionese Kewpie (io maio veg Lidl)
 
-## Procedura
+## Procedimento
 
 1. Metti 2 uova in un pentolino, coprile con acqua fredda e porta a bollore. Quando l'acqua bolle, abbassa la fiamma e cuoci **12 minuti**.
 2. Scola subito le uova e trasferiscile in acqua fredda (meglio se con ghiaccio) finché sono completamente fredde. Sguscia.

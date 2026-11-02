@@ -30,7 +30,7 @@ translationKey: "torta-salata-zucchine-e-patate"
 - 40g formaggio grattugiato
 - 6 giri di macina di pepe nero
 
-## Procedura
+## Procedimento
 
 1. Stendi 1 rotolo di pasta sfoglia in uno stampo da 26 cm e bucherella bene il fondo con una forchetta. Metti da parte.
 2. Lava e taglia 400g di zucchine a dadini. Pela e taglia 300g di patate a cubetti di circa 1–1,5 cm.

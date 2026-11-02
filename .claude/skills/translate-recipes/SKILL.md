@@ -146,6 +146,16 @@ Se il passo 1 della sorgente è già "metti l'acqua sul fuoco" ma mancano le dos
 - Nomi di componenti MDX: `<Figure>`, `<Aside>`, `<TwoColumn>`. Traduci solo i loro **prop testuali** (`caption`, `alt`, `title`) e il contenuto interno.
 - Nomi di marchi e prodotti commerciali.
 
+### Titoli di sezione: sempre questi, mai sinonimi
+
+| IT | EN | FR |
+|---|---|---|
+| `## Informazioni rapide` | `## Quick info` | `## Infos rapides` |
+| `## Ingredienti` | `## Ingredients` | `## Ingrédients` |
+| `## Procedimento` | `## Method` | `## Préparation` |
+
+Il titolo del procedimento deve essere esattamente quello: il sito ci mette sotto l'interruttore "schermo sempre acceso" solo se lo riconosce. Mai "Procedure", "Instructions", "Steps", "Procédure" o "Méthode".
+
 ## 6. Frontmatter — cosa cambiare
 
 ```yaml

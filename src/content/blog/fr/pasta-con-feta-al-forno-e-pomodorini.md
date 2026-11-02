@@ -25,7 +25,7 @@ translationKey: "pasta-con-feta-al-forno-e-pomodorini"
 - 3 cuillères à soupe d'huile d'olive extra vierge (1 cuillère à café pour huiler le plat, 2 cuillères à soupe pour les tomates, le reste sur la feta)
 - ¼ de cuillère à café de sel fin, à peine (la feta est déjà salée)
 
-## Méthode
+## Préparation
 
 1. **Prépare les tomates cerises.** Lave les 250 g de tomates cerises. Si elles sont grosses, coupe-les en deux dans la longueur.
 2. **Mets le plat en place.** Huile le fond d'un plat à four avec 1 cuillère à café d'huile. Mélange les tomates avec 2 cuillères à soupe d'huile, à peine ¼ de cuillère à café de sel et les ¾ du basilic ou de l'origan, puis dispose-les côté coupé vers le bas.
