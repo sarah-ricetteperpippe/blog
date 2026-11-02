@@ -2,9 +2,14 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import pagefind from 'astro-pagefind';
 import sitemap from '@astrojs/sitemap';
+import rehypeWakeLockToggle from './src/plugins/rehype-wake-lock-toggle.mjs';
 
 export default defineConfig({
   site: 'https://ricetteperpippe.com',
+  markdown: {
+    // Interruttore "schermo sempre acceso" sotto il titolo del procedimento
+    rehypePlugins: [rehypeWakeLockToggle],
+  },
   integrations: [
     mdx(),
     pagefind(),

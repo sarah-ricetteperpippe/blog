@@ -47,6 +47,10 @@ Per ogni paragrafo della traduzione, controlla:
 - Note tra parentesi a inciso (`*(con i pleurotus...)*`) preservate?
 - **US vs UK:** dove esiste ambiguità (`courgette`/`zucchini`, `aubergine`/`eggplant`, `coriander`/`cilantro`, `grill`/`broiler`, `tin`/`can`), correggi sempre verso la variante **US**. Se il termine US rischia di confondere un pubblico UK, affianca la variante UK tra parentesi la prima volta.
 
+### Titoli di sezione
+- Il titolo del procedimento è esattamente `## Method` (EN) o `## Préparation` (FR), così il sito ci mette sotto l'interruttore "schermo sempre acceso". DeepL tende a scrivere "Procedure" / "Procédure" o "Méthode": correggi.
+- Gli altri titoli: `## Quick info` / `## Infos rapides`, `## Ingredients` / `## Ingrédients`.
+
 ### Regionalismi
 Confronta col file IT. Per ogni termine regionale identifica come è stato reso:
 - **Nome proprio di piatto/ingrediente:** ok il pattern `nome target (nome IT in corsivo)` alla prima occorrenza? Se DeepL ha solo messo il calco, aggiungi il termine IT in corsivo tra parentesi.

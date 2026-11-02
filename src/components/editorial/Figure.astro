@@ -7,6 +7,15 @@
  *     Il paragrafo di testo che vive nella colonna accanto.
  *   </Figure>
  *
+ * Con size="half" foto e testo occupano metà colonna ciascuno.
+ *
+ * Con step la foto (senza testo dentro) va all'inizio di uno step della procedura:
+ * occupa metà colonna e lo step (numero e testo) sta nell'altra metà; lo step
+ * successivo riparte sotto la foto, a tutta larghezza.
+ *   11. <Figure src="..." side="left" ratio="portrait" step />
+ *
+ *       **Titolo step:** testo…
+ *
  * Uso standalone (centrata nella colonna testo):
  *   <Figure src="..." caption="..." />
  */
@@ -16,6 +25,8 @@ export interface Props {
   caption?: string;
   side?: 'left' | 'right' | 'center';
   ratio?: 'portrait' | 'landscape' | 'square';
+  size?: 'half';
+  step?: boolean;
 }
 
 const {
@@ -24,13 +35,15 @@ const {
   caption,
   side = 'center',
   ratio = 'landscape',
+  size,
+  step = false,
 } = Astro.props;
 
 const hasSlot = Astro.slots.has('default');
-const effectiveSide = hasSlot && (side === 'left' || side === 'right') ? side : 'center';
+const effectiveSide = (hasSlot || step) && (side === 'left' || side === 'right') ? side : 'center';
 ---
 
-<figure class="ed-figure" data-side={effectiveSide} data-ratio={ratio}>
+<figure class="ed-figure" data-side={effectiveSide} data-ratio={ratio} data-size={size} data-step={step && effectiveSide !== 'center' ? '' : undefined}>
   <div class="ed-figure-media">
     <img src={src} alt={alt} loading="lazy" />
     {caption && <figcaption>{caption}</figcaption>}
@@ -93,12 +106,23 @@ const effectiveSide = hasSlot && (side === 'left' || side === 'right') ? side : 
   .ed-figure[data-side='left'][data-ratio='square']     { grid-template-columns: 44% 1fr; }
   .ed-figure[data-side='left'][data-ratio='landscape']  { grid-template-columns: 52% 1fr; }
 
+  .ed-figure[data-side][data-size='half'] { grid-template-columns: 1fr 1fr; }
+
   .ed-figure[data-side='left']  .ed-figure-media { grid-column: 1; grid-row: 1; }
   .ed-figure[data-side='left']  .ed-figure-body  { grid-column: 2; grid-row: 1; }
   .ed-figure[data-side='right'] .ed-figure-media { grid-column: 2; grid-row: 1; }
   .ed-figure[data-side='right'] .ed-figure-body  { grid-column: 1; grid-row: 1; }
 
+  /* ----- step: la griglia è sullo step (global.css), qui solo la foto ----- */
+  .ed-figure[data-step] {
+    display: block;
+    margin: 0;
+  }
+
   @media (max-width: 720px) {
+    .ed-figure[data-step] {
+      margin: 0.5rem 0 1rem;
+    }
     .ed-figure[data-side='left'],
     .ed-figure[data-side='right'] {
       display: block;

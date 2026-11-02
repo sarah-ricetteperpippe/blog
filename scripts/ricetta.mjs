@@ -31,7 +31,7 @@ const STEPS = [
 // e la foto di copertina esiste davvero.
 export function isFormatted(content, publicDir) {
   const hero = content.match(/^heroImage:\s*"?([^"\n]+)"?/m)?.[1];
-  return content.includes('## Ingredienti') && /^## Procedi?(mento|ura)\b/m.test(content) &&
+  return content.includes('## Ingredienti') && /^## Procedimento\s*$/m.test(content) &&
     !content.includes('{/*') &&
     !content.includes('**Nome ingrediente:**') &&
     Boolean(hero && existsSync(join(publicDir, hero)));

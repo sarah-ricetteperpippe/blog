@@ -117,7 +117,7 @@ function shortDate(d: Date) {
             <a href={`${base}${lang}/blog/${postSlug}/`} class="blog-card-link">
               <div class="blog-card-image-wrap">
                 {heroImage
-                  ? <img class="blog-card-image" src={heroImage} alt={post.data.title} loading="lazy" />
+                  ? <img class="blog-card-image" src={heroImage} alt={post.data.title} style={post.data.heroPosition && `object-position: ${post.data.heroPosition}`} loading="lazy" />
                   : <div class="blog-card-image-placeholder">🍳</div>
                 }
                 {post.data.category && (

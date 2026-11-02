@@ -30,7 +30,7 @@ translationKey: "brodo-vegetale-base"
 - 2 litri di acqua
 - 2 cucchiai di olio extravergine di oliva
 
-## Procedura
+## Procedimento
 
 1. **Prepara le verdure:** lava e taglia tutto a pezzi grossolani. Non serve precisione, devono solo rilasciare sapore.
 2. **Rosola leggermente:** metti tutte le verdure nella pentola con 2 cucchiai di olio. Falle saltare a fuoco medio qualche minuto per insaporire. Non devono colorire.

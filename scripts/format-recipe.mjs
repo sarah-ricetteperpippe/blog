@@ -102,7 +102,7 @@ export function validateBody(body, photos, keep = []) {
   if (!body) return ['Il testo è vuoto.'];
   if (/^---\n/.test(body)) errors.push('Non includere il frontmatter.');
   for (const heading of ['## Informazioni rapide', '## Ingredienti', '## Procedimento']) {
-    if (!body.includes(heading)) errors.push(`Manca la sezione "${heading}".`);
+    if (!new RegExp(`^${heading}\\s*$`, 'm').test(body)) errors.push(`Manca la sezione "${heading}".`);
   }
   if (/\{\/\*/.test(body)) errors.push('Rimuovi i commenti del template {/* … */}.');
   if (/\bq\.\s?b\./i.test(body)) errors.push('Sostituisci ogni "q.b." con una quantità (vedi ZERO Q.B.).');
