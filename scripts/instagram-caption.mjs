@@ -117,7 +117,7 @@ export function generateWithClaude(prompt, invoke = spawnSync) {
   return response.result;
 }
 
-export function run(args, { root = ROOT, generate = generateWithClaude, log = console.error, print = text => process.stdout.write(text) } = {}) {
+export function run(args, { root = ROOT, generate = generateWithClaude, log = console.error, print = text => process.stdout.write(`${text}\n`) } = {}) {
   const options = parseArgs(args);
   if (options.help) {
     print('Uso: npm run instagram -- <slug> [--stdout] [--force]\n\n' +
