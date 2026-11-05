@@ -1348,16 +1348,32 @@ p {
 .post-content > ol > li:has(> .ed-figure[data-step][data-side='right']) > .ed-figure[data-step] {
   grid-column: 2;
 }
+/* Mobile: foto sopra (allineata al testo), poi numero e testo affiancati
+   come negli altri step. Il numero diventa un elemento della griglia,
+   così sta accanto al testo e non accanto alla foto. */
 @media (max-width: 720px) {
   .post-content > ol > li:has(> .ed-figure[data-step]) {
-    display: block;
-    padding: 0.4rem 1rem 0.5rem 3.5rem;
+    grid-template-columns: 2.65rem 1fr;
+    column-gap: 0;
+    padding: 0.4rem 1rem 0.5rem 0.85rem;
   }
-  .post-content > ol > li:has(> .ed-figure[data-step]) > * {
+  .post-content > ol > li:has(> .ed-figure[data-step]) > *,
+  .post-content > ol > li:has(> .ed-figure[data-step][data-side='right']) > * {
+    grid-column: 2;
     padding-left: 0;
   }
+  .post-content > ol > li:has(> .ed-figure[data-step]) > .ed-figure[data-step],
+  .post-content > ol > li:has(> .ed-figure[data-step][data-side='right']) > .ed-figure[data-step] {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0.5rem 0 0; /* lo stacco dal testo lo dà già il margine della foto (1rem) */
+  }
+  .post-content > ol > li:has(> .ed-figure[data-step])::before,
   .post-content > ol > li:has(> .ed-figure[data-step][data-side='left'])::before {
-    left: 0.85rem;
+    position: static;
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0.2rem;
   }
 }
 
