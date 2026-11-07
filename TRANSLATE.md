@@ -5,7 +5,7 @@ La traduzione IT → EN/FR **non passa più da DeepL**: la fa Claude, seguendo l
 **Due passaggi, entrambi da terminale:**
 
 ```bash
-npm run new-recipe                          # crea il file .mdx in it/
+npm run ricetta                             # percorso guidato: foto, testo, rifinitura, posizione foto
 npm run translate -- <slug>                 # genera en/ e fr/ via Claude Code headless
 ```
 
@@ -20,10 +20,11 @@ traduci la ricetta <slug> in EN e FR
 
 ## Scrivere una nuova ricetta
 
-Lancia lo scaffolding interattivo, che chiede titolo, descrizione, categoria e tag e crea il file in `src/content/blog/it/`:
+Lancia il percorso guidato, che in sei fasi importa le foto, crea il file in `src/content/blog/it/` (titolo, descrizione, categoria e tag), rifinisce il testo incollato, posiziona le foto, traduce e scrive la caption Instagram. Si può interrompere e riprendere in qualsiasi momento:
 
 ```bash
-npm run new-recipe
+npm run ricetta
+npm run ricetta -- <slug> --fase foto   # rifà una sola fase: immagini, scrivi, rifinisci, foto, traduzione, caption
 ```
 
 In alternativa puoi creare il file a mano con questo formato:
@@ -134,8 +135,8 @@ Questo attiva **`translate-recipes-edit`** ([.claude/skills/translate-recipes-ed
 ## Workflow completo (esempio)
 
 ```bash
-# 1. Crea la ricetta in italiano (scaffolding interattivo)
-npm run new-recipe
+# 1. Crea la ricetta in italiano (percorso guidato)
+npm run ricetta
 # → crea src/content/blog/it/lasagne-della-domenica.mdx
 
 # 2. In chat: "traduci la ricetta lasagne-della-domenica in EN e FR"

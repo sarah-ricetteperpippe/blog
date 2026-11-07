@@ -1,45 +1,37 @@
 #!/usr/bin/env node
 // scripts/ricetta.mjs
 //
-// Percorso guidato per una ricetta, dall'inizio alla pubblicazione.
-// Mostra a che punto è la ricetta e lancia gli altri script nell'ordine giusto:
-// new-recipe → (incolla testo e foto) → format-recipe → build → translate → instagram.
+// Percorso guidato per una ricetta, dall'inizio alla pubblicazione, in sei fasi:
+// importa immagini → scrivi ricetta → edita e rifinisci → posiziona immagini
+// → traduzione → caption. Ogni fase vive in scripts/ricetta/ (traduzione e
+// caption usano translate-ai.mjs e instagram-caption.mjs).
 // Si può interrompere in qualsiasi momento: rilanciandolo, riparte da dove eri.
 //
 // Uso: npm run ricetta
-//      npm run ricetta -- <slug>   → riprende direttamente quella ricetta
+//      npm run ricetta -- <slug>                → riprende quella ricetta
+//      npm run ricetta -- <slug> --fase foto    → rifà solo quella fase
 
 import { spawnSync } from 'node:child_process';
-import { createInterface } from 'node:readline';
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { BLOG, DRAFTS, ROOT, ask, readState, recipeFile, writeState } from './ricetta/comune.mjs';
+import { importaImmagini } from './ricetta/immagini.mjs';
+import { isPasted, scriviRicetta, toSlug } from './ricetta/scrivi.mjs';
+import { isFormatted, rifinisciRicetta } from './ricetta/rifinisci.mjs';
+import { posizionaImmagini } from './ricetta/foto.mjs';
 
-const ROOT = fileURLToPath(new URL('../', import.meta.url));
-const BLOG = join(ROOT, 'src/content/blog');
-const SCRIPTS = join(ROOT, 'scripts');
+const runScript = (script, slug) =>
+  spawnSync(process.execPath, [join(ROOT, 'scripts', script), slug], { stdio: 'inherit', cwd: ROOT }).status === 0;
 
-const STEPS = [
-  { key: 'create', label: 'Crea il file della ricetta' },
-  { key: 'format', label: 'Incolla il testo, copia le foto e sistema tutto' },
-  { key: 'check', label: 'Controlla che il sito compili' },
-  { key: 'translate', label: 'Traduci in inglese e francese' },
-  { key: 'instagram', label: 'Scrivi la caption Instagram' },
+const PHASES = [
+  { key: 'immagini', label: 'Importa immagini', run: importaImmagini },
+  { key: 'scrivi', label: 'Scrivi ricetta', run: scriviRicetta },
+  { key: 'rifinisci', label: 'Edita e rifinisci', run: rifinisciRicetta },
+  { key: 'foto', label: 'Posiziona le immagini', run: posizionaImmagini },
+  { key: 'traduzione', label: 'Traduci in inglese e francese', run: (slug) => runScript('translate-ai.mjs', slug) },
+  { key: 'caption', label: 'Scrivi la caption Instagram', run: (slug) => runScript('instagram-caption.mjs', slug) },
 ];
-
-// Una ricetta è formattata quando ha le sezioni giuste, niente resti del template
-// e la foto di copertina esiste davvero.
-export function isFormatted(content, publicDir) {
-  const hero = content.match(/^heroImage:\s*"?([^"\n]+)"?/m)?.[1];
-  return content.includes('## Ingredienti') && /^## Procedimento\s*$/m.test(content) &&
-    !content.includes('{/*') &&
-    !content.includes('**Nome ingrediente:**') &&
-    Boolean(hero && existsSync(join(publicDir, hero)));
-}
-
-function recipeFile(slug) {
-  return ['mdx', 'md'].map((ext) => join(BLOG, 'it', `${slug}.${ext}`)).find(existsSync);
-}
 
 function hasTranslation(lang, slug) {
   const dir = join(BLOG, lang);
@@ -47,73 +39,56 @@ function hasTranslation(lang, slug) {
     readFileSync(join(dir, file), 'utf8').match(/^translationKey:\s*["']?([^"'\n]+)/m)?.[1].trim() === slug);
 }
 
+// Le ricette nate prima di questo percorso non hanno lo stato della bozza:
+// per loro foto importate e posizionate valgono come fatte.
 function status(slug) {
+  const state = readState(slug);
   const file = recipeFile(slug);
   const content = file ? readFileSync(file, 'utf8') : '';
   return {
-    create: Boolean(file),
-    format: Boolean(file) && isFormatted(content, join(ROOT, 'public')),
-    check: false,
-    translate: hasTranslation('en', slug) && hasTranslation('fr', slug),
-    instagram: existsSync(join(ROOT, 'captions/instagram', `${slug}.txt`)),
+    immagini: state ? Array.isArray(state.photos) : Boolean(file),
+    scrivi: Boolean(file) && isPasted(content),
+    rifinisci: Boolean(file) && isFormatted(content),
+    foto: state ? Boolean(state.placed) : Boolean(file),
+    traduzione: hasTranslation('en', slug) && hasTranslation('fr', slug),
+    caption: existsSync(join(ROOT, 'captions/instagram', `${slug}.txt`)),
   };
 }
 
-function itSlugs() {
-  return readdirSync(join(BLOG, 'it'))
-    .filter((f) => /\.mdx?$/.test(f))
-    .map((f) => ({ slug: f.replace(/\.mdx?$/, ''), mtime: statSync(join(BLOG, 'it', f)).mtimeMs }))
-    .sort((a, b) => b.mtime - a.mtime)
-    .map(({ slug }) => slug);
-}
-
-// Un readline per domanda: i sotto-script usano lo stesso terminale e non devono trovarne uno aperto.
-function ask(question) {
-  const rl = createInterface({ input: process.stdin, output: process.stdout });
-  return new Promise((res) => rl.question(question, (answer) => { rl.close(); res(answer); }));
-}
-
-function run(script, args = [], env = {}) {
-  return spawnSync(process.execPath, [join(SCRIPTS, script), ...args], {
-    stdio: 'inherit', cwd: ROOT, env: { ...process.env, ...env },
-  }).status === 0;
-}
-
-function build() {
-  console.log('Lancio la build… (circa 30 secondi)');
-  const result = spawnSync('npm', ['run', 'build'], { cwd: ROOT, encoding: 'utf8' });
-  if (result.status === 0) {
-    console.log('✅ Il sito compila.');
-    return true;
-  }
-  const output = `${result.stdout}\n${result.stderr}`.trim().split('\n');
-  console.log(`\n❌ La build non passa. Ultime righe:\n${output.slice(-15).join('\n')}`);
-  console.log('\nDi solito è un carattere di troppo nel .mdx (una { o una < sole): il file e la riga sono indicati sopra.');
-  return false;
+// Ricette italiane (più recenti prima) e bozze che hanno solo le foto, senza ancora il file.
+function allSlugs() {
+  const files = readdirSync(join(BLOG, 'it')).filter((f) => /\.mdx?$/.test(f))
+    .filter((f) => !/^draft:\s*true/m.test(readFileSync(join(BLOG, 'it', f), 'utf8')))
+    .map((f) => ({ slug: f.replace(/\.mdx?$/, ''), mtime: statSync(join(BLOG, 'it', f)).mtimeMs }));
+  const drafts = existsSync(DRAFTS) ? readdirSync(DRAFTS).filter((f) => /^[a-z0-9-]+\.json$/.test(f) && !f.endsWith('.foto.json'))
+    .map((f) => ({ slug: f.replace(/\.json$/, ''), mtime: statSync(join(DRAFTS, f)).mtimeMs })) : [];
+  return [...new Map([...files, ...drafts].sort((a, b) => b.mtime - a.mtime).map((s) => [s.slug, s.slug])).keys()];
 }
 
 function printStatus(slug, done) {
   console.log(`\n📋 ${slug}`);
-  STEPS.forEach((step, i) => {
-    const mark = step.key === 'check' ? '  ' : done[step.key] ? '✅' : '⬜';
-    console.log(`  ${mark} ${i + 1}. ${step.label}`);
-  });
+  PHASES.forEach((phase, i) => console.log(`  ${done[phase.key] ? '✅' : '⬜'} ${i + 1}. ${phase.label}`));
+}
+
+async function newRecipe() {
+  let title = '';
+  while (!title) title = await ask('\nTitolo della ricetta: ');
+  const suggested = toSlug(title);
+  const slug = await ask(`Slug, cioè il nome del file e delle foto (invio per "${suggested}"): `) || suggested;
+  if (recipeFile(slug) || readState(slug)) throw new Error(`Esiste già una ricetta "${slug}": riprendila con npm run ricetta -- ${slug}`);
+  writeState(slug, { title });
+  return slug;
 }
 
 async function chooseRecipe() {
   console.log('\n🍳 Ricette per Pippe — percorso guidato\n');
   console.log('  1. Nuova ricetta');
   console.log('  2. Continua una ricetta già iniziata');
-  const choice = (await ask('\nCosa fai? ')).trim();
-  if (choice === '1') return null;
+  if (await ask('\nCosa fai? ') === '1') return newRecipe();
 
-  // Le bozze di servizio (draft: true) non sono ricette; la caption Instagram non conta,
-  // perché le ricette vecchie non ce l'hanno.
-  const slugs = itSlugs().filter((slug) => !/^draft:\s*true/m.test(readFileSync(recipeFile(slug), 'utf8')));
-  const unfinished = slugs.filter((slug) => {
-    const s = status(slug);
-    return !s.format || !s.translate;
-  });
+  // La caption non conta per "da finire": le ricette vecchie non ce l'hanno.
+  const slugs = allSlugs();
+  const unfinished = slugs.filter((slug) => Object.entries(status(slug)).some(([key, done]) => key !== 'caption' && !done));
   const recent = slugs.filter((slug) => !unfinished.includes(slug)).slice(0, 3);
   const listed = [...unfinished, ...recent];
   if (unfinished.length) {
@@ -124,48 +99,39 @@ async function chooseRecipe() {
   recent.forEach((slug, i) => console.log(`  ${unfinished.length + i + 1}. ${slug}`));
   console.log('\n(oppure rilancia con npm run ricetta -- <slug> per qualsiasi altra)');
   while (true) {
-    const slug = listed[parseInt((await ask('Numero: ')).trim(), 10) - 1];
+    const slug = listed[parseInt(await ask('Numero: '), 10) - 1];
     if (slug) return slug;
   }
 }
 
 async function main(args) {
-  let slug = args.find((a) => !a.startsWith('-')) || await chooseRecipe();
-
-  if (!slug) {
-    const before = new Set(itSlugs());
-    if (!run('new-recipe.mjs', [], { RICETTA_GUIDATA: '1' })) throw new Error('Il file non è stato creato.');
-    slug = itSlugs().find((s) => !before.has(s));
-    if (!slug) throw new Error('Non trovo il file appena creato.');
-  } else if (!recipeFile(slug)) {
-    throw new Error(`Ricetta italiana non trovata: ${slug}`);
+  const faseIndex = args.indexOf('--fase');
+  const only = faseIndex === -1 ? null : args[faseIndex + 1];
+  if (only && !PHASES.some((p) => p.key === only)) {
+    throw new Error(`Fase sconosciuta: ${only}. Usa una di: ${PHASES.map((p) => p.key).join(', ')}`);
   }
+  const slug = args.find((a, i) => !a.startsWith('-') && (faseIndex === -1 || i !== faseIndex + 1)) || await chooseRecipe();
+  if (!recipeFile(slug) && !readState(slug)) throw new Error(`Ricetta non trovata: ${slug}`);
 
   printStatus(slug, status(slug));
-  for (const step of STEPS.slice(1)) {
-    if (status(slug)[step.key]) continue;
-
-    console.log(`\n▶️  ${step.label}`);
-    if (step.key === 'format') {
-      console.log(`\n   📝 Apri src/content/blog/it/${slug}.mdx e incolla la ricetta così com'è,`);
-      console.log('      anche disordinata (va bene sotto lo scheletro del template). Salva.');
-      console.log('   📸 Copia le foto in public/images/ricette, con il nome che vuoi.');
-      console.log('      Dopo te le mostro in un elenco numerato: scegli tu quale va in copertina,');
-      console.log(`      quale accanto agli ingredienti ecc., e le rinomino io (${slug}.webp, ${slug}2.webp…).`);
-      if (process.platform === 'darwin') spawnSync('open', [join(ROOT, 'public/images/ricette')]);
+  for (const phase of PHASES) {
+    if (only ? phase.key !== only : status(slug)[phase.key]) continue;
+    // Senza file non si può andare oltre la scrittura.
+    if (!recipeFile(slug) && !['immagini', 'scrivi'].includes(phase.key)) {
+      return console.log(`\nPrima serve il file della ricetta: npm run ricetta -- ${slug} --fase scrivi\n`);
     }
-    const answer = (await ask('\nInvio per partire, s per saltare questo passo, q per uscire: ')).trim().toLowerCase();
+
+    console.log(`\n▶️  ${phase.label}`);
+    const answer = (await ask('Invio per partire, s per saltare questa fase, q per uscire: ')).toLowerCase();
     if (answer === 'q') return console.log(`\nA dopo! Riprendi con: npm run ricetta -- ${slug}\n`);
     if (answer === 's') continue;
 
-    let ok;
-    if (step.key === 'format') ok = run('format-recipe.mjs', [slug]);
-    if (step.key === 'check') ok = build();
-    if (step.key === 'translate') ok = run('translate-ai.mjs', [slug]);
-    if (step.key === 'instagram') ok = run('instagram-caption.mjs', [slug]);
-    if (!ok) return console.log(`\nSistema il problema qui sopra e rilancia: npm run ricetta -- ${slug}\n`);
+    if (!await phase.run(slug, readState(slug))) {
+      return console.log(`\nSistema il problema qui sopra e rilancia: npm run ricetta -- ${slug}\n`);
+    }
     printStatus(slug, status(slug));
   }
+  if (only) return;
 
   console.log('\n🎉 Ultimo giro:');
   console.log(`   1. npm run dev e rileggi http://localhost:4321/it/blog/${slug}/ (e le versioni /en/ e /fr/)`);
