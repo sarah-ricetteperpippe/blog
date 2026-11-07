@@ -29,7 +29,7 @@ Nell'ordine:
 2. `## Informazioni rapide`
 3. `## Ingredienti`
 4. `## Procedimento`
-5. Eventuali sezioni finali già presenti nel testo (es. `## Nota`, consigli, conservazione).
+5. Eventuali sezioni finali già presenti nel testo (es. `## Nota`, consigli, conservazione), ma solo per ciò che non riguarda un passo preciso. Avvertenze e consigli legati a un passo ("è importante far raffreddare…", "non schiacciare…") vanno dentro quel passo, perché chi cucina li deve leggere mentre lo fa, non dopo aver finito. Se dopo averli spostati la sezione finale resta vuota, toglila.
 
 ⸻
 
