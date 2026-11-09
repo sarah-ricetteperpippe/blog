@@ -1,0 +1,16 @@
+---
+/** Messaggio "nessun risultato" della ricerca ricette, con rimando alla ricerca del sito. */
+import { getRecipeFilterUi } from '../config/recipe-filter';
+import type { SiteLang } from '../config/taxonomy';
+
+export interface Props {
+  lang: SiteLang;
+}
+
+const ui = getRecipeFilterUi(Astro.props.lang);
+---
+
+<div class="no-results-msg recipe-no-match" data-rf-nomatch hidden>
+  <p>{ui.noMatch}</p>
+  <button type="button" class="btn-secondary" data-rf-search-site>{ui.searchSite}</button>
+</div>

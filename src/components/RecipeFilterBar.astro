@@ -1,0 +1,28 @@
+---
+/**
+ * Pill categorie + contatore risultati + regione live per lettori di schermo.
+ * Usata in home e nel blog; la logica è in src/lib/recipe-filter.ts.
+ */
+import { getBlogCategoryLabel, type SiteLang } from '../config/taxonomy';
+import { getRecipeFilterUi } from '../config/recipe-filter';
+
+export interface Props {
+  lang: SiteLang;
+  categories: readonly string[];
+  class?: string;
+}
+
+const { lang, categories, class: className = '' } = Astro.props;
+const ui = getRecipeFilterUi(lang);
+---
+
+{categories.length > 0 && (
+  <nav class={`filter-bar filter-bar--recipes ${className}`} aria-label={ui.categoriesLabel}>
+    <button type="button" class="filter-pill filter-pill--active" data-rf-pill data-category="all" aria-pressed="true">{ui.filterAll}</button>
+    {categories.map(cat => (
+      <button type="button" class="filter-pill" data-rf-pill data-category={cat} aria-pressed="false">{getBlogCategoryLabel(cat, lang)}</button>
+    ))}
+  </nav>
+)}
+<p class="recipe-results-count" data-rf-count aria-hidden="true"></p>
+<p class="visually-hidden" data-rf-status aria-live="polite"></p>

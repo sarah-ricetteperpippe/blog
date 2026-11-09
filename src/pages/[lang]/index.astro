@@ -2,6 +2,11 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { createHeroImageResolver } from '../../lib/hero-image';
+import { BLOG_CATEGORIES, type SiteLang } from '../../config/taxonomy';
+import { recipeFilterClientConfig, recipeSearchText } from '../../config/recipe-filter';
+import RecipeSearchBar from '../../components/RecipeSearchBar.astro';
+import RecipeFilterBar from '../../components/RecipeFilterBar.astro';
+import RecipeNoMatch from '../../components/RecipeNoMatch.astro';
 
 export async function getStaticPaths() {
   return [
@@ -14,13 +19,18 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 
+const currentLang = (lang === 'en' || lang === 'fr' || lang === 'it' ? lang : 'it') as SiteLang;
+
 const allPosts = await getCollection('blog');
 const resolveHeroImage = createHeroImageResolver(allPosts);
-const posts = allPosts
+const langPosts = allPosts
   .filter(p => p.id.startsWith(`${lang}/`))
   .filter(p => !p.data.draft)
-  .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf())
-  .slice(0, 9);
+  .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
+const HOME_LIMIT = 9;
+
+const activeCategories = new Set(langPosts.map(p => p.data.category).filter(Boolean));
+const categories = BLOG_CATEGORIES.filter(category => activeCategories.has(category));
 
 const slug = (post: any) => post.id.replace(`${lang}/`, '').replace(/\.(md|mdx)$/, '');
 
@@ -29,35 +39,60 @@ const ui = {
     heroTitle: 'Le migliori ricette\nper le peggiori pippe in cucina!',
     heroDesc: 'Benvenuti su <em class="hero-brand">Ricette per pippe</em>,<br>il luogo perfetto per scoprire nuove ricette a prova di incapace, testate e approvate da Sarah.<br>Per pippe in cucina che ambiscono alla mera sopravvivenza,<br>e per tutte quelle che ogni tanto sperano anche di fare (umilmente) figura!',
     bannerAlt: 'Ricette per pippe',
-    cta: 'Scopri di più',
-    subscribe: 'Iscriviti',
+    cta: 'Cosa cucino oggi?',
+    allRecipes: 'Tutte le ricette',
+    subscribeLink: 'oppure iscriviti alla newsletter',
     latest: 'Ricette alla rinfusa',
-    allPosts: 'Vai alle ricette',
+    seeAllIn: 'Vedi tutti: {cat} →',
+    liveAll: 'Ricette alla rinfusa',
+    empty: 'Nessuna ricetta in questa categoria (per ora!)',
+    like: 'Mi piace',
+    views: 'visualizzazioni',
     marquee: ['Se può farlo una pippa come me, puoi farlo anche tu!'],
   },
   en: {
     heroTitle: 'The best recipes\nfor the worst cooks in the kitchen!',
     heroDesc: 'Welcome to <em class="hero-brand">Clueless Cooks</em>, the perfect place to discover new foolproof recipes, tested and approved by Sarah.',
     bannerAlt: 'Clueless Cooks',
-    cta: 'Discover more',
-    subscribe: 'Subscribe',
+    cta: 'What should I cook today?',
+    allRecipes: 'All recipes',
+    subscribeLink: 'or subscribe to the newsletter',
     latest: 'A grab bag of recipes',
-    allPosts: 'Go to recipes',
+    seeAllIn: 'See all: {cat} →',
+    liveAll: 'A grab bag of recipes',
+    empty: 'No recipes in this category (yet!)',
+    like: 'Like',
+    views: 'views',
     marquee: ['If a total klutz like me can do it, so can you!'],
   },
   fr: {
     heroTitle: 'Les meilleures recettes\npour les pires cuisiniers !',
     heroDesc: 'Bienvenue sur <em class="hero-brand">Recettes pour quiches</em>, le lieu idéal pour découvrir des recettes simples et infaillibles, testées et approuvées par Sarah.',
     bannerAlt: 'Recettes pour quiches',
-    cta: 'Découvrir',
-    subscribe: "S'abonner",
+    cta: "Je cuisine quoi aujourd'hui ?",
+    allRecipes: 'Toutes les recettes',
+    subscribeLink: 'ou abonne-toi à la newsletter',
     latest: 'Recettes en vrac',
-    allPosts: 'Toutes mes recettes',
+    seeAllIn: 'Voir tout : {cat} →',
+    liveAll: 'Recettes en vrac',
+    empty: 'Aucune recette dans cette catégorie (pour l’instant !)',
+    like: "J'aime",
+    views: 'vues',
     marquee: ['Si une quiche comme moi peut le faire, tu peux le faire aussi !'],
   },
 } as const;
 
 const t = ui[lang as keyof typeof ui] ?? ui.it;
+const blogUrl = `${base}${lang}/blog/`;
+const filterConfig = recipeFilterClientConfig(currentLang, categories, { limit: HOME_LIMIT, liveAll: t.liveAll });
+// Per il bottone dinamico in fondo alla sezione
+const ctaConfig = {
+  limit: HOME_LIMIT,
+  blogUrl,
+  allRecipes: t.allRecipes,
+  seeAllIn: t.seeAllIn,
+  labels: filterConfig.labels,
+};
 const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
 ---
 
@@ -67,14 +102,15 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
     <h1 class="hero-title js-reveal">{t.heroTitle.split('\n').map((line, i) => <>{line}{i === 0 && <br/>}</>)}</h1>
     <p class="hero-description js-reveal" set:html={t.heroDesc} />
     <div class="hero-buttons js-reveal">
-      <a href="#ricette" class="btn-primary">{t.cta}</a>
-      <a href="#newsletter" class="btn-secondary">{t.subscribe}</a>
+      <a href="#ricette" class="btn-primary" id="hero-cta">{t.cta}</a>
+      <a href={blogUrl} class="btn-secondary">{t.allRecipes}</a>
     </div>
+    <a href="#newsletter" class="hero-subscribe js-reveal">{t.subscribeLink}</a>
   </section>
 
   <section class="marquee-section">
     <div class="marquee-inner">
-      {marqueeItems.map(item => <span>{item}</span>)}
+      {marqueeItems.map((item, i) => <span aria-hidden={i > 0 ? 'true' : undefined}>{item}</span>)}
     </div>
   </section>
 
@@ -83,18 +119,20 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
   </div>
 
   <section class="recipes-section" id="ricette">
-    <h2 class="section-title js-reveal">{t.latest}</h2>
-    <div class="recipes-grid recipes-grid--home">
-      {posts.map(post => {
+    <h2 class="section-title js-reveal" id="ricette-title" tabindex="-1">{t.latest}</h2>
+    <RecipeSearchBar lang={currentLang} config={filterConfig} class="home-search js-reveal" />
+    <RecipeFilterBar lang={currentLang} categories={categories} class="filter-bar--home js-reveal" />
+    <div class="recipes-grid recipes-grid--home" id="home-recipes-grid">
+      {langPosts.map((post, i) => {
         const heroImage = resolveHeroImage(post);
         return (
-          <article class="recipe-card js-reveal">
+          <article class="recipe-card js-reveal" data-rf-card data-category={post.data.category ?? ''} data-title={post.data.title} data-url={`${base}${lang}/blog/${slug(post)}/`} data-search={recipeSearchText(post, currentLang)} hidden={i >= HOME_LIMIT}>
             <a href={`${base}${lang}/blog/${slug(post)}/`} class="recipe-card-link">
               {heroImage
-                ? <img src={heroImage} alt={post.data.title} class="recipe-card-image" style={post.data.heroPosition && `object-position: ${post.data.heroPosition}`} loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                ? <img src={heroImage} alt="" width="800" height="600" class="recipe-card-image" style={post.data.heroPosition && `object-position: ${post.data.heroPosition}`} loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
                 : null
               }
-              <div class="recipe-card-placeholder" style={heroImage ? 'display:none' : ''}>🍳</div>
+              <div class="recipe-card-placeholder" aria-hidden="true" style={heroImage ? 'display:none' : ''}>🍳</div>
               <div class="recipe-card-content">
                 <h3 class="recipe-card-title">{post.data.title}</h3>
                 <p class="recipe-card-excerpt">{post.data.cardDescription ?? post.data.description}</p>
@@ -102,10 +140,11 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
             </a>
             <div class="recipe-card-footer">
               <span class="recipe-card-views" data-slug={slug(post)}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
                 <span class="recipe-card-view-count">—</span>
+                <span class="visually-hidden">{t.views}</span>
               </span>
-              <button class="recipe-like-btn" data-post-id={slug(post)} aria-label="Mi piace">
+              <button type="button" class="recipe-like-btn" data-post-id={slug(post)} aria-label={t.like} aria-pressed="false">
                 <span class="recipe-like-heart" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 21s-6.7-4.35-9.2-8.36C.78 9.39 2.04 5.5 5.95 4.6c2.2-.51 4.39.26 6.05 2.26 1.66-2 3.85-2.77 6.05-2.26 3.91.9 5.17 4.79 3.15 8.04C18.7 16.65 12 21 12 21Z"></path>
@@ -117,16 +156,54 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
         );
       })}
     </div>
+    <p class="no-results-msg" id="home-empty" data-rf-empty hidden>{t.empty}</p>
+    <RecipeNoMatch lang={currentLang} />
     <div class="recipes-cta">
-      <a href={`${base}${lang}/blog/`} class="btn-primary">{t.allPosts}</a>
+      <a href={blogUrl} class="btn-primary" id="home-recipes-cta">{t.allRecipes}</a>
     </div>
   </section>
 
 
 </BaseLayout>
 
+<script is:inline define:vars={{ homeCtaConfig: ctaConfig }}>
+  window.__homeCtaConfig = homeCtaConfig;
+</script>
+
 <script>
   import { incrementLike, decrementLike, getViewCounts } from '../../lib/recipes-data';
+  import { initRecipeFilter } from '../../lib/recipe-filter';
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Ricerca + filtro categorie (condivisi col blog); qui in più il bottone dinamico in fondo
+  type HomeCtaConfig = { limit: number; blogUrl: string; allRecipes: string; seeAllIn: string; labels: Record<string, string> };
+  const ctaCfg = (window as any).__homeCtaConfig as HomeCtaConfig;
+  const cta = document.getElementById('home-recipes-cta') as HTMLAnchorElement | null;
+
+  initRecipeFilter({
+    onChange: ({ category, isSearching, total }) => {
+      if (!cta) return;
+      // "Vedi tutti: Dolci →" solo se la categoria ha più ricette di quelle mostrate
+      if (!isSearching && category !== 'all' && total > ctaCfg.limit) {
+        cta.textContent = ctaCfg.seeAllIn.replace('{cat}', ctaCfg.labels[category] ?? category);
+        cta.href = `${ctaCfg.blogUrl}?categoria=${encodeURIComponent(category)}`;
+      } else {
+        cta.textContent = ctaCfg.allRecipes;
+        cta.href = ctaCfg.blogUrl;
+      }
+    },
+  });
+
+  // CTA hero: scroll alla sezione e focus sul titolo
+  document.getElementById('hero-cta')?.addEventListener('click', (e) => {
+    const target = document.getElementById('ricette-title');
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+    target.focus({ preventScroll: true });
+    history.replaceState(null, '', `${window.location.search}#ricette`);
+  });
 
   // Fetch real view counts for all displayed cards in one batched call
   const viewSpans = Array.from(document.querySelectorAll<HTMLElement>('.recipe-card-views'));
@@ -146,9 +223,11 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
     const id = btn.dataset.postId ?? '';
     if (localStorage.getItem(`liked-${id}`) === 'true') {
       btn.classList.add('liked');
+      btn.setAttribute('aria-pressed', 'true');
     }
     btn.addEventListener('click', async () => {
       const isLiked = btn.classList.toggle('liked');
+      btn.setAttribute('aria-pressed', String(isLiked));
       localStorage.setItem(`liked-${id}`, String(isLiked));
       if (isLiked) {
         await incrementLike(id);
