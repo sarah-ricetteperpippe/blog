@@ -2,8 +2,11 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { BLOG_CATEGORIES, getBlogCategoryLabel, type SiteLang } from '../../../config/taxonomy';
-import { getBlogTagLabel, normalizeBlogTags } from '../../../config/tags';
 import { createHeroImageResolver } from '../../../lib/hero-image';
+import { recipeFilterClientConfig, recipeSearchText } from '../../../config/recipe-filter';
+import RecipeSearchBar from '../../../components/RecipeSearchBar.astro';
+import RecipeFilterBar from '../../../components/RecipeFilterBar.astro';
+import RecipeNoMatch from '../../../components/RecipeNoMatch.astro';
 
 export async function getStaticPaths() {
   return [
@@ -39,33 +42,28 @@ const ui = {
   it: {
     title: 'Il Blog',
     subtitle: 'Tutte le ricette, i trucchi e le avventure in cucina.',
-    searchPlaceholder: 'Cerca ricette, ingredienti, categorie...',
-    filterAll: 'Tutte',
-    noResults: "Nessuna ricetta trovata. Prova con un'altra parola chiave!",
+    liveAll: 'Tutte le ricette',
     by: 'di',
     readTime: (n: number) => `Tempo di lettura: ${n} min`,
   },
   en: {
     title: 'The Blog',
     subtitle: 'All the recipes, tips, and kitchen adventures.',
-    searchPlaceholder: 'Search recipes, ingredients, categories...',
-    filterAll: 'All',
-    noResults: 'No recipes found. Try a different keyword!',
+    liveAll: 'All recipes',
     by: 'by',
     readTime: (n: number) => `${n} min read`,
   },
   fr: {
     title: 'Le Blog',
     subtitle: 'Toutes les recettes, astuces et aventures en cuisine.',
-    searchPlaceholder: 'Chercher recettes, ingrédients, catégories...',
-    filterAll: 'Toutes',
-    noResults: 'Aucune recette trouvée. Essayez un autre mot-clé !',
+    liveAll: 'Toutes les recettes',
     by: 'par',
     readTime: (n: number) => `${n} min de lecture`,
   },
 } as const;
 
 const t = ui[lang as keyof typeof ui] ?? ui.it;
+const filterConfig = recipeFilterClientConfig(currentLang, categories, { liveAll: t.liveAll });
 
 const dateLocale = { it: 'it-IT', en: 'en-GB', fr: 'fr-FR' } as const;
 const locale = dateLocale[lang as keyof typeof dateLocale];
@@ -80,32 +78,10 @@ function shortDate(date: Date) {
   <div class="blog-hero">
     <h1 class="blog-hero-title">{t.title}</h1>
     <p class="blog-hero-subtitle">{t.subtitle}</p>
-    <div class="search-wrapper">
-      <span class="search-icon" aria-hidden="true">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-        </svg>
-      </span>
-      <input
-        type="search"
-        id="recipe-search"
-        class="search-input"
-        placeholder={t.searchPlaceholder}
-        autocomplete="off"
-      />
-    </div>
+    <RecipeSearchBar lang={currentLang} config={filterConfig} class="blog-search" />
   </div>
 
-  {categories.length > 0 && (
-    <div class="filter-bar filter-bar--recipes">
-      <button class="filter-pill filter-pill--active" data-category="all">
-        {t.filterAll}
-      </button>
-      {categories.map(cat => (
-        <button class="filter-pill" data-category={cat}>{getBlogCategoryLabel(cat, currentLang)}</button>
-      ))}
-    </div>
-  )}
+  <RecipeFilterBar lang={currentLang} categories={categories} class="filter-bar--blog" />
 
   <div class="blog-grid" id="recipes-grid">
     {posts.map(post => {
@@ -115,12 +91,14 @@ function shortDate(date: Date) {
       const categoryLabel = post.data.category
         ? getBlogCategoryLabel(post.data.category, currentLang)
         : '';
-      const localizedTags = normalizeBlogTags(post.data.tags).map((tag) => getBlogTagLabel(tag, currentLang));
       return (
         <article
           class="blog-card"
+          data-rf-card
           data-category={post.data.category ?? ''}
-          data-search={`${post.data.title} ${post.data.description ?? ''} ${(post.data.tags ?? []).join(' ')} ${localizedTags.join(' ')} ${post.data.category ?? ''} ${categoryLabel}`}
+          data-title={post.data.title}
+          data-url={`${base}${lang}/blog/${postSlug}/`}
+          data-search={recipeSearchText(post, currentLang)}
           data-slug={postSlug}
         >
           <a href={`${base}${lang}/blog/${postSlug}/`} class="blog-card-link">
@@ -172,49 +150,14 @@ function shortDate(date: Date) {
     })}
   </div>
 
-  <p id="no-results" class="no-results-msg" style="display:none">
-    {t.noResults}
-  </p>
+  <RecipeNoMatch lang={currentLang} />
 
 </BaseLayout>
 
 <script>
-  // --- Filtro + ricerca ---
-  const pills = document.querySelectorAll<HTMLButtonElement>('.filter-pill');
-  const cards = document.querySelectorAll<HTMLElement>('.blog-card');
-  const searchInput = document.getElementById('recipe-search') as HTMLInputElement;
-  const noResults = document.getElementById('no-results') as HTMLElement;
-
-  let activeCategory = 'all';
-  let searchQuery = '';
-
-  function filterCards() {
-    let visible = 0;
-    cards.forEach(card => {
-      const cat = card.dataset.category ?? '';
-      const text = (card.dataset.search ?? '').toLowerCase();
-      const matchCat = activeCategory === 'all' || cat === activeCategory;
-      const matchSearch = searchQuery === '' || text.includes(searchQuery);
-      const show = matchCat && matchSearch;
-      card.style.display = show ? '' : 'none';
-      if (show) visible++;
-    });
-    noResults.style.display = visible === 0 ? 'block' : 'none';
-  }
-
-  pills.forEach(pill => {
-    pill.addEventListener('click', () => {
-      pills.forEach(p => p.classList.remove('filter-pill--active'));
-      pill.classList.add('filter-pill--active');
-      activeCategory = pill.dataset.category ?? 'all';
-      filterCards();
-    });
-  });
-
-  searchInput.addEventListener('input', e => {
-    searchQuery = (e.target as HTMLInputElement).value.toLowerCase().trim();
-    filterCards();
-  });
+  // --- Filtro + ricerca + suggerimenti (condivisi con la home) ---
+  import { initRecipeFilter } from '../../../lib/recipe-filter';
+  initRecipeFilter();
 
   // --- Like button: localStorage + Supabase counter ---
   import { incrementLike as bumpLike, decrementLike as cutLike } from '../../../lib/recipes-data';
