@@ -4,12 +4,13 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/og-images.mjs && astro build",
     "preview": "astro preview",
     "ricetta": "node scripts/ricetta.mjs",
     "new-guide": "node scripts/new-guide.mjs",
     "translate": "node scripts/translate-ai.mjs",
-    "instagram": "node scripts/instagram-caption.mjs"
+    "instagram": "node scripts/instagram-caption.mjs",
+    "og-images": "node scripts/og-images.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.0.0",
@@ -24,5 +25,8 @@
     "@rollup/rollup-darwin-arm64": "*",
     "@rollup/rollup-darwin-x64": "*",
     "@rollup/rollup-linux-x64-gnu": "*"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
   }
 }

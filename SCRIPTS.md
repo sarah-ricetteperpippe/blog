@@ -7,9 +7,10 @@ Tutti i comandi si lanciano dal terminale, nella cartella del blog.
 | `npm run ricetta` | Percorso guidato per una ricetta, dalle foto alla caption Instagram |
 | `npm run translate -- <slug>` | Traduce una ricetta in inglese e francese |
 | `npm run instagram -- <slug>` | Scrive la caption Instagram di una ricetta |
+| `npm run og-images` | Rigenera le anteprime per Instagram/Facebook (JPG 1200×630 in `public/og/`); parte da solo con `npm run build` |
 | `npm run new-guide` | Crea il file di una nuova guida dell'Academy |
 | `npm run dev` | Avvia il sito in locale su http://localhost:4321 |
-| `npm run build` | Controlla che il sito compili |
+| `npm run build` | Genera le anteprime social e controlla che il sito compili |
 
 Lo **slug** è il nome del file della ricetta senza estensione: per `src/content/blog/it/pasta-e-rape.mdx` è `pasta-e-rape`. È anche il nome delle foto e l'indirizzo della pagina.
 
