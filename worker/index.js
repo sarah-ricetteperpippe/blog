@@ -1,8 +1,20 @@
-// Cloudflare Worker: redirect lingua sulla root "/", il resto sono asset statici.
+// Cloudflare Worker: redirect lingua sulla root "/" e redirect delle vecchie URL,
+// il resto sono asset statici.
 // Sostituisce la vecchia edge function Netlify (lang-redirect.js).
+// I parametri di query (utm_*, fbclid di Instagram/Facebook) vengono conservati.
+
+// Vecchie URL -> nuove, con 301 vero (lo scraper di Meta non segue i <meta refresh>)
+const LEGACY = {
+  '/ricette': '/it/blog/',
+  '/ricette/': '/it/blog/',
+};
+
 export default {
   fetch(request, env) {
     const url = new URL(request.url);
+
+    const legacy = LEGACY[url.pathname];
+    if (legacy) return Response.redirect(`${url.origin}${legacy}${url.search}`, 301);
 
     if (url.pathname !== '/') return env.ASSETS.fetch(request);
 
@@ -18,6 +30,7 @@ export default {
 
     const target = supported.includes(lang) ? lang : 'it';
 
-    return Response.redirect(`${url.origin}/${target}/`, 302);
+    // 302 (non 301): la destinazione dipende dalla lingua del visitatore
+    return Response.redirect(`${url.origin}/${target}/${url.search}`, 302);
   },
 };
