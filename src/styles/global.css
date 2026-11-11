@@ -1096,6 +1096,10 @@ p {
   max-height: 500px;
   object-fit: cover;
 }
+.post-hero-figure img.post-hero-contain {
+  object-fit: contain;
+  background: transparent; /* le bande ai lati prendono lo sfondo della pagina */
+}
 .post-hero-figure figcaption {
   font-family: var(--font-body);
   font-size: 0.78rem;

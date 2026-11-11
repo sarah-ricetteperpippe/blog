@@ -87,7 +87,9 @@ Lista numerata, con una riga vuota tra un passo e l'altro. Ogni passo si apre co
 Non scrivere "**Accendi il forno.**" e poi di nuovo "Accendi il forno a 180 °C": è ridondante. Usa i due punti dentro il grassetto quando serve un'etichetta ("**Prepara il roux:** aggiungi…"), altrimenti fai continuare la frase dopo il grassetto.
 
 * Raggruppa i passi in modo logico: le azioni fatte sulla stessa cosa nello stesso momento (es. lava, pela e taglia le verdure; pulisci, controlla e lava le rape) vanno in un unico passo. Leggere, fare e rileggere con le mani occupate è stressante: meglio pochi passi completi che tanti micro-passi.
+* Il raggruppamento non è facoltativo: se il testo arriva già diviso in micro-passi (es. "Trita la menta", poi "Prepara il condimento" con quella menta; "Prepara la cottura", poi "Inforna"), uniscili comunque. Un procedimento di 8 passi da una riga ciascuno quasi sempre ne diventa 4-5.
 * Unendo i passi non perdere nulla: ogni quantità, tempo, controllo e consiglio del testo originale deve restare.
+* Le quantità restano anche nel procedimento: "lava le 2 zucchine", "mescola 3 cucchiai di olio", non "lavale" o "mescola l’olio". Chi cucina non deve tornare agli ingredienti per sapere quanto usarne.
 * Niente muri di testo: un passo che supera due o tre frasi va spezzato dentro il passo stesso, così l'occhio ritrova il punto mentre cucini. Le parti parallele (le parti di un ingrediente da trattare in modo diverso, casi alternativi, esempi, tempi diversi a seconda della varietà) diventano una sotto-lista puntata; il seguito del passo diventa un nuovo paragrafo. Sotto-lista e paragrafo sono indentati di 4 spazi e separati da una riga vuota (un a capo semplice non indentato viene unito alla riga sopra e non si vede). Esempio:
 
 3. **Sbollenta le zucchine:** imposta il timer su:

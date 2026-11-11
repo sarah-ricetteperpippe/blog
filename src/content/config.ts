@@ -26,6 +26,8 @@ const blog = defineCollection({
     heroImage: z.string().optional(),
     // Inquadratura della foto nelle card e in cima alla pagina (CSS object-position), es. "center 70%" per mostrare più la parte bassa.
     heroPosition: z.string().optional(),
+    // Solo per la foto in cima alla pagina: "contain" la mostra intera, con bande del colore dello sfondo ai lati (le card restano tagliate).
+    heroFit: z.enum(['cover', 'contain']).optional(),
     category: blogCategorySchema,
     tags: z.array(z.string()).optional(),
     lang: z.enum(['it', 'en', 'fr']).default('it'),
