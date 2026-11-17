@@ -1,6 +1,6 @@
 // scripts/ricetta/foto.mjs
 //
-// Fase 4 — Posizionamento immagini: per ogni foto importata (tranne la
+// Fase 5 — Posizionamento immagini: per ogni foto importata (tranne la
 // copertina) chiede dove va e la inserisce nel testo già rifinito, senza
 // toccare il resto. Alla fine controlla che il sito compili.
 

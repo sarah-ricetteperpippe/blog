@@ -4,6 +4,7 @@ import { attr } from './ricetta/comune.mjs';
 import { assignNames, findPhotos, pickPhotos, ratioOf } from './ricetta/immagini.mjs';
 import { BODY_TEMPLATE, frontmatter, isPasted, toSlug } from './ricetta/scrivi.mjs';
 import { cleanBody, formatBody, isFormatted, photoSrcs, validateBody } from './ricetta/rifinisci.mjs';
+import { addLink, linkUrl, listIngredients } from './ricetta/link.mjs';
 import { addEndPhoto, addIngredientsPhoto, addStepPhoto, figureTag, listSteps, portraitCrop } from './ricetta/foto.mjs';
 
 const body = `Intro.
@@ -107,7 +108,24 @@ test('formatBody conserva le foto già nel testo e riprova una volta', () => {
   assert.throws(() => formatBody({ body: 'x', instructions: '', generate: () => 'niente' }), /Il file non è stato modificato/);
 });
 
-// 4. Posiziona immagini
+// 4. Link agli ingredienti
+
+test('listIngredients trova solo le righe della sezione Ingredienti, anche opzionali', () => {
+  const withOptional = body.replace('- **Riso:** 120 g', '- **Riso:** 120 g\n- (Opzionale) **Panna:** 50 ml (ben fredda)\n- **[Rape](https://x.it):** 1 kg');
+  assert.deepEqual(listIngredients(withOptional).map((i) => [i.name, i.linked]), [['Riso', false], ['Panna', false], ['[Rape](https://x.it)', true]]);
+});
+
+test('linkUrl tiene i link incollati e trasforma le parole in una ricerca Google', () => {
+  assert.equal(linkUrl('https://www.valsoia.it/prodotto'), 'https://www.valsoia.it/prodotto');
+  assert.equal(linkUrl('panna da montare idee veg hoplà'), 'https://www.google.com/search?q=panna+da+montare+idee+veg+hopl%C3%A0');
+});
+
+test('addLink entra nella parentesi finale o ne apre una nuova', () => {
+  assert.equal(addLink('- **Panna:** 400 ml (ben fredda)', 'Hoplà', 'https://g.co'), '- **Panna:** 400 ml (ben fredda; io uso [Hoplà](https://g.co))');
+  assert.equal(addLink('- **Grattì:** 3 cucchiai', 'Grattì', 'https://g.co'), '- **Grattì:** 3 cucchiai (io uso [Grattì](https://g.co))');
+});
+
+// 5. Posiziona immagini
 
 test('attr usa le virgolette se può, altrimenti una stringa JS', () => {
   assert.equal(attr('alt', 'Riso'), 'alt="Riso"');
