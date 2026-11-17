@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 // scripts/ricetta.mjs
 //
-// Percorso guidato per una ricetta, dall'inizio alla pubblicazione, in sei fasi:
-// importa immagini → scrivi ricetta → edita e rifinisci → posiziona immagini
-// → traduzione → caption. Ogni fase vive in scripts/ricetta/ (traduzione e
+// Percorso guidato per una ricetta, dall'inizio alla pubblicazione, in sette fasi:
+// importa immagini → scrivi ricetta → edita e rifinisci → link agli ingredienti
+// → posiziona immagini → traduzione → caption. Ogni fase vive in scripts/ricetta/ (traduzione e
 // caption usano translate-ai.mjs e instagram-caption.mjs).
 // Si può interrompere in qualsiasi momento: rilanciandolo, riparte da dove eri.
 //
@@ -19,6 +19,7 @@ import { BLOG, DRAFTS, ROOT, ask, readState, recipeFile, writeState } from './ri
 import { importaImmagini } from './ricetta/immagini.mjs';
 import { isPasted, scriviRicetta, toSlug } from './ricetta/scrivi.mjs';
 import { isFormatted, rifinisciRicetta } from './ricetta/rifinisci.mjs';
+import { linkIngredienti } from './ricetta/link.mjs';
 import { posizionaImmagini } from './ricetta/foto.mjs';
 
 const runScript = (script, slug) =>
@@ -28,6 +29,7 @@ const PHASES = [
   { key: 'immagini', label: 'Importa immagini', run: importaImmagini },
   { key: 'scrivi', label: 'Scrivi ricetta', run: scriviRicetta },
   { key: 'rifinisci', label: 'Edita e rifinisci', run: rifinisciRicetta },
+  { key: 'link', label: 'Link agli ingredienti', run: linkIngredienti },
   { key: 'foto', label: 'Posiziona le immagini', run: posizionaImmagini },
   { key: 'traduzione', label: 'Traduci in inglese e francese', run: (slug) => runScript('translate-ai.mjs', slug) },
   { key: 'caption', label: 'Scrivi la caption Instagram', run: (slug) => runScript('instagram-caption.mjs', slug) },
@@ -40,7 +42,7 @@ function hasTranslation(lang, slug) {
 }
 
 // Le ricette nate prima di questo percorso non hanno lo stato della bozza:
-// per loro foto importate e posizionate valgono come fatte.
+// per loro foto importate, link e foto posizionate valgono come fatti.
 function status(slug) {
   const state = readState(slug);
   const file = recipeFile(slug);
@@ -49,6 +51,7 @@ function status(slug) {
     immagini: state ? Array.isArray(state.photos) : Boolean(file),
     scrivi: Boolean(file) && isPasted(content),
     rifinisci: Boolean(file) && isFormatted(content),
+    link: state ? Boolean(state.linked || state.placed) : Boolean(file),
     foto: state ? Boolean(state.placed) : Boolean(file),
     traduzione: hasTranslation('en', slug) && hasTranslation('fr', slug),
     caption: existsSync(join(ROOT, 'captions/instagram', `${slug}.txt`)),
