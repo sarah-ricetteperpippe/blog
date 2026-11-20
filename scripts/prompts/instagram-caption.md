@@ -69,6 +69,8 @@ SCEGLI IL FORMATO
 
 Scegli autonomamente tra RICETTA INTERA e ANTEPRIMA.
 
+RICETTA INTERA è il formato preferito. Prima di scegliere ANTEPRIMA, prova a scrivere la ricetta intera: per stare nel limite accorcia hook, frasi ridondanti e passaggi verbosi, accorpa passaggi brevi e consecutivi, togli le note facoltative. Usa ANTEPRIMA solo se, anche così, il procedimento non entra nei 2200 caratteri senza perdere dettagli necessari.
+
 La decisione non dipende soltanto dalla lunghezza della ricetta.
 
 La domanda da farti è:
