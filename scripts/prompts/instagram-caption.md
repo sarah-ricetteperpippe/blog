@@ -25,7 +25,7 @@ La caption completa deve contenere al massimo 2200 caratteri, inclusi spazi, a c
 
 Il limite vale sia per RICETTA INTERA sia per ANTEPRIMA. Consideralo prima di scegliere il formato. Se la ricetta intera non entra senza perdere dettagli necessari, scegli ANTEPRIMA e mantieni la lista completa degli ingredienti.
 
-Non tagliare la caption a metà e non omettere ingredienti o quantità per rispettare il limite. Riduci prima hook, note facoltative e hashtag aggiuntivi, mantenendo le tre righe di hashtag del brand.
+Non tagliare la caption a metà e non omettere ingredienti o quantità per rispettare il limite. Riduci prima note facoltative, frasi ridondanti e hashtag aggiuntivi (mai la description iniziale), mantenendo le tre righe di hashtag del brand.
 
 Usa testo semplice, pronto da copiare su Instagram, senza blocchi di codice o formattazione Markdown.
 
@@ -61,7 +61,9 @@ Non aggiungere CTA social come:
 * commenta;
 * metti like.
 
-L’hook iniziale è facoltativo. Se la ricetta contiene già una frase personale, ironica o interessante, preferisci quella. Non inventare un hook generico solo perché “serve una frase iniziale”.
+DESCRIPTION INIZIALE
+
+Subito sotto il titolo riporta sempre la description della ricetta (il campo description nei metadati), identica, parola per parola. È obbligatoria: non riscriverla, non accorciarla e non toglierla per stare nel limite. Non aggiungere altri hook inventati.
 
 ⸻
 
@@ -69,7 +71,9 @@ SCEGLI IL FORMATO
 
 Scegli autonomamente tra RICETTA INTERA e ANTEPRIMA.
 
-RICETTA INTERA è il formato preferito. Prima di scegliere ANTEPRIMA, prova a scrivere la ricetta intera: per stare nel limite accorcia hook, frasi ridondanti e passaggi verbosi, accorpa passaggi brevi e consecutivi, togli le note facoltative. Usa ANTEPRIMA solo se, anche così, il procedimento non entra nei 2200 caratteri senza perdere dettagli necessari.
+RICETTA INTERA è il formato preferito. Prima di scegliere ANTEPRIMA, prova a scrivere la ricetta intera: per stare nel limite accorcia frasi ridondanti e passaggi verbosi, accorpa passaggi brevi e consecutivi, togli le note facoltative. Usa ANTEPRIMA solo se, anche così, il procedimento non entra nei 2200 caratteri senza perdere dettagli necessari.
+
+Una ricetta semplice, con pochi ingredienti e pochi passaggi (per esempio una pasta in padella), va quasi sempre in RICETTA INTERA: riassumi parecchio i passaggi invece di ripiegare sull'anteprima. Nel formato RICETTA INTERA scrivi pochi punti brevi, ognuno con una o due frasi: azioni, quantità, tempi, fuoco e solo le accortezze indispensabili, senza spiegare il perché di ogni gesto.
 
 La decisione non dipende soltanto dalla lunghezza della ricetta.
 
@@ -93,7 +97,7 @@ Struttura
 
 [NOME RICETTA] [emoji pertinente facoltativa]
 
-[hook facoltativo]
+[description della ricetta, identica]
 
 Porzioni: [numero]
 Tempo totale: [tempo]
@@ -159,7 +163,7 @@ Struttura
 
 [NOME RICETTA] [emoji pertinente facoltativa]
 
-[hook facoltativo]
+[description della ricetta, identica]
 
 INGREDIENTI · [numero] porzioni
 

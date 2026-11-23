@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
-import { createCaption, findRecipe, generateWithClaude, MAX_CHARACTERS, parseArgs, run, validateCaption } from './instagram-caption.mjs';
+import { createCaption, extractDescription, findRecipe, generateWithClaude, MAX_CHARACTERS, parseArgs, run, validateCaption } from './instagram-caption.mjs';
 
 const caption = `Pizzette di melanzane
 
@@ -158,4 +158,18 @@ test('--stdout genera senza scrivere file', t => {
   run(['pizzette', '--stdout'], { root, generate: () => caption, log: () => {}, print: text => printed.push(text) });
   assert.equal(existsSync(output), false);
   assert.deepEqual(printed, [caption]);
+});
+
+test('la description del frontmatter è obbligatoria e viene rigenerata se manca', () => {
+  const recipe = '---\ntitle: "Pizzette"\ndescription: "Pizzette per pippe, l’ego ringrazia!"\n---\n\nmelanzane 600g';
+  const description = extractDescription(recipe);
+  assert.equal(description, 'Pizzette per pippe, l’ego ringrazia!');
+  assert.match(validateCaption(caption, { description }).join(' '), /Manca la description/);
+  const withDescription = caption.replace('Pizzette di melanzane\n', `Pizzette di melanzane\n\nPizzette per pippe, l'ego ringrazia!\n`);
+  assert.deepEqual(validateCaption(withDescription, { description }), []);
+  const prompts = [];
+  const result = createCaption({ recipe, instructions: 'x', generate: p => (prompts.push(p), prompts.length === 1 ? caption : withDescription) });
+  assert.equal(result, withDescription);
+  assert.match(prompts[0], /DESCRIPTION OBBLIGATORIA/);
+  assert.match(prompts[1], /Manca la description/);
 });
