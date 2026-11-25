@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { attr } from './ricetta/comune.mjs';
 import { assignNames, findPhotos, pickPhotos, ratioOf } from './ricetta/immagini.mjs';
-import { BODY_TEMPLATE, frontmatter, isPasted, toSlug } from './ricetta/scrivi.mjs';
+import { BODY_TEMPLATE, applyCorrections, frontmatter, isPasted, parseCorrections, pickCorrections, proposeCorrections, toSlug } from './ricetta/scrivi.mjs';
 import { cleanBody, formatBody, isFormatted, photoSrcs, validateBody } from './ricetta/rifinisci.mjs';
 import { addLink, linkUrl, listIngredients } from './ricetta/link.mjs';
 import { addEndPhoto, addIngredientsPhoto, addStepPhoto, figureTag, listSteps, portraitCrop } from './ricetta/foto.mjs';
@@ -68,6 +68,22 @@ test('toSlug e frontmatter', () => {
   assert.match(fm, /^title: "La \\"vera\\" pasta"$/m);
   assert.match(fm, /^heroImage: "\/images\/ricette\/pasta.webp"$/m);
   assert.match(fm, /^tags: \["Pasta"\]$/m);
+});
+
+test('le correzioni della descrizione si propongono, si scelgono per numero e si applicano', () => {
+  const original = "QUesta versione è semplicissima, cambiare un po non guasta!";
+  let prompt = '';
+  const answer = 'Ecco:\n[{"da":"QUesta","a":"Questa","perché":"refuso"},{"da":"un po non","a":"un po\' non"},' +
+    '{"da":"inesistente","a":"x"},{"da":"è","a":"è"}]';
+  const corrections = proposeCorrections(original, (p) => { prompt = p; return answer; });
+  assert.match(prompt, /<descrizione>\nQUesta versione/);
+  assert.deepEqual(corrections.map((c) => c.a), ['Questa', "un po' non"]);
+  assert.deepEqual(pickCorrections('', 2), [0, 1]);
+  assert.deepEqual(pickCorrections('0', 2), []);
+  assert.deepEqual(pickCorrections('2, 2 7', 2), [1]);
+  assert.equal(applyCorrections(original, [corrections[1]]), "QUesta versione è semplicissima, cambiare un po' non guasta!");
+  assert.deepEqual(parseCorrections(original, '[]'), []);
+  assert.throws(() => parseCorrections(original, 'niente'), /senza elenco/);
 });
 
 test('isPasted distingue lo scheletro vuoto dal testo incollato', () => {
