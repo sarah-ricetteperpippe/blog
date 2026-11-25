@@ -111,26 +111,24 @@ Nelle ricette italiane non spiego come si lessa la pasta, perché chi legge in i
 
 ### Dosi (non cercarle di nuovo: usa queste)
 
-Regola: **1 litro d'acqua ogni 100 g di pasta, 7 g di sale per litro.** È il rapporto indicato da Barilla sulle confezioni e quello già usato nel blog. Arrotonda l'acqua al litro intero superiore, minimo 1 litro. Se la ricetta non dà i grammi di pasta, calcola 100 g a porzione.
+Regola del blog: **1 litro d'acqua ogni 100 g di pasta (minimo 2 litri) e 1 cucchiaio di sale grosso per pentola.** Non scendere mai a cucchiaini: per lessare si usa sempre il cucchiaio di sale grosso. Lo stesso vale per verdure lessate in una pentola piena d'acqua (broccoli, patate, fagiolini…). Non vale quando l'acqua è poca (es. riso lessato in un pentolino): lì il sale si riduce in proporzione, e se la sorgente IT dà una dose, tienila. Se la ricetta non dà i grammi di pasta, calcola 100 g a porzione.
 
-| Porzioni | Pasta | Acqua | Sale (grosso o fino) |
+| Porzioni | Pasta | Acqua | Sale grosso |
 |---|---|---|---|
-| 1 | fino a 100 g | 1 L | 7 g (circa 1 cucchiaino) |
-| 2 | fino a 200 g | 2 L | 14 g (circa 2 cucchiaini) |
-| 3 | fino a 300 g | 3 L | 21 g (circa 1 cucchiaio) |
-| 4 | fino a 400 g | 4 L | 28 g (circa 1 cucchiaio e mezzo) |
-| 6 | fino a 600 g | 6 L | 42 g (circa 2 cucchiai) |
+| 1–2 | fino a 200 g | 2 L | 1 cucchiaio (circa 15 g) |
+| 3–4 | fino a 400 g | 3–4 L | 1 cucchiaio abbondante (circa 20 g) |
+| 5–6 | fino a 600 g | 5–6 L | 2 cucchiai (circa 30 g) |
 
 Come si scrivono:
 
-- **EN:** acqua in litri con i quarti US tra parentesi (1 L ≈ 1 quart: `2 L (about 2 quarts)`); sale in grammi con once e cucchiaini tra parentesi: `14 g (0.5 oz, about 2 teaspoons) salt`. Specifica "fine salt or coarse sea salt", non "kosher salt" (ha densità diversa e sballa i cucchiaini).
-- **FR:** `2 L d'eau`, `14 g de gros sel (environ 2 cuillères à café)`.
+- **EN:** acqua in litri con i quarti US tra parentesi (1 L ≈ 1 quart: `2 L (about 2 quarts)`); sale in cucchiai con grammi e once tra parentesi: `1 tablespoon (about 15 g / 0.5 oz) of coarse salt`. Specifica "coarse salt" (o "coarse sea salt"), non "kosher salt".
+- **FR:** `2 L d'eau`, `1 cuillère à soupe de gros sel (environ 15 g)`.
 
 ### Dove inserirli
 
 1. **Ingredienti:** aggiungi in fondo alla lista una riga nello stesso formato delle altre:
-   - EN: `- **Water and salt:** 2 L (about 2 quarts) of water and 14 g (0.5 oz, about 2 teaspoons) of salt, for cooking the pasta`
-   - FR: `- **Eau et sel :** 2 L d'eau et 14 g de gros sel (environ 2 cuillères à café) pour cuire les pâtes`
+   - EN: `- **Water and salt:** 2 L (about 2 quarts) of water and 1 tablespoon (about 15 g / 0.5 oz) of coarse salt, for cooking the pasta`
+   - FR: `- **Eau et sel :** 2 L d'eau et 1 cuillère à soupe de gros sel (environ 15 g) pour cuire les pâtes`
 2. **Primo passo del procedimento:** mettere l'acqua sul fuoco, coperta, e portarla a bollore. Es. EN: `1. **Put the water on to boil.** ⏎ Fill a large pot with 2 L (about 2 quarts) of water, cover it and bring it to a boil over high heat. Keep it covered on low heat until you need it.` FR equivalente.
 3. **Passo in cui la sorgente butta la pasta:** completa le istruzioni lì dove la sorgente dice solo "lessa / cuoci la pasta": quando l'acqua bolle, aggiungi il sale, aspetta che riprenda il bollore, versa la pasta, cuoci senza coperchio per il tempo indicato sulla confezione mescolando ogni tanto perché non si attacchi, poi scola. Non aggiungere passaggi che la sorgente non ha (es. conservare l'acqua di cottura) se non servono.
 4. **Rinumera** tutti i passi dopo l'inserimento, compresi quelli dentro le `<Figure>`, che hanno la numerazione spezzata.
