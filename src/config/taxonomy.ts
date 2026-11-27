@@ -32,6 +32,7 @@ const BLOG_CATEGORY_LABELS: Record<SiteLang, Record<BlogCategory, string>> = {
     Risotti: 'Risotti',
     'Secondi piatti': 'Secondi piatti',
     Snack: 'Snack',
+    'Torte salate': 'Torte salate',
     'Zuppe e vellutate': 'Zuppe e vellutate',
   },
   en: {
@@ -49,6 +50,7 @@ const BLOG_CATEGORY_LABELS: Record<SiteLang, Record<BlogCategory, string>> = {
     Risotti: 'Risottos',
     'Secondi piatti': 'Main courses',
     Snack: 'Snacks',
+    'Torte salate': 'Quiches & savory pies',
     'Zuppe e vellutate': 'Soups and veloutés',
   },
   fr: {
@@ -66,6 +68,7 @@ const BLOG_CATEGORY_LABELS: Record<SiteLang, Record<BlogCategory, string>> = {
     Risotti: 'Risottos',
     'Secondi piatti': 'Plats principaux',
     Snack: 'Snacks',
+    'Torte salate': 'Tartes salées',
     'Zuppe e vellutate': 'Soupes et veloutés',
   },
 };
@@ -110,6 +113,11 @@ const LEGACY_BLOG_CATEGORY_ALIASES: Partial<Record<string, BlogCategory | undefi
   'First courses': 'Primi piatti',
   Risottos: 'Risotti',
   'Main courses': 'Secondi piatti',
+  'Quiches & savory pies': 'Torte salate',
+  'Quiches & Savory Pies': 'Torte salate',
+  'Quiches & pies': 'Torte salate',
+  'Savory pies': 'Torte salate',
+  'Savoury pies': 'Torte salate',
   Snacks: 'Snack',
   'Soups and veloutes': 'Zuppe e vellutate',
   'Soups and veloutés': 'Zuppe e vellutate',
@@ -134,6 +142,8 @@ const LEGACY_BLOG_CATEGORY_ALIASES: Partial<Record<string, BlogCategory | undefi
   'Plats de pates et riz': 'Primi piatti',
   'Plats de pâtes et riz': 'Primi piatti',
   'Plats principaux': 'Secondi piatti',
+  'Tartes salées': 'Torte salate',
+  'Tartes salees': 'Torte salate',
   'Soupes et veloutes': 'Zuppe e vellutate',
   'Soupes et veloutés': 'Zuppe e vellutate',
   Reference: undefined,
@@ -172,6 +182,17 @@ export function normalizeBlogCategory(value: unknown): BlogCategory | undefined 
     return LEGACY_BLOG_CATEGORY_ALIASES[normalized];
   }
   return normalized;
+}
+
+/**
+ * Una ricetta può stare in più categorie: in frontmatter `category` accetta
+ * una stringa o una lista (`["Piatti unici", "Torte salate"]`).
+ * Ritorna sempre una lista; la prima è la categoria principale (etichetta della card).
+ */
+export function normalizeBlogCategories(value: unknown): unknown {
+  if (value === undefined || value === null) return [];
+  const list = Array.isArray(value) ? value : [value];
+  return [...new Set(list.map(normalizeBlogCategory).filter((v) => v !== undefined))];
 }
 
 export function normalizeAcademyCategory(value: unknown): AcademyCategory | unknown {

@@ -13,14 +13,14 @@ export interface Props {
   heroImage?: string;
   heroPosition?: string;
   heroFit?: 'cover' | 'contain';
-  category?: string;
+  category?: string[];
   tags?: string[];
   lang?: string;
   slug?: string;
   body?: string;
 }
 
-const { title, description, pubDate, heroImage, heroPosition, heroFit, category, tags, lang = 'it', slug = '', body = '' } = Astro.props;
+const { title, description, pubDate, heroImage, heroPosition, heroFit, category = [], tags, lang = 'it', slug = '', body = '' } = Astro.props;
 const base = (import.meta.env.BASE_URL as string).endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 const currentLang = (lang === 'en' || lang === 'fr' || lang === 'it' ? lang : 'it') as SiteLang;
 
@@ -59,8 +59,7 @@ const resolveHeroImage = createHeroImageResolver(allPosts);
 const availableCategories = new Set(
   allPosts
     .filter(p => p.id.startsWith(`${lang}/`))
-    .map(p => p.data.category)
-    .filter(Boolean)
+    .flatMap(p => p.data.category)
 );
 const allCategories = BLOG_CATEGORIES.filter(cat => availableCategories.has(cat));
 
@@ -70,7 +69,7 @@ const catAll = catAllLabel[lang as keyof typeof catAllLabel] ?? 'Tutte';
 const related = allPosts
   .filter(p =>
     p.id.startsWith(`${lang}/`) &&
-    p.data.category === category &&
+    p.data.category.some((cat: string) => category.includes(cat)) &&
     !p.id.includes(slug)
   )
   .slice(0, 3);
@@ -164,7 +163,7 @@ const showExcerptBelowHero = Boolean(excerpt) && !showExcerptAboveHero;
       {allCategories.map(cat => (
         <a
           href={`${base}${lang}/blog/?categoria=${encodeURIComponent(cat)}`}
-          class={`filter-pill${cat === category ? ' filter-pill--active' : ''}`}
+          class={`filter-pill${category.includes(cat) ? ' filter-pill--active' : ''}`}
         >{getBlogCategoryLabel(cat, currentLang)}</a>
       ))}
     </nav>

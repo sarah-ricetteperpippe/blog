@@ -3,7 +3,7 @@ title: "Smoked scamorza and potato savory tart"
 description: "An easy tart for a last-minute dinner or a snack to share, with just a few ingredients and hardly any effort."
 pubDate: "2026-01-16"
 heroImage: "/images/ricette/torta-salata-patate-scamorza-affumicata.webp"
-category: "One-dish meals"
+category: ["One-dish meals", "Quiches & savory pies"]
 tags: ["Piatti unici", "Aperitivo", "Patate", "Formaggio", "Forno", "Antispreco"]
 lang: "en"
 translationKey: "torta-salata-patate-e-scamorza-affumicata"

@@ -58,6 +58,12 @@ export function toSlug(title) {
     .replace(/\s+/g, '-');
 }
 
+// Una categoria resta stringa; più categorie diventano una lista (la prima è la principale).
+const yamlCategory = (category) => {
+  const list = [category].flat();
+  return list.length > 1 ? `[${list.map((c) => JSON.stringify(c)).join(', ')}]` : JSON.stringify(list[0]);
+};
+
 export function frontmatter({ title, description, slug, category, tags, date }) {
   return `---
 title: ${JSON.stringify(title)}
@@ -65,7 +71,7 @@ description: ${JSON.stringify(description)}
 # cardDescription: "testo più corto solo per le card (home, elenco, tag); togli il # per usarlo"
 pubDate: "${date}"
 heroImage: "/images/ricette/${slug}.webp"
-category: "${category}"
+category: ${yamlCategory(category)}
 tags: [${tags.map((t) => JSON.stringify(t)).join(', ')}]
 translationKey: "${slug}"
 ---
@@ -160,7 +166,12 @@ async function createFile(slug, title) {
 
   console.log('\nCategorie:');
   CATEGORIES.forEach((c, i) => console.log(`  ${i + 1}. ${c}`));
-  const category = CATEGORIES[await askChoice('Numero categoria: ', CATEGORIES.length)];
+  // Più categorie separate da virgola (es. 8,14): la prima è la principale, quella sulla card.
+  let category = [];
+  while (!category.length) {
+    category = [...new Set((await ask('Numero categoria (più di una separate da virgola, la prima è la principale): '))
+      .split(',').map((n) => CATEGORIES[parseInt(n, 10) - 1]).filter(Boolean))];
+  }
 
   const known = existingTags();
   console.log('\nTag esistenti:');
@@ -169,7 +180,7 @@ async function createFile(slug, title) {
     .split(',').map((n) => known[parseInt(n, 10) - 1]).filter(Boolean);
   const added = (await ask('Nuovi tag separati da virgola (invio per saltare): ')).split(',').map((t) => t.trim()).filter(Boolean);
   const tags = [...new Set([...picked, ...added])];
-  if (!tags.length) tags.push(category);
+  if (!tags.length) tags.push(category[0]);
 
   const path = join(BLOG, 'it', `${slug}.mdx`);
   const date = new Date().toISOString().split('T')[0];
