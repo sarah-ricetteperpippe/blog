@@ -68,6 +68,9 @@ test('toSlug e frontmatter', () => {
   assert.match(fm, /^title: "La \\"vera\\" pasta"$/m);
   assert.match(fm, /^heroImage: "\/images\/ricette\/pasta.webp"$/m);
   assert.match(fm, /^tags: \["Pasta"\]$/m);
+  assert.match(fm, /^category: "Primi piatti"$/m);
+  const multi = frontmatter({ title: 'Torta', description: 'Buona', slug: 'torta', category: ['Piatti unici', 'Torte salate'], tags: [], date: '2026-11-02' });
+  assert.match(multi, /^category: \["Piatti unici", "Torte salate"\]$/m);
 });
 
 test('le correzioni della descrizione si propongono, si scelgono per numero e si applicano', () => {

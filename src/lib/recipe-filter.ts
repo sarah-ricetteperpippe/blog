@@ -60,7 +60,7 @@ export function initRecipeFilter({ onChange }: Options = {}) {
 
   const termsOf = (value: string) => normalize(value).split(/\s+/).filter(Boolean);
   const matches = (card: HTMLElement, terms: string[]) =>
-    (activeCategory === 'all' || card.dataset.category === activeCategory) &&
+    (activeCategory === 'all' || (card.dataset.category ?? '').split('|').includes(activeCategory)) &&
     terms.every(term => (cardText.get(card) ?? '').includes(term));
 
   // ---------- Filtro ----------
@@ -214,7 +214,7 @@ export function initRecipeFilter({ onChange }: Options = {}) {
       title.append(highlight(card.dataset.title ?? '', terms[0]));
       const cat = document.createElement('span');
       cat.className = 'recipe-suggestion-cat';
-      cat.textContent = cfg.labels[card.dataset.category ?? ''] ?? '';
+      cat.textContent = cfg.labels[(card.dataset.category ?? '').split('|')[0]] ?? '';
       li.append(title, cat);
       // mousedown: scatta prima del blur dell'input
       li.addEventListener('mousedown', (e) => {

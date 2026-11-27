@@ -3,7 +3,7 @@ title: "Torta salata patate e scamorza affumicata"
 description: "Sfiziosissimo salvacena o stuzzicheria dell'ultimo minuto, con pochi ingredienti e zero sbatta."
 pubDate: "2026-01-16"
 heroImage: "/images/ricette/torta-salata-patate-scamorza-affumicata.webp"
-category: "Piatti unici"
+category: ["Piatti unici", "Torte salate"]
 tags: ["Piatti unici", "Aperitivo", "Patate", "Formaggio", "Forno", "Antispreco"]
 translationKey: "torta-salata-patate-e-scamorza-affumicata"
 ---

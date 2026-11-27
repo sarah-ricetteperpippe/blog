@@ -57,7 +57,7 @@ export function getRecipeFilterUi(lang: SiteLang) {
 
 /** Testo indicizzato dalla ricerca: titolo, descrizioni, tag (originali e tradotti), categoria. */
 export function recipeSearchText(post: any, lang: SiteLang): string {
-  const category = post.data.category ?? '';
+  const categories: string[] = post.data.category ?? [];
   const tags = normalizeBlogTags(post.data.tags);
   return [
     post.data.title,
@@ -65,8 +65,8 @@ export function recipeSearchText(post: any, lang: SiteLang): string {
     post.data.cardDescription ?? '',
     ...(post.data.tags ?? []),
     ...tags.map((tag: string) => getBlogTagLabel(tag, lang)),
-    category,
-    category ? getBlogCategoryLabel(category, lang) : '',
+    ...categories,
+    ...categories.map((cat) => getBlogCategoryLabel(cat, lang)),
   ].join(' ');
 }
 

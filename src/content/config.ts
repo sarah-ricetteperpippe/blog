@@ -3,7 +3,7 @@ import {
   ACADEMY_CATEGORIES,
   BLOG_CATEGORIES,
   normalizeAcademyCategory,
-  normalizeBlogCategory,
+  normalizeBlogCategories,
 } from '../config/taxonomy';
 
 const [firstBlogCategory, ...restBlogCategories] = BLOG_CATEGORIES;
@@ -12,7 +12,8 @@ const [firstAcademyCategory, ...restAcademyCategories] = ACADEMY_CATEGORIES;
 const blogCategoryEnum = z.enum([firstBlogCategory, ...restBlogCategories] as [string, ...string[]]);
 const academyCategoryEnum = z.enum([firstAcademyCategory, ...restAcademyCategories] as [string, ...string[]]);
 
-const blogCategorySchema = z.preprocess(normalizeBlogCategory, blogCategoryEnum.optional());
+// Sempre una lista (anche vuota): la prima è la categoria principale.
+const blogCategorySchema = z.preprocess(normalizeBlogCategories, z.array(blogCategoryEnum));
 const academyCategorySchema = z.preprocess(normalizeAcademyCategory, academyCategoryEnum);
 
 const blog = defineCollection({

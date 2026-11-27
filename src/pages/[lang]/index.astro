@@ -29,7 +29,7 @@ const langPosts = allPosts
   .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
 const HOME_LIMIT = 9;
 
-const activeCategories = new Set(langPosts.map(p => p.data.category).filter(Boolean));
+const activeCategories = new Set(langPosts.flatMap(p => p.data.category));
 const categories = BLOG_CATEGORIES.filter(category => activeCategories.has(category));
 
 const slug = (post: any) => post.id.replace(`${lang}/`, '').replace(/\.(md|mdx)$/, '');
@@ -126,7 +126,7 @@ const marqueeItems = [...t.marquee, ...t.marquee, ...t.marquee, ...t.marquee];
       {langPosts.map((post, i) => {
         const heroImage = resolveHeroImage(post);
         return (
-          <article class="recipe-card js-reveal" data-rf-card data-category={post.data.category ?? ''} data-title={post.data.title} data-url={`${base}${lang}/blog/${slug(post)}/`} data-search={recipeSearchText(post, currentLang)} hidden={i >= HOME_LIMIT}>
+          <article class="recipe-card js-reveal" data-rf-card data-category={post.data.category.join('|')} data-title={post.data.title} data-url={`${base}${lang}/blog/${slug(post)}/`} data-search={recipeSearchText(post, currentLang)} hidden={i >= HOME_LIMIT}>
             <a href={`${base}${lang}/blog/${slug(post)}/`} class="recipe-card-link">
               {heroImage
                 ? <img src={heroImage} alt="" width="800" height="600" class="recipe-card-image" style={post.data.heroPosition && `object-position: ${post.data.heroPosition}`} loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />

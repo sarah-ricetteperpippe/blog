@@ -162,7 +162,7 @@ description: # tradotto, stesso registro ironico
 cardDescription: # solo se c'è nell'IT: tradotto, deve restare l'inizio della description tradotta
 pubDate: # invariato
 heroImage: # invariato
-category: # tradotto (es. "Secondi piatti" → "Main courses" / "Plats principaux")
+category: # tradotto (es. "Secondi piatti" → "Main courses" / "Plats principaux"); se è una lista, traduci ogni voce e tieni l’ordine (es. ["Piatti unici", "Torte salate"] → ["One-dish meals", "Quiches & Savory Pies"] / ["Plats uniques", "Tartes salées"])
 tags: # invariati in IT
 translationKey: # invariato (uguale allo slug IT)
 lang: "en"  # o "fr" — aggiungi se manca

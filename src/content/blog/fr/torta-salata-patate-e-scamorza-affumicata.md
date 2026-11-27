@@ -3,7 +3,7 @@ title: "Tarte salée aux pommes de terre et à la scamorza fumée"
 description: "Une tarte salée facile pour un dîner improvisé ou un apéro de dernière minute, avec peu d'ingrédients et presque aucun effort."
 pubDate: "2026-01-16"
 heroImage: "/images/ricette/torta-salata-patate-scamorza-affumicata.webp"
-category: "Plats uniques"
+category: ["Plats uniques", "Tartes salées"]
 tags: ["Piatti unici", "Aperitivo", "Patate", "Formaggio", "Forno", "Antispreco"]
 lang: "fr"
 translationKey: "torta-salata-patate-e-scamorza-affumicata"

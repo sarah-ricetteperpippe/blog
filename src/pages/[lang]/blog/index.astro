@@ -35,7 +35,7 @@ function readingTime(body: string): number {
   return Math.max(1, Math.ceil(words / 200));
 }
 
-const activeCategories = new Set(posts.map(p => p.data.category).filter(Boolean));
+const activeCategories = new Set(posts.flatMap(p => p.data.category));
 const categories = BLOG_CATEGORIES.filter(category => activeCategories.has(category));
 
 const ui = {
@@ -88,14 +88,13 @@ function shortDate(date: Date) {
       const mins = readingTime(post.body);
       const postSlug = slug(post);
       const heroImage = resolveHeroImage(post);
-      const categoryLabel = post.data.category
-        ? getBlogCategoryLabel(post.data.category, currentLang)
-        : '';
+      const mainCategory = post.data.category[0];
+      const categoryLabel = mainCategory ? getBlogCategoryLabel(mainCategory, currentLang) : '';
       return (
         <article
           class="blog-card"
           data-rf-card
-          data-category={post.data.category ?? ''}
+          data-category={post.data.category.join('|')}
           data-title={post.data.title}
           data-url={`${base}${lang}/blog/${postSlug}/`}
           data-search={recipeSearchText(post, currentLang)}
@@ -107,7 +106,7 @@ function shortDate(date: Date) {
                 ? <img class="blog-card-image" src={heroImage} alt={post.data.title} style={post.data.heroPosition && `object-position: ${post.data.heroPosition}`} loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.blog-card-image-placeholder').style.display='flex'" />
                 : <div class="blog-card-image-placeholder">🍳</div>
               }
-              {post.data.category && (
+              {mainCategory && (
                 <span class="blog-card-category">{categoryLabel}</span>
               )}
             </div>
