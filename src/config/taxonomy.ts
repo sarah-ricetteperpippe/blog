@@ -50,7 +50,7 @@ const BLOG_CATEGORY_LABELS: Record<SiteLang, Record<BlogCategory, string>> = {
     Risotti: 'Risottos',
     'Secondi piatti': 'Main courses',
     Snack: 'Snacks',
-    'Torte salate': 'Quiches & Savory Pies',
+    'Torte salate': 'Quiches & savory pies',
     'Zuppe e vellutate': 'Soups and veloutés',
   },
   fr: {
@@ -113,6 +113,7 @@ const LEGACY_BLOG_CATEGORY_ALIASES: Partial<Record<string, BlogCategory | undefi
   'First courses': 'Primi piatti',
   Risottos: 'Risotti',
   'Main courses': 'Secondi piatti',
+  'Quiches & savory pies': 'Torte salate',
   'Quiches & Savory Pies': 'Torte salate',
   'Quiches & pies': 'Torte salate',
   'Savory pies': 'Torte salate',

@@ -78,6 +78,10 @@ export function initRecipeFilter({ onChange }: Options = {}) {
       const show = visible.has(card);
       const wasHidden = card.hidden;
       card.hidden = !show;
+      // Badge di categoria: con un filtro attivo resta solo quello della categoria scelta
+      card.querySelectorAll<HTMLElement>('[data-rf-cat]').forEach(badge => {
+        badge.hidden = !isAll && badge.dataset.rfCat !== category;
+      });
       if (show && wasHidden) {
         // Le card che ricompaiono non rifanno il fade-up dello scroll: comparsa rapida
         card.classList.add('is-visible');

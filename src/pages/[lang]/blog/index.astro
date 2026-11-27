@@ -88,8 +88,6 @@ function shortDate(date: Date) {
       const mins = readingTime(post.body);
       const postSlug = slug(post);
       const heroImage = resolveHeroImage(post);
-      const mainCategory = post.data.category[0];
-      const categoryLabel = mainCategory ? getBlogCategoryLabel(mainCategory, currentLang) : '';
       return (
         <article
           class="blog-card"
@@ -106,8 +104,12 @@ function shortDate(date: Date) {
                 ? <img class="blog-card-image" src={heroImage} alt={post.data.title} style={post.data.heroPosition && `object-position: ${post.data.heroPosition}`} loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.blog-card-image-placeholder').style.display='flex'" />
                 : <div class="blog-card-image-placeholder">🍳</div>
               }
-              {mainCategory && (
-                <span class="blog-card-category">{categoryLabel}</span>
+              {post.data.category.length > 0 && (
+                <div class="blog-card-categories">
+                  {post.data.category.map((cat: string) => (
+                    <span class="blog-card-category" data-rf-cat={cat}>{getBlogCategoryLabel(cat, currentLang)}</span>
+                  ))}
+                </div>
               )}
             </div>
 
